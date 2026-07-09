@@ -703,7 +703,7 @@ function renderDashboardMocks() {
         
         let metaHtml = `
             <span><i class="fa-regular fa-clock"></i> ${mock.duration} mins</span>
-            <span><i class="fa-solid fa-list-check"></i> ${Object.keys(mock.questions).length} Qs</span>
+            <span><i class="fa-solid fa-list-check"></i> ${mock.questionCount || Object.keys(mock.questions || {}).length} Qs</span>
         `;
         if (mock.category === 'pdf') {
             metaHtml += `<span><i class="fa-solid fa-file-pdf"></i> PDF mode</span>`;
@@ -876,7 +876,7 @@ const libraryState = { tab: 'full' };
 
 // Derive display category purely from question count
 function getDisplayCategory(mock) {
-    if (mock.category === 'pdf') return 'pdf';
+    if (mock.category) return mock.category;
     const qCount = Object.keys(mock.questions || {}).length;
     if (qCount < 10)  return 'daily';
     if (qCount < 23)  return 'sectional';
@@ -1036,7 +1036,7 @@ function renderLibrary() {
             const card = document.createElement('div');
             card.className = 'library-card';
 
-            const qCount = Object.keys(mock.questions).length;
+            const qCount = mock.questionCount || Object.keys(mock.questions || {}).length;
             const pastAttempts = state.attempts.filter(a => a.testId === mock.id);
             const bestAttempt  = pastAttempts.length > 0
                 ? pastAttempts.reduce((best, a) => a.score > best.score ? a : best, pastAttempts[0])
