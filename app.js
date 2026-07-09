@@ -713,7 +713,7 @@ function renderDashboardMocks() {
     const displayMocks = state.mocks.filter(m => m.category !== 'daily').slice(0, 3);
     
     if (displayMocks.length === 0) {
-        container.innerHTML = '<div class="no-data">No mocks available. Click Import HTML to add one.</div>';
+        container.innerHTML = '<div class="no-data">No mocks available. Please check back later.</div>';
         return;
     }
     
@@ -904,6 +904,7 @@ const libraryState = { tab: 'full' };
 
 // Derive display category purely from question count
 function getDisplayCategory(mock) {
+    if (mock.category === 'pdf') return 'pdf';
     const qCount = Object.keys(mock.questions || {}).length;
     if (qCount < 10)  return 'daily';
     if (qCount < 23)  return 'sectional';
@@ -982,6 +983,7 @@ function renderLibrary() {
     const fullMocks       = catMocks.filter(m => getDisplayCategory(m) === 'full');
     const sectionalMocks  = catMocks.filter(m => getDisplayCategory(m) === 'sectional');
     const dailyMocks      = catMocks.filter(m => getDisplayCategory(m) === 'daily');
+    const pdfMocks        = catMocks.filter(m => getDisplayCategory(m) === 'pdf');
 
     const { tab } = libraryState;
 
@@ -990,12 +992,14 @@ function renderLibrary() {
     setCount('tab-count-full',      fullMocks.length);
     setCount('tab-count-sectional', sectionalMocks.length);
     setCount('tab-count-daily',     dailyMocks.length);
+    setCount('tab-count-pdf',       pdfMocks.length);
 
     // Pick which set to render
     let filteredMocks;
     if (tab === 'full')           filteredMocks = fullMocks;
     else if (tab === 'sectional') filteredMocks = sectionalMocks;
     else if (tab === 'daily')     filteredMocks = dailyMocks;
+    else if (tab === 'pdf')       filteredMocks = pdfMocks;
     else                          filteredMocks = catMocks;
 
     // Sort by name within each group
@@ -1013,15 +1017,15 @@ function renderLibrary() {
     const groups = {};
     filteredMocks.forEach(mock => {
         let group;
-        if (tab === 'full')           group = getFullMockGroup(mock);
-        else if (tab === 'sectional') group = getSectionalGroup(mock);
-        else                          group = getDailyGroup(mock);
+        if (tab === 'full' || tab === 'pdf') group = getFullMockGroup(mock);
+        else if (tab === 'sectional')        group = getSectionalGroup(mock);
+        else                                 group = getDailyGroup(mock);
         if (!groups[group]) groups[group] = [];
         groups[group].push(mock);
     });
 
-    // Sort group order: for Full → IMS first, then CL, then others
-    const groupOrder = tab === 'full'
+    // Sort group order: for Full & PDF → IMS first, then CL, then TIME, then others
+    const groupOrder = (tab === 'full' || tab === 'pdf')
         ? ['IMS', 'Career Launcher', 'TIME', 'Other']
         : tab === 'sectional'
             ? ['VARC', 'DILR', 'QA', 'Mixed']

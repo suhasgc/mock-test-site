@@ -218,6 +218,10 @@
                                 <i class="fa-solid fa-calendar-day"></i> Daily Drills
                                 <span class="tab-count" id="tab-count-daily">0</span>
                             </button>
+                            <button class="section-tab" data-section-tab="pdf">
+                                <i class="fa-solid fa-file-pdf"></i> PDF OMR Mocks
+                                <span class="tab-count" id="tab-count-pdf">0</span>
+                            </button>
                         </div>
 
                         <!-- Grid rendered by JS (grouped by source) -->
@@ -615,38 +619,40 @@
                         </button>
                     </div>
                     <div class="modal-body review-modal-body">
-                        <div class="review-marks-row">
-                            <span class="badge" id="review-modal-q-status">Correct</span>
-                            <span class="badge positive" id="review-modal-q-earned">+3 Marks</span>
+                        <!-- Left Column: Question & Answers -->
+                        <div class="review-modal-col-left">
+                            <div class="review-marks-row">
+                                <span class="badge" id="review-modal-q-status">Correct</span>
+                                <span class="badge positive" id="review-modal-q-earned">+3 Marks</span>
+                            </div>
+                            
+                            <div class="review-question-section">
+                                <div class="review-instructions" id="review-modal-instructions"></div>
+                                <div class="review-question-text" id="review-modal-question-text"></div>
+                            </div>
+
+                            <div class="review-answers-section">
+                                <h4>Answer Breakdown</h4>
+                                <div class="answers-comparison" id="review-modal-options-container">
+                                    <!-- User answer bubble side by side with Correct -->
+                                </div>
+                            </div>
                         </div>
                         
-                        <!-- Question content -->
-                        <div class="review-question-section">
-                            <div class="review-instructions" id="review-modal-instructions"></div>
-                            <div class="review-question-text" id="review-modal-question-text"></div>
-                        </div>
-
-                        <!-- User vs Correct response -->
-                        <div class="review-answers-section">
-                            <h4>Answer Breakdown</h4>
-                            <div class="answers-comparison" id="review-modal-options-container">
-                                <!-- User answer bubble side by side with Correct -->
+                        <!-- Right Column: Explanation -->
+                        <div class="review-modal-col-right">
+                            <div class="review-solution-section glass">
+                                <h4>Explanation & Solution</h4>
+                                <div class="review-solution-content" id="review-modal-solution-text">
+                                    <!-- Solution text -->
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- Freehand Answer playback snapshot (if drawing type) -->
-                        <div class="review-drawing-section" id="review-modal-drawing-container" style="display: none;">
-                            <h4>Submitted Freehand Sketch</h4>
-                            <div class="review-drawing-viewport">
-                                <img id="review-modal-drawing-img" src="" alt="User Sketch" class="review-drawing-img">
-                            </div>
-                        </div>
-
-                        <!-- Solution -->
-                        <div class="review-solution-section glass">
-                            <h4>Explanation & Solution</h4>
-                            <div class="review-solution-content" id="review-modal-solution-text">
-                                <!-- Solution text -->
+                            <div class="review-drawing-section" id="review-modal-drawing-container" style="display: none;">
+                                <h4>Submitted Freehand Sketch</h4>
+                                <div class="review-drawing-viewport">
+                                    <img id="review-modal-drawing-img" src="" alt="User Sketch" class="review-drawing-img">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -754,7 +760,7 @@
     </div>
 
     <!-- CORE SCRIPTS -->
-    <script type="module" src="app.js?v=1.2.1"></script>
+    <script type="module" src="app.js?v=1.2.2"></script>
 </body>
 </html>
 
