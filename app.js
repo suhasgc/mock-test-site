@@ -98,43 +98,58 @@ function loadDatabase() {
 
 // Fetch and load heavy offline mocks automatically
 function preloadMocks() {
-    fetch('simcat19_data.json')
-        .then(res => {
-            if (!res.ok) throw new Error("HTTP error " + res.status);
-            return res.json();
-        })
-        .then(data => {
-            const duration = data.sections && Object.keys(data.sections).length * 40 || 120;
-            const sectionTimes = {};
-            if (data.sections) {
-                Object.keys(data.sections).forEach(secName => {
-                    sectionTimes[secName] = 40;
-                });
-            }
-            
-            const mockObject = {
-                id: "simcat-19-2025",
-                name: data.name,
-                type: 'cat',
-                description: `Official SimCAT 19 offline mock containing ${Object.keys(data.questions).length} questions across ${Object.keys(data.sections).length} sections.`,
-                duration: duration,
-                isSectionalTimed: true,
-                sections: data.sections,
-                sectionTimes: sectionTimes,
-                questions: data.questions
-            };
-            
-            if (!state.mocks.some(m => m.id === mockObject.id)) {
-                state.mocks.push(mockObject);
-            }
-            
-            // Re-render views if they are active
-            if (state.activeView === 'library') renderLibrary();
-            if (state.activeView === 'dashboard') renderDashboardMocks();
-        })
-        .catch(err => {
-            console.warn("Could not preload SimCAT 19:", err);
-        });
+    const mockFiles = [
+        'simcat19_data.json',
+        'simcat18_data.json',
+        'simcat17_data.json',
+        'simcat11_data.json',
+        'simcat9_data.json',
+        'simcat8_data.json',
+        'simcat7_data.json',
+        'simcat6_data.json',
+        'simcat5_data.json',
+        'simcat4_data.json'
+    ];
+    
+    mockFiles.forEach(file => {
+        fetch(file)
+            .then(res => {
+                if (!res.ok) throw new Error("HTTP error " + res.status);
+                return res.json();
+            })
+            .then(data => {
+                const duration = data.sections && Object.keys(data.sections).length * 40 || 120;
+                const sectionTimes = {};
+                if (data.sections) {
+                    Object.keys(data.sections).forEach(secName => {
+                        sectionTimes[secName] = 40; // Default CAT 40 mins per section
+                    });
+                }
+                
+                const mockObject = {
+                    id: file.replace('_data.json', ''),
+                    name: data.name || file.replace('_data.json', '').toUpperCase(),
+                    type: (data.name && data.name.toLowerCase().includes('xat')) ? 'xat' : 'cat',
+                    description: `Official offline mock containing ${Object.keys(data.questions || {}).length} questions across ${Object.keys(data.sections || {}).length} sections.`,
+                    duration: duration,
+                    isSectionalTimed: !(data.name && data.name.toLowerCase().includes('xat')),
+                    sections: data.sections || {},
+                    sectionTimes: sectionTimes,
+                    questions: data.questions || {}
+                };
+                
+                if (!state.mocks.some(m => m.id === mockObject.id)) {
+                    state.mocks.push(mockObject);
+                }
+                
+                // Re-render views if active
+                if (state.activeView === 'library') renderLibrary();
+                if (state.activeView === 'dashboard') renderDashboardMocks();
+            })
+            .catch(err => {
+                console.warn(`Could not preload ${file}:`, err);
+            });
+    });
 }
 
 function saveDatabase() {
