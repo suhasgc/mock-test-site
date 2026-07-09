@@ -266,7 +266,14 @@ function preloadMocks() {
         'cl_varc_11_exam_portal.json', 'cl_varc_12_exam_portal.json', 'cl_varc_13_exam_portal.json', 'cl_varc_14_exam_portal.json', 'cl_varc_15_exam_portal.json'
     ];
     
-    const allFiles = [...mockFiles, ...clFiles];
+    // Auto-generate file list for the 30 interactive CL 2023 Prime and Countdown mocks
+    const cl2023Files = [];
+    for (let i = 1; i <= 15; i++) {
+        cl2023Files.push(`cl_2023_pc_${i}_data.json`);
+        cl2023Files.push(`cl_2023_cdc_${i}_data.json`);
+    }
+    
+    const allFiles = [...mockFiles, ...clFiles, ...cl2023Files];
     
     allFiles.forEach(file => {
         fetch(file)
@@ -283,17 +290,19 @@ function preloadMocks() {
                     });
                 }
                 
-                const isCl = file.startsWith('cl_');
+                const isClSectional = file.startsWith('cl_') && (file.includes('varc') || file.includes('qa') || file.includes('lrdi'));
+                const isCl2023Full = file.startsWith('cl_2023_');
+                
                 const mockObject = {
                     id: file.replace('_data.json', '').replace('.json', ''),
                     name: data.name || file.replace('_data.json', '').replace('.json', '').toUpperCase(),
                     type: (data.name && data.name.toLowerCase().includes('xat')) ? 'xat' : 'cat',
-                    category: isCl ? 'sectional' : 'full',
-                    description: `Official offline mock containing ${Object.keys(data.questions || {}).length} questions across ${Object.keys(data.sections || {}).length} sections.`,
-                    duration: duration,
-                    isSectionalTimed: !(data.name && data.name.toLowerCase().includes('xat')),
+                    category: isClSectional ? 'sectional' : 'full',
+                    description: data.description || `Official offline mock containing ${Object.keys(data.questions || {}).length} questions across ${Object.keys(data.sections || {}).length} sections.`,
+                    duration: data.duration || duration,
+                    isSectionalTimed: data.isSectionalTimed !== undefined ? data.isSectionalTimed : !(data.name && data.name.toLowerCase().includes('xat')),
                     sections: data.sections || {},
-                    sectionTimes: sectionTimes,
+                    sectionTimes: data.sectionTimes || sectionTimes,
                     questions: data.questions || {}
                 };
                 
@@ -348,6 +357,26 @@ function preloadMocks() {
         })
         .catch(err => {
             console.warn("Could not preload IMS/CL 2023 mocks:", err);
+        });
+        
+    // Fetch Career Launcher PDF OMR Mocks
+    fetch('cl_pdf_mocks_data.json')
+        .then(res => {
+            if (!res.ok) throw new Error("HTTP error " + res.status);
+            return res.json();
+        })
+        .then(dataList => {
+            dataList.forEach(mockObject => {
+                if (!state.mocks.some(m => m.id === mockObject.id)) {
+                    state.mocks.push(mockObject);
+                }
+            });
+            // Re-render views if active
+            if (state.activeView === 'library') renderLibrary();
+            if (state.activeView === 'dashboard') renderDashboardMocks();
+        })
+        .catch(err => {
+            console.warn("Could not preload CL PDF OMR mocks:", err);
         });
 }
 
@@ -947,7 +976,7 @@ function renderLibrary() {
     if (!grid) return;
 
     // CAT-only: exclude XAT and PDF category
-    const catMocks = state.mocks.filter(m => m.type !== 'xat' && m.category !== 'pdf');
+    const catMocks = state.mocks.filter(m => m.type !== 'xat');
 
     // Derive display category from question count
     const fullMocks       = catMocks.filter(m => getDisplayCategory(m) === 'full');
