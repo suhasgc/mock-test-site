@@ -209,6 +209,28 @@ function initLoginScreen() {
 document.addEventListener('DOMContentLoaded', () => {
     initLoginScreen();
 
+    // Global image load error handler (capturing phase) to replace broken images with beautiful placeholders
+    window.addEventListener('error', (e) => {
+        if (e.target && e.target.tagName === 'IMG') {
+            const img = e.target;
+            if (img._handled) return;
+            img._handled = true;
+            
+            img.style.display = 'none';
+            
+            const placeholder = document.createElement('div');
+            placeholder.className = 'img-placeholder-fallback';
+            placeholder.innerHTML = `
+                <div class="fallback-card">
+                    <i class="fa-solid fa-image-slash"></i>
+                    <span>Image / Diagram Unavailable</span>
+                    <a href="${img.src}" target="_blank" class="fallback-link">Original Image Link</a>
+                </div>
+            `;
+            img.parentNode.insertBefore(placeholder, img.nextSibling);
+        }
+    }, true);
+
     // Global event delegation for all exam/practice start buttons (completely resolves swallowed/ignored click issues)
     document.addEventListener('click', (e) => {
         const libBtn = e.target.closest('.btn-start');
