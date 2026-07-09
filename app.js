@@ -862,27 +862,72 @@ function renderDashboardActivity() {
 }
 
 // ==========================================================================
-// MOCK LIBRARY RENDERING — CAT Mocks only, grouped by source
+// MOCK LIBRARY RENDERING — CAT Mocks only
+// Category determined by question count:
+//   < 10  => daily
+//   10-22 => sectional
+//   >= 23 => full
+// Full mocks: grouped as IMS vs Career Launcher
+// Sectional mocks: grouped by subject area
 // ==========================================================================
 
 const libraryState = { tab: 'full' };
 
-// Source grouping configuration — maps mock id/name patterns to a display group
-function getMockGroup(mock) {
+// Derive display category purely from question count
+function getDisplayCategory(mock) {
+    const qCount = Object.keys(mock.questions || {}).length;
+    if (qCount < 10)  return 'daily';
+    if (qCount < 23)  return 'sectional';
+    return 'full';
+}
+
+// Source label for Full Mocks grouping
+function getFullMockGroup(mock) {
     const id   = (mock.id   || '').toLowerCase();
     const name = (mock.name || '').toLowerCase();
-    if (id.includes('simcat') || name.includes('simcat'))    return 'IMS SimCAT';
-    if (id.startsWith('ims_2023_simcat') || name.includes('ims simcat')) return 'IMS SimCAT';
-    if (id.startsWith('ims_2023_take_home') || name.includes('take home')) return 'IMS Take-Home Mocks';
-    if (id.startsWith('ims_2023_pre_simcat') || name.includes('pre simcat') || name.includes('pre-simcat')) return 'IMS Pre-SimCAT';
-    if (id.startsWith('cl_') && !id.includes('2023')) return 'Career Launcher (CL)';
-    if (id.startsWith('cl_2023') || id.startsWith('ims_2023_dilr') || id.startsWith('ims_2023_qa') || id.startsWith('ims_2023_varc')) return 'CL / IMS Sectional (2023)';
-    if (id.startsWith('cl_2023') && (id.includes('simcat') || id.includes('cdc'))) return 'Career Launcher SimCAT (2023)';
-    if (id.includes('time') || name.includes('time ')) return 'TIME';
-    if (name.includes('aimcat') || id.includes('aimcat')) return 'TIME AimCAT';
-    if (name.includes('career launcher') || name.includes('cl ') || id.startsWith('cl_2023')) return 'Career Launcher (2023)';
-    if (name.includes('ims') || id.startsWith('ims_')) return 'IMS';
-    return 'Other Mocks';
+
+    // IMS sources
+    if (id.includes('simcat') && !id.startsWith('cl_')) return 'IMS';
+    if (id.startsWith('ims_'))                           return 'IMS';
+    if (name.includes('simcat') && !id.startsWith('cl_')) return 'IMS';
+    if (name.includes('ims'))                             return 'IMS';
+
+    // Career Launcher sources
+    if (id.startsWith('cl_'))          return 'Career Launcher';
+    if (name.includes('career launcher')) return 'Career Launcher';
+    if (name.includes(' cl ') || name.startsWith('cl ')) return 'Career Launcher';
+
+    // TIME
+    if (id.includes('time') || name.includes('time ') || name.startsWith('time')) return 'TIME';
+    if (id.includes('aimcat') || name.includes('aimcat'))  return 'TIME';
+
+    return 'Other';
+}
+
+// Source label for Sectional grouping (by subject)
+function getSectionalGroup(mock) {
+    const id   = (mock.id   || '').toLowerCase();
+    const name = (mock.name || '').toLowerCase();
+    const secs = Object.keys(mock.sections || {}).map(s => s.toLowerCase()).join(' ');
+
+    if (id.includes('varc') || id.includes('rc') || id.includes('va') ||
+        name.includes('varc') || name.includes('verbal') || secs.includes('varc')) return 'VARC';
+    if (id.includes('dilr') || id.includes('lrdi') || id.includes('lr') || id.includes('di') ||
+        name.includes('dilr') || name.includes('lrdi') || name.includes('data interpretation') ||
+        secs.includes('dilr') || secs.includes('lrdi'))                               return 'DILR';
+    if (id.includes('_qa') || id.includes('qa_') || id.includes('quant') ||
+        name.includes(' qa') || name.includes('quant') || secs.includes('quantit'))   return 'QA';
+    return 'Mixed';
+}
+
+// Group label for Daily Drills
+function getDailyGroup(mock) {
+    const id   = (mock.id   || '').toLowerCase();
+    const name = (mock.name || '').toLowerCase();
+    if (id.startsWith('ims_'))  return 'IMS Daily';
+    if (id.startsWith('cl_'))   return 'CL Daily';
+    if (id.includes('time'))    return 'TIME Daily';
+    return 'Daily Drill';
 }
 
 function initLibrary() {
@@ -901,55 +946,83 @@ function renderLibrary() {
     const grid = document.getElementById('library-mocks-grid');
     if (!grid) return;
 
-    // CAT-only: exclude XAT and PDF
+    // CAT-only: exclude XAT and PDF category
     const catMocks = state.mocks.filter(m => m.type !== 'xat' && m.category !== 'pdf');
+
+    // Derive display category from question count
+    const fullMocks       = catMocks.filter(m => getDisplayCategory(m) === 'full');
+    const sectionalMocks  = catMocks.filter(m => getDisplayCategory(m) === 'sectional');
+    const dailyMocks      = catMocks.filter(m => getDisplayCategory(m) === 'daily');
 
     const { tab } = libraryState;
 
     // Update tab counts
-    const countFull      = catMocks.filter(m => !['sectional','daily','pdf'].includes(m.category)).length;
-    const countSectional = catMocks.filter(m => m.category === 'sectional').length;
-    const countDaily     = catMocks.filter(m => m.category === 'daily').length;
     const setCount = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
-    setCount('tab-count-full',      countFull);
-    setCount('tab-count-sectional', countSectional);
-    setCount('tab-count-daily',     countDaily);
+    setCount('tab-count-full',      fullMocks.length);
+    setCount('tab-count-sectional', sectionalMocks.length);
+    setCount('tab-count-daily',     dailyMocks.length);
 
-    // Apply tab filter
+    // Pick which set to render
     let filteredMocks;
-    if (tab === 'full')           filteredMocks = catMocks.filter(m => !['sectional','daily','pdf'].includes(m.category));
-    else if (tab === 'sectional') filteredMocks = catMocks.filter(m => m.category === 'sectional');
-    else if (tab === 'daily')     filteredMocks = catMocks.filter(m => m.category === 'daily');
+    if (tab === 'full')           filteredMocks = fullMocks;
+    else if (tab === 'sectional') filteredMocks = sectionalMocks;
+    else if (tab === 'daily')     filteredMocks = dailyMocks;
     else                          filteredMocks = catMocks;
 
-    // Sort by name for neat grouping
+    // Sort by name within each group
     filteredMocks.sort((a, b) => a.name.localeCompare(b.name));
 
     grid.innerHTML = '';
 
     if (filteredMocks.length === 0) {
-        grid.innerHTML = '<div class="no-data" style="grid-column:span 3;padding:40px;text-align:center;color:var(--text-secondary);">No mocks found in this section yet. They load shortly after the page opens.</div>';
+        grid.innerHTML = '<div class="no-data" style="grid-column:span 3;padding:40px;text-align:center;color:var(--text-secondary);">No mocks found in this section yet. They load in a few seconds after the page opens.</div>';
         updateSidebarScoreboard();
         return;
     }
 
-    // Group mocks by source
+    // Build groups depending on the active tab
     const groups = {};
     filteredMocks.forEach(mock => {
-        const group = getMockGroup(mock);
+        let group;
+        if (tab === 'full')           group = getFullMockGroup(mock);
+        else if (tab === 'sectional') group = getSectionalGroup(mock);
+        else                          group = getDailyGroup(mock);
         if (!groups[group]) groups[group] = [];
         groups[group].push(mock);
     });
 
-    // Render each group
-    Object.entries(groups).sort((a,b) => a[0].localeCompare(b[0])).forEach(([groupName, mocks]) => {
-        // Group header
+    // Sort group order: for Full → IMS first, then CL, then others
+    const groupOrder = tab === 'full'
+        ? ['IMS', 'Career Launcher', 'TIME', 'Other']
+        : tab === 'sectional'
+            ? ['VARC', 'DILR', 'QA', 'Mixed']
+            : Object.keys(groups).sort();
+
+    const sortedGroups = [
+        ...groupOrder.filter(g => groups[g]),
+        ...Object.keys(groups).filter(g => !groupOrder.includes(g)).sort()
+    ];
+
+    sortedGroups.forEach(groupName => {
+        const mocks = groups[groupName];
+        if (!mocks || mocks.length === 0) return;
+
+        // Group icon
+        const iconMap = {
+            'IMS': 'fa-graduation-cap', 'Career Launcher': 'fa-rocket',
+            'TIME': 'fa-stopwatch', 'Other': 'fa-folder-open',
+            'VARC': 'fa-book-open', 'DILR': 'fa-chart-bar', 'QA': 'fa-calculator',
+            'Mixed': 'fa-layer-group',
+            'IMS Daily': 'fa-graduation-cap', 'CL Daily': 'fa-rocket',
+            'TIME Daily': 'fa-stopwatch', 'Daily Drill': 'fa-calendar-day'
+        };
+        const icon = iconMap[groupName] || 'fa-folder-open';
+
         const groupHeader = document.createElement('div');
         groupHeader.className = 'library-group-header';
-        groupHeader.innerHTML = `<span class="group-title"><i class="fa-solid fa-folder-open"></i> ${groupName}</span><span class="group-count">${mocks.length} mocks</span>`;
+        groupHeader.innerHTML = `<span class="group-title"><i class="fa-solid ${icon}"></i> ${groupName}</span><span class="group-count">${mocks.length} mock${mocks.length !== 1 ? 's' : ''}</span>`;
         grid.appendChild(groupHeader);
 
-        // Cards wrapper
         const cardsWrapper = document.createElement('div');
         cardsWrapper.className = 'library-cards-row';
         grid.appendChild(cardsWrapper);
@@ -958,7 +1031,7 @@ function renderLibrary() {
             const card = document.createElement('div');
             card.className = 'library-card';
 
-            // Best attempt badge
+            const qCount = Object.keys(mock.questions).length;
             const pastAttempts = state.attempts.filter(a => a.testId === mock.id);
             const bestAttempt  = pastAttempts.length > 0
                 ? pastAttempts.reduce((best, a) => a.score > best.score ? a : best, pastAttempts[0])
@@ -972,7 +1045,7 @@ function renderLibrary() {
                 <h4>${mock.name}</h4>
                 <div class="meta-details">
                     <div class="meta-row"><i class="fa-regular fa-clock"></i> ${mock.duration} min</div>
-                    <div class="meta-row"><i class="fa-solid fa-list-check"></i> ${Object.keys(mock.questions).length} Qs</div>
+                    <div class="meta-row"><i class="fa-solid fa-list-check"></i> ${qCount} Qs</div>
                     <div class="meta-row"><i class="fa-solid fa-layer-group"></i> ${Object.keys(mock.sections).join(' · ')}</div>
                 </div>
                 ${attemptedHtml}
