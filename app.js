@@ -2415,80 +2415,11 @@ function logProctorInfraction(msg) {
 }
 
 function startWebcamSimulation() {
-    const video = document.getElementById('proctor-video');
-    const badge = document.getElementById('telemetry-badge');
-    const scan = document.getElementById('webcam-scan-overlay');
-    
-    // Attempt real user camera if supported
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({ video: true })
-            .then(stream => {
-                video.srcObject = stream;
-                video.style.display = 'block';
-                if (badge) {
-                    badge.textContent = "FACE SCAN: SECURED";
-                    badge.style.color = 'var(--success)';
-                }
-                
-                // Save stream reference globally to close it on submit
-                window.proctorVideoStream = stream;
-            })
-            .catch(err => {
-                // Fallback simulation layout
-                video.style.display = 'none';
-                if (badge) {
-                    badge.textContent = "AI AVATAR SCAN ACTIVE";
-                    badge.style.color = 'var(--secondary)';
-                }
-            });
-    } else {
-        video.style.display = 'none';
-        if (badge) badge.textContent = "AI SCANNERS ACTIVE";
-    }
-    
-    // Telemetry logs loop simulator
-    if (window.proctorTelemetryInterval) clearInterval(window.proctorTelemetryInterval);
-    
-    const gazeVal = document.getElementById('telemetry-gaze');
-    const statusVal = document.getElementById('telemetry-object');
-    
-    window.proctorTelemetryInterval = setInterval(() => {
-        const run = state.runningTest;
-        if (!run.testId) {
-            clearInterval(window.proctorTelemetryInterval);
-            stopWebcamTrack();
-            return;
-        }
-        
-        // Dynamic random normal parameters simulation
-        const gaze = 94 + Math.random() * 5.8;
-        gazeVal.textContent = gaze.toFixed(1) + '%';
-        
-        const codes = ["Focus: Normal", "Eyes tracking: Center", "Scanning environment", "Telemetry: Nominal", "Face coordinates: Confirmed"];
-        const randCode = codes[Math.floor(Math.random() * codes.length)];
-        
-        const badgeText = document.getElementById('telemetry-badge');
-        if (badgeText && badgeText.textContent !== "SUSPICIOUS ACTIVITY...") {
-            badgeText.textContent = randCode;
-        }
-        
-        // Random warnings mock occasionally
-        if (Math.random() > 0.95 && run.mode === 'timed') {
-            statusVal.textContent = "Face tilt detected...";
-            statusVal.style.color = 'var(--warning)';
-            setTimeout(() => {
-                statusVal.textContent = "No devices detected";
-                statusVal.style.color = 'var(--text-muted)';
-            }, 2500);
-        }
-    }, 4000);
+    // Camera proctoring disabled per user request
 }
 
 function stopWebcamTrack() {
-    if (window.proctorVideoStream) {
-        window.proctorVideoStream.getTracks().forEach(track => track.stop());
-        window.proctorVideoStream = null;
-    }
+    // Camera proctoring disabled per user request
 }
 
 // Resizable split screen panel controls

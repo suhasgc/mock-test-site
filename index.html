@@ -415,37 +415,6 @@
                         <!-- Dynamic Buttons 1 to N -->
                     </div>
 
-                    <!-- Proctor Webcam Feed Box (MOCK) -->
-                    <div class="proctor-webcam-card glass" id="proctor-webcam-card">
-                        <div class="webcam-header">
-                            <i class="fa-solid fa-video"></i> Live Proctor Telemetry
-                        </div>
-                        <div class="webcam-viewport">
-                            <!-- Real webcam feed will render if user allows, else simulated face scan -->
-                            <video id="proctor-video" autoplay muted playsinline class="proctor-video-element" style="display: none;"></video>
-                            <div class="webcam-scan-overlay" id="webcam-scan-overlay">
-                                <div class="scan-line"></div>
-                                <div class="scan-mesh"></div>
-                            </div>
-                            <div class="webcam-status-overlay" id="webcam-status-overlay">
-                                <span class="status-badge" id="telemetry-badge">INITIALIZING CAMERA...</span>
-                            </div>
-                        </div>
-                        <div class="webcam-telemetry-data">
-                            <div class="telemetry-row">
-                                <span>Eye Gaze Focus:</span>
-                                <span id="telemetry-gaze">98.5%</span>
-                            </div>
-                            <div class="telemetry-row">
-                                <span>Object Detection:</span>
-                                <span id="telemetry-object">No devices detected</span>
-                            </div>
-                            <div class="telemetry-row">
-                                <span>Fullscreen warnings:</span>
-                                <span id="telemetry-strikes" class="strike-count">0 / 3 strikes</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </aside>
         </div>
