@@ -3205,37 +3205,7 @@ a {
     background-color: transparent !important;
 }
 
-/* PREMIUM IMAGE FALLBACK CARD */
-.img-placeholder-fallback {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 12px;
-    background: rgba(239, 68, 68, 0.08);
-    border: 1px solid rgba(239, 68, 68, 0.2);
-    border-radius: 6px;
-    color: #fca5a5;
-    font-size: 0.8rem;
-    margin: 6px 0;
-    max-width: 100%;
-}
-.img-placeholder-fallback i {
-    font-size: 0.85rem;
-    color: #ef4444;
-}
-.img-placeholder-fallback span {
-    font-weight: 500;
-}
-.img-placeholder-fallback a {
-    color: #ef4444;
-    text-decoration: underline;
-    font-weight: 600;
-    transition: var(--transition);
-    margin-left: 4px;
-}
-.img-placeholder-fallback a:hover {
-    color: #fca5a5;
-}
+
 
 
 

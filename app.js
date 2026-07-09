@@ -209,32 +209,7 @@ function initLoginScreen() {
 document.addEventListener('DOMContentLoaded', () => {
     initLoginScreen();
 
-    // Global image load error handler (capturing phase) to replace broken images with beautiful placeholders
-    window.addEventListener('error', (e) => {
-        if (e.target && e.target.tagName === 'IMG') {
-            const img = e.target;
-            
-            // If the image URL starts with http://, try changing it to https:// first (resolves mixed content issues dynamically)
-            if (img.src.startsWith('http://')) {
-                img.src = img.src.replace('http://', 'https://');
-                return;
-            }
-            
-            if (img._handled) return;
-            img._handled = true;
-            
-            img.style.display = 'none';
-            
-            const placeholder = document.createElement('div');
-            placeholder.className = 'img-placeholder-fallback';
-            placeholder.innerHTML = `
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <span>Image unavailable</span>
-                <a href="${img.src}" target="_blank">View original</a>
-            `;
-            img.parentNode.insertBefore(placeholder, img.nextSibling);
-        }
-    }, true);
+
 
     // Global event delegation for all exam/practice start buttons (completely resolves swallowed/ignored click issues)
     document.addEventListener('click', (e) => {
