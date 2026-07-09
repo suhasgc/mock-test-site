@@ -1,0 +1,419 @@
+{
+    "name": "DILR 14 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n                                                    1 to 5 : Answer the questions on the basis of the information\n                                                given below.\n                                                In TS Education Pvt ltd., there are four categories of employees:\n                                                Category A, B, C and D. No employee\n                                                has a basic salary less than 2 lakhs. If TDS is deducted from the\n                                                employees\u2019 salary, it is deducted at 10% of\n                                                the basic salary. If GST is paid to an employee, it is paid at 18% of\n                                                the basic salary. Also it is known that:\n                                                Category A employees have their basic salary less than 5 lakhs but not\n                                                less than 2 lakhs and neither TDS\n                                                is deducted from their salaries nor they are paid the GST.\n                                                Category B employees who have their basic salary less than 10 lakhs but\n                                                not less than 5 lakhs are paid the\n                                                GST but no TDS is deducted from their salaries.\n                                                Category C employees who have their basic salary less than 20 lakhs but\n                                                not less than 10 lakhs are not paid\n                                                the GST but TDS is deducted from their salaries.\n                                                Category D employees who have their basic salary not less than 20 lakhs\n                                                are paid the GST and TDS too\n                                                is deducted from their salaries.\n                                                Net salary is the final salary after deducting TDS (wherever applicable)\n                                                and/or including GST (wherever\n                                                applicable). The basic salary and the net salary of each employee is an\n                                                integral multiple of 1000.",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n                                                If there are at least 5 employees in each category but not\n                                                more than 10 employees in any category,\n                                                then what is the minimum possible average net salary (in thousands) of\n                                                all employees if the\n                                                average net salary is an integral multiple of 1000?\n                                            ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873176/36s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n                                                5 : Answer the questions on the basis of the information given\n                                            below.\n                                            In TS Education Pvt ltd., there are four categories of employees: Category\n                                            A, B, C and D. No employee\n                                            has a basic salary less than 2 lakhs. If TDS is deducted from the employees\u2019\n                                            salary, it is deducted at 10% of\n                                            the basic salary. If GST is paid to an employee, it is paid at 18% of the\n                                            basic salary. Also it is known that:\n                                            Category A employees have their basic salary less than 5 lakhs but not less\n                                            than 2 lakhs and neither TDS\n                                            is deducted from their salaries nor they are paid the GST.\n                                            Category B employees who have their basic salary less than 10 lakhs but not\n                                            less than 5 lakhs are paid the\n                                            GST but no TDS is deducted from their salaries.\n                                            Category C employees who have their basic salary less than 20 lakhs but not\n                                            less than 10 lakhs are not paid\n                                            the GST but TDS is deducted from their salaries.\n                                            Category D employees who have their basic salary not less than 20 lakhs are\n                                            paid the GST and TDS too\n                                            is deducted from their salaries.\n                                            Net salary is the final salary after deducting TDS (wherever applicable)\n                                            and/or including GST (wherever\n                                            applicable). The basic salary and the net salary of each employee is an\n                                            integral multiple of 1000.",
+            "question_text": "\u00a0\u00a0Q.2 [11916616] \n                                            Which of the following cannot be the net salary of a Category C\n                                            employee?\n                                        ",
+            "options": [
+                "10,80,000",
+                "9,00,000",
+                "18,90,000",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873177/37s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5 :\n                                    Answer the questions on the basis of the information given below.\n                                    In TS Education Pvt ltd., there are four categories of employees: Category A, B, C\n                                    and D. No employee\n                                    has a basic salary less than 2 lakhs. If TDS is deducted from the employees\u2019 salary,\n                                    it is deducted at 10% of\n                                    the basic salary. If GST is paid to an employee, it is paid at 18% of the basic\n                                    salary. Also it is known that:\n                                    Category A employees have their basic salary less than 5 lakhs but not less than 2\n                                    lakhs and neither TDS\n                                    is deducted from their salaries nor they are paid the GST.\n                                    Category B employees who have their basic salary less than 10 lakhs but not less\n                                    than 5 lakhs are paid the\n                                    GST but no TDS is deducted from their salaries.\n                                    Category C employees who have their basic salary less than 20 lakhs but not less\n                                    than 10 lakhs are not paid\n                                    the GST but TDS is deducted from their salaries.\n                                    Category D employees who have their basic salary not less than 20 lakhs are paid the\n                                    GST and TDS too\n                                    is deducted from their salaries.\n                                    Net salary is the final salary after deducting TDS (wherever applicable) and/or\n                                    including GST (wherever\n                                    applicable). The basic salary and the net salary of each employee is an integral\n                                    multiple of 1000.",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  What is\n                                    the minimum possible net salary (in thousands) of an employee from Category D whose\n                                    net salary is equal to the sum of the net salaries of some employees of Category B?\n                                ",
+            "options": [
+                "3186",
+                "2950",
+                "2079",
+                "2360"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873178/38s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5 :\n                                Answer the questions on the basis of the information given below.\n                                In TS Education Pvt ltd., there are four categories of employees: Category A, B, C and\n                                D. No employee\n                                has a basic salary less than 2 lakhs. If TDS is deducted from the employees\u2019 salary, it\n                                is deducted at 10% of\n                                the basic salary. If GST is paid to an employee, it is paid at 18% of the basic salary.\n                                Also it is known that:\n                                Category A employees have their basic salary less than 5 lakhs but not less than 2 lakhs\n                                and neither TDS\n                                is deducted from their salaries nor they are paid the GST.\n                                Category B employees who have their basic salary less than 10 lakhs but not less than 5\n                                lakhs are paid the\n                                GST but no TDS is deducted from their salaries.\n                                Category C employees who have their basic salary less than 20 lakhs but not less than 10\n                                lakhs are not paid\n                                the GST but TDS is deducted from their salaries.\n                                Category D employees who have their basic salary not less than 20 lakhs are paid the GST\n                                and TDS too\n                                is deducted from their salaries.\n                                Net salary is the final salary after deducting TDS (wherever applicable) and/or\n                                including GST (wherever\n                                applicable). The basic salary and the net salary of each employee is an integral\n                                multiple of 1000.",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  The net salary\n                                of an employee is a multiple of 27000. Which category he might be belonging to?",
+            "options": [
+                "Category C",
+                "Category C or D",
+                "Category B or C",
+                "Any of B, C or D"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776709/1617340/5es.gif\"><br><br><br>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5 : Answer\n                            the questions on the basis of the information given below.\n                            In TS Education Pvt ltd., there are four categories of employees: Category A, B, C and D. No\n                            employee\n                            has a basic salary less than 2 lakhs. If TDS is deducted from the employees\u2019 salary, it is\n                            deducted at 10% of\n                            the basic salary. If GST is paid to an employee, it is paid at 18% of the basic salary. Also\n                            it is known that:\n                            Category A employees have their basic salary less than 5 lakhs but not less than 2 lakhs and\n                            neither TDS\n                            is deducted from their salaries nor they are paid the GST.\n                            Category B employees who have their basic salary less than 10 lakhs but not less than 5\n                            lakhs are paid the\n                            GST but no TDS is deducted from their salaries.\n                            Category C employees who have their basic salary less than 20 lakhs but not less than 10\n                            lakhs are not paid\n                            the GST but TDS is deducted from their salaries.\n                            Category D employees who have their basic salary not less than 20 lakhs are paid the GST and\n                            TDS too\n                            is deducted from their salaries.\n                            Net salary is the final salary after deducting TDS (wherever applicable) and/or including\n                            GST (wherever\n                            applicable). The basic salary and the net salary of each employee is an integral multiple of\n                            1000.",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  Which of the following\n                            CAN be the net salary of a Category B employee?",
+            "options": [
+                "7,08,000",
+                "6,80,000",
+                "7,20,000",
+                "7,10,715"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873179/39s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10 : Answer the\n                        questions on the basis of the information given below.\n                        In an 'ABC' tuition classes, the performance of 22 students of a batch is represented by their\n                        teacher in the form of a matrix having two rows, 1 and 2, from top to bottom and 11 columns\n                        numbered as 1, 2, 3, 4,..., 11, from left to right. Every student knows which cell of matrix\n                        represents his performance. This matrix is filled with numbers from 1 to 22 to represent the\n                        ranking of these 22 students in the class.\n                        Some points that teacher has to keep in mind, while filling this matrix, are as follows:\n                        \u2022 No two even or odd numbers can be in the same column.\n                        \u2022 All the even multiples of 3 should be in consecutive columns with in the same row, and the\n                        same follows for all the odd multiples of 3.\n                        \u2022 1 and 3 should be in column 1 and column 11.\n                        \u2022 There should be exactly one column between the column having number 3 and the column having\n                        number 12.\n                        \u2022 21 is in the 1st row and 9th column.\n                        \u2022 14 and 22 should be in the same row and there should be 6 columns between the column having\n                        number 14 and the column having number 22.\n                        \u2022 All multiples of 4 (except 12) should be in consecutive columns. Same holds true for 5 and\n                        10.\n                        \u2022 All multiples of 5, 10 and 4 (except 12) should be in the same row.\n                        \u2022 Sum of the numbers in the 1st column is the second highest prime number and that of in 3rd\n                        column is the highest prime number less than 31.",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  What is the sum of the\n                        numbers in the second row?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873180/40s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10 : Answer the\n                    questions on the basis of the information given below.\n                    In an 'ABC' tuition classes, the performance of 22 students of a batch is represented by their\n                    teacher in the form of a matrix having two rows, 1 and 2, from top to bottom and 11 columns numbered\n                    as 1, 2, 3, 4,..., 11, from left to right. Every student knows which cell of matrix represents his\n                    performance. This matrix is filled with numbers from 1 to 22 to represent the ranking of these 22\n                    students in the class.\n                    Some points that teacher has to keep in mind, while filling this matrix, are as follows:\n                    \u2022 No two even or odd numbers can be in the same column.\n                    \u2022 All the even multiples of 3 should be in consecutive columns with in the same row, and the same\n                    follows for all the odd multiples of 3.\n                    \u2022 1 and 3 should be in column 1 and column 11.\n                    \u2022 There should be exactly one column between the column having number 3 and the column having number\n                    12.\n                    \u2022 21 is in the 1st row and 9th column.\n                    \u2022 14 and 22 should be in the same row and there should be 6 columns between the column having number\n                    14 and the column having number 22.\n                    \u2022 All multiples of 4 (except 12) should be in consecutive columns. Same holds true for 5 and 10.\n                    \u2022 All multiples of 5, 10 and 4 (except 12) should be in the same row.\n                    \u2022 Sum of the numbers in the 1st column is the second highest prime number and that of in 3rd column\n                    is the highest prime number less than 31.",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  What are the numbers in\n                    column 7?",
+            "options": [
+                "15 and 14",
+                "5 and 2",
+                "5 and 14",
+                "10 and 19"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873181/41s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10 : Answer the\n                questions on the basis of the information given below.\n                In an 'ABC' tuition classes, the performance of 22 students of a batch is represented by their teacher\n                in the form of a matrix having two rows, 1 and 2, from top to bottom and 11 columns numbered as 1, 2, 3,\n                4,..., 11, from left to right. Every student knows which cell of matrix represents his performance. This\n                matrix is filled with numbers from 1 to 22 to represent the ranking of these 22 students in the class.\n                Some points that teacher has to keep in mind, while filling this matrix, are as follows:\n                \u2022 No two even or odd numbers can be in the same column.\n                \u2022 All the even multiples of 3 should be in consecutive columns with in the same row, and the same\n                follows for all the odd multiples of 3.\n                \u2022 1 and 3 should be in column 1 and column 11.\n                \u2022 There should be exactly one column between the column having number 3 and the column having number\n                12.\n                \u2022 21 is in the 1st row and 9th column.\n                \u2022 14 and 22 should be in the same row and there should be 6 columns between the column having number 14\n                and the column having number 22.\n                \u2022 All multiples of 4 (except 12) should be in consecutive columns. Same holds true for 5 and 10.\n                \u2022 All multiples of 5, 10 and 4 (except 12) should be in the same row.\n                \u2022 Sum of the numbers in the 1st column is the second highest prime number and that of in 3rd column is\n                the highest prime number less than 31.",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  What is the sum of the numbers\n                in column 10?",
+            "options": [
+                "15",
+                "27",
+                "15 or 27",
+                "27 or 21"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873182/42s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10 : Answer the\n                questions on the basis of the information given below.\n                In an 'ABC' tuition classes, the performance of 22 students of a batch is represented by their teacher\n                in the form of a matrix having two rows, 1 and 2, from top to bottom and 11 columns numbered as 1, 2, 3,\n                4,..., 11, from left to right. Every student knows which cell of matrix represents his performance. This\n                matrix is filled with numbers from 1 to 22 to represent the ranking of these 22 students in the class.\n                Some points that teacher has to keep in mind, while filling this matrix, are as follows:\n                \u2022 No two even or odd numbers can be in the same column.\n                \u2022 All the even multiples of 3 should be in consecutive columns with in the same row, and the same\n                follows for all the odd multiples of 3.\n                \u2022 1 and 3 should be in column 1 and column 11.\n                \u2022 There should be exactly one column between the column having number 3 and the column having number\n                12.\n                \u2022 21 is in the 1st row and 9th column.\n                \u2022 14 and 22 should be in the same row and there should be 6 columns between the column having number 14\n                and the column having number 22.\n                \u2022 All multiples of 4 (except 12) should be in consecutive columns. Same holds true for 5 and 10.\n                \u2022 All multiples of 5, 10 and 4 (except 12) should be in the same row.\n                \u2022 Sum of the numbers in the 1st column is the second highest prime number and that of in 3rd column is\n                the highest prime number less than 31.",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  If 11 is in column 2, and 17\n                and 2 are next to each other, then 7 can be in which column?",
+            "options": [
+                "4",
+                "6",
+                "3",
+                "1"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776709/1617339/10es.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10 : Answer the\n                questions on the basis of the information given below.\n                In an 'ABC' tuition classes, the performance of 22 students of a batch is represented by their teacher\n                in the form of a matrix having two rows, 1 and 2, from top to bottom and 11 columns numbered as 1, 2, 3,\n                4,..., 11, from left to right. Every student knows which cell of matrix represents his performance. This\n                matrix is filled with numbers from 1 to 22 to represent the ranking of these 22 students in the class.\n                Some points that teacher has to keep in mind, while filling this matrix, are as follows:\n                \u2022 No two even or odd numbers can be in the same column.\n                \u2022 All the even multiples of 3 should be in consecutive columns with in the same row, and the same\n                follows for all the odd multiples of 3.\n                \u2022 1 and 3 should be in column 1 and column 11.\n                \u2022 There should be exactly one column between the column having number 3 and the column having number\n                12.\n                \u2022 21 is in the 1st row and 9th column.\n                \u2022 14 and 22 should be in the same row and there should be 6 columns between the column having number 14\n                and the column having number 22.\n                \u2022 All multiples of 4 (except 12) should be in consecutive columns. Same holds true for 5 and 10.\n                \u2022 All multiples of 5, 10 and 4 (except 12) should be in the same row.\n                \u2022 Sum of the numbers in the 1st column is the second highest prime number and that of in 3rd column is\n                the highest prime number less than 31.",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  Which of the following can be the\n                correct order of the columns as per the sum of the numbers in the columns?",
+            "options": [
+                "Column 1 < Column 6 < Column 9 < Column 5",
+                "Column 10 < Column 11 < Column 3 < Column 8",
+                "Column 1 < Column 10 < Column 9 < Column 3",
+                "Column 5 < Column 6 < Column 4 < Column 2"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873199/59s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15 : Refer to the data\n                below and answer the questions that follows:\n                Recently, six bollywood film actors - Varun, Siddharth, Ranveer, Ranbir, Farhan and Vicky - signed a\n                movie project with six different directors - Abbas, Rakesh, Imitiaz, Zoya, Mastan and Suraj - not\n                necessarily in the same order. With each actor, one actress out of six different actresses - Alia,\n                Deepika, Priyanka, Anushka, Vidya and Kareena - signed for the similar project for 6 different movies -\n                Abhimaan, Sholay 2, Badnasib, Farz, Don 3 and Naam - not necessarily in the same order.\n                Further details known to us are:\n                I. Siddharth will work in a movie directed by Mastan but he signed the project with neither Kareena nor\n                Anushka.\n                II. Ranbir and Varun signed the project with neither Deepika nor Priyanka but they are going to work\n                with the directors Abbas and Suraj respectively.\n                III. Naam and Badnasib will feature Kareena and Deepika and the movie will be directed by Mastan and\n                Zoya, in any order.\n                IV. Farhan will work in Don 3 and Ranveer in Sholay 2.\n                V. Farhan is not going to work with Rakesh.",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  Vicky signed the movie\n                project with which director?",
+            "options": [
+                "Rakesh",
+                "Imitiaz",
+                "Zoya",
+                "Suraj"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873200/60s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15 : Refer to the data\n                below and answer the questions that follows:\n                Recently, six bollywood film actors - Varun, Siddharth, Ranveer, Ranbir, Farhan and Vicky - signed a\n                movie project with six different directors - Abbas, Rakesh, Imitiaz, Zoya, Mastan and Suraj - not\n                necessarily in the same order. With each actor, one actress out of six different actresses - Alia,\n                Deepika, Priyanka, Anushka, Vidya and Kareena - signed for the similar project for 6 different movies -\n                Abhimaan, Sholay 2, Badnasib, Farz, Don 3 and Naam - not necessarily in the same order.\n                Further details known to us are:\n                I. Siddharth will work in a movie directed by Mastan but he signed the project with neither Kareena nor\n                Anushka.\n                II. Ranbir and Varun signed the project with neither Deepika nor Priyanka but they are going to work\n                with the directors Abbas and Suraj respectively.\n                III. Naam and Badnasib will feature Kareena and Deepika and the movie will be directed by Mastan and\n                Zoya, in any order.\n                IV. Farhan will work in Don 3 and Ranveer in Sholay 2.\n                V. Farhan is not going to work with Rakesh.",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Which movie was directed by\n                Imitiaz?",
+            "options": [
+                "Don 3",
+                "Sholay 2",
+                "Naam",
+                "Abhimaan"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873201/61s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15 : Refer to the data\n                below and answer the questions that follows:\n                Recently, six bollywood film actors - Varun, Siddharth, Ranveer, Ranbir, Farhan and Vicky - signed a\n                movie project with six different directors - Abbas, Rakesh, Imitiaz, Zoya, Mastan and Suraj - not\n                necessarily in the same order. With each actor, one actress out of six different actresses - Alia,\n                Deepika, Priyanka, Anushka, Vidya and Kareena - signed for the similar project for 6 different movies -\n                Abhimaan, Sholay 2, Badnasib, Farz, Don 3 and Naam - not necessarily in the same order.\n                Further details known to us are:\n                I. Siddharth will work in a movie directed by Mastan but he signed the project with neither Kareena nor\n                Anushka.\n                II. Ranbir and Varun signed the project with neither Deepika nor Priyanka but they are going to work\n                with the directors Abbas and Suraj respectively.\n                III. Naam and Badnasib will feature Kareena and Deepika and the movie will be directed by Mastan and\n                Zoya, in any order.\n                IV. Farhan will work in Don 3 and Ranveer in Sholay 2.\n                V. Farhan is not going to work with Rakesh.",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  If Vidya will work against\n                Ranbir, then Anushka can be featured in which movie?",
+            "options": [
+                "The one which will feature Ranveer",
+                "the one directed by Abbas",
+                "The one which will feature Siddharth",
+                "The one which will feature Vicky"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873202/62s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15 : Refer to the data\n                below and answer the questions that follows:\n                Recently, six bollywood film actors - Varun, Siddharth, Ranveer, Ranbir, Farhan and Vicky - signed a\n                movie project with six different directors - Abbas, Rakesh, Imitiaz, Zoya, Mastan and Suraj - not\n                necessarily in the same order. With each actor, one actress out of six different actresses - Alia,\n                Deepika, Priyanka, Anushka, Vidya and Kareena - signed for the similar project for 6 different movies -\n                Abhimaan, Sholay 2, Badnasib, Farz, Don 3 and Naam - not necessarily in the same order.\n                Further details known to us are:\n                I. Siddharth will work in a movie directed by Mastan but he signed the project with neither Kareena nor\n                Anushka.\n                II. Ranbir and Varun signed the project with neither Deepika nor Priyanka but they are going to work\n                with the directors Abbas and Suraj respectively.\n                III. Naam and Badnasib will feature Kareena and Deepika and the movie will be directed by Mastan and\n                Zoya, in any order.\n                IV. Farhan will work in Don 3 and Ranveer in Sholay 2.\n                V. Farhan is not going to work with Rakesh.",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  If Vidya will work with\n                neither Imitiaz nor Abbas, Farhan will not work with Anushka, and Abhimaan will feature neither Varun\n                nor Alia, then which of the following is definitely false?",
+            "options": [
+                "Farz will be directed by Suraj and will feature\n                Vidya and Varun.",
+                "Ranbir will work with Anushka and Abbas, who directed\n                movie Abhimaan.",
+                "Movie Abhimaan, to be directed by Suraj, will feature\n                Anushka.",
+                "Vicky will be featured in the movie Badnasib, directed by\n                Zoya."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776709/1617344/15s.jpg\"><br>"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15 : Refer to the data\n                below and answer the questions that follows:\n                Recently, six bollywood film actors - Varun, Siddharth, Ranveer, Ranbir, Farhan and Vicky - signed a\n                movie project with six different directors - Abbas, Rakesh, Imitiaz, Zoya, Mastan and Suraj - not\n                necessarily in the same order. With each actor, one actress out of six different actresses - Alia,\n                Deepika, Priyanka, Anushka, Vidya and Kareena - signed for the similar project for 6 different movies -\n                Abhimaan, Sholay 2, Badnasib, Farz, Don 3 and Naam - not necessarily in the same order.\n                Further details known to us are:\n                I. Siddharth will work in a movie directed by Mastan but he signed the project with neither Kareena nor\n                Anushka.\n                II. Ranbir and Varun signed the project with neither Deepika nor Priyanka but they are going to work\n                with the directors Abbas and Suraj respectively.\n                III. Naam and Badnasib will feature Kareena and Deepika and the movie will be directed by Mastan and\n                Zoya, in any order.\n                IV. Farhan will work in Don 3 and Ranveer in Sholay 2.\n                V. Farhan is not going to work with Rakesh.",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  Which of the following actresses\n                definitely does not work with Suraj?",
+            "options": [
+                "Priyanka",
+                "Alia",
+                "Anushka",
+                "Vidya"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873195/55s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20 : Answer the\n                questions on the basis of the information given below.\n                Four players play 10 rounds, R1 through R10, of a game in such a manner that in every round each player\n                gets a different rank from 1 to 4. Moreover a player gets each of the four ranks in at least two rounds\n                and\n                in at most three rounds, out of these 10 rounds. Following table gives us the rank obtained by each\n                player\n                in each of the 10 rounds. It also gives us the sum of the ranks got by the each player in the 10 rounds.\n                Some values in the table have been replaced by letters intentionally.\n                \n            ",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  What is the value of (B + C)?\n            ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873196/56s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20 : Answer the\n                questions on the basis of the information given below.\n                Four players play 10 rounds, R1 through R10, of a game in such a manner that in every round each player\n                gets a different rank from 1 to 4. Moreover a player gets each of the four ranks in at least two rounds\n                and\n                in at most three rounds, out of these 10 rounds. Following table gives us the rank obtained by each\n                player\n                in each of the 10 rounds. It also gives us the sum of the ranks got by the each player in the 10 rounds.\n                Some values in the table have been replaced by letters intentionally.\n                \n            ",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  What is the absolute\n                difference between the values of J and P?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873197/57s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20 : Answer the\n                questions on the basis of the information given below.\n                Four players play 10 rounds, R1 through R10, of a game in such a manner that in every round each player\n                gets a different rank from 1 to 4. Moreover a player gets each of the four ranks in at least two rounds\n                and\n                in at most three rounds, out of these 10 rounds. Following table gives us the rank obtained by each\n                player\n                in each of the 10 rounds. It also gives us the sum of the ranks got by the each player in the 10 rounds.\n                Some values in the table have been replaced by letters intentionally.\n                \n            ",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  If the value of M is 1, then\n                what is the value of F?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773328/873198/58s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20 : Answer the\n                questions on the basis of the information given below.\n                Four players play 10 rounds, R1 through R10, of a game in such a manner that in every round each player\n                gets a different rank from 1 to 4. Moreover a player gets each of the four ranks in at least two rounds\n                and\n                in at most three rounds, out of these 10 rounds. Following table gives us the rank obtained by each\n                player\n                in each of the 10 rounds. It also gives us the sum of the ranks got by the each player in the 10 rounds.\n                Some values in the table have been replaced by letters intentionally.\n                \n            ",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  For how many rounds, out of\n                the 10, is it possible to uniquely determine the rank of each and every\n                player?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776709/1617350/20s.jpg\"><br><br><br><br>"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20 : Answer the\n                questions on the basis of the information given below.\n                Four players play 10 rounds, R1 through R10, of a game in such a manner that in every round each player\n                gets a different rank from 1 to 4. Moreover a player gets each of the four ranks in at least two rounds\n                and\n                in at most three rounds, out of these 10 rounds. Following table gives us the rank obtained by each\n                player\n                in each of the 10 rounds. It also gives us the sum of the ranks got by the each player in the 10 rounds.\n                Some values in the table have been replaced by letters intentionally.\n                \n            ",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  If Player 1 gets the same rank in\n                Round 7 as in Round 1 and Player 2 gets the same rank in Round 6 as in Round 1, then which of the\n                following statements is TRUE?",
+            "options": [
+                "Player 1 gets the first rank in the last round.",
+                "Player 1 gets the last rank in the last round.",
+                "Player 2 gets the same rank in Round 6 and Round 7",
+                "Player 4 gets Rank 1 in three rounds."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

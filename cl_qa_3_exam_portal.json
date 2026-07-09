@@ -1,0 +1,453 @@
+{
+    "name": "QA 03 - 2023",
+    "sections": {
+        "QA": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020",
+            "20021",
+            "20022"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tHow many real solutions will the following system of equations\n\t\t\t\t\t\t\t\t\t\t\t\t\thave:\n\t\t\t\t\t\t\t\t\t\t\t\t\t(X \u2013 3)2 + (Y \u2013 4)2 = 16;\n\t\t\t\t\t\t\t\t\t\t\t\t\tX + Y + 2 = 0",
+            "options": [
+                "1",
+                "2",
+                "More than 2 solutions",
+                "No solutions"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b>"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\tFind the maximum value of (A + B + C) such that A, B, C are prime\n\t\t\t\t\t\t\t\t\t\t\t\tnumbers and AB + BC + CA =\n\t\t\t\t\t\t\t\t\t\t\t\t360.",
+            "options": [
+                "24",
+                "30",
+                "45",
+                "Not possible"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811678/75s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  A person\n\t\t\t\t\t\t\t\t\t\tcan complete a job in 128 days. He started working alone on Monday. On Tuesday,\n\t\t\t\t\t\t\t\t\t\the was joined by another person who can complete the same job in 64 days. On\n\t\t\t\t\t\t\t\t\t\tWednesday, these\n\t\t\t\t\t\t\t\t\t\t2 were joined by a 3rd person who can complete the same job in 32 days, and so\n\t\t\t\t\t\t\t\t\t\ton. If Sunday is\n\t\t\t\t\t\t\t\t\t\ta holiday, on which day would the job get completed?",
+            "options": [
+                "Tuesday",
+                "Monday",
+                "Saturday",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811701/98s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  How many litres\n\t\t\t\t\t\t\t\t\tof water needs to be added to 14 litres of solution, having milk and water in ratio\n\t\t\t\t\t\t\t\t\t4 : 3, such that the resultant solution has milk and water in ratio 1 : 2?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  A certain\n\t\t\t\t\t\t\t\tsoft-drink is sold in a cylindrical can. The company reduced the diameter of the can by\n\t\t\t\t\t\t\t\t10% but continued to fill the can of soft-drink to the same height as before. If the can\n\t\t\t\t\t\t\t\tof soft-drink\n\t\t\t\t\t\t\t\tis sold at the same price as before, what is the increase in profit percentage that the\n\t\t\t\t\t\t\t\tcompany will\n\t\t\t\t\t\t\t\tmake per can?",
+            "options": [
+                "19%",
+                "21%",
+                "23.47%",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br>"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  If f(x) = x2\n\t\t\t\t\t\t\t+ 1 and g(x) = 2x \u2013 3 be two functions, then find value of f[g(f(g(f(x))))] +\n\t\t\t\t\t\t\tg[f(g(f(g(x))))] at x = 1.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811682/79s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  ABC is a triangle inscribed\n\t\t\t\t\t\tin a semicircle with BC as its diameter. If further two semicircles are\n\t\t\t\t\t\tdrawn taking AB and AC as their diameters as shown below, then which of the following represents\n\t\t\t\t\t\tthe area of the shaded region?",
+            "options": [
+                "Area of \u0394ABC",
+                "Twice the area of \u0394ABC",
+                "Area of semicircle BAC",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819477/78s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  a, b, c, and d are one of the\n\t\t\t\t\tdigits 1, 3, 5, or 7, with each digit used only once. How many different\n\t\t\t\t\tvalues of a \u00d7 b + c \u00d7 d can be obtained?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819473/74s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  Simple interest is applied to a\n\t\t\t\t\tcertain sum of money at 10% per annum and 5% per annum for\n\t\t\t\t\tevery alternate years starting with 10%. In which year the amount will be at least\n\t\t\t\t\tthrice of the original sum? (Type in 0, if it cannot be determined)",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811680/77s.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  A boat has a maximum capacity\n\t\t\t\t\tto carry 1200 kg. There are 20 children and 20 adults waiting on the\n\t\t\t\t\triver bank to cross the river in the boat. Each child weighs 30kg and each adult weighs 50kg. Ten of\n\t\t\t\t\tthe children are also carrying a school bag weighing 5kg. If every child on the boat must be\n\t\t\t\t\taccompanied\n\t\t\t\t\tby an adult, what is the maximum number of people who can board the boat?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795487/85s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  If N = 2197P \u00d7\n\t\t\t\t\t1442 \u00d7 2R \u00d7 3S is the perfect cube of a natural number, where P, R\n\t\t\t\t\tand S are\n\t\t\t\t\tdistinct positive integers, then find the minimum value of (P + R + S).",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br><br>"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Aroop leaves from Mumbai\n\t\t\t\t\ttowards Goa, having a distance of 600 km, by his car. He travels at a\n\t\t\t\t\tspeed of 50 km/hr for the first 6 hours and completes the remaining journey at a speed of 100 km/\n\t\t\t\t\thr. If he returns from Goa to Mumbai at an average speed of 80 km/hr, then time taken by him during\n\t\t\t\t\tthe return journey is how much more/less than that of his journey from Mumbai to Goa?",
+            "options": [
+                "1 hr more",
+                "1.5 hr more",
+                "1.5 hr less",
+                "1 hr less"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819483/84s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  50% of the students in a class\n\t\t\t\t\tare girls. One-third of these girls are from Mumbai. Two-thirds of the\n\t\t\t\t\tgirls from Mumbai scored at least 70% in Science. The number of boys in the class should be at\n\t\t\t\t\tleast",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819488/89s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  ",
+            "options": [
+                "1/2",
+                "1/4",
+                "4",
+                "8"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811696/93s.gif\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  Find the number of integral\n\t\t\t\t\tsolutions of the equation 2x \u2013 y + z = 20, where x \u2265 1, z \u2265 1 and y \u2264 18.",
+            "options": [
+                "380",
+                "306",
+                "342",
+                "190"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819484/85s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  A in 10 days completes\n\t\t\t\t\ttwo-third of the work, B in 10 days completes one-half of the work and C in\n\t\t\t\t\t10 days completes two-fifth of the work. A and B starts the work together and C plans to join them\n\t\t\t\t\tlater. On which day should C must join so that the work gets completed on 7th day?",
+            "options": [
+                "Day 1",
+                "Day 2",
+                "Day 3",
+                "Day 4"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811679/76s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  The square of the fourth term\n\t\t\t\t\tof an AP is equal to half of the product of its second and sixteenth\n\t\t\t\t\tterm. Which of the following can be the ratio of the first term and the common difference of the AP?\n\t\t\t",
+            "options": [
+                "1 : 1",
+                "3 : 1",
+                "4 : 3",
+                "Both (1) and (2)"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811672/69s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  An equilateral triangle ABC is\n\t\t\t\t\tinscribed in a regular hexagon as shown in the figure below. Find the ratio of the length of\n\t\t\t\t\tinradius of \u0394ABC to that of the side of the hexagon.",
+            "options": [
+                "1 : 2",
+                "2 : 1",
+                "1 : \u221a3",
+                "\u221a3 : 1"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811699/96s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  \u2018n\u2019 is a positive integer\n\t\t\t\t\twhich has at least two prime factors. If the product of all the unique positive divisors of n is\n\t\t\t\t\tn3, then the product of all the unique positive divisors of n2 is",
+            "options": [
+                "n3",
+                "n6",
+                "n12",
+                "n15"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795476/74s.gif\">"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  Arun\u2019s present age is 25% of\n\t\t\t\t\tBarun\u2019s present age. After some years, Arun\u2019s age will become 70%\n\t\t\t\t\tof Barun\u2019s age at that time. By what percent will Barun\u2019s age increase during this period?",
+            "options": [
+                "200",
+                "150",
+                "100",
+                "125"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811691/88s.gif\">"
+        },
+        "20021": {
+            "id": "20021",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.21 [11916616]  In a right angled triangle\n\t\t\t\t\tABC, right angled at B, angular bisector and median drawn from B intersect AC at X and Y\n\t\t\t\t\trespectively. If the distance between X and Y is 7/2 cm, and AC is 49 cm, find the approximate area\n\t\t\t\t\tof triangle ABC.",
+            "options": [
+                "35",
+                "576",
+                "525",
+                "23"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811687/84s.gif\">"
+        },
+        "20022": {
+            "id": "20022",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.22 [11916616]  When a rectangular sheet is\n\t\t\t\t\ttrisected along its length, the new length and breadth has the same\n\t\t\t\t\tratio as of the original rectangle and the same process continues infinitely. If the area of the\n\t\t\t\t\toriginal\n\t\t\t\t\trectangle is 36 sq. units, then find the sum of areas of all such rectangles (including the original\n\t\t\t\t\trectangle).",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

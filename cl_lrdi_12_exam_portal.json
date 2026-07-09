@@ -1,0 +1,419 @@
+{
+    "name": "DILR 12 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n                                                    1 to 5: Answer the questions on the basis of the information\n                                                given below.\n\n                                                Six companies - EY, KPMG, Deloitte, PwC, Gartner and BCG - went to 8\n                                                different colleges - A1, A2, ..., A8 - to hire the students. The number\n                                                of students hired from a college is different for every company. The\n                                                table shown below comprised the number of students hired from the\n                                                colleges by the 6 companies. However, some cells in the table are left\n                                                blank intentionally. But it is known that these values were either 0,1\n                                                or 3.\n                                                1. Only EY and KPMG hired different number of students from each\n                                                college.\n                                                2. The total number of students hired by all these companies from\n                                                college A3 was 13 more than that from college A4.\n                                                3. Deloitte hired at least one student from each of these eight\n                                                colleges.\n                                                4. Deloitte hired more students than what BCG hired but less students\n                                                than what KPMG hired. \n                                                5. Sum of the number of students hired by PwC from A1, A4 and A8 is\n                                                equal to the number of students hired by Deloitte from A7 alone.\n                                                6. Total number of students hired from the college A5 by all the six\n                                                companies was 1 more than the total number of students hired by PwC from\n                                                all the eight colleges. Similarly, the total number of students hired\n                                                from the college A3 was 3 more than the total number of students hired\n                                                by BCG from all the 8 colleges.",
+            "question_text": "\u00a0\u00a0Q.1 [11916616]  If\n                                                BCG hired same number of students from colleges A6 and A7, then how many\n                                                students did PwC hire from college A2? ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858321/40ss.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n                                                5: Answer the questions on the basis of the information given\n                                            below.\n\n                                            Six companies - EY, KPMG, Deloitte, PwC, Gartner and BCG - went to 8\n                                            different colleges - A1, A2, ..., A8 - to hire the students. The number of\n                                            students hired from a college is different for every company. The table\n                                            shown below comprised the number of students hired from the colleges by the\n                                            6 companies. However, some cells in the table are left blank intentionally.\n                                            But it is known that these values were either 0,1 or 3.\n                                            1. Only EY and KPMG hired different number of students from each\n                                            college.\n                                            2. The total number of students hired by all these companies from college A3\n                                            was 13 more than that from college A4.\n                                            3. Deloitte hired at least one student from each of these eight\n                                            colleges.\n                                            4. Deloitte hired more students than what BCG hired but less students than\n                                            what KPMG hired. \n                                            5. Sum of the number of students hired by PwC from A1, A4 and A8 is equal to\n                                            the number of students hired by Deloitte from A7 alone.\n                                            6. Total number of students hired from the college A5 by all the six\n                                            companies was 1 more than the total number of students hired by PwC from all\n                                            the eight colleges. Similarly, the total number of students hired from the\n                                            college A3 was 3 more than the total number of students hired by BCG from\n                                            all the 8 colleges.",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  What\n                                            is the total number of students hired by all the companies taken together?\n                                        ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858322/41s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                    Answer the questions on the basis of the information given below.\n\n                                    Six companies - EY, KPMG, Deloitte, PwC, Gartner and BCG - went to 8 different\n                                    colleges - A1, A2, ..., A8 - to hire the students. The number of students hired from\n                                    a college is different for every company. The table shown below comprised the number\n                                    of students hired from the colleges by the 6 companies. However, some cells in the\n                                    table are left blank intentionally. But it is known that these values were either\n                                    0,1 or 3.\n                                    1. Only EY and KPMG hired different number of students from each college.\n                                    2. The total number of students hired by all these companies from college A3 was 13\n                                    more than that from college A4.\n                                    3. Deloitte hired at least one student from each of these eight colleges.\n                                    4. Deloitte hired more students than what BCG hired but less students than what KPMG\n                                    hired. \n                                    5. Sum of the number of students hired by PwC from A1, A4 and A8 is equal to the\n                                    number of students hired by Deloitte from A7 alone.\n                                    6. Total number of students hired from the college A5 by all the six companies was 1\n                                    more than the total number of students hired by PwC from all the eight colleges.\n                                    Similarly, the total number of students hired from the college A3 was 3 more than\n                                    the total number of students hired by BCG from all the 8 colleges.",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  If 17\n                                    students, out of those hired by BCG, switch to EY and KPMG next year in such a way\n                                    that the new ratio of total number of students in EY and KPMG becomes 27 : 23, then\n                                    the number of students switched to EY is how much less than those who switched to\n                                    KPMG? ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858323/42s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                Answer the questions on the basis of the information given below.\n\n                                Six companies - EY, KPMG, Deloitte, PwC, Gartner and BCG - went to 8 different colleges\n                                - A1, A2, ..., A8 - to hire the students. The number of students hired from a college is\n                                different for every company. The table shown below comprised the number of students\n                                hired from the colleges by the 6 companies. However, some cells in the table are left\n                                blank intentionally. But it is known that these values were either 0,1 or 3.\n                                1. Only EY and KPMG hired different number of students from each college.\n                                2. The total number of students hired by all these companies from college A3 was 13 more\n                                than that from college A4.\n                                3. Deloitte hired at least one student from each of these eight colleges.\n                                4. Deloitte hired more students than what BCG hired but less students than what KPMG\n                                hired. \n                                5. Sum of the number of students hired by PwC from A1, A4 and A8 is equal to the number\n                                of students hired by Deloitte from A7 alone.\n                                6. Total number of students hired from the college A5 by all the six companies was 1\n                                more than the total number of students hired by PwC from all the eight colleges.\n                                Similarly, the total number of students hired from the college A3 was 3 more than the\n                                total number of students hired by BCG from all the 8 colleges.",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  After a year, when\n                                progress reports of all these companies came, it was observed that Deloitte earned the\n                                maximum profit. Inspired by which PwC observed Deloitte\u2019s recruitment pattern to\n                                increase its own profit.\n                                Now PwC also wants its employees numbers in such a way that there will be different\n                                number of students recruited from each college and also wants at least one student from\n                                each college. What is the minimum number of students PwC needs to hire more to fulfill\n                                this criteria?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776707/1616593/1ss.gif\">"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer\n                            the questions on the basis of the information given below.\n\n                            Six companies - EY, KPMG, Deloitte, PwC, Gartner and BCG - went to 8 different colleges -\n                            A1, A2, ..., A8 - to hire the students. The number of students hired from a college is\n                            different for every company. The table shown below comprised the number of students hired\n                            from the colleges by the 6 companies. However, some cells in the table are left blank\n                            intentionally. But it is known that these values were either 0,1 or 3.\n                            1. Only EY and KPMG hired different number of students from each college.\n                            2. The total number of students hired by all these companies from college A3 was 13 more\n                            than that from college A4.\n                            3. Deloitte hired at least one student from each of these eight colleges.\n                            4. Deloitte hired more students than what BCG hired but less students than what KPMG hired.\n                            \n                            5. Sum of the number of students hired by PwC from A1, A4 and A8 is equal to the number of\n                            students hired by Deloitte from A7 alone.\n                            6. Total number of students hired from the college A5 by all the six companies was 1 more\n                            than the total number of students hired by PwC from all the eight colleges. Similarly, the\n                            total number of students hired from the college A3 was 3 more than the total number of\n                            students hired by BCG from all the 8 colleges.\n                        ",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  How many students did\n                            Gartner hire from A5 and A8 together?",
+            "options": [
+                "0",
+                "6",
+                "Either (1) or (2)",
+                "3"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br><br><br><br><br>"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for question 6 to 10: Answer the\n                        questions on the basis of the information given below.\n\n                        As the election time is around the corner in the country, all political parties wanted to entice\n                        the people to cast their votes in favour of their party. For which they wanted to analyse the\n                        country's progress in terms of equality in the past few years. Hence an index has been developed\n                        by some statisticians to measure the discrimination ratio among the various castes to improve\n                        the overall development of country. For this, the detailed information about the population of\n                        different categories for five different years has been provided. \n                        The line chart shown below provides the information about the population of country in five\n                        years:\n                        The\n                        pie charts shown below provide the break up of the total population of a particular year based\n                        on their religions and class respectively:\n                    ",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  Suppose the given pie\n                        charts are valid only for the year 2015.\n                        If during 2015, 10% of Lower Class population upgrade themselves to Lower Middle Class and 5% of\n                        Lower Middle Class people upgrade themselves to Upper Middle Class, then what is the difference\n                        between the final percentage of the Lower Middle Class population in 2016 and the initial\n                        percentage of Lower Middle Class population in 2015?",
+            "options": [
+                "4.00%",
+                "4.25%",
+                "4.50%",
+                "4.75%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br><br><br><br><br><br>"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for question 6 to 10: Answer the\n                    questions on the basis of the information given below.\n\n                    As the election time is around the corner in the country, all political parties wanted to entice the\n                    people to cast their votes in favour of their party. For which they wanted to analyse the country's\n                    progress in terms of equality in the past few years. Hence an index has been developed by some\n                    statisticians to measure the discrimination ratio among the various castes to improve the overall\n                    development of country. For this, the detailed information about the population of different\n                    categories for five different years has been provided. \n                    The line chart shown below provides the information about the population of country in five\n                    years:\n                    The pie\n                    charts shown below provide the break up of the total population of a particular year based on their\n                    religions and class respectively:\n                ",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  Suppose that the given pie\n                    chart is valid for year 2013. If from 2013 to 2015, Muslims, Hindus and Christians grow respectively\n                    by 80%, 60% and 40% respectively, then what is the percentage change in the others community from\n                    2013 to 2015?",
+            "options": [
+                "5%",
+                "30%",
+                "40%",
+                "60%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864391/57s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for question 6 to 10: Answer the questions\n                on the basis of the information given below.\n\n                As the election time is around the corner in the country, all political parties wanted to entice the\n                people to cast their votes in favour of their party. For which they wanted to analyse the country's\n                progress in terms of equality in the past few years. Hence an index has been developed by some\n                statisticians to measure the discrimination ratio among the various castes to improve the overall\n                development of country. For this, the detailed information about the population of different categories\n                for five different years has been provided. \n                The line chart shown below provides the information about the population of country in five\n                years:\n                The pie\n                charts shown below provide the break up of the total population of a particular year based on their\n                religions and class respectively:\n            ",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  Suppose the given pie chart is\n                valid for the whole period of 2013-2017. If in the year 2013, 50% of Lower Class people were living\n                below poverty line and due to government's initiatives, every year that percentage decreases by 5\n                percentage points with respect to previous year, then what is the approximate percentage change in the\n                number of people living below poverty line during 2013-2017?",
+            "options": [
+                "40%",
+                "60%",
+                "32%",
+                "100%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br><br><br><br><br><br><br>"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for question 6 to 10: Answer the questions\n                on the basis of the information given below.\n\n                As the election time is around the corner in the country, all political parties wanted to entice the\n                people to cast their votes in favour of their party. For which they wanted to analyse the country's\n                progress in terms of equality in the past few years. Hence an index has been developed by some\n                statisticians to measure the discrimination ratio among the various castes to improve the overall\n                development of country. For this, the detailed information about the population of different categories\n                for five different years has been provided. \n                The line chart shown below provides the information about the population of country in five\n                years:\n                The pie\n                charts shown below provide the break up of the total population of a particular year based on their\n                religions and class respectively:\n            ",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  Suppose the given pie chart is\n                valid for 2017. If in the first half of 2017, due to Cholera attack in the country, 20% of Lower Class\n                people, 10% of Lower Middle Class people and 5% of Upper Middle class people die, then what will be the\n                new percentage of Upper Class people out of the remaining total population in 2017 after Cholera attack?\n            ",
+            "options": [
+                "11.0%",
+                "11.2%",
+                "14.0%",
+                "11.6%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br>"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for question 6 to 10: Answer the questions\n                on the basis of the information given below.\n\n                As the election time is around the corner in the country, all political parties wanted to entice the\n                people to cast their votes in favour of their party. For which they wanted to analyse the country's\n                progress in terms of equality in the past few years. Hence an index has been developed by some\n                statisticians to measure the discrimination ratio among the various castes to improve the overall\n                development of country. For this, the detailed information about the population of different categories\n                for five different years has been provided. \n                The line chart shown below provides the information about the population of country in five\n                years:\n                The pie\n                charts shown below provide the break up of the total population of a particular year based on their\n                religions and class respectively:\n            ",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  Suppose the given pie chart is\n                valid for 2014 and 5% of the country's population went abroad and got settled, out of which 50% were\n                Hindus. What percentage (approx) of Hindus settled abroad in 2014?",
+            "options": [
+                "6.33%",
+                "5.67%",
+                "5.25%",
+                "4.55%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858336/55s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                A builder wanted to divide a rectangular ground in smaller areas, which are in shape of rectangles, for\n                one of his clients. For this, he has drawn some parallel vertical lines so that the rectangle gets\n                divided into 5 columns. And also draws some parallel horizontal lines which divide the rectange into 4\n                rows and this whole procedure divides the ground in 4 \u00d7 5 smaller rectangular areas. These vertical and\n                horizontal parallel lines need not be equidistant from each other and hence the areas of the smaller\n                rectangular regions need not be same for every region.\n                \n                Based on this division and the distances between parallel lines, he calculated the areas of the so\n                formed rectangular regions and prepared a blueprint for the same in the form of a rectangular grid.\n                While presenting this blueprint to his client, he found out that he forgot to write some of the data and\n                had the following grid with him:The\n                rectangle represents the ground with smaller rectangles being the one made by those parallel lines.\n                Quantity written inside any rectangle represents the area (in sq. unit) of that rectangle. Also, this\n                quantity is denoted by Cij, where i represents the row number and j represents the column\n                number of that cell.\n            ",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  Values for how many alphabets,\n                written in the blueprint, cannot be found?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858337/56s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                A builder wanted to divide a rectangular ground in smaller areas, which are in shape of rectangles, for\n                one of his clients. For this, he has drawn some parallel vertical lines so that the rectangle gets\n                divided into 5 columns. And also draws some parallel horizontal lines which divide the rectange into 4\n                rows and this whole procedure divides the ground in 4 \u00d7 5 smaller rectangular areas. These vertical and\n                horizontal parallel lines need not be equidistant from each other and hence the areas of the smaller\n                rectangular regions need not be same for every region.\n                \n                Based on this division and the distances between parallel lines, he calculated the areas of the so\n                formed rectangular regions and prepared a blueprint for the same in the form of a rectangular grid.\n                While presenting this blueprint to his client, he found out that he forgot to write some of the data and\n                had the following grid with him:The\n                rectangle represents the ground with smaller rectangles being the one made by those parallel lines.\n                Quantity written inside any rectangle represents the area (in sq. unit) of that rectangle. Also, this\n                quantity is denoted by Cij, where i represents the row number and j represents the column\n                number of that cell.\n            ",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Find the value of (C23\n                + C41 \u2013 C43).",
+            "options": [
+                "\u20133",
+                "5",
+                "0",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858338/57s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                A builder wanted to divide a rectangular ground in smaller areas, which are in shape of rectangles, for\n                one of his clients. For this, he has drawn some parallel vertical lines so that the rectangle gets\n                divided into 5 columns. And also draws some parallel horizontal lines which divide the rectange into 4\n                rows and this whole procedure divides the ground in 4 \u00d7 5 smaller rectangular areas. These vertical and\n                horizontal parallel lines need not be equidistant from each other and hence the areas of the smaller\n                rectangular regions need not be same for every region.\n                \n                Based on this division and the distances between parallel lines, he calculated the areas of the so\n                formed rectangular regions and prepared a blueprint for the same in the form of a rectangular grid.\n                While presenting this blueprint to his client, he found out that he forgot to write some of the data and\n                had the following grid with him:The\n                rectangle represents the ground with smaller rectangles being the one made by those parallel lines.\n                Quantity written inside any rectangle represents the area (in sq. unit) of that rectangle. Also, this\n                quantity is denoted by Cij, where i represents the row number and j represents the column\n                number of that cell.\n            ",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  If 24 is written instead of 12 in\n                C14 and C23, then value of how many alphabets will be impacted?",
+            "options": [
+                "0",
+                "6",
+                "9",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858339/58s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                A builder wanted to divide a rectangular ground in smaller areas, which are in shape of rectangles, for\n                one of his clients. For this, he has drawn some parallel vertical lines so that the rectangle gets\n                divided into 5 columns. And also draws some parallel horizontal lines which divide the rectange into 4\n                rows and this whole procedure divides the ground in 4 \u00d7 5 smaller rectangular areas. These vertical and\n                horizontal parallel lines need not be equidistant from each other and hence the areas of the smaller\n                rectangular regions need not be same for every region.\n                \n                Based on this division and the distances between parallel lines, he calculated the areas of the so\n                formed rectangular regions and prepared a blueprint for the same in the form of a rectangular grid.\n                While presenting this blueprint to his client, he found out that he forgot to write some of the data and\n                had the following grid with him:The\n                rectangle represents the ground with smaller rectangles being the one made by those parallel lines.\n                Quantity written inside any rectangle represents the area (in sq. unit) of that rectangle. Also, this\n                quantity is denoted by Cij, where i represents the row number and j represents the column\n                number of that cell.\n            ",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  What is the number of factors of\n                the total area (in sq. unit) of the rectangular ground?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776707/1616599/15s.jpg\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                A builder wanted to divide a rectangular ground in smaller areas, which are in shape of rectangles, for\n                one of his clients. For this, he has drawn some parallel vertical lines so that the rectangle gets\n                divided into 5 columns. And also draws some parallel horizontal lines which divide the rectange into 4\n                rows and this whole procedure divides the ground in 4 \u00d7 5 smaller rectangular areas. These vertical and\n                horizontal parallel lines need not be equidistant from each other and hence the areas of the smaller\n                rectangular regions need not be same for every region.\n                \n                Based on this division and the distances between parallel lines, he calculated the areas of the so\n                formed rectangular regions and prepared a blueprint for the same in the form of a rectangular grid.\n                While presenting this blueprint to his client, he found out that he forgot to write some of the data and\n                had the following grid with him:The\n                rectangle represents the ground with smaller rectangles being the one made by those parallel lines.\n                Quantity written inside any rectangle represents the area (in sq. unit) of that rectangle. Also, this\n                quantity is denoted by Cij, where i represents the row number and j represents the column\n                number of that cell.\n            ",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  If the cost of plot D was Rs.16\n                lakh, then what will be the cost of plot H (in Rs. lakh)?",
+            "options": [
+                "96",
+                "100",
+                "92",
+                "108"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858340/59s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                There are five temples situated on the five islands in a sea in East - West direction in a row. Each\n                temple can be visited by boats only, as there is no other means available to connect the islands on\n                which these temples are situated. A lane connects two consecutive temples, situated in the row. Boats\n                have to follow a certain water lane to reach from one temple to the other and same for return journey\n                also. Deepak, after having a hectic schedule at work on a Friday, decided to visit these five temples on\n                his religious trip. He started his journey from Eastern most islands, as it is the nearest one to his\n                office , and moves towards the West, visiting the other four temples in turn from 1st to 5th. And\n                thereafter decided to stay near the Western most temple on weekend. \n\n                Further, some additional information about his visit to these temples is known.\n                \u2022 After visiting the temple on Agni island, Deepak immediately used the Bhakti lane to reach the island\n                on which Shiv temple is situated.\n                \u2022 Deepak used Kripa lane to reach the next island from Divya island.\n                \u2022 While going directly from the temple on Naag island to the Laxman temple, he used the Satya lane.\n                \u2022 Daya lane took Deepak directly from Hari temple to the temple on Prithvi island.\n                \u2022 Ram temple is neither on Prithvi island nor on Naag island.\n                \u2022 One of the temples visited by Deepak is Sita temple and one of the five islands is Tejas island.",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  On which island Shiv temple is\n                situated?",
+            "options": [
+                "Tejas",
+                "Naag",
+                "Divya",
+                "Prithvi"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858340/59s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                There are five temples situated on the five islands in a sea in East - West direction in a row. Each\n                temple can be visited by boats only, as there is no other means available to connect the islands on\n                which these temples are situated. A lane connects two consecutive temples, situated in the row. Boats\n                have to follow a certain water lane to reach from one temple to the other and same for return journey\n                also. Deepak, after having a hectic schedule at work on a Friday, decided to visit these five temples on\n                his religious trip. He started his journey from Eastern most islands, as it is the nearest one to his\n                office , and moves towards the West, visiting the other four temples in turn from 1st to 5th. And\n                thereafter decided to stay near the Western most temple on weekend. \n\n                Further, some additional information about his visit to these temples is known.\n                \u2022 After visiting the temple on Agni island, Deepak immediately used the Bhakti lane to reach the island\n                on which Shiv temple is situated.\n                \u2022 Deepak used Kripa lane to reach the next island from Divya island.\n                \u2022 While going directly from the temple on Naag island to the Laxman temple, he used the Satya lane.\n                \u2022 Daya lane took Deepak directly from Hari temple to the temple on Prithvi island.\n                \u2022 Ram temple is neither on Prithvi island nor on Naag island.\n                \u2022 One of the temples visited by Deepak is Sita temple and one of the five islands is Tejas island.",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  Which of the following two\n                islands are connected by Satya lane?",
+            "options": [
+                "Naag-Agni",
+                "Naag-Tejas",
+                "Naag-Prithvi",
+                "Naag-Divya"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858340/59s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                There are five temples situated on the five islands in a sea in East - West direction in a row. Each\n                temple can be visited by boats only, as there is no other means available to connect the islands on\n                which these temples are situated. A lane connects two consecutive temples, situated in the row. Boats\n                have to follow a certain water lane to reach from one temple to the other and same for return journey\n                also. Deepak, after having a hectic schedule at work on a Friday, decided to visit these five temples on\n                his religious trip. He started his journey from Eastern most islands, as it is the nearest one to his\n                office , and moves towards the West, visiting the other four temples in turn from 1st to 5th. And\n                thereafter decided to stay near the Western most temple on weekend. \n\n                Further, some additional information about his visit to these temples is known.\n                \u2022 After visiting the temple on Agni island, Deepak immediately used the Bhakti lane to reach the island\n                on which Shiv temple is situated.\n                \u2022 Deepak used Kripa lane to reach the next island from Divya island.\n                \u2022 While going directly from the temple on Naag island to the Laxman temple, he used the Satya lane.\n                \u2022 Daya lane took Deepak directly from Hari temple to the temple on Prithvi island.\n                \u2022 Ram temple is neither on Prithvi island nor on Naag island.\n                \u2022 One of the temples visited by Deepak is Sita temple and one of the five islands is Tejas island.",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  Which temple is situated on Tejas\n                island?",
+            "options": [
+                "Ram",
+                "Laxman",
+                "Hari",
+                "Sita"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858340/59s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                There are five temples situated on the five islands in a sea in East - West direction in a row. Each\n                temple can be visited by boats only, as there is no other means available to connect the islands on\n                which these temples are situated. A lane connects two consecutive temples, situated in the row. Boats\n                have to follow a certain water lane to reach from one temple to the other and same for return journey\n                also. Deepak, after having a hectic schedule at work on a Friday, decided to visit these five temples on\n                his religious trip. He started his journey from Eastern most islands, as it is the nearest one to his\n                office , and moves towards the West, visiting the other four temples in turn from 1st to 5th. And\n                thereafter decided to stay near the Western most temple on weekend. \n\n                Further, some additional information about his visit to these temples is known.\n                \u2022 After visiting the temple on Agni island, Deepak immediately used the Bhakti lane to reach the island\n                on which Shiv temple is situated.\n                \u2022 Deepak used Kripa lane to reach the next island from Divya island.\n                \u2022 While going directly from the temple on Naag island to the Laxman temple, he used the Satya lane.\n                \u2022 Daya lane took Deepak directly from Hari temple to the temple on Prithvi island.\n                \u2022 Ram temple is neither on Prithvi island nor on Naag island.\n                \u2022 One of the temples visited by Deepak is Sita temple and one of the five islands is Tejas island.",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  If moving towards Naag island\n                from Ram temple, then which of the following lane must be used? ",
+            "options": [
+                "Bhakti",
+                "Satya",
+                "Kripa",
+                "Daya"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858340/59s.gif\">"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                There are five temples situated on the five islands in a sea in East - West direction in a row. Each\n                temple can be visited by boats only, as there is no other means available to connect the islands on\n                which these temples are situated. A lane connects two consecutive temples, situated in the row. Boats\n                have to follow a certain water lane to reach from one temple to the other and same for return journey\n                also. Deepak, after having a hectic schedule at work on a Friday, decided to visit these five temples on\n                his religious trip. He started his journey from Eastern most islands, as it is the nearest one to his\n                office , and moves towards the West, visiting the other four temples in turn from 1st to 5th. And\n                thereafter decided to stay near the Western most temple on weekend. \n\n                Further, some additional information about his visit to these temples is known.\n                \u2022 After visiting the temple on Agni island, Deepak immediately used the Bhakti lane to reach the island\n                on which Shiv temple is situated.\n                \u2022 Deepak used Kripa lane to reach the next island from Divya island.\n                \u2022 While going directly from the temple on Naag island to the Laxman temple, he used the Satya lane.\n                \u2022 Daya lane took Deepak directly from Hari temple to the temple on Prithvi island.\n                \u2022 Ram temple is neither on Prithvi island nor on Naag island.\n                \u2022 One of the temples visited by Deepak is Sita temple and one of the five islands is Tejas island.",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  While returning from the Western\n                most island to his office after the weekend, the order of which of the following lanes depict the\n                shortest route taken by Deepak?",
+            "options": [
+                "Satya, Daya, Bhakti, Kripa",
+                "Bhakti, Satya, Bahkti, Kripa",
+                "Kripa, Satya, Daya, Bhakti",
+                "Daya, Kripa, Satya, Bhakti"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

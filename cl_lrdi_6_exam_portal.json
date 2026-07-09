@@ -1,0 +1,419 @@
+{
+    "name": "DILR 06 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n                                                    1 to 5: Answer the questions on the basis of the information given\n                                                    below.\n                                                    5 persons\u2013Hannah, Indira, Jacob, Kapil, and Laxman\u2013 have been held\n                                                    captive by a criminal\n                                                    organization in one of 12 warehouses\u2013H1, H2, \u2026,H12\u2013in the city of\n                                                    Ontopia. No two captives are\n                                                    held in the same warehouse.The police have 6 teams that are ready to\n                                                    be deployed for a raid. No two\n                                                    teams would be deployed to the same warehouse. If any police team is\n                                                    deployed to a location where\n                                                    the captive is held in, they will locate the captive.\n                                                    Police have nabbed three criminals who are part of the criminal\n                                                    organization. The police conduct\n                                                    narcoanalysis test on the three criminals. Narcoanalysis test uses\n                                                    truth serum which inhibits a\n                                                    subject\u2019s ability to tell a lie. After administering truth serum,\n                                                    the police can ask each criminal only 5\n                                                    questions. The truth serum does not completely inhibit the ability\n                                                    to tell a lie. These criminals have\n                                                    gone through prior training to beat the narcoanalysis test. However,\n                                                    the police are sure that each\n                                                    criminal will not be lying in all the 5 questions and each criminal\n                                                    will not be telling the truth in all the 5\n                                                    questions.Following table gives the response to the 5\n                                                    questions asked to the three criminals.\n                                            ",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n                                                If it is known that Criminal 2 has lied only once, then how\n                                                    many of the warehouses COULD be the\n                                                    warehouse where Kapil is held in?\n                                            ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819030/36s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n                                                5: Answer the questions on the basis of the information given\n                                                below.\n                                                5 persons\u2013Hannah, Indira, Jacob, Kapil, and Laxman\u2013 have been held\n                                                captive by a criminal\n                                                organization in one of 12 warehouses\u2013H1, H2, \u2026,H12\u2013in the city of\n                                                Ontopia. No two captives are\n                                                held in the same warehouse.The police have 6 teams that are ready to be\n                                                deployed for a raid. No two\n                                                teams would be deployed to the same warehouse. If any police team is\n                                                deployed to a location where\n                                                the captive is held in, they will locate the captive.\n                                                Police have nabbed three criminals who are part of the criminal\n                                                organization. The police conduct\n                                                narcoanalysis test on the three criminals. Narcoanalysis test uses truth\n                                                serum which inhibits a\n                                                subject\u2019s ability to tell a lie. After administering truth serum, the\n                                                police can ask each criminal only 5\n                                                questions. The truth serum does not completely inhibit the ability to\n                                                tell a lie. These criminals have\n                                                gone through prior training to beat the narcoanalysis test. However, the\n                                                police are sure that each\n                                                criminal will not be lying in all the 5 questions and each criminal will\n                                                not be telling the truth in all the 5 questions.Following table\n                                                gives the response to the 5 questions asked to the three\n                                                criminals.\n                                        ",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  It\n                                                is known that for each of the questions, at least one of the criminals\n                                                have told the truth and the\n                                                6 police teams are deployed to H3, H4, H7, H8, H10, and H11. What is the\n                                                probability of finding all\n                                                the captives?",
+            "options": [
+                "1/3",
+                "2/3",
+                "1",
+                "None of the above"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819031/37s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                        Answer the questions on the basis of the information given below.\n                                        5 persons\u2013Hannah, Indira, Jacob, Kapil, and Laxman\u2013 have been held captive by a\n                                        criminal\n                                        organization in one of 12 warehouses\u2013H1, H2, \u2026,H12\u2013in the city of Ontopia. No\n                                        two captives are\n                                        held in the same warehouse.The police have 6 teams that are ready to be deployed\n                                        for a raid. No two\n                                        teams would be deployed to the same warehouse. If any police team is deployed to\n                                        a location where\n                                        the captive is held in, they will locate the captive.\n                                        Police have nabbed three criminals who are part of the criminal organization.\n                                        The police conduct\n                                        narcoanalysis test on the three criminals. Narcoanalysis test uses truth serum\n                                        which inhibits a\n                                        subject\u2019s ability to tell a lie. After administering truth serum, the police can\n                                        ask each criminal only 5\n                                        questions. The truth serum does not completely inhibit the ability to tell a\n                                        lie. These criminals have\n                                        gone through prior training to beat the narcoanalysis test. However, the police\n                                        are sure that each\n                                        criminal will not be lying in all the 5 questions and each criminal will not be\n                                        telling the truth in all the 5 questions.Following table gives the\n                                        response to the 5 questions asked to the three criminals.\n                                ",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  Which of\n                                        the following COULD be true about the captives and the warehouses they are held\n                                        in?",
+            "options": [
+                "Hannah \u2013 H9, Indira \u2013 H4, Jacob \u2013\n                                        H8, Kapil \u2013 H12, Laxman \u2013 H11",
+                "Hannah \u2013 H7, Indira \u2013 H3, Jacob \u2013 H9,\n                                        Kapil \u2013 H12, Laxman \u2013 H10",
+                "Hannah \u2013 H7, Indira \u2013 H3, Jacob \u2013 H10,\n                                        Kapil \u2013 H11, Laxman \u2013 H9",
+                "Either (1) or (3)"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819032/38s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer\n                                    the questions on the basis of the information given below.\n                                    5 persons\u2013Hannah, Indira, Jacob, Kapil, and Laxman\u2013 have been held captive by a\n                                    criminal\n                                    organization in one of 12 warehouses\u2013H1, H2, \u2026,H12\u2013in the city of Ontopia. No two\n                                    captives are\n                                    held in the same warehouse.The police have 6 teams that are ready to be deployed for\n                                    a raid. No two\n                                    teams would be deployed to the same warehouse. If any police team is deployed to a\n                                    location where\n                                    the captive is held in, they will locate the captive.\n                                    Police have nabbed three criminals who are part of the criminal organization. The\n                                    police conduct\n                                    narcoanalysis test on the three criminals. Narcoanalysis test uses truth serum which\n                                    inhibits a\n                                    subject\u2019s ability to tell a lie. After administering truth serum, the police can ask\n                                    each criminal only 5\n                                    questions. The truth serum does not completely inhibit the ability to tell a lie.\n                                    These criminals have\n                                    gone through prior training to beat the narcoanalysis test. However, the police are\n                                    sure that each\n                                    criminal will not be lying in all the 5 questions and each criminal will not be\n                                    telling the truth in all the 5 questions.Following table gives the response\n                                    to the 5 questions asked to the three criminals.\n                            ",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  If only 5\n                                    police teams were deployed, and they were deployed to H3, H4, H7, H11, and H12, and\n                                    they did not find a single captive, then which of the following MUST be\n                                    true?\n                                    A. Each of the criminals lied 4 times\n                                    B. Laxman is held captive in H10\n                                    C. Hannah is not held captive in H8",
+            "options": [
+                "Only C",
+                "A and B only",
+                "B and C only",
+                "None of the above"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer the\n                                questions on the basis of the information given below.\n                                5 persons\u2013Hannah, Indira, Jacob, Kapil, and Laxman\u2013 have been held captive by a criminal\n                                organization in one of 12 warehouses\u2013H1, H2, \u2026,H12\u2013in the city of Ontopia. No two\n                                captives are\n                                held in the same warehouse.The police have 6 teams that are ready to be deployed for a\n                                raid. No two\n                                teams would be deployed to the same warehouse. If any police team is deployed to a\n                                location where\n                                the captive is held in, they will locate the captive.\n                                Police have nabbed three criminals who are part of the criminal organization. The police\n                                conduct\n                                narcoanalysis test on the three criminals. Narcoanalysis test uses truth serum which\n                                inhibits a\n                                subject\u2019s ability to tell a lie. After administering truth serum, the police can ask\n                                each criminal only 5\n                                questions. The truth serum does not completely inhibit the ability to tell a lie. These\n                                criminals have\n                                gone through prior training to beat the narcoanalysis test. However, the police are sure\n                                that each\n                                criminal will not be lying in all the 5 questions and each criminal will not be telling\n                                the truth in all the 5 questions.Following table gives the response to the 5\n                                questions asked to the three criminals.\n                        ",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  If Criminal 1 lied\n                            exactly once, then how many of the warehouses COULD be the warehouse where Jacob is held in?\n                        ",
+            "options": [
+                "More than 3",
+                "3",
+                "1",
+                "2"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819033/39s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                            questions on the basis of the information given below.\n                            In a 4\u00d7400 relay race, there are four runners in each team who each complete 400 meters or\n                            one lap.\n                            During the annual sports day of Indus Global School, one team from each of the four houses\n                            \u2013red,\n                            green, yellow, and blue\u2013participated in a 4\u00d7400 relay race. The time taken by all the\n                            runners\n                            individually to complete one lap was one among 72 seconds, 76 seconds, 80 seconds and 84\n                            seconds. In the red house team, only three runners had the same average speed and the\n                            slowest\n                            among the four ran the first round. In green house team, only two runners\u2013who ran the first\n                            two\n                            laps\u2013had the same average speed and the slowest amongst the four ran the third round.\n                            Additionally, the first round of the green house team clocked more than 72 seconds. In the\n                            yellow\n                            house team, all the runners had different average speed while in the blue house team, all\n                            the runners\n                            had the same average speed. It is also noted that no runners in the red house team had the\n                            fastest or\n                            the slowest average speed amongst all the runners in the race; and no runners in the blue\n                            house\n                            team had the fastest average speed amongst all the runners in the race.",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  How many unique ordered\n                            pair of first and last finished teams are possible (ignore cases, if any, where there are\n                            more than one team that finishes first or last at the same time)?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819034/40s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                        questions on the basis of the information given below.\n                        In a 4\u00d7400 relay race, there are four runners in each team who each complete 400 meters or one\n                        lap.\n                        During the annual sports day of Indus Global School, one team from each of the four houses \u2013red,\n                        green, yellow, and blue\u2013participated in a 4\u00d7400 relay race. The time taken by all the runners\n                        individually to complete one lap was one among 72 seconds, 76 seconds, 80 seconds and 84\n                        seconds. In the red house team, only three runners had the same average speed and the slowest\n                        among the four ran the first round. In green house team, only two runners\u2013who ran the first two\n                        laps\u2013had the same average speed and the slowest amongst the four ran the third round.\n                        Additionally, the first round of the green house team clocked more than 72 seconds. In the\n                        yellow\n                        house team, all the runners had different average speed while in the blue house team, all the\n                        runners\n                        had the same average speed. It is also noted that no runners in the red house team had the\n                        fastest or\n                        the slowest average speed amongst all the runners in the race; and no runners in the blue house\n                        team had the fastest average speed amongst all the runners in the race.",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  How many unique order of\n                        teams and their finish time (when arranged from first to last team to finish) are possible, if\n                        there are more than one team which finishes first?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819035/41s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the questions on\n                    the basis of the information given below.\n                    In a 4\u00d7400 relay race, there are four runners in each team who each complete 400 meters or one\n                    lap.\n                    During the annual sports day of Indus Global School, one team from each of the four houses \u2013red,\n                    green, yellow, and blue\u2013participated in a 4\u00d7400 relay race. The time taken by all the runners\n                    individually to complete one lap was one among 72 seconds, 76 seconds, 80 seconds and 84\n                    seconds. In the red house team, only three runners had the same average speed and the slowest\n                    among the four ran the first round. In green house team, only two runners\u2013who ran the first two\n                    laps\u2013had the same average speed and the slowest amongst the four ran the third round.\n                    Additionally, the first round of the green house team clocked more than 72 seconds. In the yellow\n                    house team, all the runners had different average speed while in the blue house team, all the\n                    runners\n                    had the same average speed. It is also noted that no runners in the red house team had the fastest\n                    or\n                    the slowest average speed amongst all the runners in the race; and no runners in the blue house\n                    team had the fastest average speed amongst all the runners in the race.",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  If the yellow house team is the\n                    second team to complete the race, which of the following MUST be true?",
+            "options": [
+                "Green house team finishes either first or last.",
+                "Red house team finishes first",
+                "Blue house team finishes first",
+                "Blue house team does not finish last"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819036/42s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the questions on\n                    the basis of the information given below.\n                    In a 4\u00d7400 relay race, there are four runners in each team who each complete 400 meters or one\n                    lap.\n                    During the annual sports day of Indus Global School, one team from each of the four houses \u2013red,\n                    green, yellow, and blue\u2013participated in a 4\u00d7400 relay race. The time taken by all the runners\n                    individually to complete one lap was one among 72 seconds, 76 seconds, 80 seconds and 84\n                    seconds. In the red house team, only three runners had the same average speed and the slowest\n                    among the four ran the first round. In green house team, only two runners\u2013who ran the first two\n                    laps\u2013had the same average speed and the slowest amongst the four ran the third round.\n                    Additionally, the first round of the green house team clocked more than 72 seconds. In the yellow\n                    house team, all the runners had different average speed while in the blue house team, all the\n                    runners\n                    had the same average speed. It is also noted that no runners in the red house team had the fastest\n                    or\n                    the slowest average speed amongst all the runners in the race; and no runners in the blue house\n                    team had the fastest average speed amongst all the runners in the race.",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  If in the green house team, the\n                    average speed of the fourth runner is less than the average speed\n                    of the second runner, what is the total number of unique possible order of the teams from first to\n                    last?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776701/1576252/10sa.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the questions on\n                    the basis of the information given below.\n                    In a 4\u00d7400 relay race, there are four runners in each team who each complete 400 meters or one\n                    lap.\n                    During the annual sports day of Indus Global School, one team from each of the four houses \u2013red,\n                    green, yellow, and blue\u2013participated in a 4\u00d7400 relay race. The time taken by all the runners\n                    individually to complete one lap was one among 72 seconds, 76 seconds, 80 seconds and 84\n                    seconds. In the red house team, only three runners had the same average speed and the slowest\n                    among the four ran the first round. In green house team, only two runners\u2013who ran the first two\n                    laps\u2013had the same average speed and the slowest amongst the four ran the third round.\n                    Additionally, the first round of the green house team clocked more than 72 seconds. In the yellow\n                    house team, all the runners had different average speed while in the blue house team, all the\n                    runners\n                    had the same average speed. It is also noted that no runners in the red house team had the fastest\n                    or\n                    the slowest average speed amongst all the runners in the race; and no runners in the blue house\n                    team had the fastest average speed amongst all the runners in the race.",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  If all teams took unique time\n                    to complete the race such that Green team finishes the race in last position, then which team could\n                    have won the race?",
+            "options": [
+                "Cannot be determined",
+                "Yellow team",
+                "red team",
+                "Blue team"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819037/43s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n                    on the basis of the information given\n                    below.\n                    In a closed group discussion, 5 students\u2013Rita, Suresh, Tamanna, Uday, and Varun\u2013 of a certain\n                    B-School\n                    were asked to grade 4 attributes\u2013Infrastructure, Location, Faculty, and Placements\u2013of the\n                    B-school from 1(lowest) to 4(highest). While grading the 4 attributes, no student gave the same\n                    grade\n                    to two attributes.",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  How many students gave a\n                    higher grade to \u2018Faculty\u2019 than \u2018Location\u2019?",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819038/44s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n                    on the basis of the information given\n                    below.\n                    In a closed group discussion, 5 students\u2013Rita, Suresh, Tamanna, Uday, and Varun\u2013 of a certain\n                    B-School\n                    were asked to grade 4 attributes\u2013Infrastructure, Location, Faculty, and Placements\u2013of the\n                    B-school from 1(lowest) to 4(highest). While grading the 4 attributes, no student gave the same\n                    grade\n                    to two attributes.",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Which of the following COULD\n                    BE an accurate list of the grades given by Rita?",
+            "options": [
+                "Infrastructure \u2013 1, Location \u2013 3, Faculty \u2013 2,\n                    Placement \u2013 4.",
+                "Infrastructure \u2013 4, Location \u2013 3, Faculty \u2013 2, Placement \u2013\n                    1.",
+                "Infrastructure \u2013 4, Location \u2013 2, Faculty \u2013 3, Placement \u2013\n                    1.",
+                "Both (2) and (3)"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819039/45s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n                    on the basis of the information given\n                    below.\n                    In a closed group discussion, 5 students\u2013Rita, Suresh, Tamanna, Uday, and Varun\u2013 of a certain\n                    B-School\n                    were asked to grade 4 attributes\u2013Infrastructure, Location, Faculty, and Placements\u2013of the\n                    B-school from 1(lowest) to 4(highest). While grading the 4 attributes, no student gave the same\n                    grade\n                    to two attributes.",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  If for \u2018faculty\u2019, Rita graded\n                    higher than Varun, which of the following COULD BE an accurate list of\n                    the grades given by Suresh?",
+            "options": [
+                "Infrastructure \u2013 4, Location \u2013 3, Faculty \u2013 2,\n                    Placement \u2013 1.",
+                "Infrastructure \u2013 1, Location \u2013 3, Faculty \u2013 2, Placement \u2013\n                    4.",
+                "Infrastructure \u2013 1, Location \u2013 2, Faculty \u2013 3, Placement \u2013\n                    4.",
+                "Both (2) and (3)"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819040/46s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n                    on the basis of the information given\n                    below.\n                    In a closed group discussion, 5 students\u2013Rita, Suresh, Tamanna, Uday, and Varun\u2013 of a certain\n                    B-School\n                    were asked to grade 4 attributes\u2013Infrastructure, Location, Faculty, and Placements\u2013of the\n                    B-school from 1(lowest) to 4(highest). While grading the 4 attributes, no student gave the same\n                    grade\n                    to two attributes.",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  If Varun\u2019s grade were not\n                    considered, what would be the average grade received by attribute\n                    \u2018Placements\u2019?",
+            "options": [
+                "2.5",
+                "2.6",
+                "3.25",
+                "Either (2) or (3)"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776701/1576253/15s.jpg\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n                    on the basis of the information given\n                    below.\n                    In a closed group discussion, 5 students\u2013Rita, Suresh, Tamanna, Uday, and Varun\u2013 of a certain\n                    B-School\n                    were asked to grade 4 attributes\u2013Infrastructure, Location, Faculty, and Placements\u2013of the\n                    B-school from 1(lowest) to 4(highest). While grading the 4 attributes, no student gave the same\n                    grade\n                    to two attributes.",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  If Varun gave 4 to\n                    Infrastructure, then which of the following statements is definitely FALSE?",
+            "options": [
+                "Rita gave 1 to infrastructure.",
+                "Tamanna gave 3 to infrastructure",
+                "Uday gave 2 to infrastructure",
+                "Suresh gave 4 to infrastructure"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819049/55s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n                Directions for questions 16 to 20: Answer the\n                        questions on the basis of the information given below.\n                        The Net Promoter Score is calculated based on the responses to a single question: How likely\n                            is it that you would recommend our company/product/service to a friend or a colleague?\n                        The scoring for this answer is based on a 0 to 10 scale.\n                        Those who respond with a score of 9 to 10 are labelled Promoters and are considered likely to\n                        exhibit value-creating behaviours, such as buying more, remaining customers for longer, and\n                        making more positive referrals to other potential customers. Those who respond with a score of 0\n                        to 6 are labelled Detractors, and they are believed to be less likely to exhibit the\n                        value-creating behaviours.\n                        Responses of 7 and 8 are labelled Passives, and their behaviour falls between Promoters and\n                        Detractors. The Net Promoter Score is calculated by subtracting the percentage of customers who\n                        are Detractors from the percentage of customers who are Promoters.\n                        Example: If you received 100 responses to your survey:\n                        10 responses were in the 0\u20136 range (Detractors)\n                        20 responses were in the 7\u20138 range (Passives)\n                        70 responses were in the 9\u201310 range (Promoters)\n                        When you calculate the percentages for each group, you get 10%, 20%, and 70% respectively.\n                        To finish up, subtract 10% (Detractors) from 70% (Promoters), which equals 60%.\n                        Net Promoter Score is always shown as just an integer and not a percentage, as in the above\n                        example your NPS is simply 60.\n                        Net Promoter Score of 6 companies\u2013A, B, C, D, E, F\u2013was calculated after surveying 100 customers\n                        who use all the products of all the 6 companies.\n                        \n            ",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  Which of the following is\n                    impossible?",
+            "options": [
+                "The number of promoters of A is greater than the\n                    number of promoters of E",
+                "The number of passives of F is greater than the number of\n                    passives of B",
+                "The number of promoters of A is equal to the number of\n                    promoters of C",
+                "All of the above are possible"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819050/56s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "\n                Directions for questions 16 to 20: Answer the\n                        questions on the basis of the information given below.\n                        The Net Promoter Score is calculated based on the responses to a single question: How likely\n                            is it that you would recommend our company/product/service to a friend or a colleague?\n                        The scoring for this answer is based on a 0 to 10 scale.\n                        Those who respond with a score of 9 to 10 are labelled Promoters and are considered likely to\n                        exhibit value-creating behaviours, such as buying more, remaining customers for longer, and\n                        making more positive referrals to other potential customers. Those who respond with a score of 0\n                        to 6 are labelled Detractors, and they are believed to be less likely to exhibit the\n                        value-creating behaviours.\n                        Responses of 7 and 8 are labelled Passives, and their behaviour falls between Promoters and\n                        Detractors. The Net Promoter Score is calculated by subtracting the percentage of customers who\n                        are Detractors from the percentage of customers who are Promoters.\n                        Example: If you received 100 responses to your survey:\n                        10 responses were in the 0\u20136 range (Detractors)\n                        20 responses were in the 7\u20138 range (Passives)\n                        70 responses were in the 9\u201310 range (Promoters)\n                        When you calculate the percentages for each group, you get 10%, 20%, and 70% respectively.\n                        To finish up, subtract 10% (Detractors) from 70% (Promoters), which equals 60%.\n                        Net Promoter Score is always shown as just an integer and not a percentage, as in the above\n                        example your NPS is simply 60.\n                        Net Promoter Score of 6 companies\u2013A, B, C, D, E, F\u2013was calculated after surveying 100 customers\n                        who use all the products of all the 6 companies.\n                        \n            ",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  If the number of passives of A\n                    and F are the maximum possible, then the number of customers\n                    who are passives in at least two companies should be at least",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819051/57s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "\n                Directions for questions 16 to 20: Answer the\n                        questions on the basis of the information given below.\n                        The Net Promoter Score is calculated based on the responses to a single question: How likely\n                            is it that you would recommend our company/product/service to a friend or a colleague?\n                        The scoring for this answer is based on a 0 to 10 scale.\n                        Those who respond with a score of 9 to 10 are labelled Promoters and are considered likely to\n                        exhibit value-creating behaviours, such as buying more, remaining customers for longer, and\n                        making more positive referrals to other potential customers. Those who respond with a score of 0\n                        to 6 are labelled Detractors, and they are believed to be less likely to exhibit the\n                        value-creating behaviours.\n                        Responses of 7 and 8 are labelled Passives, and their behaviour falls between Promoters and\n                        Detractors. The Net Promoter Score is calculated by subtracting the percentage of customers who\n                        are Detractors from the percentage of customers who are Promoters.\n                        Example: If you received 100 responses to your survey:\n                        10 responses were in the 0\u20136 range (Detractors)\n                        20 responses were in the 7\u20138 range (Passives)\n                        70 responses were in the 9\u201310 range (Promoters)\n                        When you calculate the percentages for each group, you get 10%, 20%, and 70% respectively.\n                        To finish up, subtract 10% (Detractors) from 70% (Promoters), which equals 60%.\n                        Net Promoter Score is always shown as just an integer and not a percentage, as in the above\n                        example your NPS is simply 60.\n                        Net Promoter Score of 6 companies\u2013A, B, C, D, E, F\u2013was calculated after surveying 100 customers\n                        who use all the products of all the 6 companies.\n                        \n            ",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  If the number of detractors of\n                    A and F are maximum possible, then the number of customers who\n                    are passives in none of the 6 companies can be at most",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819052/58s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n                Directions for questions 16 to 20: Answer the\n                        questions on the basis of the information given below.\n                        The Net Promoter Score is calculated based on the responses to a single question: How likely\n                            is it that you would recommend our company/product/service to a friend or a colleague?\n                        The scoring for this answer is based on a 0 to 10 scale.\n                        Those who respond with a score of 9 to 10 are labelled Promoters and are considered likely to\n                        exhibit value-creating behaviours, such as buying more, remaining customers for longer, and\n                        making more positive referrals to other potential customers. Those who respond with a score of 0\n                        to 6 are labelled Detractors, and they are believed to be less likely to exhibit the\n                        value-creating behaviours.\n                        Responses of 7 and 8 are labelled Passives, and their behaviour falls between Promoters and\n                        Detractors. The Net Promoter Score is calculated by subtracting the percentage of customers who\n                        are Detractors from the percentage of customers who are Promoters.\n                        Example: If you received 100 responses to your survey:\n                        10 responses were in the 0\u20136 range (Detractors)\n                        20 responses were in the 7\u20138 range (Passives)\n                        70 responses were in the 9\u201310 range (Promoters)\n                        When you calculate the percentages for each group, you get 10%, 20%, and 70% respectively.\n                        To finish up, subtract 10% (Detractors) from 70% (Promoters), which equals 60%.\n                        Net Promoter Score is always shown as just an integer and not a percentage, as in the above\n                        example your NPS is simply 60.\n                        Net Promoter Score of 6 companies\u2013A, B, C, D, E, F\u2013was calculated after surveying 100 customers\n                        who use all the products of all the 6 companies.\n                        \n            ",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  If the number of detractors of\n                    A is maximum possible and equals to the number of promoters of F,\n                    then the sum of the number of promoters for all the 6 companies would be",
+            "options": [
+                "228",
+                "208",
+                "288",
+                "None of the above"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776701/1576254/20s.jpg\">"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n                Directions for questions 16 to 20: Answer the\n                        questions on the basis of the information given below.\n                        The Net Promoter Score is calculated based on the responses to a single question: How likely\n                            is it that you would recommend our company/product/service to a friend or a colleague?\n                        The scoring for this answer is based on a 0 to 10 scale.\n                        Those who respond with a score of 9 to 10 are labelled Promoters and are considered likely to\n                        exhibit value-creating behaviours, such as buying more, remaining customers for longer, and\n                        making more positive referrals to other potential customers. Those who respond with a score of 0\n                        to 6 are labelled Detractors, and they are believed to be less likely to exhibit the\n                        value-creating behaviours.\n                        Responses of 7 and 8 are labelled Passives, and their behaviour falls between Promoters and\n                        Detractors. The Net Promoter Score is calculated by subtracting the percentage of customers who\n                        are Detractors from the percentage of customers who are Promoters.\n                        Example: If you received 100 responses to your survey:\n                        10 responses were in the 0\u20136 range (Detractors)\n                        20 responses were in the 7\u20138 range (Passives)\n                        70 responses were in the 9\u201310 range (Promoters)\n                        When you calculate the percentages for each group, you get 10%, 20%, and 70% respectively.\n                        To finish up, subtract 10% (Detractors) from 70% (Promoters), which equals 60%.\n                        Net Promoter Score is always shown as just an integer and not a percentage, as in the above\n                        example your NPS is simply 60.\n                        Net Promoter Score of 6 companies\u2013A, B, C, D, E, F\u2013was calculated after surveying 100 customers\n                        who use all the products of all the 6 companies.\n                        \n            ",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  If the total number of passives\n                in all the six companies is 256 whereas F has none, then the total number of promoters is approximately\n                what percentage more or less than the total number of detractors?",
+            "options": [
+                "45.5%",
+                "52.34%",
+                "28.8%",
+                "35.6%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

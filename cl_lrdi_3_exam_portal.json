@@ -1,0 +1,419 @@
+{
+    "name": "DILR 03 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n\t\t\t\t\t\t\t\t\t\t\t\t\t1 to 5: Answer the questions on the basis of the information given\n\t\t\t\t\t\t\t\t\t\t\t\t\tbelow.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\tIn the player\u2019s auction for IPL 2018, four teams RR, DD, SH and MI\n\t\t\t\t\t\t\t\t\t\t\t\t\tparticipated. There were three rounds of auction where all four\n\t\t\t\t\t\t\t\t\t\t\t\t\tteams participated in the 1st round. After the auction in each\n\t\t\t\t\t\t\t\t\t\t\t\t\tround, each team has an option to retain a player from the players\n\t\t\t\t\t\t\t\t\t\t\t\t\tsold in that round only and they can take that person back from the\n\t\t\t\t\t\t\t\t\t\t\t\t\tteam who purchased that player. At the end of each round, the team\n\t\t\t\t\t\t\t\t\t\t\t\t\twith number of players in double digits will eliminate and will not\n\t\t\t\t\t\t\t\t\t\t\t\t\tparticipate in further rounds. Initially the teams had no players\n\t\t\t\t\t\t\t\t\t\t\t\t\tand SH and DD got eliminated after round 1 and 2 respectively.\n\t\t\t\t\t\t\t\t\t\t\t\t\tFurther it is known that:\n\t\t\t\t\t\t\t\t\t\t\t\t\ti. 26 players were sold in round1, 12 in round 2 and 7 in round\n\t\t\t\t\t\t\t\t\t\t\t\t\t3.\n\t\t\t\t\t\t\t\t\t\t\t\t\tii. SH retained a player from MI and 2 players from DD in round 1\n\t\t\t\t\t\t\t\t\t\t\t\t\twhereas DD retained a player each from RR and MI in round 2. No\n\t\t\t\t\t\t\t\t\t\t\t\t\tother player was retained by any team in any round.\n\t\t\t\t\t\t\t\t\t\t\t\t\tiii. The number of players purchased minus the players retained from\n\t\t\t\t\t\t\t\t\t\t\t\t\tMI by some other team is same for MI in each round.\n\t\t\t\t\t\t\t\t\t\t\t\t\tiv. RR purchased 1 more player than SH in round 1 and DD purchased 1\n\t\t\t\t\t\t\t\t\t\t\t\t\tmore player in round 1 than in round 2.\n\t\t\t\t\t\t\t\t\t\t\t\t\tv. At the end of round 3, all teams had at least 10 players. ",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tHow many players were purchased by DD in round 2?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795794/51-54s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n\t\t\t\t\t\t\t\t\t\t\t\t5: Answer the questions on the basis of the information given\n\t\t\t\t\t\t\t\t\t\t\t\tbelow.\n\n\t\t\t\t\t\t\t\t\t\t\t\tIn the player\u2019s auction for IPL 2018, four teams RR, DD, SH and MI\n\t\t\t\t\t\t\t\t\t\t\t\tparticipated. There were three rounds of auction where all four teams\n\t\t\t\t\t\t\t\t\t\t\t\tparticipated in the 1st round. After the auction in each round, each\n\t\t\t\t\t\t\t\t\t\t\t\tteam has an option to retain a player from the players sold in that\n\t\t\t\t\t\t\t\t\t\t\t\tround only and they can take that person back from the team who\n\t\t\t\t\t\t\t\t\t\t\t\tpurchased that player. At the end of each round, the team with number of\n\t\t\t\t\t\t\t\t\t\t\t\tplayers in double digits will eliminate and will not participate in\n\t\t\t\t\t\t\t\t\t\t\t\tfurther rounds. Initially the teams had no players and SH and DD got\n\t\t\t\t\t\t\t\t\t\t\t\teliminated after round 1 and 2 respectively. Further it is known\n\t\t\t\t\t\t\t\t\t\t\t\tthat:\n\t\t\t\t\t\t\t\t\t\t\t\ti. 26 players were sold in round1, 12 in round 2 and 7 in round\n\t\t\t\t\t\t\t\t\t\t\t\t3.\n\t\t\t\t\t\t\t\t\t\t\t\tii. SH retained a player from MI and 2 players from DD in round 1\n\t\t\t\t\t\t\t\t\t\t\t\twhereas DD retained a player each from RR and MI in round 2. No other\n\t\t\t\t\t\t\t\t\t\t\t\tplayer was retained by any team in any round.\n\t\t\t\t\t\t\t\t\t\t\t\tiii. The number of players purchased minus the players retained from MI\n\t\t\t\t\t\t\t\t\t\t\t\tby some other team is same for MI in each round.\n\t\t\t\t\t\t\t\t\t\t\t\tiv. RR purchased 1 more player than SH in round 1 and DD purchased 1\n\t\t\t\t\t\t\t\t\t\t\t\tmore player in round 1 than in round 2.\n\t\t\t\t\t\t\t\t\t\t\t\tv. At the end of round 3, all teams had at least 10 players. ",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  The\n\t\t\t\t\t\t\t\t\t\t\t\tnumber of players with SH at the end of round 3 was?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795794/51-54s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n\t\t\t\t\t\t\t\t\t\tAnswer the questions on the basis of the information given below.\n\n\t\t\t\t\t\t\t\t\t\tIn the player\u2019s auction for IPL 2018, four teams RR, DD, SH and MI participated.\n\t\t\t\t\t\t\t\t\t\tThere were three rounds of auction where all four teams participated in the 1st\n\t\t\t\t\t\t\t\t\t\tround. After the auction in each round, each team has an option to retain a\n\t\t\t\t\t\t\t\t\t\tplayer from the players sold in that round only and they can take that person\n\t\t\t\t\t\t\t\t\t\tback from the team who purchased that player. At the end of each round, the team\n\t\t\t\t\t\t\t\t\t\twith number of players in double digits will eliminate and will not participate\n\t\t\t\t\t\t\t\t\t\tin further rounds. Initially the teams had no players and SH and DD got\n\t\t\t\t\t\t\t\t\t\teliminated after round 1 and 2 respectively. Further it is known that:\n\t\t\t\t\t\t\t\t\t\ti. 26 players were sold in round1, 12 in round 2 and 7 in round 3.\n\t\t\t\t\t\t\t\t\t\tii. SH retained a player from MI and 2 players from DD in round 1 whereas DD\n\t\t\t\t\t\t\t\t\t\tretained a player each from RR and MI in round 2. No other player was retained\n\t\t\t\t\t\t\t\t\t\tby any team in any round.\n\t\t\t\t\t\t\t\t\t\tiii. The number of players purchased minus the players retained from MI by some\n\t\t\t\t\t\t\t\t\t\tother team is same for MI in each round.\n\t\t\t\t\t\t\t\t\t\tiv. RR purchased 1 more player than SH in round 1 and DD purchased 1 more player\n\t\t\t\t\t\t\t\t\t\tin round 1 than in round 2.\n\t\t\t\t\t\t\t\t\t\tv. At the end of round 3, all teams had at least 10 players. ",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  The number\n\t\t\t\t\t\t\t\t\t\tof players purchased by MI in round 3 is what percent more than those purchased\n\t\t\t\t\t\t\t\t\t\tby RR in round 2?",
+            "options": [
+                "100%",
+                "75%",
+                "50%",
+                "25%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795794/51-54s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer\n\t\t\t\t\t\t\t\t\tthe questions on the basis of the information given below.\n\n\t\t\t\t\t\t\t\t\tIn the player\u2019s auction for IPL 2018, four teams RR, DD, SH and MI participated.\n\t\t\t\t\t\t\t\t\tThere were three rounds of auction where all four teams participated in the 1st\n\t\t\t\t\t\t\t\t\tround. After the auction in each round, each team has an option to retain a player\n\t\t\t\t\t\t\t\t\tfrom the players sold in that round only and they can take that person back from the\n\t\t\t\t\t\t\t\t\tteam who purchased that player. At the end of each round, the team with number of\n\t\t\t\t\t\t\t\t\tplayers in double digits will eliminate and will not participate in further rounds.\n\t\t\t\t\t\t\t\t\tInitially the teams had no players and SH and DD got eliminated after round 1 and 2\n\t\t\t\t\t\t\t\t\trespectively. Further it is known that:\n\t\t\t\t\t\t\t\t\ti. 26 players were sold in round1, 12 in round 2 and 7 in round 3.\n\t\t\t\t\t\t\t\t\tii. SH retained a player from MI and 2 players from DD in round 1 whereas DD\n\t\t\t\t\t\t\t\t\tretained a player each from RR and MI in round 2. No other player was retained by\n\t\t\t\t\t\t\t\t\tany team in any round.\n\t\t\t\t\t\t\t\t\tiii. The number of players purchased minus the players retained from MI by some\n\t\t\t\t\t\t\t\t\tother team is same for MI in each round.\n\t\t\t\t\t\t\t\t\tiv. RR purchased 1 more player than SH in round 1 and DD purchased 1 more player in\n\t\t\t\t\t\t\t\t\tround 1 than in round 2.\n\t\t\t\t\t\t\t\t\tv. At the end of round 3, all teams had at least 10 players. ",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  Which two teams\n\t\t\t\t\t\t\t\t\thad equal number of players at the end of round 3?",
+            "options": [
+                "RR and DD",
+                "DD and MI",
+                "DD and SH",
+                "RR and MI"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795794/51-54s.gif\"><br>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer the\n\t\t\t\t\t\t\t\tquestions on the basis of the information given below.\n\n\t\t\t\t\t\t\t\tIn the player\u2019s auction for IPL 2018, four teams RR, DD, SH and MI participated. There\n\t\t\t\t\t\t\t\twere three rounds of auction where all four teams participated in the 1st round. After\n\t\t\t\t\t\t\t\tthe auction in each round, each team has an option to retain a player from the players\n\t\t\t\t\t\t\t\tsold in that round only and they can take that person back from the team who purchased\n\t\t\t\t\t\t\t\tthat player. At the end of each round, the team with number of players in double digits\n\t\t\t\t\t\t\t\twill eliminate and will not participate in further rounds. Initially the teams had no\n\t\t\t\t\t\t\t\tplayers and SH and DD got eliminated after round 1 and 2 respectively. Further it is\n\t\t\t\t\t\t\t\tknown that:\n\t\t\t\t\t\t\t\ti. 26 players were sold in round1, 12 in round 2 and 7 in round 3.\n\t\t\t\t\t\t\t\tii. SH retained a player from MI and 2 players from DD in round 1 whereas DD retained a\n\t\t\t\t\t\t\t\tplayer each from RR and MI in round 2. No other player was retained by any team in any\n\t\t\t\t\t\t\t\tround.\n\t\t\t\t\t\t\t\tiii. The number of players purchased minus the players retained from MI by some other\n\t\t\t\t\t\t\t\tteam is same for MI in each round.\n\t\t\t\t\t\t\t\tiv. RR purchased 1 more player than SH in round 1 and DD purchased 1 more player in\n\t\t\t\t\t\t\t\tround 1 than in round 2.\n\t\t\t\t\t\t\t\tv. At the end of round 3, all teams had at least 10 players. ",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  What is the ratio\n\t\t\t\t\t\t\t\tof the number of players purchased by DD in round 1 to number of players purchased by RR\n\t\t\t\t\t\t\t\tin round 3?",
+            "options": [
+                "1:2",
+                "1:1",
+                "3:2",
+                "2:1"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770497/47s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10: Answer the\n\t\t\t\t\t\t\tquestions on the basis of the information given below.\n\t\t\t\t\t\t\t\u2022 The international school of organised crimes is a great centre for producing well\n\t\t\t\t\t\t\tqualified and trained\n\t\t\t\t\t\t\tthieves.\n\t\t\t\t\t\t\t\u2022 Mr. Ramji Tallya, the dean of the organisation, provides a graph and based on that framed\n\t\t\t\t\t\t\tquestions\n\t\t\t\t\t\t\tfor the last semester examination.\n\t\t\t\t\t\t\t\u2022 The data pertained to the organisation for each year was dependent on the previous year\u2019s\n\t\t\t\t\t\t\ttests.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tThe number of trainees who qualified in year 2010 was 5000.\n\t\t\t\t\t\t\tExample: In 2011, number of qualified trainees is increased by 100% of 5000; 10% of number\n\t\t\t\t\t\t\tof eligible\n\t\t\t\t\t\t\ttrainees equal number of qualified trainees; number of trainees who appeared for the exam\n\t\t\t\t\t\t\tequals 80% of number of eligible trainees.",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  The annual compounding\n\t\t\t\t\t\t\tgrowth rate in 2016 as compared to 2012 for trainees who qualified for the\n\t\t\t\t\t\t\ttest is",
+            "options": [
+                "19.15%",
+                "28.60%",
+                "14.28%",
+                "21.23%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770498/48s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10: Answer the questions\n\t\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\t\u2022 The international school of organised crimes is a great centre for producing well qualified\n\t\t\t\t\t\tand trained\n\t\t\t\t\t\tthieves.\n\t\t\t\t\t\t\u2022 Mr. Ramji Tallya, the dean of the organisation, provides a graph and based on that framed\n\t\t\t\t\t\tquestions\n\t\t\t\t\t\tfor the last semester examination.\n\t\t\t\t\t\t\u2022 The data pertained to the organisation for each year was dependent on the previous year\u2019s\n\t\t\t\t\t\ttests.\n\t\t\t\t\t\t\n\t\t\t\t\t\tThe number of trainees who qualified in year 2010 was 5000.\n\t\t\t\t\t\tExample: In 2011, number of qualified trainees is increased by 100% of 5000; 10% of number of\n\t\t\t\t\t\teligible\n\t\t\t\t\t\ttrainees equal number of qualified trainees; number of trainees who appeared for the exam\n\t\t\t\t\t\tequals 80% of number of eligible trainees.",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  In which year was the total\n\t\t\t\t\t\tnumber of trainees who were eligible for the test highest?",
+            "options": [
+                "2013",
+                "2016",
+                "2014",
+                "2015"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770499/49s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\t\u2022 The international school of organised crimes is a great centre for producing well qualified and\n\t\t\t\t\ttrained\n\t\t\t\t\tthieves.\n\t\t\t\t\t\u2022 Mr. Ramji Tallya, the dean of the organisation, provides a graph and based on that framed\n\t\t\t\t\tquestions\n\t\t\t\t\tfor the last semester examination.\n\t\t\t\t\t\u2022 The data pertained to the organisation for each year was dependent on the previous year\u2019s\n\t\t\t\t\ttests.\n\t\t\t\t\t\n\t\t\t\t\tThe number of trainees who qualified in year 2010 was 5000.\n\t\t\t\t\tExample: In 2011, number of qualified trainees is increased by 100% of 5000; 10% of number of\n\t\t\t\t\teligible\n\t\t\t\t\ttrainees equal number of qualified trainees; number of trainees who appeared for the exam\n\t\t\t\t\tequals 80% of number of eligible trainees.",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  In which year was the number of\n\t\t\t\t\ttrainees who appeared for the test 2nd highest?",
+            "options": [
+                "2013",
+                "2016",
+                "2014",
+                "2012"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770500/50s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\t\u2022 The international school of organised crimes is a great centre for producing well qualified and\n\t\t\t\t\ttrained\n\t\t\t\t\tthieves.\n\t\t\t\t\t\u2022 Mr. Ramji Tallya, the dean of the organisation, provides a graph and based on that framed\n\t\t\t\t\tquestions\n\t\t\t\t\tfor the last semester examination.\n\t\t\t\t\t\u2022 The data pertained to the organisation for each year was dependent on the previous year\u2019s\n\t\t\t\t\ttests.\n\t\t\t\t\t\n\t\t\t\t\tThe number of trainees who qualified in year 2010 was 5000.\n\t\t\t\t\tExample: In 2011, number of qualified trainees is increased by 100% of 5000; 10% of number of\n\t\t\t\t\teligible\n\t\t\t\t\ttrainees equal number of qualified trainees; number of trainees who appeared for the exam\n\t\t\t\t\tequals 80% of number of eligible trainees.",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  The percentage increase in\n\t\t\t\t\tnumber of trainees who qualified from 2011 to 2016 is",
+            "options": [
+                "100%",
+                "25%",
+                "170%",
+                "270%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776698/1576192/10sss.gif\"><br>"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\t\u2022 The international school of organised crimes is a great centre for producing well qualified and\n\t\t\t\t\ttrained\n\t\t\t\t\tthieves.\n\t\t\t\t\t\u2022 Mr. Ramji Tallya, the dean of the organisation, provides a graph and based on that framed\n\t\t\t\t\tquestions\n\t\t\t\t\tfor the last semester examination.\n\t\t\t\t\t\u2022 The data pertained to the organisation for each year was dependent on the previous year\u2019s\n\t\t\t\t\ttests.\n\t\t\t\t\t\n\t\t\t\t\tThe number of trainees who qualified in year 2010 was 5000.\n\t\t\t\t\tExample: In 2011, number of qualified trainees is increased by 100% of 5000; 10% of number of\n\t\t\t\t\teligible\n\t\t\t\t\ttrainees equal number of qualified trainees; number of trainees who appeared for the exam\n\t\t\t\t\tequals 80% of number of eligible trainees.",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  What is the ratio of the\n\t\t\t\t\tnumber of trainees who appeared for the exam in 2013 to 2015?",
+            "options": [
+                "9:5",
+                "25:9",
+                "16:9",
+                "25:18"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br></b><b><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38.gif\"><br><br><br></b><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38s.gif\"><br><br>"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 11 to 15: Answer the\n\t\t\t\t\t\tquestions on the basis of the information given below\n\t\t\t\t\t\t\n\t\t\t\t\t\tFive countries \u2013United States (US), United Kingdom (UK), Japan, Italy and Germany \u2013 had\n\t\t\t\t\t\tparticipated in an environment meet. There were four conferences organised in the meet, one on\n\t\t\t\t\t\teach of the four issues \u2013Carbon Emission, Bio Hazards, Oil Spill and Radioactive. Each of the\n\t\t\t\t\t\tfive countries has sent at least ten delegates to the meet. Also not more than five delegates\n\t\t\t\t\t\tfrom one country participated in one conference. Further it is known that:\n\n\t\t\t\t\t\t(i) The total number of delegates from the countries Japan, Italy and UK were different and in\n\t\t\t\t\t\tan Arithmetic Progression.\n\t\t\t\t\t\t(ii) In all the conferences except the one on Bio Hazards, number of delegates from US was more\n\t\t\t\t\t\tthan that of any other country. But in conference on Bio Hazards, number of delegates from US\n\t\t\t\t\t\twas less than that of all other countries.\n\t\t\t\t\t\t(iii) In conference on Oil Spill, the number of delegates from Italy was the least while in\n\t\t\t\t\t\tconference on Carbon Emission, the number of delegates from UK was the least.\n\t\t\t\t\t\t(iv) Germany and Japan, each have sent 11 delegates and they didn\u2019t have the highest or the\n\t\t\t\t\t\tlowest delegates at any conference.\n\t\t\t\t\t\t(v) From Germany equal number of delegates participated only in Carbon Emission and Oil Spill,\n\t\t\t\t\t\twhile from Japan the same number of delegates participated only in Radioactive and Bio\n\t\t\t\t\t\tHazards.\n\t\t\t\t\t\t(vi) In the conference on Oil Spill and on Radioactive, the number of delegates participated\n\t\t\t\t\t\tfrom UK was equal.\n\t\t\t\t\t\t(vii) From Italy, distinct number of delegates participated in the conference on Bio Hazards and\n\t\t\t\t\t\tCarbon Emission.\n\t\t\t\t\t\t(viii) No delegate attends more than one conferences and no two countries had the same number of\n\t\t\t\t\t\tdelegates at any conference.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  Which country has the highest\n\t\t\t\t\tnumber of delegates in the conference on Bio Hazards?",
+            "options": [
+                "US",
+                "UK",
+                "Germany",
+                "Italy"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br></b><b><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38.gif\"><br><br><br></b><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38s.gif\"><br><br>"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 11 to 15: Answer the\n\t\t\t\t\t\tquestions on the basis of the information given below\n\t\t\t\t\t\t\n\t\t\t\t\t\tFive countries \u2013United States (US), United Kingdom (UK), Japan, Italy and Germany \u2013 had\n\t\t\t\t\t\tparticipated in an environment meet. There were four conferences organised in the meet, one on\n\t\t\t\t\t\teach of the four issues \u2013Carbon Emission, Bio Hazards, Oil Spill and Radioactive. Each of the\n\t\t\t\t\t\tfive countries has sent at least ten delegates to the meet. Also not more than five delegates\n\t\t\t\t\t\tfrom one country participated in one conference. Further it is known that:\n\n\t\t\t\t\t\t(i) The total number of delegates from the countries Japan, Italy and UK were different and in\n\t\t\t\t\t\tan Arithmetic Progression.\n\t\t\t\t\t\t(ii) In all the conferences except the one on Bio Hazards, number of delegates from US was more\n\t\t\t\t\t\tthan that of any other country. But in conference on Bio Hazards, number of delegates from US\n\t\t\t\t\t\twas less than that of all other countries.\n\t\t\t\t\t\t(iii) In conference on Oil Spill, the number of delegates from Italy was the least while in\n\t\t\t\t\t\tconference on Carbon Emission, the number of delegates from UK was the least.\n\t\t\t\t\t\t(iv) Germany and Japan, each have sent 11 delegates and they didn\u2019t have the highest or the\n\t\t\t\t\t\tlowest delegates at any conference.\n\t\t\t\t\t\t(v) From Germany equal number of delegates participated only in Carbon Emission and Oil Spill,\n\t\t\t\t\t\twhile from Japan the same number of delegates participated only in Radioactive and Bio\n\t\t\t\t\t\tHazards.\n\t\t\t\t\t\t(vi) In the conference on Oil Spill and on Radioactive, the number of delegates participated\n\t\t\t\t\t\tfrom UK was equal.\n\t\t\t\t\t\t(vii) From Italy, distinct number of delegates participated in the conference on Bio Hazards and\n\t\t\t\t\t\tCarbon Emission.\n\t\t\t\t\t\t(viii) No delegate attends more than one conferences and no two countries had the same number of\n\t\t\t\t\t\tdelegates at any conference.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Which country has the least\n\t\t\t\t\tnumber of delegates at the meet?",
+            "options": [
+                "US",
+                "UK",
+                "Germany",
+                "Italy"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br></b><b><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38.gif\"><br><br><br></b><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38s.gif\"><br><br>"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 11 to 15: Answer the\n\t\t\t\t\t\tquestions on the basis of the information given below\n\t\t\t\t\t\t\n\t\t\t\t\t\tFive countries \u2013United States (US), United Kingdom (UK), Japan, Italy and Germany \u2013 had\n\t\t\t\t\t\tparticipated in an environment meet. There were four conferences organised in the meet, one on\n\t\t\t\t\t\teach of the four issues \u2013Carbon Emission, Bio Hazards, Oil Spill and Radioactive. Each of the\n\t\t\t\t\t\tfive countries has sent at least ten delegates to the meet. Also not more than five delegates\n\t\t\t\t\t\tfrom one country participated in one conference. Further it is known that:\n\n\t\t\t\t\t\t(i) The total number of delegates from the countries Japan, Italy and UK were different and in\n\t\t\t\t\t\tan Arithmetic Progression.\n\t\t\t\t\t\t(ii) In all the conferences except the one on Bio Hazards, number of delegates from US was more\n\t\t\t\t\t\tthan that of any other country. But in conference on Bio Hazards, number of delegates from US\n\t\t\t\t\t\twas less than that of all other countries.\n\t\t\t\t\t\t(iii) In conference on Oil Spill, the number of delegates from Italy was the least while in\n\t\t\t\t\t\tconference on Carbon Emission, the number of delegates from UK was the least.\n\t\t\t\t\t\t(iv) Germany and Japan, each have sent 11 delegates and they didn\u2019t have the highest or the\n\t\t\t\t\t\tlowest delegates at any conference.\n\t\t\t\t\t\t(v) From Germany equal number of delegates participated only in Carbon Emission and Oil Spill,\n\t\t\t\t\t\twhile from Japan the same number of delegates participated only in Radioactive and Bio\n\t\t\t\t\t\tHazards.\n\t\t\t\t\t\t(vi) In the conference on Oil Spill and on Radioactive, the number of delegates participated\n\t\t\t\t\t\tfrom UK was equal.\n\t\t\t\t\t\t(vii) From Italy, distinct number of delegates participated in the conference on Bio Hazards and\n\t\t\t\t\t\tCarbon Emission.\n\t\t\t\t\t\t(viii) No delegate attends more than one conferences and no two countries had the same number of\n\t\t\t\t\t\tdelegates at any conference.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Which country has the 3rd\n\t\t\t\t\thighest number of delegates for Radioactive conference?",
+            "options": [
+                "US",
+                "UK",
+                "Germany",
+                "Japan"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br></b><b><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38.gif\"><br><br><br></b><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38s.gif\"><br><br><b></b>"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 11 to 15: Answer the\n\t\t\t\t\t\tquestions on the basis of the information given below\n\t\t\t\t\t\t\n\t\t\t\t\t\tFive countries \u2013United States (US), United Kingdom (UK), Japan, Italy and Germany \u2013 had\n\t\t\t\t\t\tparticipated in an environment meet. There were four conferences organised in the meet, one on\n\t\t\t\t\t\teach of the four issues \u2013Carbon Emission, Bio Hazards, Oil Spill and Radioactive. Each of the\n\t\t\t\t\t\tfive countries has sent at least ten delegates to the meet. Also not more than five delegates\n\t\t\t\t\t\tfrom one country participated in one conference. Further it is known that:\n\n\t\t\t\t\t\t(i) The total number of delegates from the countries Japan, Italy and UK were different and in\n\t\t\t\t\t\tan Arithmetic Progression.\n\t\t\t\t\t\t(ii) In all the conferences except the one on Bio Hazards, number of delegates from US was more\n\t\t\t\t\t\tthan that of any other country. But in conference on Bio Hazards, number of delegates from US\n\t\t\t\t\t\twas less than that of all other countries.\n\t\t\t\t\t\t(iii) In conference on Oil Spill, the number of delegates from Italy was the least while in\n\t\t\t\t\t\tconference on Carbon Emission, the number of delegates from UK was the least.\n\t\t\t\t\t\t(iv) Germany and Japan, each have sent 11 delegates and they didn\u2019t have the highest or the\n\t\t\t\t\t\tlowest delegates at any conference.\n\t\t\t\t\t\t(v) From Germany equal number of delegates participated only in Carbon Emission and Oil Spill,\n\t\t\t\t\t\twhile from Japan the same number of delegates participated only in Radioactive and Bio\n\t\t\t\t\t\tHazards.\n\t\t\t\t\t\t(vi) In the conference on Oil Spill and on Radioactive, the number of delegates participated\n\t\t\t\t\t\tfrom UK was equal.\n\t\t\t\t\t\t(vii) From Italy, distinct number of delegates participated in the conference on Bio Hazards and\n\t\t\t\t\t\tCarbon Emission.\n\t\t\t\t\t\t(viii) No delegate attends more than one conferences and no two countries had the same number of\n\t\t\t\t\t\tdelegates at any conference.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  If Germany and Japan decided\n\t\t\t\t\tto join hands with each other, and hence be represented by the same delegates whose numbers are\n\t\t\t\t\tequivalent to the lower figure among their number of delegates sent to each conference, then how\n\t\t\t\t\tmany total delegates would be there for the meet?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br></b><b><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38.gif\"><br><br><br></b><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802810/35-38s.gif\"><br><br><b>"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 11 to 15: Answer the\n\t\t\t\t\t\tquestions on the basis of the information given below\n\t\t\t\t\t\t\n\t\t\t\t\t\tFive countries \u2013United States (US), United Kingdom (UK), Japan, Italy and Germany \u2013 had\n\t\t\t\t\t\tparticipated in an environment meet. There were four conferences organised in the meet, one on\n\t\t\t\t\t\teach of the four issues \u2013Carbon Emission, Bio Hazards, Oil Spill and Radioactive. Each of the\n\t\t\t\t\t\tfive countries has sent at least ten delegates to the meet. Also not more than five delegates\n\t\t\t\t\t\tfrom one country participated in one conference. Further it is known that:\n\n\t\t\t\t\t\t(i) The total number of delegates from the countries Japan, Italy and UK were different and in\n\t\t\t\t\t\tan Arithmetic Progression.\n\t\t\t\t\t\t(ii) In all the conferences except the one on Bio Hazards, number of delegates from US was more\n\t\t\t\t\t\tthan that of any other country. But in conference on Bio Hazards, number of delegates from US\n\t\t\t\t\t\twas less than that of all other countries.\n\t\t\t\t\t\t(iii) In conference on Oil Spill, the number of delegates from Italy was the least while in\n\t\t\t\t\t\tconference on Carbon Emission, the number of delegates from UK was the least.\n\t\t\t\t\t\t(iv) Germany and Japan, each have sent 11 delegates and they didn\u2019t have the highest or the\n\t\t\t\t\t\tlowest delegates at any conference.\n\t\t\t\t\t\t(v) From Germany equal number of delegates participated only in Carbon Emission and Oil Spill,\n\t\t\t\t\t\twhile from Japan the same number of delegates participated only in Radioactive and Bio\n\t\t\t\t\t\tHazards.\n\t\t\t\t\t\t(vi) In the conference on Oil Spill and on Radioactive, the number of delegates participated\n\t\t\t\t\t\tfrom UK was equal.\n\t\t\t\t\t\t(vii) From Italy, distinct number of delegates participated in the conference on Bio Hazards and\n\t\t\t\t\t\tCarbon Emission.\n\t\t\t\t\t\t(viii) No delegate attends more than one conferences and no two countries had the same number of\n\t\t\t\t\t\tdelegates at any conference.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  If the three European\n\t\t\t\t\tcountries namely, Germany, UK and Italy decide not to send their delegates to the environment meet,\n\t\t\t\t\tbecause of an ongoing pandemic, then the number of delegates at which of the four conferences will\n\t\t\t\t\tbe minimum?",
+            "options": [
+                "Carbon",
+                "Oil spill",
+                "Radioactive",
+                "Bio-hazards"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802845/51-54.gif\"><br>"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below\n\t\t\t\t\t\n\t\t\t\t\tThere are five athletes - Raman, Tara, Harjinder, Karan and Vishal - who participated in a unique\n\t\t\t\t\ttype of race of length 3km. In the race, they covered the distance in three ways i.e., by running,\n\t\t\t\t\twalking and jumping. They covered the distance by using all the three ways. Some additional\n\t\t\t\t\tinformation about the race is as follows:\n\t\t\t\t\t1. Each of the five athletes took different time (in minutes) to cover the total distance.\n\t\t\t\t\t2. Each of the five athletes spent equal time on each of the three ways to cover the distance.\n\t\t\t\t\tFor example, If an athlete A spent x minutes on running, then the time spent by him on walking and\n\t\t\t\t\tjumping each is also x minutes.\n\t\t\t\t\t3. Total time (in minutes) spent by each of the five athletes was an integral multiple of 3.\n\t\t\t\t\t4. Race is finished when all the athletes covered the total distance of 3km.\n\t\t\t\t\t5. Average speed (in meter per minute) for each of the five athletes was a positive integer.\n\t\t\t\t\t6. Total time taken (in minutes) by each of the five athletes is a three digit number.\n\n\t\t\t\t\tThe following table provides us with the relative speed of the five athletes, where rank 1 being the\n\t\t\t\t\tfastest athlete and rank 5 being the slowest athlete.",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  Which of the following cannot\n\t\t\t\t\tbe the value of sum of average speed of all the five athletes?",
+            "options": [
+                "72",
+                "68",
+                "52",
+                "47"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802845/51-54.gif\"><br>"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below\n\t\t\t\t\t\n\t\t\t\t\tThere are five athletes - Raman, Tara, Harjinder, Karan and Vishal - who participated in a unique\n\t\t\t\t\ttype of race of length 3km. In the race, they covered the distance in three ways i.e., by running,\n\t\t\t\t\twalking and jumping. They covered the distance by using all the three ways. Some additional\n\t\t\t\t\tinformation about the race is as follows:\n\t\t\t\t\t1. Each of the five athletes took different time (in minutes) to cover the total distance.\n\t\t\t\t\t2. Each of the five athletes spent equal time on each of the three ways to cover the distance.\n\t\t\t\t\tFor example, If an athlete A spent x minutes on running, then the time spent by him on walking and\n\t\t\t\t\tjumping each is also x minutes.\n\t\t\t\t\t3. Total time (in minutes) spent by each of the five athletes was an integral multiple of 3.\n\t\t\t\t\t4. Race is finished when all the athletes covered the total distance of 3km.\n\t\t\t\t\t5. Average speed (in meter per minute) for each of the five athletes was a positive integer.\n\t\t\t\t\t6. Total time taken (in minutes) by each of the five athletes is a three digit number.\n\n\t\t\t\t\tThe following table provides us with the relative speed of the five athletes, where rank 1 being the\n\t\t\t\t\tfastest athlete and rank 5 being the slowest athlete.",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  What can be the maximum time\n\t\t\t\t\t(in minutes) to finish the race?",
+            "options": [
+                "375",
+                "150",
+                "300",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802845/51-54.gif\"><br><br><br><br><br><br>"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below\n\t\t\t\t\t\n\t\t\t\t\tThere are five athletes - Raman, Tara, Harjinder, Karan and Vishal - who participated in a unique\n\t\t\t\t\ttype of race of length 3km. In the race, they covered the distance in three ways i.e., by running,\n\t\t\t\t\twalking and jumping. They covered the distance by using all the three ways. Some additional\n\t\t\t\t\tinformation about the race is as follows:\n\t\t\t\t\t1. Each of the five athletes took different time (in minutes) to cover the total distance.\n\t\t\t\t\t2. Each of the five athletes spent equal time on each of the three ways to cover the distance.\n\t\t\t\t\tFor example, If an athlete A spent x minutes on running, then the time spent by him on walking and\n\t\t\t\t\tjumping each is also x minutes.\n\t\t\t\t\t3. Total time (in minutes) spent by each of the five athletes was an integral multiple of 3.\n\t\t\t\t\t4. Race is finished when all the athletes covered the total distance of 3km.\n\t\t\t\t\t5. Average speed (in meter per minute) for each of the five athletes was a positive integer.\n\t\t\t\t\t6. Total time taken (in minutes) by each of the five athletes is a three digit number.\n\n\t\t\t\t\tThe following table provides us with the relative speed of the five athletes, where rank 1 being the\n\t\t\t\t\tfastest athlete and rank 5 being the slowest athlete.",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  If the time taken to finish\n\t\t\t\t\tthe race is maximum possible, and the speed of all the five athletes was integer (in meter per\n\t\t\t\t\tminute) during all the three ways, find the maximum speed (in meter per minute), when running, of\n\t\t\t\t\tthe player who finished last?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802845/51-54.gif\"><br><br><br>"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below\n\t\t\t\t\t\n\t\t\t\t\tThere are five athletes - Raman, Tara, Harjinder, Karan and Vishal - who participated in a unique\n\t\t\t\t\ttype of race of length 3km. In the race, they covered the distance in three ways i.e., by running,\n\t\t\t\t\twalking and jumping. They covered the distance by using all the three ways. Some additional\n\t\t\t\t\tinformation about the race is as follows:\n\t\t\t\t\t1. Each of the five athletes took different time (in minutes) to cover the total distance.\n\t\t\t\t\t2. Each of the five athletes spent equal time on each of the three ways to cover the distance.\n\t\t\t\t\tFor example, If an athlete A spent x minutes on running, then the time spent by him on walking and\n\t\t\t\t\tjumping each is also x minutes.\n\t\t\t\t\t3. Total time (in minutes) spent by each of the five athletes was an integral multiple of 3.\n\t\t\t\t\t4. Race is finished when all the athletes covered the total distance of 3km.\n\t\t\t\t\t5. Average speed (in meter per minute) for each of the five athletes was a positive integer.\n\t\t\t\t\t6. Total time taken (in minutes) by each of the five athletes is a three digit number.\n\n\t\t\t\t\tThe following table provides us with the relative speed of the five athletes, where rank 1 being the\n\t\t\t\t\tfastest athlete and rank 5 being the slowest athlete.",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  The minimum time (in minutes)\n\t\t\t\t\ttaken by the athlete who finished third is",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802845/51-54.gif\"><br><b><br><br><br>"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below\n\t\t\t\t\t\n\t\t\t\t\tThere are five athletes - Raman, Tara, Harjinder, Karan and Vishal - who participated in a unique\n\t\t\t\t\ttype of race of length 3km. In the race, they covered the distance in three ways i.e., by running,\n\t\t\t\t\twalking and jumping. They covered the distance by using all the three ways. Some additional\n\t\t\t\t\tinformation about the race is as follows:\n\t\t\t\t\t1. Each of the five athletes took different time (in minutes) to cover the total distance.\n\t\t\t\t\t2. Each of the five athletes spent equal time on each of the three ways to cover the distance.\n\t\t\t\t\tFor example, If an athlete A spent x minutes on running, then the time spent by him on walking and\n\t\t\t\t\tjumping each is also x minutes.\n\t\t\t\t\t3. Total time (in minutes) spent by each of the five athletes was an integral multiple of 3.\n\t\t\t\t\t4. Race is finished when all the athletes covered the total distance of 3km.\n\t\t\t\t\t5. Average speed (in meter per minute) for each of the five athletes was a positive integer.\n\t\t\t\t\t6. Total time taken (in minutes) by each of the five athletes is a three digit number.\n\n\t\t\t\t\tThe following table provides us with the relative speed of the five athletes, where rank 1 being the\n\t\t\t\t\tfastest athlete and rank 5 being the slowest athlete.",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  If Harjinder walks at the\n\t\t\t\t\tspeed of 8 m/minute and covers one-third of the total distance, then what is the distance (in m)\n\t\t\t\t\tcovered by him while jumping? (Assume that running speed is maximum among the three.)",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

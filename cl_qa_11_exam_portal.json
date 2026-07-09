@@ -1,0 +1,452 @@
+{
+    "name": "QA 11 - 2023",
+    "sections": {
+        "QA": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020",
+            "20021",
+            "20022"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tNikhil\u2019s speed is 30 m/s and Akash\u2019s speed is 50 m/s. Both of them\n\t\t\t\t\t\t\t\t\t\t\t\tstarted running at the same\n\t\t\t\t\t\t\t\t\t\t\t\ttime from a same point along a circular track of length 3300 m. After\n\t\t\t\t\t\t\t\t\t\t\t\thow much time (in seconds)\n\t\t\t\t\t\t\t\t\t\t\t\twill they meet again at the starting point for the first time, if both\n\t\t\t\t\t\t\t\t\t\t\t\tare moving in opposite directions?",
+            "options": [
+                "310",
+                "320",
+                "330",
+                "340"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879217/74s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  The\n\t\t\t\t\t\t\t\t\t\t\taverage of \u2018n\u2019 consecutive natural numbers is x. Find the average of the\n\t\t\t\t\t\t\t\t\t\t\tnext \u2018n\u2019 natural numbers.",
+            "options": [
+                "x + n",
+                "x + 2n",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876303/80s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  P and Q\n\t\t\t\t\t\t\t\t\tmarried each other when their ages were in the ratio of 4 : 5. After 3 years of\n\t\t\t\t\t\t\t\t\ttheir marriage,\n\t\t\t\t\t\t\t\t\tthey had a child. Two years after this, the average age of the family of the three\n\t\t\t\t\t\t\t\t\twas 19 years. What\n\t\t\t\t\t\t\t\t\twas the age (in years) of Q at the time of his/her marriage?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876310/87s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  In the figure\n\t\t\t\t\t\t\t\tshown below, AD = BD and AE = CE. Find \u2220DAE.",
+            "options": [
+                "50\u00b0",
+                "20\u00b0",
+                "30\u00b0",
+                "40\u00b0"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876298/75s.gif\">"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  Consider the set S =\n\t\t\t\t\t\t\t{1, 2, 3, \u2026, 1000}. How many Arithmetic Progressions can be formed from\n\t\t\t\t\t\t\tthe elements of S that starts with 1 and ends with 1000 and have at least 3 elements?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876296/73s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  A right circular cylinder\n\t\t\t\t\t\tof radius 4 cm and height 18 cm is melted and recast into a three-dimensional\n\t\t\t\t\t\tfigure of the minimum possible surface area. The recast figure is then cut down into two equal\n\t\t\t\t\t\tparts by a plane. Find the total surface area of one of these parts.",
+            "options": [
+                "288 \u03c0",
+                "72 \u03c0",
+                "144 \u03c0",
+                "108 \u03c0"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876301/78s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  What is the remainder when\n\t\t\t\t\t(91 + 92 + 93...+ 9121) is divided by 6?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876302/79s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  There are two concentric circles,\n\t\t\t\thaving center at O. AB is a chord for the larger circle which is tangent to the smaller one at point T.\n\t\t\t\tIf AB = 24 cm and OT = 5 cm, then find the length (in cm) of the chord which is at a distance of 12 cm\n\t\t\t\tfrom the centre.",
+            "options": [
+                "9 cm",
+                "10 cm",
+                "7 cm",
+                "13.5 cm"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br>"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  If log 24 = 1.48 and log 54 =\n\t\t\t\t1.56, then find log36.",
+            "options": [
+                "3.04",
+                "1.52",
+                "1.56",
+                "1.62"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876321/97s.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  Five boxes numbered as 1,2,3,4\n\t\t\t\tand 5 are kept in a row and they are to be filled with either a red or a blue\n\t\t\t\tball, such that no two adjacent boxes can be filled with blue balls. How many such different\n\t\t\t\tarrangements are possible, given that all balls of a given color are exactly identical in all respects?\n\t\t\t",
+            "options": [
+                "13",
+                "8",
+                "15",
+                "22"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876297/74s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  Mandeep bought some turmeric\n\t\t\t\tpowder containing five percent impurities in the form of saw dust.\n\t\t\t\tHe then mixed pure turmeric powder to two kilograms of that impure turmeric in such a way that the\n\t\t\t\tproportion of impurity now became 4% of the total mixture. At what percent (approximate) should he mark\n\t\t\t\tup the\n\t\t\t\tprice of this mixture to have an overall profit of 30%?",
+            "options": [
+                "25%",
+                "26%",
+                "30%",
+                "20%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876312/89s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Find the product of all the roots\n\t\t\t\tof the following equation: | |x \u2013 2| \u2013 4| = 4",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876305/82s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Ram beats Shyam by 5 kms or 5\n\t\t\t\tminutes in a race. Find the time taken (in minutes) by Ram to\n\t\t\t\tcomplete the race, if the distance between the starting point and the finishing point of the race is\n\t\t\t\t90 km.",
+            "options": [
+                "85",
+                "90",
+                "95",
+                "100"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876315/91s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  Find the value of (a2\n\t\t\t\t+ b2 + c2), where a, b and c are the roots of the equation\n\t\t\t\tx3 \u2013 4x2 \u2013 4x + 16 = 0.",
+            "options": [
+                "18",
+                "36",
+                "54",
+                "24"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876313/90s.gif\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  A certain number of taps can fill\n\t\t\t\ta tank in 7 hours. If there were 4 taps less, the tank would have\n\t\t\t\tbeen filled in 11 hours. Find the number of taps.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879242/99s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  In a right angled triangle ABC,\n\t\t\t\tright angled at B, D is a point on BC such that BD = 8 cm and DC = 6 cm. E is a point on AD such that AE\n\t\t\t\t: ED = 3 : 4. If F is a point on AC in such a way that AF = 12 cm and B, E and F are collinear, then\n\t\t\t\tfind the length (in cm) of AC.",
+            "options": [
+                "40",
+                "28",
+                "38",
+                "44"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879239/96s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  A real valued function is defined\n\t\t\t\tas f(x + y) = f(xy) for all real values of x and y. If f(\u2013 5) = 5, then the value\n\t\t\t\tof f(\u2013 25) + f(25) is",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876311/88s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  A team of 4 men and 3 women can\n\t\t\t\tfinish a work in 8 days. The same work is done by a team of 2 men and 4 women in 10 days. Find the\n\t\t\t\tnumber of days taken by 3 men and 1 woman to finish the same work.",
+            "options": [
+                "12",
+                "40/3",
+                "10/3",
+                "20"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876299/76s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  If the difference between the\n\t\t\t\tsimple interest and the compound interest, compounded every four\n\t\t\t\tmonths, on a certain sum of money at the rate of 30% per annum for one year is Rs. 93, then find\n\t\t\t\tthe sum (in Rs.).",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876300/77s.gif\">"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  ",
+            "options": [
+                "Only one of them",
+                "Only two of them",
+                "Only three of them",
+                "All four of them"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876292/69s.gif\">"
+        },
+        "20021": {
+            "id": "20021",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.21 [11916616]  The cost price of three articles\n\t\t\t\tare in the ratio 3 : 4 : 5. The shopkeeper marks up the price of these three\n\t\t\t\tarticles by 100%, 50% and 20% respectively, and then offers a discount of 20% on each article.\n\t\t\t\tFind his overall profit percentage.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773329/876320/96s.gif\">"
+        },
+        "20022": {
+            "id": "20022",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.22 [11916616]  M = |x \u2013 a| + |x \u2013 b|, where \u2013 15\n\t\t\t\t\u2264 a \u2264 5 and \u20135 \u2264 b \u2264 15.\n\t\t\t\tHow many integer values can \u2018x\u2019 take for which \u2018M\u2019 is minimum?",
+            "options": [
+                "1",
+                "11",
+                "21",
+                "31"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

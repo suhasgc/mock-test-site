@@ -1,0 +1,522 @@
+{
+    "name": "VARC 11 - 2023",
+    "sections": {
+        "VARC": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020",
+            "20021",
+            "20022",
+            "20023",
+            "20024"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\t\t\t\t\t\t\t\t\tDirections for\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tquestions 1-4: The following passage has a set of four\n\t\t\t\t\t\t\t\t\t\t\t\t\tquestions. Read the questions and answer by marking the correct\n\t\t\t\t\t\t\t\t\t\t\t\t\toption. \n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\tThe following formula sums up the basic idea of virtue ethics: \n\t\t\t\t\t\t\t\t\t\t\t\t\t1. An action is right if, and only if, it is what a virtuous agent\n\t\t\t\t\t\t\t\t\t\t\t\t\twould do in the circumstances \n\t\t\t\t\t\t\t\t\t\t\t\t\t2. A virtuous agent is one who exercises the virtues \n\t\t\t\t\t\t\t\t\t\t\t\t\t3. A virtue is a character trait that human beings need to\n\t\t\t\t\t\t\t\t\t\t\t\t\tflourish\n\n\t\t\t\t\t\t\t\t\t\t\t\t\tThere have been a few major objections to virtue ethics: \n\n\t\t\t\t\t\t\t\t\t\t\t\t\tONE: Some suggest that morality is about interaction and how we\n\t\t\t\t\t\t\t\t\t\t\t\t\ttreat others but virtue ethics is about the self, developing\n\t\t\t\t\t\t\t\t\t\t\t\t\tpersonal character and flourishing. Such a focus is seen as\n\t\t\t\t\t\t\t\t\t\t\t\t\tself-regarding and self-centred, and contrary to morality itself. We\n\t\t\t\t\t\t\t\t\t\t\t\t\tare supposed to act kindly, bravely and honestly in order to achieve\n\t\t\t\t\t\t\t\t\t\t\t\t\thappiness/well-being for ourselves, and this fails to look at others\n\t\t\t\t\t\t\t\t\t\t\t\t\tas ends in themselves. However, this criticism does not take account\n\t\t\t\t\t\t\t\t\t\t\t\t\tof the true nature of the virtues. The virtues themselves are\n\t\t\t\t\t\t\t\t\t\t\t\t\tother-regarding, that is to say they are concerned with behaviour\n\t\t\t\t\t\t\t\t\t\t\t\t\ttowards others. It is meaningless to always think virtuously, one\n\t\t\t\t\t\t\t\t\t\t\t\t\tmust act in a virtuous manner towards others. \n\n\t\t\t\t\t\t\t\t\t\t\t\t\tTWO: Some critics question whether or not well-being/flourishing can\n\t\t\t\t\t\t\t\t\t\t\t\t\tin fact be viewed as an absolute (or supreme) value. An absolute\n\t\t\t\t\t\t\t\t\t\t\t\t\tvalue is something at which all other acts should aim. In virtue\n\t\t\t\t\t\t\t\t\t\t\t\t\tethics, acting always in a virtuous way leads to us achieving a\n\t\t\t\t\t\t\t\t\t\t\t\t\tsense of well-being. The critics often suggest that personal\n\t\t\t\t\t\t\t\t\t\t\t\t\tflourishing/well-being is simply self-interest, not a value at all.\n\t\t\t\t\t\t\t\t\t\t\t\t\tBut it is argued by the virtue ethicists that the good of the moral\n\t\t\t\t\t\t\t\t\t\t\t\t\tagent and others are combined in virtue ethics as in order for the\n\t\t\t\t\t\t\t\t\t\t\t\t\tmoral agent to flourish they must behave virtuously to others.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\tTHREE: It has been suggested that virtue ethics is too reliant on\n\t\t\t\t\t\t\t\t\t\t\t\t\tcontingencies (the variable circumstances of situations) and so\n\t\t\t\t\t\t\t\t\t\t\t\t\tfails to give concrete guidance as to how one should behave when\n\t\t\t\t\t\t\t\t\t\t\t\t\tfaced with practical problems. This means that virtue ethics fails\n\t\t\t\t\t\t\t\t\t\t\t\t\tto be action-guiding. Virtue ethics is defended on the basis that\n\t\t\t\t\t\t\t\t\t\t\t\t\tpractical problems are so variable that a theory which is flexible\n\t\t\t\t\t\t\t\t\t\t\t\t\tand situation sensitive is superior to one which provides rigid\n\t\t\t\t\t\t\t\t\t\t\t\t\tuncompromising rules. Virtue ethics emphasises the development of\n\t\t\t\t\t\t\t\t\t\t\t\t\tethical judgment over time so that an individual agent does not need\n\t\t\t\t\t\t\t\t\t\t\t\t\tto blindly follow a rule but can decide on the right action by\n\t\t\t\t\t\t\t\t\t\t\t\t\tthemselves. \n\n\t\t\t\t\t\t\t\t\t\t\t\t\tFOUR: The problem of moral luck is not taken into account in virtue\n\t\t\t\t\t\t\t\t\t\t\t\t\tethics. There are many things beyond the agent\u2019s control, and this\n\t\t\t\t\t\t\t\t\t\t\t\t\tcan affect their actions negatively. While encouraging positive\n\t\t\t\t\t\t\t\t\t\t\t\t\tnatural tendencies will lead to the development of virtue, it is\n\t\t\t\t\t\t\t\t\t\t\t\t\tequally possible that certain external influences can lead to\n\t\t\t\t\t\t\t\t\t\t\t\t\tdevelopment of negative natural tendencies into vice. The lucky\n\t\t\t\t\t\t\t\t\t\t\t\t\tagent will have good role models to follow, reinforcement of\n\t\t\t\t\t\t\t\t\t\t\t\t\tvirtuous behaviour. Why should such an agent be praised for their\n\t\t\t\t\t\t\t\t\t\t\t\t\tvirtuous behaviour and others blamed for their vice (non-virtuous\n\t\t\t\t\t\t\t\t\t\t\t\t\tbehaviour) when it is the result of external forces? Virtue ethics\n\t\t\t\t\t\t\t\t\t\t\t\t\trecognises just how easily one can be unlucky and develop vices and\n\t\t\t\t\t\t\t\t\t\t\t\t\tthat is why they value the virtues and flourishing so highly.\n\t\t\t\t\t\t\t\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.1 [11916616]  In\n\t\t\t\t\t\t\t\t\t\t\t\taddressing the fourth criticism to virtue ethics, the author uses which\n\t\t\t\t\t\t\t\t\t\t\t\tone of the following principles?",
+            "options": [
+                "If a virtue turns into a\n\t\t\t\t\t\t\t\t\t\t\t\tvice due to external forces, then the virtue comes under scrutiny.",
+                "The rightness or wrongness of\n\t\t\t\t\t\t\t\t\t\t\t\tan action depend on their consequences and not on whether the action was\n\t\t\t\t\t\t\t\t\t\t\t\tintended to be virtuous.",
+                "Disregarding the outcomes of\n\t\t\t\t\t\t\t\t\t\t\t\tvirtues may lead the agent to overlook external forces that can impact\n\t\t\t\t\t\t\t\t\t\t\t\tthe virtuous action.",
+                "Acknowledging the possibility\n\t\t\t\t\t\t\t\t\t\t\t\tthat virtues are not immune to external forces amplifies the value of\n\t\t\t\t\t\t\t\t\t\t\t\tvirtues."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><u></u>"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\t\t\t\t\t\t\t\tDirections for questions\n\t\t\t\t\t\t\t\t\t\t\t\t\t1-4: The following passage has a set of four questions. Read the\n\t\t\t\t\t\t\t\t\t\t\t\tquestions and answer by marking the correct option. \n\n\n\t\t\t\t\t\t\t\t\t\t\t\tThe following formula sums up the basic idea of virtue ethics: \n\t\t\t\t\t\t\t\t\t\t\t\t1. An action is right if, and only if, it is what a virtuous agent would\n\t\t\t\t\t\t\t\t\t\t\t\tdo in the circumstances \n\t\t\t\t\t\t\t\t\t\t\t\t2. A virtuous agent is one who exercises the virtues \n\t\t\t\t\t\t\t\t\t\t\t\t3. A virtue is a character trait that human beings need to\n\t\t\t\t\t\t\t\t\t\t\t\tflourish\n\n\t\t\t\t\t\t\t\t\t\t\t\tThere have been a few major objections to virtue ethics: \n\n\t\t\t\t\t\t\t\t\t\t\t\tONE: Some suggest that morality is about interaction and how we treat\n\t\t\t\t\t\t\t\t\t\t\t\tothers but virtue ethics is about the self, developing personal\n\t\t\t\t\t\t\t\t\t\t\t\tcharacter and flourishing. Such a focus is seen as self-regarding and\n\t\t\t\t\t\t\t\t\t\t\t\tself-centred, and contrary to morality itself. We are supposed to act\n\t\t\t\t\t\t\t\t\t\t\t\tkindly, bravely and honestly in order to achieve happiness/well-being\n\t\t\t\t\t\t\t\t\t\t\t\tfor ourselves, and this fails to look at others as ends in themselves.\n\t\t\t\t\t\t\t\t\t\t\t\tHowever, this criticism does not take account of the true nature of the\n\t\t\t\t\t\t\t\t\t\t\t\tvirtues. The virtues themselves are other-regarding, that is to say they\n\t\t\t\t\t\t\t\t\t\t\t\tare concerned with behaviour towards others. It is meaningless to always\n\t\t\t\t\t\t\t\t\t\t\t\tthink virtuously, one must act in a virtuous manner towards others.\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tTWO: Some critics question whether or not well-being/flourishing can in\n\t\t\t\t\t\t\t\t\t\t\t\tfact be viewed as an absolute (or supreme) value. An absolute value is\n\t\t\t\t\t\t\t\t\t\t\t\tsomething at which all other acts should aim. In virtue ethics, acting\n\t\t\t\t\t\t\t\t\t\t\t\talways in a virtuous way leads to us achieving a sense of well-being.\n\t\t\t\t\t\t\t\t\t\t\t\tThe critics often suggest that personal flourishing/well-being is simply\n\t\t\t\t\t\t\t\t\t\t\t\tself-interest, not a value at all. But it is argued by the virtue\n\t\t\t\t\t\t\t\t\t\t\t\tethicists that the good of the moral agent and others are combined in\n\t\t\t\t\t\t\t\t\t\t\t\tvirtue ethics as in order for the moral agent to flourish they must\n\t\t\t\t\t\t\t\t\t\t\t\tbehave virtuously to others. \n\n\t\t\t\t\t\t\t\t\t\t\t\tTHREE: It has been suggested that virtue ethics is too reliant on\n\t\t\t\t\t\t\t\t\t\t\t\tcontingencies (the variable circumstances of situations) and so fails to\n\t\t\t\t\t\t\t\t\t\t\t\tgive concrete guidance as to how one should behave when faced with\n\t\t\t\t\t\t\t\t\t\t\t\tpractical problems. This means that virtue ethics fails to be\n\t\t\t\t\t\t\t\t\t\t\t\taction-guiding. Virtue ethics is defended on the basis that practical\n\t\t\t\t\t\t\t\t\t\t\t\tproblems are so variable that a theory which is flexible and situation\n\t\t\t\t\t\t\t\t\t\t\t\tsensitive is superior to one which provides rigid uncompromising rules.\n\t\t\t\t\t\t\t\t\t\t\t\tVirtue ethics emphasises the development of ethical judgment over time\n\t\t\t\t\t\t\t\t\t\t\t\tso that an individual agent does not need to blindly follow a rule but\n\t\t\t\t\t\t\t\t\t\t\t\tcan decide on the right action by themselves. \n\n\t\t\t\t\t\t\t\t\t\t\t\tFOUR: The problem of moral luck is not taken into account in virtue\n\t\t\t\t\t\t\t\t\t\t\t\tethics. There are many things beyond the agent\u2019s control, and this can\n\t\t\t\t\t\t\t\t\t\t\t\taffect their actions negatively. While encouraging positive natural\n\t\t\t\t\t\t\t\t\t\t\t\ttendencies will lead to the development of virtue, it is equally\n\t\t\t\t\t\t\t\t\t\t\t\tpossible that certain external influences can lead to development of\n\t\t\t\t\t\t\t\t\t\t\t\tnegative natural tendencies into vice. The lucky agent will have good\n\t\t\t\t\t\t\t\t\t\t\t\trole models to follow, reinforcement of virtuous behaviour. Why should\n\t\t\t\t\t\t\t\t\t\t\t\tsuch an agent be praised for their virtuous behaviour and others blamed\n\t\t\t\t\t\t\t\t\t\t\t\tfor their vice (non-virtuous behaviour) when it is the result of\n\t\t\t\t\t\t\t\t\t\t\t\texternal forces? Virtue ethics recognises just how easily one can be\n\t\t\t\t\t\t\t\t\t\t\t\tunlucky and develop vices and that is why they value the virtues and\n\t\t\t\t\t\t\t\t\t\t\t\tflourishing so highly.\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  The\n\t\t\t\t\t\t\t\t\t\t\tfirst and the second criticism to virtue ethics are similar in which regard?\n\t\t\t\t\t\t\t\t\t\t",
+            "options": [
+                "Both the criticisms base its\n\t\t\t\t\t\t\t\t\t\t\tpremise on the notion that narcissism is not a moralistic value.",
+                "Both the criticisms make a claim\n\t\t\t\t\t\t\t\t\t\t\tthat there is no such thing as supreme value.",
+                "Both the criticisms are based on\n\t\t\t\t\t\t\t\t\t\t\tthe notion that the primary objective of morality is to help others.",
+                "Both the criticisms are premised\n\t\t\t\t\t\t\t\t\t\t\ton the fact that morality is subjective."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><u></u>"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\t\t\t\t\t\tDirections for questions 1-4:\n\t\t\t\t\t\t\t\t\t\tThe following passage has a set of four questions. Read the questions and answer\n\t\t\t\t\t\t\t\t\t\tby marking the correct option. \n\n\n\t\t\t\t\t\t\t\t\t\tThe following formula sums up the basic idea of virtue ethics: \n\t\t\t\t\t\t\t\t\t\t1. An action is right if, and only if, it is what a virtuous agent would do in\n\t\t\t\t\t\t\t\t\t\tthe circumstances \n\t\t\t\t\t\t\t\t\t\t2. A virtuous agent is one who exercises the virtues \n\t\t\t\t\t\t\t\t\t\t3. A virtue is a character trait that human beings need to flourish\n\n\t\t\t\t\t\t\t\t\t\tThere have been a few major objections to virtue ethics: \n\n\t\t\t\t\t\t\t\t\t\tONE: Some suggest that morality is about interaction and how we treat others but\n\t\t\t\t\t\t\t\t\t\tvirtue ethics is about the self, developing personal character and flourishing.\n\t\t\t\t\t\t\t\t\t\tSuch a focus is seen as self-regarding and self-centred, and contrary to\n\t\t\t\t\t\t\t\t\t\tmorality itself. We are supposed to act kindly, bravely and honestly in order to\n\t\t\t\t\t\t\t\t\t\tachieve happiness/well-being for ourselves, and this fails to look at others as\n\t\t\t\t\t\t\t\t\t\tends in themselves. However, this criticism does not take account of the true\n\t\t\t\t\t\t\t\t\t\tnature of the virtues. The virtues themselves are other-regarding, that is to\n\t\t\t\t\t\t\t\t\t\tsay they are concerned with behaviour towards others. It is meaningless to\n\t\t\t\t\t\t\t\t\t\talways think virtuously, one must act in a virtuous manner towards others.\n\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\tTWO: Some critics question whether or not well-being/flourishing can in fact be\n\t\t\t\t\t\t\t\t\t\tviewed as an absolute (or supreme) value. An absolute value is something at\n\t\t\t\t\t\t\t\t\t\twhich all other acts should aim. In virtue ethics, acting always in a virtuous\n\t\t\t\t\t\t\t\t\t\tway leads to us achieving a sense of well-being. The critics often suggest that\n\t\t\t\t\t\t\t\t\t\tpersonal flourishing/well-being is simply self-interest, not a value at all. But\n\t\t\t\t\t\t\t\t\t\tit is argued by the virtue ethicists that the good of the moral agent and others\n\t\t\t\t\t\t\t\t\t\tare combined in virtue ethics as in order for the moral agent to flourish they\n\t\t\t\t\t\t\t\t\t\tmust behave virtuously to others. \n\n\t\t\t\t\t\t\t\t\t\tTHREE: It has been suggested that virtue ethics is too reliant on contingencies\n\t\t\t\t\t\t\t\t\t\t(the variable circumstances of situations) and so fails to give concrete\n\t\t\t\t\t\t\t\t\t\tguidance as to how one should behave when faced with practical problems. This\n\t\t\t\t\t\t\t\t\t\tmeans that virtue ethics fails to be action-guiding. Virtue ethics is defended\n\t\t\t\t\t\t\t\t\t\ton the basis that practical problems are so variable that a theory which is\n\t\t\t\t\t\t\t\t\t\tflexible and situation sensitive is superior to one which provides rigid\n\t\t\t\t\t\t\t\t\t\tuncompromising rules. Virtue ethics emphasises the development of ethical\n\t\t\t\t\t\t\t\t\t\tjudgment over time so that an individual agent does not need to blindly follow a\n\t\t\t\t\t\t\t\t\t\trule but can decide on the right action by themselves. \n\n\t\t\t\t\t\t\t\t\t\tFOUR: The problem of moral luck is not taken into account in virtue ethics.\n\t\t\t\t\t\t\t\t\t\tThere are many things beyond the agent\u2019s control, and this can affect their\n\t\t\t\t\t\t\t\t\t\tactions negatively. While encouraging positive natural tendencies will lead to\n\t\t\t\t\t\t\t\t\t\tthe development of virtue, it is equally possible that certain external\n\t\t\t\t\t\t\t\t\t\tinfluences can lead to development of negative natural tendencies into vice. The\n\t\t\t\t\t\t\t\t\t\tlucky agent will have good role models to follow, reinforcement of virtuous\n\t\t\t\t\t\t\t\t\t\tbehaviour. Why should such an agent be praised for their virtuous behaviour and\n\t\t\t\t\t\t\t\t\t\tothers blamed for their vice (non-virtuous behaviour) when it is the result of\n\t\t\t\t\t\t\t\t\t\texternal forces? Virtue ethics recognises just how easily one can be unlucky and\n\t\t\t\t\t\t\t\t\t\tdevelop vices and that is why they value the virtues and flourishing so highly.\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  The response\n\t\t\t\t\t\t\t\t\tby the author to the third criticism suggests that, according to the author,\n\t\t\t\t\t\t\t\t\tmorality is NOT:",
+            "options": [
+                "pragmatic.",
+                "realistic.",
+                "dogmatic.",
+                "optimistic."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br>"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\t\t\t\t\tDirections for questions 1-4: The\n\t\t\t\t\t\t\t\t\tfollowing passage has a set of four questions. Read the questions and answer by\n\t\t\t\t\t\t\t\t\tmarking the correct option. \n\n\n\t\t\t\t\t\t\t\t\tThe following formula sums up the basic idea of virtue ethics: \n\t\t\t\t\t\t\t\t\t1. An action is right if, and only if, it is what a virtuous agent would do in the\n\t\t\t\t\t\t\t\t\tcircumstances \n\t\t\t\t\t\t\t\t\t2. A virtuous agent is one who exercises the virtues \n\t\t\t\t\t\t\t\t\t3. A virtue is a character trait that human beings need to flourish\n\n\t\t\t\t\t\t\t\t\tThere have been a few major objections to virtue ethics: \n\n\t\t\t\t\t\t\t\t\tONE: Some suggest that morality is about interaction and how we treat others but\n\t\t\t\t\t\t\t\t\tvirtue ethics is about the self, developing personal character and flourishing. Such\n\t\t\t\t\t\t\t\t\ta focus is seen as self-regarding and self-centred, and contrary to morality itself.\n\t\t\t\t\t\t\t\t\tWe are supposed to act kindly, bravely and honestly in order to achieve\n\t\t\t\t\t\t\t\t\thappiness/well-being for ourselves, and this fails to look at others as ends in\n\t\t\t\t\t\t\t\t\tthemselves. However, this criticism does not take account of the true nature of the\n\t\t\t\t\t\t\t\t\tvirtues. The virtues themselves are other-regarding, that is to say they are\n\t\t\t\t\t\t\t\t\tconcerned with behaviour towards others. It is meaningless to always think\n\t\t\t\t\t\t\t\t\tvirtuously, one must act in a virtuous manner towards others. \n\n\t\t\t\t\t\t\t\t\tTWO: Some critics question whether or not well-being/flourishing can in fact be\n\t\t\t\t\t\t\t\t\tviewed as an absolute (or supreme) value. An absolute value is something at which\n\t\t\t\t\t\t\t\t\tall other acts should aim. In virtue ethics, acting always in a virtuous way leads\n\t\t\t\t\t\t\t\t\tto us achieving a sense of well-being. The critics often suggest that personal\n\t\t\t\t\t\t\t\t\tflourishing/well-being is simply self-interest, not a value at all. But it is argued\n\t\t\t\t\t\t\t\t\tby the virtue ethicists that the good of the moral agent and others are combined in\n\t\t\t\t\t\t\t\t\tvirtue ethics as in order for the moral agent to flourish they must behave\n\t\t\t\t\t\t\t\t\tvirtuously to others. \n\n\t\t\t\t\t\t\t\t\tTHREE: It has been suggested that virtue ethics is too reliant on contingencies (the\n\t\t\t\t\t\t\t\t\tvariable circumstances of situations) and so fails to give concrete guidance as to\n\t\t\t\t\t\t\t\t\thow one should behave when faced with practical problems. This means that virtue\n\t\t\t\t\t\t\t\t\tethics fails to be action-guiding. Virtue ethics is defended on the basis that\n\t\t\t\t\t\t\t\t\tpractical problems are so variable that a theory which is flexible and situation\n\t\t\t\t\t\t\t\t\tsensitive is superior to one which provides rigid uncompromising rules. Virtue\n\t\t\t\t\t\t\t\t\tethics emphasises the development of ethical judgment over time so that an\n\t\t\t\t\t\t\t\t\tindividual agent does not need to blindly follow a rule but can decide on the right\n\t\t\t\t\t\t\t\t\taction by themselves. \n\n\t\t\t\t\t\t\t\t\tFOUR: The problem of moral luck is not taken into account in virtue ethics. There\n\t\t\t\t\t\t\t\t\tare many things beyond the agent\u2019s control, and this can affect their actions\n\t\t\t\t\t\t\t\t\tnegatively. While encouraging positive natural tendencies will lead to the\n\t\t\t\t\t\t\t\t\tdevelopment of virtue, it is equally possible that certain external influences can\n\t\t\t\t\t\t\t\t\tlead to development of negative natural tendencies into vice. The lucky agent will\n\t\t\t\t\t\t\t\t\thave good role models to follow, reinforcement of virtuous behaviour. Why should\n\t\t\t\t\t\t\t\t\tsuch an agent be praised for their virtuous behaviour and others blamed for their\n\t\t\t\t\t\t\t\t\tvice (non-virtuous behaviour) when it is the result of external forces? Virtue\n\t\t\t\t\t\t\t\t\tethics recognises just how easily one can be unlucky and develop vices and that is\n\t\t\t\t\t\t\t\t\twhy they value the virtues and flourishing so highly.\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  From the formula\n\t\t\t\t\t\t\t\tthat sums up the basic idea of virtue ethics, it can be logically deduced that:",
+            "options": [
+                "human beings should not have any vice.",
+                "if human beings are virtuous, then human\n\t\t\t\t\t\t\t\tbeings will flourish.",
+                "Both 1 and 2 can be logically deduced.",
+                "Neither 1 nor 2 can be logically deduced."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\t\t\t\tDirections for questions 5-8: The\n\t\t\t\t\t\t\t\tfollowing passage has a set of four questions. Read the questions and answer by marking\n\t\t\t\t\t\t\t\tthe correct option. \n\n\t\t\t\t\t\t\t\tUnderpinning successful operation in emerging markets must be an in-depth understanding\n\t\t\t\t\t\t\t\tof the market and operational landscape of these economies. Businesses need to\n\t\t\t\t\t\t\t\tunderstand the fluctuations in emerging market dynamics and should adopt flexible\n\t\t\t\t\t\t\t\tstrategies accordingly, tailoring existing businesses models and organisation structures\n\t\t\t\t\t\t\t\tto realise competitive advantage in these new markets. This will support them in\n\t\t\t\t\t\t\t\tutilising the many opportunities arising in emerging markets, which include the\n\t\t\t\t\t\t\t\texistence of large infrastructure gaps, expected shifts in demographics and consumer\n\t\t\t\t\t\t\t\tdemands, and the emergence of new technologies and operating models. \n\n\t\t\t\t\t\t\t\tTo succeed, companies cannot withhold investments and adopt a \u2018wait and see\u2019 approach or\n\t\t\t\t\t\t\t\tthey risk losing out to nimbler domestic and foreign competitors. Rather, companies\n\t\t\t\t\t\t\t\tshould adopt flexible, robust and innovative business models, which in many cases may be\n\t\t\t\t\t\t\t\tfundamentally different to those used in developed markets. \n\n\t\t\t\t\t\t\t\tFor sustainable and long-term success in emerging markets, companies need to innovate.\n\t\t\t\t\t\t\t\tThis could take the form of: developing agile processes and asset-light business models;\n\t\t\t\t\t\t\t\tadapting technological systems to local conditions; designed localised products to\n\t\t\t\t\t\t\t\tappeal to emerging market customer segments; or achieving cost efficiencies in the\n\t\t\t\t\t\t\t\tdistribution mechanism. Innovation is often a stepwise process, with companies acquiring\n\t\t\t\t\t\t\t\tnew capabilities along the way, such as enhanced customer intelligence, new cross-sector\n\t\t\t\t\t\t\t\tand international business relationships, and intellectual property\n\n\t\t\t\t\t\t\t\tThough innovation is key to addressing the unique nature of emerging markets, rapidly\n\t\t\t\t\t\t\t\tchanging consumer behaviour and new technologies and sale channels require companies to\n\t\t\t\t\t\t\t\tre-think their go-to market capabilities. Consumers in emerging markets are getting\n\t\t\t\t\t\t\t\tricher, but what distinguishes them from consumer markets in advanced countries is that\n\t\t\t\t\t\t\t\tthey remain relatively more price sensitive. This is partially because their relative\n\t\t\t\t\t\t\t\tincome levels are still lower, so consumers will spend relatively more time searching\n\t\t\t\t\t\t\t\tfor the lowest prices. It is also likely a result of the numerous digital and\n\t\t\t\t\t\t\t\tnon-digital sales channels now available to customers, giving them more information on\n\t\t\t\t\t\t\t\twhere the lowest prices can be found. \n\n\t\t\t\t\t\t\t\tTailoring go-to-market strategies should be focussed on increasing the channels\n\t\t\t\t\t\t\t\tavailable to consumers for purchases to create a fully integrated digital and in-store\n\t\t\t\t\t\t\t\texperience. The rapid growth in internet usage in emerging markets over the previous 15\n\t\t\t\t\t\t\t\tyears gives retailers in these markets the ability to reach new consumers in more\n\t\t\t\t\t\t\t\teffective ways to promote and sell their products. \n\n\t\t\t\t\t\t\t\tEstablishing strategic local partnerships could also be important for new entrants to\n\t\t\t\t\t\t\t\ttarget future growth in emerging markets, with a focus on understanding local consumer\n\t\t\t\t\t\t\t\tpreferences and competing with domestic brands that initially have a better\n\t\t\t\t\t\t\t\tunderstanding of the local market.\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  Based on the passage,\n\t\t\t\t\t\t\twhich of the following is not an appropriate strategy for a cereal company based in USA to\n\t\t\t\t\t\t\tenter the emerging market of India?",
+            "options": [
+                "Adopt a similar marketing strategy as in the\n\t\t\t\t\t\t\tUS positioning the cereal as a healthier breakfast option.",
+                "Lower price and reposition products that cater to\n\t\t\t\t\t\t\tthe needs of the Indian market",
+                "Shift all sourcing, including packaging, to India\n\t\t\t\t\t\t\tto reduce costs and increase efficiencies",
+                "None of the above"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br>"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\t\t\tDirections for questions 5-8: The\n\t\t\t\t\t\t\tfollowing passage has a set of four questions. Read the questions and answer by marking the\n\t\t\t\t\t\t\tcorrect option. \n\n\t\t\t\t\t\t\tUnderpinning successful operation in emerging markets must be an in-depth understanding of\n\t\t\t\t\t\t\tthe market and operational landscape of these economies. Businesses need to understand the\n\t\t\t\t\t\t\tfluctuations in emerging market dynamics and should adopt flexible strategies accordingly,\n\t\t\t\t\t\t\ttailoring existing businesses models and organisation structures to realise competitive\n\t\t\t\t\t\t\tadvantage in these new markets. This will support them in utilising the many opportunities\n\t\t\t\t\t\t\tarising in emerging markets, which include the existence of large infrastructure gaps,\n\t\t\t\t\t\t\texpected shifts in demographics and consumer demands, and the emergence of new technologies\n\t\t\t\t\t\t\tand operating models. \n\n\t\t\t\t\t\t\tTo succeed, companies cannot withhold investments and adopt a \u2018wait and see\u2019 approach or\n\t\t\t\t\t\t\tthey risk losing out to nimbler domestic and foreign competitors. Rather, companies should\n\t\t\t\t\t\t\tadopt flexible, robust and innovative business models, which in many cases may be\n\t\t\t\t\t\t\tfundamentally different to those used in developed markets. \n\n\t\t\t\t\t\t\tFor sustainable and long-term success in emerging markets, companies need to innovate. This\n\t\t\t\t\t\t\tcould take the form of: developing agile processes and asset-light business models; adapting\n\t\t\t\t\t\t\ttechnological systems to local conditions; designed localised products to appeal to emerging\n\t\t\t\t\t\t\tmarket customer segments; or achieving cost efficiencies in the distribution mechanism.\n\t\t\t\t\t\t\tInnovation is often a stepwise process, with companies acquiring new capabilities along the\n\t\t\t\t\t\t\tway, such as enhanced customer intelligence, new cross-sector and international business\n\t\t\t\t\t\t\trelationships, and intellectual property\n\n\t\t\t\t\t\t\tThough innovation is key to addressing the unique nature of emerging markets, rapidly\n\t\t\t\t\t\t\tchanging consumer behaviour and new technologies and sale channels require companies to\n\t\t\t\t\t\t\tre-think their go-to market capabilities. Consumers in emerging markets are getting richer,\n\t\t\t\t\t\t\tbut what distinguishes them from consumer markets in advanced countries is that they remain\n\t\t\t\t\t\t\trelatively more price sensitive. This is partially because their relative income levels are\n\t\t\t\t\t\t\tstill lower, so consumers will spend relatively more time searching for the lowest prices.\n\t\t\t\t\t\t\tIt is also likely a result of the numerous digital and non-digital sales channels now\n\t\t\t\t\t\t\tavailable to customers, giving them more information on where the lowest prices can be\n\t\t\t\t\t\t\tfound. \n\n\t\t\t\t\t\t\tTailoring go-to-market strategies should be focussed on increasing the channels available to\n\t\t\t\t\t\t\tconsumers for purchases to create a fully integrated digital and in-store experience. The\n\t\t\t\t\t\t\trapid growth in internet usage in emerging markets over the previous 15 years gives\n\t\t\t\t\t\t\tretailers in these markets the ability to reach new consumers in more effective ways to\n\t\t\t\t\t\t\tpromote and sell their products. \n\n\t\t\t\t\t\t\tEstablishing strategic local partnerships could also be important for new entrants to target\n\t\t\t\t\t\t\tfuture growth in emerging markets, with a focus on understanding local consumer preferences\n\t\t\t\t\t\t\tand competing with domestic brands that initially have a better understanding of the local\n\t\t\t\t\t\t\tmarket.\n\t\t\t\t\t\t\n\t\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  Which of the following can\n\t\t\t\t\t\tbe presented as a relevant example to support the arguments made in paragraph 2?",
+            "options": [
+                "Several analysts predicted that because of the\n\t\t\t\t\t\tApple stores' diminutive size and non-aggressive sales team, Apple failed in making a\n\t\t\t\t\t\tsignificant number of sales. However, the Apple retail program reached $1 billion in annual\n\t\t\t\t\t\tsales.",
+                "Walmart invested $120m in its first year in Brazil,\n\t\t\t\t\t\tseeking to make the most of its buying power, efficient store management and the effective use\n\t\t\t\t\t\tof technology in supply chain management. However, despite high demand for its low-price\n\t\t\t\t\t\tproducts, the company registered a loss of $16.5m in its first year.",
+                "Nokia failed to respond to the shifting consumer\n\t\t\t\t\t\tdemand that came with it. Samsung, on the other hand, moved quickly into the smartphone market\n\t\t\t\t\t\tand surpassed Nokia in cell phone sales, effectively ending Nokia's 14-year run as the world's\n\t\t\t\t\t\ttop handset maker.",
+                "All of the above"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><u></u><u></u><br><br><br>"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\t\tDirections for questions 5-8: The following\n\t\t\t\t\t\tpassage has a set of four questions. Read the questions and answer by marking the correct\n\t\t\t\t\t\toption. \n\n\t\t\t\t\t\tUnderpinning successful operation in emerging markets must be an in-depth understanding of the\n\t\t\t\t\t\tmarket and operational landscape of these economies. Businesses need to understand the\n\t\t\t\t\t\tfluctuations in emerging market dynamics and should adopt flexible strategies accordingly,\n\t\t\t\t\t\ttailoring existing businesses models and organisation structures to realise competitive\n\t\t\t\t\t\tadvantage in these new markets. This will support them in utilising the many opportunities\n\t\t\t\t\t\tarising in emerging markets, which include the existence of large infrastructure gaps, expected\n\t\t\t\t\t\tshifts in demographics and consumer demands, and the emergence of new technologies and operating\n\t\t\t\t\t\tmodels. \n\n\t\t\t\t\t\tTo succeed, companies cannot withhold investments and adopt a \u2018wait and see\u2019 approach or they\n\t\t\t\t\t\trisk losing out to nimbler domestic and foreign competitors. Rather, companies should adopt\n\t\t\t\t\t\tflexible, robust and innovative business models, which in many cases may be fundamentally\n\t\t\t\t\t\tdifferent to those used in developed markets. \n\n\t\t\t\t\t\tFor sustainable and long-term success in emerging markets, companies need to innovate. This\n\t\t\t\t\t\tcould take the form of: developing agile processes and asset-light business models; adapting\n\t\t\t\t\t\ttechnological systems to local conditions; designed localised products to appeal to emerging\n\t\t\t\t\t\tmarket customer segments; or achieving cost efficiencies in the distribution mechanism.\n\t\t\t\t\t\tInnovation is often a stepwise process, with companies acquiring new capabilities along the way,\n\t\t\t\t\t\tsuch as enhanced customer intelligence, new cross-sector and international business\n\t\t\t\t\t\trelationships, and intellectual property\n\n\t\t\t\t\t\tThough innovation is key to addressing the unique nature of emerging markets, rapidly changing\n\t\t\t\t\t\tconsumer behaviour and new technologies and sale channels require companies to re-think their\n\t\t\t\t\t\tgo-to market capabilities. Consumers in emerging markets are getting richer, but what\n\t\t\t\t\t\tdistinguishes them from consumer markets in advanced countries is that they remain relatively\n\t\t\t\t\t\tmore price sensitive. This is partially because their relative income levels are still lower, so\n\t\t\t\t\t\tconsumers will spend relatively more time searching for the lowest prices. It is also likely a\n\t\t\t\t\t\tresult of the numerous digital and non-digital sales channels now available to customers, giving\n\t\t\t\t\t\tthem more information on where the lowest prices can be found. \n\n\t\t\t\t\t\tTailoring go-to-market strategies should be focussed on increasing the channels available to\n\t\t\t\t\t\tconsumers for purchases to create a fully integrated digital and in-store experience. The rapid\n\t\t\t\t\t\tgrowth in internet usage in emerging markets over the previous 15 years gives retailers in these\n\t\t\t\t\t\tmarkets the ability to reach new consumers in more effective ways to promote and sell their\n\t\t\t\t\t\tproducts. \n\n\t\t\t\t\t\tEstablishing strategic local partnerships could also be important for new entrants to target\n\t\t\t\t\t\tfuture growth in emerging markets, with a focus on understanding local consumer preferences and\n\t\t\t\t\t\tcompeting with domestic brands that initially have a better understanding of the local market.\n\t\t\t\t\t\n\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  Which of the following cannot\n\t\t\t\t\tbe inferred from the fourth paragraph?",
+            "options": [
+                "The more the number of sales channels, the more the\n\t\t\t\t\topportunities for the consumers to compare product prices.",
+                "Consumers from advanced countries are more likely to be\n\t\t\t\t\tless price conscious than consumers from emerging markets.",
+                "Understanding the go-to-market capabilities is more\n\t\t\t\t\timportant than innovation.",
+                "All of the above"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br>"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 5-8: The following\n\t\t\t\t\tpassage has a set of four questions. Read the questions and answer by marking the correct option.\n\t\t\t\t\t\n\n\t\t\t\t\tUnderpinning successful operation in emerging markets must be an in-depth understanding of the\n\t\t\t\t\tmarket and operational landscape of these economies. Businesses need to understand the fluctuations\n\t\t\t\t\tin emerging market dynamics and should adopt flexible strategies accordingly, tailoring existing\n\t\t\t\t\tbusinesses models and organisation structures to realise competitive advantage in these new markets.\n\t\t\t\t\tThis will support them in utilising the many opportunities arising in emerging markets, which\n\t\t\t\t\tinclude the existence of large infrastructure gaps, expected shifts in demographics and consumer\n\t\t\t\t\tdemands, and the emergence of new technologies and operating models. \n\n\t\t\t\t\tTo succeed, companies cannot withhold investments and adopt a \u2018wait and see\u2019 approach or they risk\n\t\t\t\t\tlosing out to nimbler domestic and foreign competitors. Rather, companies should adopt flexible,\n\t\t\t\t\trobust and innovative business models, which in many cases may be fundamentally different to those\n\t\t\t\t\tused in developed markets. \n\n\t\t\t\t\tFor sustainable and long-term success in emerging markets, companies need to innovate. This could\n\t\t\t\t\ttake the form of: developing agile processes and asset-light business models; adapting technological\n\t\t\t\t\tsystems to local conditions; designed localised products to appeal to emerging market customer\n\t\t\t\t\tsegments; or achieving cost efficiencies in the distribution mechanism. Innovation is often a\n\t\t\t\t\tstepwise process, with companies acquiring new capabilities along the way, such as enhanced customer\n\t\t\t\t\tintelligence, new cross-sector and international business relationships, and intellectual\n\t\t\t\t\tproperty\n\n\t\t\t\t\tThough innovation is key to addressing the unique nature of emerging markets, rapidly changing\n\t\t\t\t\tconsumer behaviour and new technologies and sale channels require companies to re-think their go-to\n\t\t\t\t\tmarket capabilities. Consumers in emerging markets are getting richer, but what distinguishes them\n\t\t\t\t\tfrom consumer markets in advanced countries is that they remain relatively more price sensitive.\n\t\t\t\t\tThis is partially because their relative income levels are still lower, so consumers will spend\n\t\t\t\t\trelatively more time searching for the lowest prices. It is also likely a result of the numerous\n\t\t\t\t\tdigital and non-digital sales channels now available to customers, giving them more information on\n\t\t\t\t\twhere the lowest prices can be found. \n\n\t\t\t\t\tTailoring go-to-market strategies should be focussed on increasing the channels available to\n\t\t\t\t\tconsumers for purchases to create a fully integrated digital and in-store experience. The rapid\n\t\t\t\t\tgrowth in internet usage in emerging markets over the previous 15 years gives retailers in these\n\t\t\t\t\tmarkets the ability to reach new consumers in more effective ways to promote and sell their\n\t\t\t\t\tproducts. \n\n\t\t\t\t\tEstablishing strategic local partnerships could also be important for new entrants to target future\n\t\t\t\t\tgrowth in emerging markets, with a focus on understanding local consumer preferences and competing\n\t\t\t\t\twith domestic brands that initially have a better understanding of the local market.\n\t\t\t\t\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  Which of the following words can\n\t\t\t\tdescribe the tone of the passage?",
+            "options": [
+                "Prescribing",
+                "Informative",
+                "Pedantic",
+                "Pragmatic"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><i></i>"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 9-12: The following\n\t\t\t\t\tpassage has a set of six questions. Read the questions and answer by marking the correct option.\n\t\t\t\t\t\n\n\t\t\t\t\tThe next summer the truce for a year ended, after lasting until the Pythian Games. During the\n\t\t\t\t\tarmistice the Athenians expelled the Delians from Delos, concluding that they must have been\n\t\t\t\t\tpolluted by some old offence at the time of their consecration, and that this had been the omission\n\t\t\t\t\tin the previous purification of the island, which, as I have related, had been thought to have been\n\t\t\t\t\tduly accomplished by the removal of the graves of the dead. The Delians had Atramyttium in Asia\n\t\t\t\t\tgiven them by Pharnaces, and settled there as they removed from Delos. \n\t\t\t\t\tMeanwhile Cleon prevailed on the Athenians to let him set sail at the expiration of the armistice\n\t\t\t\t\tfor the towns in the direction of Thrace with twelve hundred heavy infantry and three hundred horses\n\t\t\t\t\tfrom Athens, a large force of the allies, and thirty ships. First touching at the still besieged\n\t\t\t\t\tScione, and taking some heavy infantry from the army there, he next sailed into Cophos, a harbour in\n\t\t\t\t\tthe territory of Torone, which is not far from the town. From thence, having learnt from deserters\n\t\t\t\t\tthat Brasidas was not in Torone, and that its garrison was not strong enough to give him battle, he\n\t\t\t\t\tadvanced with his army against the town, sending ten ships to sail round into the harbour. He first\n\t\t\t\t\tcame to the fortification lately thrown up in front of the town by Brasidas in order to take in the\n\t\t\t\t\tsuburb, to do which he had pulled down part of the original wall and made it all one city. To this\n\t\t\t\t\tpoint Pasitelidas, the Lacedaemonian commander, with such garrison as there was in the place,\n\t\t\t\t\thurried to repel the Athenian assault; but finding himself hard pressed, and seeing the ships that\n\t\t\t\t\thad been sent round sailing into the harbour, Pasitelidas began to be afraid that they might get up\n\t\t\t\t\tto the city before its defenders were there and, the fortification being also carried, he might be\n\t\t\t\t\ttaken prisoner, and so abandoned the outwork and ran into the town. But the Athenians from the ships\n\t\t\t\t\thad already taken Torone, and their land forces following at his heels burst in with him with a rush\n\t\t\t\t\tover the part of the old wall that had been pulled down, killing some of the Peloponnesians and\n\t\t\t\t\tToronaeans in the melee, and making prisoners of the rest, and Pasitelidas their commander amongst\n\t\t\t\t\tthem. Brasidas meanwhile had advanced to relieve Torone, and had only about four miles more to go\n\t\t\t\t\twhen he heard of its fall on the road, and turned back again. Cleon and the Athenians set up two\n\t\t\t\t\ttrophies, one by the harbour, the other by the fortification and, making slaves of the wives and\n\t\t\t\t\tchildren of the Toronaeans, sent the men with the Peloponnesians and any Chalcidians that were\n\t\t\t\t\tthere, to the number of seven hundred, to Athens; whence, however, they all came home afterwards,\n\t\t\t\t\tthe Peloponnesians on the conclusion of peace, and the rest by being exchanged against other\n\t\t\t\t\tprisoners with the Olynthians. About the same time Panactum, a fortress on the Athenian border, was\n\t\t\t\t\ttaken by treachery by the Boeotians. Meanwhile Cleon, after placing a garrison in Torone, weighed\n\t\t\t\t\tanchor and sailed around Athos on his way to Amphipolis. \n\t\t\t\t\tAbout the same time Phaeax, son of Erasistratus, set sail with two colleagues as ambassador from\n\t\t\t\t\tAthens to Italy and Sicily. The Leontines, upon the departure of the Athenians from Sicily after the\n\t\t\t\t\tpacification, had placed a number of new citizens upon the roll, and the commons had a design for\n\t\t\t\t\tredividing the land; but the upper classes, aware of their intention, called in the Syracusans and\n\t\t\t\t\texpelled the commons. These last were scattered in various directions; but the upper classes came to\n\t\t\t\t\tan agreement with the Syracusans, abandoned and laid waste their city, and went and lived at\n\t\t\t\t\tSyracuse, where they were made citizens. Afterwards some of them were dissatisfied, and leaving\n\t\t\t\t\tSyracuse occupied Phocaeae, a quarter of the town of Leontini, and Bricinniae, a strong place in the\n\t\t\t\t\tLeontine country, and being there joined by most of the exiled commons carried on war from the\n\t\t\t\t\tfortifications. \n\t\t\t\t\tThe Athenians hearing this, sent Phaeax to see if they could not by some means so convince their\n\t\t\t\t\tallies there and the rest of the Sicilians of the ambitious designs of Syracuse as to induce them to\n\t\t\t\t\tform a general coalition against her, and thus save the commons of Leontini. Arrived in Sicily,\n\t\t\t\t\tPhaeax succeeded at Camarina and Agrigentum, but meeting with a repulse at Gela did not go on to the\n\t\t\t\t\trest, as he saw that he should not succeed with them, but returned through the country of the Sicels\n\t\t\t\t\tto Catana, and after visiting Bricinniae as he passed, and encouraging its inhabitants, sailed back\n\t\t\t\t\tto Athens.\n\t\t\t\t\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  During the armistice, according to\n\t\t\t\tthe author, why the Athenians expelled the Delians from Delos?",
+            "options": [
+                "They have been charged for polluting the warfare.",
+                "According to the author, this must have been because of some\n\t\t\t\told offence.",
+                "Offence of removing the graves made the Athenians expell the\n\t\t\t\tDelians.",
+                "None of the above."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br>"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 9-12: The following\n\t\t\t\t\tpassage has a set of six questions. Read the questions and answer by marking the correct option.\n\t\t\t\t\t\n\n\t\t\t\t\tThe next summer the truce for a year ended, after lasting until the Pythian Games. During the\n\t\t\t\t\tarmistice the Athenians expelled the Delians from Delos, concluding that they must have been\n\t\t\t\t\tpolluted by some old offence at the time of their consecration, and that this had been the omission\n\t\t\t\t\tin the previous purification of the island, which, as I have related, had been thought to have been\n\t\t\t\t\tduly accomplished by the removal of the graves of the dead. The Delians had Atramyttium in Asia\n\t\t\t\t\tgiven them by Pharnaces, and settled there as they removed from Delos. \n\t\t\t\t\tMeanwhile Cleon prevailed on the Athenians to let him set sail at the expiration of the armistice\n\t\t\t\t\tfor the towns in the direction of Thrace with twelve hundred heavy infantry and three hundred horses\n\t\t\t\t\tfrom Athens, a large force of the allies, and thirty ships. First touching at the still besieged\n\t\t\t\t\tScione, and taking some heavy infantry from the army there, he next sailed into Cophos, a harbour in\n\t\t\t\t\tthe territory of Torone, which is not far from the town. From thence, having learnt from deserters\n\t\t\t\t\tthat Brasidas was not in Torone, and that its garrison was not strong enough to give him battle, he\n\t\t\t\t\tadvanced with his army against the town, sending ten ships to sail round into the harbour. He first\n\t\t\t\t\tcame to the fortification lately thrown up in front of the town by Brasidas in order to take in the\n\t\t\t\t\tsuburb, to do which he had pulled down part of the original wall and made it all one city. To this\n\t\t\t\t\tpoint Pasitelidas, the Lacedaemonian commander, with such garrison as there was in the place,\n\t\t\t\t\thurried to repel the Athenian assault; but finding himself hard pressed, and seeing the ships that\n\t\t\t\t\thad been sent round sailing into the harbour, Pasitelidas began to be afraid that they might get up\n\t\t\t\t\tto the city before its defenders were there and, the fortification being also carried, he might be\n\t\t\t\t\ttaken prisoner, and so abandoned the outwork and ran into the town. But the Athenians from the ships\n\t\t\t\t\thad already taken Torone, and their land forces following at his heels burst in with him with a rush\n\t\t\t\t\tover the part of the old wall that had been pulled down, killing some of the Peloponnesians and\n\t\t\t\t\tToronaeans in the melee, and making prisoners of the rest, and Pasitelidas their commander amongst\n\t\t\t\t\tthem. Brasidas meanwhile had advanced to relieve Torone, and had only about four miles more to go\n\t\t\t\t\twhen he heard of its fall on the road, and turned back again. Cleon and the Athenians set up two\n\t\t\t\t\ttrophies, one by the harbour, the other by the fortification and, making slaves of the wives and\n\t\t\t\t\tchildren of the Toronaeans, sent the men with the Peloponnesians and any Chalcidians that were\n\t\t\t\t\tthere, to the number of seven hundred, to Athens; whence, however, they all came home afterwards,\n\t\t\t\t\tthe Peloponnesians on the conclusion of peace, and the rest by being exchanged against other\n\t\t\t\t\tprisoners with the Olynthians. About the same time Panactum, a fortress on the Athenian border, was\n\t\t\t\t\ttaken by treachery by the Boeotians. Meanwhile Cleon, after placing a garrison in Torone, weighed\n\t\t\t\t\tanchor and sailed around Athos on his way to Amphipolis. \n\t\t\t\t\tAbout the same time Phaeax, son of Erasistratus, set sail with two colleagues as ambassador from\n\t\t\t\t\tAthens to Italy and Sicily. The Leontines, upon the departure of the Athenians from Sicily after the\n\t\t\t\t\tpacification, had placed a number of new citizens upon the roll, and the commons had a design for\n\t\t\t\t\tredividing the land; but the upper classes, aware of their intention, called in the Syracusans and\n\t\t\t\t\texpelled the commons. These last were scattered in various directions; but the upper classes came to\n\t\t\t\t\tan agreement with the Syracusans, abandoned and laid waste their city, and went and lived at\n\t\t\t\t\tSyracuse, where they were made citizens. Afterwards some of them were dissatisfied, and leaving\n\t\t\t\t\tSyracuse occupied Phocaeae, a quarter of the town of Leontini, and Bricinniae, a strong place in the\n\t\t\t\t\tLeontine country, and being there joined by most of the exiled commons carried on war from the\n\t\t\t\t\tfortifications. \n\t\t\t\t\tThe Athenians hearing this, sent Phaeax to see if they could not by some means so convince their\n\t\t\t\t\tallies there and the rest of the Sicilians of the ambitious designs of Syracuse as to induce them to\n\t\t\t\t\tform a general coalition against her, and thus save the commons of Leontini. Arrived in Sicily,\n\t\t\t\t\tPhaeax succeeded at Camarina and Agrigentum, but meeting with a repulse at Gela did not go on to the\n\t\t\t\t\trest, as he saw that he should not succeed with them, but returned through the country of the Sicels\n\t\t\t\t\tto Catana, and after visiting Bricinniae as he passed, and encouraging its inhabitants, sailed back\n\t\t\t\t\tto Athens.\n\t\t\t\t\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  All of the following sentences\n\t\t\t\tare true except:",
+            "options": [
+                "the upper class negotiated with the Syracusans\n\t\t\t\tregarding the expelling of commoners from the state.",
+                "Phaeax was sent to save the commons of Leotini by raging a\n\t\t\t\twar with Gela.",
+                "a fortress on the Athenian border was taken by the Boeotians\n\t\t\t\tvia perfidy.",
+                "the truce of the war lasted till the Pythian Games."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br>"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 9-12: The following\n\t\t\t\t\tpassage has a set of six questions. Read the questions and answer by marking the correct option.\n\t\t\t\t\t\n\n\t\t\t\t\tThe next summer the truce for a year ended, after lasting until the Pythian Games. During the\n\t\t\t\t\tarmistice the Athenians expelled the Delians from Delos, concluding that they must have been\n\t\t\t\t\tpolluted by some old offence at the time of their consecration, and that this had been the omission\n\t\t\t\t\tin the previous purification of the island, which, as I have related, had been thought to have been\n\t\t\t\t\tduly accomplished by the removal of the graves of the dead. The Delians had Atramyttium in Asia\n\t\t\t\t\tgiven them by Pharnaces, and settled there as they removed from Delos. \n\t\t\t\t\tMeanwhile Cleon prevailed on the Athenians to let him set sail at the expiration of the armistice\n\t\t\t\t\tfor the towns in the direction of Thrace with twelve hundred heavy infantry and three hundred horses\n\t\t\t\t\tfrom Athens, a large force of the allies, and thirty ships. First touching at the still besieged\n\t\t\t\t\tScione, and taking some heavy infantry from the army there, he next sailed into Cophos, a harbour in\n\t\t\t\t\tthe territory of Torone, which is not far from the town. From thence, having learnt from deserters\n\t\t\t\t\tthat Brasidas was not in Torone, and that its garrison was not strong enough to give him battle, he\n\t\t\t\t\tadvanced with his army against the town, sending ten ships to sail round into the harbour. He first\n\t\t\t\t\tcame to the fortification lately thrown up in front of the town by Brasidas in order to take in the\n\t\t\t\t\tsuburb, to do which he had pulled down part of the original wall and made it all one city. To this\n\t\t\t\t\tpoint Pasitelidas, the Lacedaemonian commander, with such garrison as there was in the place,\n\t\t\t\t\thurried to repel the Athenian assault; but finding himself hard pressed, and seeing the ships that\n\t\t\t\t\thad been sent round sailing into the harbour, Pasitelidas began to be afraid that they might get up\n\t\t\t\t\tto the city before its defenders were there and, the fortification being also carried, he might be\n\t\t\t\t\ttaken prisoner, and so abandoned the outwork and ran into the town. But the Athenians from the ships\n\t\t\t\t\thad already taken Torone, and their land forces following at his heels burst in with him with a rush\n\t\t\t\t\tover the part of the old wall that had been pulled down, killing some of the Peloponnesians and\n\t\t\t\t\tToronaeans in the melee, and making prisoners of the rest, and Pasitelidas their commander amongst\n\t\t\t\t\tthem. Brasidas meanwhile had advanced to relieve Torone, and had only about four miles more to go\n\t\t\t\t\twhen he heard of its fall on the road, and turned back again. Cleon and the Athenians set up two\n\t\t\t\t\ttrophies, one by the harbour, the other by the fortification and, making slaves of the wives and\n\t\t\t\t\tchildren of the Toronaeans, sent the men with the Peloponnesians and any Chalcidians that were\n\t\t\t\t\tthere, to the number of seven hundred, to Athens; whence, however, they all came home afterwards,\n\t\t\t\t\tthe Peloponnesians on the conclusion of peace, and the rest by being exchanged against other\n\t\t\t\t\tprisoners with the Olynthians. About the same time Panactum, a fortress on the Athenian border, was\n\t\t\t\t\ttaken by treachery by the Boeotians. Meanwhile Cleon, after placing a garrison in Torone, weighed\n\t\t\t\t\tanchor and sailed around Athos on his way to Amphipolis. \n\t\t\t\t\tAbout the same time Phaeax, son of Erasistratus, set sail with two colleagues as ambassador from\n\t\t\t\t\tAthens to Italy and Sicily. The Leontines, upon the departure of the Athenians from Sicily after the\n\t\t\t\t\tpacification, had placed a number of new citizens upon the roll, and the commons had a design for\n\t\t\t\t\tredividing the land; but the upper classes, aware of their intention, called in the Syracusans and\n\t\t\t\t\texpelled the commons. These last were scattered in various directions; but the upper classes came to\n\t\t\t\t\tan agreement with the Syracusans, abandoned and laid waste their city, and went and lived at\n\t\t\t\t\tSyracuse, where they were made citizens. Afterwards some of them were dissatisfied, and leaving\n\t\t\t\t\tSyracuse occupied Phocaeae, a quarter of the town of Leontini, and Bricinniae, a strong place in the\n\t\t\t\t\tLeontine country, and being there joined by most of the exiled commons carried on war from the\n\t\t\t\t\tfortifications. \n\t\t\t\t\tThe Athenians hearing this, sent Phaeax to see if they could not by some means so convince their\n\t\t\t\t\tallies there and the rest of the Sicilians of the ambitious designs of Syracuse as to induce them to\n\t\t\t\t\tform a general coalition against her, and thus save the commons of Leontini. Arrived in Sicily,\n\t\t\t\t\tPhaeax succeeded at Camarina and Agrigentum, but meeting with a repulse at Gela did not go on to the\n\t\t\t\t\trest, as he saw that he should not succeed with them, but returned through the country of the Sicels\n\t\t\t\t\tto Catana, and after visiting Bricinniae as he passed, and encouraging its inhabitants, sailed back\n\t\t\t\t\tto Athens.\n\t\t\t\t\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  According to the 1st paragraph of\n\t\t\t\tthe given passage, which of the following defines \u2018consecration\u2019?",
+            "options": [
+                "The action of commanding someone",
+                "The action of ordaining someone",
+                "The action of seducing someone",
+                "The action of following someone"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><i></i><br>"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 9-12: The following\n\t\t\t\t\tpassage has a set of six questions. Read the questions and answer by marking the correct option.\n\t\t\t\t\t\n\n\t\t\t\t\tThe next summer the truce for a year ended, after lasting until the Pythian Games. During the\n\t\t\t\t\tarmistice the Athenians expelled the Delians from Delos, concluding that they must have been\n\t\t\t\t\tpolluted by some old offence at the time of their consecration, and that this had been the omission\n\t\t\t\t\tin the previous purification of the island, which, as I have related, had been thought to have been\n\t\t\t\t\tduly accomplished by the removal of the graves of the dead. The Delians had Atramyttium in Asia\n\t\t\t\t\tgiven them by Pharnaces, and settled there as they removed from Delos. \n\t\t\t\t\tMeanwhile Cleon prevailed on the Athenians to let him set sail at the expiration of the armistice\n\t\t\t\t\tfor the towns in the direction of Thrace with twelve hundred heavy infantry and three hundred horses\n\t\t\t\t\tfrom Athens, a large force of the allies, and thirty ships. First touching at the still besieged\n\t\t\t\t\tScione, and taking some heavy infantry from the army there, he next sailed into Cophos, a harbour in\n\t\t\t\t\tthe territory of Torone, which is not far from the town. From thence, having learnt from deserters\n\t\t\t\t\tthat Brasidas was not in Torone, and that its garrison was not strong enough to give him battle, he\n\t\t\t\t\tadvanced with his army against the town, sending ten ships to sail round into the harbour. He first\n\t\t\t\t\tcame to the fortification lately thrown up in front of the town by Brasidas in order to take in the\n\t\t\t\t\tsuburb, to do which he had pulled down part of the original wall and made it all one city. To this\n\t\t\t\t\tpoint Pasitelidas, the Lacedaemonian commander, with such garrison as there was in the place,\n\t\t\t\t\thurried to repel the Athenian assault; but finding himself hard pressed, and seeing the ships that\n\t\t\t\t\thad been sent round sailing into the harbour, Pasitelidas began to be afraid that they might get up\n\t\t\t\t\tto the city before its defenders were there and, the fortification being also carried, he might be\n\t\t\t\t\ttaken prisoner, and so abandoned the outwork and ran into the town. But the Athenians from the ships\n\t\t\t\t\thad already taken Torone, and their land forces following at his heels burst in with him with a rush\n\t\t\t\t\tover the part of the old wall that had been pulled down, killing some of the Peloponnesians and\n\t\t\t\t\tToronaeans in the melee, and making prisoners of the rest, and Pasitelidas their commander amongst\n\t\t\t\t\tthem. Brasidas meanwhile had advanced to relieve Torone, and had only about four miles more to go\n\t\t\t\t\twhen he heard of its fall on the road, and turned back again. Cleon and the Athenians set up two\n\t\t\t\t\ttrophies, one by the harbour, the other by the fortification and, making slaves of the wives and\n\t\t\t\t\tchildren of the Toronaeans, sent the men with the Peloponnesians and any Chalcidians that were\n\t\t\t\t\tthere, to the number of seven hundred, to Athens; whence, however, they all came home afterwards,\n\t\t\t\t\tthe Peloponnesians on the conclusion of peace, and the rest by being exchanged against other\n\t\t\t\t\tprisoners with the Olynthians. About the same time Panactum, a fortress on the Athenian border, was\n\t\t\t\t\ttaken by treachery by the Boeotians. Meanwhile Cleon, after placing a garrison in Torone, weighed\n\t\t\t\t\tanchor and sailed around Athos on his way to Amphipolis. \n\t\t\t\t\tAbout the same time Phaeax, son of Erasistratus, set sail with two colleagues as ambassador from\n\t\t\t\t\tAthens to Italy and Sicily. The Leontines, upon the departure of the Athenians from Sicily after the\n\t\t\t\t\tpacification, had placed a number of new citizens upon the roll, and the commons had a design for\n\t\t\t\t\tredividing the land; but the upper classes, aware of their intention, called in the Syracusans and\n\t\t\t\t\texpelled the commons. These last were scattered in various directions; but the upper classes came to\n\t\t\t\t\tan agreement with the Syracusans, abandoned and laid waste their city, and went and lived at\n\t\t\t\t\tSyracuse, where they were made citizens. Afterwards some of them were dissatisfied, and leaving\n\t\t\t\t\tSyracuse occupied Phocaeae, a quarter of the town of Leontini, and Bricinniae, a strong place in the\n\t\t\t\t\tLeontine country, and being there joined by most of the exiled commons carried on war from the\n\t\t\t\t\tfortifications. \n\t\t\t\t\tThe Athenians hearing this, sent Phaeax to see if they could not by some means so convince their\n\t\t\t\t\tallies there and the rest of the Sicilians of the ambitious designs of Syracuse as to induce them to\n\t\t\t\t\tform a general coalition against her, and thus save the commons of Leontini. Arrived in Sicily,\n\t\t\t\t\tPhaeax succeeded at Camarina and Agrigentum, but meeting with a repulse at Gela did not go on to the\n\t\t\t\t\trest, as he saw that he should not succeed with them, but returned through the country of the Sicels\n\t\t\t\t\tto Catana, and after visiting Bricinniae as he passed, and encouraging its inhabitants, sailed back\n\t\t\t\t\tto Athens.\n\t\t\t\t\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  What can be derived from the said\n\t\t\t\tjourney of Phaeax, keeping in mind the last sentence of the passage?",
+            "options": [
+                "It was an unsuccessful one because he was nauseated\n\t\t\t\tback at Gela.",
+                "It was a successful one because he was successful in\n\t\t\t\tspreading the word of the Athenians in almost all the states.",
+                "He sailed back to Athens after deciphering the words to all\n\t\t\t\tthe states to form a coalition against Syracuse.",
+                "All of the above."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 13 to 16: The passage\n\t\t\t\t\tgiven below is followed by a set of four questions. Choose\n\t\t\t\t\tthe most appropriate answer to each question.\n\t\t\t\t\tI am always amazed when I hear people say that sport creates goodwill between the nations, and that\n\t\t\t\t\tif\n\t\t\t\t\tonly the common people of the world could meet one another at football or cricket, they would have\n\t\t\t\t\tno\n\t\t\t\t\tinclination to meet on the battlefield. Even if one didn\u2019t know from concrete examples (the 1936\n\t\t\t\t\tOlympic\n\t\t\t\t\tGames, for instance) that international sporting contests lead to orgies of hatred, one could deduce\n\t\t\t\t\tit from\n\t\t\t\t\tgeneral principles.\n\t\t\t\t\tNearly all the sports practised nowadays are competitive. You play to win, and the game has little\n\t\t\t\t\tmeaning\n\t\t\t\t\tunless you do your utmost to win. On the village green, where you pick up sides and no feeling of\n\t\t\t\t\tlocal\n\t\t\t\t\tpatriotism is involved, it is possible to play simply for the fun and exercise: but as soon as the\n\t\t\t\t\tquestion of\n\t\t\t\t\tprestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose,\n\t\t\t\t\tthe most\n\t\t\t\t\tsavage combative instincts are aroused. Anyone who has played even in a school football match knows\n\t\t\t\t\tthis. At the international level sport is frankly mimic warfare. But the significant thing is not\n\t\t\t\t\tthe behaviour of\n\t\t\t\t\tthe players but the attitude of the spectators: and, behind the spectators, of the nations who work\n\t\t\t\t\tthemselves\n\t\t\t\t\tinto furies over these absurd contests, and seriously believe \u2014 at any rate for short periods \u2014 that\n\t\t\t\t\trunning,\n\t\t\t\t\tjumping, and kicking a ball are tests of national virtue.\n\t\t\t\t\tIn England, the obsession with sport is bad enough, but even fiercer passions are aroused in young\n\t\t\t\t\tcountries where games playing and nationalism are both recent developments. As soon as strong\n\t\t\t\t\tfeelings\n\t\t\t\t\tof rivalry are aroused, the notion of playing the game according to the rules always vanishes.\n\t\t\t\t\tPeople want\n\t\t\t\t\tto see one side on top and the other side humiliated, and they forget that victory gained through\n\t\t\t\t\tcheating\n\t\t\t\t\tor through the intervention of the crowd is meaningless. Even when the spectators don\u2019t intervene\n\t\t\t\t\tphysically\n\t\t\t\t\tthey try to influence the game by cheering their own side and \u201crattling\u201d opposing players with boos\n\t\t\t\t\tand\n\t\t\t\t\tinsults. Serious sport has nothing to do with fair play. It is bound up with hatred, jealousy,\n\t\t\t\t\tboastfulness,\n\t\t\t\t\tdisregard of all rules and sadistic pleasure in witnessing violence.\n\t\t\t\t\tThere cannot be much doubt that the whole thing is bound up with the rise of nationalism \u2014 that is,\n\t\t\t\t\twith the\n\t\t\t\t\tlunatic modern habit of identifying oneself with large power units and seeing everything in terms of\n\t\t\t\t\tcompetitive\n\t\t\t\t\tprestige. Also, organised games are more likely to flourish in urban communities where the average\n\t\t\t\t\thuman\n\t\t\t\t\tbeing lives a sedentary or at least a confined life, and does not get much opportunity for creative\n\t\t\t\t\tlabour. In\n\t\t\t\t\ta rustic community, a boy or young man works off a good deal of his surplus energy by walking,\n\t\t\t\t\tswimming,\n\t\t\t\t\tsnowballing, climbing trees, riding horses, and by various sports involving cruelty to animals, such\n\t\t\t\t\tas\n\t\t\t\t\tfishing, cock-fighting and ferreting for rats. In a big town one must indulge in group activities if\n\t\t\t\t\tone wants an\n\t\t\t\t\toutlet for one\u2019s physical strength or for one\u2019s sadistic impulses.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  What is the thematic highlight of\n\t\t\t\tthe passage?\n\t\t\t",
+            "options": [
+                "There exists not much difference between playing\n\t\t\t\tinternational sports and indulging in war with\n\t\t\t\tanother nation.",
+                "People are often misled to believe that sport increases\n\t\t\t\tharmony.",
+                "Sport does not necessarily promote harmony between groups and\n\t\t\t\tnations as many people\n\t\t\t\tmistakenly believe.",
+                "It is impossible to play for fun as all sports ultimately\n\t\t\t\tturn combative."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 13 to 16: The passage\n\t\t\t\t\tgiven below is followed by a set of four questions. Choose\n\t\t\t\t\tthe most appropriate answer to each question. The passage given below is followed by a set\n\t\t\t\t\tof six questions. Choose\n\t\t\t\t\tthe most appropriate answer to each question.\n\t\t\t\t\tI am always amazed when I hear people say that sport creates goodwill between the nations, and that\n\t\t\t\t\tif\n\t\t\t\t\tonly the common people of the world could meet one another at football or cricket, they would have\n\t\t\t\t\tno\n\t\t\t\t\tinclination to meet on the battlefield. Even if one didn\u2019t know from concrete examples (the 1936\n\t\t\t\t\tOlympic\n\t\t\t\t\tGames, for instance) that international sporting contests lead to orgies of hatred, one could deduce\n\t\t\t\t\tit from\n\t\t\t\t\tgeneral principles.\n\t\t\t\t\tNearly all the sports practised nowadays are competitive. You play to win, and the game has little\n\t\t\t\t\tmeaning\n\t\t\t\t\tunless you do your utmost to win. On the village green, where you pick up sides and no feeling of\n\t\t\t\t\tlocal\n\t\t\t\t\tpatriotism is involved, it is possible to play simply for the fun and exercise: but as soon as the\n\t\t\t\t\tquestion of\n\t\t\t\t\tprestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose,\n\t\t\t\t\tthe most\n\t\t\t\t\tsavage combative instincts are aroused. Anyone who has played even in a school football match knows\n\t\t\t\t\tthis. At the international level sport is frankly mimic warfare. But the significant thing is not\n\t\t\t\t\tthe behaviour of\n\t\t\t\t\tthe players but the attitude of the spectators: and, behind the spectators, of the nations who work\n\t\t\t\t\tthemselves\n\t\t\t\t\tinto furies over these absurd contests, and seriously believe \u2014 at any rate for short periods \u2014 that\n\t\t\t\t\trunning,\n\t\t\t\t\tjumping, and kicking a ball are tests of national virtue.\n\t\t\t\t\tIn England, the obsession with sport is bad enough, but even fiercer passions are aroused in young\n\t\t\t\t\tcountries where games playing and nationalism are both recent developments. As soon as strong\n\t\t\t\t\tfeelings\n\t\t\t\t\tof rivalry are aroused, the notion of playing the game according to the rules always vanishes.\n\t\t\t\t\tPeople want\n\t\t\t\t\tto see one side on top and the other side humiliated, and they forget that victory gained through\n\t\t\t\t\tcheating\n\t\t\t\t\tor through the intervention of the crowd is meaningless. Even when the spectators don\u2019t intervene\n\t\t\t\t\tphysically\n\t\t\t\t\tthey try to influence the game by cheering their own side and \u201crattling\u201d opposing players with boos\n\t\t\t\t\tand\n\t\t\t\t\tinsults. Serious sport has nothing to do with fair play. It is bound up with hatred, jealousy,\n\t\t\t\t\tboastfulness,\n\t\t\t\t\tdisregard of all rules and sadistic pleasure in witnessing violence.\n\t\t\t\t\tThere cannot be much doubt that the whole thing is bound up with the rise of nationalism \u2014 that is,\n\t\t\t\t\twith the\n\t\t\t\t\tlunatic modern habit of identifying oneself with large power units and seeing everything in terms of\n\t\t\t\t\tcompetitive\n\t\t\t\t\tprestige. Also, organised games are more likely to flourish in urban communities where the average\n\t\t\t\t\thuman\n\t\t\t\t\tbeing lives a sedentary or at least a confined life, and does not get much opportunity for creative\n\t\t\t\t\tlabour. In\n\t\t\t\t\ta rustic community, a boy or young man works off a good deal of his surplus energy by walking,\n\t\t\t\t\tswimming,\n\t\t\t\t\tsnowballing, climbing trees, riding horses, and by various sports involving cruelty to animals, such\n\t\t\t\t\tas\n\t\t\t\t\tfishing, cock-fighting and ferreting for rats. In a big town one must indulge in group activities if\n\t\t\t\t\tone wants an\n\t\t\t\t\toutlet for one\u2019s physical strength or for one\u2019s sadistic impulses.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  Which of the following would\n\t\t\t\tsupport the author\u2019s views in this passage?\n\t\t\t",
+            "options": [
+                "It is the most violently combative sports such as\n\t\t\t\tfootball and boxing that have spread the widest.",
+                "Sports paraphernalia like use of war paints and beating drums\n\t\t\t\tvalidates the inherent combative\n\t\t\t\tnature of the games.",
+                "Spectators display strong emotions while their favourite team\n\t\t\t\tis playing.",
+                "Many spectators rush into the field to celebrate alongside\n\t\t\t\ttheir team players."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 13 to 16: The passage\n\t\t\t\t\tgiven below is followed by a set of four questions. Choose\n\t\t\t\t\tthe most appropriate answer to each question. The passage given below is followed by a set\n\t\t\t\t\tof six questions. Choose\n\t\t\t\t\tthe most appropriate answer to each question.\n\t\t\t\t\tI am always amazed when I hear people say that sport creates goodwill between the nations, and that\n\t\t\t\t\tif\n\t\t\t\t\tonly the common people of the world could meet one another at football or cricket, they would have\n\t\t\t\t\tno\n\t\t\t\t\tinclination to meet on the battlefield. Even if one didn\u2019t know from concrete examples (the 1936\n\t\t\t\t\tOlympic\n\t\t\t\t\tGames, for instance) that international sporting contests lead to orgies of hatred, one could deduce\n\t\t\t\t\tit from\n\t\t\t\t\tgeneral principles.\n\t\t\t\t\tNearly all the sports practised nowadays are competitive. You play to win, and the game has little\n\t\t\t\t\tmeaning\n\t\t\t\t\tunless you do your utmost to win. On the village green, where you pick up sides and no feeling of\n\t\t\t\t\tlocal\n\t\t\t\t\tpatriotism is involved, it is possible to play simply for the fun and exercise: but as soon as the\n\t\t\t\t\tquestion of\n\t\t\t\t\tprestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose,\n\t\t\t\t\tthe most\n\t\t\t\t\tsavage combative instincts are aroused. Anyone who has played even in a school football match knows\n\t\t\t\t\tthis. At the international level sport is frankly mimic warfare. But the significant thing is not\n\t\t\t\t\tthe behaviour of\n\t\t\t\t\tthe players but the attitude of the spectators: and, behind the spectators, of the nations who work\n\t\t\t\t\tthemselves\n\t\t\t\t\tinto furies over these absurd contests, and seriously believe \u2014 at any rate for short periods \u2014 that\n\t\t\t\t\trunning,\n\t\t\t\t\tjumping, and kicking a ball are tests of national virtue.\n\t\t\t\t\tIn England, the obsession with sport is bad enough, but even fiercer passions are aroused in young\n\t\t\t\t\tcountries where games playing and nationalism are both recent developments. As soon as strong\n\t\t\t\t\tfeelings\n\t\t\t\t\tof rivalry are aroused, the notion of playing the game according to the rules always vanishes.\n\t\t\t\t\tPeople want\n\t\t\t\t\tto see one side on top and the other side humiliated, and they forget that victory gained through\n\t\t\t\t\tcheating\n\t\t\t\t\tor through the intervention of the crowd is meaningless. Even when the spectators don\u2019t intervene\n\t\t\t\t\tphysically\n\t\t\t\t\tthey try to influence the game by cheering their own side and \u201crattling\u201d opposing players with boos\n\t\t\t\t\tand\n\t\t\t\t\tinsults. Serious sport has nothing to do with fair play. It is bound up with hatred, jealousy,\n\t\t\t\t\tboastfulness,\n\t\t\t\t\tdisregard of all rules and sadistic pleasure in witnessing violence.\n\t\t\t\t\tThere cannot be much doubt that the whole thing is bound up with the rise of nationalism \u2014 that is,\n\t\t\t\t\twith the\n\t\t\t\t\tlunatic modern habit of identifying oneself with large power units and seeing everything in terms of\n\t\t\t\t\tcompetitive\n\t\t\t\t\tprestige. Also, organised games are more likely to flourish in urban communities where the average\n\t\t\t\t\thuman\n\t\t\t\t\tbeing lives a sedentary or at least a confined life, and does not get much opportunity for creative\n\t\t\t\t\tlabour. In\n\t\t\t\t\ta rustic community, a boy or young man works off a good deal of his surplus energy by walking,\n\t\t\t\t\tswimming,\n\t\t\t\t\tsnowballing, climbing trees, riding horses, and by various sports involving cruelty to animals, such\n\t\t\t\t\tas\n\t\t\t\t\tfishing, cock-fighting and ferreting for rats. In a big town one must indulge in group activities if\n\t\t\t\t\tone wants an\n\t\t\t\t\toutlet for one\u2019s physical strength or for one\u2019s sadistic impulses.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  Which of the following is true\n\t\t\t\taccording to the passage?\n\t\t\t",
+            "options": [
+                "Sport is one of the main causes of international\n\t\t\t\trivalry.",
+                "The sense of rivalry in sports is another effect of causes\n\t\t\t\tthat have produced nationalism.",
+                "Younger countries are more severely affected by nationalism\n\t\t\t\tthan older countries like England\n\t\t\t\tare.",
+                "Rules have no meaning when a combative sport is being played."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n\t\t\t\tDirections for questions 13 to 16: The passage\n\t\t\t\t\tgiven below is followed by a set of four questions. Choose\n\t\t\t\t\tthe most appropriate answer to each question. The passage given below is followed by a set\n\t\t\t\t\tof six questions. Choose\n\t\t\t\t\tthe most appropriate answer to each question.\n\t\t\t\t\tI am always amazed when I hear people say that sport creates goodwill between the nations, and that\n\t\t\t\t\tif\n\t\t\t\t\tonly the common people of the world could meet one another at football or cricket, they would have\n\t\t\t\t\tno\n\t\t\t\t\tinclination to meet on the battlefield. Even if one didn\u2019t know from concrete examples (the 1936\n\t\t\t\t\tOlympic\n\t\t\t\t\tGames, for instance) that international sporting contests lead to orgies of hatred, one could deduce\n\t\t\t\t\tit from\n\t\t\t\t\tgeneral principles.\n\t\t\t\t\tNearly all the sports practised nowadays are competitive. You play to win, and the game has little\n\t\t\t\t\tmeaning\n\t\t\t\t\tunless you do your utmost to win. On the village green, where you pick up sides and no feeling of\n\t\t\t\t\tlocal\n\t\t\t\t\tpatriotism is involved, it is possible to play simply for the fun and exercise: but as soon as the\n\t\t\t\t\tquestion of\n\t\t\t\t\tprestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose,\n\t\t\t\t\tthe most\n\t\t\t\t\tsavage combative instincts are aroused. Anyone who has played even in a school football match knows\n\t\t\t\t\tthis. At the international level sport is frankly mimic warfare. But the significant thing is not\n\t\t\t\t\tthe behaviour of\n\t\t\t\t\tthe players but the attitude of the spectators: and, behind the spectators, of the nations who work\n\t\t\t\t\tthemselves\n\t\t\t\t\tinto furies over these absurd contests, and seriously believe \u2014 at any rate for short periods \u2014 that\n\t\t\t\t\trunning,\n\t\t\t\t\tjumping, and kicking a ball are tests of national virtue.\n\t\t\t\t\tIn England, the obsession with sport is bad enough, but even fiercer passions are aroused in young\n\t\t\t\t\tcountries where games playing and nationalism are both recent developments. As soon as strong\n\t\t\t\t\tfeelings\n\t\t\t\t\tof rivalry are aroused, the notion of playing the game according to the rules always vanishes.\n\t\t\t\t\tPeople want\n\t\t\t\t\tto see one side on top and the other side humiliated, and they forget that victory gained through\n\t\t\t\t\tcheating\n\t\t\t\t\tor through the intervention of the crowd is meaningless. Even when the spectators don\u2019t intervene\n\t\t\t\t\tphysically\n\t\t\t\t\tthey try to influence the game by cheering their own side and \u201crattling\u201d opposing players with boos\n\t\t\t\t\tand\n\t\t\t\t\tinsults. Serious sport has nothing to do with fair play. It is bound up with hatred, jealousy,\n\t\t\t\t\tboastfulness,\n\t\t\t\t\tdisregard of all rules and sadistic pleasure in witnessing violence.\n\t\t\t\t\tThere cannot be much doubt that the whole thing is bound up with the rise of nationalism \u2014 that is,\n\t\t\t\t\twith the\n\t\t\t\t\tlunatic modern habit of identifying oneself with large power units and seeing everything in terms of\n\t\t\t\t\tcompetitive\n\t\t\t\t\tprestige. Also, organised games are more likely to flourish in urban communities where the average\n\t\t\t\t\thuman\n\t\t\t\t\tbeing lives a sedentary or at least a confined life, and does not get much opportunity for creative\n\t\t\t\t\tlabour. In\n\t\t\t\t\ta rustic community, a boy or young man works off a good deal of his surplus energy by walking,\n\t\t\t\t\tswimming,\n\t\t\t\t\tsnowballing, climbing trees, riding horses, and by various sports involving cruelty to animals, such\n\t\t\t\t\tas\n\t\t\t\t\tfishing, cock-fighting and ferreting for rats. In a big town one must indulge in group activities if\n\t\t\t\t\tone wants an\n\t\t\t\t\toutlet for one\u2019s physical strength or for one\u2019s sadistic impulses.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  The author of the passage can be\n\t\t\t\tcharacterized as being:\n\t\t\t",
+            "options": [
+                "a cynic.",
+                "an opinionated writer.",
+                "a sports critic.",
+                "a sports enthusiast."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br>"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  The following question consists\n\t\t\t\tof a set of five sentences. These sentences need to be arranged in a coherent manner to create a\n\t\t\t\tmeaningful paragraph. Type in the correct order of the sentences in the space provided below the\n\t\t\t\tquestion.\n\t\t\t\t1. To this end, individuals at the helm of powerful societies are \u201cstanding athwart history, yelling\n\t\t\t\tStop\u201d. \n\t\t\t\t2. Ours is an age awash in reactionary fever. \n\t\t\t\t3. Words by influential political figures borrow from vocabularies of patriotism to provoke and incite\n\t\t\t\tin the name of \u2018return to greatness\u2019. \n\t\t\t\t4. Many have mistakenly diagnosed this as a rise or a return of conservatism. \n\t\t\t\t5. They promise to halt change, reset the clock, and if need be abolish history itself. ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br><br>"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  Four alternative summaries are\n\t\t\t\tgiven below the text. Type the number of the option that best captures the essence of the text. \n\n\t\t\t\tThe first thing you must do is admit to yourself that you need to change, that you really want to do\n\t\t\t\tsomething about the way you presently talk. This is tough but your commitment must be total; not even a\n\t\t\t\tsmall part of you must hold back. Don\u2019t dwell longingly on your fluency in the magical belief that\n\t\t\t\tsomeday your speech blocks will disappear. There is no magic potion, no pink pill that will cure\n\t\t\t\tstuttering. Don\u2019t sit around waiting for the right time, for an inspiration to come to you\u2014you must go\n\t\t\t\tto \u201cit.\u201d You must see that the old solutions, the things you have done to help yourself over the years\n\t\t\t\t(and those cover-up suggestions from well-meaning amateur therapists, \u201cThink what you want to say,\u201d\n\t\t\t\t\u201cSlow down,\u201d etc.) simply do not work. Ruts wear deep, though, and you will find it difficult to change;\n\t\t\t\teven though the way you presently talk is not particularly pleasant, it is familiar. It is the unknown\n\t\t\t\tfrom which we shrink. \n\n\t\t\t",
+            "options": [
+                "There is no automatic solution to stuttering because\n\t\t\t\tthe old solutions simply do not work. You must admit to yourself that change is needed and commit\n\t\t\t\tyourself totally to it.",
+                "You should avoid procrastination; shun the fear of change;\n\t\t\t\tacknowledge the fact that old solutions don\u2019t work and commit totally towards addressing stuttering.",
+                "The starting point of curing stuttering is to acknowledge\n\t\t\t\tthat you need change and this can come about by understanding that there is no magic potion for curing\n\t\t\t\tstuttering.",
+                "No matter what you try there is no quick solution to curing\n\t\t\t\tstuttering. You must endure temporary discomfort for long range improvement."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  There is a sentence missing in\n\t\t\t\tthe paragraph below. Look at the paragraph and decide in which blank (option 1, 2, 3, or 4) the\n\t\t\t\tfollowing sentence would best fit.\n\t\t\t\tSentence:  When doctors prescribe a medicine for fever, for example, they will have to give\n\t\t\t\tparacetamol, not drugs such as Panadol or Calpol. \n\t\t\t\tParagraph: \n\t\t\t\t___1___. Indian doctors have been told they can no longer prescribe branded drugs for their patients,\n\t\t\t\tprovoking vehement protest from the Indian Medical Association [IMA]. ___2____. New government\n\t\t\t\tguidelines demand a wider use of generic drugs, which are 30%-80% cheaper, reducing the cost of\n\t\t\t\tmedicines for millions. ___3___. Doctors liken this to \u201crunning trains without tracks\u201d because the\n\t\t\t\tquality of generic drugs cannot be guaranteed._____4____. \u201cQuality control is very weak,\u201d said the IMA\n\t\t\t\tin a statement.\n\t\t\t",
+            "options": [
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Option 4"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  In the question below, rearrange\n\t\t\t\tthe given set of statements and type in the right sequence as your answer.\n\n\t\t\t\t1. New brain-machine interfaces will improve our memory and cognition, extend our senses, and confer\n\t\t\t\tdirect control over an array of semi-intelligent gadgets.\n\t\t\t\t2. Genetic and epigenetic modification will allow us to change our physical appearance and capabilities,\n\t\t\t\tas well as to tweak some of the more intangible aspects of our being such as emotion, creativity or\n\t\t\t\tsociability.\n\t\t\t\t3. Within the lifetimes of most children today, bio-enhancement is likely to become a basic feature of\n\t\t\t\thuman society.\n\t\t\t\t4. Personalized pharmaceuticals will enable us to modify our bodies and minds in powerful and precise\n\t\t\t\tways, with far fewer side-effects than today\u2019s drugs.\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br><br>"
+        },
+        "20021": {
+            "id": "20021",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.21 [11916616]  Four alternative summaries are\n\t\t\t\tgiven below the text. Type the number of the option that best captures the essence of the text. \n\n\t\t\t\tThe rock art of Palaeolithic Europe is essentially an art of caves: paintings and engravings made on the\n\t\t\t\twalls of caves, mostly in their deepest and most difficult to reach recesses. This art is constituted\n\t\t\t\tfor the most part by animal representations: there are very few human figures, and most of them are\n\t\t\t\thybrids showing both animal and human features. However, what could be the general signification of all\n\t\t\t\tthis? What relationship could be envisaged between the caves and the animals? We can start from an\n\t\t\t\tobservation made by Leroi-Gourhan, according to which it is suggested that the entire cave had a female\n\t\t\t\tsymbolic meaning for the prehistoric peoples; he thinks that they have left some evidence of this,\n\t\t\t\tmarking or thoroughly anointing with red paint narrow and oval passages, fissures, holes and cavities.\n\t\t\t\tIn this way, the cave became a mysterious place peopled by feminine shapes. This is interpreted as a\n\t\t\t\tkind of \u201cfertility cult\u201d of Palaeolithic hunters, based on an opposition between male and female\n\t\t\t\tsymbols: the animals themselves could be regarded as forming groups of \u201cmales\u201d and \u201cfemales\u201d, not\n\t\t\t\taccording to the explicit sex of the individual, which is rarely evidenced, but by associating the\n\t\t\t\tentire species with either male or female symbols. \n\n\t\t\t",
+            "options": [
+                "The significance of the rock art of Palaeolithic Europe\n\t\t\t\tis best explained by Leroi-Gourhan \u2500 a kind of fertility cult of Palaeolithic hunters wherein the\n\t\t\t\tdrawings of an entire species is associated with either male or female symbols.",
+                "The significance of the rock art of Palaeolithic Europe is\n\t\t\t\tthat the entire cave had a symbolic meaning for the prehistoric people, which is based on an opposition\n\t\t\t\tbetween male and female symbols.",
+                "The significance of the rock art of Palaeolithic Europe,\n\t\t\t\taccording to Leroi Gourhan, is that the paintings of the animals are symbolic and this can be\n\t\t\t\tinterpreted as a kind of fertility cult of Palaeolithic hunters.",
+                "The significance of the rock art of Palaeolithic Europe is\n\t\t\t\tthat it has very few human figures, however, Leroi-Gourhan\u2019s suggestion that these have symbolic meaning\n\t\t\t\tclarifies the otherwise intriguing nature of these art."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20022": {
+            "id": "20022",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.22 [11916616]  In the following question\n\t\t\t\tconsists of a paragraph followed by four summaries. Choose the option that best captures the essence of\n\t\t\t\tthe paragraph. Type in the option number in the space provided below the question.\n\n\t\t\t\tFor psychologists to understand the way in which adolescent girls develop in relation to the world\n\t\t\t\taround them, it is important to examine adolescent girls' friendships. Close friendships, considered by\n\t\t\t\tmany social scientists to be the \"most rewarding and satisfying of all human relationships\" are clearly\n\t\t\t\timportant for the social and emotional health of all adolescents, regardless of ethnicity, race, or\n\t\t\t\tsocioeconomic status. What is known about girls' friendships and peer relations is based primarily on\n\t\t\t\tsituating girls with boys. Although these studies provide important information, they offer little\n\t\t\t\tunderstanding of the diversity of experiences and perceptions of friendships among girls, including the\n\t\t\t\timportant distinction girls make among types of friends and the nature and quality of these\n\t\t\t\trelationships. There has also been little attention given to the ways in which class, culture, race,\n\t\t\t\tethnicity, and sexual identity shape adolescent girls' friendships groupings and even less attention to\n\t\t\t\tthe ways in which racism, sexism, classism, and homophobia influence the environments in which girls'\n\t\t\t\tfriendships are nurtured. ",
+            "options": [
+                "Girls' friendships and peer relations mitigate or\n\t\t\t\texacerbate the psychological and social struggles of adolescence.",
+                "More research is needed to understand the friendship of\n\t\t\t\tadolescent girls so as to understand how these girls grow and develop with respect to the surrounding\n\t\t\t\tworld.",
+                "Girls' friendships are a source of struggle, hurt, and\n\t\t\t\tconfusion, particularly as girls move into adolescence and begin to negotiate dominant cultural views of\n\t\t\t\tsexual relationships, femininity, and appearance.",
+                "More research is needed to understand the role popularity and\n\t\t\t\tattractiveness play in the development and configuration of adolescent girls' peer groupings."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20023": {
+            "id": "20023",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.23 [11916616]  There is a sentence missing in\n\t\t\t\tthe paragraph below. Look at the paragraph and decide in which blank (option 1, 2, 3, or 4) the\n\t\t\t\tfollowing sentence would best fit. \n\t\t\t\tSentence:  There was just one problem\n\t\t\t\tParagraph: \n\t\t\t\tTorbj\u00f8rn Pedersen has always dreamed of being a famous adventurer. ____1___. He spent his childhood\n\t\t\t\tbuilding dens in the woods, pretending to be his hero, Indiana Jones. Even as an adult, he couldn\u2019t\n\t\t\t\tshake the sense that he was destined for greatness. _____2____. \u201cI was born at least 100 years too\n\t\t\t\tlate,\u201d he tells me over a video call from his home in Copenhagen.___3____. \u201cI had a profound feeling\n\t\t\t\tthat everything had been done. The great adventures took place in the past. It was all over.\u201d___4____.\n\t\t\t",
+            "options": [
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Option 4"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20024": {
+            "id": "20024",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.24 [11916616]  In the question below, rearrange\n\t\t\t\tthe given set of statements and type in the right sequence as your answer.\n\n\t\t\t\t1. There is also what I call \u2018the big-picture defense\u2019, claiming that evil only appears as such from our\n\t\t\t\tlimited perspectives.\n\t\t\t\t2. Others have argued that certain kinds of moral goodness \u2013 compassion, for instance \u2013 are not possible\n\t\t\t\tin a world without evil, and the value of these types of goodness outweighs the evils on which their\n\t\t\t\texistence depends.\n\t\t\t\t3. There is the argument of free will, attributing evil not to God but to humanity\u2019s misuse of its own\n\t\t\t\tfreedom.\n\t\t\t\t4. Many solutions to the problem of evil \u2013 called \u2018theodicies\u2019 \u2013 have been proposed.\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

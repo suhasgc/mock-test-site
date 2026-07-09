@@ -117,7 +117,21 @@ function preloadMocks() {
         'simcat1_data.json'
     ];
     
-    mockFiles.forEach(file => {
+    const clFiles = [
+        'cl_lrdi_1_exam_portal.json', 'cl_lrdi_2_exam_portal.json', 'cl_lrdi_3_exam_portal.json', 'cl_lrdi_4_exam_portal.json', 'cl_lrdi_5_exam_portal.json',
+        'cl_lrdi_6_exam_portal.json', 'cl_lrdi_7_exam_portal.json', 'cl_lrdi_8_exam_portal.json', 'cl_lrdi_9_exam_portal.json', 'cl_lrdi_10_exam_portal.json',
+        'cl_lrdi_11_exam_portal.json', 'cl_lrdi_12_exam_portal.json', 'cl_lrdi_13_exam_portal.json', 'cl_lrdi_14_exam_portal.json', 'cl_lrdi_15_exam_portal.json',
+        'cl_qa_1_exam_portal.json', 'cl_qa_2_exam_portal.json', 'cl_qa_3_exam_portal.json', 'cl_qa_4_exam_portal.json', 'cl_qa_5_exam_portal.json',
+        'cl_qa_6_exam_portal.json', 'cl_qa_7_exam_portal.json', 'cl_qa_8_exam_portal.json', 'cl_qa_9_exam_portal.json', 'cl_qa_10_exam_portal.json',
+        'cl_qa_11_exam_portal.json', 'cl_qa_12_exam_portal.json', 'cl_qa_13_exam_portal.json', 'cl_qa_14_exam_portal.json', 'cl_qa_15_exam_portal.json',
+        'cl_varc_1_exam_portal.json', 'cl_varc_2_exam_portal.json', 'cl_varc_3_exam_portal.json', 'cl_varc_4_exam_portal.json', 'cl_varc_5_exam_portal.json',
+        'cl_varc_6_exam_portal.json', 'cl_varc_7_exam_portal.json', 'cl_varc_8_exam_portal.json', 'cl_varc_9_exam_portal.json', 'cl_varc_10_exam_portal.json',
+        'cl_varc_11_exam_portal.json', 'cl_varc_12_exam_portal.json', 'cl_varc_13_exam_portal.json', 'cl_varc_14_exam_portal.json', 'cl_varc_15_exam_portal.json'
+    ];
+    
+    const allFiles = [...mockFiles, ...clFiles];
+    
+    allFiles.forEach(file => {
         fetch(file)
             .then(res => {
                 if (!res.ok) throw new Error("HTTP error " + res.status);
@@ -132,10 +146,12 @@ function preloadMocks() {
                     });
                 }
                 
+                const isCl = file.startsWith('cl_');
                 const mockObject = {
-                    id: file.replace('_data.json', ''),
-                    name: data.name || file.replace('_data.json', '').toUpperCase(),
+                    id: file.replace('_data.json', '').replace('.json', ''),
+                    name: data.name || file.replace('_data.json', '').replace('.json', '').toUpperCase(),
                     type: (data.name && data.name.toLowerCase().includes('xat')) ? 'xat' : 'cat',
+                    category: isCl ? 'sectional' : 'full',
                     description: `Official offline mock containing ${Object.keys(data.questions || {}).length} questions across ${Object.keys(data.sections || {}).length} sections.`,
                     duration: duration,
                     isSectionalTimed: !(data.name && data.name.toLowerCase().includes('xat')),

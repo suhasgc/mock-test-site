@@ -1,0 +1,452 @@
+{
+    "name": "QA 15 - 2023",
+    "sections": {
+        "QA": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020",
+            "20021",
+            "20022"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.1 [11916616]  If\n\t\t\t\t\t\t\t\t\t\t\t\tp + q = 8 and p - q = 6, where p and q are roots of a quadratic\n\t\t\t\t\t\t\t\t\t\t\t\tequation, then which of the following equations has its roots as\n\t\t\t\t\t\t\t\t\t\t\t\tp2 and q4?",
+            "options": [
+                "x2 + 50x + 51\n\t\t\t\t\t\t\t\t\t\t\t\t= 0",
+                "x2 - 50x + 49 = 0",
+                "x2 - 49x + 48 = 0",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888970/87s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  In\n\t\t\t\t\t\t\t\t\t\t\talloy A, zinc and iron are mixed in the ratio 1 : 4. In alloy B, iron and\n\t\t\t\t\t\t\t\t\t\t\tcopper are mixed in the ratio\n\t\t\t\t\t\t\t\t\t\t\t2 : 5 whereas in alloy C, copper and aluminium are mixed in the ratio of 4 :\n\t\t\t\t\t\t\t\t\t\t\t2. All the three alloys are mixed\n\t\t\t\t\t\t\t\t\t\t\tin the ratio of 1 : 2 : 3. Find the percentage of zinc in the mixture.\n\t\t\t\t\t\t\t\t\t\t",
+            "options": [
+                "3.33%",
+                "6%",
+                "6.67%",
+                "10%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888950/67s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  A is 4 times\n\t\t\t\t\t\t\t\t\tas efficient as B and takes 6 days less to complete a piece of work. Find the number\n\t\t\t\t\t\t\t\t\tof days taken by A and B together.",
+            "options": [
+                "2 days",
+                "1.6 days",
+                "1.8 days",
+                "2.4 days"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888983/100s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  F(x) is a\n\t\t\t\t\t\t\t\tquadratic polynomial with maximum value of 3 at x = -2 . If F(0) = 2, find F (6).\n\t\t\t\t\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  If the average of n\n\t\t\t\t\t\t\tconsecutive natural numbers starting with \"a\" is 29 then the average of n natural\n\t\t\t\t\t\t\tnumbers starting with \"2a + 29\" will be\n\t\t\t\t\t\t\t(Write '0' if your answer is cannot be determined)\n\t\t\t\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888956/73s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  If f(x) = x2 -\n\t\t\t\t\t\t2ax + b can be factorised as (x - a)(x - b), then find the value of f(4) where a and b are\n\t\t\t\t\t\tpositive real numbers.",
+            "options": [
+                "25",
+                "0",
+                "9",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888969/86s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  An equilateral triangle ABC is\n\t\t\t\t\tdrawn on the side of the square BCDE and outside the square BCDE. Find the ratio of the angle DAC to\n\t\t\t\t\tthe angle EAD.",
+            "options": [
+                "2 : 1",
+                "3 : 4",
+                "2 : 3",
+                "1 : 2"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888954/71s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  In how many ways can 7 identical\n\t\t\t\tballs be placed in 4 boxes, P, Q, R and S such that boxes P and Q\n\t\t\t\thave at least one ball each?\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888968/85s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  What is the approximate difference\n\t\t\t\t(in Rs.) between the interest earned on the sum of Rs.20,000 at 20% simple interest for 4 years and the\n\t\t\t\tinterest earned on Rs.25,000 at 20% compound interest compounded half yearly for 2 years?",
+            "options": [
+                "5000",
+                "4289",
+                "4397",
+                "5212"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888952/69s.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  Shasha sets off on his bike from\n\t\t\t\tNoida to Kanpur, at a certain speed, intending to reach Kanpur by\n\t\t\t\t5 pm. After covering a certain distance, he realises that he would be able to cover only five-eighth\n\t\t\t\tof the intended distance by 5 pm. He therefore increases his speed by 75% and reaches Kanpur at\n\t\t\t\t5 pm. What fraction of the total distance did he cover at his initial speed?",
+            "options": [
+                "5/8",
+                "1/8",
+                "3/4",
+                "3/5"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888982/99s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  Price of the diesel is increased\n\t\t\t\tfrom Rs 60/litre to Rs 70/litre. By how much percent should the consumption of the diesel be reduced by\n\t\t\t\tRavi so as to increase his expenditure by only 5%?\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888965/82s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Astha, Priya and Kannu bought 1,\n\t\t\t\t10 and 25 notebooks in Rs.14, Rs.130 and Rs.300, respectively, from a stationery shop. In his sales with\n\t\t\t\tAstha and Kannu, the shopkeeper made a profit of a% and b% respectively, where a = 2b. If the shopkeeper\n\t\t\t\tbought all the notebooks at the same price, then how much profit percentage did the shopkeeper make in\n\t\t\t\this sales with Priya?",
+            "options": [
+                "30",
+                "38",
+                "28",
+                "40"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888974/91s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Let the ratio of male population\n\t\t\t\tto female population be 3 : 4 in the first year and in the second year be 4 : 5. If their population\n\t\t\t\tgrows at a uniform rate then find the ratio of male population to female population in the third year.\n\t\t\t",
+            "options": [
+                "5 : 6",
+                "64 : 75",
+                "16 : 25",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888980/97s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  A Spice airline has a free\n\t\t\t\tluggage allowance upto a certain kg and if there is extra luggage, it is charged at constant\n\t\t\t\trate per kg. The total luggage charge paid by M and S is Rs. 1050. If both M and S has carried twice\n\t\t\t\tthe luggage they actually did then charge would be Rs. 2400 & Rs.900 respectively.Find the luggage\n\t\t\t\tcharge paid by M(in Rs.).\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888955/72s.gif\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  A Swimmer R swims from point X to\n\t\t\t\tY and back in 10 hours. If he drops his watch at point X, the\n\t\t\t\twatch takes 15 hours to float to point Y. What is the ratio of speed of R while swimming in the\n\t\t\t\twater to that of current?",
+            "options": [
+                "10 : 1",
+                "6 : 1",
+                "3 : 1"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888981/98s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  Find the average of the following\n\t\t\t\tseries 1 \u00d7 2 \u00d7 3 \u00d7 4 + 2 \u00d7 3 \u00d7 4 \u00d7 5 + 3 \u00d7 4 \u00d7 5 \u00d7 6 + \u2026 + 11 \u00d7 12\n\t\t\t\t\u00d7 13 \u00d7 14\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888976/93s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  How many acute angled triangles\n\t\t\t\twith integral sides are possible if two of the sides are 7 and 11?\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888967/84s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  If P1 + P2\n\t\t\t\t+ P3 = 59 where P1, P2, P3 are prime numbers and\n\t\t\t\tP1\n\t\t\t\t< P2\n\t\t\t\t\t< P3, then how many values\n\t\t\t\t\t\tcan P2 take?\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888957/74ss.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  If N= 1! + 2! + 3! +.........10!,\n\t\t\t\tthen what is the unit digit of NNN?",
+            "options": [
+                "9",
+                "3",
+                "7",
+                "1"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888959/76s.gif\">"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  Which of the following values of\n\t\t\t\t'a' satisfy the inequality a(a - 6) > 2a - 12?",
+            "options": [
+                "24 < a < 71",
+                "a > 6 or a < 2",
+                "a > 40 or a < 31",
+                "2 < a < 6"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888951/68s.gif\">"
+        },
+        "20021": {
+            "id": "20021",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.21 [11916616]  MNOP is a square, having side 6\n\t\t\t\tcm, in which MNO and MNP are two quadrants of a circle. If a circle is drawn touching both the quadrants\n\t\t\t\tand the square, as shown in the figure given below, then find the area of the circle.",
+            "options": [
+                "99/224",
+                "68/225",
+                "47/224",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773335/888953/70s.gif\">"
+        },
+        "20022": {
+            "id": "20022",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.22 [11916616]  ",
+            "options": [
+                "2",
+                "8",
+                "4",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

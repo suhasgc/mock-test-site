@@ -1,0 +1,419 @@
+{
+    "name": "DILR 08 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n                                                    1 to 5: Answer the questions on the basis of the information\n                                                given below.\n\n                                                Four professors - A, B, C and D - each had to teach four different\n                                                students - M, N, O and P. Each professor could teach these students for\n                                                a limited time only. Also each student required only a specific hours of\n                                                training under each professor.\n\n                                                Some data about the time spent by the professors on students is provided\n                                                in the table given below. \n                                                For example, 3 written in first row and first column denotes the\n                                                teaching time (in hours) spent by professor A on student M. This can be\n                                                denoted as MA.\n                                                \n                                                \n                                                \u2022 Average time spent by professors A and B on teaching M = Average time\n                                                spent by professors C and D on teaching M = average time spent by all\n                                                the professors on teaching M.\n                                                \u2022 Total teaching time required by M = total teaching time required by\n                                                O.\n                                                \u2022 OC \u00d7 OD \u00d7 OA = OB\n                                                and OC \u2013 OD = OD \u2013 OA\n                                                and OC > OD\n                                                \u2022 Time spent by any professor on teaching any student is an integral\n                                                multiple of hours.\n                                            ",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n                                                What was the total teaching time (in hours) allotted to P?\n                                            ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842479/52s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n                                                5: Answer the questions on the basis of the information given\n                                            below.\n\n                                            Four professors - A, B, C and D - each had to teach four different students\n                                            - M, N, O and P. Each professor could teach these students for a limited\n                                            time only. Also each student required only a specific hours of training\n                                            under each professor.\n\n                                            Some data about the time spent by the professors on students is provided in\n                                            the table given below. \n                                            For example, 3 written in first row and first column denotes the teaching\n                                            time (in hours) spent by professor A on student M. This can be denoted as\n                                            MA.\n                                            \n                                            \n                                            \u2022 Average time spent by professors A and B on teaching M = Average time\n                                            spent by professors C and D on teaching M = average time spent by all the\n                                            professors on teaching M.\n                                            \u2022 Total teaching time required by M = total teaching time required by O.\n                                            \u2022 OC \u00d7 OD \u00d7 OA = OB\n                                            and OC \u2013 OD = OD \u2013 OA\n                                            and OC > OD\n                                            \u2022 Time spent by any professor on teaching any student is an integral\n                                            multiple of hours.\n                                        ",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  Which\n                                            student had the lowest total training time?",
+            "options": [
+                "M and N",
+                "N and O",
+                "O and M",
+                "P and N"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842480/53s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                    Answer the questions on the basis of the information given below.\n\n                                    Four professors - A, B, C and D - each had to teach four different students - M, N,\n                                    O and P. Each professor could teach these students for a limited time only. Also\n                                    each student required only a specific hours of training under each\n                                    professor.\n\n                                    Some data about the time spent by the professors on students is provided in the\n                                    table given below. \n                                    For example, 3 written in first row and first column denotes the teaching time (in\n                                    hours) spent by professor A on student M. This can be denoted as MA.\n                                    \n                                    \n                                    \u2022 Average time spent by professors A and B on teaching M = Average time spent by\n                                    professors C and D on teaching M = average time spent by all the professors on\n                                    teaching M.\n                                    \u2022 Total teaching time required by M = total teaching time required by O.\n                                    \u2022 OC \u00d7 OD \u00d7 OA = OB\n                                    and OC \u2013 OD = OD \u2013 OA\n                                    and OC > OD\n                                    \u2022 Time spent by any professor on teaching any student is an integral multiple of\n                                    hours.\n                                ",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  How many hours\n                                    did professor A spend on teaching P?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842481/54s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                Answer the questions on the basis of the information given below.\n\n                                Four professors - A, B, C and D - each had to teach four different students - M, N, O\n                                and P. Each professor could teach these students for a limited time only. Also each\n                                student required only a specific hours of training under each professor.\n\n                                Some data about the time spent by the professors on students is provided in the table\n                                given below. \n                                For example, 3 written in first row and first column denotes the teaching time (in\n                                hours) spent by professor A on student M. This can be denoted as MA.\n                                \n                                \n                                \u2022 Average time spent by professors A and B on teaching M = Average time spent by\n                                professors C and D on teaching M = average time spent by all the professors on teaching\n                                M.\n                                \u2022 Total teaching time required by M = total teaching time required by O.\n                                \u2022 OC \u00d7 OD \u00d7 OA = OB\n                                and OC \u2013 OD = OD \u2013 OA\n                                and OC > OD\n                                \u2022 Time spent by any professor on teaching any student is an integral multiple of\n                                hours.\n                            ",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  Which student was\n                                allotted the highest training time by professor C?",
+            "options": [
+                "M",
+                "N",
+                "O",
+                "P"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776703/1613130/5ss.gif\"><br>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer\n                            the questions on the basis of the information given below.\n\n                            Four professors - A, B, C and D - each had to teach four different students - M, N, O and P.\n                            Each professor could teach these students for a limited time only. Also each student\n                            required only a specific hours of training under each professor.\n\n                            Some data about the time spent by the professors on students is provided in the table given\n                            below. \n                            For example, 3 written in first row and first column denotes the teaching time (in hours)\n                            spent by professor A on student M. This can be denoted as MA.\n                            \n                            \n                            \u2022 Average time spent by professors A and B on teaching M = Average time spent by professors\n                            C and D on teaching M = average time spent by all the professors on teaching M.\n                            \u2022 Total teaching time required by M = total teaching time required by O.\n                            \u2022 OC \u00d7 OD \u00d7 OA = OB\n                            and OC \u2013 OD = OD \u2013 OA\n                            and OC > OD\n                            \u2022 Time spent by any professor on teaching any student is an integral multiple of hours.\n                        ",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  How many hours did\n                            professor D spend on teaching M?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828425/51s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                        questions on the basis of the information given below.\n                        IIM Delhi was set up this year and it absorbed a batch of 80 students for its two-year PGP\n                        course in\n                        management. Every student satisfied all of the three given selection criteria. The criteria for\n                        selection\n                        were as follows:\n                        I. The candidate should have taken exactly one of the CAT or XAT examinations.\n                        II. The candidate must have:\n                        Secured at least 96 percentile in the examination he/she had written OR secured a rank among the\n                        top 10 students in his or her university examination (university topper) OR both.\n                        III. The candidate must either be a fresher or have work experience of more than 3 years.\n                        Further information about the students absorbed by the Institute is as follows:\n                        a. There were 45 students who had secured a rank among the top 10 students in their university\n                        examination. Of these 33.3 % were fresher while 66.66% had appeared for CAT.\n                        b. 30 students had taken the XAT examination, of which 15 were fresher.\n                        c. Of the students who had work experience greater than 3 years, 15 students were university\n                        toppers\n                        (i.e. in the top 10) and these students had also secured 96 or more percentile in the\n                        examination\n                        they had taken (i.e. CAT or XAT).\n                        d. There were 20 students who had taken the CAT examination, had secured a rank among the top 10\n                        students in their university examination and also had work experience of more than 3 years.\n                        e. There were a total of 40 students who had work experience of more than 3 years.\n                        f. No fresher satisfied both the criteria mentioned in (II) above.\n                    ",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  What was the number of\n                        students with work experience that the college had absorbed who were\n                        also university toppers, had taken CAT examination and secured more than 96 percentile.",
+            "options": [
+                "5",
+                "7",
+                "3",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828426/52s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                    questions on the basis of the information given below.\n                    IIM Delhi was set up this year and it absorbed a batch of 80 students for its two-year PGP course in\n                    management. Every student satisfied all of the three given selection criteria. The criteria for\n                    selection\n                    were as follows:\n                    I. The candidate should have taken exactly one of the CAT or XAT examinations.\n                    II. The candidate must have:\n                    Secured at least 96 percentile in the examination he/she had written OR secured a rank among the\n                    top 10 students in his or her university examination (university topper) OR both.\n                    III. The candidate must either be a fresher or have work experience of more than 3 years.\n                    Further information about the students absorbed by the Institute is as follows:\n                    a. There were 45 students who had secured a rank among the top 10 students in their university\n                    examination. Of these 33.3 % were fresher while 66.66% had appeared for CAT.\n                    b. 30 students had taken the XAT examination, of which 15 were fresher.\n                    c. Of the students who had work experience greater than 3 years, 15 students were university toppers\n                    (i.e. in the top 10) and these students had also secured 96 or more percentile in the examination\n                    they had taken (i.e. CAT or XAT).\n                    d. There were 20 students who had taken the CAT examination, had secured a rank among the top 10\n                    students in their university examination and also had work experience of more than 3 years.\n                    e. There were a total of 40 students who had work experience of more than 3 years.\n                    f. No fresher satisfied both the criteria mentioned in (II) above.\n                ",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  Find the absolute difference\n                    between the number of CAT takers who were not freshers, and the\n                    number of freshers who were not CAT takers.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828427/53s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                IIM Delhi was set up this year and it absorbed a batch of 80 students for its two-year PGP course in\n                management. Every student satisfied all of the three given selection criteria. The criteria for\n                selection\n                were as follows:\n                I. The candidate should have taken exactly one of the CAT or XAT examinations.\n                II. The candidate must have:\n                Secured at least 96 percentile in the examination he/she had written OR secured a rank among the\n                top 10 students in his or her university examination (university topper) OR both.\n                III. The candidate must either be a fresher or have work experience of more than 3 years.\n                Further information about the students absorbed by the Institute is as follows:\n                a. There were 45 students who had secured a rank among the top 10 students in their university\n                examination. Of these 33.3 % were fresher while 66.66% had appeared for CAT.\n                b. 30 students had taken the XAT examination, of which 15 were fresher.\n                c. Of the students who had work experience greater than 3 years, 15 students were university toppers\n                (i.e. in the top 10) and these students had also secured 96 or more percentile in the examination\n                they had taken (i.e. CAT or XAT).\n                d. There were 20 students who had taken the CAT examination, had secured a rank among the top 10\n                students in their university examination and also had work experience of more than 3 years.\n                e. There were a total of 40 students who had work experience of more than 3 years.\n                f. No fresher satisfied both the criteria mentioned in (II) above.\n            ",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  How many CAT takers have scored\n                more than 96+ percentile and are not university toppers?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828428/54s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                IIM Delhi was set up this year and it absorbed a batch of 80 students for its two-year PGP course in\n                management. Every student satisfied all of the three given selection criteria. The criteria for\n                selection\n                were as follows:\n                I. The candidate should have taken exactly one of the CAT or XAT examinations.\n                II. The candidate must have:\n                Secured at least 96 percentile in the examination he/she had written OR secured a rank among the\n                top 10 students in his or her university examination (university topper) OR both.\n                III. The candidate must either be a fresher or have work experience of more than 3 years.\n                Further information about the students absorbed by the Institute is as follows:\n                a. There were 45 students who had secured a rank among the top 10 students in their university\n                examination. Of these 33.3 % were fresher while 66.66% had appeared for CAT.\n                b. 30 students had taken the XAT examination, of which 15 were fresher.\n                c. Of the students who had work experience greater than 3 years, 15 students were university toppers\n                (i.e. in the top 10) and these students had also secured 96 or more percentile in the examination\n                they had taken (i.e. CAT or XAT).\n                d. There were 20 students who had taken the CAT examination, had secured a rank among the top 10\n                students in their university examination and also had work experience of more than 3 years.\n                e. There were a total of 40 students who had work experience of more than 3 years.\n                f. No fresher satisfied both the criteria mentioned in (II) above.\n            ",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  What is the sum of all the 96+\n                percentilers who are not university toppers, and all university\n                toppers who are freshers?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776703/1613131/10ss.gif\"><br><br><br>"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                IIM Delhi was set up this year and it absorbed a batch of 80 students for its two-year PGP course in\n                management. Every student satisfied all of the three given selection criteria. The criteria for\n                selection\n                were as follows:\n                I. The candidate should have taken exactly one of the CAT or XAT examinations.\n                II. The candidate must have:\n                Secured at least 96 percentile in the examination he/she had written OR secured a rank among the\n                top 10 students in his or her university examination (university topper) OR both.\n                III. The candidate must either be a fresher or have work experience of more than 3 years.\n                Further information about the students absorbed by the Institute is as follows:\n                a. There were 45 students who had secured a rank among the top 10 students in their university\n                examination. Of these 33.3 % were fresher while 66.66% had appeared for CAT.\n                b. 30 students had taken the XAT examination, of which 15 were fresher.\n                c. Of the students who had work experience greater than 3 years, 15 students were university toppers\n                (i.e. in the top 10) and these students had also secured 96 or more percentile in the examination\n                they had taken (i.e. CAT or XAT).\n                d. There were 20 students who had taken the CAT examination, had secured a rank among the top 10\n                students in their university examination and also had work experience of more than 3 years.\n                e. There were a total of 40 students who had work experience of more than 3 years.\n                f. No fresher satisfied both the criteria mentioned in (II) above.\n            ",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  What is the ratio of the number\n                of fresher XAT takers with at least 96 percentile to the number of fresher XAT students who are\n                university toppers (i.e., in the top 10)?",
+            "options": [
+                "2:1",
+                "3:2",
+                "1:2",
+                "2:3"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819053/59s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.You and your friend play a board game. The\n                board has 16 squares (4 \u00d7 4), and 16 different pieces that can be constructed combining the following\n                four characteristics\n                The aim of the game is to complete a line with four pieces that are similar in at least about one of the\n                four described characteristics (four big pieces, four small pieces, four red pieces, four blue pieces,\n                for\n                square pieces, for circle pieces, four pieces with hole, four pieces without hole). The line may be\n                vertical, horizontal or diagonal. The winner is the player who places the fourth piece on the\n                line.\n                Players move alternatively, placing one piece on the board in any desired vacant square; once\n                inserted, pieces cannot be moved. One of the more special characteristics of this game is that the\n                choice of the piece to be placed on the board is not made by the same player who places it; it is the\n                opponent who after doing the move, decides which will be the next piece to place.\n                So, each turn consists of two actions:\n                1. Place on the board the piece.\n                2. Give the opponent the piece to be placed in the next move.\n                In the first turn of the game, the player who starts has only to choose one piece for the\n                opponent.\n                The game finishes in a draw when nobody reaches the objective after placing the 16 pieces.",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  If your friend gave you the piece\n                P15, which position should you place the piece so that you are\n                guaranteed a win (assume both play intelligently)?",
+            "options": [
+                "B5",
+                "B9",
+                "B2",
+                "You will lose in all the above scenarios"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819054/60s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.You and your friend play a board game. The\n                board has 16 squares (4 \u00d7 4), and 16 different pieces that can be constructed combining the following\n                four characteristics\n                The aim of the game is to complete a line with four pieces that are similar in at least about one of the\n                four described characteristics (four big pieces, four small pieces, four red pieces, four blue pieces,\n                for\n                square pieces, for circle pieces, four pieces with hole, four pieces without hole). The line may be\n                vertical, horizontal or diagonal. The winner is the player who places the fourth piece on the\n                line.\n                Players move alternatively, placing one piece on the board in any desired vacant square; once\n                inserted, pieces cannot be moved. One of the more special characteristics of this game is that the\n                choice of the piece to be placed on the board is not made by the same player who places it; it is the\n                opponent who after doing the move, decides which will be the next piece to place.\n                So, each turn consists of two actions:\n                1. Place on the board the piece.\n                2. Give the opponent the piece to be placed in the next move.\n                In the first turn of the game, the player who starts has only to choose one piece for the\n                opponent.\n                The game finishes in a draw when nobody reaches the objective after placing the 16 pieces.",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  If in your next move you placed\n                P11 in B11, you are guaranteed a win in which of the following\n                scenario: (assume both play intelligently)",
+            "options": [
+                "Give P1 for your friend to place",
+                "Give P15 for your friend to place",
+                "Give P14 for your friend to place",
+                "You will lose the game in all the above scenarios"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819055/61s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.You and your friend play a board game. The\n                board has 16 squares (4 \u00d7 4), and 16 different pieces that can be constructed combining the following\n                four characteristics\n                The aim of the game is to complete a line with four pieces that are similar in at least about one of the\n                four described characteristics (four big pieces, four small pieces, four red pieces, four blue pieces,\n                for\n                square pieces, for circle pieces, four pieces with hole, four pieces without hole). The line may be\n                vertical, horizontal or diagonal. The winner is the player who places the fourth piece on the\n                line.\n                Players move alternatively, placing one piece on the board in any desired vacant square; once\n                inserted, pieces cannot be moved. One of the more special characteristics of this game is that the\n                choice of the piece to be placed on the board is not made by the same player who places it; it is the\n                opponent who after doing the move, decides which will be the next piece to place.\n                So, each turn consists of two actions:\n                1. Place on the board the piece.\n                2. Give the opponent the piece to be placed in the next move.\n                In the first turn of the game, the player who starts has only to choose one piece for the\n                opponent.\n                The game finishes in a draw when nobody reaches the objective after placing the 16 pieces.",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Initially, there were 10\n                potential winning lines. At the intermediate stage given in this question set, how many winning lines\n                are possible?",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819056/62s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.You and your friend play a board game. The\n                board has 16 squares (4 \u00d7 4), and 16 different pieces that can be constructed combining the following\n                four characteristics\n                The aim of the game is to complete a line with four pieces that are similar in at least about one of the\n                four described characteristics (four big pieces, four small pieces, four red pieces, four blue pieces,\n                for\n                square pieces, for circle pieces, four pieces with hole, four pieces without hole). The line may be\n                vertical, horizontal or diagonal. The winner is the player who places the fourth piece on the\n                line.\n                Players move alternatively, placing one piece on the board in any desired vacant square; once\n                inserted, pieces cannot be moved. One of the more special characteristics of this game is that the\n                choice of the piece to be placed on the board is not made by the same player who places it; it is the\n                opponent who after doing the move, decides which will be the next piece to place.\n                So, each turn consists of two actions:\n                1. Place on the board the piece.\n                2. Give the opponent the piece to be placed in the next move.\n                In the first turn of the game, the player who starts has only to choose one piece for the\n                opponent.\n                The game finishes in a draw when nobody reaches the objective after placing the 16 pieces.",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  If you blundered and gave P14 to\n                your friend to place, and still did not lose the game, which of the following must have happened?",
+            "options": [
+                "Your friend placed P14 on B4",
+                "Your friend did not place P14 on B15",
+                "Your friend place P14 on B6",
+                "Your friend placed P14 on B15"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><br><br><br>"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.You and your friend play a board game. The\n                board has 16 squares (4 \u00d7 4), and 16 different pieces that can be constructed combining the following\n                four characteristics\n                The aim of the game is to complete a line with four pieces that are similar in at least about one of the\n                four described characteristics (four big pieces, four small pieces, four red pieces, four blue pieces,\n                for\n                square pieces, for circle pieces, four pieces with hole, four pieces without hole). The line may be\n                vertical, horizontal or diagonal. The winner is the player who places the fourth piece on the\n                line.\n                Players move alternatively, placing one piece on the board in any desired vacant square; once\n                inserted, pieces cannot be moved. One of the more special characteristics of this game is that the\n                choice of the piece to be placed on the board is not made by the same player who places it; it is the\n                opponent who after doing the move, decides which will be the next piece to place.\n                So, each turn consists of two actions:\n                1. Place on the board the piece.\n                2. Give the opponent the piece to be placed in the next move.\n                In the first turn of the game, the player who starts has only to choose one piece for the\n                opponent.\n                The game finishes in a draw when nobody reaches the objective after placing the 16 pieces.",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  If you won the game, then which\n                of these is definitely not the piece placed by you?",
+            "options": [
+                "P1 in B2",
+                "P11 in B3",
+                "P14 in B15",
+                "P5 in B12"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819057/63s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                Five professors\u2013Mukund, Nalini, Parth, Ravi and Saritha\u2013conduct workshops for 10 batches.\n                \u25cf 5 batches come in the morning and 5 batches come in the afternoon.\n                \u25cf Each professor conduct workshops on two different topics in one day, one each in morning and\n                afternoon.\n                Following are the details of the schedule on 17th June 2018\n                \u25cf Workshops to be conducted in morning are\u2013entrepreneurship, finance, and operations.\n                \u25cf Workshops to be conducted in afternoon are\u2013operations, marketing, and HR.\n                \u25cf Three professors including Saritha take workshops on operation.\n                \u25cf Three professors take workshop on marketing.\n                \u25cf Mukund does not take any topics that Nalini takes.\n                \u25cf Parth does not take any topics that Ravi takes.\n                \u25cf Only the five professors listed above conduct workshops.\n                All the questions are pertaining to the workshop conducted on the 17th of June 2018.",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  If Mukund takes a workshop on HR,\n                which of the following must be true?",
+            "options": [
+                "Mukund takes a workshop on operations.",
+                "Nalini takes a workshop on marketing.",
+                "Parth takes a workshop on finance.",
+                "Ravi takes a workshop on entrepreneurship."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819058/64s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                Five professors\u2013Mukund, Nalini, Parth, Ravi and Saritha\u2013conduct workshops for 10 batches.\n                \u25cf 5 batches come in the morning and 5 batches come in the afternoon.\n                \u25cf Each professor conduct workshops on two different topics in one day, one each in morning and\n                afternoon.\n                Following are the details of the schedule on 17th June 2018\n                \u25cf Workshops to be conducted in morning are\u2013entrepreneurship, finance, and operations.\n                \u25cf Workshops to be conducted in afternoon are\u2013operations, marketing, and HR.\n                \u25cf Three professors including Saritha take workshops on operation.\n                \u25cf Three professors take workshop on marketing.\n                \u25cf Mukund does not take any topics that Nalini takes.\n                \u25cf Parth does not take any topics that Ravi takes.\n                \u25cf Only the five professors listed above conduct workshops.\n                All the questions are pertaining to the workshop conducted on the 17th of June 2018.",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  If Parth takes a workshop on HR,\n                which of the following must be true?",
+            "options": [
+                "Either Nalini or Ravi takes a workshop on finance.",
+                "Either Mukund or Ravi takes a workshop on operations.",
+                "Either Parth or Ravi takes a workshop on finance.",
+                "Either Mukund or Nalini takes a workshop on entrepreneurship."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819059/65s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                Five professors\u2013Mukund, Nalini, Parth, Ravi and Saritha\u2013conduct workshops for 10 batches.\n                \u25cf 5 batches come in the morning and 5 batches come in the afternoon.\n                \u25cf Each professor conduct workshops on two different topics in one day, one each in morning and\n                afternoon.\n                Following are the details of the schedule on 17th June 2018\n                \u25cf Workshops to be conducted in morning are\u2013entrepreneurship, finance, and operations.\n                \u25cf Workshops to be conducted in afternoon are\u2013operations, marketing, and HR.\n                \u25cf Three professors including Saritha take workshops on operation.\n                \u25cf Three professors take workshop on marketing.\n                \u25cf Mukund does not take any topics that Nalini takes.\n                \u25cf Parth does not take any topics that Ravi takes.\n                \u25cf Only the five professors listed above conduct workshops.\n                All the questions are pertaining to the workshop conducted on the 17th of June 2018.",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  If Nalini is the only professor\n                who takes a workshop on entrepreneurship, which of the following could be true?",
+            "options": [
+                "Ravi takes a workshop on operations in the morning.",
+                "Mukund takes a workshop on HR in the afternoon.",
+                "Parth takes a workshop on operations in the afternoon.",
+                "Nalini takes a workshop on HR in the afternoon."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819060/66s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                Five professors\u2013Mukund, Nalini, Parth, Ravi and Saritha\u2013conduct workshops for 10 batches.\n                \u25cf 5 batches come in the morning and 5 batches come in the afternoon.\n                \u25cf Each professor conduct workshops on two different topics in one day, one each in morning and\n                afternoon.\n                Following are the details of the schedule on 17th June 2018\n                \u25cf Workshops to be conducted in morning are\u2013entrepreneurship, finance, and operations.\n                \u25cf Workshops to be conducted in afternoon are\u2013operations, marketing, and HR.\n                \u25cf Three professors including Saritha take workshops on operation.\n                \u25cf Three professors take workshop on marketing.\n                \u25cf Mukund does not take any topics that Nalini takes.\n                \u25cf Parth does not take any topics that Ravi takes.\n                \u25cf Only the five professors listed above conduct workshops.\n                All the questions are pertaining to the workshop conducted on the 17th of June 2018.",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  If Nalini and Saritha takes\n                workshops on the same two topics, all of the following must be true\n                EXCEPT:",
+            "options": [
+                "Mukund does not take a workshop on operations.",
+                "Nalini does not take a workshop on entrepreneurship.",
+                "Parth does not take a workshop on HR.",
+                "Ravi does not take a workshop on Marketing"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div>"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                Five professors\u2013Mukund, Nalini, Parth, Ravi and Saritha\u2013conduct workshops for 10 batches.\n                \u25cf 5 batches come in the morning and 5 batches come in the afternoon.\n                \u25cf Each professor conduct workshops on two different topics in one day, one each in morning and\n                afternoon.\n                Following are the details of the schedule on 17th June 2018\n                \u25cf Workshops to be conducted in morning are\u2013entrepreneurship, finance, and operations.\n                \u25cf Workshops to be conducted in afternoon are\u2013operations, marketing, and HR.\n                \u25cf Three professors including Saritha take workshops on operation.\n                \u25cf Three professors take workshop on marketing.\n                \u25cf Mukund does not take any topics that Nalini takes.\n                \u25cf Parth does not take any topics that Ravi takes.\n                \u25cf Only the five professors listed above conduct workshops.\n                All the questions are pertaining to the workshop conducted on the 17th of June 2018.",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  If Parth and Mukund take\n                workshops on the same two topics, then which of the following is definitely false?",
+            "options": [
+                "Nalini takes a workshop on Entrepreneurship.",
+                "Ravi takes a workshop on HR.",
+                "Nalini takes a workshop on Finance.",
+                "Ravi takes a workshop on Operations."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

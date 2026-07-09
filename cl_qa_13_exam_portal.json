@@ -1,0 +1,453 @@
+{
+    "name": "QA 13 - 2023",
+    "sections": {
+        "QA": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020",
+            "20021",
+            "20022"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tTwenty percent of a solution of milk and water is replaced with\n\t\t\t\t\t\t\t\t\t\t\t\tthe same quantity of water.\n\t\t\t\t\t\t\t\t\t\t\t\tThis process is repeated for one more time. If the initial concentration\n\t\t\t\t\t\t\t\t\t\t\t\tof milk in the solution was\n\t\t\t\t\t\t\t\t\t\t\t\t75%, then find the ratio of water to milk in the final solution.",
+            "options": [
+                "12 : 13",
+                "16 : 9",
+                "9 : 16",
+                "13 : 12"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884189/76s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  Two\n\t\t\t\t\t\t\t\t\t\t\tcircles, each of radius 9 cm, touch each other as shown in the figure given\n\t\t\t\t\t\t\t\t\t\t\tbelow. O1 and O2 are the centers of the two circles.\n\t\t\t\t\t\t\t\t\t\t\tIf AB is a tangent to one of the circles and D is a point on that circle,\n\t\t\t\t\t\t\t\t\t\t\tthen find the length (in cm) of AB.\n\t\t\t\t\t\t\t\t\t\t",
+            "options": [
+                "9\u221a2",
+                "27",
+                "12",
+                "Data insufficient"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773333/885273/90s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  If f(x) = mx +\n\t\t\t\t\t\t\t\t\tn and f(f(f(x))) = 8(x + 7), then find the value of (3m + 2n).\n\t\t\t\t\t\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884197/84s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  Two aircraft \u2013\n\t\t\t\t\t\t\t\tDelta1 and Delta2 \u2013 start flying from Delhi to Kolkata at the same time covering a\n\t\t\t\t\t\t\t\tdistance of 270 km at 50 km/hr and 70 km/hr respectively. Delta 2 reaches Kolkata and\n\t\t\t\t\t\t\t\timmediately returns back towards Delhi meeting Delta1 at Durgapur in between. Find the\n\t\t\t\t\t\t\t\tdistance (in km) between Delhi and Durgapur.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884182/69s.gif\">"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  The average age of 6\n\t\t\t\t\t\t\tmembers of a family is 37. A baby was born three years back and 2 old people\n\t\t\t\t\t\t\texpired 5 and 7 years back at the age of 58 and 63 respectively. What was the average age of\n\t\t\t\t\t\t\tthe\n\t\t\t\t\t\t\tfamily 10 years back?",
+            "options": [
+                "57.12",
+                "47.26",
+                "40.28",
+                "50.71"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884192/79s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  ",
+            "options": [
+                "22/7",
+                "18/7",
+                "-18/7",
+                "-22/7"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884212/99s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  Keshav alone takes 40% more\n\t\t\t\t\ttime, to complete an order of producing 1400 balls, than the time\n\t\t\t\t\ttaken by Keshav and Arun working together. Also, Arun alone takes 60% more time to complete the\n\t\t\t\t\tsame order than the time taken by Arun and Nakul together. How long (in days) will it take for all\n\t\t\t\t\tthree of them working together to complete an order of producing 4100 balls, if Keshav had completed\n\t\t\t\t\talone the order of 1400 balls in 56 days?",
+            "options": [
+                "90",
+                "120",
+                "100",
+                "150"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884184/71s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  ABC is a triangle in which a\n\t\t\t\tquadrilateral WXZY is drawn. W is a point on AB such that AW = WB = 5 units. X is a point on AC such\n\t\t\t\tthat AX = 4 units and XC = 6 units, and Y and Z are points on BC such that BY = YZ = 3 units and ZC = 4\n\t\t\t\tunits. Find the area (in square units) of quadrilateral WXZY.",
+            "options": [
+                "41/10",
+                "25\u221a3/10",
+                "5/2",
+                "41\u221a3/4"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884186/73s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  abc is a 3-digit number, where a,\n\t\t\t\tb and c are distinct and forms a Geometric Progression. If the\n\t\t\t\tnumber has exactly four factors, then which of the following can be the Geometric Mean of the 3\n\t\t\t\tdigits?",
+            "options": [
+                "4",
+                "6",
+                "Both (1) and (2)",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884201/88s.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  If\n\t\t\t\tlog2(log4(log2(x2 + 4x + 4))) = 1, then find the positive\n\t\t\t\tvalue of x.",
+            "options": [
+                "27 \u2013 2",
+                "2(27 \u2013 1)",
+                "2(27 + 1)",
+                "27 + 1"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884203/90s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  The number of positive integral\n\t\t\t\tsolutions of the equation xyz = 30 is",
+            "options": [
+                "24",
+                "25",
+                "26",
+                "27"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884210/97s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  A man borrowed Rs. 30,000 from a\n\t\t\t\tbank at 10% p.a. compound interest. At the end of every year,\n\t\t\t\the repaid Rs. 9,000. If at the end of 3rd year, he wanted to clear the loan, then how much should he\n\t\t\t\tpay (in Rs.) at that time to clear the loan?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884195/82s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  A meteorite has a property of\n\t\t\t\ttravelling in space at the speed directly proportional to its weight.\n\t\t\t\tAfter every year, it gets hit by an asteroid which breaks it into two parts in the ratio 1 : 2 by\n\t\t\t\tweight.\n\t\t\t\tFind the ratio of the speed of present meteorite to the speed of the part with the lightest weight after\n\t\t\t\t4 years.",
+            "options": [
+                "34 : 1",
+                "38 : 22",
+                "38 : 1",
+                "22 : 37"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773333/885250/67s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  If PR and QT intersect each other\n\t\t\t\tat X, where PQRST is a regular pentagon, then what is the measure (in degree) of \u2220TXR?\n\t\t\t",
+            "options": [
+                "98",
+                "90",
+                "72",
+                "108"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773333/885251/68s.gif\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  Dipin\u2019s score is 15% more than\n\t\t\t\tthat of Rafi and Rafi\u2019s score is 10% less than that of Chandar. If the\n\t\t\t\tdifference between the scores of Dipin and Chandar is 14, then what is the score of Rafi?\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773333/885279/96s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  If in a GP, the 5th term is 8\n\t\t\t\ttimes the second term, and sum of its 1st, 3rd and 6th terms is 111,\n\t\t\t\tthen what is the 7th term.\n\t\t\t",
+            "options": [
+                "192",
+                "208",
+                "224",
+                "216"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884181/68s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  A farmer sold a 40 kg rice bag to\n\t\t\t\ta wholesaler at 20% profit. The wholesaler further sold it to a\n\t\t\t\tretailer at 16.66% profit, and then the retailer finally sold it to a customer in Rs. 1890 at a profit\n\t\t\t\tof\n\t\t\t\t12.5%. Find the cost price (in Rs.) per kg of the rice for the farmer.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884185/72s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  If (0.4)n =\n\t\t\t\t(6.25)3, then find n.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884194/81s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  ",
+            "options": [
+                "3 : 6 : 7",
+                "2 : 5 : 9",
+                "4 : 8 : 13",
+                "3 : 5 : 9"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773333/885255/72s.gif\">"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  If Naresh has 5 different shirts\n\t\t\t\tand 7 different pants, then how many different combinations of shirt and pant can\n\t\t\t\the wear?\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773333/885277/94s.gif\">"
+        },
+        "20021": {
+            "id": "20021",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.21 [11916616]  If P and Q are two points on the\n\t\t\t\tgraph of the function |x| + 2|y| = 15, then what is the maximum possible value of\n\t\t\t\tthe distance between P and Q?\n\t\t\t",
+            "options": [
+                "15",
+                "35",
+                "25",
+                "30"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884213/100s.gif\">"
+        },
+        "20022": {
+            "id": "20022",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.22 [11916616]  ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

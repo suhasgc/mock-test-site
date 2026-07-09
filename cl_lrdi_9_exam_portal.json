@@ -1,0 +1,414 @@
+{
+    "name": "DILR 09 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n                                                    1 to 5: Answer the questions on the basis of the information\n                                                given below.\n                                                There are 12 friends - A, B, C, D, E, F, G, H, I, J, K and L - sitting\n                                                in a grid arrangement having dimension 4 \u00d7 3 is as shown\n                                                below:\n                                                \n                                                The position of three of the friends is already given in the grid. Every\n                                                cell of the grid is labeled in the form of aij, where i\n                                                denotes the row number and j denotes the column number of that cell. Two\n                                                friends can be said neighbour to each other if one is sitting in a cell\n                                                adjacent to the other\u2019s cell vertically or horizontally but not\n                                                diagonally. If A is a neighbor of B then A can be in a43,\n                                                a32,or a23 only. Further, the following is also\n                                                known\n                                                (i) A and B are not neighbors to each other but C is a neighbor of\n                                                B.\n                                                (ii) L sits in a cell for which i > j.\n                                                (iii) E and I are sitting in the same row, and A and C are sitting in\n                                                the same column.\n                                                (iv) G sits in the cell aij where i < j.\n                                                    (v) J and D sits in the cell aij and aji\n                                                    respectively such that i < j, and the value of i and j are same for\n                                                        both.\n                                                        (vi) D has more number of neighbors than E out of which 2 are\n                                                        common.\n                                            ",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n                                                How many common neighbors does H and L have?\n                                            ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837218/64s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n                                                5: Answer the questions on the basis of the information given\n                                            below.\n                                            There are 12 friends - A, B, C, D, E, F, G, H, I, J, K and L - sitting in a\n                                            grid arrangement having dimension 4 \u00d7 3 is as shown below:\n                                            \n                                            The position of three of the friends is already given in the grid. Every\n                                            cell of the grid is labeled in the form of aij, where i denotes\n                                            the row number and j denotes the column number of that cell. Two friends can\n                                            be said neighbour to each other if one is sitting in a cell adjacent to the\n                                            other\u2019s cell vertically or horizontally but not diagonally. If A is a\n                                            neighbor of B then A can be in a43, a32,or\n                                            a23 only. Further, the following is also known\n                                            (i) A and B are not neighbors to each other but C is a neighbor of B.\n                                            (ii) L sits in a cell for which i > j.\n                                            (iii) E and I are sitting in the same row, and A and C are sitting in the\n                                            same column.\n                                            (iv) G sits in the cell aij where i < j.\n                                                (v) J and D sits in the cell aij and aji\n                                                respectively such that i < j, and the value of i and j are same for\n                                                    both.\n                                                    (vi) D has more number of neighbors than E out of which 2 are\n                                                    common.\n                                        ",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  Which\n                                            of these combinations cannot follow the same pattern as the other options\n                                            does?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837219/65s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                    Answer the questions on the basis of the information given below.\n                                    There are 12 friends - A, B, C, D, E, F, G, H, I, J, K and L - sitting in a grid\n                                    arrangement having dimension 4 \u00d7 3 is as shown below:\n                                    \n                                    The position of three of the friends is already given in the grid. Every cell of the\n                                    grid is labeled in the form of aij, where i denotes the row number and j\n                                    denotes the column number of that cell. Two friends can be said neighbour to each\n                                    other if one is sitting in a cell adjacent to the other\u2019s cell vertically or\n                                    horizontally but not diagonally. If A is a neighbor of B then A can be in\n                                    a43, a32,or a23 only. Further, the following is\n                                    also known\n                                    (i) A and B are not neighbors to each other but C is a neighbor of B.\n                                    (ii) L sits in a cell for which i > j.\n                                    (iii) E and I are sitting in the same row, and A and C are sitting in the same\n                                    column.\n                                    (iv) G sits in the cell aij where i < j.\n                                        (v) J and D sits in the cell aij and aji respectively such\n                                        that i < j, and the value of i and j are same for both.\n                                            (vi) D has more number of neighbors than E out of which 2 are common.\n                                ",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  Which of these\n                                    can never be true?",
+            "options": [
+                "The cell numbers of E and C are\n                                    aij and apq such that |i-j| = |p-q| = 1",
+                "H, D and B are sitting in a same row.",
+                "The cells aij of F, L, D and B\n                                    are such that \u2018i\u2019 is greater than or equal to 'j' for all of them.",
+                "The sum of the row number and column\n                                    number in which L sits is 5."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837220/66s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                Answer the questions on the basis of the information given below.\n                                There are 12 friends - A, B, C, D, E, F, G, H, I, J, K and L - sitting in a grid\n                                arrangement having dimension 4 \u00d7 3 is as shown below:\n                                \n                                The position of three of the friends is already given in the grid. Every cell of the\n                                grid is labeled in the form of aij, where i denotes the row number and j\n                                denotes the column number of that cell. Two friends can be said neighbour to each other\n                                if one is sitting in a cell adjacent to the other\u2019s cell vertically or horizontally but\n                                not diagonally. If A is a neighbor of B then A can be in a43,\n                                a32,or a23 only. Further, the following is also known\n                                (i) A and B are not neighbors to each other but C is a neighbor of B.\n                                (ii) L sits in a cell for which i > j.\n                                (iii) E and I are sitting in the same row, and A and C are sitting in the same\n                                column.\n                                (iv) G sits in the cell aij where i < j.\n                                    (v) J and D sits in the cell aij and aji respectively such\n                                    that i < j, and the value of i and j are same for both.\n                                        (vi) D has more number of neighbors than E out of which 2 are common.\n                            ",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  What is the sum of\n                                the number of neighbors that D and A have?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776704/1613207/5sa.gif\">"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer\n                            the questions on the basis of the information given below.\n                            There are 12 friends - A, B, C, D, E, F, G, H, I, J, K and L - sitting in a grid arrangement\n                            having dimension 4 \u00d7 3 is as shown below:\n                            \n                            The position of three of the friends is already given in the grid. Every cell of the grid is\n                            labeled in the form of aij, where i denotes the row number and j denotes the\n                            column number of that cell. Two friends can be said neighbour to each other if one is\n                            sitting in a cell adjacent to the other\u2019s cell vertically or horizontally but not\n                            diagonally. If A is a neighbor of B then A can be in a43, a32,or\n                            a23 only. Further, the following is also known\n                            (i) A and B are not neighbors to each other but C is a neighbor of B.\n                            (ii) L sits in a cell for which i > j.\n                            (iii) E and I are sitting in the same row, and A and C are sitting in the same column.\n                            (iv) G sits in the cell aij where i < j.\n                                (v) J and D sits in the cell aij and aji respectively such that i\n                                < j, and the value of i and j are same for both.\n                                    (vi) D has more number of neighbors than E out of which 2 are common.\n                        ",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  If I sit in the cell\n                            aij, then what is the value of i - j?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837193/39s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                        questions on the basis of the information given below.\n                        The following table provides partial details about the number of test matches and one day\n                        internationals\n                        (ODIs), played by 4 players of the Indian Cricket team against each of the 4 nations - Pakistan,\n                        New\n                        Zealand, England and Sri Lanka. It is given that Indian team played only against these nations\n                        in the year\n                        2017 and also they played no form of matches other than test matches and ODIs. India played 40%\n                        of its\n                        total matches against Pakistan, 30% against New Zealand, 20% against England and 10% against Sri\n                        Lanka in 2017. ",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  Find the minimum possible\n                        number of matches played by India in 2017.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837194/40s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                    questions on the basis of the information given below.\n                    The following table provides partial details about the number of test matches and one day\n                    internationals\n                    (ODIs), played by 4 players of the Indian Cricket team against each of the 4 nations - Pakistan, New\n                    Zealand, England and Sri Lanka. It is given that Indian team played only against these nations in\n                    the year\n                    2017 and also they played no form of matches other than test matches and ODIs. India played 40% of\n                    its\n                    total matches against Pakistan, 30% against New Zealand, 20% against England and 10% against Sri\n                    Lanka in 2017. ",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  Minimum number of matches not\n                    played by Shikhar against England is",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837195/41s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                The following table provides partial details about the number of test matches and one day internationals\n                (ODIs), played by 4 players of the Indian Cricket team against each of the 4 nations - Pakistan, New\n                Zealand, England and Sri Lanka. It is given that Indian team played only against these nations in the\n                year\n                2017 and also they played no form of matches other than test matches and ODIs. India played 40% of its\n                total matches against Pakistan, 30% against New Zealand, 20% against England and 10% against Sri Lanka\n                in 2017. \n            ",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  If Rohit played in all the ODIs\n                and tests that have been played against Sri Lanka, then the minimum\n                number of test matches played by India against Sri Lanka is",
+            "options": [
+                "7",
+                "9",
+                "20",
+                "5"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837196/42s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                The following table provides partial details about the number of test matches and one day internationals\n                (ODIs), played by 4 players of the Indian Cricket team against each of the 4 nations - Pakistan, New\n                Zealand, England and Sri Lanka. It is given that Indian team played only against these nations in the\n                year\n                2017 and also they played no form of matches other than test matches and ODIs. India played 40% of its\n                total matches against Pakistan, 30% against New Zealand, 20% against England and 10% against Sri Lanka\n                in 2017. \n            ",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  If Rohit played in all the test\n                matches against England and Sri Lanka, then the minimum possible\n                number of matches played by Rohit through out the season is",
+            "options": [
+                "87",
+                "90",
+                "73",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776704/1613208/10sa.gif\"><br><br><br>"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                The following table provides partial details about the number of test matches and one day internationals\n                (ODIs), played by 4 players of the Indian Cricket team against each of the 4 nations - Pakistan, New\n                Zealand, England and Sri Lanka. It is given that Indian team played only against these nations in the\n                year\n                2017 and also they played no form of matches other than test matches and ODIs. India played 40% of its\n                total matches against Pakistan, 30% against New Zealand, 20% against England and 10% against Sri Lanka\n                in 2017. \n            ",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  If Rohit played 40% of the total\n                Test matches against Pakistan and Shikhar played in all ODIs against Pakistan, then minimum how many\n                ODIs did Shikar play against Pakistan?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837170/35-38s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                Monica has a habit of organizing all her documents neatly. She has made three boxes, one of each - red,\n                green and\n                yellow colour. In each box she has kept five different folders - Finance, HR, Marketing, Operations and\n                Supply chain -\n                one of each type, placed one above the another from top to bottom, in any order. Except Operations, no\n                folder is\n                at the same position from bottom in any two folders e.g. if finance is at the top in any folder then it\n                cannot\n                be at the top in any other folder. It is also known that:\n                (i) In each box, there are at least two folders above the folder of Finance and there are at least two\n                folders below the folder of HR. Operations is never at the top in any box.\n                (ii) In the green box, there are exactly two folders between Operations and Finance folders and the\n                same is true for Supply chain and HR folders.\n                (iii) HR is not the 4th folder from the bottom in yellow box and Operations is just below the Marketing\n                folder in the red box.",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  Which folder is at the top in the\n                yellow box?",
+            "options": [
+                "HR",
+                "Marketing",
+                "Supply chain",
+                "Operations"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837170/35-38s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                Monica has a habit of organizing all her documents neatly. She has made three boxes, one of each - red,\n                green and\n                yellow colour. In each box she has kept five different folders - Finance, HR, Marketing, Operations and\n                Supply chain -\n                one of each type, placed one above the another from top to bottom, in any order. Except Operations, no\n                folder is\n                at the same position from bottom in any two folders e.g. if finance is at the top in any folder then it\n                cannot\n                be at the top in any other folder. It is also known that:\n                (i) In each box, there are at least two folders above the folder of Finance and there are at least two\n                folders below the folder of HR. Operations is never at the top in any box.\n                (ii) In the green box, there are exactly two folders between Operations and Finance folders and the\n                same is true for Supply chain and HR folders.\n                (iii) HR is not the 4th folder from the bottom in yellow box and Operations is just below the Marketing\n                folder in the red box.",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Which box/boxes definitely\n                has/have Operations folder at the bottom?",
+            "options": [
+                "Red",
+                "Green",
+                "Yellow",
+                "Red and Yellow"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837170/35-38s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                Monica has a habit of organizing all her documents neatly. She has made three boxes, one of each - red,\n                green and\n                yellow colour. In each box she has kept five different folders - Finance, HR, Marketing, Operations and\n                Supply chain -\n                one of each type, placed one above the another from top to bottom, in any order. Except Operations, no\n                folder is\n                at the same position from bottom in any two folders e.g. if finance is at the top in any folder then it\n                cannot\n                be at the top in any other folder. It is also known that:\n                (i) In each box, there are at least two folders above the folder of Finance and there are at least two\n                folders below the folder of HR. Operations is never at the top in any box.\n                (ii) In the green box, there are exactly two folders between Operations and Finance folders and the\n                same is true for Supply chain and HR folders.\n                (iii) HR is not the 4th folder from the bottom in yellow box and Operations is just below the Marketing\n                folder in the red box.",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Which two folders can never be\n                adjacent to each other in any of the boxes?",
+            "options": [
+                "HR and Finance",
+                "Operations and Marketing",
+                "Operations and Finance",
+                "HR and Marketing"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837170/35-38s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                Monica has a habit of organizing all her documents neatly. She has made three boxes, one of each - red,\n                green and\n                yellow colour. In each box she has kept five different folders - Finance, HR, Marketing, Operations and\n                Supply chain -\n                one of each type, placed one above the another from top to bottom, in any order. Except Operations, no\n                folder is\n                at the same position from bottom in any two folders e.g. if finance is at the top in any folder then it\n                cannot\n                be at the top in any other folder. It is also known that:\n                (i) In each box, there are at least two folders above the folder of Finance and there are at least two\n                folders below the folder of HR. Operations is never at the top in any box.\n                (ii) In the green box, there are exactly two folders between Operations and Finance folders and the\n                same is true for Supply chain and HR folders.\n                (iii) HR is not the 4th folder from the bottom in yellow box and Operations is just below the Marketing\n                folder in the red box.",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  Operations folder is at the same\n                position from bottom in which two boxes?",
+            "options": [
+                "Red and Yellow",
+                "Red and Green",
+                "Green and Yellow",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837170/35-38s.gif\"><br>"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                Monica has a habit of organizing all her documents neatly. She has made three boxes, one of each - red,\n                green and\n                yellow colour. In each box she has kept five different folders - Finance, HR, Marketing, Operations and\n                Supply chain -\n                one of each type, placed one above the another from top to bottom, in any order. Except Operations, no\n                folder is\n                at the same position from bottom in any two folders e.g. if finance is at the top in any folder then it\n                cannot\n                be at the top in any other folder. It is also known that:\n                (i) In each box, there are at least two folders above the folder of Finance and there are at least two\n                folders below the folder of HR. Operations is never at the top in any box.\n                (ii) In the green box, there are exactly two folders between Operations and Finance folders and the\n                same is true for Supply chain and HR folders.\n                (iii) HR is not the 4th folder from the bottom in yellow box and Operations is just below the Marketing\n                folder in the red box.",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  Which of these cannot be the\n                position of the supply chain folder in any of the three boxes?",
+            "options": [
+                "3",
+                "4",
+                "5",
+                "2"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837197/43s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                The following table gives the data about the percentages of vitamin B12, caffeine, sugar and taurine\n                present in each of the four energy drinks - D1, D2, D3 and D4. The cost\n                (in Rs./litre) of D1, D2, D3 and D4 is 10, 25, 20 and 15 respectively. Two drinks can be\n                mixed in any ratio to produce a drink that contains the ingredients in the required ratio.",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  If a drink is to be prepared\n                containing at least 25% of caffeine and at the minimum cost, then the\n                ratio in which any two drinks should be mixed to get the required drink is",
+            "options": [
+                "1 : 2",
+                "2 : 3",
+                "1 : 1",
+                "1 : 4"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837198/44s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                The following table gives the data about the percentages of vitamin B12, caffeine, sugar and taurine\n                present in each of the four energy drinks - D1, D2, D3 and D4. The cost\n                (in Rs./litre) of D1, D2, D3 and D4 is 10, 25, 20 and 15 respectively. Two drinks can be\n                mixed in any ratio to produce a drink that contains the ingredients in the required ratio.",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  Which two drinks and in what\n                ratio, should be mixed, to get 27% concentration of taurine at the\n                minimum possible cost?",
+            "options": [
+                "D1 and D2 in 2 : 3",
+                "D1 and D3 in 3 : 2",
+                "D1 and D3 in 2 : 3",
+                "D2 and D3 in 1 : 1"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837199/45s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                The following table gives the data about the percentages of vitamin B12, caffeine, sugar and taurine\n                present in each of the four energy drinks - D1, D2, D3 and D4. The cost\n                (in Rs./litre) of D1, D2, D3 and D4 is 10, 25, 20 and 15 respectively. Two drinks can be\n                mixed in any ratio to produce a drink that contains the ingredients in the required ratio.",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  What would be the least possible\n                cost (in Rs./liter) of a drink that contains at least 30% of vitamin\n                B12?",
+            "options": [
+                "15",
+                "10",
+                "12.5",
+                "11.25"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837200/46s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                The following table gives the data about the percentages of vitamin B12, caffeine, sugar and taurine\n                present in each of the four energy drinks - D1, D2, D3 and D4. The cost\n                (in Rs./litre) of D1, D2, D3 and D4 is 10, 25, 20 and 15 respectively. Two drinks can be\n                mixed in any ratio to produce a drink that contains the ingredients in the required ratio.",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  What is the least possible cost\n                (in Rs. per liter) of a drink that contains at least 25% of each - vitamin B12\n                and caffeine?",
+            "options": [
+                "11.33",
+                "11.66",
+                "17.5",
+                "12.5"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776704/1613210/20ss.jpg\"><br><br><br><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776704/1613210/20s.jpg\"><br><br>"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                The following table gives the data about the percentages of vitamin B12, caffeine, sugar and taurine\n                present in each of the four energy drinks - D1, D2, D3 and D4. The cost\n                (in Rs./litre) of D1, D2, D3 and D4 is 10, 25, 20 and 15 respectively. Two drinks can be\n                mixed in any ratio to produce a drink that contains the ingredients in the required ratio.",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  A new drink with at least 40% of\n                B12 is to be prepared such that the cost per liter is minimum. What should be the ratio of the drinks\n                that should be mixed?",
+            "options": [
+                "One part of D1 and three parts of D4",
+                "Three parts of D2 and two parts of D4",
+                "One part of D3 and three parts of D4",
+                "One part of D1 and two parts of D3"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

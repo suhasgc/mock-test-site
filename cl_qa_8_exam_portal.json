@@ -1,0 +1,452 @@
+{
+    "name": "QA 08 - 2023",
+    "sections": {
+        "QA": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020",
+            "20021",
+            "20022"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tFind the number of digits in the product of 621734512 and 612.\n\t\t\t\t\t\t\t\t\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859836/94s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  Let\n\t\t\t\t\t\t\t\t\t\t\tf(x) = a12x12 + a10x10 +\n\t\t\t\t\t\t\t\t\t\t\ta8x8 + ... + a2x2 +\n\t\t\t\t\t\t\t\t\t\t\ta0, where a0, a2, ..., a12 are\n\t\t\t\t\t\t\t\t\t\t\tall real. If there are 3 sign changes in f(x) and f(x) has exactly 4\n\t\t\t\t\t\t\t\t\t\t\tnon-real roots, then which of the following is definitely true? ",
+            "options": [
+                "a0 = 0",
+                "a10 > 0",
+                "a10\n\t\t\t\t\t\t\t\t\t\t\t< 0",
+                "a10 = 0"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863542/80s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  Find out the\n\t\t\t\t\t\t\t\t\tprinciple (in Rs.) which gives Rs. 200 as simple interest and Rs. 220 as compound\n\t\t\t\t\t\t\t\t\tinterest after 2 years at the same rate of interest.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863546/84S.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  A racing car spots\n\t\t\t\t\t\t\t\ta cyclist from a distance of 100 m. It overtakes the cyclist and then the cyclist can\n\t\t\t\t\t\t\t\tobserve the racing car upto a distance of 200m. If the car\u2019s speed is 5 times that of\n\t\t\t\t\t\t\t\tthe cyclist\u2019s and the time elapsed between the time when the car racer spots the cyclist\n\t\t\t\t\t\t\t\tuntil the last moment the cyclist observe the racer is 5 seconds, then find the speed of\n\t\t\t\t\t\t\t\tthe car.(Assuming no time lapse while overtaking)",
+            "options": [
+                "15 m/s",
+                "60 m/s",
+                "75 m/s",
+                "100 m/s"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863530/68s.gif\">"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  If\n\t\t\t\t\t\t\tlog2(log3(x2 + 7x + 19)) = 1, find positive value of x.\n\t\t\t\t\t\t",
+            "options": [
+                "2",
+                "5 and 2",
+                "5",
+                "Not possible"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859814/72s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  If the sum of the square\n\t\t\t\t\t\tof medians of a triangle ABC is 42 cm2, then what is the sum (in cm2) of\n\t\t\t\t\t\tthe square of its sides?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863510/67s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  In a 100 km race, how far is P\n\t\t\t\t\tfrom the finishing point when Q finishes the race, if P\u2019s speed is 40 kmph and Q\u2019s speed is 60 kmph?\n\t\t\t\t\t(Assume that both of them started at the same time)",
+            "options": [
+                "20/3 km",
+                "100/3 km",
+                "10/3 km",
+                "200/3km"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863536/74s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  The average of n numbers is 41. If\n\t\t\t\t2/3rd of these numbers are increased by 9 and the remaining\n\t\t\t\t1/3rd are decreased by 6, then find the new average.",
+            "options": [
+                "36",
+                "39",
+                "42",
+                "45"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863531/69s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  ",
+            "options": [
+                "3 and 1/3",
+                "5 and 1/5",
+                "3/2 and 2/3",
+                "4 and 1/4"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863543/81s.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  Ajay started painting a room at\n\t\t\t\tsome time between 6 pm and 7 pm. When he was done with his painting, clock showed time somewhere between\n\t\t\t\t8 pm and 9 pm on the same day. Also he noticed that hours hand and minute hand have interchanged their\n\t\t\t\tpositions. At what time did Ajay finished his painting?",
+            "options": [
+                "8 : 10 pm",
+                "8:45 pm",
+                "8:50 pm"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863547/85S.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  If roots of the equation, (x \u2013 p)\n\t\t\t\t(x + 5) + 9 = 0, are integers and p is also an integer, then what is the sum of all possible values of\n\t\t\t\tp?",
+            "options": [
+                "\u201320",
+                "\u201340",
+                "\u201312",
+                "\u201328"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863533/71s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  A shopkeeper bought two kinds of\n\t\t\t\twheat. The per kg rate of dearer wheat is 25% more than that of the cheaper wheat. In what ratio should\n\t\t\t\tthe cheaper and the dearer wheat be mixed by the shop keeper so that if he sold them at the per kg rate\n\t\t\t\tof dearer wheat he had a gain of 10% per kg?",
+            "options": [
+                "3 : 2",
+                "2 : 3",
+                "5 : 6",
+                "6 : 5"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863538/76s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Entry ticket for a food festival\n\t\t\t\tcost Rs.100 which was later reduced by 20%. After which, the total sales of the festival\u2019s ticket\n\t\t\t\tincreased by 44%. Find the percentage increase in the number of people who attended the festival.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863537/75s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  ",
+            "options": [
+                "7/3",
+                "3/2",
+                "24/13",
+                "9/26"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863535/73s.gif\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  Fifty kilograms of an alloy has\n\t\t\t\t60% Lead and remaining Tin. How much lead (in kg) is to be added in it to make it 75% of the final\n\t\t\t\talloy?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863561/99s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  |x \u2013 8| + |x + 12| \u2013 |x \u2013 10| \u2264\n\t\t\t\t50, \n\t\t\t\tthen how many integer values of x satisfy the above inequality?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863558/96s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  In which figure is the black path\n\t\t\t\tthe shortest, where A, B and C are all squares of sides 1 unit each?\n\t\t\t\t\n\t\t\t",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "All paths are equal"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863539/77s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  There are 3 circles with centres\n\t\t\t\tP, Q and R, each having radius 24 cm. They intersect each other as shown in the figure below. If ST =\n\t\t\t\t4cm, UV = 7 cm and WX = 10 cm, then find the perimeter\n\t\t\t\t(in cm) of the triangle formed by joining the centers of the 3 circles.\n\t\t\t\t\n\t\t\t",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863550/88s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  Each of P, Q and R have some\n\t\t\t\tcoins with them such that their numbers are in ratio x : y : z, where x, y and z are integers. P gave 2\n\t\t\t\tcoins to Q, who then gave 4 coins to R, who then gave 9 coins to P. Now if each one of them have the\n\t\t\t\tsame number of coins after this interchange, what is the minimum possible value of (x + y + z)?",
+            "options": [
+                "10",
+                "24",
+                "6",
+                "13"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859835/93s.gif\">"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  P, Q and R takes 12, 15 and 20\n\t\t\t\tdays respectively to do a work. All 3 started working\n\t\t\t\ton it together, and P and Q left after working for somedays and hence the remaining work was done by R\n\t\t\t\talone. If P and Q left\n\t\t\t\tthe work 4 days and 1 day before its completion respectively, then what is the total number of\n\t\t\t\tdays taken by them to do the work?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859823/81s.gif\">"
+        },
+        "20021": {
+            "id": "20021",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.21 [11916616]  A person goes to a stationary\n\t\t\t\tshop to buy pens and pencils. A pen costs Rs.3 and a pencil costs\n\t\t\t\tRs. 2. If he has an amount of Rs. 32 to spend completely on pens and pencils, then how many different\n\t\t\t\tcombinations of\n\t\t\t\tnumber of pens and pencils he can buy?",
+            "options": [
+                "5",
+                "8",
+                "6",
+                "7"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863552/90s.gif\">"
+        },
+        "20022": {
+            "id": "20022",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.22 [11916616]  ABCD is a rectangle with AB as 15\n\t\t\t\tunits and BC as 10 units. Point E, on side AB, divides AB in the ratio 2 : 1 and DE intersects AC at R.\n\t\t\t\tFind the ratio of the area of quadrilateral BERC to the area of rectangle ABCD.",
+            "options": [
+                "1 : 3",
+                "11 : 30",
+                "2 : 5",
+                "7 : 30"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

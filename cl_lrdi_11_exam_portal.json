@@ -1,0 +1,419 @@
+{
+    "name": "DILR 11 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n                                                    1 to 5: Answer the questions on the basis of the information\n                                                given below.\n                                                Six TV shows, TR, CPS, SD, PPK, DC and KSS are to be aired in some order\n                                                on the same channel from\n                                                8 p.m. to 11:20 p.m. with the first show starting at exactly 8 p.m. and\n                                                the last show ending at exactly\n                                                11:20 p.m. The total length (in minutes) of any of these shows is an\n                                                integral multiple of 5 and no two shows are of same length. There must\n                                                be a commercial break of either exactly 5 minutes or exactly 10 minutes\n                                                between the airings of any two\n                                                consecutive shows. Any commercial break before 8 p.m. and after 11:20\n                                                p.m. has not been considered in\n                                                any of the following clues:\n                                                (i) Starting time of SD cannot be before 9 p.m. and there has to be a\n                                                gap of at least 100 minutes between the starting times of SD and\n                                                KSS.\n                                                (ii) PPK whose length is 20 minutes will start at exactly 9:40 p.m. and\n                                                will be followed by a commercial break of 10 minutes.\n                                                (iii) The airing of the shortest show, whose length is 15 minutes, is\n                                                immediately precedes the airing of the longest show, whose length is 40\n                                                minutes, with a commercial break of 10 minutes between their\n                                                airings.\n                                                (iv) KSS is the last show which starts at exactly 10:50 p.m. and\n                                                immediately preceded by a commercial break of 5 minutes.",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n                                                Which of the following can be the second longest show?\n                                            ",
+            "options": [
+                "DC",
+                "SD",
+                "CPS",
+                "Either (1) or (3)"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850471/36s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n                                                5: Answer the questions on the basis of the information given\n                                            below.\n                                            Six TV shows, TR, CPS, SD, PPK, DC and KSS are to be aired in some order on\n                                            the same channel from\n                                            8 p.m. to 11:20 p.m. with the first show starting at exactly 8 p.m. and the\n                                            last show ending at exactly\n                                            11:20 p.m. The total length (in minutes) of any of these shows is an\n                                            integral multiple of 5 and no two shows are of same length. There must\n                                            be a commercial break of either exactly 5 minutes or exactly 10 minutes\n                                            between the airings of any two\n                                            consecutive shows. Any commercial break before 8 p.m. and after 11:20 p.m.\n                                            has not been considered in\n                                            any of the following clues:\n                                            (i) Starting time of SD cannot be before 9 p.m. and there has to be a gap of\n                                            at least 100 minutes between the starting times of SD and KSS.\n                                            (ii) PPK whose length is 20 minutes will start at exactly 9:40 p.m. and will\n                                            be followed by a commercial break of 10 minutes.\n                                            (iii) The airing of the shortest show, whose length is 15 minutes, is\n                                            immediately precedes the airing of the longest show, whose length is 40\n                                            minutes, with a commercial break of 10 minutes between their airings.\n                                            (iv) KSS is the last show which starts at exactly 10:50 p.m. and immediately\n                                            preceded by a commercial break of 5 minutes.",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  What\n                                            is the sum of the lengths (in minutes) of all the commercial breaks in the\n                                            given duration?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850472/37s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                    Answer the questions on the basis of the information given below.\n                                    Six TV shows, TR, CPS, SD, PPK, DC and KSS are to be aired in some order on the same\n                                    channel from\n                                    8 p.m. to 11:20 p.m. with the first show starting at exactly 8 p.m. and the last\n                                    show ending at exactly\n                                    11:20 p.m. The total length (in minutes) of any of these shows is an integral\n                                    multiple of 5 and no two shows are of same length. There must\n                                    be a commercial break of either exactly 5 minutes or exactly 10 minutes between the\n                                    airings of any two\n                                    consecutive shows. Any commercial break before 8 p.m. and after 11:20 p.m. has not\n                                    been considered in\n                                    any of the following clues:\n                                    (i) Starting time of SD cannot be before 9 p.m. and there has to be a gap of at\n                                    least 100 minutes between the starting times of SD and KSS.\n                                    (ii) PPK whose length is 20 minutes will start at exactly 9:40 p.m. and will be\n                                    followed by a commercial break of 10 minutes.\n                                    (iii) The airing of the shortest show, whose length is 15 minutes, is immediately\n                                    precedes the airing of the longest show, whose length is 40 minutes, with a\n                                    commercial break of 10 minutes between their airings.\n                                    (iv) KSS is the last show which starts at exactly 10:50 p.m. and immediately\n                                    preceded by a commercial break of 5 minutes.",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  If DC is the\n                                    longest show, then what is the ending time of DC?",
+            "options": [
+                "8:15 p.m.",
+                "9:35 p.m.",
+                "9:05 p.m.",
+                "10:45 p.m."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850473/38s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                Answer the questions on the basis of the information given below.\n                                Six TV shows, TR, CPS, SD, PPK, DC and KSS are to be aired in some order on the same\n                                channel from\n                                8 p.m. to 11:20 p.m. with the first show starting at exactly 8 p.m. and the last show\n                                ending at exactly\n                                11:20 p.m. The total length (in minutes) of any of these shows is an integral multiple\n                                of 5 and no two shows are of same length. There must\n                                be a commercial break of either exactly 5 minutes or exactly 10 minutes between the\n                                airings of any two\n                                consecutive shows. Any commercial break before 8 p.m. and after 11:20 p.m. has not been\n                                considered in\n                                any of the following clues:\n                                (i) Starting time of SD cannot be before 9 p.m. and there has to be a gap of at least\n                                100 minutes between the starting times of SD and KSS.\n                                (ii) PPK whose length is 20 minutes will start at exactly 9:40 p.m. and will be followed\n                                by a commercial break of 10 minutes.\n                                (iii) The airing of the shortest show, whose length is 15 minutes, is immediately\n                                precedes the airing of the longest show, whose length is 40 minutes, with a commercial\n                                break of 10 minutes between their airings.\n                                (iv) KSS is the last show which starts at exactly 10:50 p.m. and immediately preceded by\n                                a commercial break of 5 minutes.",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  If the sequence of\n                                airings remains same as obtained with the help of the given clues but the commercial\n                                breaks are ignored, then which of the following is correct?",
+            "options": [
+                "The airing of DC will immediately follow\n                                the airing of TR.",
+                "The airing of DC can immediately precede the\n                                airing of PPK.",
+                "The airing of TR will immediately precede the\n                                airing of KSS.",
+                "The airing of CPS can immediately precede the\n                                airing of SD."
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776706/1615576/5cs.gif\">"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer\n                            the questions on the basis of the information given below.\n                            Six TV shows, TR, CPS, SD, PPK, DC and KSS are to be aired in some order on the same channel\n                            from\n                            8 p.m. to 11:20 p.m. with the first show starting at exactly 8 p.m. and the last show ending\n                            at exactly\n                            11:20 p.m. The total length (in minutes) of any of these shows is an integral multiple of 5\n                            and no two shows are of same length. There must\n                            be a commercial break of either exactly 5 minutes or exactly 10 minutes between the airings\n                            of any two\n                            consecutive shows. Any commercial break before 8 p.m. and after 11:20 p.m. has not been\n                            considered in\n                            any of the following clues:\n                            (i) Starting time of SD cannot be before 9 p.m. and there has to be a gap of at least 100\n                            minutes between the starting times of SD and KSS.\n                            (ii) PPK whose length is 20 minutes will start at exactly 9:40 p.m. and will be followed by\n                            a commercial break of 10 minutes.\n                            (iii) The airing of the shortest show, whose length is 15 minutes, is immediately precedes\n                            the airing of the longest show, whose length is 40 minutes, with a commercial break of 10\n                            minutes between their airings.\n                            (iv) KSS is the last show which starts at exactly 10:50 p.m. and immediately preceded by a\n                            commercial break of 5 minutes.",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  Which show ended at\n                            9:35 p.m?",
+            "options": [
+                "TR",
+                "CPS",
+                "DC",
+                "SD"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850486/51s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                        questions on the basis of the information given below.\n                        Table 1 below shows the number of toys bought by each of the 10 friends and the total amount (in\n                        Rs.)\n                        spent by them in buying the toys. Table 2 shows the number of toys sold by each of the five\n                        shops to the\n                        friends and the price (in Rs.) of each toy at which the respective shop sold all of its\n                        toys.\n                        Further, it was also known that:\n                        (i) No friend bought any toy from any shop other than the five shops mentioned in Table 2 and no\n                        shop sold any toys to any person other than the 10 persons mentioned in Table 1.\n                        (ii) Each shop sold the toys to exactly four of the 10 friends (number of toys sold to each of\n                        those four friends is shown separately in the parenthesis in Table 2) and each friend bought\n                        toys from exactly two of the given 5 shops.",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  Who among the following\n                        bought the least number of toys from Shop 2?",
+            "options": [
+                "Sachin",
+                "Shahid",
+                "Shane",
+                "Smith"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850487/52s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                    questions on the basis of the information given below.\n                    Table 1 below shows the number of toys bought by each of the 10 friends and the total amount (in\n                    Rs.)\n                    spent by them in buying the toys. Table 2 shows the number of toys sold by each of the five shops to\n                    the\n                    friends and the price (in Rs.) of each toy at which the respective shop sold all of its\n                    toys.\n                    Further, it was also known that:\n                    (i) No friend bought any toy from any shop other than the five shops mentioned in Table 2 and no\n                    shop sold any toys to any person other than the 10 persons mentioned in Table 1.\n                    (ii) Each shop sold the toys to exactly four of the 10 friends (number of toys sold to each of those\n                    four friends is shown separately in the parenthesis in Table 2) and each friend bought toys from\n                    exactly two of the given 5 shops.",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  Which of the following pairs\n                    has the name of the two friends, who bought the same number of toys from two different shops?",
+            "options": [
+                "Smith and Sachin",
+                "Sanath and Sachin",
+                "Sehwag and Sachin",
+                "Shahid and Shane"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850488/53s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                Table 1 below shows the number of toys bought by each of the 10 friends and the total amount (in\n                Rs.)\n                spent by them in buying the toys. Table 2 shows the number of toys sold by each of the five shops to the\n                friends and the price (in Rs.) of each toy at which the respective shop sold all of its\n                toys.\n                Further, it was also known that:\n                (i) No friend bought any toy from any shop other than the five shops mentioned in Table 2 and no shop\n                sold any toys to any person other than the 10 persons mentioned in Table 1.\n                (ii) Each shop sold the toys to exactly four of the 10 friends (number of toys sold to each of those\n                four friends is shown separately in the parenthesis in Table 2) and each friend bought toys from exactly\n                two of the given 5 shops.",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  How many of the given 10 friends\n                spent at least Rs. 30 (on buying toys) in each of the two shops from\n                where they bought the toys?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850489/54s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                Table 1 below shows the number of toys bought by each of the 10 friends and the total amount (in\n                Rs.)\n                spent by them in buying the toys. Table 2 shows the number of toys sold by each of the five shops to the\n                friends and the price (in Rs.) of each toy at which the respective shop sold all of its\n                toys.\n                Further, it was also known that:\n                (i) No friend bought any toy from any shop other than the five shops mentioned in Table 2 and no shop\n                sold any toys to any person other than the 10 persons mentioned in Table 1.\n                (ii) Each shop sold the toys to exactly four of the 10 friends (number of toys sold to each of those\n                four friends is shown separately in the parenthesis in Table 2) and each friend bought toys from exactly\n                two of the given 5 shops.",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  How many pairs of friends are\n                possible in which both the friends had bought the toys from the same two\n                shops?",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776706/1615577/10cs.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n                questions on the basis of the information given below.\n                Table 1 below shows the number of toys bought by each of the 10 friends and the total amount (in\n                Rs.)\n                spent by them in buying the toys. Table 2 shows the number of toys sold by each of the five shops to the\n                friends and the price (in Rs.) of each toy at which the respective shop sold all of its\n                toys.\n                Further, it was also known that:\n                (i) No friend bought any toy from any shop other than the five shops mentioned in Table 2 and no shop\n                sold any toys to any person other than the 10 persons mentioned in Table 1.\n                (ii) Each shop sold the toys to exactly four of the 10 friends (number of toys sold to each of those\n                four friends is shown separately in the parenthesis in Table 2) and each friend bought toys from exactly\n                two of the given 5 shops.",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  Which of the following set of\n                friends bought toys from Shop 5?",
+            "options": [
+                "Sanath, Steve, Smith, Shahid",
+                "Sachin, Steve, Saurav, Shahid",
+                "Sachin, Sanath, Saurav, Smith",
+                "Saqlain, Sanath, Saurav, Saeed"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858328/47ss.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                Four friends - Jony, Mony, Tony and Sony - have 12 vocabulary cards with them. Each vocabulary card has\n                a number printed on it, from 1 to 12, which is known as the \u2018value\u2019 of that card. No two cards has same\n                number printed on it. \n                On Day 1, the four friends distribute these 12 cards equally among themselves i.e, each friend has 3\n                cards with himself.\n                In the beginning of Day 2 each of them gives exactly one card to each of the other three friends and\n                they repeat the same process in the beginning of Day 3 as well. \n                In the beginning of Day 4, they re-shuffle the cards among themselves in such a way that each one of\n                them gets a set of three different cards from the ones they had in past three days.\n                No friend gets any of the cards having same value for two or more times in the span of these four days.\n                The diagram shown below gives the sum of the values of the cards with each of Jony, Tony and Sony at the\n                end of Day 2, Day 3 and Day 4.",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  What is the sum of the values of\n                all the cards with Mony on Day 1?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858328/47ss.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                Four friends - Jony, Mony, Tony and Sony - have 12 vocabulary cards with them. Each vocabulary card has\n                a number printed on it, from 1 to 12, which is known as the \u2018value\u2019 of that card. No two cards has same\n                number printed on it. \n                On Day 1, the four friends distribute these 12 cards equally among themselves i.e, each friend has 3\n                cards with himself.\n                In the beginning of Day 2 each of them gives exactly one card to each of the other three friends and\n                they repeat the same process in the beginning of Day 3 as well. \n                In the beginning of Day 4, they re-shuffle the cards among themselves in such a way that each one of\n                them gets a set of three different cards from the ones they had in past three days.\n                No friend gets any of the cards having same value for two or more times in the span of these four days.\n                The diagram shown below gives the sum of the values of the cards with each of Jony, Tony and Sony at the\n                end of Day 2, Day 3 and Day 4.",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  If, out of all the cards that\n                were there with Tony at the end of Day 3, exactly \u2018n\u2019 cards were obtained by Mony at the end of Day 4,\n                then what is the value of \u2018n\u2019?",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858328/47ss.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                Four friends - Jony, Mony, Tony and Sony - have 12 vocabulary cards with them. Each vocabulary card has\n                a number printed on it, from 1 to 12, which is known as the \u2018value\u2019 of that card. No two cards has same\n                number printed on it. \n                On Day 1, the four friends distribute these 12 cards equally among themselves i.e, each friend has 3\n                cards with himself.\n                In the beginning of Day 2 each of them gives exactly one card to each of the other three friends and\n                they repeat the same process in the beginning of Day 3 as well. \n                In the beginning of Day 4, they re-shuffle the cards among themselves in such a way that each one of\n                them gets a set of three different cards from the ones they had in past three days.\n                No friend gets any of the cards having same value for two or more times in the span of these four days.\n                The diagram shown below gives the sum of the values of the cards with each of Jony, Tony and Sony at the\n                end of Day 2, Day 3 and Day 4.",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Who among the following obtained\n                the card valued as 12 on Day 4?",
+            "options": [
+                "Jony",
+                "Mony",
+                "Tony",
+                "Sony"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858328/47ss.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                Four friends - Jony, Mony, Tony and Sony - have 12 vocabulary cards with them. Each vocabulary card has\n                a number printed on it, from 1 to 12, which is known as the \u2018value\u2019 of that card. No two cards has same\n                number printed on it. \n                On Day 1, the four friends distribute these 12 cards equally among themselves i.e, each friend has 3\n                cards with himself.\n                In the beginning of Day 2 each of them gives exactly one card to each of the other three friends and\n                they repeat the same process in the beginning of Day 3 as well. \n                In the beginning of Day 4, they re-shuffle the cards among themselves in such a way that each one of\n                them gets a set of three different cards from the ones they had in past three days.\n                No friend gets any of the cards having same value for two or more times in the span of these four days.\n                The diagram shown below gives the sum of the values of the cards with each of Jony, Tony and Sony at the\n                end of Day 2, Day 3 and Day 4.",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  What was the maximum difference\n                between the values of any two cards, out of all the cards that were there with Jony, on Day 2?",
+            "options": [
+                "3",
+                "6",
+                "1",
+                "10"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/858328/47ss.gif\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n\n                Four friends - Jony, Mony, Tony and Sony - have 12 vocabulary cards with them. Each vocabulary card has\n                a number printed on it, from 1 to 12, which is known as the \u2018value\u2019 of that card. No two cards has same\n                number printed on it. \n                On Day 1, the four friends distribute these 12 cards equally among themselves i.e, each friend has 3\n                cards with himself.\n                In the beginning of Day 2 each of them gives exactly one card to each of the other three friends and\n                they repeat the same process in the beginning of Day 3 as well. \n                In the beginning of Day 4, they re-shuffle the cards among themselves in such a way that each one of\n                them gets a set of three different cards from the ones they had in past three days.\n                No friend gets any of the cards having same value for two or more times in the span of these four days.\n                The diagram shown below gives the sum of the values of the cards with each of Jony, Tony and Sony at the\n                end of Day 2, Day 3 and Day 4.",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  On how many days out of four was\n                the sum of numbers on the cards with Jony more than the sum of numbers on the cards of at least two\n                other people?",
+            "options": [
+                "Three",
+                "Two",
+                "Four",
+                "One"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850494/59s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                A survey was conducted among 100 persons of a village in Haryana, about the cell phone(s) they have\n                ordered from an online website. Each person has ordered at least one of the three phones among iPhone\n                X, MI note 5 and One Plus 6. When they were asked about the phone they had ordered, the following\n                results were observed by the survey conducting body:\n                \u2022 The number of persons who ordered iPhone X is more than the number of those who ordered Mi note 5,\n                which in turn is more than the number of those who ordered OnePlus 6.\n                \u2022 Number of those who ordered OnePlus 6 is more than the number of those who ordered exactly two of\n                these phones, which in turn is more than the number of those who ordered all the three.",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  If the number of persons who\n                ordered iPhone X is minimum possible, then find number of persons who ordered Mi note 5 phones.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850495/60s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                A survey was conducted among 100 persons of a village in Haryana, about the cell phone(s) they have\n                ordered from an online website. Each person has ordered at least one of the three phones among iPhone\n                X, MI note 5 and One Plus 6. When they were asked about the phone they had ordered, the following\n                results were observed by the survey conducting body:\n                \u2022 The number of persons who ordered iPhone X is more than the number of those who ordered Mi note 5,\n                which in turn is more than the number of those who ordered OnePlus 6.\n                \u2022 Number of those who ordered OnePlus 6 is more than the number of those who ordered exactly two of\n                these phones, which in turn is more than the number of those who ordered all the three.",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  Find the maximum number of\n                persons who ordered One Plus 6.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850496/61s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                A survey was conducted among 100 persons of a village in Haryana, about the cell phone(s) they have\n                ordered from an online website. Each person has ordered at least one of the three phones among iPhone\n                X, MI note 5 and One Plus 6. When they were asked about the phone they had ordered, the following\n                results were observed by the survey conducting body:\n                \u2022 The number of persons who ordered iPhone X is more than the number of those who ordered Mi note 5,\n                which in turn is more than the number of those who ordered OnePlus 6.\n                \u2022 Number of those who ordered OnePlus 6 is more than the number of those who ordered exactly two of\n                these phones, which in turn is more than the number of those who ordered all the three.",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  What can be the maximum number of\n                person who ordered only MI note 5?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850497/62s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                A survey was conducted among 100 persons of a village in Haryana, about the cell phone(s) they have\n                ordered from an online website. Each person has ordered at least one of the three phones among iPhone\n                X, MI note 5 and One Plus 6. When they were asked about the phone they had ordered, the following\n                results were observed by the survey conducting body:\n                \u2022 The number of persons who ordered iPhone X is more than the number of those who ordered Mi note 5,\n                which in turn is more than the number of those who ordered OnePlus 6.\n                \u2022 Number of those who ordered OnePlus 6 is more than the number of those who ordered exactly two of\n                these phones, which in turn is more than the number of those who ordered all the three.",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  Find the maximum number of\n                persons who ordered for MI note 5 and One Plus 6 but not iPhone X.",
+            "options": [
+                "47",
+                "48",
+                "49",
+                "50"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776706/1615579/20s.jpg\"><br><br>"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n                A survey was conducted among 100 persons of a village in Haryana, about the cell phone(s) they have\n                ordered from an online website. Each person has ordered at least one of the three phones among iPhone\n                X, MI note 5 and One Plus 6. When they were asked about the phone they had ordered, the following\n                results were observed by the survey conducting body:\n                \u2022 The number of persons who ordered iPhone X is more than the number of those who ordered Mi note 5,\n                which in turn is more than the number of those who ordered OnePlus 6.\n                \u2022 Number of those who ordered OnePlus 6 is more than the number of those who ordered exactly two of\n                these phones, which in turn is more than the number of those who ordered all the three.",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  If the cost of iPhone X, MI note\n                5 and One Plus 6 respectively is Rs.80,000, Rs.30,000 and Rs.50,000, also the maximum number of people\n                ordered One Plus, then what was the total amount spent by these people in buying the above three models\n                of phones?",
+            "options": [
+                "Rs.1.21 crore",
+                "Rs.1.331 crore",
+                "Rs.9.472 crore",
+                "Rs.1.082 crore"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

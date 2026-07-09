@@ -1,0 +1,419 @@
+{
+    "name": "DILR 04 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n\t\t\t\t\t\t\t\t\t\t\t\t\t1 to 5: Answer the questions on the basis of the information given\n\t\t\t\t\t\t\t\t\t\t\t\t\tbelow\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\tA confectionary store namely \u2018Railway Confectionary\u2019 at platform\n\t\t\t\t\t\t\t\t\t\t\t\t\tnumber 3 of New Delhi railway station sells ten types of appetizers\n\t\t\t\t\t\t\t\t\t\t\t\t\t\u2013Juice, Water bottle, Snacks, Coffee, Milk Shake, Soda, Soft Drink,\n\t\t\t\t\t\t\t\t\t\t\t\t\tBurger, Patty and Cake. Store remains open from 8.00 a.m. to 8.00\n\t\t\t\t\t\t\t\t\t\t\t\t\tp.m. everyday. The information about the cost price, selling price\n\t\t\t\t\t\t\t\t\t\t\t\t\tand the range of number of units that can be sold in a day is given\n\t\t\t\t\t\t\t\t\t\t\t\t\tbelow. Some cells of the table are left blank intentionally\n\t\t\t\t\t\t\t\t\t\t\t\t\t.\n\t\t\t\t\t\t\t\t\t\t\t\t\tSome other information is as follows:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t(i) Selling price of any appetizer is not less than Rs. 8 but not\n\t\t\t\t\t\t\t\t\t\t\t\t\tmore than Rs. 20. Also selling price of any appetizer is not less\n\t\t\t\t\t\t\t\t\t\t\t\t\tthan its cost price.\n\t\t\t\t\t\t\t\t\t\t\t\t\t(ii) The store purchases all its items in the starting of the\n\t\t\t\t\t\t\t\t\t\t\t\t\tmonth.\n\t\t\t\t\t\t\t\t\t\t\t\t\t(iii) All transactions are in cash only.\n\t\t\t\t\t\t\t\t\t\t\t\t\t(iv) A person buys milk shake only when he buys Snacks; a person\n\t\t\t\t\t\t\t\t\t\t\t\t\tbuys soft drink only when he buys milk shake. Each person buy\n\t\t\t\t\t\t\t\t\t\t\t\t\texactly one unit of any appetizer.\n\t\t\t\t\t\t\t\t\t\t\t\t\t(v) A person purchasing any appetizer out of snacks, milk shake and\n\t\t\t\t\t\t\t\t\t\t\t\t\tsoft drink is called good customer, and a customer purchasing all\n\t\t\t\t\t\t\t\t\t\t\t\t\tthe three items is called as star customer. ",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tWhat could be the maximum profit (in Rs.) made by the store in\n\t\t\t\t\t\t\t\t\t\t\t\t\ta day from good customers, who are not star customers?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802834/40s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n\t\t\t\t\t\t\t\t\t\t\t\t5: Answer the questions on the basis of the information given below\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tA confectionary store namely \u2018Railway Confectionary\u2019 at platform number\n\t\t\t\t\t\t\t\t\t\t\t\t3 of New Delhi railway station sells ten types of appetizers \u2013Juice,\n\t\t\t\t\t\t\t\t\t\t\t\tWater bottle, Snacks, Coffee, Milk Shake, Soda, Soft Drink, Burger,\n\t\t\t\t\t\t\t\t\t\t\t\tPatty and Cake. Store remains open from 8.00 a.m. to 8.00 p.m. everyday.\n\t\t\t\t\t\t\t\t\t\t\t\tThe information about the cost price, selling price and the range of\n\t\t\t\t\t\t\t\t\t\t\t\tnumber of units that can be sold in a day is given below. Some cells of\n\t\t\t\t\t\t\t\t\t\t\t\tthe table are left blank intentionally .\n\t\t\t\t\t\t\t\t\t\t\t\tSome other information is as follows:\n\n\t\t\t\t\t\t\t\t\t\t\t\t(i) Selling price of any appetizer is not less than Rs. 8 but not more\n\t\t\t\t\t\t\t\t\t\t\t\tthan Rs. 20. Also selling price of any appetizer is not less than its\n\t\t\t\t\t\t\t\t\t\t\t\tcost price.\n\t\t\t\t\t\t\t\t\t\t\t\t(ii) The store purchases all its items in the starting of the month.\n\t\t\t\t\t\t\t\t\t\t\t\t(iii) All transactions are in cash only.\n\t\t\t\t\t\t\t\t\t\t\t\t(iv) A person buys milk shake only when he buys Snacks; a person buys\n\t\t\t\t\t\t\t\t\t\t\t\tsoft drink only when he buys milk shake. Each person buy exactly one\n\t\t\t\t\t\t\t\t\t\t\t\tunit of any appetizer.\n\t\t\t\t\t\t\t\t\t\t\t\t(v) A person purchasing any appetizer out of snacks, milk shake and soft\n\t\t\t\t\t\t\t\t\t\t\t\tdrink is called good customer, and a customer purchasing all the three\n\t\t\t\t\t\t\t\t\t\t\t\titems is called as star customer. ",
+            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\tWhat could be the minimum percentage profit of the store for a day?\n\t\t\t\t\t\t\t\t\t\t",
+            "options": [
+                "0.375",
+                "0.405",
+                "1.27",
+                "0"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802835/41s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n\t\t\t\t\t\t\t\t\t\tAnswer the questions on the basis of the information given below\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tA confectionary store namely \u2018Railway Confectionary\u2019 at platform number 3 of New\n\t\t\t\t\t\t\t\t\t\tDelhi railway station sells ten types of appetizers \u2013Juice, Water bottle,\n\t\t\t\t\t\t\t\t\t\tSnacks, Coffee, Milk Shake, Soda, Soft Drink, Burger, Patty and Cake. Store\n\t\t\t\t\t\t\t\t\t\tremains open from 8.00 a.m. to 8.00 p.m. everyday. The information about the\n\t\t\t\t\t\t\t\t\t\tcost price, selling price and the range of number of units that can be sold in a\n\t\t\t\t\t\t\t\t\t\tday is given below. Some cells of the table are left blank intentionally\n\t\t\t\t\t\t\t\t\t\t.\n\t\t\t\t\t\t\t\t\t\tSome other information is as follows:\n\n\t\t\t\t\t\t\t\t\t\t(i) Selling price of any appetizer is not less than Rs. 8 but not more than Rs.\n\t\t\t\t\t\t\t\t\t\t20. Also selling price of any appetizer is not less than its cost price.\n\t\t\t\t\t\t\t\t\t\t(ii) The store purchases all its items in the starting of the month.\n\t\t\t\t\t\t\t\t\t\t(iii) All transactions are in cash only.\n\t\t\t\t\t\t\t\t\t\t(iv) A person buys milk shake only when he buys Snacks; a person buys soft drink\n\t\t\t\t\t\t\t\t\t\tonly when he buys milk shake. Each person buy exactly one unit of any\n\t\t\t\t\t\t\t\t\t\tappetizer.\n\t\t\t\t\t\t\t\t\t\t(v) A person purchasing any appetizer out of snacks, milk shake and soft drink\n\t\t\t\t\t\t\t\t\t\tis called good customer, and a customer purchasing all the three items is called\n\t\t\t\t\t\t\t\t\t\tas star customer. ",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  If the\n\t\t\t\t\t\t\t\t\t\tselling price of every appetizer is same, what will be the approximate maximum\n\t\t\t\t\t\t\t\t\t\tpercentage profit for a day?",
+            "options": [
+                "50",
+                "64",
+                "42",
+                "60"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b></b>"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer\n\t\t\t\t\t\t\t\t\tthe questions on the basis of the information given below\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tA confectionary store namely \u2018Railway Confectionary\u2019 at platform number 3 of New\n\t\t\t\t\t\t\t\t\tDelhi railway station sells ten types of appetizers \u2013Juice, Water bottle, Snacks,\n\t\t\t\t\t\t\t\t\tCoffee, Milk Shake, Soda, Soft Drink, Burger, Patty and Cake. Store remains open\n\t\t\t\t\t\t\t\t\tfrom 8.00 a.m. to 8.00 p.m. everyday. The information about the cost price, selling\n\t\t\t\t\t\t\t\t\tprice and the range of number of units that can be sold in a day is given below.\n\t\t\t\t\t\t\t\t\tSome cells of the table are left blank intentionally .\n\t\t\t\t\t\t\t\t\tSome other information is as follows:\n\n\t\t\t\t\t\t\t\t\t(i) Selling price of any appetizer is not less than Rs. 8 but not more than Rs. 20.\n\t\t\t\t\t\t\t\t\tAlso selling price of any appetizer is not less than its cost price.\n\t\t\t\t\t\t\t\t\t(ii) The store purchases all its items in the starting of the month.\n\t\t\t\t\t\t\t\t\t(iii) All transactions are in cash only.\n\t\t\t\t\t\t\t\t\t(iv) A person buys milk shake only when he buys Snacks; a person buys soft drink\n\t\t\t\t\t\t\t\t\tonly when he buys milk shake. Each person buy exactly one unit of any appetizer.\n\t\t\t\t\t\t\t\t\t(v) A person purchasing any appetizer out of snacks, milk shake and soft drink is\n\t\t\t\t\t\t\t\t\tcalled good customer, and a customer purchasing all the three items is called as\n\t\t\t\t\t\t\t\t\tstar customer. ",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  Which of the\n\t\t\t\t\t\t\t\t\tfollowing could be the total sales value for a day?",
+            "options": [
+                "Rs. 1,600",
+                "Rs. 12,800",
+                "Rs. 12,900",
+                "Rs. 2,650"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><br>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer the\n\t\t\t\t\t\t\t\tquestions on the basis of the information given below\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tA confectionary store namely \u2018Railway Confectionary\u2019 at platform number 3 of New Delhi\n\t\t\t\t\t\t\t\trailway station sells ten types of appetizers \u2013Juice, Water bottle, Snacks, Coffee, Milk\n\t\t\t\t\t\t\t\tShake, Soda, Soft Drink, Burger, Patty and Cake. Store remains open from 8.00 a.m. to\n\t\t\t\t\t\t\t\t8.00 p.m. everyday. The information about the cost price, selling price and the range of\n\t\t\t\t\t\t\t\tnumber of units that can be sold in a day is given below. Some cells of the table are\n\t\t\t\t\t\t\t\tleft blank intentionally .\n\t\t\t\t\t\t\t\tSome other information is as follows:\n\n\t\t\t\t\t\t\t\t(i) Selling price of any appetizer is not less than Rs. 8 but not more than Rs. 20. Also\n\t\t\t\t\t\t\t\tselling price of any appetizer is not less than its cost price.\n\t\t\t\t\t\t\t\t(ii) The store purchases all its items in the starting of the month.\n\t\t\t\t\t\t\t\t(iii) All transactions are in cash only.\n\t\t\t\t\t\t\t\t(iv) A person buys milk shake only when he buys Snacks; a person buys soft drink only\n\t\t\t\t\t\t\t\twhen he buys milk shake. Each person buy exactly one unit of any appetizer.\n\t\t\t\t\t\t\t\t(v) A person purchasing any appetizer out of snacks, milk shake and soft drink is called\n\t\t\t\t\t\t\t\tgood customer, and a customer purchasing all the three items is called as star customer.\n\t\t\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  If the unit sold of\n\t\t\t\t\t\t\teach appetizer is a maximum integral multiple of 20 and the selling price of every appetizer\n\t\t\t\t\t\t\tis same, what will be the approximate percentage profit for a day?",
+            "options": [
+                "atleast 60%",
+                "less than 45%",
+                "atleast 50%",
+                "less than 50%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802841/47-50.gif\"><br><br><b></b>"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n\t\t\t\t\t\t\tquestions on the basis of the information given below\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tFive friends \u2013 A, B, C, D and E \u2013 were given certain number of packets of toffees by their\n\t\t\t\t\t\t\tparents. Each of them got different number of packets and each packet contains ten toffees.\n\t\t\t\t\t\t\tThey all met under a tree and decided to exchange the toffees among themselves. Firstly A, B\n\t\t\t\t\t\t\tand D exchanged their packets amongst themselves so that no one of the three had their\n\t\t\t\t\t\t\toriginal number of toffees with them. Thereafter B, C and D exchanged their packets in the\n\t\t\t\t\t\t\tsame manner (i.e. no one had their original number of toffees with them), and in the last C,\n\t\t\t\t\t\t\tD and E exchanged their packets in the same manner. Some additional information is given\n\t\t\t\t\t\t\tabout the exchange.\n\t\t\t\t\t\t\t1. Initially, E has the maximum number of toffees, which was not more than 60, but after all\n\t\t\t\t\t\t\tthe exchange, E left with the minimum number of toffees, which was not less than 10.\n\t\t\t\t\t\t\t2. Number of toffees with each of the friends after all exchanges was different from what\n\t\t\t\t\t\t\tthey initially had.\n\t\t\t\t\t\t\t3. Number of toffees with B and C after second exchange was 40 and 20 respectively.\n\t\t\t\t\t\t\t4. After each exchange, no two friends have the same number of toffees.\n\t\t\t\t\t\t\t5. Number of toffees with A, B and D after first exchange was 30, 10 and 20\n\t\t\t\t\t\t\trespectively.\n\t\t\t\t\t\t\t6. None of the friends has opened any packet before the final exchange.\n\t\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  If number of toffees\n\t\t\t\t\t\t\twith B initially, after first exchange, after second exchange and after third exchange was\n\t\t\t\t\t\t\ta, b, c and d respectively, then which of the following can be the value of (a + b + c + d)?\n\t\t\t\t\t",
+            "options": [
+                "120",
+                "100",
+                "150",
+                "130"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802841/47-50.gif\"><br><br><b></b>"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the\n\t\t\t\t\t\tquestions on the basis of the information given below\n\t\t\t\t\t\t\n\t\t\t\t\t\tFive friends \u2013 A, B, C, D and E \u2013 were given certain number of packets of toffees by their\n\t\t\t\t\t\tparents. Each of them got different number of packets and each packet contains ten toffees. They\n\t\t\t\t\t\tall met under a tree and decided to exchange the toffees among themselves. Firstly A, B and D\n\t\t\t\t\t\texchanged their packets amongst themselves so that no one of the three had their original number\n\t\t\t\t\t\tof toffees with them. Thereafter B, C and D exchanged their packets in the same manner (i.e. no\n\t\t\t\t\t\tone had their original number of toffees with them), and in the last C, D and E exchanged their\n\t\t\t\t\t\tpackets in the same manner. Some additional information is given about the exchange.\n\t\t\t\t\t\t1. Initially, E has the maximum number of toffees, which was not more than 60, but after all the\n\t\t\t\t\t\texchange, E left with the minimum number of toffees, which was not less than 10.\n\t\t\t\t\t\t2. Number of toffees with each of the friends after all exchanges was different from what they\n\t\t\t\t\t\tinitially had.\n\t\t\t\t\t\t3. Number of toffees with B and C after second exchange was 40 and 20 respectively.\n\t\t\t\t\t\t4. After each exchange, no two friends have the same number of toffees.\n\t\t\t\t\t\t5. Number of toffees with A, B and D after first exchange was 30, 10 and 20 respectively.\n\t\t\t\t\t\t6. None of the friends has opened any packet before the final exchange.\n\t\t\t\t",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  For how many persons,\n\t\t\t\t\t\tnumber of toffees with them after third exchange can be determined uniquely?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802841/47-50.gif\"><br><br><b></b>"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below\n\t\t\t\t\t\n\t\t\t\t\tFive friends \u2013 A, B, C, D and E \u2013 were given certain number of packets of toffees by their parents.\n\t\t\t\t\tEach of them got different number of packets and each packet contains ten toffees. They all met\n\t\t\t\t\tunder a tree and decided to exchange the toffees among themselves. Firstly A, B and D exchanged\n\t\t\t\t\ttheir packets amongst themselves so that no one of the three had their original number of toffees\n\t\t\t\t\twith them. Thereafter B, C and D exchanged their packets in the same manner (i.e. no one had their\n\t\t\t\t\toriginal number of toffees with them), and in the last C, D and E exchanged their packets in the\n\t\t\t\t\tsame manner. Some additional information is given about the exchange.\n\t\t\t\t\t1. Initially, E has the maximum number of toffees, which was not more than 60, but after all the\n\t\t\t\t\texchange, E left with the minimum number of toffees, which was not less than 10.\n\t\t\t\t\t2. Number of toffees with each of the friends after all exchanges was different from what they\n\t\t\t\t\tinitially had.\n\t\t\t\t\t3. Number of toffees with B and C after second exchange was 40 and 20 respectively.\n\t\t\t\t\t4. After each exchange, no two friends have the same number of toffees.\n\t\t\t\t\t5. Number of toffees with A, B and D after first exchange was 30, 10 and 20 respectively.\n\t\t\t\t\t6. None of the friends has opened any packet before the final exchange.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  Which of the following is the\n\t\t\t\t\tnumber of toffees E initially had?",
+            "options": [
+                "50",
+                "60",
+                "40",
+                "either (1) or (2)"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802841/47-50.gif\"><br><br><b></b>"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below\n\t\t\t\t\t\n\t\t\t\t\tFive friends \u2013 A, B, C, D and E \u2013 were given certain number of packets of toffees by their parents.\n\t\t\t\t\tEach of them got different number of packets and each packet contains ten toffees. They all met\n\t\t\t\t\tunder a tree and decided to exchange the toffees among themselves. Firstly A, B and D exchanged\n\t\t\t\t\ttheir packets amongst themselves so that no one of the three had their original number of toffees\n\t\t\t\t\twith them. Thereafter B, C and D exchanged their packets in the same manner (i.e. no one had their\n\t\t\t\t\toriginal number of toffees with them), and in the last C, D and E exchanged their packets in the\n\t\t\t\t\tsame manner. Some additional information is given about the exchange.\n\t\t\t\t\t1. Initially, E has the maximum number of toffees, which was not more than 60, but after all the\n\t\t\t\t\texchange, E left with the minimum number of toffees, which was not less than 10.\n\t\t\t\t\t2. Number of toffees with each of the friends after all exchanges was different from what they\n\t\t\t\t\tinitially had.\n\t\t\t\t\t3. Number of toffees with B and C after second exchange was 40 and 20 respectively.\n\t\t\t\t\t4. After each exchange, no two friends have the same number of toffees.\n\t\t\t\t\t5. Number of toffees with A, B and D after first exchange was 30, 10 and 20 respectively.\n\t\t\t\t\t6. None of the friends has opened any packet before the final exchange.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  Which of the following\n\t\t\t\t\tstatements is sufficient to find out the number of toffees with each of the five friends initially,\n\t\t\t\t\tafter first exchange, after second exchange and after third exchange?",
+            "options": [
+                "C initially had 40 toffees.",
+                "Initially difference between number of toffees with A and E\n\t\t\t\t\twas 40.",
+                "Initially difference between number of toffees with A and\n\t\t\t\t\tC was 30.",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802841/47-50.gif\"><br><br>"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below\n\t\t\t\t\t\n\t\t\t\t\tFive friends \u2013 A, B, C, D and E \u2013 were given certain number of packets of toffees by their parents.\n\t\t\t\t\tEach of them got different number of packets and each packet contains ten toffees. They all met\n\t\t\t\t\tunder a tree and decided to exchange the toffees among themselves. Firstly A, B and D exchanged\n\t\t\t\t\ttheir packets amongst themselves so that no one of the three had their original number of toffees\n\t\t\t\t\twith them. Thereafter B, C and D exchanged their packets in the same manner (i.e. no one had their\n\t\t\t\t\toriginal number of toffees with them), and in the last C, D and E exchanged their packets in the\n\t\t\t\t\tsame manner. Some additional information is given about the exchange.\n\t\t\t\t\t1. Initially, E has the maximum number of toffees, which was not more than 60, but after all the\n\t\t\t\t\texchange, E left with the minimum number of toffees, which was not less than 10.\n\t\t\t\t\t2. Number of toffees with each of the friends after all exchanges was different from what they\n\t\t\t\t\tinitially had.\n\t\t\t\t\t3. Number of toffees with B and C after second exchange was 40 and 20 respectively.\n\t\t\t\t\t4. After each exchange, no two friends have the same number of toffees.\n\t\t\t\t\t5. Number of toffees with A, B and D after first exchange was 30, 10 and 20 respectively.\n\t\t\t\t\t6. None of the friends has opened any packet before the final exchange.\n\t\t\t",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  If E and D had the maximum\n\t\t\t\tpossible number of packets of toffees, then for how many persons, the number of toffees with them after\n\t\t\t\tall the exchanges can be determined uniquely?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802853/59s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tThe head of Swachh Bharat Mission, B. Chandraleka, set up a mission to make India a dumping yard\n\t\t\t\t\tfree society. She picked up five scientists of various domains and origins to frame a master plan.\n\t\t\t\t\t\n\t\t\t\t\tThe scientists chosen by her were Rama, Bupa, Peter, Maku and Sayeed with their specialization in\n\t\t\t\t\tleachate reduction, afforestation, debugging, water science, and environment sustainability, not\n\t\t\t\t\tnecessarily in the same order.\n\t\t\t\t\tThey purchased their experimental equipments from Denmark, California, Libya, Nigeria and Kenya of\n\t\t\t\t\tdifferent colors from Black, Red, Yellow, White and Grey, in any order.\n\t\t\t\t\tSome of them worked for NAMO and the remaining for RAGA.\n\t\t\t\t\tSome additional information about them is also known.\n\t\t\t\t\t(i) The one who specialised in environment sustainability purchased his equipment from Denmark.\n\t\t\t\t\t(ii) Both, the afforestation scientist and the one whose equipments are white in color, worked for\n\t\t\t\t\tRAGA.\n\t\t\t\t\t(iii) Peter is neither an afforestation scientist nor he purchased his equipments from Libya.\n\t\t\t\t\t(iv) Maku, a leachate reduction scientist, worked for RAGA\n\t\t\t\t\t(v) Bupa worked for NAMO.\n\t\t\t\t\t(vi) All three persons - the one whose equipments are grey, the one who purchased his equipments\n\t\t\t\t\tfrom Libya and the one who purchased his equipments from Nigeria, worked for NAMO.\n\t\t\t\t\t(vii) The afforestation scientist has yellow color equipments.\n\t\t\t\t\t(viii) Rama\u2019s equipments are neither yellow nor grey.\n\t\t\t\t\t(ix) Neither Bupa nor Rama is a water scientist.\n\t\t\t\t\t(x) Sayeed\u2019s equipments are not from California.\n\t\t\t\t\t(xi) The one whose specialization is in debugging don\u2019t have red equipments.",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  Which of the following\n\t\t\t\t\tscientists worked for RAGA?",
+            "options": [
+                "Peter and Rama",
+                "Sayeed and Rama",
+                "Sayeed and Maku",
+                "Maku and Peter"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802854/60s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tThe head of Swachh Bharat Mission, B. Chandraleka, set up a mission to make India a dumping yard\n\t\t\t\t\tfree society. She picked up five scientists of various domains and origins to frame a master plan.\n\t\t\t\t\t\n\t\t\t\t\tThe scientists chosen by her were Rama, Bupa, Peter, Maku and Sayeed with their specialization in\n\t\t\t\t\tleachate reduction, afforestation, debugging, water science, and environment sustainability, not\n\t\t\t\t\tnecessarily in the same order.\n\t\t\t\t\tThey purchased their experimental equipments from Denmark, California, Libya, Nigeria and Kenya of\n\t\t\t\t\tdifferent colors from Black, Red, Yellow, White and Grey, in any order.\n\t\t\t\t\tSome of them worked for NAMO and the remaining for RAGA.\n\t\t\t\t\tSome additional information about them is also known.\n\t\t\t\t\t(i) The one who specialised in environment sustainability purchased his equipment from Denmark.\n\t\t\t\t\t(ii) Both, the afforestation scientist and the one whose equipments are white in color, worked for\n\t\t\t\t\tRAGA.\n\t\t\t\t\t(iii) Peter is neither an afforestation scientist nor he purchased his equipments from Libya.\n\t\t\t\t\t(iv) Maku, a leachate reduction scientist, worked for RAGA\n\t\t\t\t\t(v) Bupa worked for NAMO.\n\t\t\t\t\t(vi) All three persons - the one whose equipments are grey, the one who purchased his equipments\n\t\t\t\t\tfrom Libya and the one who purchased his equipments from Nigeria, worked for NAMO.\n\t\t\t\t\t(vii) The afforestation scientist has yellow color equipments.\n\t\t\t\t\t(viii) Rama\u2019s equipments are neither yellow nor grey.\n\t\t\t\t\t(ix) Neither Bupa nor Rama is a water scientist.\n\t\t\t\t\t(x) Sayeed\u2019s equipments are not from California.\n\t\t\t\t\t(xi) The one whose specialization is in debugging don\u2019t have red equipments.",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  Who specialised in environment\n\t\t\t\t\tsustainability?",
+            "options": [
+                "Bupa",
+                "Rama",
+                "Peter",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802855/61s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tThe head of Swachh Bharat Mission, B. Chandraleka, set up a mission to make India a dumping yard\n\t\t\t\t\tfree society. She picked up five scientists of various domains and origins to frame a master plan.\n\t\t\t\t\t\n\t\t\t\t\tThe scientists chosen by her were Rama, Bupa, Peter, Maku and Sayeed with their specialization in\n\t\t\t\t\tleachate reduction, afforestation, debugging, water science, and environment sustainability, not\n\t\t\t\t\tnecessarily in the same order.\n\t\t\t\t\tThey purchased their experimental equipments from Denmark, California, Libya, Nigeria and Kenya of\n\t\t\t\t\tdifferent colors from Black, Red, Yellow, White and Grey, in any order.\n\t\t\t\t\tSome of them worked for NAMO and the remaining for RAGA.\n\t\t\t\t\tSome additional information about them is also known.\n\t\t\t\t\t(i) The one who specialised in environment sustainability purchased his equipment from Denmark.\n\t\t\t\t\t(ii) Both, the afforestation scientist and the one whose equipments are white in color, worked for\n\t\t\t\t\tRAGA.\n\t\t\t\t\t(iii) Peter is neither an afforestation scientist nor he purchased his equipments from Libya.\n\t\t\t\t\t(iv) Maku, a leachate reduction scientist, worked for RAGA\n\t\t\t\t\t(v) Bupa worked for NAMO.\n\t\t\t\t\t(vi) All three persons - the one whose equipments are grey, the one who purchased his equipments\n\t\t\t\t\tfrom Libya and the one who purchased his equipments from Nigeria, worked for NAMO.\n\t\t\t\t\t(vii) The afforestation scientist has yellow color equipments.\n\t\t\t\t\t(viii) Rama\u2019s equipments are neither yellow nor grey.\n\t\t\t\t\t(ix) Neither Bupa nor Rama is a water scientist.\n\t\t\t\t\t(x) Sayeed\u2019s equipments are not from California.\n\t\t\t\t\t(xi) The one whose specialization is in debugging don\u2019t have red equipments.",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Which of the following\n\t\t\t\t\tcombinations is correct?",
+            "options": [
+                "Bupa \u2013 Water \u2013 California",
+                "Bupa \u2013 Afforestation \u2013 Denmark",
+                "Peter \u2013 RAGA \u2013 Nigeria",
+                "Peter \u2013 NAMO \u2013 Nigeria"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802856/62s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tThe head of Swachh Bharat Mission, B. Chandraleka, set up a mission to make India a dumping yard\n\t\t\t\t\tfree society. She picked up five scientists of various domains and origins to frame a master plan.\n\t\t\t\t\t\n\t\t\t\t\tThe scientists chosen by her were Rama, Bupa, Peter, Maku and Sayeed with their specialization in\n\t\t\t\t\tleachate reduction, afforestation, debugging, water science, and environment sustainability, not\n\t\t\t\t\tnecessarily in the same order.\n\t\t\t\t\tThey purchased their experimental equipments from Denmark, California, Libya, Nigeria and Kenya of\n\t\t\t\t\tdifferent colors from Black, Red, Yellow, White and Grey, in any order.\n\t\t\t\t\tSome of them worked for NAMO and the remaining for RAGA.\n\t\t\t\t\tSome additional information about them is also known.\n\t\t\t\t\t(i) The one who specialised in environment sustainability purchased his equipment from Denmark.\n\t\t\t\t\t(ii) Both, the afforestation scientist and the one whose equipments are white in color, worked for\n\t\t\t\t\tRAGA.\n\t\t\t\t\t(iii) Peter is neither an afforestation scientist nor he purchased his equipments from Libya.\n\t\t\t\t\t(iv) Maku, a leachate reduction scientist, worked for RAGA\n\t\t\t\t\t(v) Bupa worked for NAMO.\n\t\t\t\t\t(vi) All three persons - the one whose equipments are grey, the one who purchased his equipments\n\t\t\t\t\tfrom Libya and the one who purchased his equipments from Nigeria, worked for NAMO.\n\t\t\t\t\t(vii) The afforestation scientist has yellow color equipments.\n\t\t\t\t\t(viii) Rama\u2019s equipments are neither yellow nor grey.\n\t\t\t\t\t(ix) Neither Bupa nor Rama is a water scientist.\n\t\t\t\t\t(x) Sayeed\u2019s equipments are not from California.\n\t\t\t\t\t(xi) The one whose specialization is in debugging don\u2019t have red equipments.",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  The scientists who worked for\n\t\t\t\t\tNAMO have equipments of which color?",
+            "options": [
+                "Red, Black, Yellow",
+                "Grey, Red, Yellow",
+                "Grey, Black, Red",
+                "Yellow, White, Grey"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776699/1576213/15s.jpg\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tThe head of Swachh Bharat Mission, B. Chandraleka, set up a mission to make India a dumping yard\n\t\t\t\t\tfree society. She picked up five scientists of various domains and origins to frame a master plan.\n\t\t\t\t\t\n\t\t\t\t\tThe scientists chosen by her were Rama, Bupa, Peter, Maku and Sayeed with their specialization in\n\t\t\t\t\tleachate reduction, afforestation, debugging, water science, and environment sustainability, not\n\t\t\t\t\tnecessarily in the same order.\n\t\t\t\t\tThey purchased their experimental equipments from Denmark, California, Libya, Nigeria and Kenya of\n\t\t\t\t\tdifferent colors from Black, Red, Yellow, White and Grey, in any order.\n\t\t\t\t\tSome of them worked for NAMO and the remaining for RAGA.\n\t\t\t\t\tSome additional information about them is also known.\n\t\t\t\t\t(i) The one who specialised in environment sustainability purchased his equipment from Denmark.\n\t\t\t\t\t(ii) Both, the afforestation scientist and the one whose equipments are white in color, worked for\n\t\t\t\t\tRAGA.\n\t\t\t\t\t(iii) Peter is neither an afforestation scientist nor he purchased his equipments from Libya.\n\t\t\t\t\t(iv) Maku, a leachate reduction scientist, worked for RAGA\n\t\t\t\t\t(v) Bupa worked for NAMO.\n\t\t\t\t\t(vi) All three persons - the one whose equipments are grey, the one who purchased his equipments\n\t\t\t\t\tfrom Libya and the one who purchased his equipments from Nigeria, worked for NAMO.\n\t\t\t\t\t(vii) The afforestation scientist has yellow color equipments.\n\t\t\t\t\t(viii) Rama\u2019s equipments are neither yellow nor grey.\n\t\t\t\t\t(ix) Neither Bupa nor Rama is a water scientist.\n\t\t\t\t\t(x) Sayeed\u2019s equipments are not from California.\n\t\t\t\t\t(xi) The one whose specialization is in debugging don\u2019t have red equipments.",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  What was the color of the\n\t\t\t\tequipment purchased by Maku and from which place was it purchased?",
+            "options": [
+                "California ; Black",
+                "Nigeria ; White",
+                "Denmark ; Yellow",
+                "California ; White"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802857/63s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tIn a group of 300 people, 170 drink alcohol, 140 smoke, and 100 people chew tobacco. Everyone\n\t\t\t\t\tbelongs to at least one of the 3 aforementioned categories. All those people who drink alcohol, also\n\t\t\t\t\tplay Poker. All those people who smoke, also play Black Jack. All those people who chew tobacco,\n\t\t\t\t\talso play Roulette. Out of those group of 300 people, 210 play Poker, 170 play Black Jack and 220\n\t\t\t\t\tplay Roulette. No one play all the 3 games, and everyone plays at least one of the 3 games.",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  What can be the maximum number\n\t\t\t\t\tof persons who drink alcohol and also play both Poker and Black Jack?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802858/64s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tIn a group of 300 people, 170 drink alcohol, 140 smoke, and 100 people chew tobacco. Everyone\n\t\t\t\t\tbelongs to at least one of the 3 aforementioned categories. All those people who drink alcohol, also\n\t\t\t\t\tplay Poker. All those people who smoke, also play Black Jack. All those people who chew tobacco,\n\t\t\t\t\talso play Roulette. Out of those group of 300 people, 210 play Poker, 170 play Black Jack and 220\n\t\t\t\t\tplay Roulette. No one play all the 3 games, and everyone plays at least one of the 3 games.",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  What can be the maximum number\n\t\t\t\t\tof persons who smoke and also play Poker?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802859/65s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tIn a group of 300 people, 170 drink alcohol, 140 smoke, and 100 people chew tobacco. Everyone\n\t\t\t\t\tbelongs to at least one of the 3 aforementioned categories. All those people who drink alcohol, also\n\t\t\t\t\tplay Poker. All those people who smoke, also play Black Jack. All those people who chew tobacco,\n\t\t\t\t\talso play Roulette. Out of those group of 300 people, 210 play Poker, 170 play Black Jack and 220\n\t\t\t\t\tplay Roulette. No one play all the 3 games, and everyone plays at least one of the 3 games.",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  What can be the maximum number\n\t\t\t\t\tof persons who drink as well as smoke, and also play Roulette?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802860/66s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tIn a group of 300 people, 170 drink alcohol, 140 smoke, and 100 people chew tobacco. Everyone\n\t\t\t\t\tbelongs to at least one of the 3 aforementioned categories. All those people who drink alcohol, also\n\t\t\t\t\tplay Poker. All those people who smoke, also play Black Jack. All those people who chew tobacco,\n\t\t\t\t\talso play Roulette. Out of those group of 300 people, 210 play Poker, 170 play Black Jack and 220\n\t\t\t\t\tplay Roulette. No one play all the 3 games, and everyone plays at least one of the 3 games.",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  What can be the minimum number\n\t\t\t\t\tof persons who smoke but do not play Roulette?",
+            "options": [
+                "90",
+                "50",
+                "140",
+                "80"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776699/1576214/20s.jpg\"><br><br>"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 16 to 20: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\n\t\t\t\t\tIn a group of 300 people, 170 drink alcohol, 140 smoke, and 100 people chew tobacco. Everyone\n\t\t\t\t\tbelongs to at least one of the 3 aforementioned categories. All those people who drink alcohol, also\n\t\t\t\t\tplay Poker. All those people who smoke, also play Black Jack. All those people who chew tobacco,\n\t\t\t\t\talso play Roulette. Out of those group of 300 people, 210 play Poker, 170 play Black Jack and 220\n\t\t\t\t\tplay Roulette. No one play all the 3 games, and everyone plays at least one of the 3 games.",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  If 50% of those who play both\n\t\t\t\tRoulette and Blackjack lose at least Rs.1,500 at the game and 40% of this amount goes to the casino,\n\t\t\t\tthen what is the minimum amount earned by the casino?",
+            "options": [
+                "Rs.37,000",
+                "Rs.21,000",
+                "Rs.54,000",
+                "Rs.27,000"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

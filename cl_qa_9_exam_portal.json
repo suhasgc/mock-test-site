@@ -1,0 +1,445 @@
+{
+    "name": "QA 09 - 2023",
+    "sections": {
+        "QA": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020",
+            "20021",
+            "20022"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.1 [11916616]  In\n\t\t\t\t\t\t\t\t\t\t\t\tan acute-angled triangle, thirteen times an angle is equal to 17 times\n\t\t\t\t\t\t\t\t\t\t\t\tanother. The angles (in\n\t\t\t\t\t\t\t\t\t\t\t\tdegrees) of the triangle are all integers. If the third angle is less\n\t\t\t\t\t\t\t\t\t\t\t\tthan or equal to 30\u00b0, then the\n\t\t\t\t\t\t\t\t\t\t\t\tdifference between the first two angles (in degrees) is",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871272/94s.gif\">"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.2 [11916616]  P and\n\t\t\t\t\t\t\t\t\t\t\tQ can complete a task either by P working for 6 days and then Q working for\n\t\t\t\t\t\t\t\t\t\t\t8 days or by P\n\t\t\t\t\t\t\t\t\t\t\tworking for 3 days and then Q working for 16 days. In how many days can P\n\t\t\t\t\t\t\t\t\t\t\tand Q together complete\n\t\t\t\t\t\t\t\t\t\t\ttwice the amount of task?",
+            "options": [
+                "14"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871254/76s.gif\">"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  ABCDEF is a\n\t\t\t\t\t\t\t\t\tregular hexagon. Find the ratio of the area of the triangle formed by joining the\n\t\t\t\t\t\t\t\t\tmidpoints of the sides of the triangle ACE to that of the hexagon ABCDEF.",
+            "options": [
+                "1 : 2",
+                "1 : 4",
+                "1 : 8",
+                "2 : 3"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871242/74s.gif\">"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  If (x +\n\t\t\t\t\t\t\t\t2)2 = 9 and (y + 3)2 = 25, then the maximum value of x/y is",
+            "options": [
+                "5/8",
+                "1/2",
+                "5/2",
+                "2/1"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871265/87s.gif\">"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  The average age of\n\t\t\t\t\t\t\thusband, wife and their child 3 years ago from now was 27 years and that of wife and child\n\t\t\t\t\t\t\t5 years ago from now was 20 years. The age (in years) of the husband 5 years ago from now\n\t\t\t\t\t\t\twas",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871264/86s.gif\">"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  Three different alloys, of\n\t\t\t\t\t\tcopper and iron, have the two elements in the ratio 3 : 5, 3 : 7 and 12 : 5\n\t\t\t\t\t\trespectively. If 8 kg of the first alloy and 30 kg of the second alloy are taken, then how much\n\t\t\t\t\t\tquantity\n\t\t\t\t\t\t(in kg) of the third alloy should be taken so that the ratio of copper and iron in the final\n\t\t\t\t\t\tmixture is\n\t\t\t\t\t\t1 : 1?",
+            "options": [
+                "51",
+                "34",
+                "68",
+                "85"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871262/84s.gif\">"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  If m, n and p are in an\n\t\t\t\t\tArithmetic Progression (AP), then mth, nth, and pth terms of that\n\t\t\t\t\tAP are in",
+            "options": [
+                "AP",
+                "GP",
+                "HP",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871256/78s.gif\">"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  A student was asked to find the\n\t\t\t\t3/7th of a number but he instead multiplied it by 7/3. As a result,\n\t\t\t\the got an answer which was more than the correct answer by 1680. What was the number?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871267/89s.gif\">"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  If h(x) = kx, where k\n\t\t\t\tis any real number, then which of the following is/are true?",
+            "options": [
+                "h(x + 2) \u2013 2h(x + 2) (h(\u20131)) + h(x) h(0) = (k \u2013\n\t\t\t\t1)2 h(x)",
+                "h(x + 1) h(x \u2013 1) = (h(x))2",
+                "h(x) h(\u2013x) = 1",
+                "All of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871258/80s.gif\">"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  A and B invested in a business in\n\t\t\t\tthe ratio 3 : 2. If 5% of the total profit earned in the business goes\n\t\t\t\tto charity and A\u2019s share of profit is Rs 855, then the total profit (in Rs.) earned is",
+            "options": [
+                "1425",
+                "1500",
+                "1537.5",
+                "1576"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871278/100s.gif\">"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871270/92s.gif\">"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  A circular track is marked with\n\t\t\t\tnumbers from 1 to 15 so as to divide the track into 15 equal parts.\n\t\t\t\tTwo runners started simultaneously from the point marked as 1 and run in opposite directions. After\n\t\t\t\trunning for several hours, they noticed that they cross each other only at these 15 marked points\n\t\t\t\tand also that they crossed each other at each of these 15 points at least once. Which of the\n\t\t\t\tfollowing is a possible value of the ratio of the speeds of the faster runner to the speed of the slower\n\t\t\t\trunner?",
+            "options": [
+                "2.75",
+                "2",
+                "1.5",
+                "All are possible"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871271/93s.gif\">"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  Find the complete range of values\n\t\t\t\tof x for which (x2 \u2013 x + 1)x\n\t\t\t\t< 1.",
+            "options": [
+                "(-\u221e, 0)",
+                "(0, 1)",
+                "(-\u221e,0)  (0,1)",
+                "(0, 1)  (1, \u221e)"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871243/75s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  Two merchants - A and B - each\n\t\t\t\tsell an article for Rs.1000. If merchant A computes his profit on\n\t\t\t\tcost price while merchant B computes his profit on selling price, then both ended up on making an\n\t\t\t\tindividual profit of 25%. By how much rupees is the profit made by merchant B greater than that of\n\t\t\t\tmerchant A?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871237/69s.gif\">"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  If a and b are the roots of the\n\t\t\t\tquadratic equation: x2 - 3x + 9 = 0, then find the quadratic equation having its roots as\n\t\t\t\ta2 and b2.",
+            "options": [
+                "x2 + 18x \u2013 81 = 0",
+                "x2 + 9x + 81 = 0",
+                "x2 \u2013 9x + 81 = 0",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871236/68s.gif\">"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  Kashish invested two equal\n\t\t\t\tamounts at 7.5% and 7% rate of simple interest. If the difference between the interests earned on these\n\t\t\t\ttwo investments after 8 years is Rs. 400, then find the total amount (in Rs) invested by Kashish.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871259/81s.gif\">"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  Find the sum of all possible\n\t\t\t\tsolutions of the equation (x2 + 5x + 5)(x2 - 10x + 21) = 1.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871255/77s.gif\">"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  All the four circles, shown in\n\t\t\t\tthe figure given below, are congruent having radius 6 cm and every two\n\t\t\t\tadjacent circles pass through the centre of another circle. What is the perimeter of the red curve in\n\t\t\t\tthe given figure?",
+            "options": [
+                "16\u03c0",
+                "18\u03c0",
+                "20\u03c0",
+                "24\u03c0"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871257/79s.gif\">"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  Anil spent 16.67% of his income\n\t\t\t\ton rent, 25% of the remaining on food, 60% of then remaining on\n\t\t\t\teducation. If he is still able to save Rs. 4500 per month, then find his monthly income(in Rs.).",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871239/71s.gif\">"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  A rope, 10 feet 2 inches long,\n\t\t\t\thas to be cut down into 20 pieces in such a way that some pieces\n\t\t\t\tare 9 inches long and others are 4 inches long. If 2 inches is allowed for sawing waste and\n\t\t\t\tremaining is used completely, then how many pieces of the respective lengths were cut?",
+            "options": [
+                "9, 11",
+                "8, 12",
+                "15, 5",
+                "10, 10"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871274/96s.gif\">"
+        },
+        "20021": {
+            "id": "20021",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.21 [11916616]  Had a person traveled 3 kmph\n\t\t\t\tfaster he would have taken 2 hours less to cover a certain distance.\n\t\t\t\tHad he traveled 4 kmph slower he would have taken 5 hours more to cover the same distance. Find\n\t\t\t\tthe distance (in km) he needs to cover.",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871238/70s.gif\">"
+        },
+        "20022": {
+            "id": "20022",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "",
+            "question_text": "\u00a0\u00a0Q.22 [11916616]  \n\t\t\t\tTriangle PTQ and triangle TRS, as shown in the above figure, are isosceles with PQ and RS as\n\t\t\t\ttheir bases. Also, \u2220PTQ + \u2220RVS = 180\u00b0, \u2220PTQ = 2\u2220RVS, \u2220UQW = 75\u00b0. If WQ is a tangent to the\n\t\t\t\tcircle at point Q, then find \u2220UQP.",
+            "options": [
+                "15\u00b0",
+                "45\u00b0",
+                "50\u00b0",
+                "60\u00b0"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}

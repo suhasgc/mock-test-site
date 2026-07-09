@@ -1,0 +1,419 @@
+{
+    "name": "DILR 05 - 2023",
+    "sections": {
+        "LRDI": [
+            "20001",
+            "20002",
+            "20003",
+            "20004",
+            "20005",
+            "20006",
+            "20007",
+            "20008",
+            "20009",
+            "20010",
+            "20011",
+            "20012",
+            "20013",
+            "20014",
+            "20015",
+            "20016",
+            "20017",
+            "20018",
+            "20019",
+            "20020"
+        ]
+    },
+    "questions": {
+        "20001": {
+            "id": "20001",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions\n                                                    1 to 5: Answer the questions on the basis of the information given\n                                                    below.\n                                                    \n                                                    DMRC runs metro trains between every two stations among the 4\n                                                    stations - Anand, Botanical, Chandni and Dwarka. These trains can\n                                                    have 4, 6 or 8 coaches, and the fare between any two stations is\n                                                    Rs.20, Rs.30, Rs.40 or Rs.50. All trains between any particular pair\n                                                    of stations have same number of coaches and also same fare. Some\n                                                    additional information is also known.\n                                                    I. From both the stations, Anand as well as Dwarka, trains having 4,\n                                                    6 and 8 coaches run, whereas from Botanical station trains having\n                                                    only 4 coaches run.\n                                                    II. Trains from the station Anand to all other stations have\n                                                    different fares. The same holds true for station Chandni and Dwarka.\n                                                    \n                                                    III. No two routes with trains having 6 coaches have same fares.\n                                                    Similarly, no two routes with trains having 8 coaches have same\n                                                    fares.\n                                                    IV. Total fare for the three different routes from Chandni and\n                                                    Botanical is Rs. 90 and Rs. 100 respectively.\n                                                    V. The fare from Botanical station to Dwarka station is more than\n                                                    that from Anand station to Botanical station.",
+            "question_text": "\u00a0\u00a0Q.1 [11916616] \n                                                If the fare from Anand to Chandni is Rs. 30, then what is the\n                                                    fare (in Rs.) from Chandni to Dwarka?\n                                            ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811970/35s.gif\"><br>"
+        },
+        "20002": {
+            "id": "20002",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to\n                                                5: Answer the questions on the basis of the information given below.\n                                                \n                                                DMRC runs metro trains between every two stations among the 4 stations -\n                                                Anand, Botanical, Chandni and Dwarka. These trains can have 4, 6 or 8\n                                                coaches, and the fare between any two stations is Rs.20, Rs.30, Rs.40 or\n                                                Rs.50. All trains between any particular pair of stations have same\n                                                number of coaches and also same fare. Some additional information is\n                                                also known.\n                                                I. From both the stations, Anand as well as Dwarka, trains having 4, 6\n                                                and 8 coaches run, whereas from Botanical station trains having only 4\n                                                coaches run.\n                                                II. Trains from the station Anand to all other stations have different\n                                                fares. The same holds true for station Chandni and Dwarka. \n                                                III. No two routes with trains having 6 coaches have same fares.\n                                                Similarly, no two routes with trains having 8 coaches have same\n                                                fares.\n                                                IV. Total fare for the three different routes from Chandni and Botanical\n                                                is Rs. 90 and Rs. 100 respectively.\n                                                V. The fare from Botanical station to Dwarka station is more than that\n                                                from Anand station to Botanical station.",
+            "question_text": "\u00a0\u00a0Q.2 [11916616] \n                                            What can be the least possible fare (in Rs.) from Anand to Dwarka\n                                                if one goes via Chandni?\n                                        ",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811970/35s.gif\"><br>"
+        },
+        "20003": {
+            "id": "20003",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5:\n                                        Answer the questions on the basis of the information given below.\n                                        \n                                        DMRC runs metro trains between every two stations among the 4 stations - Anand,\n                                        Botanical, Chandni and Dwarka. These trains can have 4, 6 or 8 coaches, and the\n                                        fare between any two stations is Rs.20, Rs.30, Rs.40 or Rs.50. All trains\n                                        between any particular pair of stations have same number of coaches and also\n                                        same fare. Some additional information is also known.\n                                        I. From both the stations, Anand as well as Dwarka, trains having 4, 6 and 8\n                                        coaches run, whereas from Botanical station trains having only 4 coaches\n                                        run.\n                                        II. Trains from the station Anand to all other stations have different fares.\n                                        The same holds true for station Chandni and Dwarka. \n                                        III. No two routes with trains having 6 coaches have same fares. Similarly, no\n                                        two routes with trains having 8 coaches have same fares.\n                                        IV. Total fare for the three different routes from Chandni and Botanical is Rs.\n                                        90 and Rs. 100 respectively.\n                                        V. The fare from Botanical station to Dwarka station is more than that from\n                                        Anand station to Botanical station.",
+            "question_text": "\u00a0\u00a0Q.3 [11916616]  Which of\n                                        the following cannot be the fare of a 8 coach train?",
+            "options": [
+                "20",
+                "30",
+                "40",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811970/35s.gif\"><br>"
+        },
+        "20004": {
+            "id": "20004",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer\n                                    the questions on the basis of the information given below.\n                                    \n                                    DMRC runs metro trains between every two stations among the 4 stations - Anand,\n                                    Botanical, Chandni and Dwarka. These trains can have 4, 6 or 8 coaches, and the fare\n                                    between any two stations is Rs.20, Rs.30, Rs.40 or Rs.50. All trains between any\n                                    particular pair of stations have same number of coaches and also same fare. Some\n                                    additional information is also known.\n                                    I. From both the stations, Anand as well as Dwarka, trains having 4, 6 and 8 coaches\n                                    run, whereas from Botanical station trains having only 4 coaches run.\n                                    II. Trains from the station Anand to all other stations have different fares. The\n                                    same holds true for station Chandni and Dwarka. \n                                    III. No two routes with trains having 6 coaches have same fares. Similarly, no two\n                                    routes with trains having 8 coaches have same fares.\n                                    IV. Total fare for the three different routes from Chandni and Botanical is Rs. 90\n                                    and Rs. 100 respectively.\n                                    V. The fare from Botanical station to Dwarka station is more than that from Anand\n                                    station to Botanical station.",
+            "question_text": "\u00a0\u00a0Q.4 [11916616]  If the fare of\n                                    a 4 coach train is more than the fare of all 6 or 8 coach trains, then what is the\n                                    least possible value for the total fare of all 6 or 8 coach trains taken together?\n                            ",
+            "options": [
+                "140",
+                "90",
+                "100",
+                "None of these"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811970/35s.gif\"><br>"
+        },
+        "20005": {
+            "id": "20005",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "Directions for questions 1 to 5: Answer the\n                                questions on the basis of the information given below.\n                                \n                                DMRC runs metro trains between every two stations among the 4 stations - Anand,\n                                Botanical, Chandni and Dwarka. These trains can have 4, 6 or 8 coaches, and the fare\n                                between any two stations is Rs.20, Rs.30, Rs.40 or Rs.50. All trains between any\n                                particular pair of stations have same number of coaches and also same fare. Some\n                                additional information is also known.\n                                I. From both the stations, Anand as well as Dwarka, trains having 4, 6 and 8 coaches\n                                run, whereas from Botanical station trains having only 4 coaches run.\n                                II. Trains from the station Anand to all other stations have different fares. The same\n                                holds true for station Chandni and Dwarka. \n                                III. No two routes with trains having 6 coaches have same fares. Similarly, no two\n                                routes with trains having 8 coaches have same fares.\n                                IV. Total fare for the three different routes from Chandni and Botanical is Rs. 90 and\n                                Rs. 100 respectively.\n                                V. The fare from Botanical station to Dwarka station is more than that from Anand\n                                station to Botanical station.",
+            "question_text": "\u00a0\u00a0Q.5 [11916616]  What is the sum of all\n                            possible fares from Botanical to Chandni?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/391s.gif\"><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/392s.gif\"><br><br><br><br><br><br><br><br>"
+        },
+        "20006": {
+            "id": "20006",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "\n                        Directions for questions 6 to 10: Answer the\n                                questions on the basis of the information given below.\n                                \n                                XYZ institute scheduled two seminars, one each on \u201cHow to become an entrepreneur\u201d and\n                                \u201cGood business sense\u201d. The auditorium, they had chosen for the seminar, has sitting\n                                available only for 323 people with that many chairs only arranged in the form of grid\n                                having dimension 19 \u00d7 17. So the first 323 registered students only are allowed to\n                                attend the seminars. Each student was given a different registration number from 1 to\n                                323 at the time of registration. Also, it was mandatory for everyone to attend both the\n                                seminars and the same registration number is valid for both.\n                                \u2022 Rows are numbered as row 1, row 2,..., row 19, and columns are numbered as column 1,\n                                column 2,..., column 17.\n                                \u2022 For \u201c How to become an entrepreneur\u201d, students were asked to sit according to their\n                                registration number in row-wise manner. For example, student with registration number 1\n                                sits on the seat in row 1 and column 1; student with registration number 2 sits on the\n                                seat in row 1 and column 2; and so on. Then student with registration number 18 sits on\n                                the seat in row 2 and column 1; student with registration number 19 sits on the seat in\n                                row 2 and column 2; and so on. And hence followed the same pattern till all the students\n                                got their seats.\n                                \u2022 For \u201cGood business sense\u201d, students were asked to sit according to their registration\n                                number in column-wise manner. For example, student with registration number 1 sits on\n                                the seat in column 1 and row 1; student with registration number 2 sits on the seat in\n                                column 1 and row 2; and so on till registration number 19. Then student with\n                                registration number 20 sits on the seat in column 2 and row 1; the student with\n                                registration number 21 sits on the seat in column 2 and row 2; and so on. And hence\n                                followed the same pattern till all the students got their seats.\n                    ",
+            "question_text": "\u00a0\u00a0Q.6 [11916616]  How many students got\n                            to sit on the same place in both the seminars?",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/391s.gif\"><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/392s.gif\"><br><br><br><br><br><br><br><br><br>"
+        },
+        "20007": {
+            "id": "20007",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "\n                    Directions for questions 6 to 10: Answer the\n                            questions on the basis of the information given below.\n                            \n                            XYZ institute scheduled two seminars, one each on \u201cHow to become an entrepreneur\u201d and \u201cGood\n                            business sense\u201d. The auditorium, they had chosen for the seminar, has sitting available only\n                            for 323 people with that many chairs only arranged in the form of grid having dimension 19 \u00d7\n                            17. So the first 323 registered students only are allowed to attend the seminars. Each\n                            student was given a different registration number from 1 to 323 at the time of registration.\n                            Also, it was mandatory for everyone to attend both the seminars and the same registration\n                            number is valid for both.\n                            \u2022 Rows are numbered as row 1, row 2,..., row 19, and columns are numbered as column 1,\n                            column 2,..., column 17.\n                            \u2022 For \u201c How to become an entrepreneur\u201d, students were asked to sit according to their\n                            registration number in row-wise manner. For example, student with registration number 1 sits\n                            on the seat in row 1 and column 1; student with registration number 2 sits on the seat in\n                            row 1 and column 2; and so on. Then student with registration number 18 sits on the seat in\n                            row 2 and column 1; student with registration number 19 sits on the seat in row 2 and column\n                            2; and so on. And hence followed the same pattern till all the students got their seats.\n                            \u2022 For \u201cGood business sense\u201d, students were asked to sit according to their registration\n                            number in column-wise manner. For example, student with registration number 1 sits on the\n                            seat in column 1 and row 1; student with registration number 2 sits on the seat in column 1\n                            and row 2; and so on till registration number 19. Then student with registration number 20\n                            sits on the seat in column 2 and row 1; the student with registration number 21 sits on the\n                            seat in column 2 and row 2; and so on. And hence followed the same pattern till all the\n                            students got their seats.\n                ",
+            "question_text": "\u00a0\u00a0Q.7 [11916616]  If a student got seat in\n                        row 11 and column 12 in the seminar \"How to become an enterpreneur\", and in row 'n' and column\n                        'm' in the seminar \"Good business sense\", then find the value of (m+n).",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/391s.gif\"><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/392s.gif\"><br><br><br><br><br><br><br><br>"
+        },
+        "20008": {
+            "id": "20008",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n                Directions for questions 6 to 10: Answer the questions\n                        on the basis of the information given below.\n                        \n                        XYZ institute scheduled two seminars, one each on \u201cHow to become an entrepreneur\u201d and \u201cGood\n                        business sense\u201d. The auditorium, they had chosen for the seminar, has sitting available only for\n                        323 people with that many chairs only arranged in the form of grid having dimension 19 \u00d7 17. So\n                        the first 323 registered students only are allowed to attend the seminars. Each student was\n                        given a different registration number from 1 to 323 at the time of registration. Also, it was\n                        mandatory for everyone to attend both the seminars and the same registration number is valid for\n                        both.\n                        \u2022 Rows are numbered as row 1, row 2,..., row 19, and columns are numbered as column 1, column\n                        2,..., column 17.\n                        \u2022 For \u201c How to become an entrepreneur\u201d, students were asked to sit according to their\n                        registration number in row-wise manner. For example, student with registration number 1 sits on\n                        the seat in row 1 and column 1; student with registration number 2 sits on the seat in row 1 and\n                        column 2; and so on. Then student with registration number 18 sits on the seat in row 2 and\n                        column 1; student with registration number 19 sits on the seat in row 2 and column 2; and so on.\n                        And hence followed the same pattern till all the students got their seats.\n                        \u2022 For \u201cGood business sense\u201d, students were asked to sit according to their registration number\n                        in column-wise manner. For example, student with registration number 1 sits on the seat in\n                        column 1 and row 1; student with registration number 2 sits on the seat in column 1 and row 2;\n                        and so on till registration number 19. Then student with registration number 20 sits on the seat\n                        in column 2 and row 1; the student with registration number 21 sits on the seat in column 2 and\n                        row 2; and so on. And hence followed the same pattern till all the students got their seats.\n                \n            ",
+            "question_text": "\u00a0\u00a0Q.8 [11916616]  If the grid was of dimension 13\n                    \u00d7 11 and hence only 143 students were given registration numbers, then how many of them got the\n                    chance to sit on the same place in both the seminars?",
+            "options": [
+                "11",
+                "13",
+                "2",
+                "3"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/391s.gif\"><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/392s.gif\"><br><br><br><br>"
+        },
+        "20009": {
+            "id": "20009",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "\n                Directions for questions 6 to 10: Answer the questions\n                        on the basis of the information given below.\n                        \n                        XYZ institute scheduled two seminars, one each on \u201cHow to become an entrepreneur\u201d and \u201cGood\n                        business sense\u201d. The auditorium, they had chosen for the seminar, has sitting available only for\n                        323 people with that many chairs only arranged in the form of grid having dimension 19 \u00d7 17. So\n                        the first 323 registered students only are allowed to attend the seminars. Each student was\n                        given a different registration number from 1 to 323 at the time of registration. Also, it was\n                        mandatory for everyone to attend both the seminars and the same registration number is valid for\n                        both.\n                        \u2022 Rows are numbered as row 1, row 2,..., row 19, and columns are numbered as column 1, column\n                        2,..., column 17.\n                        \u2022 For \u201c How to become an entrepreneur\u201d, students were asked to sit according to their\n                        registration number in row-wise manner. For example, student with registration number 1 sits on\n                        the seat in row 1 and column 1; student with registration number 2 sits on the seat in row 1 and\n                        column 2; and so on. Then student with registration number 18 sits on the seat in row 2 and\n                        column 1; student with registration number 19 sits on the seat in row 2 and column 2; and so on.\n                        And hence followed the same pattern till all the students got their seats.\n                        \u2022 For \u201cGood business sense\u201d, students were asked to sit according to their registration number\n                        in column-wise manner. For example, student with registration number 1 sits on the seat in\n                        column 1 and row 1; student with registration number 2 sits on the seat in column 1 and row 2;\n                        and so on till registration number 19. Then student with registration number 20 sits on the seat\n                        in column 2 and row 1; the student with registration number 21 sits on the seat in column 2 and\n                        row 2; and so on. And hence followed the same pattern till all the students got their seats.\n                \n            ",
+            "question_text": "\u00a0\u00a0Q.9 [11916616]  Registration number with which\n                    a student got a chance to sit on the same place in both the seminars is called as magic number. How\n                    many magic numbers are common in grid of size 19 \u00d7 17 and 13 \u00d7 11?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "Cannot be determined"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/391s.gif\"><br><sup></sup><sup></sup><br><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811993/392s.gif\"><br><br><br><br><br><br><br><br>"
+        },
+        "20010": {
+            "id": "20010",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": true,
+            "is_multi_select": false,
+            "instructions": "\n                Directions for questions 6 to 10: Answer the questions\n                        on the basis of the information given below.\n                        \n                        XYZ institute scheduled two seminars, one each on \u201cHow to become an entrepreneur\u201d and \u201cGood\n                        business sense\u201d. The auditorium, they had chosen for the seminar, has sitting available only for\n                        323 people with that many chairs only arranged in the form of grid having dimension 19 \u00d7 17. So\n                        the first 323 registered students only are allowed to attend the seminars. Each student was\n                        given a different registration number from 1 to 323 at the time of registration. Also, it was\n                        mandatory for everyone to attend both the seminars and the same registration number is valid for\n                        both.\n                        \u2022 Rows are numbered as row 1, row 2,..., row 19, and columns are numbered as column 1, column\n                        2,..., column 17.\n                        \u2022 For \u201c How to become an entrepreneur\u201d, students were asked to sit according to their\n                        registration number in row-wise manner. For example, student with registration number 1 sits on\n                        the seat in row 1 and column 1; student with registration number 2 sits on the seat in row 1 and\n                        column 2; and so on. Then student with registration number 18 sits on the seat in row 2 and\n                        column 1; student with registration number 19 sits on the seat in row 2 and column 2; and so on.\n                        And hence followed the same pattern till all the students got their seats.\n                        \u2022 For \u201cGood business sense\u201d, students were asked to sit according to their registration number\n                        in column-wise manner. For example, student with registration number 1 sits on the seat in\n                        column 1 and row 1; student with registration number 2 sits on the seat in column 1 and row 2;\n                        and so on till registration number 19. Then student with registration number 20 sits on the seat\n                        in column 2 and row 1; the student with registration number 21 sits on the seat in column 2 and\n                        row 2; and so on. And hence followed the same pattern till all the students got their seats.\n                \n            ",
+            "question_text": "\u00a0\u00a0Q.10 [11916616]  If a student got seat in row 15\n                and column 9 in the seminar \"Good Business sense\", and in row 'a' and column 'b' in the seminar \"How to\n                become an entrepreneur\", then find the value of (a+b).",
+            "options": [],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br><br><br><br><br><br>"
+        },
+        "20011": {
+            "id": "20011",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 11 to 15: Answer the questions on\n                    the basis of the information given below.\n                    \n                    A chemical scientist wanted to design a machine to do the mixes and then deliver him a required\n                    byproduct. So, he designed a machine, which delivers the required chemical byproduct at the\n                    destination point while started from the source in accurate quantities, the outlay of which is as\n                    shown below. \n                    Description of his design is as follows:\n                    \u2022 All circular figures represent concentrators namely A, B, C, D and E. Each concentrator increases\n                    the concentration of the mixture, which passes through it, by 10 percentage points.\n                    \u2022 All rectangular figures represent mixers namely 1 and 2. Each mixer reduces the concentration of\n                    the mixture, which passes through it, by 5 percentage points. Every mixer has one inlet and two\n                    outlets. \n                    \u2022 When there are two inlets the concentration taken, upon which the change in concentration point is\n                    carried out by the mixer or concentrator, will be the average of the two inlet\u2019s concentrations.\n                    \n                    \u2022 When there are two outlets, the output concentration is the same in each of them as it would be\n                    with just one outlet.\n                    \u2022 The byproduct obtained from destination will be the average of the outlet concentrations of\n                    concentrator D and E.\n                    \u2022 The flow of the machine is from left to right unless stated otherwise.",
+            "question_text": "\u00a0\u00a0Q.11 [11916616]  If a mixture named \u2018Cad B\u2019\n                    enters the machine from the source point with 30% concentration, what will be the concentration of\n                    the byproduct available at the destination?",
+            "options": [
+                "91.25%",
+                "77.5%",
+                "62.5%",
+                "48.75%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br><br><br><br><br><br>"
+        },
+        "20012": {
+            "id": "20012",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 11 to 15: Answer the questions on\n                    the basis of the information given below.\n                    \n                    A chemical scientist wanted to design a machine to do the mixes and then deliver him a required\n                    byproduct. So, he designed a machine, which delivers the required chemical byproduct at the\n                    destination point while started from the source in accurate quantities, the outlay of which is as\n                    shown below. \n                    Description of his design is as follows:\n                    \u2022 All circular figures represent concentrators namely A, B, C, D and E. Each concentrator increases\n                    the concentration of the mixture, which passes through it, by 10 percentage points.\n                    \u2022 All rectangular figures represent mixers namely 1 and 2. Each mixer reduces the concentration of\n                    the mixture, which passes through it, by 5 percentage points. Every mixer has one inlet and two\n                    outlets. \n                    \u2022 When there are two inlets the concentration taken, upon which the change in concentration point is\n                    carried out by the mixer or concentrator, will be the average of the two inlet\u2019s concentrations.\n                    \n                    \u2022 When there are two outlets, the output concentration is the same in each of them as it would be\n                    with just one outlet.\n                    \u2022 The byproduct obtained from destination will be the average of the outlet concentrations of\n                    concentrator D and E.\n                    \u2022 The flow of the machine is from left to right unless stated otherwise.",
+            "question_text": "\u00a0\u00a0Q.12 [11916616]  If the function of mixers and\n                    concentrators was interchanged, what would be the concentration of\n                    the byproduct available at the destination from a mixture \u2018Cad B\u2019 which entered the source with\n                    40% concentration?",
+            "options": [
+                "43.75%",
+                "33.75%",
+                "44.25%",
+                "32.5%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br><br><br><br><br><br><br>"
+        },
+        "20013": {
+            "id": "20013",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 11 to 15: Answer the questions on\n                    the basis of the information given below.\n                    \n                    A chemical scientist wanted to design a machine to do the mixes and then deliver him a required\n                    byproduct. So, he designed a machine, which delivers the required chemical byproduct at the\n                    destination point while started from the source in accurate quantities, the outlay of which is as\n                    shown below. \n                    Description of his design is as follows:\n                    \u2022 All circular figures represent concentrators namely A, B, C, D and E. Each concentrator increases\n                    the concentration of the mixture, which passes through it, by 10 percentage points.\n                    \u2022 All rectangular figures represent mixers namely 1 and 2. Each mixer reduces the concentration of\n                    the mixture, which passes through it, by 5 percentage points. Every mixer has one inlet and two\n                    outlets. \n                    \u2022 When there are two inlets the concentration taken, upon which the change in concentration point is\n                    carried out by the mixer or concentrator, will be the average of the two inlet\u2019s concentrations.\n                    \n                    \u2022 When there are two outlets, the output concentration is the same in each of them as it would be\n                    with just one outlet.\n                    \u2022 The byproduct obtained from destination will be the average of the outlet concentrations of\n                    concentrator D and E.\n                    \u2022 The flow of the machine is from left to right unless stated otherwise.",
+            "question_text": "\u00a0\u00a0Q.13 [11916616]  With what concentration should\n                    a mixture named \u2018Cad B\u2019 enters the source so as to have a\n                    byproduct of concentration 50% delivered at the destination?",
+            "options": [
+                "20.75%",
+                "28.25%",
+                "31.25%",
+                "36.75%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/812008/54s.gif\">"
+        },
+        "20014": {
+            "id": "20014",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 11 to 15: Answer the questions on\n                    the basis of the information given below.\n                    \n                    A chemical scientist wanted to design a machine to do the mixes and then deliver him a required\n                    byproduct. So, he designed a machine, which delivers the required chemical byproduct at the\n                    destination point while started from the source in accurate quantities, the outlay of which is as\n                    shown below. \n                    Description of his design is as follows:\n                    \u2022 All circular figures represent concentrators namely A, B, C, D and E. Each concentrator increases\n                    the concentration of the mixture, which passes through it, by 10 percentage points.\n                    \u2022 All rectangular figures represent mixers namely 1 and 2. Each mixer reduces the concentration of\n                    the mixture, which passes through it, by 5 percentage points. Every mixer has one inlet and two\n                    outlets. \n                    \u2022 When there are two inlets the concentration taken, upon which the change in concentration point is\n                    carried out by the mixer or concentrator, will be the average of the two inlet\u2019s concentrations.\n                    \u2022 When there are two outlets, the output concentration is the same in each of them as it would be\n                    with just one outlet.\n                    \u2022 The byproduct obtained from destination will be the average of the outlet concentrations of\n                    concentrator D and E.\n                    \u2022 The flow of the machine is from left to right unless stated otherwise.",
+            "question_text": "\u00a0\u00a0Q.14 [11916616]  Designer tries to improve his\n                    design and hence make the following two amendments,\n                    (i) Each concentrator increases the concentration of the mixture, which passes through it, by 10\n                    percent.\n                    (ii) Each mixer reduces the concentration of the mixture, which passes through it, by 5\n                    percent.\n                    If the designer passes \u2018Cad X\u2019, having concentration 50%, once with the original machine and once\n                    with the improved version, then what is the approximate difference between the percentage points\n                    of the two outputs at destination?",
+            "options": [
+                "9.3%",
+                "12.3%",
+                "8%",
+                "10.8%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><br><br><br><br>"
+        },
+        "20015": {
+            "id": "20015",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 11 to 15: Answer the questions on\n                    the basis of the information given below.\n                    \n                    A chemical scientist wanted to design a machine to do the mixes and then deliver him a required\n                    byproduct. So, he designed a machine, which delivers the required chemical byproduct at the\n                    destination point while started from the source in accurate quantities, the outlay of which is as\n                    shown below. \n                    Description of his design is as follows:\n                    \u2022 All circular figures represent concentrators namely A, B, C, D and E. Each concentrator increases\n                    the concentration of the mixture, which passes through it, by 10 percentage points.\n                    \u2022 All rectangular figures represent mixers namely 1 and 2. Each mixer reduces the concentration of\n                    the mixture, which passes through it, by 5 percentage points. Every mixer has one inlet and two\n                    outlets. \n                    \u2022 When there are two inlets the concentration taken, upon which the change in concentration point is\n                    carried out by the mixer or concentrator, will be the average of the two inlet\u2019s concentrations.\n                    \u2022 When there are two outlets, the output concentration is the same in each of them as it would be\n                    with just one outlet.\n                    \u2022 The byproduct obtained from destination will be the average of the outlet concentrations of\n                    concentrator D and E.\n                    \u2022 The flow of the machine is from left to right unless stated otherwise.",
+            "question_text": "\u00a0\u00a0Q.15 [11916616]  If the concentration of a\n                    mixture named \u2018Xed B\u2019 enters the source with a concentration of 21.25%, then what will be the\n                    concentration of the byproduct delivered at C?",
+            "options": [
+                "40%",
+                "28.75%",
+                "42.50%",
+                "36.25%"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/812013/59s.gif\"><br>"
+        },
+        "20016": {
+            "id": "20016",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20: Answer the questions on\n                    the basis of the information given below.\n                    \n                    Shows based on seven cartoon characters \u2013 Flintstones, Tom, Scooby Doo, Popeye, Richie Rich, Jerry\n                    and Yogi Bear \u2013 are telecast in a week on seven different days \u2013 Sunday, Monday, Tuesday, Wednesday,\n                    Thursday, Friday and Saturday - not necessarily in the same order. Each of these characters eats one\n                    food out of the seven different foods \u2013 honey, cactus, radish, carrot, bread, biscuit and cheese -\n                    in any order. Sunday being the day 1 and Saturday being the day 7 of the week.\n\n                    Following information is also known:\n                    (i) Richie Rich eats bread and Jerry\u2019s show telecasts on someday after Monday.\n                    (ii) The show of Yogi Bear telecasts on Saturday and Flintstones eats honey.\n                    (iii) Scooby Doo eats radish, and carrot is eaten by a character whose show telecasts on\n                    Wednesday.\n                    (iv) Tom and Jerry eat cactus and biscuit respectively, and shows on both of them telecast on even\n                    numbered days of the week. Show on Popeye also telecasts on an even numbered day.\n                    (v) The day on which Tom\u2019s show telecasts is not immediately followed by the Flintstone\u2019s show\n                    day.\n                    (vi) Biscuit is eaten by a character whose show telecasts on the immediate next day of Richie Rich\u2019s\n                    show.",
+            "question_text": "\u00a0\u00a0Q.16 [11916616]  Which cartoon character eats\n                    cheese?",
+            "options": [
+                "Popeye",
+                "Yogi Bear",
+                "Scooby Doo",
+                "Flintstones"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/812013/59s.gif\"><br>"
+        },
+        "20017": {
+            "id": "20017",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20: Answer the questions on\n                    the basis of the information given below.\n                    \n                    Shows based on seven cartoon characters \u2013 Flintstones, Tom, Scooby Doo, Popeye, Richie Rich, Jerry\n                    and Yogi Bear \u2013 are telecast in a week on seven different days \u2013 Sunday, Monday, Tuesday, Wednesday,\n                    Thursday, Friday and Saturday - not necessarily in the same order. Each of these characters eats one\n                    food out of the seven different foods \u2013 honey, cactus, radish, carrot, bread, biscuit and cheese -\n                    in any order. Sunday being the day 1 and Saturday being the day 7 of the week.\n\n                    Following information is also known:\n                    (i) Richie Rich eats bread and Jerry\u2019s show telecasts on someday after Monday.\n                    (ii) The show of Yogi Bear telecasts on Saturday and Flintstones eats honey.\n                    (iii) Scooby Doo eats radish, and carrot is eaten by a character whose show telecasts on\n                    Wednesday.\n                    (iv) Tom and Jerry eat cactus and biscuit respectively, and shows on both of them telecast on even\n                    numbered days of the week. Show on Popeye also telecasts on an even numbered day.\n                    (v) The day on which Tom\u2019s show telecasts is not immediately followed by the Flintstone\u2019s show\n                    day.\n                    (vi) Biscuit is eaten by a character whose show telecasts on the immediate next day of Richie Rich\u2019s\n                    show.",
+            "question_text": "\u00a0\u00a0Q.17 [11916616]  Which cartoon\u2019s show appears\n                    on TV on the day immediately preceding the day on which Popeye appears?",
+            "options": [
+                "Flintstones",
+                "Yogi Bear",
+                "Scooby Doo",
+                "Richie Rich"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/812013/59s.gif\"><br>"
+        },
+        "20018": {
+            "id": "20018",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20: Answer the questions on\n                    the basis of the information given below.\n                    \n                    Shows based on seven cartoon characters \u2013 Flintstones, Tom, Scooby Doo, Popeye, Richie Rich, Jerry\n                    and Yogi Bear \u2013 are telecast in a week on seven different days \u2013 Sunday, Monday, Tuesday, Wednesday,\n                    Thursday, Friday and Saturday - not necessarily in the same order. Each of these characters eats one\n                    food out of the seven different foods \u2013 honey, cactus, radish, carrot, bread, biscuit and cheese -\n                    in any order. Sunday being the day 1 and Saturday being the day 7 of the week.\n\n                    Following information is also known:\n                    (i) Richie Rich eats bread and Jerry\u2019s show telecasts on someday after Monday.\n                    (ii) The show of Yogi Bear telecasts on Saturday and Flintstones eats honey.\n                    (iii) Scooby Doo eats radish, and carrot is eaten by a character whose show telecasts on\n                    Wednesday.\n                    (iv) Tom and Jerry eat cactus and biscuit respectively, and shows on both of them telecast on even\n                    numbered days of the week. Show on Popeye also telecasts on an even numbered day.\n                    (v) The day on which Tom\u2019s show telecasts is not immediately followed by the Flintstone\u2019s show\n                    day.\n                    (vi) Biscuit is eaten by a character whose show telecasts on the immediate next day of Richie Rich\u2019s\n                    show.",
+            "question_text": "\u00a0\u00a0Q.18 [11916616]  Which are the characters\n                    appearing on odd numbered days of week, with days in ascending order?",
+            "options": [
+                "Richie Rich, Scooby Doo, Flintstones, Yogi Bear",
+                "Tom, Popeye, Jerry, Flintstones",
+                "Flintstones, Scooby Doo, Richie Rich, Yogi Bear",
+                "Flintstones, Richie Rich, Scooby Doo, Yogi Bear"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/812013/59s.gif\"><br>"
+        },
+        "20019": {
+            "id": "20019",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20: Answer the questions on\n                    the basis of the information given below.\n                    \n                    Shows based on seven cartoon characters \u2013 Flintstones, Tom, Scooby Doo, Popeye, Richie Rich, Jerry\n                    and Yogi Bear \u2013 are telecast in a week on seven different days \u2013 Sunday, Monday, Tuesday, Wednesday,\n                    Thursday, Friday and Saturday - not necessarily in the same order. Each of these characters eats one\n                    food out of the seven different foods \u2013 honey, cactus, radish, carrot, bread, biscuit and cheese -\n                    in any order. Sunday being the day 1 and Saturday being the day 7 of the week.\n\n                    Following information is also known:\n                    (i) Richie Rich eats bread and Jerry\u2019s show telecasts on someday after Monday.\n                    (ii) The show of Yogi Bear telecasts on Saturday and Flintstones eats honey.\n                    (iii) Scooby Doo eats radish, and carrot is eaten by a character whose show telecasts on\n                    Wednesday.\n                    (iv) Tom and Jerry eat cactus and biscuit respectively, and shows on both of them telecast on even\n                    numbered days of the week. Show on Popeye also telecasts on an even numbered day.\n                    (v) The day on which Tom\u2019s show telecasts is not immediately followed by the Flintstone\u2019s show\n                    day.\n                    (vi) Biscuit is eaten by a character whose show telecasts on the immediate next day of Richie Rich\u2019s\n                    show.",
+            "question_text": "\u00a0\u00a0Q.19 [11916616]  Whose show telecasts on TV on\n                    a day immediately after the day on which Jerry\u2019s show telecasts?",
+            "options": [
+                "Popeye",
+                "Tom",
+                "Yogi Bear",
+                "Flintstones"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<b><br><b></b><div><b><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/812013/59s.gif\"><br>"
+        },
+        "20020": {
+            "id": "20020",
+            "marks": 3,
+            "negative_marks": 1.0,
+            "is_input_type": false,
+            "is_multi_select": false,
+            "instructions": "Direction for questions 16 to 20: Answer the questions on\n                    the basis of the information given below.\n                    \n                    Shows based on seven cartoon characters \u2013 Flintstones, Tom, Scooby Doo, Popeye, Richie Rich, Jerry\n                    and Yogi Bear \u2013 are telecast in a week on seven different days \u2013 Sunday, Monday, Tuesday, Wednesday,\n                    Thursday, Friday and Saturday - not necessarily in the same order. Each of these characters eats one\n                    food out of the seven different foods \u2013 honey, cactus, radish, carrot, bread, biscuit and cheese -\n                    in any order. Sunday being the day 1 and Saturday being the day 7 of the week.\n\n                    Following information is also known:\n                    (i) Richie Rich eats bread and Jerry\u2019s show telecasts on someday after Monday.\n                    (ii) The show of Yogi Bear telecasts on Saturday and Flintstones eats honey.\n                    (iii) Scooby Doo eats radish, and carrot is eaten by a character whose show telecasts on\n                    Wednesday.\n                    (iv) Tom and Jerry eat cactus and biscuit respectively, and shows on both of them telecast on even\n                    numbered days of the week. Show on Popeye also telecasts on an even numbered day.\n                    (v) The day on which Tom\u2019s show telecasts is not immediately followed by the Flintstone\u2019s show\n                    day.\n                    (vi) Biscuit is eaten by a character whose show telecasts on the immediate next day of Richie Rich\u2019s\n                    show.",
+            "question_text": "\u00a0\u00a0Q.20 [11916616]  Which character eats carrots and\n                on which day are biscuits eaten?",
+            "options": [
+                "Popeye; Saturday",
+                "Tom; Wednesday",
+                "Jerry; Friday",
+                "Popeye; Friday"
+            ],
+            "correct_response": [
+                [
+                    "1"
+                ]
+            ],
+            "solution": "<p>Explanation not available.</p>"
+        }
+    }
+}
