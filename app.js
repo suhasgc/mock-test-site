@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initDashboard();
     initLibrary();
     initErrorLog();
-    initAnalytics();
     initCalculator();
     initImporter();
     initProctoring();
