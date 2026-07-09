@@ -702,6 +702,21 @@ function initDashboard() {
     document.getElementById('btn-go-to-errors').addEventListener('click', () => {
         switchView('error-log');
     });
+
+    // Event delegation for dashboard start mock buttons (prevents swallowed clicks during preloading renders)
+    const container = document.getElementById('dashboard-mock-list');
+    if (container && !container._bound) {
+        container._bound = true;
+        container.addEventListener('click', (e) => {
+            const btn = e.target.closest('.btn-start-mock');
+            if (btn) {
+                const id = btn.getAttribute('data-id');
+                const mode = btn.getAttribute('data-mode');
+                const targetMock = state.mocks.find(m => m.id === id);
+                if (targetMock) startExamConsole(targetMock, mode);
+            }
+        });
+    }
 }
 
 function renderDashboardMocks() {
@@ -742,15 +757,7 @@ function renderDashboardMocks() {
         container.appendChild(card);
     });
     
-    // Add event listeners to start buttons
-    container.querySelectorAll('.btn-start-mock').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const id = btn.getAttribute('data-id');
-            const mode = btn.getAttribute('data-mode');
-            const targetMock = state.mocks.find(m => m.id === id);
-            if (targetMock) startExamConsole(targetMock, mode);
-        });
-    });
+
 }
 
 function renderDashboardErrors() {
@@ -970,6 +977,21 @@ function initLibrary() {
             renderLibrary();
         });
     });
+
+    // Event delegation for library start mock buttons (prevents swallowed clicks during preloading renders)
+    const grid = document.getElementById('library-mocks-grid');
+    if (grid && !grid._bound) {
+        grid._bound = true;
+        grid.addEventListener('click', (e) => {
+            const btn = e.target.closest('.btn-start');
+            if (btn) {
+                const id = btn.getAttribute('data-id');
+                const mode = btn.getAttribute('data-mode');
+                const targetMock = state.mocks.find(m => m.id === id);
+                if (targetMock) promptTestStart(targetMock, mode);
+            }
+        });
+    }
 }
 
 function renderLibrary() {
@@ -1091,14 +1113,7 @@ function renderLibrary() {
         });
     });
 
-    grid.querySelectorAll('.btn-start').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const id   = btn.getAttribute('data-id');
-            const mode = btn.getAttribute('data-mode');
-            const targetMock = state.mocks.find(m => m.id === id);
-            if (targetMock) promptTestStart(targetMock, mode);
-        });
-    });
+
 
     updateSidebarScoreboard();
 }
