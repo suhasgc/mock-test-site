@@ -6,6 +6,7 @@
  */
 
 import { mockExams, sectionalMocks, dailyDrills } from './questions-data.js';
+import { PRELOADED_METADATA } from './mocks_metadata.js';
 import { CanvasHelper } from './canvas-helper.js';
 
 // ==========================================================================
@@ -16,7 +17,7 @@ const state = {
     activeView: 'dashboard',
     
     // Loaded Mocks Database (built-in + imported)
-    mocks: [...mockExams, ...sectionalMocks, ...dailyDrills],
+    mocks: [...mockExams, ...sectionalMocks, ...dailyDrills, ...PRELOADED_METADATA.filter(pm => !mockExams.some(me => me.id === pm.id) && !sectionalMocks.some(sm => sm.id === pm.id) && !dailyDrills.some(dd => dd.id === pm.id))],
     
     // User attempts (loaded from localStorage)
     attempts: [],
@@ -215,7 +216,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const id = libBtn.getAttribute('data-id');
             const mode = libBtn.getAttribute('data-mode');
             const targetMock = state.mocks.find(m => m.id === id);
-            if (targetMock) promptTestStart(targetMock, mode);
+            if (targetMock) {
+                ensureMockDataLoaded(targetMock, () => {
+                    promptTestStart(targetMock, mode);
+                });
+            }
             return;
         }
 
@@ -224,7 +229,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const id = dashBtn.getAttribute('data-id');
             const mode = dashBtn.getAttribute('data-mode');
             const targetMock = state.mocks.find(m => m.id === id);
-            if (targetMock) startExamConsole(targetMock, mode);
+            if (targetMock) {
+                ensureMockDataLoaded(targetMock, () => {
+                    startExamConsole(targetMock, mode);
+                });
+            }
             return;
         }
     });
@@ -255,149 +264,99 @@ function loadDatabase() {
 
 // Fetch and load heavy offline mocks automatically
 function preloadMocks() {
-    const mockFiles = [
-        'simcat19_data.json',
-        'simcat18_data.json',
-        'simcat17_data.json',
-        'simcat16_data.json',
-        'simcat15_data.json',
-        'simcat13_data.json',
-        'simcat12_data.json',
-        'simcat11_data.json',
-        'simcat9_data.json',
-        'simcat8_data.json',
-        'simcat7_data.json',
-        'simcat6_data.json',
-        'simcat5_data.json',
-        'simcat4_data.json',
-        'simcat3_data.json',
-        'simcat2_data.json',
-        'simcat1_data.json'
-    ];
-    
-    const clFiles = [
-        'cl_lrdi_1_exam_portal.json', 'cl_lrdi_2_exam_portal.json', 'cl_lrdi_3_exam_portal.json', 'cl_lrdi_4_exam_portal.json', 'cl_lrdi_5_exam_portal.json',
-        'cl_lrdi_6_exam_portal.json', 'cl_lrdi_7_exam_portal.json', 'cl_lrdi_8_exam_portal.json', 'cl_lrdi_9_exam_portal.json', 'cl_lrdi_10_exam_portal.json',
-        'cl_lrdi_11_exam_portal.json', 'cl_lrdi_12_exam_portal.json', 'cl_lrdi_13_exam_portal.json', 'cl_lrdi_14_exam_portal.json', 'cl_lrdi_15_exam_portal.json',
-        'cl_qa_1_exam_portal.json', 'cl_qa_2_exam_portal.json', 'cl_qa_3_exam_portal.json', 'cl_qa_4_exam_portal.json', 'cl_qa_5_exam_portal.json',
-        'cl_qa_6_exam_portal.json', 'cl_qa_7_exam_portal.json', 'cl_qa_8_exam_portal.json', 'cl_qa_9_exam_portal.json', 'cl_qa_10_exam_portal.json',
-        'cl_qa_11_exam_portal.json', 'cl_qa_12_exam_portal.json', 'cl_qa_13_exam_portal.json', 'cl_qa_14_exam_portal.json', 'cl_qa_15_exam_portal.json',
-        'cl_varc_1_exam_portal.json', 'cl_varc_2_exam_portal.json', 'cl_varc_3_exam_portal.json', 'cl_varc_4_exam_portal.json', 'cl_varc_5_exam_portal.json',
-        'cl_varc_6_exam_portal.json', 'cl_varc_7_exam_portal.json', 'cl_varc_8_exam_portal.json', 'cl_varc_9_exam_portal.json', 'cl_varc_10_exam_portal.json',
-        'cl_varc_11_exam_portal.json', 'cl_varc_12_exam_portal.json', 'cl_varc_13_exam_portal.json', 'cl_varc_14_exam_portal.json', 'cl_varc_15_exam_portal.json'
-    ];
-    
-    // Auto-generate file list for the 30 interactive CL 2023 Prime and Countdown mocks
-    const cl2023Files = [];
-    for (let i = 1; i <= 15; i++) {
-        cl2023Files.push(`cl_2023_pc_${i}_data.json`);
-        cl2023Files.push(`cl_2023_cdc_${i}_data.json`);
+    // Dynamic on-demand loading of full mocks to optimize initial load times and prevent main thread thrashing
+}
+
+function showGlobalSpinner(message = "Loading mock questions...") {
+    let overlay = document.getElementById('global-loading-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'global-loading-overlay';
+        overlay.className = 'global-loading-overlay';
+        overlay.innerHTML = `
+            <div class="spinner-card">
+                <div class="spinner-ring"></div>
+                <p id="global-loading-text">${message}</p>
+            </div>
+        `;
+        document.body.appendChild(overlay);
+        // Force reflow
+        overlay.offsetHeight;
+    } else {
+        const textEl = document.getElementById('global-loading-text');
+        if (textEl) textEl.textContent = message;
     }
-    
-    const allFiles = [...mockFiles, ...clFiles, ...cl2023Files];
-    
-    allFiles.forEach(file => {
-        fetch(file)
-            .then(res => {
-                if (!res.ok) throw new Error("HTTP error " + res.status);
-                return res.json();
-            })
-            .then(data => {
-                const duration = data.sections && Object.keys(data.sections).length * 40 || 120;
+    overlay.style.display = 'flex';
+    overlay.classList.add('active');
+}
+
+function hideGlobalSpinner() {
+    const overlay = document.getElementById('global-loading-overlay');
+    if (overlay) {
+        overlay.classList.remove('active');
+        setTimeout(() => {
+            if (!overlay.classList.contains('active')) {
+                overlay.style.display = 'none';
+            }
+        }, 300);
+    }
+}
+
+function ensureMockDataLoaded(targetMock, callback) {
+    if (targetMock.questions && Object.keys(targetMock.questions).length > 0) {
+        callback();
+        return;
+    }
+
+    if (!targetMock.sourceFile) {
+        // Fallback for static mocks in questions-data.js that don't have sourceFile
+        callback();
+        return;
+    }
+
+    showGlobalSpinner(`Loading "${targetMock.name}"...`);
+
+    fetch(targetMock.sourceFile)
+        .then(res => {
+            if (!res.ok) throw new Error("HTTP error " + res.status);
+            return res.json();
+        })
+        .then(data => {
+            hideGlobalSpinner();
+
+            if (Array.isArray(data)) {
+                // Consolidated files
+                data.forEach(item => {
+                    const m = state.mocks.find(x => x.id === item.id);
+                    if (m) {
+                        m.sections = item.sections || {};
+                        m.questions = item.questions || {};
+                        m.sectionTimes = item.sectionTimes || {};
+                        if (item.pdfFiles) m.pdfFiles = item.pdfFiles;
+                    }
+                });
+            } else {
+                // Individual mock
+                targetMock.sections = data.sections || {};
+                targetMock.questions = data.questions || {};
+                
+                // Auto-calculate sectionTimes if missing
                 const sectionTimes = {};
                 if (data.sections) {
                     Object.keys(data.sections).forEach(secName => {
-                        sectionTimes[secName] = 40; // Default CAT 40 mins per section
+                        sectionTimes[secName] = 40;
                     });
                 }
-                
-                const isClSectional = file.startsWith('cl_') && (file.includes('varc') || file.includes('qa') || file.includes('lrdi'));
-                const isCl2023Full = file.startsWith('cl_2023_');
-                
-                const mockObject = {
-                    id: file.replace('_data.json', '').replace('.json', ''),
-                    name: data.name || file.replace('_data.json', '').replace('.json', '').toUpperCase(),
-                    type: (data.name && data.name.toLowerCase().includes('xat')) ? 'xat' : 'cat',
-                    category: isClSectional ? 'sectional' : 'full',
-                    description: data.description || `Official offline mock containing ${Object.keys(data.questions || {}).length} questions across ${Object.keys(data.sections || {}).length} sections.`,
-                    duration: data.duration || duration,
-                    isSectionalTimed: data.isSectionalTimed !== undefined ? data.isSectionalTimed : !(data.name && data.name.toLowerCase().includes('xat')),
-                    sections: data.sections || {},
-                    sectionTimes: data.sectionTimes || sectionTimes,
-                    questions: data.questions || {}
-                };
-                
-                if (!state.mocks.some(m => m.id === mockObject.id)) {
-                    state.mocks.push(mockObject);
-                }
-                
-                // Re-render views if active
-                if (state.activeView === 'library') renderLibrary();
-                if (state.activeView === 'dashboard') renderDashboardMocks();
-            })
-            .catch(err => {
-                console.warn(`Could not preload ${file}:`, err);
-            });
-    });
-    
-    // Fetch TIME OMR PDF Mocks
-    fetch('time_mocks_data.json')
-        .then(res => {
-            if (!res.ok) throw new Error("HTTP error " + res.status);
-            return res.json();
-        })
-        .then(dataList => {
-            dataList.forEach(mockObject => {
-                if (!state.mocks.some(m => m.id === mockObject.id)) {
-                    state.mocks.push(mockObject);
-                }
-            });
-            // Re-render views if active
-            if (state.activeView === 'library') renderLibrary();
-            if (state.activeView === 'dashboard') renderDashboardMocks();
+                targetMock.sectionTimes = data.sectionTimes || sectionTimes;
+                if (data.pdfFiles) targetMock.pdfFiles = data.pdfFiles;
+            }
+
+            callback();
         })
         .catch(err => {
-            console.warn("Could not preload TIME OMR PDF mocks:", err);
-        });
-        
-    // Fetch consolidated IMS & Career Launcher 2023 Mocks
-    fetch('ims_cl_2023_data.json')
-        .then(res => {
-            if (!res.ok) throw new Error("HTTP error " + res.status);
-            return res.json();
-        })
-        .then(dataList => {
-            dataList.forEach(mockObject => {
-                if (!state.mocks.some(m => m.id === mockObject.id)) {
-                    state.mocks.push(mockObject);
-                }
-            });
-            // Re-render views if active
-            if (state.activeView === 'library') renderLibrary();
-            if (state.activeView === 'dashboard') renderDashboardMocks();
-        })
-        .catch(err => {
-            console.warn("Could not preload IMS/CL 2023 mocks:", err);
-        });
-        
-    // Fetch Career Launcher PDF OMR Mocks
-    fetch('cl_pdf_mocks_data.json')
-        .then(res => {
-            if (!res.ok) throw new Error("HTTP error " + res.status);
-            return res.json();
-        })
-        .then(dataList => {
-            dataList.forEach(mockObject => {
-                if (!state.mocks.some(m => m.id === mockObject.id)) {
-                    state.mocks.push(mockObject);
-                }
-            });
-            // Re-render views if active
-            if (state.activeView === 'library') renderLibrary();
-            if (state.activeView === 'dashboard') renderDashboardMocks();
-        })
-        .catch(err => {
-            console.warn("Could not preload CL PDF OMR mocks:", err);
+            hideGlobalSpinner();
+            console.error("Could not load mock data:", err);
+            alert(`Error loading mock details: ${err.message}\n\nPlease try again.`);
         });
 }
 
