@@ -7,3 +7,4 @@ unpacked_cat_2023/
 .DS_Store
 Thumbs.db
 *.log
+server.py
