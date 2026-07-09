@@ -3208,46 +3208,35 @@ a {
 /* PREMIUM IMAGE FALLBACK CARD */
 .img-placeholder-fallback {
     display: inline-flex;
-    margin: 12px 0;
-    padding: 16px 24px;
-    background: rgba(30, 41, 59, 0.4);
-    border: 1px dashed rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-}
-.img-placeholder-fallback .fallback-card {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 8px;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    text-align: center;
-}
-.img-placeholder-fallback .fallback-card i {
-    font-size: 1.8rem;
-    color: var(--text-muted);
-}
-.img-placeholder-fallback .fallback-card span {
-    font-weight: 500;
-    letter-spacing: 0.2px;
-}
-.img-placeholder-fallback .fallback-card a {
-    color: var(--primary);
-    text-decoration: underline;
+    padding: 6px 12px;
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 6px;
+    color: #fca5a5;
     font-size: 0.8rem;
-    word-break: break-all;
-    max-width: 320px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin: 6px 0;
+    max-width: 100%;
+}
+.img-placeholder-fallback i {
+    font-size: 0.85rem;
+    color: #ef4444;
+}
+.img-placeholder-fallback span {
+    font-weight: 500;
+}
+.img-placeholder-fallback a {
+    color: #ef4444;
+    text-decoration: underline;
+    font-weight: 600;
     transition: var(--transition);
+    margin-left: 4px;
 }
-.img-placeholder-fallback .fallback-card a:hover {
-    color: var(--secondary);
+.img-placeholder-fallback a:hover {
+    color: #fca5a5;
 }
+
 
 
 

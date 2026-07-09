@@ -213,6 +213,13 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('error', (e) => {
         if (e.target && e.target.tagName === 'IMG') {
             const img = e.target;
+            
+            // If the image URL starts with http://, try changing it to https:// first (resolves mixed content issues dynamically)
+            if (img.src.startsWith('http://')) {
+                img.src = img.src.replace('http://', 'https://');
+                return;
+            }
+            
             if (img._handled) return;
             img._handled = true;
             
@@ -221,11 +228,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const placeholder = document.createElement('div');
             placeholder.className = 'img-placeholder-fallback';
             placeholder.innerHTML = `
-                <div class="fallback-card">
-                    <i class="fa-solid fa-image-slash"></i>
-                    <span>Image / Diagram Unavailable</span>
-                    <a href="${img.src}" target="_blank" class="fallback-link">Original Image Link</a>
-                </div>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Image unavailable</span>
+                <a href="${img.src}" target="_blank">View original</a>
             `;
             img.parentNode.insertBefore(placeholder, img.nextSibling);
         }
@@ -380,6 +385,14 @@ function ensureMockDataLoaded(targetMock, callback) {
             console.error("Could not load mock data:", err);
             alert(`Error loading mock details: ${err.message}\n\nPlease try again.`);
         });
+}
+
+function forceHttpsImages(html) {
+    if (!html) return html;
+    // Replace src="http:// with src="https:// in any img tag to prevent mixed content blocking
+    return html.replace(/src=["']http:\/\/([^"']+)["']/g, (match, p1) => {
+        return `src="https://${p1}"`;
+    });
 }
 
 function saveDatabase() {
@@ -1359,7 +1372,7 @@ function loadConsoleQuestion() {
     const passageViewer = document.getElementById('passage-body-content');
     if (passageViewer) {
         if (question.instructions) {
-            passageViewer.innerHTML = question.instructions;
+            passageViewer.innerHTML = forceHttpsImages(question.instructions);
             document.getElementById('passage-viewer-container').style.display = 'flex';
         } else {
             passageViewer.innerHTML = '<div class="no-data">No specific passage context for this section. Questions are self-contained.</div>';
@@ -1370,7 +1383,7 @@ function loadConsoleQuestion() {
     // Set Question text
     const textContainer = document.getElementById('interactive-question-text');
     if (textContainer) {
-        textContainer.innerHTML = question.question_text;
+        textContainer.innerHTML = forceHttpsImages(question.question_text);
     }
     
     // Set Inputs
@@ -1456,7 +1469,7 @@ function renderMcqInput(parent, qId, options) {
         
         optionEl.innerHTML = `
             <div class="option-letter">${letter}</div>
-            <div class="option-text">${optText}</div>
+            <div class="option-text">${forceHttpsImages(optText)}</div>
         `;
         
         optionEl.addEventListener('click', () => {
@@ -2272,8 +2285,8 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
     }
     
     document.getElementById('review-modal-q-num').textContent = labelNum.toString();
-    document.getElementById('review-modal-instructions').innerHTML = q.instructions || '';
-    document.getElementById('review-modal-question-text').innerHTML = q.question_text;
+    document.getElementById('review-modal-instructions').innerHTML = forceHttpsImages(q.instructions || '');
+    document.getElementById('review-modal-question-text').innerHTML = forceHttpsImages(q.question_text);
     
     // Option breakdown comparisons
     const optionsContainer = document.getElementById('review-modal-options-container');
@@ -2318,7 +2331,7 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
             const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
             optEl.innerHTML = `
                 <div class="option-letter">${alphabet[index]}</div>
-                <div class="option-text">${optText}</div>
+                <div class="option-text">${forceHttpsImages(optText)}</div>
                 ${statusIcon}
             `;
             table.appendChild(optEl);
@@ -2338,7 +2351,7 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
         }
     }
     
-    document.getElementById('review-modal-solution-text').innerHTML = q.solution || 'No solution text provided.';
+    document.getElementById('review-modal-solution-text').innerHTML = forceHttpsImages(q.solution || 'No solution text provided.');
     
     // Show Modal
     modal.style.display = 'flex';
