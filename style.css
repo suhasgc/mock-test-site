@@ -2180,43 +2180,74 @@ a {
 
 .review-sections-tabs {
     display: flex;
-    gap: 8px;
-    margin-bottom: 12px;
+    gap: 10px;
+    margin-bottom: 16px;
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 .review-tab-btn {
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 0.8rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-secondary);
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.review-tab-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
 }
 .review-tab-btn.active {
     background-color: var(--primary);
+    border-color: var(--primary);
     color: white;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.35);
 }
 
 .review-question-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 8px;
-    max-height: 250px;
+    grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+    gap: 12px;
+    max-height: 320px;
     overflow-y: auto;
+    padding-right: 6px;
+}
+.review-question-grid::-webkit-scrollbar {
+    width: 6px;
+}
+.review-question-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+.review-question-grid::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 3px;
 }
 .review-q-btn {
-    height: 38px;
-    border-radius: 6px;
+    height: 42px;
+    width: 42px;
+    border-radius: 8px;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.review-q-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.15);
 }
 .review-q-btn.correct { background-color: var(--success); }
 .review-q-btn.incorrect { background-color: var(--danger); }
-.review-q-btn.unattempted { background-color: var(--border-color); color: var(--text-secondary); }
+.review-q-btn.unattempted { background-color: var(--bg-card); border-color: var(--border-color); color: var(--text-secondary); }
 
 /* Review Question Details Modal */
 /* Two-column layout for question detail review */

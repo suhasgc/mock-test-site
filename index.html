@@ -602,6 +602,20 @@
                         <div class="review-sections-tabs" id="review-sections-tabs-container">
                             <!-- Section list tab -->
                         </div>
+
+                        <!-- Legend explaining colored question bubble statuses -->
+                        <div class="review-legend" style="display: flex; gap: 16px; margin-top: -6px; margin-bottom: 16px; font-size: 0.78rem; color: var(--text-muted); border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 6px;">
+                                <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: var(--success); box-shadow: 0 0 6px var(--success);"></span> Correct
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 6px;">
+                                <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: var(--danger); box-shadow: 0 0 6px var(--danger);"></span> Incorrect
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 6px;">
+                                <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: var(--border-color);"></span> Unattempted
+                            </div>
+                        </div>
+
                         <div class="review-question-grid" id="review-question-buttons-grid">
                             <!-- Matrix of colored buttons -->
                         </div>
@@ -760,7 +774,7 @@
     </div>
 
     <!-- CORE SCRIPTS -->
-    <script type="module" src="app.js?v=1.2.3"></script>
+    <script type="module" src="app.js?v=1.2.4"></script>
 </body>
 </html>
 
