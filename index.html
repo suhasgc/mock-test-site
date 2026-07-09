@@ -14,7 +14,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container">
+        <!-- LOGIN SCREEN OVERLAY -->
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-card">
+            <div class="login-brand">
+                <span class="login-logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span class="login-logo-text">the<span>MBA</span>room</span>
+            </div>
+            <div class="login-tagline">
+                <h1>CAT Mock Platform</h1>
+                <p>Your personal CAT 2026 preparation engine. Enter your name to begin.</p>
+            </div>
+            <div class="login-form">
+                <div class="login-input-wrap">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="login-name-input" placeholder="Enter your full name" autocomplete="name" maxlength="50">
+                </div>
+                <div class="login-error" id="login-error"></div>
+                <button class="login-btn" id="login-submit-btn">
+                    <i class="fa-solid fa-rocket"></i>
+                    Start Mock Prep
+                </button>
+            </div>
+            <div class="login-features">
+                <div class="lf-item"><i class="fa-solid fa-check"></i> 200+ Full CAT Mocks</div>
+                <div class="lf-item"><i class="fa-solid fa-check"></i> Sectional Practice</div>
+                <div class="lf-item"><i class="fa-solid fa-check"></i> Error Log & Analytics</div>
+            </div>
+        </div>
+        <div class="login-bg-orb orb1"></div>
+        <div class="login-bg-orb orb2"></div>
+        <div class="login-bg-orb orb3"></div>
+    </div>
+
+<div class="app-container" id="app-container" style="display:none">
         <!-- Sidebar Navigation -->
         <aside class="sidebar-nav" id="sidebar-nav">
             <div class="brand-logo">
@@ -22,6 +55,17 @@
                 <span class="logo-text">the<span>MBA</span>room</span>
             </div>
             
+            <!-- User Profile Widget -->
+            <div class="user-profile-widget">
+                <div class="user-avatar-wrap">
+                    <span class="user-avatar-initials" id="sidebar-initials">S</span>
+                </div>
+                <div class="user-info">
+                    <span class="user-name" id="profile-name">Suhas R.</span>
+                    <span class="user-role">CAT 2026 Aspirant</span>
+                </div>
+            </div>
+
             <nav class="nav-links">
                 <button class="nav-item active" data-view="dashboard">
                     <i class="fa-solid fa-house-chimney"></i>
@@ -42,11 +86,19 @@
                 </button>
             </nav>
 
-            <div class="user-profile-widget">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Candidate Photo" class="user-avatar" id="sidebar-avatar">
-                <div class="user-info">
-                    <span class="user-name" id="profile-name">Suhas R.</span>
-                    <span class="user-role">CAT 2026 Aspirant</span>
+            <!-- Scoreboard in Sidebar -->
+            <div class="sidebar-scoreboard" id="sidebar-scoreboard">
+                <div class="sb-sidebar-header">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>My Scores</span>
+                </div>
+                <div class="sb-sidebar-summary" id="sb-sidebar-summary">
+                    <div class="sb-s-stat"><span class="sb-s-val" id="sb-total">0</span><span class="sb-s-lbl">Tests</span></div>
+                    <div class="sb-s-stat"><span class="sb-s-val" id="sb-avg">—</span><span class="sb-s-lbl">Avg Acc</span></div>
+                    <div class="sb-s-stat"><span class="sb-s-val" id="sb-best">—</span><span class="sb-s-lbl">Best</span></div>
+                </div>
+                <div class="sb-sidebar-list" id="sb-sidebar-list">
+                    <div class="sb-empty-msg">No tests taken yet</div>
                 </div>
             </div>
 
@@ -56,6 +108,10 @@
                     <i class="fa-solid fa-moon icon-dark"></i>
                     <span id="theme-text">Toggle Theme</span>
                 </button>
+                <button class="logout-btn" id="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Log Out</span>
+                </button>
             </div>
         </aside>
 
@@ -64,7 +120,7 @@
             <!-- HEADER -->
             <header class="main-header" id="main-header">
                 <div class="header-search">
-                    <h2>Welcome back, <span id="header-user-name">Suhas</span></h2>
+                    <h2>Welcome back, <span id="header-user-name">Aspirant</span> <i class="fa-solid fa-hand-wave" style="font-size:1.4rem;color:var(--warning)"></i></h2>
                     <p class="subtitle" id="header-subtitle">Stay focused. The difference between ordinary and extraordinary is that little extra.</p>
                 </div>
                 <div class="header-actions">
@@ -72,9 +128,6 @@
                     <div class="action-buttons">
                         <button class="action-btn secondary" id="btn-import-html">
                             <i class="fa-solid fa-file-import"></i> Import HTML Mock
-                        </button>
-                        <button class="action-btn primary" id="btn-import-pdf">
-                            <i class="fa-solid fa-file-pdf"></i> PDF OMR Mode
                         </button>
                     </div>
                     <input type="file" id="html-file-picker" accept=".html" style="display: none;">
@@ -154,58 +207,26 @@
                 </section>
                 <!-- VIEW: MOCK LIBRARY -->
                 <section class="view-panel" id="view-library">
-                    <div class="library-layout">
+                    <div class="library-main">
+                        <!-- Section Tabs: Full / Sectional / Daily -->
+                        <div class="library-section-tabs">
+                            <button class="section-tab active" data-section-tab="full">
+                                <i class="fa-solid fa-file-lines"></i> Full Mocks
+                                <span class="tab-count" id="tab-count-full">0</span>
+                            </button>
+                            <button class="section-tab" data-section-tab="sectional">
+                                <i class="fa-solid fa-layer-group"></i> Sectional
+                                <span class="tab-count" id="tab-count-sectional">0</span>
+                            </button>
+                            <button class="section-tab" data-section-tab="daily">
+                                <i class="fa-solid fa-calendar-day"></i> Daily Drills
+                                <span class="tab-count" id="tab-count-daily">0</span>
+                            </button>
+                        </div>
 
-                        <!-- LEFT: Scoreboard Panel -->
-                        <aside class="library-scoreboard" id="library-scoreboard">
-                            <div class="scoreboard-header">
-                                <i class="fa-solid fa-trophy"></i>
-                                <h3>Scoreboard</h3>
-                            </div>
-                            <div class="scoreboard-summary" id="scoreboard-summary">
-                                <!-- Filled by JS -->
-                            </div>
-                            <div class="scoreboard-list" id="scoreboard-list">
-                                <!-- Filled by JS -->
-                            </div>
-                        </aside>
-
-                        <!-- RIGHT: Mock Library Content -->
-                        <div class="library-main">
-                            <!-- Top Filter Bar (All / CAT / XAT / PDF) -->
-                            <div class="library-header">
-                                <div class="filter-bar">
-                                    <button class="filter-btn active" data-exam-filter="all">All Exams</button>
-                                    <button class="filter-btn" data-exam-filter="cat">CAT Mocks</button>
-                                    <button class="filter-btn" data-exam-filter="xat">XAT Mocks</button>
-                                    <button class="filter-btn" data-exam-filter="pdf">PDF OMR</button>
-                                </div>
-                            </div>
-
-                            <!-- Section Tabs: Full / Sectional / Daily / PDF -->
-                            <div class="library-section-tabs">
-                                <button class="section-tab active" data-section-tab="full">
-                                    <i class="fa-solid fa-file-lines"></i> Full Mocks
-                                    <span class="tab-count" id="tab-count-full">0</span>
-                                </button>
-                                <button class="section-tab" data-section-tab="sectional">
-                                    <i class="fa-solid fa-layer-group"></i> Sectional
-                                    <span class="tab-count" id="tab-count-sectional">0</span>
-                                </button>
-                                <button class="section-tab" data-section-tab="daily">
-                                    <i class="fa-solid fa-calendar-day"></i> Daily Drills
-                                    <span class="tab-count" id="tab-count-daily">0</span>
-                                </button>
-                                <button class="section-tab" data-section-tab="pdf">
-                                    <i class="fa-solid fa-file-pdf"></i> PDF OMR
-                                    <span class="tab-count" id="tab-count-pdf">0</span>
-                                </button>
-                            </div>
-
-                            <!-- Grid rendered by JS -->
-                            <div class="library-grid" id="library-mocks-grid">
-                                <!-- Rendered by app.js -->
-                            </div>
+                        <!-- Grid rendered by JS (grouped by source) -->
+                        <div class="library-grid" id="library-mocks-grid">
+                            <!-- Rendered by app.js -->
                         </div>
                     </div>
                 </section>
@@ -737,7 +758,7 @@
     </div>
 
     <!-- CORE SCRIPTS -->
-    <script type="module" src="app.js?v=1.0.8"></script>
+    <script type="module" src="app.js?v=1.0.9"></script>
 </body>
 </html>
 

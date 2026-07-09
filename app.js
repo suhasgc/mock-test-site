@@ -63,34 +63,171 @@ const state = {
         fileName: '',
         template: 'cat',
         customSections: []
-    }
+    },
+
+    // Per-user namespaced localStorage keys (set during login)
+    storageKeyAttempts: 'theMBAroom_attempts',
+    storageKeyErrors:   'theMBAroom_errors'
 };
 
 // ==========================================================================
 // INITIALIZATION & MAIN ENTRY POINT
 // ==========================================================================
+// ==========================================================================
+// SESSION / LOGIN MANAGEMENT
+// ==========================================================================
+function getSession() {
+    // Session stored in sessionStorage (clears on tab/browser close)
+    // Name also mirrored to localStorage for "remember" restoration
+    try {
+        const sessionData = sessionStorage.getItem('theMBAroom_session');
+        if (sessionData) {
+            const parsed = JSON.parse(sessionData);
+            if (parsed && parsed.name) return parsed;
+        }
+        // Try restoring from localStorage (same-browser revisit)
+        const lsName = localStorage.getItem('theMBAroom_username');
+        if (lsName) {
+            const restored = { name: lsName, loginTime: Date.now() };
+            sessionStorage.setItem('theMBAroom_session', JSON.stringify(restored));
+            return restored;
+        }
+    } catch(e) {}
+    return null;
+}
+
+function createSession(name) {
+    const session = { name: name.trim(), loginTime: Date.now() };
+    sessionStorage.setItem('theMBAroom_session', JSON.stringify(session));
+    localStorage.setItem('theMBAroom_username', name.trim());
+    return session;
+}
+
+function destroySession() {
+    sessionStorage.removeItem('theMBAroom_session');
+    localStorage.removeItem('theMBAroom_username');
+}
+
+function applyUserName(name) {
+    const firstName = name.trim().split(' ')[0];
+    const initials  = name.trim().split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
+
+    const headerName   = document.getElementById('header-user-name');
+    const profileName  = document.getElementById('profile-name');
+    const sidebarInit  = document.getElementById('sidebar-initials');
+
+    if (headerName)  headerName.textContent  = firstName;
+    if (profileName) profileName.textContent  = name.trim();
+    if (sidebarInit) sidebarInit.textContent  = initials;
+
+    // Per-user local storage keys (namespace by name so data stays separate)
+    const safeKey = name.trim().toLowerCase().replace(/[^a-z0-9]/g, '_');
+    state.storageKeyAttempts = `theMBAroom_${safeKey}_attempts`;
+    state.storageKeyErrors   = `theMBAroom_${safeKey}_errors`;
+}
+
+function initLoginScreen() {
+    const overlay    = document.getElementById('login-overlay');
+    const appDiv     = document.getElementById('app-container');
+    const nameInput  = document.getElementById('login-name-input');
+    const submitBtn  = document.getElementById('login-submit-btn');
+    const errorEl    = document.getElementById('login-error');
+
+    function showApp(name) {
+        overlay.style.opacity = '0';
+        overlay.style.transform = 'scale(1.04)';
+        setTimeout(() => { overlay.style.display = 'none'; }, 400);
+        appDiv.style.display = 'flex';
+        setTimeout(() => { appDiv.style.opacity = '1'; }, 50);
+        applyUserName(name);
+        loadDatabase();
+        initRouting();
+        initDashboard();
+        initLibrary();
+        initErrorLog();
+        initCalculator();
+        initProctoring();
+        initSplitter();
+        preloadMocks();
+        updateSidebarScoreboard();
+    }
+
+    // Check existing session
+    const session = getSession();
+    if (session) {
+        if (overlay) overlay.style.display = 'none';
+        if (appDiv)  { appDiv.style.display = 'flex'; appDiv.style.opacity = '1'; }
+        applyUserName(session.name);
+        loadDatabase();
+        initRouting();
+        initDashboard();
+        initLibrary();
+        initErrorLog();
+        initCalculator();
+        initProctoring();
+        initSplitter();
+        preloadMocks();
+        updateSidebarScoreboard();
+        return;
+    }
+
+    // Show login overlay
+    if (overlay) overlay.style.display = 'flex';
+    if (appDiv)  appDiv.style.display  = 'none';
+
+    const doLogin = () => {
+        const name = nameInput ? nameInput.value.trim() : '';
+        if (!name) {
+            if (errorEl) { errorEl.textContent = 'Please enter your name to continue.'; errorEl.style.display = 'block'; }
+            if (nameInput) nameInput.classList.add('shake');
+            setTimeout(() => { if (nameInput) nameInput.classList.remove('shake'); }, 500);
+            return;
+        }
+        if (name.length < 2) {
+            if (errorEl) { errorEl.textContent = 'Name must be at least 2 characters.'; errorEl.style.display = 'block'; }
+            return;
+        }
+        if (errorEl) errorEl.style.display = 'none';
+        createSession(name);
+        showApp(name);
+    };
+
+    if (submitBtn) submitBtn.addEventListener('click', doLogin);
+    if (nameInput) nameInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') doLogin(); });
+
+    // Logout button
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+            destroySession();
+            location.reload();
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    loadDatabase();
-    initRouting();
-    initDashboard();
-    initLibrary();
-    initErrorLog();
-    initCalculator();
-    initImporter();
-    initProctoring();
-    initSplitter();
-    preloadMocks();
+    initLoginScreen();
+
+    // Logout wired separately in case app already shown
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn && !logoutBtn._bound) {
+        logoutBtn._bound = true;
+        logoutBtn.addEventListener('click', () => {
+            destroySession();
+            location.reload();
+        });
+    }
 });
 
-// Load stats and values from localStorage
+// Load stats and values from localStorage (per-user namespaced)
 function loadDatabase() {
     try {
-        state.attempts = JSON.parse(localStorage.getItem('theMBAroom_attempts')) || [];
-        state.errors = JSON.parse(localStorage.getItem('theMBAroom_errors')) || [];
+        state.attempts = JSON.parse(localStorage.getItem(state.storageKeyAttempts)) || [];
+        state.errors   = JSON.parse(localStorage.getItem(state.storageKeyErrors))   || [];
     } catch (e) {
         console.error("Failed to load local database, resetting", e);
         state.attempts = [];
-        state.errors = [];
+        state.errors   = [];
     }
     updateGlobalBadges();
 }
@@ -215,9 +352,10 @@ function preloadMocks() {
 }
 
 function saveDatabase() {
-    localStorage.setItem('theMBAroom_attempts', JSON.stringify(state.attempts));
-    localStorage.setItem('theMBAroom_errors', JSON.stringify(state.errors));
+    localStorage.setItem(state.storageKeyAttempts, JSON.stringify(state.attempts));
+    localStorage.setItem(state.storageKeyErrors,   JSON.stringify(state.errors));
     updateGlobalBadges();
+    updateSidebarScoreboard();
 }
 
 function updateGlobalBadges() {
@@ -724,25 +862,30 @@ function renderDashboardActivity() {
 }
 
 // ==========================================================================
-// MOCK LIBRARY RENDERING
+// MOCK LIBRARY RENDERING — CAT Mocks only, grouped by source
 // ==========================================================================
 
-// Library state — active exam filter and active section tab
-const libraryState = { filter: 'all', tab: 'full' };
+const libraryState = { tab: 'full' };
+
+// Source grouping configuration — maps mock id/name patterns to a display group
+function getMockGroup(mock) {
+    const id   = (mock.id   || '').toLowerCase();
+    const name = (mock.name || '').toLowerCase();
+    if (id.includes('simcat') || name.includes('simcat'))    return 'IMS SimCAT';
+    if (id.startsWith('ims_2023_simcat') || name.includes('ims simcat')) return 'IMS SimCAT';
+    if (id.startsWith('ims_2023_take_home') || name.includes('take home')) return 'IMS Take-Home Mocks';
+    if (id.startsWith('ims_2023_pre_simcat') || name.includes('pre simcat') || name.includes('pre-simcat')) return 'IMS Pre-SimCAT';
+    if (id.startsWith('cl_') && !id.includes('2023')) return 'Career Launcher (CL)';
+    if (id.startsWith('cl_2023') || id.startsWith('ims_2023_dilr') || id.startsWith('ims_2023_qa') || id.startsWith('ims_2023_varc')) return 'CL / IMS Sectional (2023)';
+    if (id.startsWith('cl_2023') && (id.includes('simcat') || id.includes('cdc'))) return 'Career Launcher SimCAT (2023)';
+    if (id.includes('time') || name.includes('time ')) return 'TIME';
+    if (name.includes('aimcat') || id.includes('aimcat')) return 'TIME AimCAT';
+    if (name.includes('career launcher') || name.includes('cl ') || id.startsWith('cl_2023')) return 'Career Launcher (2023)';
+    if (name.includes('ims') || id.startsWith('ims_')) return 'IMS';
+    return 'Other Mocks';
+}
 
 function initLibrary() {
-    // Exam-type filter buttons (All / CAT / XAT / PDF)
-    const filterBtns = document.querySelectorAll('[data-exam-filter]');
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            libraryState.filter = btn.getAttribute('data-exam-filter');
-            renderLibrary();
-        });
-    });
-
-    // Section tab buttons (Full / Sectional / Daily / PDF)
     const tabBtns = document.querySelectorAll('[data-section-tab]');
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -758,80 +901,88 @@ function renderLibrary() {
     const grid = document.getElementById('library-mocks-grid');
     if (!grid) return;
 
-    const { filter, tab } = libraryState;
+    // CAT-only: exclude XAT and PDF
+    const catMocks = state.mocks.filter(m => m.type !== 'xat' && m.category !== 'pdf');
 
-    // Step 1: apply exam-type filter (all / cat / xat / pdf)
-    let base = state.mocks;
-    if (filter === 'cat')       base = state.mocks.filter(m => m.type === 'cat' && m.category !== 'pdf');
-    else if (filter === 'xat')  base = state.mocks.filter(m => m.type === 'xat' && m.category !== 'pdf');
-    else if (filter === 'pdf')  base = state.mocks.filter(m => m.category === 'pdf');
+    const { tab } = libraryState;
 
-    // Step 2: update tab counts based on filtered base
-    const countFull      = base.filter(m => !['sectional','daily','pdf'].includes(m.category)).length;
-    const countSectional = base.filter(m => m.category === 'sectional').length;
-    const countDaily     = base.filter(m => m.category === 'daily').length;
-    const countPdf       = base.filter(m => m.category === 'pdf').length;
+    // Update tab counts
+    const countFull      = catMocks.filter(m => !['sectional','daily','pdf'].includes(m.category)).length;
+    const countSectional = catMocks.filter(m => m.category === 'sectional').length;
+    const countDaily     = catMocks.filter(m => m.category === 'daily').length;
     const setCount = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
     setCount('tab-count-full',      countFull);
     setCount('tab-count-sectional', countSectional);
     setCount('tab-count-daily',     countDaily);
-    setCount('tab-count-pdf',       countPdf);
 
-    // Step 3: apply section tab filter
+    // Apply tab filter
     let filteredMocks;
-    if (tab === 'full')           filteredMocks = base.filter(m => !['sectional','daily','pdf'].includes(m.category));
-    else if (tab === 'sectional') filteredMocks = base.filter(m => m.category === 'sectional');
-    else if (tab === 'daily')     filteredMocks = base.filter(m => m.category === 'daily');
-    else if (tab === 'pdf')       filteredMocks = base.filter(m => m.category === 'pdf');
-    else                          filteredMocks = base;
+    if (tab === 'full')           filteredMocks = catMocks.filter(m => !['sectional','daily','pdf'].includes(m.category));
+    else if (tab === 'sectional') filteredMocks = catMocks.filter(m => m.category === 'sectional');
+    else if (tab === 'daily')     filteredMocks = catMocks.filter(m => m.category === 'daily');
+    else                          filteredMocks = catMocks;
 
-    // Sort by id descending
-    filteredMocks.sort((a, b) => b.id.toString().localeCompare(a.id.toString()));
+    // Sort by name for neat grouping
+    filteredMocks.sort((a, b) => a.name.localeCompare(b.name));
 
     grid.innerHTML = '';
 
     if (filteredMocks.length === 0) {
-        grid.innerHTML = '<div class="no-data" style="grid-column:span 3;padding:40px;text-align:center;color:var(--text-secondary);">No mock tests found in this section.</div>';
-        renderScoreboard();
+        grid.innerHTML = '<div class="no-data" style="grid-column:span 3;padding:40px;text-align:center;color:var(--text-secondary);">No mocks found in this section yet. They load shortly after the page opens.</div>';
+        updateSidebarScoreboard();
         return;
     }
 
+    // Group mocks by source
+    const groups = {};
     filteredMocks.forEach(mock => {
-        const card = document.createElement('div');
-        card.className = 'library-card';
+        const group = getMockGroup(mock);
+        if (!groups[group]) groups[group] = [];
+        groups[group].push(mock);
+    });
 
-        // Badge
-        let typeBadge = `<span class="exam-type-badge ${mock.type}">${mock.type.toUpperCase()}</span>`;
-        if (mock.category === 'pdf')       typeBadge = `<span class="exam-type-badge pdf">PDF</span>`;
-        else if (mock.category === 'sectional') typeBadge = `<span class="exam-type-badge sectional">Sectional</span>`;
-        else if (mock.category === 'daily')     typeBadge = `<span class="exam-type-badge daily">Daily</span>`;
+    // Render each group
+    Object.entries(groups).sort((a,b) => a[0].localeCompare(b[0])).forEach(([groupName, mocks]) => {
+        // Group header
+        const groupHeader = document.createElement('div');
+        groupHeader.className = 'library-group-header';
+        groupHeader.innerHTML = `<span class="group-title"><i class="fa-solid fa-folder-open"></i> ${groupName}</span><span class="group-count">${mocks.length} mocks</span>`;
+        grid.appendChild(groupHeader);
 
-        // Best attempt badge
-        const pastAttempts = state.attempts.filter(a => a.testId === mock.id);
-        const bestAttempt  = pastAttempts.length > 0
-            ? pastAttempts.reduce((best, a) => a.score > best.score ? a : best, pastAttempts[0])
-            : null;
+        // Cards wrapper
+        const cardsWrapper = document.createElement('div');
+        cardsWrapper.className = 'library-cards-row';
+        grid.appendChild(cardsWrapper);
 
-        const attemptedHtml = bestAttempt
-            ? `<div class="card-best-score"><i class="fa-solid fa-medal"></i> Best: <strong>${bestAttempt.score.toFixed(1)} / ${bestAttempt.maxScore}</strong> &nbsp;&middot;&nbsp; ${bestAttempt.accuracy.toFixed(0)}% acc</div>`
-            : `<div class="card-not-attempted"><i class="fa-regular fa-circle"></i> Not attempted</div>`;
+        mocks.forEach(mock => {
+            const card = document.createElement('div');
+            card.className = 'library-card';
 
-        card.innerHTML = `
-            ${typeBadge}
-            <h4>${mock.name}</h4>
-            <p class="description">${mock.description}</p>
-            <div class="meta-details">
-                <div class="meta-row"><i class="fa-regular fa-clock"></i> ${mock.duration} minutes</div>
-                <div class="meta-row"><i class="fa-solid fa-list-check"></i> ${Object.keys(mock.questions).length} questions</div>
-                <div class="meta-row"><i class="fa-solid fa-layer-group"></i> ${Object.keys(mock.sections).join(', ')}</div>
-            </div>
-            ${attemptedHtml}
-            <div class="card-actions">
-                <button class="action-btn secondary btn-start" data-id="${mock.id}" data-mode="practice">Practice</button>
-                <button class="action-btn primary btn-start"   data-id="${mock.id}" data-mode="timed">Exam Mode</button>
-            </div>
-        `;
-        grid.appendChild(card);
+            // Best attempt badge
+            const pastAttempts = state.attempts.filter(a => a.testId === mock.id);
+            const bestAttempt  = pastAttempts.length > 0
+                ? pastAttempts.reduce((best, a) => a.score > best.score ? a : best, pastAttempts[0])
+                : null;
+
+            const attemptedHtml = bestAttempt
+                ? `<div class="card-best-score"><i class="fa-solid fa-medal"></i> Best: <strong>${bestAttempt.score.toFixed(1)} / ${bestAttempt.maxScore}</strong> &middot; ${bestAttempt.accuracy.toFixed(0)}% acc</div>`
+                : `<div class="card-not-attempted"><i class="fa-regular fa-circle-dot"></i> Not attempted</div>`;
+
+            card.innerHTML = `
+                <h4>${mock.name}</h4>
+                <div class="meta-details">
+                    <div class="meta-row"><i class="fa-regular fa-clock"></i> ${mock.duration} min</div>
+                    <div class="meta-row"><i class="fa-solid fa-list-check"></i> ${Object.keys(mock.questions).length} Qs</div>
+                    <div class="meta-row"><i class="fa-solid fa-layer-group"></i> ${Object.keys(mock.sections).join(' · ')}</div>
+                </div>
+                ${attemptedHtml}
+                <div class="card-actions">
+                    <button class="action-btn secondary btn-start" data-id="${mock.id}" data-mode="practice">Practice</button>
+                    <button class="action-btn primary btn-start"   data-id="${mock.id}" data-mode="timed">Exam Mode</button>
+                </div>
+            `;
+            cardsWrapper.appendChild(card);
+        });
     });
 
     grid.querySelectorAll('.btn-start').forEach(btn => {
@@ -843,65 +994,51 @@ function renderLibrary() {
         });
     });
 
-    renderScoreboard();
+    updateSidebarScoreboard();
 }
 
 // --------------------------------------------------------------------------
-// SCOREBOARD — left sidebar showing all past attempts with percentile
+// SIDEBAR SCOREBOARD
 // --------------------------------------------------------------------------
-function renderScoreboard() {
-    const summaryEl = document.getElementById('scoreboard-summary');
-    const listEl    = document.getElementById('scoreboard-list');
-    if (!summaryEl || !listEl) return;
+function updateSidebarScoreboard() {
+    const totalEl   = document.getElementById('sb-total');
+    const avgEl     = document.getElementById('sb-avg');
+    const bestEl    = document.getElementById('sb-best');
+    const listEl    = document.getElementById('sb-sidebar-list');
+    if (!listEl) return;
 
     const attempts = [...state.attempts].sort((a, b) => new Date(b.date) - new Date(a.date));
 
+    if (totalEl) totalEl.textContent = attempts.length;
+
     if (attempts.length === 0) {
-        summaryEl.innerHTML = `<div class="scoreboard-empty"><i class="fa-solid fa-chart-bar"></i><p>No tests taken yet.<br>Complete a mock to see your scores here.</p></div>`;
-        listEl.innerHTML = '';
+        if (avgEl) avgEl.textContent = '—';
+        if (bestEl) bestEl.textContent = '—';
+        listEl.innerHTML = '<div class="sb-empty-msg">No tests taken yet</div>';
         return;
     }
 
-    const avgScore  = attempts.reduce((s, a) => s + a.accuracy, 0) / attempts.length;
-    const totalFull = attempts.filter(a => !['sectional','daily','pdf'].includes(a.category)).length;
-    const totalSect = attempts.filter(a => a.category === 'sectional').length;
-
-    summaryEl.innerHTML = `
-        <div class="sb-stat"><span class="sb-stat-val">${attempts.length}</span><span class="sb-stat-lbl">Total</span></div>
-        <div class="sb-stat"><span class="sb-stat-val">${avgScore.toFixed(0)}%</span><span class="sb-stat-lbl">Avg Acc</span></div>
-        <div class="sb-stat"><span class="sb-stat-val">${totalFull}</span><span class="sb-stat-lbl">Full</span></div>
-        <div class="sb-stat"><span class="sb-stat-val">${totalSect}</span><span class="sb-stat-lbl">Sect</span></div>
-    `;
+    const avgAcc = attempts.reduce((s, a) => s + a.accuracy, 0) / attempts.length;
+    const best   = attempts.reduce((b, a) => a.score > b.score ? a : b, attempts[0]);
+    if (avgEl)  avgEl.textContent  = avgAcc.toFixed(0) + '%';
+    if (bestEl) bestEl.textContent = best.score.toFixed(0);
 
     listEl.innerHTML = '';
-    attempts.forEach(att => {
-        // Percentile among same mock attempts
-        const peers  = state.attempts.filter(a => a.testId === att.testId);
-        const beaten = peers.filter(a => a.score < att.score).length;
-        const pct    = peers.length > 1 ? Math.round((beaten / (peers.length - 1)) * 100) : 100;
+    attempts.slice(0, 20).forEach(att => {
+        const peers   = state.attempts.filter(a => a.testId === att.testId);
+        const beaten  = peers.filter(a => a.score < att.score).length;
+        const pct     = peers.length > 1 ? Math.round((beaten / (peers.length - 1)) * 100) : 100;
         const pctClass = pct >= 90 ? 'excellent' : pct >= 75 ? 'good' : pct >= 50 ? 'average' : 'low';
 
-        let sectionHtml = '';
-        if (att.sectionalReport && att.sectionalReport.length > 0) {
-            sectionHtml = att.sectionalReport.map(r =>
-                `<span class="sb-sec">${r.section.substring(0,4)}: <strong>${r.score.toFixed(0)}</strong></span>`
-            ).join('');
-        }
-
         const row = document.createElement('div');
-        row.className = 'scoreboard-item';
+        row.className = 'sb-row';
         row.innerHTML = `
-            <div class="sb-item-top">
-                <div class="sb-name" title="${att.testName}">${att.testName}</div>
-                <div class="sb-percentile ${pctClass}">${pct}th %ile</div>
+            <div class="sb-row-name" title="${att.testName}">${att.testName}</div>
+            <div class="sb-row-meta">
+                <span class="sb-row-score">${att.score.toFixed(0)}/${att.maxScore}</span>
+                <span class="sb-pct-badge ${pctClass}">${pct}%ile</span>
             </div>
-            <div class="sb-item-scores">
-                <span class="sb-score">${att.score.toFixed(1)} / ${att.maxScore}</span>
-                <span class="sb-acc">${att.accuracy.toFixed(0)}% acc</span>
-                <span class="sb-mode">${att.mode}</span>
-            </div>
-            ${sectionHtml ? `<div class="sb-sections">${sectionHtml}</div>` : ''}
-            <div class="sb-date">${att.date}</div>
+            <div class="sb-row-date">${att.date}</div>
         `;
         listEl.appendChild(row);
     });
