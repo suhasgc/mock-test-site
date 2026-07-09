@@ -125,11 +125,7 @@
                 </div>
                 <div class="header-actions">
                     <span class="date-widget" id="date-widget">Wednesday, July 8, 2026</span>
-                    <div class="action-buttons">
-                        <button class="action-btn secondary" id="btn-import-html">
-                            <i class="fa-solid fa-file-import"></i> Import HTML Mock
-                        </button>
-                    </div>
+
                     <input type="file" id="html-file-picker" accept=".html" style="display: none;">
                 </div>
             </header>
@@ -309,7 +305,7 @@
                                             <th>Section Scores (VARC / DILR / QA)</th>
                                             <th>Total Marks</th>
                                             <th>Accuracy</th>
-                                            <th>Proctor Violations</th>
+                                            <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -521,7 +517,7 @@
                 <div class="results-stat-card">
                     <span class="label">Exam Mode</span>
                     <h2 class="value" id="res-mode">Timed</h2>
-                    <span class="footer-desc text-danger" id="res-infractions">Tab switches: 0</span>
+                    <span class="footer-desc" id="res-infractions">Status: Completed</span>
                 </div>
             </div>
 
@@ -758,7 +754,7 @@
     </div>
 
     <!-- CORE SCRIPTS -->
-    <script type="module" src="app.js?v=1.2.0"></script>
+    <script type="module" src="app.js?v=1.2.1"></script>
 </body>
 </html>
 

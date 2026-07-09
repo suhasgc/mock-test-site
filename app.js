@@ -2045,7 +2045,7 @@ function showResultsPage(record, mock) {
     document.getElementById('res-avg-time').textContent = `Avg. time per question: ${avgSecs}s`;
     
     document.getElementById('res-mode').textContent = record.mode === 'timed' ? 'Strict Timed' : 'Practice (Untimed)';
-    document.getElementById('res-infractions').textContent = `Proctor warnings: ${record.infractions}`;
+    document.getElementById('res-infractions').textContent = `Status: Checked`;
     
     // Estimated percentile mockup based on score ratio
     const scoreRatio = record.score / record.maxScore;
@@ -2552,7 +2552,7 @@ function renderAttemptsHistoryTable() {
             <td>${sectionScoresHtml}</td>
             <td><strong>${att.score.toFixed(2)} / ${att.maxScore}</strong></td>
             <td>${att.accuracy.toFixed(1)}%</td>
-            <td style="color:var(--danger)">${att.infractions} flags</td>
+            <td>—</td>
             <td>
                 <button class="action-btn primary small btn-view-report" data-id="${att.attemptId}">
                     View Scorecard
@@ -2854,36 +2854,7 @@ function initCalculator() {
 // AI PROCTORING SIMULATION CORE
 // ==========================================================================
 function initProctoring() {
-    // Focus lost listener
-    document.addEventListener('visibilitychange', () => {
-        const run = state.runningTest;
-        if (run.testId && run.mode === 'timed' && document.visibilityState === 'hidden') {
-            run.infractions++;
-            logProctorInfraction("Infraction: Focus switched away from exam console window!");
-        }
-    });
-    
-    // Fullscreen changed listener
-    document.addEventListener('fullscreenchange', () => {
-        const run = state.runningTest;
-        if (run.testId && run.mode === 'timed') {
-            const isFull = !!document.fullscreenElement;
-            if (!isFull) {
-                run.infractions++;
-                logProctorInfraction("Infraction: Exited fullscreen mode!");
-                
-                // Show warn modal
-                if (run.infractions >= 3) {
-                    alert("Proctor Strike 3: Maximum window changes exceeded. Your scorecard is auto-submitting now.");
-                    submitExamConsole();
-                } else {
-                    alert(`PROCTOR INFRACTION WARNING (${run.infractions}/3 STRIKES):\n\nYou must remain in fullscreen mode. Please return to fullscreen. Strike 3 will submit the test.`);
-                    // Attempt back to fullscreen
-                    requestFullscreenConsole();
-                }
-            }
-        }
-    });
+    // Proctoring disabled per user request
 }
 
 function logProctorInfraction(msg) {
