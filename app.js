@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initImporter();
     initProctoring();
     initSplitter();
+    preloadMocks();
 });
 
 // Load stats and values from localStorage
@@ -93,6 +94,47 @@ function loadDatabase() {
         state.errors = [];
     }
     updateGlobalBadges();
+}
+
+// Fetch and load heavy offline mocks automatically
+function preloadMocks() {
+    fetch('simcat19_data.json')
+        .then(res => {
+            if (!res.ok) throw new Error("HTTP error " + res.status);
+            return res.json();
+        })
+        .then(data => {
+            const duration = data.sections && Object.keys(data.sections).length * 40 || 120;
+            const sectionTimes = {};
+            if (data.sections) {
+                Object.keys(data.sections).forEach(secName => {
+                    sectionTimes[secName] = 40;
+                });
+            }
+            
+            const mockObject = {
+                id: "simcat-19-2025",
+                name: data.name,
+                type: 'cat',
+                description: `Official SimCAT 19 offline mock containing ${Object.keys(data.questions).length} questions across ${Object.keys(data.sections).length} sections.`,
+                duration: duration,
+                isSectionalTimed: true,
+                sections: data.sections,
+                sectionTimes: sectionTimes,
+                questions: data.questions
+            };
+            
+            if (!state.mocks.some(m => m.id === mockObject.id)) {
+                state.mocks.push(mockObject);
+            }
+            
+            // Re-render views if they are active
+            if (state.activeView === 'library') renderLibrary();
+            if (state.activeView === 'dashboard') renderDashboardMocks();
+        })
+        .catch(err => {
+            console.warn("Could not preload SimCAT 19:", err);
+        });
 }
 
 function saveDatabase() {
