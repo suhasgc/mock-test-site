@@ -152,20 +152,61 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- VIEW: MOCK LIBRARY -->
                 <section class="view-panel" id="view-library">
-                    <div class="library-header">
-                        <div class="filter-bar">
-                            <button class="filter-btn active" data-exam-filter="all">All Exams</button>
-                            <button class="filter-btn" data-exam-filter="cat">CAT Mocks</button>
-                            <button class="filter-btn" data-exam-filter="xat">XAT Mocks</button>
-                            <button class="filter-btn" data-exam-filter="pdf">PDF OMR templates</button>
-                        </div>
-                    </div>
+                    <div class="library-layout">
 
-                    <div class="library-grid" id="library-mocks-grid">
-                        <!-- Rendered by app.js -->
+                        <!-- LEFT: Scoreboard Panel -->
+                        <aside class="library-scoreboard" id="library-scoreboard">
+                            <div class="scoreboard-header">
+                                <i class="fa-solid fa-trophy"></i>
+                                <h3>Scoreboard</h3>
+                            </div>
+                            <div class="scoreboard-summary" id="scoreboard-summary">
+                                <!-- Filled by JS -->
+                            </div>
+                            <div class="scoreboard-list" id="scoreboard-list">
+                                <!-- Filled by JS -->
+                            </div>
+                        </aside>
+
+                        <!-- RIGHT: Mock Library Content -->
+                        <div class="library-main">
+                            <!-- Top Filter Bar (All / CAT / XAT / PDF) -->
+                            <div class="library-header">
+                                <div class="filter-bar">
+                                    <button class="filter-btn active" data-exam-filter="all">All Exams</button>
+                                    <button class="filter-btn" data-exam-filter="cat">CAT Mocks</button>
+                                    <button class="filter-btn" data-exam-filter="xat">XAT Mocks</button>
+                                    <button class="filter-btn" data-exam-filter="pdf">PDF OMR</button>
+                                </div>
+                            </div>
+
+                            <!-- Section Tabs: Full / Sectional / Daily / PDF -->
+                            <div class="library-section-tabs">
+                                <button class="section-tab active" data-section-tab="full">
+                                    <i class="fa-solid fa-file-lines"></i> Full Mocks
+                                    <span class="tab-count" id="tab-count-full">0</span>
+                                </button>
+                                <button class="section-tab" data-section-tab="sectional">
+                                    <i class="fa-solid fa-layer-group"></i> Sectional
+                                    <span class="tab-count" id="tab-count-sectional">0</span>
+                                </button>
+                                <button class="section-tab" data-section-tab="daily">
+                                    <i class="fa-solid fa-calendar-day"></i> Daily Drills
+                                    <span class="tab-count" id="tab-count-daily">0</span>
+                                </button>
+                                <button class="section-tab" data-section-tab="pdf">
+                                    <i class="fa-solid fa-file-pdf"></i> PDF OMR
+                                    <span class="tab-count" id="tab-count-pdf">0</span>
+                                </button>
+                            </div>
+
+                            <!-- Grid rendered by JS -->
+                            <div class="library-grid" id="library-mocks-grid">
+                                <!-- Rendered by app.js -->
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -696,6 +737,7 @@
     </div>
 
     <!-- CORE SCRIPTS -->
-    <script type="module" src="app.js?v=1.0.7"></script>
+    <script type="module" src="app.js?v=1.0.8"></script>
 </body>
 </html>
+

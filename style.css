@@ -546,16 +546,208 @@ a {
 }
 
 /* ==========================================================================
-   VIEW: MOCK LIBRARY
+   VIEW: MOCK LIBRARY — Layout, Tabs, Scoreboard, Cards
    ========================================================================== */
+
+/* Two-column layout: scoreboard sidebar + main content */
+.library-layout {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    gap: 24px;
+    flex: 1;
+    align-items: start;
+}
+
+/* ── Scoreboard Sidebar ── */
+.library-scoreboard {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    overflow: hidden;
+    position: sticky;
+    top: 90px;
+    max-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+}
+
+.scoreboard-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 20px 14px;
+    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(135deg, rgba(var(--primary-rgb),0.12), rgba(var(--primary-rgb),0.04));
+}
+.scoreboard-header i {
+    color: #fbbf24;
+    font-size: 1.1rem;
+}
+.scoreboard-header h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Summary stats row */
+.scoreboard-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 14px 16px;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+.sb-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.sb-stat-val {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--primary);
+}
+.sb-stat-lbl {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* Scrollable attempt list */
+.scoreboard-list {
+    overflow-y: auto;
+    flex: 1;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.scoreboard-empty {
+    padding: 30px 16px;
+    text-align: center;
+    color: var(--text-muted);
+}
+.scoreboard-empty i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--border-color);
+}
+.scoreboard-empty p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Each attempt row in scoreboard */
+.scoreboard-item {
+    background-color: var(--bg-app);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: var(--transition);
+}
+.scoreboard-item:hover {
+    border-color: var(--primary);
+    background-color: rgba(var(--primary-rgb), 0.03);
+}
+
+.sb-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6px;
+}
+.sb-name {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 155px;
+}
+.sb-percentile {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.sb-percentile.excellent { background: rgba(16,185,129,0.15); color: var(--success); }
+.sb-percentile.good      { background: rgba(99,102,241,0.15); color: var(--primary); }
+.sb-percentile.average   { background: rgba(245,158,11,0.15); color: var(--warning); }
+.sb-percentile.low       { background: rgba(239,68,68,0.15);  color: var(--danger);  }
+
+.sb-item-scores {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sb-score {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+}
+.sb-acc, .sb-mode {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+.sb-mode {
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: rgba(var(--primary-rgb), 0.08);
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.sb-sections {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+.sb-sec {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    padding: 1px 5px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+.sb-date {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+/* ── Library Main Column ── */
+.library-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-width: 0;
+}
+
 .library-header {
-    margin-bottom: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .filter-bar {
     display: flex;
     gap: 10px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 12px;
+    margin-bottom: 16px;
 }
 .filter-btn {
     padding: 8px 16px;
@@ -574,16 +766,66 @@ a {
     color: var(--text-primary);
 }
 
+/* ── Section Tabs ── */
+.library-section-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.section-tab {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.88rem;
+    transition: var(--transition);
+    background: transparent;
+}
+.section-tab i {
+    font-size: 0.85rem;
+}
+.section-tab:hover:not(.active) {
+    border-color: var(--primary);
+    color: var(--text-primary);
+}
+.section-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 2px 12px rgba(var(--primary-rgb), 0.35);
+}
+.tab-count {
+    background: rgba(255,255,255,0.18);
+    color: inherit;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: 20px;
+    min-width: 20px;
+    text-align: center;
+}
+.section-tab:not(.active) .tab-count {
+    background: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary);
+}
+
+/* ── Mock Card Grid ── */
 .library-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 18px;
 }
 .library-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 24px;
+    padding: 22px;
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow);
@@ -594,51 +836,83 @@ a {
 .library-card:hover {
     transform: translateY(-4px);
     border-color: var(--primary);
+    box-shadow: 0 8px 30px rgba(var(--primary-rgb), 0.12);
 }
+
+/* Type badges */
 .library-card .exam-type-badge {
     position: absolute;
     top: 14px;
     right: 14px;
     padding: 3px 8px;
     border-radius: 20px;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
 }
-.library-card .exam-type-badge.cat { background-color: rgba(99, 102, 241, 0.15); color: #818cf8; }
-.library-card .exam-type-badge.xat { background-color: rgba(245, 158, 11, 0.15); color: #fbbf24; }
-.library-card .exam-type-badge.pdf { background-color: rgba(6, 182, 212, 0.15); color: #22d3ee; }
+.library-card .exam-type-badge.cat       { background-color: rgba(99,102,241,0.15);  color: #818cf8; }
+.library-card .exam-type-badge.xat       { background-color: rgba(245,158,11,0.15);  color: #fbbf24; }
+.library-card .exam-type-badge.pdf       { background-color: rgba(6,182,212,0.15);   color: #22d3ee; }
+.library-card .exam-type-badge.sectional { background-color: rgba(16,185,129,0.15);  color: #34d399; }
+.library-card .exam-type-badge.daily     { background-color: rgba(168,85,247,0.15);  color: #c084fc; }
 
 .library-card h4 {
-    font-size: 1.15rem;
-    margin-bottom: 8px;
-    margin-right: 50px;
+    font-size: 1.05rem;
+    margin-bottom: 7px;
+    margin-right: 55px;
+    line-height: 1.3;
 }
 .library-card .description {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: var(--text-secondary);
     flex: 1;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    line-height: 1.5;
 }
 .library-card .meta-details {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    margin-bottom: 20px;
+    gap: 5px;
+    margin-bottom: 14px;
     border-top: 1px solid var(--border-color);
-    padding-top: 12px;
-    font-size: 0.85rem;
+    padding-top: 10px;
+    font-size: 0.8rem;
     color: var(--text-muted);
 }
 .library-card .meta-row {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
+}
+.card-best-score {
+    background: rgba(var(--success-rgb), 0.07);
+    border: 1px solid rgba(var(--success-rgb), 0.2);
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: 0.78rem;
+    color: var(--success);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.card-not-attempted {
+    background: rgba(var(--primary-rgb), 0.04);
+    border: 1px dashed var(--border-color);
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 .library-card .card-actions {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 8px;
+    margin-top: auto;
 }
 
 /* ==========================================================================

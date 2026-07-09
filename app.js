@@ -726,68 +726,184 @@ function renderDashboardActivity() {
 // ==========================================================================
 // MOCK LIBRARY RENDERING
 // ==========================================================================
+
+// Library state — active exam filter and active section tab
+const libraryState = { filter: 'all', tab: 'full' };
+
 function initLibrary() {
+    // Exam-type filter buttons (All / CAT / XAT / PDF)
     const filterBtns = document.querySelectorAll('[data-exam-filter]');
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            renderLibrary(btn.getAttribute('data-exam-filter'));
+            libraryState.filter = btn.getAttribute('data-exam-filter');
+            renderLibrary();
+        });
+    });
+
+    // Section tab buttons (Full / Sectional / Daily / PDF)
+    const tabBtns = document.querySelectorAll('[data-section-tab]');
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            libraryState.tab = btn.getAttribute('data-section-tab');
+            renderLibrary();
         });
     });
 }
 
-function renderLibrary(filter = 'all') {
+function renderLibrary() {
     const grid = document.getElementById('library-mocks-grid');
     if (!grid) return;
-    grid.innerHTML = '';
-    
-    let filteredMocks = state.mocks;
-    if (filter === 'cat') filteredMocks = state.mocks.filter(m => m.type === 'cat' && m.category !== 'pdf');
-    else if (filter === 'xat') filteredMocks = state.mocks.filter(m => m.type === 'xat' && m.category !== 'pdf');
-    else if (filter === 'pdf') filteredMocks = state.mocks.filter(m => m.category === 'pdf');
-    
-    // Sort imported / pdf at the top
+
+    const { filter, tab } = libraryState;
+
+    // Step 1: apply exam-type filter (all / cat / xat / pdf)
+    let base = state.mocks;
+    if (filter === 'cat')       base = state.mocks.filter(m => m.type === 'cat' && m.category !== 'pdf');
+    else if (filter === 'xat')  base = state.mocks.filter(m => m.type === 'xat' && m.category !== 'pdf');
+    else if (filter === 'pdf')  base = state.mocks.filter(m => m.category === 'pdf');
+
+    // Step 2: update tab counts based on filtered base
+    const countFull      = base.filter(m => !['sectional','daily','pdf'].includes(m.category)).length;
+    const countSectional = base.filter(m => m.category === 'sectional').length;
+    const countDaily     = base.filter(m => m.category === 'daily').length;
+    const countPdf       = base.filter(m => m.category === 'pdf').length;
+    const setCount = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+    setCount('tab-count-full',      countFull);
+    setCount('tab-count-sectional', countSectional);
+    setCount('tab-count-daily',     countDaily);
+    setCount('tab-count-pdf',       countPdf);
+
+    // Step 3: apply section tab filter
+    let filteredMocks;
+    if (tab === 'full')           filteredMocks = base.filter(m => !['sectional','daily','pdf'].includes(m.category));
+    else if (tab === 'sectional') filteredMocks = base.filter(m => m.category === 'sectional');
+    else if (tab === 'daily')     filteredMocks = base.filter(m => m.category === 'daily');
+    else if (tab === 'pdf')       filteredMocks = base.filter(m => m.category === 'pdf');
+    else                          filteredMocks = base;
+
+    // Sort by id descending
     filteredMocks.sort((a, b) => b.id.toString().localeCompare(a.id.toString()));
-    
+
+    grid.innerHTML = '';
+
     if (filteredMocks.length === 0) {
-        grid.innerHTML = '<div class="no-data" style="grid-column: span 3; padding: 40px; text-align: center; color: var(--text-secondary);">No mock tests found matching this category.</div>';
+        grid.innerHTML = '<div class="no-data" style="grid-column:span 3;padding:40px;text-align:center;color:var(--text-secondary);">No mock tests found in this section.</div>';
+        renderScoreboard();
         return;
     }
-    
+
     filteredMocks.forEach(mock => {
         const card = document.createElement('div');
         card.className = 'library-card';
-        
-        let typeBadge = `<span class="exam-type-badge ${mock.type}">${mock.type}</span>`;
-        if (mock.category === 'pdf') typeBadge = `<span class="exam-type-badge pdf">PDF</span>`;
-        else if (mock.category === 'sectional') typeBadge = `<span class="exam-type-badge cat">Sectional</span>`;
-        else if (mock.category === 'daily') typeBadge = `<span class="exam-type-badge cat">Daily Drill</span>`;
-        
+
+        // Badge
+        let typeBadge = `<span class="exam-type-badge ${mock.type}">${mock.type.toUpperCase()}</span>`;
+        if (mock.category === 'pdf')       typeBadge = `<span class="exam-type-badge pdf">PDF</span>`;
+        else if (mock.category === 'sectional') typeBadge = `<span class="exam-type-badge sectional">Sectional</span>`;
+        else if (mock.category === 'daily')     typeBadge = `<span class="exam-type-badge daily">Daily</span>`;
+
+        // Best attempt badge
+        const pastAttempts = state.attempts.filter(a => a.testId === mock.id);
+        const bestAttempt  = pastAttempts.length > 0
+            ? pastAttempts.reduce((best, a) => a.score > best.score ? a : best, pastAttempts[0])
+            : null;
+
+        const attemptedHtml = bestAttempt
+            ? `<div class="card-best-score"><i class="fa-solid fa-medal"></i> Best: <strong>${bestAttempt.score.toFixed(1)} / ${bestAttempt.maxScore}</strong> &nbsp;&middot;&nbsp; ${bestAttempt.accuracy.toFixed(0)}% acc</div>`
+            : `<div class="card-not-attempted"><i class="fa-regular fa-circle"></i> Not attempted</div>`;
+
         card.innerHTML = `
             ${typeBadge}
             <h4>${mock.name}</h4>
             <p class="description">${mock.description}</p>
             <div class="meta-details">
-                <div class="meta-row"><i class="fa-regular fa-clock"></i> Duration: ${mock.duration} minutes</div>
-                <div class="meta-row"><i class="fa-solid fa-list-check"></i> Questions: ${Object.keys(mock.questions).length} total</div>
-                <div class="meta-row"><i class="fa-solid fa-layer-group"></i> Sections: ${Object.keys(mock.sections).join(', ')}</div>
+                <div class="meta-row"><i class="fa-regular fa-clock"></i> ${mock.duration} minutes</div>
+                <div class="meta-row"><i class="fa-solid fa-list-check"></i> ${Object.keys(mock.questions).length} questions</div>
+                <div class="meta-row"><i class="fa-solid fa-layer-group"></i> ${Object.keys(mock.sections).join(', ')}</div>
             </div>
+            ${attemptedHtml}
             <div class="card-actions">
-                <button class="action-btn secondary btn-start" data-id="${mock.id}" data-mode="practice">Practice Mode</button>
-                <button class="action-btn primary btn-start" data-id="${mock.id}" data-mode="timed">Exam Mode</button>
+                <button class="action-btn secondary btn-start" data-id="${mock.id}" data-mode="practice">Practice</button>
+                <button class="action-btn primary btn-start"   data-id="${mock.id}" data-mode="timed">Exam Mode</button>
             </div>
         `;
         grid.appendChild(card);
     });
-    
+
     grid.querySelectorAll('.btn-start').forEach(btn => {
         btn.addEventListener('click', () => {
-            const id = btn.getAttribute('data-id');
+            const id   = btn.getAttribute('data-id');
             const mode = btn.getAttribute('data-mode');
             const targetMock = state.mocks.find(m => m.id === id);
             if (targetMock) promptTestStart(targetMock, mode);
         });
+    });
+
+    renderScoreboard();
+}
+
+// --------------------------------------------------------------------------
+// SCOREBOARD — left sidebar showing all past attempts with percentile
+// --------------------------------------------------------------------------
+function renderScoreboard() {
+    const summaryEl = document.getElementById('scoreboard-summary');
+    const listEl    = document.getElementById('scoreboard-list');
+    if (!summaryEl || !listEl) return;
+
+    const attempts = [...state.attempts].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    if (attempts.length === 0) {
+        summaryEl.innerHTML = `<div class="scoreboard-empty"><i class="fa-solid fa-chart-bar"></i><p>No tests taken yet.<br>Complete a mock to see your scores here.</p></div>`;
+        listEl.innerHTML = '';
+        return;
+    }
+
+    const avgScore  = attempts.reduce((s, a) => s + a.accuracy, 0) / attempts.length;
+    const totalFull = attempts.filter(a => !['sectional','daily','pdf'].includes(a.category)).length;
+    const totalSect = attempts.filter(a => a.category === 'sectional').length;
+
+    summaryEl.innerHTML = `
+        <div class="sb-stat"><span class="sb-stat-val">${attempts.length}</span><span class="sb-stat-lbl">Total</span></div>
+        <div class="sb-stat"><span class="sb-stat-val">${avgScore.toFixed(0)}%</span><span class="sb-stat-lbl">Avg Acc</span></div>
+        <div class="sb-stat"><span class="sb-stat-val">${totalFull}</span><span class="sb-stat-lbl">Full</span></div>
+        <div class="sb-stat"><span class="sb-stat-val">${totalSect}</span><span class="sb-stat-lbl">Sect</span></div>
+    `;
+
+    listEl.innerHTML = '';
+    attempts.forEach(att => {
+        // Percentile among same mock attempts
+        const peers  = state.attempts.filter(a => a.testId === att.testId);
+        const beaten = peers.filter(a => a.score < att.score).length;
+        const pct    = peers.length > 1 ? Math.round((beaten / (peers.length - 1)) * 100) : 100;
+        const pctClass = pct >= 90 ? 'excellent' : pct >= 75 ? 'good' : pct >= 50 ? 'average' : 'low';
+
+        let sectionHtml = '';
+        if (att.sectionalReport && att.sectionalReport.length > 0) {
+            sectionHtml = att.sectionalReport.map(r =>
+                `<span class="sb-sec">${r.section.substring(0,4)}: <strong>${r.score.toFixed(0)}</strong></span>`
+            ).join('');
+        }
+
+        const row = document.createElement('div');
+        row.className = 'scoreboard-item';
+        row.innerHTML = `
+            <div class="sb-item-top">
+                <div class="sb-name" title="${att.testName}">${att.testName}</div>
+                <div class="sb-percentile ${pctClass}">${pct}th %ile</div>
+            </div>
+            <div class="sb-item-scores">
+                <span class="sb-score">${att.score.toFixed(1)} / ${att.maxScore}</span>
+                <span class="sb-acc">${att.accuracy.toFixed(0)}% acc</span>
+                <span class="sb-mode">${att.mode}</span>
+            </div>
+            ${sectionHtml ? `<div class="sb-sections">${sectionHtml}</div>` : ''}
+            <div class="sb-date">${att.date}</div>
+        `;
+        listEl.appendChild(row);
     });
 }
 
