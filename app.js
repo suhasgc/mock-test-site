@@ -172,6 +172,26 @@ function preloadMocks() {
                 console.warn(`Could not preload ${file}:`, err);
             });
     });
+    
+    // Fetch TIME OMR PDF Mocks
+    fetch('time_mocks_data.json')
+        .then(res => {
+            if (!res.ok) throw new Error("HTTP error " + res.status);
+            return res.json();
+        })
+        .then(dataList => {
+            dataList.forEach(mockObject => {
+                if (!state.mocks.some(m => m.id === mockObject.id)) {
+                    state.mocks.push(mockObject);
+                }
+            });
+            // Re-render views if active
+            if (state.activeView === 'library') renderLibrary();
+            if (state.activeView === 'dashboard') renderDashboardMocks();
+        })
+        .catch(err => {
+            console.warn("Could not preload TIME OMR PDF mocks:", err);
+        });
 }
 
 function saveDatabase() {
@@ -952,6 +972,22 @@ function loadConsoleQuestion() {
     document.getElementById('current-q-num').textContent = (run.currentQuestionIndex + 1).toString();
     document.getElementById('q-positive-mark').textContent = `+${question.marks} Correct`;
     document.getElementById('q-negative-mark').textContent = `-${question.negative_marks} Incorrect`;
+    
+    // Update PDF Split-Screen source if sectional PDF is defined
+    if (mock.category === 'pdf' && mock.pdfFiles && mock.pdfFiles[run.currentSection]) {
+        const iframe = document.getElementById('pdf-iframe');
+        const placeholder = document.getElementById('pdf-placeholder');
+        const fileNameLabel = document.getElementById('loaded-pdf-name');
+        
+        const targetPdf = mock.pdfFiles[run.currentSection];
+        // Only update if it is different to prevent iframe reloading/flickering
+        if (iframe && iframe.src !== window.location.origin + '/' + targetPdf && iframe.getAttribute('src') !== targetPdf) {
+            iframe.src = targetPdf;
+            iframe.style.display = 'block';
+            if (placeholder) placeholder.style.display = 'none';
+            if (fileNameLabel) fileNameLabel.textContent = `TIME Mock Section: ${run.currentSection}`;
+        }
+    }
     
     // Set Question Context passage
     const passageViewer = document.getElementById('passage-body-content');
