@@ -225,12 +225,14 @@ function handleHTMLImport(e) {
     reader.onload = function(evt) {
         const text = evt.target.result;
         
-        // Find testData JSON in the HTML code robustly
-        const startKey = 'const testData =';
-        const startIdx = text.indexOf(startKey);
+        // Find testData JSON in the HTML code robustly using flexible regex
+        const regex = /(?:const|let|var|window\.)?\s*testData\s*=\s*/;
+        const match = text.match(regex);
         
-        if (startIdx !== -1) {
-            const braceIdx = text.indexOf('{', startIdx);
+        if (match) {
+            const startIdx = match.index;
+            const braceIdx = text.indexOf('{', startIdx + match[0].length - 2);
+            
             if (braceIdx !== -1) {
                 let braces = 1;
                 let endIdx = braceIdx + 1;
@@ -265,15 +267,18 @@ function handleHTMLImport(e) {
                         importMockData(parsed);
                         return;
                     } catch (parseErr) {
-                        alert("Import Error: Found the testData code block, but could not parse the JSON structure correctly. It may be corrupted.");
+                        alert("Import Error: Found the testData block, but failed to parse JSON: " + parseErr.message);
                         console.error(parseErr);
                         return;
                     }
+                } else {
+                    alert("Import Error: Found 'testData = {', but could not find the matching closing brace. The file may be truncated.");
+                    return;
                 }
             }
         }
         
-        alert("Import Error: Could not locate 'const testData = { ... }' in the HTML file structure. Ensure this is an offline mock HTML file.");
+        alert("Import Error: Could not locate 'testData = { ... }' in this HTML file. Please verify it is a valid offline mock HTML file.");
     };
     reader.readAsText(file);
 }
