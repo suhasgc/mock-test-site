@@ -101,13 +101,20 @@ function preloadMocks() {
         'simcat19_data.json',
         'simcat18_data.json',
         'simcat17_data.json',
+        'simcat16_data.json',
+        'simcat15_data.json',
+        'simcat13_data.json',
+        'simcat12_data.json',
         'simcat11_data.json',
         'simcat9_data.json',
         'simcat8_data.json',
         'simcat7_data.json',
         'simcat6_data.json',
         'simcat5_data.json',
-        'simcat4_data.json'
+        'simcat4_data.json',
+        'simcat3_data.json',
+        'simcat2_data.json',
+        'simcat1_data.json'
     ];
     
     mockFiles.forEach(file => {
