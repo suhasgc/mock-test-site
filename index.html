@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theMBAroom - Premium Mock Test & Practice Engine</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar-nav" id="sidebar-nav">
+            <div class="brand-logo">
+                <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span class="logo-text">the<span>MBA</span>room</span>
+            </div>
+            
+            <nav class="nav-links">
+                <button class="nav-item active" data-view="dashboard">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-item" data-view="library">
+                    <i class="fa-solid fa-cubes"></i>
+                    <span>Mock Library</span>
+                </button>
+                <button class="nav-item" data-view="error-log">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>Error Log</span>
+                    <span class="badge" id="error-badge">0</span>
+                </button>
+                <button class="nav-item" data-view="analytics">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Analytics</span>
+                </button>
+            </nav>
+
+            <div class="user-profile-widget">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Candidate Photo" class="user-avatar" id="sidebar-avatar">
+                <div class="user-info">
+                    <span class="user-name" id="profile-name">Suhas R.</span>
+                    <span class="user-role">CAT 2026 Aspirant</span>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle-btn" id="global-theme-toggle">
+                    <i class="fa-solid fa-sun icon-light"></i>
+                    <i class="fa-solid fa-moon icon-dark"></i>
+                    <span id="theme-text">Toggle Theme</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="main-content">
+            <!-- HEADER -->
+            <header class="main-header" id="main-header">
+                <div class="header-search">
+                    <h2>Welcome back, <span id="header-user-name">Suhas</span></h2>
+                    <p class="subtitle" id="header-subtitle">Stay focused. The difference between ordinary and extraordinary is that little extra.</p>
+                </div>
+                <div class="header-actions">
+                    <span class="date-widget" id="date-widget">Wednesday, July 8, 2026</span>
+                    <div class="action-buttons">
+                        <button class="action-btn secondary" id="btn-import-html">
+                            <i class="fa-solid fa-file-import"></i> Import HTML Mock
+                        </button>
+                        <button class="action-btn primary" id="btn-import-pdf">
+                            <i class="fa-solid fa-file-pdf"></i> PDF OMR Mode
+                        </button>
+                    </div>
+                    <input type="file" id="html-file-picker" accept=".html" style="display: none;">
+                </div>
+            </header>
+
+            <!-- VIEWS CONTAINER -->
+            <div class="views-wrapper">
+                
+                <!-- VIEW: DASHBOARD -->
+                <section class="view-panel active" id="view-dashboard">
+                    <!-- Performance Overview Row -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-card-icon indigo"><i class="fa-solid fa-stopwatch"></i></div>
+                            <div class="stat-card-info">
+                                <span class="stat-label">Total Tests Taken</span>
+                                <h3 class="stat-value" id="stat-total-tests">0</h3>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card-icon green"><i class="fa-solid fa-percent"></i></div>
+                            <div class="stat-card-info">
+                                <span class="stat-label">Average Score</span>
+                                <h3 class="stat-value" id="stat-avg-score">0.0%</h3>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card-icon orange"><i class="fa-solid fa-circle-exclamation"></i></div>
+                            <div class="stat-card-info">
+                                <span class="stat-label">Error Log Items</span>
+                                <h3 class="stat-value" id="stat-error-items">0</h3>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card-icon teal"><i class="fa-solid fa-fire"></i></div>
+                            <div class="stat-card-info">
+                                <span class="stat-label">Preparation Streak</span>
+                                <h3 class="stat-value" id="stat-streak">3 days</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layout for dashboard main area -->
+                    <div class="dashboard-body">
+                        <!-- Left Panel: Recent Mocks -->
+                        <div class="dashboard-left">
+                            <div class="section-title-row">
+                                <h3>Recommended Mocks</h3>
+                                <button class="link-btn" id="btn-see-all-mocks">See All Mocks <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                            <div class="mocks-list-compact" id="dashboard-mock-list">
+                                <!-- Dynamic Mock Cards -->
+                            </div>
+
+                            <div class="section-title-row" style="margin-top: 2rem;">
+                                <h3>Recent Activity & Analysis</h3>
+                            </div>
+                            <div class="activity-card glass">
+                                <div id="activity-chart-placeholder" class="chart-container">
+                                    <svg id="activity-svg" class="progress-svg"></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Panel: Error Log Quick View -->
+                        <div class="dashboard-right">
+                            <div class="section-title-row">
+                                <h3>Error Log Snippet</h3>
+                                <button class="link-btn" id="btn-go-to-errors">Go to Error Log <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                            <div class="error-log-snippet-container glass" id="dashboard-error-list">
+                                <!-- Small table or list of incorrect questions -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIEW: MOCK LIBRARY -->
+                <section class="view-panel" id="view-library">
+                    <div class="library-header">
+                        <div class="filter-bar">
+                            <button class="filter-btn active" data-exam-filter="all">All Exams</button>
+                            <button class="filter-btn" data-exam-filter="cat">CAT Mocks</button>
+                            <button class="filter-btn" data-exam-filter="xat">XAT Mocks</button>
+                            <button class="filter-btn" data-exam-filter="pdf">PDF OMR templates</button>
+                        </div>
+                    </div>
+
+                    <div class="library-grid" id="library-mocks-grid">
+                        <!-- Rendered by app.js -->
+                    </div>
+                </section>
+
+                <!-- VIEW: ERROR LOG -->
+                <section class="view-panel" id="view-error-log">
+                    <div class="error-log-container">
+                        <div class="error-log-sidebar">
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="error-search" placeholder="Search error notes...">
+                            </div>
+                            <div class="filter-group">
+                                <label>Exam Source</label>
+                                <select id="error-filter-exam">
+                                    <option value="all">All Mocks</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Section</label>
+                                <select id="error-filter-section">
+                                    <option value="all">All Sections</option>
+                                    <option value="VARC">VARC</option>
+                                    <option value="DILR">DILR</option>
+                                    <option value="QA">QA</option>
+                                    <option value="DM">Decision Making</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Status</label>
+                                <select id="error-filter-status">
+                                    <option value="all">All Statuses</option>
+                                    <option value="reviewing">Reviewing</option>
+                                    <option value="solved">Solved</option>
+                                </select>
+                            </div>
+                            <button class="action-btn danger w-full" id="btn-clear-errors" style="margin-top: 1rem;">
+                                <i class="fa-solid fa-trash-can"></i> Clear All Errors
+                            </button>
+                        </div>
+
+                        <div class="error-log-main">
+                            <div class="error-list-header">
+                                <h3 id="error-count-title">Error Questions (0)</h3>
+                            </div>
+                            <div class="error-cards-wrapper" id="error-cards-container">
+                                <!-- Cards injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIEW: ANALYTICS -->
+                <section class="view-panel" id="view-analytics">
+                    <div class="analytics-layout">
+                        <div class="analytics-stats">
+                            <div class="stat-card glass">
+                                <span class="label">Total Score (Last 5 Mocks)</span>
+                                <div class="chart-container" style="height: 180px;">
+                                    <svg id="analytics-score-trend-svg" class="progress-svg"></svg>
+                                </div>
+                            </div>
+                            <div class="stat-card glass">
+                                <span class="label">Accuracy by Section</span>
+                                <div class="chart-container" style="height: 180px;">
+                                    <svg id="analytics-accuracy-svg" class="progress-svg"></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="attempts-history-wrapper glass" style="margin-top: 1.5rem;">
+                            <h3>Detailed Test History</h3>
+                            <div class="table-wrapper">
+                                <table class="data-table" id="attempts-history-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Test Name</th>
+                                            <th>Mode</th>
+                                            <th>Section Scores (VARC / DILR / QA)</th>
+                                            <th>Total Marks</th>
+                                            <th>Accuracy</th>
+                                            <th>Proctor Violations</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="attempts-history-tbody">
+                                        <!-- Injected by JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- VIEW: EXAM CONSOLE (OVERLAY FULL SCREEN) -->
+    <div class="exam-console-view" id="exam-console" style="display: none;">
+        <!-- Header of CAT/XAT Console -->
+        <header class="exam-console-header">
+            <div class="logo-area">
+                <span class="exam-badge" id="exam-badge-type">CAT MOCK</span>
+                <h2 id="exam-title-display">SimCAT 19 2025</h2>
+            </div>
+            
+            <div class="exam-sections-tabs" id="exam-sections-tabs-container">
+                <!-- Section Tabs generated dynamically -->
+            </div>
+
+            <div class="console-header-right">
+                <div class="proctor-indicator">
+                    <span class="indicator-dot green" id="proctor-dot"></span>
+                    <span id="proctor-status-text">Proctor Active</span>
+                </div>
+                <div class="timer-widget" id="console-timer-widget">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="console-timer-text">00:00:00</span>
+                </div>
+                <button class="utility-btn" id="btn-toggle-calculator" title="Calculator">
+                    <i class="fa-solid fa-calculator"></i>
+                </button>
+                <button class="exit-exam-btn" id="btn-console-submit">
+                    Submit Exam
+                </button>
+            </div>
+        </header>
+
+        <!-- Exam Workspace Area -->
+        <div class="exam-workspace">
+            <!-- LEFT PANEL: Question description / passage / PDF file -->
+            <div class="workspace-panel left-panel" id="console-left-panel">
+                <!-- Default Interactive Passage Area -->
+                <div class="passage-container" id="passage-viewer-container">
+                    <div class="panel-header">Question Context</div>
+                    <div class="passage-body" id="passage-body-content">
+                        <!-- Passage / Context HTML -->
+                    </div>
+                </div>
+
+                <!-- PDF split-screen iframe -->
+                <div class="pdf-viewer-container" id="pdf-viewer-container" style="display: none;">
+                    <div class="panel-header pdf-header">
+                        <span>PDF Mock Document</span>
+                        <div class="pdf-file-selector">
+                            <span class="file-name-label" id="loaded-pdf-name">No PDF Loaded</span>
+                            <button class="action-btn secondary small" id="btn-select-pdf-console">Change PDF</button>
+                        </div>
+                    </div>
+                    <div class="pdf-content-wrapper" id="pdf-content-wrapper">
+                        <!-- Renders PDF using embed or iframe or canvas mock -->
+                        <iframe id="pdf-iframe" class="pdf-iframe" src="" style="width:100%; height:100%; border:none;"></iframe>
+                        <div class="pdf-placeholder-overlay" id="pdf-placeholder">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <p>No PDF file loaded. Drag and drop your downloaded mock PDF here, or select it.</p>
+                            <button class="action-btn primary" id="btn-load-pdf-placeholder">Select Mock PDF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DRAGGABLE SPLITTER -->
+            <div class="workspace-splitter" id="workspace-splitter"></div>
+
+            <!-- RIGHT PANEL: OMR Console / Interactive input -->
+            <div class="workspace-panel right-panel" id="console-right-panel">
+                <div class="question-meta-row">
+                    <span class="q-label">Question <span id="current-q-num">1</span></span>
+                    <div class="marking-badge-row">
+                        <span class="badge positive" id="q-positive-mark">+3 Correct</span>
+                        <span class="badge negative" id="q-negative-mark">-1 Incorrect</span>
+                    </div>
+                </div>
+
+                <div class="question-body-container">
+                    <!-- Interactive Question Text -->
+                    <div class="question-text" id="interactive-question-text">
+                        <!-- HTML text of the question -->
+                    </div>
+
+                    <!-- Answer Options (radio options / TITA / Freehand Drawing Canvas) -->
+                    <div class="question-answer-inputs" id="question-answers-container">
+                        <!-- Generated by app.js based on question type -->
+                    </div>
+                    
+                    <!-- Untimed Mode Solutions Box (Hidden in timed mode) -->
+                    <div class="practice-solution-card glass" id="practice-solution-box" style="display: none;">
+                        <button class="action-btn secondary small" id="btn-reveal-solution">
+                            <i class="fa-solid fa-eye"></i> Reveal Explanation
+                        </button>
+                        <div class="revealed-solution-content" id="revealed-solution-content" style="display: none;">
+                            <!-- Injected by app.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTTOM ACTIONS BAR (Inside Right Panel) -->
+                <div class="question-actions-bar">
+                    <div class="left-actions">
+                        <button class="console-action-btn review" id="btn-mark-review">
+                            <i class="fa-regular fa-bookmark"></i> Mark for Review & Next
+                        </button>
+                        <button class="console-action-btn secondary" id="btn-clear-response">
+                            Clear Response
+                        </button>
+                    </div>
+                    <div class="right-actions">
+                        <button class="console-action-btn secondary" id="btn-prev-question">
+                            <i class="fa-solid fa-angle-left"></i> Back
+                        </button>
+                        <button class="console-action-btn primary" id="btn-next-question">
+                            Save & Next <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLLAPSIBLE PALETTE PANEL (Right Drawer) -->
+            <aside class="question-palette-panel open" id="question-palette-panel">
+                <button class="palette-toggle" id="btn-toggle-palette">
+                    <i class="fa-solid fa-chevron-left icon-left"></i>
+                    <i class="fa-solid fa-chevron-right icon-right"></i>
+                </button>
+                <div class="palette-body">
+                    <!-- Candidate info -->
+                    <div class="candidate-summary">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Avatar" class="candidate-avatar">
+                        <div class="candidate-details">
+                            <span class="name" id="console-profile-name">Suhas R.</span>
+                            <span class="exam-status">Format: <strong id="console-mode-label">Timed</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Question status icons list -->
+                    <div class="palette-legend">
+                        <div class="legend-item"><span class="badge not-visited">0</span> Not Visited</div>
+                        <div class="legend-item"><span class="badge not-answered">0</span> Not Answered</div>
+                        <div class="legend-item"><span class="badge answered">0</span> Answered</div>
+                        <div class="legend-item"><span class="badge marked">0</span> Marked for Review</div>
+                        <div class="legend-item"><span class="badge answered-marked">0</span> Ans & Marked</div>
+                    </div>
+
+                    <!-- Grid of Question Buttons -->
+                    <div class="palette-heading">Question Palette</div>
+                    <div class="palette-grid" id="palette-buttons-grid">
+                        <!-- Dynamic Buttons 1 to N -->
+                    </div>
+
+                    <!-- Proctor Webcam Feed Box (MOCK) -->
+                    <div class="proctor-webcam-card glass" id="proctor-webcam-card">
+                        <div class="webcam-header">
+                            <i class="fa-solid fa-video"></i> Live Proctor Telemetry
+                        </div>
+                        <div class="webcam-viewport">
+                            <!-- Real webcam feed will render if user allows, else simulated face scan -->
+                            <video id="proctor-video" autoplay muted playsinline class="proctor-video-element" style="display: none;"></video>
+                            <div class="webcam-scan-overlay" id="webcam-scan-overlay">
+                                <div class="scan-line"></div>
+                                <div class="scan-mesh"></div>
+                            </div>
+                            <div class="webcam-status-overlay" id="webcam-status-overlay">
+                                <span class="status-badge" id="telemetry-badge">INITIALIZING CAMERA...</span>
+                            </div>
+                        </div>
+                        <div class="webcam-telemetry-data">
+                            <div class="telemetry-row">
+                                <span>Eye Gaze Focus:</span>
+                                <span id="telemetry-gaze">98.5%</span>
+                            </div>
+                            <div class="telemetry-row">
+                                <span>Object Detection:</span>
+                                <span id="telemetry-object">No devices detected</span>
+                            </div>
+                            <div class="telemetry-row">
+                                <span>Fullscreen warnings:</span>
+                                <span id="telemetry-strikes" class="strike-count">0 / 3 strikes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <input type="file" id="pdf-file-picker" accept=".pdf" style="display: none;">
+    </div>
+
+    <!-- VIEW: EXAM RESULTS & REVIEW (FULL SCREEN OVERLAY) -->
+    <div class="results-view" id="results-view" style="display: none;">
+        <header class="results-header">
+            <div class="brand-logo">
+                <span class="logo-icon"><i class="fa-solid fa-square-poll-vertical"></i></span>
+                <span class="logo-text">the<span>MBA</span>room Scorecard</span>
+            </div>
+            <div class="header-right">
+                <button class="action-btn secondary" id="btn-results-to-dashboard">
+                    Back to Dashboard
+                </button>
+            </div>
+        </header>
+
+        <div class="results-body">
+            <!-- Dynamic Stats Summary Grid -->
+            <div class="results-stats-row">
+                <div class="results-stat-card primary">
+                    <span class="label">Total Score</span>
+                    <h2 class="value" id="res-score">0 / 198</h2>
+                    <span class="footer-desc" id="res-percentile">Estimated Percentile: ~95.2%</span>
+                </div>
+                <div class="results-stat-card">
+                    <span class="label">Accuracy</span>
+                    <h2 class="value" id="res-accuracy">0%</h2>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="res-accuracy-progress" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="results-stat-card">
+                    <span class="label">Time Spent</span>
+                    <h2 class="value" id="res-time-spent">00:00</h2>
+                    <span class="footer-desc" id="res-avg-time">Avg. time per question: 0s</span>
+                </div>
+                <div class="results-stat-card">
+                    <span class="label">Exam Mode</span>
+                    <h2 class="value" id="res-mode">Timed</h2>
+                    <span class="footer-desc text-danger" id="res-infractions">Tab switches: 0</span>
+                </div>
+            </div>
+
+            <!-- XAT Penalty Box (Only visible if XAT Mock) -->
+            <div class="results-alert-box glass" id="xat-penalty-report-box" style="display: none;">
+                <div class="icon-side"><i class="fa-solid fa-circle-info"></i></div>
+                <div class="text-side">
+                    <h4>XAT Unattempted Penalty Applied</h4>
+                    <p id="xat-penalty-details">You left 12 questions unattempted. The first 8 skipped questions are free. The remaining 4 questions incurred a penalty of -0.10 each, totaling a deduction of -0.40 marks.</p>
+                </div>
+            </div>
+
+            <!-- Grid Layout for detailed review and charts -->
+            <div class="results-layout-grid">
+                <!-- Left: Sectional breakdown and charts -->
+                <div class="results-column-left">
+                    <div class="panel glass">
+                        <h3>Sectional Analysis</h3>
+                        <div class="table-wrapper">
+                            <table class="data-table" id="sectional-results-table">
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Correct</th>
+                                        <th>Incorrect</th>
+                                        <th>Unattempted</th>
+                                        <th>Marks</th>
+                                        <th>Accuracy</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="sectional-results-tbody">
+                                    <!-- Injected -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="panel glass" style="margin-top: 1.5rem;">
+                        <h3>Performance Breakdown (Time Spent per Question)</h3>
+                        <div class="chart-container" style="height: 250px;">
+                            <svg id="time-spent-chart-svg" class="progress-svg"></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Certificate and Review list -->
+                <div class="results-column-right">
+                    <div class="panel glass cert-panel" id="certificate-panel">
+                        <h3>Completion Certificate</h3>
+                        <div class="certificate-container" id="certificate-box">
+                            <div class="cert-border">
+                                <div class="cert-body">
+                                    <div class="cert-title">theMBAroom</div>
+                                    <div class="cert-subtitle">Certificate of Exam Completion</div>
+                                    <div class="cert-award">This is proudly awarded to</div>
+                                    <div class="cert-recipient" id="cert-recipient-name">Suhas R.</div>
+                                    <div class="cert-reason">for successfully completing the mock exam</div>
+                                    <div class="cert-exam-title" id="cert-exam-title">SimCAT 19 2025</div>
+                                    <div class="cert-score-details">
+                                        Total Score: <strong id="cert-exam-score">102</strong> | Estimated Percentile: <strong id="cert-exam-percentile">98.5%</strong>
+                                    </div>
+                                    <div class="cert-footer">
+                                        <div class="cert-date" id="cert-exam-date">July 8, 2026</div>
+                                        <div class="cert-sign">theMBAroom Board</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="action-btn primary w-full" id="btn-print-certificate" style="margin-top: 1rem;">
+                            <i class="fa-solid fa-print"></i> Print Certificate
+                        </button>
+                    </div>
+
+                    <div class="panel glass review-navigation" style="margin-top: 1.5rem;">
+                        <h3>Question-by-Question Review</h3>
+                        <p class="subtitle">Click any question to view its solution and explanation.</p>
+                        
+                        <div class="review-sections-tabs" id="review-sections-tabs-container">
+                            <!-- Section list tab -->
+                        </div>
+                        <div class="review-question-grid" id="review-question-buttons-grid">
+                            <!-- Matrix of colored buttons -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Question Detail Review Modal Modal -->
+            <div class="modal-overlay" id="review-modal" style="display: none;">
+                <div class="modal-container review-modal-container">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Question Review - <span id="review-modal-q-num">1</span></h2>
+                        <button class="modal-close" id="btn-close-review-modal">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body review-modal-body">
+                        <div class="review-marks-row">
+                            <span class="badge" id="review-modal-q-status">Correct</span>
+                            <span class="badge positive" id="review-modal-q-earned">+3 Marks</span>
+                        </div>
+                        
+                        <!-- Question content -->
+                        <div class="review-question-section">
+                            <div class="review-instructions" id="review-modal-instructions"></div>
+                            <div class="review-question-text" id="review-modal-question-text"></div>
+                        </div>
+
+                        <!-- User vs Correct response -->
+                        <div class="review-answers-section">
+                            <h4>Answer Breakdown</h4>
+                            <div class="answers-comparison" id="review-modal-options-container">
+                                <!-- User answer bubble side by side with Correct -->
+                            </div>
+                        </div>
+
+                        <!-- Freehand Answer playback snapshot (if drawing type) -->
+                        <div class="review-drawing-section" id="review-modal-drawing-container" style="display: none;">
+                            <h4>Submitted Freehand Sketch</h4>
+                            <div class="review-drawing-viewport">
+                                <img id="review-modal-drawing-img" src="" alt="User Sketch" class="review-drawing-img">
+                            </div>
+                        </div>
+
+                        <!-- Solution -->
+                        <div class="review-solution-section glass">
+                            <h4>Explanation & Solution</h4>
+                            <div class="review-solution-content" id="review-modal-solution-text">
+                                <!-- Solution text -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAL: DEFINE PDF EXAM OMR CONFIG -->
+    <div class="modal-overlay" id="pdf-config-modal" style="display: none;">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 class="modal-title">PDF OMR Mock Setup</h2>
+                <button class="modal-close" id="btn-close-pdf-config">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="subtitle" style="margin-bottom: 1.5rem;">Select your exam format. This creates a digital OMR sheet with sections matching your local PDF mock document.</p>
+                
+                <div class="form-group">
+                    <label for="pdf-select-template">Exam Template</label>
+                    <select id="pdf-select-template" class="form-select">
+                        <option value="cat">CAT (VARC: 24, DILR: 22, QA: 22) - +3/-1 MCQ, +3/0 TITA</option>
+                        <option value="xat">XAT (VALA: 26, DM: 21, QADI: 28) - +1/-0.25, unattempted penalty</option>
+                        <option value="custom">Custom Exam Layout...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pdf-select-file">Mock PDF File</label>
+                    <button class="action-btn secondary w-full" id="btn-select-pdf-modal">
+                        <i class="fa-solid fa-file-pdf"></i> <span id="pdf-modal-file-label">Choose PDF Mock Document</span>
+                    </button>
+                </div>
+
+                <div id="pdf-custom-fields" style="display: none; border-top: 1px solid var(--border-color); padding-top: 1rem; margin-top: 1rem;">
+                    <h4>Custom Sections</h4>
+                    <div class="custom-sections-list" id="custom-sections-list">
+                        <!-- Custom rows -->
+                    </div>
+                    <button class="action-btn secondary small" id="btn-add-custom-section" style="margin-top: 0.5rem;">
+                        <i class="fa-solid fa-plus"></i> Add Section
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="action-btn secondary" id="btn-cancel-pdf-config">Cancel</button>
+                <button class="action-btn primary" id="btn-start-pdf-practice">Create & Start OMR</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- UTILITY: GLOBAL VIRTUAL CALCULATOR POPUP -->
+    <div class="calculator-modal" id="calculator-modal" style="display: none;">
+        <div class="calculator-header">
+            <span class="title">Virtual Calculator</span>
+            <button class="close-calc" id="btn-close-calculator"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="calculator-body">
+            <input type="text" class="calc-screen" id="calc-display" readonly value="0">
+            <div class="calc-grid">
+                <!-- Memory operators -->
+                <button class="calc-key op" data-calc="mc">MC</button>
+                <button class="calc-key op" data-calc="mr">MR</button>
+                <button class="calc-key op" data-calc="ms">MS</button>
+                <button class="calc-key op" data-calc="m+">M+</button>
+                <button class="calc-key op" data-calc="m-">M-</button>
+
+                <!-- Operations -->
+                <button class="calc-key op" data-calc="back">←</button>
+                <button class="calc-key op" data-calc="ce">CE</button>
+                <button class="calc-key op" data-calc="c">C</button>
+                <button class="calc-key op" data-calc="pm">±</button>
+                <button class="calc-key op" data-calc="sqrt">√</button>
+
+                <!-- Row 1 -->
+                <button class="calc-key num" data-calc="7">7</button>
+                <button class="calc-key num" data-calc="8">8</button>
+                <button class="calc-key num" data-calc="9">9</button>
+                <button class="calc-key op" data-calc="div">/</button>
+                <button class="calc-key op" data-calc="pct">%</button>
+
+                <!-- Row 2 -->
+                <button class="calc-key num" data-calc="4">4</button>
+                <button class="calc-key num" data-calc="5">5</button>
+                <button class="calc-key num" data-calc="6">6</button>
+                <button class="calc-key op" data-calc="mul">*</button>
+                <button class="calc-key op" data-calc="inv">1/x</button>
+
+                <!-- Row 3 -->
+                <button class="calc-key num" data-calc="1">1</button>
+                <button class="calc-key num" data-calc="2">2</button>
+                <button class="calc-key num" data-calc="3">3</button>
+                <button class="calc-key op" data-calc="sub">-</button>
+                <button class="calc-key op double-height equals" data-calc="eq">=</button>
+
+                <!-- Row 4 -->
+                <button class="calc-key num double-width" data-calc="0">0</button>
+                <button class="calc-key num" data-calc="dot">.</button>
+                <button class="calc-key op" data-calc="add">+</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CORE SCRIPTS -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
