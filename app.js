@@ -225,42 +225,55 @@ function handleHTMLImport(e) {
     reader.onload = function(evt) {
         const text = evt.target.result;
         
-        // Find testData JSON in the HTML code
-        const regex = /const\s+testData\s*=\s*({[\s\S]*?});\s*(?:let|const|var|\/\/)/;
-        const match = text.match(regex);
+        // Find testData JSON in the HTML code robustly
+        const startKey = 'const testData =';
+        const startIdx = text.indexOf(startKey);
         
-        if (match && match[1]) {
-            try {
-                const parsed = JSON.parse(match[1]);
-                importMockData(parsed);
-            } catch (err) {
-                // Secondary parsing attempt: loose scan for brackets
-                try {
-                    const startIdx = text.indexOf('const testData =');
-                    if (startIdx !== -1) {
-                        const braceIdx = text.indexOf('{', startIdx);
-                        // Balance curly braces
-                        let braces = 1;
-                        let endIdx = braceIdx + 1;
-                        while (braces > 0 && endIdx < text.length) {
-                            if (text[endIdx] === '{') braces++;
-                            else if (text[endIdx] === '}') braces--;
-                            endIdx++;
+        if (startIdx !== -1) {
+            const braceIdx = text.indexOf('{', startIdx);
+            if (braceIdx !== -1) {
+                let braces = 1;
+                let endIdx = braceIdx + 1;
+                let inString = null; // null or '"' or "'" or '`'
+                let isEscaped = false;
+                
+                while (braces > 0 && endIdx < text.length) {
+                    const char = text[endIdx];
+                    
+                    if (isEscaped) {
+                        isEscaped = false;
+                    } else if (char === '\\') {
+                        isEscaped = true;
+                    } else if (inString) {
+                        if (char === inString) {
+                            inString = null; // Exit string
                         }
+                    } else if (char === '"' || char === "'" || char === '`') {
+                        inString = char; // Enter string
+                    } else if (char === '{') {
+                        braces++;
+                    } else if (char === '}') {
+                        braces--;
+                    }
+                    endIdx++;
+                }
+                
+                if (braces === 0) {
+                    try {
                         const rawJson = text.substring(braceIdx, endIdx);
                         const parsed = JSON.parse(rawJson);
                         importMockData(parsed);
                         return;
+                    } catch (parseErr) {
+                        alert("Import Error: Found the testData code block, but could not parse the JSON structure correctly. It may be corrupted.");
+                        console.error(parseErr);
+                        return;
                     }
-                    throw new Error("Braces matching failed");
-                } catch (secondaryErr) {
-                    alert("Import Error: Found the testData code block, but could not parse the JSON structure correctly.");
-                    console.error(secondaryErr);
                 }
             }
-        } else {
-            alert("Import Error: Could not locate 'const testData = { ... }' in the HTML file structure. Ensure this is an offline mock HTML file.");
         }
+        
+        alert("Import Error: Could not locate 'const testData = { ... }' in the HTML file structure. Ensure this is an offline mock HTML file.");
     };
     reader.readAsText(file);
 }
