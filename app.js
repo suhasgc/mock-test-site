@@ -208,6 +208,27 @@ function initLoginScreen() {
 document.addEventListener('DOMContentLoaded', () => {
     initLoginScreen();
 
+    // Global event delegation for all exam/practice start buttons (completely resolves swallowed/ignored click issues)
+    document.addEventListener('click', (e) => {
+        const libBtn = e.target.closest('.btn-start');
+        if (libBtn) {
+            const id = libBtn.getAttribute('data-id');
+            const mode = libBtn.getAttribute('data-mode');
+            const targetMock = state.mocks.find(m => m.id === id);
+            if (targetMock) promptTestStart(targetMock, mode);
+            return;
+        }
+
+        const dashBtn = e.target.closest('.btn-start-mock');
+        if (dashBtn) {
+            const id = dashBtn.getAttribute('data-id');
+            const mode = dashBtn.getAttribute('data-mode');
+            const targetMock = state.mocks.find(m => m.id === id);
+            if (targetMock) startExamConsole(targetMock, mode);
+            return;
+        }
+    });
+
     // Logout wired separately in case app already shown
     const logoutBtn = document.getElementById('logout-btn');
     if (logoutBtn && !logoutBtn._bound) {
@@ -702,21 +723,6 @@ function initDashboard() {
     document.getElementById('btn-go-to-errors').addEventListener('click', () => {
         switchView('error-log');
     });
-
-    // Event delegation for dashboard start mock buttons (prevents swallowed clicks during preloading renders)
-    const container = document.getElementById('dashboard-mock-list');
-    if (container && !container._bound) {
-        container._bound = true;
-        container.addEventListener('click', (e) => {
-            const btn = e.target.closest('.btn-start-mock');
-            if (btn) {
-                const id = btn.getAttribute('data-id');
-                const mode = btn.getAttribute('data-mode');
-                const targetMock = state.mocks.find(m => m.id === id);
-                if (targetMock) startExamConsole(targetMock, mode);
-            }
-        });
-    }
 }
 
 function renderDashboardMocks() {
@@ -977,21 +983,6 @@ function initLibrary() {
             renderLibrary();
         });
     });
-
-    // Event delegation for library start mock buttons (prevents swallowed clicks during preloading renders)
-    const grid = document.getElementById('library-mocks-grid');
-    if (grid && !grid._bound) {
-        grid._bound = true;
-        grid.addEventListener('click', (e) => {
-            const btn = e.target.closest('.btn-start');
-            if (btn) {
-                const id = btn.getAttribute('data-id');
-                const mode = btn.getAttribute('data-mode');
-                const targetMock = state.mocks.find(m => m.id === id);
-                if (targetMock) promptTestStart(targetMock, mode);
-            }
-        });
-    }
 }
 
 function renderLibrary() {
