@@ -192,6 +192,26 @@ function preloadMocks() {
         .catch(err => {
             console.warn("Could not preload TIME OMR PDF mocks:", err);
         });
+        
+    // Fetch consolidated IMS & Career Launcher 2023 Mocks
+    fetch('ims_cl_2023_data.json')
+        .then(res => {
+            if (!res.ok) throw new Error("HTTP error " + res.status);
+            return res.json();
+        })
+        .then(dataList => {
+            dataList.forEach(mockObject => {
+                if (!state.mocks.some(m => m.id === mockObject.id)) {
+                    state.mocks.push(mockObject);
+                }
+            });
+            // Re-render views if active
+            if (state.activeView === 'library') renderLibrary();
+            if (state.activeView === 'dashboard') renderDashboardMocks();
+        })
+        .catch(err => {
+            console.warn("Could not preload IMS/CL 2023 mocks:", err);
+        });
 }
 
 function saveDatabase() {
