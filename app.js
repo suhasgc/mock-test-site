@@ -17,7 +17,7 @@ const state = {
     activeView: 'dashboard',
     
     // Loaded Mocks Database (built-in + imported)
-    mocks: [...mockExams, ...sectionalMocks, ...dailyDrills, ...PRELOADED_METADATA.filter(pm => !mockExams.some(me => me.id === pm.id) && !sectionalMocks.some(sm => sm.id === pm.id) && !dailyDrills.some(dd => dd.id === pm.id))],
+    mocks: [...mockExams, ...sectionalMocks, ...dailyDrills, ...PRELOADED_METADATA.filter(pm => !mockExams.some(me => me.id === pm.id) && !sectionalMocks.some(sm => sm.id === pm.id) && !dailyDrills.some(dd => dd.id === pm.id))].sort(compareMockNames),
     
     // User attempts (loaded from localStorage)
     attempts: [],
@@ -589,6 +589,7 @@ function importMockData(data) {
     
     // Save to state mocks
     state.mocks.push(mockObject);
+    state.mocks.sort(compareMockNames);
     alert(`Successfully imported "${data.name}"! You can now start it from the Mock Library.`);
     
     // Shift view to library
@@ -652,6 +653,7 @@ function startPDFPractice() {
     }
     
     state.mocks.push(mockObject);
+    state.mocks.sort(compareMockNames);
     
     // Close modal
     document.getElementById('pdf-config-modal').style.display = 'none';
@@ -882,6 +884,23 @@ function renderDashboardActivity() {
 // Sectional mocks: grouped by subject area
 // ==========================================================================
 
+function compareMockNames(a, b) {
+    const nameA = a.name || '';
+    const nameB = b.name || '';
+
+    // 1. Extract year (e.g. 2025, 2023)
+    const yearA = parseInt((nameA.match(/\b20\d{2}\b/) || [0])[0]);
+    const yearB = parseInt((nameB.match(/\b20\d{2}\b/) || [0])[0]);
+
+    // We want higher years (e.g. 2025) first, so year descending
+    if (yearA !== yearB) {
+        return yearB - yearA;
+    }
+
+    // 2. If years are equal (or both 0), sort by name parts numerically (natural sort)
+    return nameA.localeCompare(nameB, undefined, { numeric: true, sensitivity: 'base' });
+}
+
 const libraryState = { tab: 'full' };
 
 // Derive display category purely from question count
@@ -898,11 +917,17 @@ function getFullMockGroup(mock) {
     const id   = (mock.id   || '').toLowerCase();
     const name = (mock.name || '').toLowerCase();
 
-    // IMS sources
-    if (id.includes('simcat') && !id.startsWith('cl_')) return 'IMS';
-    if (id.startsWith('ims_'))                           return 'IMS';
-    if (name.includes('simcat') && !id.startsWith('cl_')) return 'IMS';
-    if (name.includes('ims'))                             return 'IMS';
+    const isIMS = (id.includes('simcat') && !id.startsWith('cl_')) ||
+                  id.startsWith('ims_') ||
+                  (name.includes('simcat') && !id.startsWith('cl_')) ||
+                  name.includes('ims');
+
+    if (isIMS) {
+        if (name.includes('2023') || id.includes('2023')) {
+            return 'IMS SimCAT 2023';
+        }
+        return 'IMS';
+    }
 
     // Career Launcher sources
     if (id.startsWith('cl_'))          return 'Career Launcher';
@@ -984,8 +1009,8 @@ function renderLibrary() {
     else if (tab === 'pdf')       filteredMocks = pdfMocks;
     else                          filteredMocks = catMocks;
 
-    // Sort by name within each group
-    filteredMocks.sort((a, b) => a.name.localeCompare(b.name));
+    // Sort with 2025 first, then 2023, and natural numeric ordering
+    filteredMocks.sort(compareMockNames);
 
     grid.innerHTML = '';
 
@@ -1008,7 +1033,7 @@ function renderLibrary() {
 
     // Sort group order: for Full & PDF → IMS first, then CL, then TIME, then others
     const groupOrder = (tab === 'full' || tab === 'pdf')
-        ? ['IMS', 'Career Launcher', 'TIME', 'Other']
+        ? ['IMS', 'Career Launcher', 'TIME', 'IMS SimCAT 2023', 'Other']
         : tab === 'sectional'
             ? ['VARC', 'DILR', 'QA', 'Mixed']
             : Object.keys(groups).sort();
@@ -1024,7 +1049,8 @@ function renderLibrary() {
 
         // Group icon
         const iconMap = {
-            'IMS': 'fa-graduation-cap', 'Career Launcher': 'fa-rocket',
+            'IMS': 'fa-graduation-cap', 'IMS SimCAT 2023': 'fa-graduation-cap',
+            'Career Launcher': 'fa-rocket',
             'TIME': 'fa-stopwatch', 'Other': 'fa-folder-open',
             'VARC': 'fa-book-open', 'DILR': 'fa-chart-bar', 'QA': 'fa-calculator',
             'Mixed': 'fa-layer-group',
