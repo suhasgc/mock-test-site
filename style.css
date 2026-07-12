@@ -2265,10 +2265,10 @@ a {
         align-items: start;
     }
 }
-.review-modal-container {
-    max-width: 1100px;
+.modal-container.review-modal-container {
+    max-width: 1250px;
     width: 95%;
-    max-height: 90vh;
+    max-height: 92vh;
     overflow-y: auto;
 }
 .review-modal-body {
