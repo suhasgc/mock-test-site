@@ -208,6 +208,9 @@ function initLoginScreen() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initLoginScreen();
+    
+    // Sort sections for all mocks to follow standard order (VARC -> DILR -> QA)
+    state.mocks.forEach(sortMockSections);
 
 
 
@@ -587,6 +590,9 @@ function importMockData(data) {
         questions: data.questions
     };
     
+    // Sort sections to follow standard order (VARC -> DILR -> QA)
+    sortMockSections(mockObject);
+    
     // Save to state mocks
     state.mocks.push(mockObject);
     state.mocks.sort(compareMockNames);
@@ -651,6 +657,9 @@ function startPDFPractice() {
         };
         generateDummyQuestions(mockObject, 1, 75, false); // All MCQs for XAT
     }
+    
+    // Sort sections to follow standard order (VARC -> DILR -> QA)
+    sortMockSections(mockObject);
     
     state.mocks.push(mockObject);
     state.mocks.sort(compareMockNames);
@@ -883,6 +892,40 @@ function renderDashboardActivity() {
 // Full mocks: grouped as IMS vs Career Launcher
 // Sectional mocks: grouped by subject area
 // ==========================================================================
+
+function sortMockSections(mock) {
+    if (!mock || !mock.sections) return;
+    
+    const getSectionScore = (name) => {
+        const lower = name.toLowerCase();
+        // VARC
+        if (lower.includes('verbal') || lower.includes('varc') || lower.includes('rc')) return 1;
+        // DM (Decision Making)
+        if (lower.includes('decision')) return 2;
+        // DILR / LRDI
+        if (lower.includes('data') || lower.includes('logical') || lower.includes('dilr') || lower.includes('lrdi')) return 3;
+        // QA
+        if (lower.includes('quant') || lower.includes('qa')) return 4;
+        return 5;
+    };
+    
+    const sortedKeys = Object.keys(mock.sections).sort((a, b) => getSectionScore(a) - getSectionScore(b));
+    const sortedSections = {};
+    sortedKeys.forEach(key => {
+        sortedSections[key] = mock.sections[key];
+    });
+    mock.sections = sortedSections;
+
+    if (mock.sectionTimes) {
+        const sortedTimes = {};
+        sortedKeys.forEach(key => {
+            if (mock.sectionTimes[key] !== undefined) {
+                sortedTimes[key] = mock.sectionTimes[key];
+            }
+        });
+        mock.sectionTimes = sortedTimes;
+    }
+}
 
 function compareMockNames(a, b) {
     const nameA = a.name || '';
