@@ -338,6 +338,7 @@ function ensureMockDataLoaded(targetMock, callback) {
                         m.questions = item.questions || {};
                         m.sectionTimes = item.sectionTimes || {};
                         if (item.pdfFiles) m.pdfFiles = item.pdfFiles;
+                        sortMockSections(m);
                     }
                 });
             } else {
@@ -354,6 +355,7 @@ function ensureMockDataLoaded(targetMock, callback) {
                 }
                 targetMock.sectionTimes = data.sectionTimes || sectionTimes;
                 if (data.pdfFiles) targetMock.pdfFiles = data.pdfFiles;
+                sortMockSections(targetMock);
             }
 
             callback();
