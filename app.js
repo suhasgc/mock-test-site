@@ -1714,6 +1714,8 @@ function bindConsoleNavButtons() {
     const reviewBtn = document.getElementById('btn-mark-review');
     const clearBtn = document.getElementById('btn-clear-response');
     const submitBtn = document.getElementById('btn-console-submit');
+    const toggleBtn = document.getElementById('btn-toggle-palette');
+    const palettePanel = document.getElementById('question-palette-panel');
     
     const handleNext = () => {
         saveCanvasDrawing();
@@ -1824,6 +1826,11 @@ function bindConsoleNavButtons() {
     reviewBtn.onclick = handleReview;
     clearBtn.onclick = handleClear;
     submitBtn.onclick = handleSubmit;
+    if (toggleBtn && palettePanel) {
+        toggleBtn.onclick = () => {
+            palettePanel.classList.toggle('closed');
+        };
+    }
 }
 
 // Timing Clock Intervals
