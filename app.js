@@ -724,8 +724,10 @@ function renderDashboardMocks() {
         const card = document.createElement('div');
         card.className = 'mock-compact-card';
         
+        const qCount = mock.questionCount || Object.keys(mock.questions || {}).length;
+        const displayDuration = (qCount === 5 || qCount === 10) ? 15 : mock.duration;
         let metaHtml = `
-            <span><i class="fa-regular fa-clock"></i> ${mock.duration} mins</span>
+            <span><i class="fa-regular fa-clock"></i> ${displayDuration} mins</span>
             <span><i class="fa-solid fa-list-check"></i> ${mock.questionCount || Object.keys(mock.questions || {}).length} Qs</span>
         `;
         if (mock.category === 'pdf') {
@@ -1127,10 +1129,11 @@ function renderLibrary() {
                 ? `<div class="card-best-score"><i class="fa-solid fa-medal"></i> Best: <strong>${bestAttempt.score.toFixed(1)} / ${bestAttempt.maxScore}</strong> &middot; ${bestAttempt.accuracy.toFixed(0)}% acc</div>`
                 : `<div class="card-not-attempted"><i class="fa-regular fa-circle-dot"></i> Not attempted</div>`;
 
+            const displayDuration = (qCount === 5 || qCount === 10) ? 15 : mock.duration;
             card.innerHTML = `
                 <h4>${mock.name}</h4>
                 <div class="meta-details">
-                    <div class="meta-row"><i class="fa-regular fa-clock"></i> ${mock.duration} min</div>
+                    <div class="meta-row"><i class="fa-regular fa-clock"></i> ${displayDuration} min</div>
                     <div class="meta-row"><i class="fa-solid fa-list-check"></i> ${qCount} Qs</div>
                     <div class="meta-row"><i class="fa-solid fa-layer-group"></i> ${Object.keys(mock.sections).join(' · ')}</div>
                 </div>
@@ -1213,6 +1216,10 @@ function startExamConsole(mock, mode) {
     const consoleView = document.getElementById('exam-console');
     if (!consoleView) return;
     
+    const qCountConsole = mock.questionCount || Object.keys(mock.questions || {}).length;
+    const isShortMock = (qCountConsole === 5 || qCountConsole === 10);
+    const durationMins = isShortMock ? 15 : (mock.duration || 120);
+
     // Setup running state
     state.runningTest = {
         testId: mock.id,
@@ -1229,7 +1236,7 @@ function startExamConsole(mock, mode) {
         
         totalTimeSpent: 0,
         sectionTimeLeft: {},
-        overallTimeLeft: mock.duration * 60,
+        overallTimeLeft: durationMins * 60,
         timeSpentPerQuestion: {},
         
         infractions: 0,
@@ -1239,8 +1246,14 @@ function startExamConsole(mock, mode) {
     };
     
     // Initialize section times left
+    const numSections = Object.keys(mock.sections).length;
     Object.keys(mock.sections).forEach(secName => {
-        const secMins = mock.sectionTimes[secName] || 40;
+        let secMins;
+        if (isShortMock) {
+            secMins = Math.floor(15 / numSections);
+        } else {
+            secMins = mock.sectionTimes[secName] || 40;
+        }
         state.runningTest.sectionTimeLeft[secName] = secMins * 60;
     });
     
