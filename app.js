@@ -2962,19 +2962,23 @@ function initSplitter() {
     if (!splitter || !leftPanel || !rightPanel) return;
     
     let isDragging = false;
+    const iframe = document.getElementById('pdf-iframe');
     
     const onMouseDown = (e) => {
         isDragging = true;
         splitter.classList.add('dragging');
         document.body.style.cursor = 'col-resize';
         document.body.style.userSelect = 'none'; // Prevent text highlights while dragging
+        if (iframe) iframe.style.pointerEvents = 'none'; // Prevent iframe from stealing events
     };
     
     const onMouseMove = (e) => {
         if (!isDragging) return;
         
-        // Calculate percentages
         const totalWidth = window.innerWidth;
+        if (totalWidth <= 768) return; // Disable splitter on mobile/tablet stacked layouts
+        
+        // Calculate percentages
         let percentage = (e.clientX / totalWidth) * 100;
         
         // Boundaries restriction (20% - 80%)
@@ -2993,6 +2997,7 @@ function initSplitter() {
             splitter.classList.remove('dragging');
             document.body.style.cursor = '';
             document.body.style.userSelect = '';
+            if (iframe) iframe.style.pointerEvents = 'auto'; // Restore events for iframe interaction
         }
     };
     

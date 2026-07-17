@@ -1331,6 +1331,17 @@ a {
     z-index: 10;
     transition: background-color 0.2s;
 }
+/* Hit target expansion pseudo-element (22px interactive width) */
+.workspace-splitter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -8px;
+    right: -8px;
+    cursor: col-resize;
+    z-index: 15;
+}
 .workspace-splitter:hover, .workspace-splitter.dragging {
     background-color: var(--primary);
 }
