@@ -1717,6 +1717,7 @@ a {
 /* Right Sidebar: Palette Drawer */
 .question-palette-panel {
     width: 250px;
+    flex-shrink: 0;
     background-color: #1e293b;
     border-left: 2px solid #0f172a;
     display: flex;

@@ -2987,8 +2987,8 @@ function initSplitter() {
         
         leftPanel.style.width = `${percentage}%`;
         leftPanel.style.flex = 'none';
-        rightPanel.style.width = `${100 - percentage}%`;
-        rightPanel.style.flex = 'none';
+        rightPanel.style.width = ''; // Let rightPanel fill remaining space
+        rightPanel.style.flex = '1';
     };
     
     const onMouseUp = () => {
