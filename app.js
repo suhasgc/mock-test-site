@@ -1238,6 +1238,7 @@ function startExamConsole(mock, mode) {
         sectionTimeLeft: {},
         overallTimeLeft: durationMins * 60,
         timeSpentPerQuestion: {},
+        pdfZoom: 100,
         
         infractions: 0,
         isFullscreenActive: false,
@@ -1842,6 +1843,49 @@ function bindConsoleNavButtons() {
     if (toggleBtn && palettePanel) {
         toggleBtn.onclick = () => {
             palettePanel.classList.toggle('closed');
+        };
+    }
+    
+    // PDF Magnifier Controls
+    const zoomInBtn = document.getElementById('btn-pdf-zoom-in');
+    const zoomOutBtn = document.getElementById('btn-pdf-zoom-out');
+    const zoomResetBtn = document.getElementById('btn-pdf-zoom-reset');
+    const zoomLabel = document.getElementById('pdf-zoom-level');
+    const iframe = document.getElementById('pdf-iframe');
+    
+    if (zoomInBtn && zoomOutBtn && zoomResetBtn && zoomLabel && iframe) {
+        const updateZoomUI = () => {
+            const zoom = (state.runningTest && state.runningTest.pdfZoom) || 100;
+            zoomLabel.textContent = `${zoom}%`;
+            iframe.style.width = `${zoom}%`;
+            iframe.style.height = `${zoom}%`;
+        };
+        
+        zoomInBtn.onclick = () => {
+            if (state.runningTest) {
+                if (!state.runningTest.pdfZoom) state.runningTest.pdfZoom = 100;
+                if (state.runningTest.pdfZoom < 250) {
+                    state.runningTest.pdfZoom += 10;
+                    updateZoomUI();
+                }
+            }
+        };
+        
+        zoomOutBtn.onclick = () => {
+            if (state.runningTest) {
+                if (!state.runningTest.pdfZoom) state.runningTest.pdfZoom = 100;
+                if (state.runningTest.pdfZoom > 50) {
+                    state.runningTest.pdfZoom -= 10;
+                    updateZoomUI();
+                }
+            }
+        };
+        
+        zoomResetBtn.onclick = () => {
+            if (state.runningTest) {
+                state.runningTest.pdfZoom = 100;
+                updateZoomUI();
+            }
         };
     }
 }

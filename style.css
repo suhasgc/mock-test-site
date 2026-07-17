@@ -1375,6 +1375,7 @@ a {
 .pdf-content-wrapper {
     flex: 1;
     position: relative;
+    overflow: auto;
 }
 .pdf-placeholder-overlay {
     position: absolute;

@@ -1,4 +1,3 @@
-// Auto-generated Mocks Metadata Index File
 export const PRELOADED_METADATA = [
   {
     "id": "simcat1",
@@ -11914,7 +11913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 1 Q.pdf/Mock 1 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 1 Q.pdf/Mock 1 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 1 Q.pdf/Mock 1 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12024,7 +12027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_1_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 1 Q.pdf/Mock 1 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_10",
@@ -12034,7 +12038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 10 Q.pdf/Mock 10 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 10 Q.pdf/Mock 10 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 10 Q.pdf/Mock 10 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12144,7 +12152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_10_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 10 Q.pdf/Mock 10 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_11",
@@ -12154,7 +12163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 11 Q.pdf/Mock 11 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 11 Q.pdf/Mock 11 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 11 Q.pdf/Mock 11 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12264,7 +12277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_11_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 11 Q.pdf/Mock 11 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_12",
@@ -12274,7 +12288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 12 Q.pdf/Mock 12 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 12 Q.pdf/Mock 12 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 12 Q.pdf/Mock 12 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12384,7 +12402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_12_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 12 Q.pdf/Mock 12 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_13",
@@ -12394,7 +12413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 13 Q.pdf/Mock 13 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 13 Q.pdf/Mock 13 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 13 Q.pdf/Mock 13 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12504,7 +12527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_13_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 13 Q.pdf/Mock 13 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_14",
@@ -12514,7 +12538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 14 Q.pdf/Mock 14 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 14 Q.pdf/Mock 14 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 14 Q.pdf/Mock 14 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12624,7 +12652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_14_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 14 Q.pdf/Mock 14 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_15",
@@ -12634,7 +12663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 15 Q.pdf/Mock 15 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 15 Q.pdf/Mock 15 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 15 Q.pdf/Mock 15 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12744,7 +12777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_15_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 15 Q.pdf/Mock 15 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_16",
@@ -12754,7 +12788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 16 Q.pdf/Mock 16 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 16 Q.pdf/Mock 16 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 16 Q.pdf/Mock 16 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12864,7 +12902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_16_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 16 Q.pdf/Mock 16 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_17",
@@ -12874,7 +12913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 17 Q.pdf/Mock 17 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 17 Q.pdf/Mock 17 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 17 Q.pdf/Mock 17 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -12984,7 +13027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_17_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 17 Q.pdf/Mock 17 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_18",
@@ -12994,7 +13038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 18 Q.pdf/Mock 18 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 18 Q.pdf/Mock 18 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 18 Q.pdf/Mock 18 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -13104,7 +13152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_18_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 18 Q.pdf/Mock 18 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_19",
@@ -13114,7 +13163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 19 Q.pdf/Mock 19 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 19 Q.pdf/Mock 19 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 19 Q.pdf/Mock 19 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -13224,7 +13277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_19_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 19 Q.pdf/Mock 19 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_2",
@@ -13234,7 +13288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 2 Q.pdf/Mock 2 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 2 Q.pdf/Mock 2 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 2 Q.pdf/Mock 2 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -13344,7 +13402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_2_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 2 Q.pdf/Mock 2 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_20",
@@ -13354,7 +13413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 20 Q.pdf/Mock 20 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 20 Q.pdf/Mock 20 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 20 Q.pdf/Mock 20 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -13464,7 +13527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_20_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 20 Q.pdf/Mock 20 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_21",
@@ -13474,7 +13538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 21 Q.pdf/Mock 21 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 21 Q.pdf/Mock 21 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 21 Q.pdf/Mock 21 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -13584,7 +13652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_21_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 21 Q.pdf/Mock 21 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_3",
@@ -13594,7 +13663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 3 Q.pdf/Mock 3 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 3 Q.pdf/Mock 3 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 3 Q.pdf/Mock 3 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -13704,7 +13777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_3_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 3 Q.pdf/Mock 3 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_4",
@@ -13714,7 +13788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 4 Q.pdf/Mock 4 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 4 Q.pdf/Mock 4 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 4 Q.pdf/Mock 4 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -13824,7 +13902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_4_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 4 Q.pdf/Mock 4 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_5",
@@ -13834,7 +13913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 5 Q.pdf/Mock 5 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 5 Q.pdf/Mock 5 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 5 Q.pdf/Mock 5 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -13944,7 +14027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_5_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 5 Q.pdf/Mock 5 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_6",
@@ -13954,7 +14038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 6 Q.pdf/Mock 6 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 6 Q.pdf/Mock 6 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 6 Q.pdf/Mock 6 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -14064,7 +14152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_6_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 6 Q.pdf/Mock 6 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_7",
@@ -14074,7 +14163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 7 Q.pdf/Mock 7 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 7 Q.pdf/Mock 7 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 7 Q.pdf/Mock 7 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -14184,7 +14277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_7_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 7 Q.pdf/Mock 7 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_8",
@@ -14194,7 +14288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 8 Q.pdf/Mock 8 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 8 Q.pdf/Mock 8 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 8 Q.pdf/Mock 8 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -14304,7 +14402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_8_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 8 Q.pdf/Mock 8 Q.pdf"
   },
   {
     "id": "cl_pdf_2017_mock_9",
@@ -14314,7 +14413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2017 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2017/Mock 9 Q.pdf/Mock 9 Q.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2017/Mock 9 Q.pdf/Mock 9 Q.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2017/Mock 9 Q.pdf/Mock 9 Q.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -14424,7 +14527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2017_mock_9_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2017/Mock 9 Q.pdf/Mock 9 Q.pdf"
   },
   {
     "id": "cl_pdf_2018_aiom_1",
@@ -14434,7 +14538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/ALL india open mock cat 1.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/ALL india open mock cat 1.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/ALL india open mock cat 1.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -14544,7 +14652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_aiom_1_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/ALL india open mock cat 1.pdf"
   },
   {
     "id": "cl_pdf_2018_aiom_2",
@@ -14554,7 +14663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/ALL india open mock cat 2.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/ALL india open mock cat 2.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/ALL india open mock cat 2.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -14664,7 +14777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_aiom_2_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/ALL india open mock cat 2.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_1",
@@ -14674,7 +14788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 1.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 1.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 1.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -14784,7 +14902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_1_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 1.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_10",
@@ -14794,7 +14913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 10.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 10.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 10.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -14904,7 +15027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_10_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 10.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_2",
@@ -14914,7 +15038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 2.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 2.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 2.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15024,7 +15152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_2_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 2.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_3",
@@ -15034,7 +15163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 3.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 3.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 3.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15144,7 +15277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_3_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 3.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_4",
@@ -15154,7 +15288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 4.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 4.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 4.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15264,7 +15402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_4_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 4.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_5",
@@ -15274,7 +15413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 5.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 5.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 5.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15384,7 +15527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_5_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 5.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_6",
@@ -15394,7 +15538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 6.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 6.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 6.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15504,7 +15652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_6_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 6.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_7",
@@ -15514,7 +15663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 7.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 7.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 7.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15624,7 +15777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_7_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 7.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_8",
@@ -15634,7 +15788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 8.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 8.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 8.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15744,7 +15902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_8_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 8.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_9",
@@ -15754,7 +15913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 9.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 9.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 9.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15864,7 +16027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_9_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 9.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_1",
@@ -15874,7 +16038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 1.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 1.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 1.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -15984,7 +16152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_1_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 1.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_10",
@@ -15994,7 +16163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 10.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 10.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 10.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -16104,7 +16277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_10_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 10.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_11",
@@ -16114,7 +16288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 11.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 11.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 11.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -16224,7 +16402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_11_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 11.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_13",
@@ -16234,7 +16413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 13.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 13.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 13.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -16344,7 +16527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_13_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 13.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_14",
@@ -16354,7 +16538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 14.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 14.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 14.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -16464,7 +16652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_14_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 14.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_15",
@@ -16474,7 +16663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 15.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 15.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 15.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -16584,7 +16777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_15_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 15.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_16",
@@ -16594,7 +16788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 16.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 16.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 16.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -16704,7 +16902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_16_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 16.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_18",
@@ -16714,7 +16913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 18.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 18.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 18.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -16824,7 +17027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_18_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 18.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_19",
@@ -16834,7 +17038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 19.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 19.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 19.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -16944,7 +17152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_19_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 19.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_2",
@@ -16954,7 +17163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 2.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 2.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 2.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -17064,7 +17277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_2_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 2.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_20",
@@ -17074,7 +17288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 20.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 20.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 20.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -17184,7 +17402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_20_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 20.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_3",
@@ -17194,7 +17413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 3.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 3.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 3.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -17304,7 +17527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_3_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 3.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_4",
@@ -17314,7 +17538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 4.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 4.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 4.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -17424,7 +17652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_4_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 4.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_5",
@@ -17434,7 +17663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 5.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 5.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 5.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -17544,7 +17777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_5_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 5.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_6",
@@ -17554,7 +17788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 6.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 6.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 6.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -17664,7 +17902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_6_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 6.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_7",
@@ -17674,7 +17913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 7.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 7.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 7.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -17784,7 +18027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_7_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 7.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_8",
@@ -17794,7 +18038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 8.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 8.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 8.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -17904,7 +18152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_8_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 8.pdf"
   },
   {
     "id": "cl_pdf_2018_mock_9",
@@ -17914,7 +18163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2018 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2018/Questions/mock cat 9.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2018/Questions/mock cat 9.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2018/Questions/mock cat 9.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18024,7 +18277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2018_mock_9_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2018/Questions/mock cat 9.pdf"
   },
   {
     "id": "cl_pdf_2019_aiom_1",
@@ -18034,7 +18288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 1.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 1.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 1.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18144,7 +18402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_aiom_1_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 1.pdf"
   },
   {
     "id": "cl_pdf_2019_aiom_2",
@@ -18154,7 +18413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 2.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 2.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 2.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18264,7 +18527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_aiom_2_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 2.pdf"
   },
   {
     "id": "cl_pdf_2019_aiom_3",
@@ -18274,7 +18538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 3.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 3.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 3.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18384,7 +18652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_aiom_3_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/All India CAT open Mock 3.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_1",
@@ -18394,7 +18663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 1.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 1.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 1.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18504,7 +18777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_1_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 1.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_10",
@@ -18514,7 +18788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 10.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 10.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 10.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18624,7 +18902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_10_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 10.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_2",
@@ -18634,7 +18913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 2.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 2.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 2.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18744,7 +19027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_2_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 2.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_3",
@@ -18754,7 +19038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 3.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 3.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 3.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18864,7 +19152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_3_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 3.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_4",
@@ -18874,7 +19163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 4.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 4.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 4.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -18984,7 +19277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_4_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 4.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_5",
@@ -18994,7 +19288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 5.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 5.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 5.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -19104,7 +19402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_5_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 5.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_6",
@@ -19114,7 +19413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 6.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 6.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 6.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -19224,7 +19527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_6_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 6.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_7",
@@ -19234,7 +19538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 7.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 7.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 7.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -19344,7 +19652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_7_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 7.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_8",
@@ -19354,7 +19663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 8.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 8.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 8.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -19464,7 +19777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_8_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 8.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_9",
@@ -19474,7 +19788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/Master Series MockCAT 9.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/Master Series MockCAT 9.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/Master Series MockCAT 9.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -19584,7 +19902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_9_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/Master Series MockCAT 9.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_1",
@@ -19594,7 +19913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 1.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 1.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 1.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -19704,7 +20027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_1_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 1.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_10",
@@ -19714,7 +20038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 10.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 10.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 10.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -19824,7 +20152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_10_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 10.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_11",
@@ -19834,7 +20163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 11.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 11.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 11.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -19944,7 +20277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_11_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 11.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_12",
@@ -19954,7 +20288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 12.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 12.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 12.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -20064,7 +20402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_12_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 12.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_13",
@@ -20074,7 +20413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 13.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 13.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 13.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -20184,7 +20527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_13_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 13.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_15",
@@ -20194,7 +20538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 15.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 15.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 15.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -20304,7 +20652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_15_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 15.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_16",
@@ -20314,7 +20663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 16.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 16.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 16.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -20424,7 +20777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_16_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 16.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_17",
@@ -20434,7 +20788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 17.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 17.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 17.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -20544,7 +20902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_17_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 17.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_18",
@@ -20554,7 +20913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 18.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 18.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 18.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -20664,7 +21027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_18_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 18.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_2",
@@ -20674,7 +21038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 2.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 2.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 2.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -20784,7 +21152,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_2_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 2.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_20",
@@ -20794,7 +21163,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 20.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 20.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 20.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -20904,7 +21277,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_20_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 20.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_3",
@@ -20914,7 +21288,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 3.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 3.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 3.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21024,7 +21402,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_3_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 3.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_4",
@@ -21034,7 +21413,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 4.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 4.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 4.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21144,7 +21527,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_4_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 4.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_5",
@@ -21154,7 +21538,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 5.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 5.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 5.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21264,7 +21652,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_5_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 5.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_6",
@@ -21274,7 +21663,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 6.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 6.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 6.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21384,7 +21777,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_6_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 6.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_7",
@@ -21394,7 +21788,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 7.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 7.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 7.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21504,7 +21902,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_7_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 7.pdf"
   },
   {
     "id": "cl_pdf_2019_mock_8",
@@ -21514,7 +21913,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2019 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 180,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2019/Questions/MockCAT 8.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2019/Questions/MockCAT 8.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2019/Questions/MockCAT 8.pdf"
+    },
     "questionCount": 100,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21624,7 +22027,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2019_mock_8_qa_100"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2019/Questions/MockCAT 8.pdf"
   },
   {
     "id": "cl_pdf_2020_master_1",
@@ -21634,7 +22038,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi master series mock-1.pdf/Flexi master series mock-1.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi master series mock-1.pdf/Flexi master series mock-1.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi master series mock-1.pdf/Flexi master series mock-1.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21720,7 +22128,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_master_1_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi master series mock-1.pdf/Flexi master series mock-1.pdf"
   },
   {
     "id": "cl_pdf_2020_master_10",
@@ -21730,7 +22139,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi master series-10.pdf/Flexi master series-10.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi master series-10.pdf/Flexi master series-10.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi master series-10.pdf/Flexi master series-10.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21816,7 +22229,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_master_10_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi master series-10.pdf/Flexi master series-10.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_1",
@@ -21826,7 +22240,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-1.pdf/Flexi mock cat-1.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-1.pdf/Flexi mock cat-1.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-1.pdf/Flexi mock cat-1.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -21912,7 +22330,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_1_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-1.pdf/Flexi mock cat-1.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_11",
@@ -21922,7 +22341,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-11.pdf/Flexi mock cat-11.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-11.pdf/Flexi mock cat-11.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-11.pdf/Flexi mock cat-11.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22008,7 +22431,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_11_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-11.pdf/Flexi mock cat-11.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_12",
@@ -22018,7 +22442,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-12.pdf/Flexi mock cat-12.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-12.pdf/Flexi mock cat-12.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-12.pdf/Flexi mock cat-12.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22104,7 +22532,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_12_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-12.pdf/Flexi mock cat-12.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_13",
@@ -22114,7 +22543,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-13.pdf/Flexi mock cat-13.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-13.pdf/Flexi mock cat-13.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-13.pdf/Flexi mock cat-13.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22200,7 +22633,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_13_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-13.pdf/Flexi mock cat-13.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_14",
@@ -22210,7 +22644,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-14.pdf/Flexi mock cat-14.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-14.pdf/Flexi mock cat-14.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-14.pdf/Flexi mock cat-14.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22296,7 +22734,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_14_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-14.pdf/Flexi mock cat-14.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_6",
@@ -22306,7 +22745,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-6.pdf/Flexi mock cat-6.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-6.pdf/Flexi mock cat-6.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-6.pdf/Flexi mock cat-6.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22392,7 +22835,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_6_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-6.pdf/Flexi mock cat-6.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_7",
@@ -22402,7 +22846,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22488,7 +22936,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_7_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_8",
@@ -22498,7 +22947,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-8.pdf/Flexi mock cat-8.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-8.pdf/Flexi mock cat-8.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-8.pdf/Flexi mock cat-8.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22584,7 +23037,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_8_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-8.pdf/Flexi mock cat-8.pdf"
   },
   {
     "id": "cl_pdf_2020_flexi_9",
@@ -22594,7 +23048,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-9.pdf/Flexi mock cat-9.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-9.pdf/Flexi mock cat-9.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-9.pdf/Flexi mock cat-9.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22680,7 +23138,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_flexi_9_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-9.pdf/Flexi mock cat-9.pdf"
   },
   {
     "id": "cl_pdf_2020_mock_13",
@@ -22690,7 +23149,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-13.pdf/Flexi mock cat-13.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-13.pdf/Flexi mock cat-13.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-13.pdf/Flexi mock cat-13.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22776,7 +23239,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_mock_13_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-13.pdf/Flexi mock cat-13.pdf"
   },
   {
     "id": "cl_pdf_2020_mock_14",
@@ -22786,7 +23250,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-14.pdf/Flexi mock cat-14.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-14.pdf/Flexi mock cat-14.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-14.pdf/Flexi mock cat-14.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22872,7 +23340,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_mock_14_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-14.pdf/Flexi mock cat-14.pdf"
   },
   {
     "id": "cl_pdf_2020_mock_18",
@@ -22882,7 +23351,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Mock cat-18 (NP).pdf/Mock cat-18 (NP).pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Mock cat-18 (NP).pdf/Mock cat-18 (NP).pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Mock cat-18 (NP).pdf/Mock cat-18 (NP).pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -22968,7 +23441,8 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_mock_18_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Mock cat-18 (NP).pdf/Mock cat-18 (NP).pdf"
   },
   {
     "id": "cl_pdf_2020_mock_7",
@@ -22978,7 +23452,11 @@ export const PRELOADED_METADATA = [
     "description": "Preloaded Career Launcher 2020 Mock Exam in PDF mode. Refer to the PDF on the left and enter answers on the OMR sheet.",
     "duration": 120,
     "isSectionalTimed": true,
-    "pdfFiles": null,
+    "pdfFiles": {
+      "Verbal Ability & Reading Comprehension": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf",
+      "Data Interpretation & Logical Reasoning": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf",
+      "Quantitative Ability": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf"
+    },
     "questionCount": 76,
     "sections": {
       "Verbal Ability & Reading Comprehension": [
@@ -23064,6 +23542,7 @@ export const PRELOADED_METADATA = [
         "cl_pdf_2020_mock_7_qa_76"
       ]
     },
-    "sourceFile": "cl_pdf_mocks_data.json"
+    "sourceFile": "cl_pdf_mocks_data.json",
+    "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf"
   }
 ];
