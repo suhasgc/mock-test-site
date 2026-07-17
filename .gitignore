@@ -1,5 +1,4 @@
 # Ignore large PDF document stores (served locally from workspace)
-time_mocks/
 unpacked_cl_mocks/
 unpacked_cat_2023/
 
