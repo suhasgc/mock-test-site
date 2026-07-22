@@ -1,7 +1,7 @@
 {
     "name": "QA 05 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -30,18 +30,18 @@
         "20001": {
             "id": "20001",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tA shop has four types of flowers namely - Tulip, Rose, Marigold\n\t\t\t\t\t\t\t\t\t\t\t\t\tand Lily. A person came in to buy 10\n\t\t\t\t\t\t\t\t\t\t\t\t\tflowers such that he has at least one flower of each type. In how\n\t\t\t\t\t\t\t\t\t\t\t\t\tmany ways can he do so, if the\n\t\t\t\t\t\t\t\t\t\t\t\t\tshop has sufficient amount of flowers of each type?",
+            "question_text": "A shop has four types of flowers namely - Tulip, Rose, Marigold and Lily. A person came in to buy 10 flowers such that he has at least one flower of each type. In how many ways can he do so, if the shop has sufficient amount of flowers of each type? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576374' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "84"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837766/84s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>84</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837755/73s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
@@ -50,19 +50,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t",
+            "question_text": "1 &nbsp;",
             "options": [
-                "3g(x)",
-                "3h(x)",
-                "(g(x))3",
-                "(h(x))3"
+                "g(x)",
+                "h(x)",
+                "(g(x))<sup>3",
+                "(h(x))<sup>3"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837754/72s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837766/84s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
@@ -71,11 +71,11 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  If the\n\t\t\t\t\t\t\t\t\t\troots of the equation (x + 1)(x + 9) + 8 = 0 are a and b, then the roots of the\n\t\t\t\t\t\t\t\t\t\tequation\n\t\t\t\t\t\t\t\t\t\t(x + a) (x + b) \u2013 8 = 0 are",
+            "question_text": "If the roots of the equation (x + 1)(x + 9) + 8 = 0 are a and b, then the roots of the equation (x + a) (x + b) \u2013 8 = 0 are 1 &nbsp;",
             "options": [
-                "1 and 9",
+                "and 9",
                 "\u20134 and \u20136",
-                "4 and 6",
+                "and 6",
                 "Cannot be determined"
             ],
             "correct_response": [
@@ -83,7 +83,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837752/70s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837754/72s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
@@ -92,19 +92,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  Ratio of copper\n\t\t\t\t\t\t\t\t\tand iron in each of the three different alloys is 3 : 5, 3 : 7 and 12 : 5. If 8 kg\n\t\t\t\t\t\t\t\t\tof first\n\t\t\t\t\t\t\t\t\talloy and 30 kg of 2nd alloy is taken, then how much quantity of 3rd alloy should be\n\t\t\t\t\t\t\t\t\ttaken so that\n\t\t\t\t\t\t\t\t\tthe ratio of copper and iron is 1 : 1 in the final mixture?",
+            "question_text": "Ratio of copper and iron in each of the three different alloys is 3 : 5, 3 : 7 and 12 : 5. If 8 kg of first alloy and 30 kg of 2nd alloy is taken, then how much quantity of 3rd alloy should be taken so that the ratio of copper and iron is 1 : 1 in the final mixture? 1 &nbsp;",
             "options": [
-                "51 kg",
-                "34 kg",
-                "68 kg",
-                "85 kg"
+                "kg",
+                "kg",
+                "kg",
+                "kg"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828576/82s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>2</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837752/70s.gif>\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -113,19 +113,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  In a race of length\n\t\t\t\t\t\t\t\t5 km, A beats B by 1 km. In an another race of 1 km, B beats C by 100 m. What is the\n\t\t\t\t\t\t\t\tratio of speeds of A and C.",
+            "question_text": "In a race of length 5 km, A beats B by 1 km. In an another race of 1 km, B beats C by 100 m. What is the ratio of speeds of A and C. 1 &nbsp;",
             "options": [
-                "17 : 12",
-                "11 : 12",
-                "18 : 13",
-                "25 : 18"
+                ": 12",
+                ": 12",
+                ": 13",
+                ": 18"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828590/87s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828576/82s.gif>\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
@@ -134,33 +134,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  Ramu can do a work in\n\t\t\t\t\t\t\t10 days, while Shamu can do that work in 15 days. Chirag can work with half\n\t\t\t\t\t\t\tthe efficiency of Ramu, and Dinesh can work with twice the efficiency of Shamu. If all four\n\t\t\t\t\t\t\tof them\n\t\t\t\t\t\t\twork together, in how many days will the work get completed?",
+            "question_text": "Ramu can do a work in 10 days, while Shamu can do that work in 15 days. Chirag can work with half the efficiency of Ramu, and Dinesh can work with twice the efficiency of Shamu. If all four of them work together, in how many days will the work get completed? 1 &nbsp;",
             "options": [
-                "3",
-                "2.5"
+                "",
+                "",
+                "",
+                ".5"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850168/76s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828590/87s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  Nishit bought some goods\n\t\t\t\t\t\tand sold them on discount in such a way that his profit percentage and discount percentage are\n\t\t\t\t\t\tequal. If the ratio of its cost price to marked price is 3:7, then find the profit percentage.\n\t\t\t\t",
+            "question_text": "Nishit bought some goods and sold them on discount in such a way that his profit percentage and discount percentage are equal. If the ratio of its cost price to marked price is 3:7, then find the profit percentage. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576382' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "40"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837751/69s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>40</B>\n\t\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850168/76s.gif>\n\t\t\t\t\t\t\t\t</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -169,11 +171,11 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  A, B, C, D and E have some\n\t\t\t\t\tchocolates with them with their numbers in ratio 12 : 2 : 2 : 3 : 5. \u2018A\u2019\n\t\t\t\t\tdistributed some of his chocolates among B, C, D and E such that the new ratio of chocolates with\n\t\t\t\t\teach of them is 6 : 9 : 6 : 7 : 8. Find the ratio of chocolates distributed to B, C, D and E by A.\n\t\t\t",
+            "question_text": "A, B, C, D and E have some chocolates with them with their numbers in ratio 12 : 2 : 2 : 3 : 5. \u2018A\u2019 distributed some of his chocolates among B, C, D and E such that the new ratio of chocolates with each of them is 6 : 9 : 6 : 7 : 8. Find the ratio of chocolates distributed to B, C, D and E by A. 1 &nbsp;",
             "options": [
-                "12 : 6 : 5 : 1",
-                "2 : 3 : 4 : 5",
-                "7 : 4 : 4 : 3",
+                ": 6 : 5 : 1",
+                ": 3 : 4 : 5",
+                ": 4 : 4 : 3",
                 "Cannot be determined"
             ],
             "correct_response": [
@@ -181,23 +183,23 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837777/95s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837751/69s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  A square tin sheet of side 12\n\t\t\t\t\tinches is converted into a box with open top in the following steps \u2013\n\t\t\t\t\tThe sheet is placed horizontally. Then equal side squares, each side is of x inches, are cut from\n\t\t\t\t\tthe four corners of the sheet. Finally, the four resulting sides are bent vertically upwards in the\n\t\t\t\t\tshape of a box. If x is an integer, then what value of x will maximize the volume of the box?",
+            "question_text": "A square tin sheet of side 12 inches is converted into a box with open top in the following steps \u2013 The sheet is placed horizontally. Then equal side squares, each side is of x inches, are cut from the four corners of the sheet. Finally, the four resulting sides are bent vertically upwards in the shape of a box. If x is an integer, then what value of x will maximize the volume of the box? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576380' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828572/78s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837777/95s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
@@ -206,19 +208,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "15",
-                "18",
-                "14",
-                "20"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837765/83s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828572/78s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
@@ -227,35 +229,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  An iron wire of length 30 cm\n\t\t\t\t\tis bent to form an isosceles triangle, in which the two equal sides have\n\t\t\t\t\tlength \u2018l\u2019 cm each. Find the range of l.",
+            "question_text": "An iron wire of length 30 cm is bent to form an isosceles triangle, in which the two equal sides have length \u2018l\u2019 cm each. Find the range of l. 1 &nbsp;",
             "options": [
-                "6 < l < 20",
-                "8 < l < 30",
-                "10 < l < 15",
-                "7.5 < l < 15"
+                "< l < 20",
+                "< l < 30",
+                "< l < 15",
+                ".5 < l < 15"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828553/70s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837765/83s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  A three digit number, XYZ,\n\t\t\t\t\twhen increased by 33.33% becomes ZXY and then the resulting number\n\t\t\t\t\tis again increased by 33.33% which then becomes YZX. How many such three digit numbers are\n\t\t\t\t\tpossible, if X, Y, Z are distinct integers?",
+            "question_text": "A three digit number, XYZ, when increased by 33.33% becomes ZXY and then the resulting number is again increased by 33.33% which then becomes YZX. How many such three digit numbers are possible, if X, Y, Z are distinct integers? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576363' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819485/86s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828553/70s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
@@ -264,19 +266,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  f(1) = 1 and the remaining\n\t\t\t\t\tnumber of the sequence is generated by the following function:\n\t\t\t\t\tf(n +1) \u2212 f(n) = n \u2212 1 .\n\t\t\t\t\tWhat is the value of f(2018) ?",
+            "question_text": "f(1) = 1 and the remaining number of the sequence is generated by the following function: f(n +1) \u2212 f(n) = n \u2212 1 . What is the value of f(2018) ? 1 &nbsp;",
             "options": [
-                "2029106",
-                "2035152",
-                "2033137",
-                "2013111"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837780/98s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819485/86s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -285,81 +287,88 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  There are P positive numbers\n\t\t\t\t\tand the average of each possible pair of these numbers is found. If the average of all these\n\t\t\t\t\taverages is Q, then what is the average of the P numbers?",
+            "question_text": "There are P positive numbers and the average of each possible pair of these numbers is found. If the average of all these averages is Q, then what is the average of the P numbers? 1 &nbsp;",
             "options": [
+                "",
+                "",
                 "(P + Q)",
                 "Q"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837773/91s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837780/98s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  What is the difference between\n\t\t\t\t\tthe largest and the smallest possible integer satisfying the inequality",
+            "question_text": "What is the difference between the largest and the smallest possible integer satisfying the inequality <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576378' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837775/93s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837773/91s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  Two oranges, three bananas and\n\t\t\t\t\tfour apples together cost Rs. 15, while three oranges, two bananas and\n\t\t\t\t\tone apple together cost Rs. 10. I bought 3 oranges, 3 bananas and 3 apples. How much (in Rs.) did I\n\t\t\t\t\tpay?",
+            "question_text": "Two oranges, three bananas and four apples together cost Rs. 15, while three oranges, two bananas and one apple together cost Rs. 10. I bought 3 oranges, 3 bananas and 3 apples. How much (in Rs.) did I pay? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576379' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "15"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828574/80s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>15</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837775/93s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
             "marks": 3,
             "negative_marks": 1.0,
-            "is_input_type": true,
+            "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  A curve is drawn by connecting\n\t\t\t\t\t6 quarter-circumferences of circles with different radii as shown in\n\t\t\t\t\tthe figure. Side of the square ABCD is 1 cm. Find the length (in cm) of the curve\n\t\t\t\t\tDEFGHIJ.\n\t\t\t",
-            "options": [],
+            "question_text": "A curve is drawn by connecting 6 quarter-circumferences of circles with different radii as shown in the figure. Side of the square ABCD is 1 cm. Find the length (in cm) of the curve DEFGHIJ. 1 &nbsp;",
+            "options": [
+                "",
+                "",
+                "",
+                ""
+            ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b><br><br><br>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828574/80s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  Architect Mandrake builds a\n\t\t\t\t\tclock in which the minute hand runs anti-clockwise instead of clockwise,\n\t\t\t\t\tand hour hand runs clockwise. The speed of the hour hand and minute hand is the same as a\n\t\t\t\t\tnormal clock. At 12 O\u2019clock, the clock shows the actual time. How many times in the next 12\n\t\t\t\t\thours will Mandrake\u2019s clock show the actual time?",
+            "question_text": "Architect Mandrake builds a clock in which the minute hand runs anti-clockwise instead of clockwise, and hour hand runs clockwise. The speed of the hour hand and minute hand is the same as a normal clock. At 12 O\u2019clock, the clock shows the actual time. How many times in the next 12 hours will Mandrake\u2019s clock show the actual time? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576361' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "24"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828591/88s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>24</B>\n\t\t\t\t\t\t\t<div><b>The hour hand is travelling clockwise, it shows the correct position.<br>\n\t\t\t\t\t\t\t\t\tComparing the minute-hand of Mandrake\u2019s clock and an actual clock: This can be\n\t\t\t\t\t\t\t\t\tlooked at as a Time-Speed-Distance\n\t\t\t\t\t\t\t\t\tproblem with 2 runners started at the point in a circle \u2013 one running clockwise and\n\t\t\t\t\t\t\t\t\tthe other running anti-clockwise\n\t\t\t\t\t\t\t\t\tat the exact same speed. They will meet at two points \u2013 (1) diagonally opposite to\n\t\t\t\t\t\t\t\t\tthe start and (2) at the start.<br>\n\t\t\t\t\t\t\t\t\tThey will both show the same time at<br>\n\t\t\t\t\t\t\t\t\t12:30, 1:00, 1:30, 2:00, 2:30, \u2026, 10:00, 10:30, 11:00, 11:30, 12:00\n\t\t\t\t\t\t\t\t\ti.e, 24 times.</div></div>"
         },
         "20019": {
             "id": "20019",
@@ -368,33 +377,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  A man can row a boat 10 km\n\t\t\t\t\tdownstream and 5 km upstream in 4 hours. He can also row 5 km\n\t\t\t\t\tdownstream and 10 km upstream in 6 hours. Time taken by him to row 50 km upstream is",
+            "question_text": "A man can row a boat 10 km downstream and 5 km upstream in 4 hours. He can also row 5 km downstream and 10 km upstream in 6 hours. Time taken by him to row 50 km upstream is 1 &nbsp;",
             "options": [
-                "20.5 hour",
-                "30 hour"
+                ".5 hour",
+                "",
+                "hour",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828557/74s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828591/88s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  In a class, the marks obtained\n\t\t\t\t\tby 7 students with all distinct values, when arranged in the increasing\n\t\t\t\t\torder, form a GP. If there were a total of 200 Multiple Choice Questions (MCQs) of 1 mark each with\n\t\t\t\t\tno negative marking, then the maximum possible marks any student can obtain is,",
+            "question_text": "In a class, the marks obtained by 7 students with all distinct values, when arranged in the increasing order, form a GP. If there were a total of 200 Multiple Choice Questions (MCQs) of 1 mark each with no negative marking, then the maximum possible marks any student can obtain is, <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576364' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "192"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837756/74s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>192</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828557/74s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20021": {
             "id": "20021",
@@ -403,19 +414,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  A, B and D can do a piece of\n\t\t\t\t\twork in 4, 10 and 12 days respectively. A and C together takes one-third\n\t\t\t\t\tof the time than the time taken by B and D together to finish the work. In how much days can\n\t\t\t\t\tC alone finish the work?",
+            "question_text": "A, B and D can do a piece of work in 4, 10 and 12 days respectively. A and C together takes one-third of the time than the time taken by B and D together to finish the work. In how much days can C alone finish the work? 1 &nbsp;",
             "options": [
-                "10/3",
-                "10/7",
-                "20/3",
-                "20/7"
+                "/3",
+                "/7",
+                "/3",
+                "/7"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828575/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837756/74s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
@@ -424,16 +435,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  Cost price of a shirt, a\n\t\t\t\t\ttrouser and a suit are in ratio 2 : 3 : 5. If a man incurred x% profit, x% loss\n\t\t\t\t\tand x2% profit on selling a shirt, a trouser and a suit respectively, then find his\n\t\t\t\t\toverall profit percentage.",
+            "question_text": "Cost price of a shirt, a trouser and a suit are in ratio 2 : 3 : 5. If a man incurred x% profit, x% loss and x<sup>2</sup>% profit on selling a shirt, a trouser and a suit respectively, then find his overall profit percentage. 1 &nbsp;",
             "options": [
+                "",
+                "",
+                "",
                 "x(x + 1)%"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828575/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         }
     }
 }

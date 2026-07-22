@@ -1,7 +1,7 @@
 {
     "name": "QA 04 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -34,35 +34,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tA function f(x) = (2 \u2212 x)(x + 3)(x2 \u22121) is defined\n\t\t\t\t\t\t\t\t\t\t\t\t\tfor all positive real values of x. The maximum value\n\t\t\t\t\t\t\t\t\t\t\t\t\tof the function would be found in the range",
+            "question_text": "<B>A function f(x) = (2 \u2212 x)(x + 3)(x<sup>2</sup> \u22121) is defined for all positive real values of x. The maximum value of the function would be found in the range 1 &nbsp;",
             "options": [
-                "0 < x < 1",
-                "1 < x < 2",
-                "x > 2",
-                "x > 3"
+                "<B>0 < x < 1",
+                "<B>1 < x < 2",
+                "<B>x > 2",
+                "<B>x > 3"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802511/69s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>2</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819475/76s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t",
+            "question_text": "<ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576317' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "1298"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828555/72s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1298</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802511/69s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
@@ -71,19 +71,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  Mr. X marks\n\t\t\t\t\t\t\t\t\t\tup the price of a fan by 14.28%. The percentage of discount he offered on fan,\n\t\t\t\t\t\t\t\t\t\tand the\n\t\t\t\t\t\t\t\t\t\tprofit/ loss he incurred on it is in the ratio 7 : 8. Find his profit or loss\n\t\t\t\t\t\t\t\t\t\tpercentage.",
+            "question_text": "Mr. X marks up the price of a fan by 14.28%. The percentage of discount he offered on fan, and the profit/ loss he incurred on it is in the ratio 7 : 8. Find his profit or loss percentage. 1 &nbsp;",
             "options": [
-                "7.14% profit",
-                "6.66% loss",
-                "7.14% loss",
-                "6.66% profit"
+                ".14% profit",
+                ".66% loss",
+                ".14% loss",
+                ".66% profit"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819497/98s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828555/72s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
@@ -92,19 +92,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "1",
-                "0",
-                "2",
-                "3"
+                "<B>1",
+                "<B>0",
+                "<B>2",
+                "<B>3"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828592/89s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>2</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819497/98s.gif>\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -113,7 +113,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  If 3x + 7y = 600,\n\t\t\t\t\t\t\t\twhere x and y are whole numbers, then which of the following are true?",
+            "question_text": "If 3x + 7y = 600, where x and y are whole numbers, then which of the following are true? 1 &nbsp;",
             "options": [
                 "No solution for x if y > 85",
                 "Atleast one solution for y, if x \u2265 200",
@@ -122,26 +122,26 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819470/71s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828592/89s.gif>\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  A metal is in the form\n\t\t\t\t\t\t\tof a right octagonal prism with base area of 10 square units. It is then melted\n\t\t\t\t\t\t\tand re-cast into 10 right triangular prisms with volume of 1 cubic unit each. The height of\n\t\t\t\t\t\t\tthe prism\n\t\t\t\t\t\t\tis ______ unit(s).\n\t\t\t\t\t\t\t",
+            "question_text": "A metal is in the form of a right octagonal prism with base area of 10 square units. It is then melted and re-cast into 10 right triangular prisms with volume of 1 cubic unit each. The height of the prism is ______ unit(s). <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576319' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828595/92s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819470/71s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
@@ -150,19 +150,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  Find the area enclosed by\n\t\t\t\t\t\tthe graph |3x \u2013 4| + |4y \u2013 3| = 12.",
+            "question_text": "Find the area enclosed by the graph |3x \u2013 4| + |4y \u2013 3| = 12. 1 &nbsp;",
             "options": [
-                "24",
-                "36",
-                "20",
-                "48"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828558/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828595/92s.gif>\n\t\t\t\t\t\t\t\t</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -171,18 +171,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "0",
-                "27",
-                "9/2"
+                "",
+                "",
+                "",
+                "/2"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850162/70s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828558/75s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
@@ -191,35 +192,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  A fruit seller, selling apples,\n\t\t\t\t\tis offering 16.67% of their weight, as extra, for free. Find the percentage discount on this offer.\n\t\t\t",
+            "question_text": "A fruit seller, selling apples, is offering 16.67% of their weight, as extra, for free. Find the percentage discount on this offer. 1 &nbsp;",
             "options": [
-                "16.67%",
-                "14.28%",
-                "12.5%",
-                "8.33%"
+                ".67%",
+                ".28%",
+                ".5%",
+                ".33%"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850173/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850162/70s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  A man invested some amount in\n\t\t\t\t\ta scheme for three years. The rate of interest for 1st, 2nd and 3rd year was 7.14%, 7.69% and 30%\n\t\t\t\t\trespectively, compounded annually. If after 3 years he will receive a sum of Rs.2100 from that\n\t\t\t\t\tscheme, then what is the amount (in Rs.) he invested initially?",
+            "question_text": "A man invested some amount in a scheme for three years. The rate of interest for 1st, 2nd and 3rd year was 7.14%, 7.69% and 30% respectively, compounded annually. If after 3 years he will receive a sum of Rs.2100 from that scheme, then what is the amount (in Rs.) he invested initially? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576357' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "1400"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828597/94s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1400</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850173/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
@@ -228,51 +229,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  A milkman marks up the cost of\n\t\t\t\t\tmilk by 100%. He offers x% discount on the milk because of which\n\t\t\t\t\the incurs a loss of y%. But now he wants to earn y% profit. For this he added 25% freely available\n\t\t\t\t\twater by volume to the milk and then again 20% freely available water by volume to the new milk\n\t\t\t\t\tsolution. And then sell this on the same marked up and discount as earlier. Find the value of x .\n\t\t\t",
+            "question_text": "A milkman marks up the cost of milk by 100%. He offers x% discount on the milk because of which he incurs a loss of y%. But now he wants to earn y% profit. For this he added 25% freely available water by volume to the milk and then again 20% freely available water by volume to the new milk solution. And then sell this on the same marked up and discount as earlier. Find the value of x . 1 &nbsp;",
             "options": [
-                "60",
-                "50",
-                "80",
-                "40"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850200/93s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828597/94s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  P, Q, R and S working together\n\t\t\t\t\tprinted a total of 200 books. In printing books, P is thrice as\n\t\t\t\t\tefficient as Q but 75% less efficient than R. R is half as efficient as S. How many books did Q\n\t\t\t\t\tprint,\n\t\t\t\t\tout of these 200 books?",
+            "question_text": "P, Q, R and S working together printed a total of 200 books. In printing books, P is thrice as efficient as Q but 75% less efficient than R. R is half as efficient as S. How many books did Q print, out of these 200 books? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576360' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "5"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850198/91s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>5</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850200/93s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  How many different words can\n\t\t\t\t\tbe formed using at least two letters from the word \u201cBASKET\u201d?",
+            "question_text": "How many different words can be formed using at least two letters from the word \u201cBASKET\u201d? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576359' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "1950"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819491/92s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1950</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850198/91s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -281,16 +282,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  \u0394ABC is an isosceles\n\t\t\t\t\tright-angled triangle with \u2220B = 90\u00b0 and AB = 1 unit. AB and BC are tangents\n\t\t\t\t\tto a circle such that points A and C are lying on the circle. What is the area of the region in the\n\t\t\t\t\ttriangle ABC which is outside that circle?",
+            "question_text": "<B>\u0394ABC is an isosceles right-angled triangle with \u2220B = 90\u00b0 and AB = 1 unit. AB and BC are tangents to a circle such that points A and C are lying on the circle. What is the area of the region in the triangle ABC which is outside that circle? 1 &nbsp;",
             "options": [
-                "None of the above"
+                "",
+                "",
+                "",
+                "<B>None of the above"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819474/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819491/92s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
@@ -299,67 +303,67 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  A triangle with sides in the\n\t\t\t\t\tratio 20 : 21 : 29 is inscribed in a circle with radius 5. The area (in sq.\n\t\t\t\t\tunits) of the triangle is closest to",
+            "question_text": "A triangle with sides in the ratio 20 : 21 : 29 is inscribed in a circle with radius 5. The area (in sq. units) of the triangle is closest to 1 &nbsp;",
             "options": [
-                "25",
-                "30",
-                "35",
-                "40"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828570/76s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819474/75s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  Average of 10 terms increases\n\t\t\t\t\tby 10, when 10 more terms are added to it. Find the sum of these 10\n\t\t\t\t\tnewly added terms, if average of these new 10 terms is double the average of the initial 10 terms.\n\t\t\t",
+            "question_text": "Average of 10 terms increases by 10, when 10 more terms are added to it. Find the sum of these 10 newly added terms, if average of these new 10 terms is double the average of the initial 10 terms. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576329' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "400"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819498/99s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>400</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828570/76s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  Radhika and Pallavi decided to\n\t\t\t\t\tmeet at the library which is located at a straight road between their\n\t\t\t\t\thouses. Radhika leaves her house, and after a little while later Pallavi starts from her house. When\n\t\t\t\t\tthey meet at the library, Radhika had walked for twice the length of time as Pallavi, at\n\t\t\t\t\tthree-fourth\n\t\t\t\t\tof Pallavi\u2019s speed. If Pallavi travelled for 4 kilometres, what is the distance (in kilometres)\n\t\t\t\t\tbetween\n\t\t\t\t\ttheir houses?",
+            "question_text": "<B>Radhika and Pallavi decided to meet at the library which is located at a straight road between their houses. Radhika leaves her house, and after a little while later Pallavi starts from her house. When they meet at the library, Radhika had walked for twice the length of time as Pallavi, at three-fourth of Pallavi\u2019s speed. If Pallavi travelled for 4 kilometres, what is the distance (in kilometres) between their houses? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576325' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "10"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828580/86s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>10</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819498/99s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  ",
+            "question_text": "<ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576330' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "33"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819499/100s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>33</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828580/86s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20019": {
             "id": "20019",
@@ -368,19 +372,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  Twelve men can complete a work\n\t\t\t\t\tin 32 days while 64 women can complete the same work in 12 days. Sixteen men and sixteen women\n\t\t\t\t\tstarted working and worked for twelve days. How many additional men are required after that to\n\t\t\t\t\tcomplete the remaining work in 2 days?",
+            "question_text": "<B>Twelve men can complete a work in 32 days while 64 women can complete the same work in 12 days. Sixteen men and sixteen women started working and worked for twelve days. How many additional men are required after that to complete the remaining work in 2 days? 1 &nbsp;",
             "options": [
-                "24",
-                "48",
-                "12",
-                "15"
+                "<B>24",
+                "<B>48",
+                "<B>12",
+                "<B>15"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819452/69s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819499/100s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -389,19 +393,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  What is the unit digit of\n\t\t\t\t\t(8877 \u2212 7788 )?",
+            "question_text": "What is the unit digit of (88<sup>77</sup> \u2212 77<sup>88</sup> )? 1 &nbsp;",
             "options": [
-                "1",
-                "3",
-                "6",
-                "8"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819496/97s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819452/69s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20021": {
             "id": "20021",
@@ -410,19 +414,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  Amit drives from his home to\n\t\t\t\t\toffice at 35 kilometres per hour for the first hour but then realizes that\n\t\t\t\t\the will be 1 hour late to work if he drives at the same speed. He increases the speed by 15\n\t\t\t\t\tkilometres per hour and reaches 30 minutes early. What is the distance (in kilometres) between\n\t\t\t\t\this house and office?",
+            "question_text": "<B>Amit drives from his home to office at 35 kilometres per hour for the first hour but then realizes that he will be 1 hour late to work if he drives at the same speed. He increases the speed by 15 kilometres per hour and reaches 30 minutes early. What is the distance (in kilometres) between his house and office? 1 &nbsp;",
             "options": [
-                "175",
-                "200",
-                "100",
-                "210"
+                "<B>175",
+                "<B>200",
+                "<B>100",
+                "<B>210"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850191/84s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819496/97s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
@@ -431,19 +435,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  If the sum of first n terms of\n\t\t\t\t\tthree different Arithmetic Progressions are in ratio n+1 : 2n+3 : 5n+7, then the 10th term of these\n\t\t\t\t\tthree series are in ratio",
+            "question_text": "If the sum of first n terms of three different Arithmetic Progressions are in ratio n+1 : 2n+3 : 5n+7, then the 10th term of these three series are in ratio 1 &nbsp;",
             "options": [
-                "10 : 21 : 52",
-                "7 : 12 : 19",
-                "1 : 1 : 1",
-                "20 : 41 : 102"
+                ": 21 : 52",
+                ": 12 : 19",
+                ": 1 : 1",
+                ": 41 : 102"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850191/84s.gif>\n\t\t\t\t\t\t\t</div></div>"
         }
     }
 }

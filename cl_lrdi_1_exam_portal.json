@@ -1,7 +1,7 @@
 {
     "name": "DILR 01 - 2023",
     "sections": {
-        "LRDI": [
+        "Data Interpretation & Logical Reasoning": [
             "20001",
             "20002",
             "20003",
@@ -31,36 +31,36 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions\n\t\t\t\t\t\t\t\t\t\t\t\t\t1 to 5: Answer the questions on the basis of the information given\n\t\t\t\t\t\t\t\t\t\t\t\t\tbelow.\n\t\t\t\t\t\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and\n\t\t\t\t\t\t\t\t\t\t\t\t\tR, and whoever is free works on the\n\t\t\t\t\t\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each\n\t\t\t\t\t\t\t\t\t\t\t\t\twith a person, other than P, Q and R, only\n\t\t\t\t\t\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant\n\t\t\t\t\t\t\t\t\t\t\t\t\tserves 3 dishes - Pizza, Garlic Bread and\n\t\t\t\t\t\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can\n\t\t\t\t\t\t\t\t\t\t\t\t\twork on a single quantity of any dish at\n\t\t\t\t\t\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table\n\t\t\t\t\t\t\t\t\t\t\t\t\tprovides information regarding the preparation\n\t\t\t\t\t\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by\n\t\t\t\t\t\t\t\t\t\t\t\t\tthe six customers C-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared\n\t\t\t\t\t\t\t\t\t\t\t\t\tsimultaneously, then any employee start working\n\t\t\t\t\t\t\t\t\t\t\t\t\ton the one that requires greater preparation time.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers,\n\t\t\t\t\t\t\t\t\t\t\t\t\tthen he will prefer working on the\n\t\t\t\t\t\t\t\t\t\t\t\t\torder that was placed first.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tThe order of C-3 at counter - A will be served completely at\n\t\t\t\t\t\t\t\t\t\t\t\t\twhat time?\n\t\t\t\t\t\t\t\t\t\t\t",
+            "instructions": "<b>Directions for questions 1 to\n\t\t\t\t\t\t\t\t\t\t\t\t5: Answer the questions on the basis of the information given\n\t\t\t\t\t\t\t\t\t\t\t\tbelow.<br><br>\n\t\t\t\t\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and R,\n\t\t\t\t\t\t\t\t\t\t\t\tand whoever is free works on the\n\t\t\t\t\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each with a\n\t\t\t\t\t\t\t\t\t\t\t\tperson, other than P, Q and R, only\n\t\t\t\t\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant serves\n\t\t\t\t\t\t\t\t\t\t\t\t3 dishes - Pizza, Garlic Bread and\n\t\t\t\t\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can work on\n\t\t\t\t\t\t\t\t\t\t\t\ta single quantity of any dish at\n\t\t\t\t\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table provides\n\t\t\t\t\t\t\t\t\t\t\t\tinformation regarding the preparation\n\t\t\t\t\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:<br><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770465/35-38dr.gif><br><br>\n\t\t\t\t\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by the\n\t\t\t\t\t\t\t\t\t\t\t\tsix customers C-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared simultaneously,\n\t\t\t\t\t\t\t\t\t\t\t\tthen any employee start working\n\t\t\t\t\t\t\t\t\t\t\t\ton the one that requires greater preparation time.<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers, then\n\t\t\t\t\t\t\t\t\t\t\t\the will prefer working on the\n\t\t\t\t\t\t\t\t\t\t\t\torder that was placed first.<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
+            "question_text": "The order of C-3 at counter - A will be served completely at what time? 1 &nbsp;",
             "options": [
-                "10 : 25",
-                "10 : 24",
-                "10 : 19",
-                "10 : 20"
+                ": 25",
+                ": 24",
+                ": 19",
+                ": 20"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770486/36s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>1</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770465/35s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 1 to\n\t\t\t\t\t\t\t\t\t\t\t\t5: Answer the questions on the basis of the information given\n\t\t\t\t\t\t\t\t\t\t\t\tbelow.\n\t\t\t\t\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and R,\n\t\t\t\t\t\t\t\t\t\t\t\tand whoever is free works on the\n\t\t\t\t\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each with a\n\t\t\t\t\t\t\t\t\t\t\t\tperson, other than P, Q and R, only\n\t\t\t\t\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant serves\n\t\t\t\t\t\t\t\t\t\t\t\t3 dishes - Pizza, Garlic Bread and\n\t\t\t\t\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can work on\n\t\t\t\t\t\t\t\t\t\t\t\ta single quantity of any dish at\n\t\t\t\t\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table provides\n\t\t\t\t\t\t\t\t\t\t\t\tinformation regarding the preparation\n\t\t\t\t\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:\n\t\t\t\t\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by the\n\t\t\t\t\t\t\t\t\t\t\t\tsix customers C-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.\n\t\t\t\t\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared simultaneously,\n\t\t\t\t\t\t\t\t\t\t\t\tthen any employee start working\n\t\t\t\t\t\t\t\t\t\t\t\ton the one that requires greater preparation time.\n\t\t\t\t\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers, then\n\t\t\t\t\t\t\t\t\t\t\t\the will prefer working on the\n\t\t\t\t\t\t\t\t\t\t\t\torder that was placed first.\n\t\t\t\t\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
-            "question_text": "\u00a0\u00a0Q.2 [11916616]  If\n\t\t\t\t\t\t\t\t\t\t\t\tC-6 at counter B says, \"serve my order items one by one and as soon as\n\t\t\t\t\t\t\t\t\t\t\t\tthey are ready\", then what\n\t\t\t\t\t\t\t\t\t\t\t\twill be the time gap (in minutes) between the first dish and the last\n\t\t\t\t\t\t\t\t\t\t\t\tdish served to him?",
+            "instructions": "<b>Directions for questions 1 to 5:\n\t\t\t\t\t\t\t\t\t\tAnswer the questions on the basis of the information given below.<br><br>\n\t\t\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and R, and\n\t\t\t\t\t\t\t\t\t\twhoever is free works on the\n\t\t\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each with a person,\n\t\t\t\t\t\t\t\t\t\tother than P, Q and R, only\n\t\t\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant serves 3 dishes\n\t\t\t\t\t\t\t\t\t\t- Pizza, Garlic Bread and\n\t\t\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can work on a\n\t\t\t\t\t\t\t\t\t\tsingle quantity of any dish at\n\t\t\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table provides\n\t\t\t\t\t\t\t\t\t\tinformation regarding the preparation\n\t\t\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:<br><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770465/35-38dr.gif><br><br>\n\t\t\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by the six\n\t\t\t\t\t\t\t\t\t\tcustomers C-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.<br>\n\t\t\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared simultaneously, then any\n\t\t\t\t\t\t\t\t\t\temployee start working\n\t\t\t\t\t\t\t\t\t\ton the one that requires greater preparation time.<br>\n\t\t\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers, then he will\n\t\t\t\t\t\t\t\t\t\tprefer working on the\n\t\t\t\t\t\t\t\t\t\torder that was placed first.<br>\n\t\t\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
+            "question_text": "If C-6 at counter B says, \"serve my order items one by one and as soon as they are ready\", then what will be the time gap (in minutes) between the first dish and the last dish served to him? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576095' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "6"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770487/37s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>6</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770486/36s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
@@ -68,36 +68,36 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 1 to 5:\n\t\t\t\t\t\t\t\t\t\tAnswer the questions on the basis of the information given below.\n\t\t\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and R, and\n\t\t\t\t\t\t\t\t\t\twhoever is free works on the\n\t\t\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each with a person,\n\t\t\t\t\t\t\t\t\t\tother than P, Q and R, only\n\t\t\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant serves 3 dishes\n\t\t\t\t\t\t\t\t\t\t- Pizza, Garlic Bread and\n\t\t\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can work on a\n\t\t\t\t\t\t\t\t\t\tsingle quantity of any dish at\n\t\t\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table provides\n\t\t\t\t\t\t\t\t\t\tinformation regarding the preparation\n\t\t\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:\n\t\t\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by the six\n\t\t\t\t\t\t\t\t\t\tcustomers C-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.\n\t\t\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared simultaneously, then any\n\t\t\t\t\t\t\t\t\t\temployee start working\n\t\t\t\t\t\t\t\t\t\ton the one that requires greater preparation time.\n\t\t\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers, then he will\n\t\t\t\t\t\t\t\t\t\tprefer working on the\n\t\t\t\t\t\t\t\t\t\torder that was placed first.\n\t\t\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  For maximum\n\t\t\t\t\t\t\t\t\t\thow many minutes between 10:00 and 10:30 any of the employees was free?",
+            "instructions": "<b>Directions for questions 1 to 5: Answer\n\t\t\t\t\t\t\t\t\tthe questions on the basis of the information given below.<br><br>\n\t\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and R, and whoever is\n\t\t\t\t\t\t\t\t\tfree works on the\n\t\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each with a person,\n\t\t\t\t\t\t\t\t\tother than P, Q and R, only\n\t\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant serves 3 dishes -\n\t\t\t\t\t\t\t\t\tPizza, Garlic Bread and\n\t\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can work on a single\n\t\t\t\t\t\t\t\t\tquantity of any dish at\n\t\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table provides information\n\t\t\t\t\t\t\t\t\tregarding the preparation\n\t\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:<br><img\n\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770465/35-38dr.gif><br><br>\n\t\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by the six\n\t\t\t\t\t\t\t\t\tcustomers C-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.<br>\n\t\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared simultaneously, then any\n\t\t\t\t\t\t\t\t\temployee start working\n\t\t\t\t\t\t\t\t\ton the one that requires greater preparation time.<br>\n\t\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers, then he will\n\t\t\t\t\t\t\t\t\tprefer working on the\n\t\t\t\t\t\t\t\t\torder that was placed first.<br>\n\t\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
+            "question_text": "For maximum how many minutes between 10:00 and 10:30 any of the employees was free? 1 &nbsp;",
             "options": [
-                "1",
-                "13",
-                "10",
-                "14"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770488/38s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770487/37s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 1 to 5: Answer\n\t\t\t\t\t\t\t\t\tthe questions on the basis of the information given below.\n\t\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and R, and whoever is\n\t\t\t\t\t\t\t\t\tfree works on the\n\t\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each with a person,\n\t\t\t\t\t\t\t\t\tother than P, Q and R, only\n\t\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant serves 3 dishes -\n\t\t\t\t\t\t\t\t\tPizza, Garlic Bread and\n\t\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can work on a single\n\t\t\t\t\t\t\t\t\tquantity of any dish at\n\t\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table provides information\n\t\t\t\t\t\t\t\t\tregarding the preparation\n\t\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:\n\t\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by the six\n\t\t\t\t\t\t\t\t\tcustomers C-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.\n\t\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared simultaneously, then any\n\t\t\t\t\t\t\t\t\temployee start working\n\t\t\t\t\t\t\t\t\ton the one that requires greater preparation time.\n\t\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers, then he will\n\t\t\t\t\t\t\t\t\tprefer working on the\n\t\t\t\t\t\t\t\t\torder that was placed first.\n\t\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  How many\n\t\t\t\t\t\t\t\t\tcustomers were served completely by 10 : 20?",
+            "instructions": "<b>Directions for questions 1 to 5: Answer the\n\t\t\t\t\t\t\t\tquestions on the basis of the information given below.<br><br>\n\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and R, and whoever is\n\t\t\t\t\t\t\t\tfree works on the\n\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each with a person, other\n\t\t\t\t\t\t\t\tthan P, Q and R, only\n\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant serves 3 dishes -\n\t\t\t\t\t\t\t\tPizza, Garlic Bread and\n\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can work on a single\n\t\t\t\t\t\t\t\tquantity of any dish at\n\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table provides information\n\t\t\t\t\t\t\t\tregarding the preparation\n\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:<br><img\n\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770465/35-38dr.gif><br><br>\n\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by the six customers\n\t\t\t\t\t\t\t\tC-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.<br>\n\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared simultaneously, then any employee\n\t\t\t\t\t\t\t\tstart working\n\t\t\t\t\t\t\t\ton the one that requires greater preparation time.<br>\n\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers, then he will prefer\n\t\t\t\t\t\t\t\tworking on the\n\t\t\t\t\t\t\t\torder that was placed first.<br>\n\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
+            "question_text": "How many customers were served completely by 10 : 20? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576097' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776748/1576110/5s.gif\"><br><br>"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770488/38s.gif>\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -105,8 +105,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 1 to 5: Answer the\n\t\t\t\t\t\t\t\tquestions on the basis of the information given below.\n\t\t\t\t\t\t\t\tIn an Italian restaurant there are three employees namely P, Q and R, and whoever is\n\t\t\t\t\t\t\t\tfree works on the\n\t\t\t\t\t\t\t\torder available at that time. There are 2 ordering counters each with a person, other\n\t\t\t\t\t\t\t\tthan P, Q and R, only\n\t\t\t\t\t\t\t\tto take orders and to serve the completed orders. The restaurant serves 3 dishes -\n\t\t\t\t\t\t\t\tPizza, Garlic Bread and\n\t\t\t\t\t\t\t\tTacho - which are first prepared and then baked. An employee can work on a single\n\t\t\t\t\t\t\t\tquantity of any dish at\n\t\t\t\t\t\t\t\ta time, and also when a dish is in oven for baking, the employee is\n\t\t\t\t\t\t\t\tfree and can take another dish to work on. The following table provides information\n\t\t\t\t\t\t\t\tregarding the preparation\n\t\t\t\t\t\t\t\ttime and the baking time for the 3 dishes:\n\t\t\t\t\t\t\t\t\u2022 The table shown above provides the records of the orders placed by the six customers\n\t\t\t\t\t\t\t\tC-1, C-2, C-3, C-\n\t\t\t\t\t\t\t\t4, C-5 and C-6 on a particular day.\n\t\t\t\t\t\t\t\t\u2022 If the restaurant requires two dishes to be prepared simultaneously, then any employee\n\t\t\t\t\t\t\t\tstart working\n\t\t\t\t\t\t\t\ton the one that requires greater preparation time.\n\t\t\t\t\t\t\t\t\u2022 If an employee has orders available from two different customers, then he will prefer\n\t\t\t\t\t\t\t\tworking on the\n\t\t\t\t\t\t\t\torder that was placed first.\n\t\t\t\t\t\t\t\t\u2022 The number of ovens is not limited.",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  If C3 and C5 are\n\t\t\t\t\t\t\t\tfriends and they decide to take away their orders together, then who will wait for whom\n\t\t\t\t\t\t\t\tand for how much time?",
+            "instructions": "<b>Directions for questions 6 to 10: Answer the\n\t\t\t\t\t\t\tquestions on the basis of the information given below.<br><br>\n\t\t\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of\n\t\t\t\t\t\t\tmarketing teams\n\t\t\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in\n\t\t\t\t\t\t\tany order.\n\t\t\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team\n\t\t\t\t\t\t\tmembers\n\t\t\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal\n\t\t\t\t\t\t\tnumber of team\n\t\t\t\t\t\t\tmembers.<br>\n\t\t\t\t\t\t\tFurther the following information is also known:<br>\n\t\t\t\t\t\t\t1. Team of Urbanico company has maximum number of members.<br>\n\t\t\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5\n\t\t\t\t\t\t\tin any\n\t\t\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.<br>\n\t\t\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.<br>\n\t\t\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.<br>\n\t\t\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members\n\t\t\t\t\t\t\tfrom\n\t\t\t\t\t\t\tQuatar.<br>\n\t\t\t\t\t\t\t6. Deewana has the lowest number of team members.<br>\n\t\t\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\t\t\tconsecutive\n\t\t\t\t\t\t\tprime multiples of 5.<br>\n\t\t\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from\n\t\t\t\t\t\t\tSentinel.<br>\n\t\t\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of\n\t\t\t\t\t\t\tmembers of\n\t\t\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
+            "question_text": "If C3 and C5 are friends and they decide to take away their orders together, then who will wait for whom and for how much time? 1 &nbsp;",
             "options": [
                 "C3 will wait for C5, 9 min",
                 "C5 will wait for C3, 8 min",
@@ -115,42 +115,42 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770489/39s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776748/1576110/5s.gif><br><br>\n\t\t\t\t\t\t\t\t\t\t\tThe last pizza will be received by C3 at 10:25 and C5 will receive his\n\t\t\t\t\t\t\t\t\t\t\tcomplete order by 10:16. Therefore, C5 will have to wait for C3 for 9 min.\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Direction for questions 6 to 10: Answer the\n\t\t\t\t\t\t\tquestions on the basis of the information given below.\n\t\t\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of\n\t\t\t\t\t\t\tmarketing teams\n\t\t\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in\n\t\t\t\t\t\t\tany order.\n\t\t\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team\n\t\t\t\t\t\t\tmembers\n\t\t\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal\n\t\t\t\t\t\t\tnumber of team\n\t\t\t\t\t\t\tmembers.\n\t\t\t\t\t\t\tFurther the following information is also known:\n\t\t\t\t\t\t\t1. Team of Urbanico company has maximum number of members.\n\t\t\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5\n\t\t\t\t\t\t\tin any\n\t\t\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.\n\t\t\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.\n\t\t\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.\n\t\t\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members\n\t\t\t\t\t\t\tfrom\n\t\t\t\t\t\t\tQuatar.\n\t\t\t\t\t\t\t6. Deewana has the lowest number of team members.\n\t\t\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\t\t\tconsecutive\n\t\t\t\t\t\t\tprime multiples of 5.\n\t\t\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from\n\t\t\t\t\t\t\tSentinel.\n\t\t\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of\n\t\t\t\t\t\t\tmembers of\n\t\t\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  For how many team\n\t\t\t\t\t\t\tleaders we can exactly determine the company they work for and the number\n\t\t\t\t\t\t\tof members in their teams?",
+            "instructions": "<b>Directions for questions 6 to 10: Answer the questions\n\t\t\t\t\t\ton the basis of the information given below.<br><br>\n\t\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of marketing\n\t\t\t\t\t\tteams\n\t\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in any\n\t\t\t\t\t\torder.\n\t\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team\n\t\t\t\t\t\tmembers\n\t\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal number\n\t\t\t\t\t\tof team\n\t\t\t\t\t\tmembers.<br>\n\t\t\t\t\t\tFurther the following information is also known:<br>\n\t\t\t\t\t\t1. Team of Urbanico company has maximum number of members.<br>\n\t\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5 in\n\t\t\t\t\t\tany\n\t\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.<br>\n\t\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.<br>\n\t\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.<br>\n\t\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members from\n\t\t\t\t\t\tQuatar.<br>\n\t\t\t\t\t\t6. Deewana has the lowest number of team members.<br>\n\t\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\t\tconsecutive\n\t\t\t\t\t\tprime multiples of 5.<br>\n\t\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from Sentinel.<br>\n\t\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of members\n\t\t\t\t\t\tof\n\t\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
+            "question_text": "For how many team leaders we can exactly determine the company they work for and the number of members in their teams? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576098' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "5"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770490/40s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>5</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770489/39s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Direction for questions 6 to 10: Answer the questions\n\t\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of marketing\n\t\t\t\t\t\tteams\n\t\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in any\n\t\t\t\t\t\torder.\n\t\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team\n\t\t\t\t\t\tmembers\n\t\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal number\n\t\t\t\t\t\tof team\n\t\t\t\t\t\tmembers.\n\t\t\t\t\t\tFurther the following information is also known:\n\t\t\t\t\t\t1. Team of Urbanico company has maximum number of members.\n\t\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5 in\n\t\t\t\t\t\tany\n\t\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.\n\t\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.\n\t\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.\n\t\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members from\n\t\t\t\t\t\tQuatar.\n\t\t\t\t\t\t6. Deewana has the lowest number of team members.\n\t\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\t\tconsecutive\n\t\t\t\t\t\tprime multiples of 5.\n\t\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from Sentinel.\n\t\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of members\n\t\t\t\t\t\tof\n\t\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  If Ghayal has maximum team\n\t\t\t\t\t\tmembers, then what is the sum of members in Faizal, Quatar and\n\t\t\t\t\t\tSentinel\u2019s teams?",
+            "instructions": "<b>Directions for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of marketing\n\t\t\t\t\tteams\n\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in any order.\n\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team members\n\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal number of\n\t\t\t\t\tteam\n\t\t\t\t\tmembers.<br>\n\t\t\t\t\tFurther the following information is also known:<br>\n\t\t\t\t\t1. Team of Urbanico company has maximum number of members.<br>\n\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5 in any\n\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.<br>\n\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.<br>\n\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.<br>\n\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members from\n\t\t\t\t\tQuatar.<br>\n\t\t\t\t\t6. Deewana has the lowest number of team members.<br>\n\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\tconsecutive\n\t\t\t\t\tprime multiples of 5.<br>\n\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from Sentinel.<br>\n\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of members of\n\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
+            "question_text": "If Ghayal has maximum team members, then what is the sum of members in Faizal, Quatar and Sentinel\u2019s teams? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576099' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "95"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770491/41s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>95</B>\n\t\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770490/40s.gif>\n\t\t\t\t\t\t\t\t</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -158,20 +158,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of marketing\n\t\t\t\t\tteams\n\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in any order.\n\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team members\n\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal number of\n\t\t\t\t\tteam\n\t\t\t\t\tmembers.\n\t\t\t\t\tFurther the following information is also known:\n\t\t\t\t\t1. Team of Urbanico company has maximum number of members.\n\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5 in any\n\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.\n\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.\n\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.\n\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members from\n\t\t\t\t\tQuatar.\n\t\t\t\t\t6. Deewana has the lowest number of team members.\n\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\tconsecutive\n\t\t\t\t\tprime multiples of 5.\n\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from Sentinel.\n\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of members of\n\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  20 new members were to join\n\t\t\t\t\tsuch that they can be divided in any four teams in the ratio 1 : 2 : 3 :\n\t\t\t\t\t4, but teams that originally have number of team members as prime multiple of 5 cannot receive new\n\t\t\t\t\tmembers that are prime multiple of 2.\n\t\t\t\t\tWhat can be the maximum possible sum of team members now in Afzal, Bashir, Chaman and\n\t\t\t\t\tGhayal's team?(Here team members need not be multiple of 5, and number of members in each team is\n\t\t\t\t\tstill less than 50)",
+            "instructions": "<b>Directions for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of marketing\n\t\t\t\t\tteams\n\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in any order.\n\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team members\n\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal number of\n\t\t\t\t\tteam\n\t\t\t\t\tmembers.<br>\n\t\t\t\t\tFurther the following information is also known:<br>\n\t\t\t\t\t1. Team of Urbanico company has maximum number of members.<br>\n\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5 in any\n\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.<br>\n\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.<br>\n\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.<br>\n\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members from\n\t\t\t\t\tQuatar.<br>\n\t\t\t\t\t6. Deewana has the lowest number of team members.<br>\n\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\tconsecutive\n\t\t\t\t\tprime multiples of 5.<br>\n\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from Sentinel.<br>\n\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of members of\n\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
+            "question_text": "20 new members were to join such that they can be divided in any four teams in the ratio 1 : 2 : 3 : 4, but teams that originally have number of team members as prime multiple of 5 cannot receive new members that are prime multiple of 2. What can be the maximum possible sum of team members now in Afzal, Bashir, Chaman and Ghayal's team?(Here team members need not be multiple of 5, and number of members in each team is still less than 50) 1 &nbsp;",
             "options": [
-                "111",
-                "103",
-                "109",
-                "106"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770492/42s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770491/41s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
@@ -179,20 +179,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of marketing\n\t\t\t\t\tteams\n\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in any order.\n\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team members\n\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal number of\n\t\t\t\t\tteam\n\t\t\t\t\tmembers.\n\t\t\t\t\tFurther the following information is also known:\n\t\t\t\t\t1. Team of Urbanico company has maximum number of members.\n\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5 in any\n\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.\n\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.\n\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.\n\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members from\n\t\t\t\t\tQuatar.\n\t\t\t\t\t6. Deewana has the lowest number of team members.\n\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\tconsecutive\n\t\t\t\t\tprime multiples of 5.\n\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from Sentinel.\n\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of members of\n\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  20 new members were to join\n\t\t\t\t\tsuch that they can be divided in any four teams in the ratio 1 : 2 : 3 :\n\t\t\t\t\t4, but teams that originally have number of team members as prime multiple of 5 cannot receive new\n\t\t\t\t\tmembers that are prime multiple of 2.\n\t\t\t\t\tAlso if each member of the team, having maximum number of team members, receives salary equal to\n\t\t\t\t\tnumber of\n\t\t\t\t\tmembers with the team having lowest number of members; similarly each member of team, having 2nd\n\t\t\t\t\thighest number of team members,\n\t\t\t\t\treceive salary equal to number of members with the team having second\n\t\t\t\t\tlowest number of members; and so on, then what could be the maximum amount spent on salary by\n\t\t\t\t\tany team?",
+            "instructions": "<b>Directions for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of marketing\n\t\t\t\t\tteams\n\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in any order.\n\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team members\n\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal number of\n\t\t\t\t\tteam\n\t\t\t\t\tmembers.<br>\n\t\t\t\t\tFurther the following information is also known:<br>\n\t\t\t\t\t1. Team of Urbanico company has maximum number of members.<br>\n\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5 in any\n\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.<br>\n\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.<br>\n\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.<br>\n\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members from\n\t\t\t\t\tQuatar.<br>\n\t\t\t\t\t6. Deewana has the lowest number of team members.<br>\n\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\tconsecutive\n\t\t\t\t\tprime multiples of 5.<br>\n\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from Sentinel.<br>\n\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of members of\n\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
+            "question_text": "20 new members were to join such that they can be divided in any four teams in the ratio 1 : 2 : 3 : 4, but teams that originally have number of team members as prime multiple of 5 cannot receive new members that are prime multiple of 2. Also if each member of the team, having maximum number of team members, receives salary equal to number of members with the team having lowest number of members; similarly each member of team, having 2nd highest number of team members, receive salary equal to number of members with the team having second lowest number of members; and so on, then what could be the maximum amount spent on salary by any team? 1 &nbsp;",
             "options": [
-                "765",
-                "1089",
-                "612",
-                "450"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776748/1576111/10s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770492/42s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
@@ -200,20 +200,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 6 to 10: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\tSeven people: Afjal, Bashir, Chaman, Deewana, Ehsan, Faizal and Ghayal are leaders of marketing\n\t\t\t\t\tteams\n\t\t\t\t\tin companies namely - Phyron, Quatar, Romboxy, Sentinel, Tesla, Urbanico and Vertigo - in any order.\n\t\t\t\t\tEach of these leaders has a certain number of team members in their team. The number of team members\n\t\t\t\t\tin any team must be a multiple of 5 and should be less than 50. No two leaders have equal number of\n\t\t\t\t\tteam\n\t\t\t\t\tmembers.\n\t\t\t\t\tFurther the following information is also known:\n\t\t\t\t\t1. Team of Urbanico company has maximum number of members.\n\t\t\t\t\t2. Teams of Afzal and Bashir have number of members which are two consecutive multiples of 5 in any\n\t\t\t\t\torder. The same is also true for teams of Faizal and Ghayal.\n\t\t\t\t\t3. Only three teams have number of members that is an even multiple of 5.\n\t\t\t\t\t4. Afzal, who is from Phyron, has 10 members in his team.\n\t\t\t\t\t5. Sum of number of members from Urbanico and Tesla is equal to twice the number of members from\n\t\t\t\t\tQuatar.\n\t\t\t\t\t6. Deewana has the lowest number of team members.\n\t\t\t\t\t7. For only three teams, the number of members are prime multiples of 5 and also these are\n\t\t\t\t\tconsecutive\n\t\t\t\t\tprime multiples of 5.\n\t\t\t\t\t8. Sum of team members of Afzal and Bashir is equal to number of team members from Sentinel.\n\t\t\t\t\t9. Team of Ehsan, who is from Quatar, has number of members which is equal to the sum of members of\n\t\t\t\t\tChaman\u2019s team and the team from Romboxy.",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  How many members are there in\n\t\t\t\t\tthe team from company Romboxy?",
+            "instructions": "<b>Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.<br><br>\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:<br>\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.<br>\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.<br>\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.<br>\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.<br>\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.<br><br>\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
+            "question_text": "How many members are there in the team from company Romboxy? 1 &nbsp;",
             "options": [
-                "10",
+                "",
                 "Cannot be determined",
-                "15",
-                "5"
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770501/51s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776748/1576111/10s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
@@ -221,8 +221,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  Which of the following pair of\n\t\t\t\t\tfriends must be on two consecutive positions in each round?",
+            "instructions": "<b>Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.<br><br>\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:<br>\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.<br>\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.<br>\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.<br>\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.<br>\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.<br><br>\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
+            "question_text": "Which of the following pair of friends must be on two consecutive positions in each round? 1 &nbsp;",
             "options": [
                 "Arjun and Sahdev",
                 "Drona and Chanakya",
@@ -231,10 +231,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770502/52s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770501/51s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
@@ -242,20 +242,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  The lowest rank which Sahdev\n\t\t\t\t\tcould get in round III was",
+            "instructions": "<b>Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.<br><br>\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:<br>\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.<br>\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.<br>\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.<br>\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.<br>\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.<br><br>\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
+            "question_text": "The lowest rank which Sahdev could get in round III was 1 &nbsp;",
             "options": [
-                "4",
-                "3",
-                "5",
-                "6"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770503/53s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770502/52s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
@@ -263,20 +263,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  What was the difference\n\t\t\t\t\tbetween the highest and the lowest possible sum of the ranks obtained by\n\t\t\t\t\tAkbar in the three rounds?",
+            "instructions": "<b>Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.<br><br>\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:<br>\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.<br>\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.<br>\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.<br>\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.<br>\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.<br><br>\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
+            "question_text": "What was the difference between the highest and the lowest possible sum of the ranks obtained by Akbar in the three rounds? 1 &nbsp;",
             "options": [
-                "3",
-                "2",
-                "1",
-                "0"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770504/54s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770503/53s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -284,8 +284,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  Which of the following\n\t\t\t\t\tstatement(s) is/are true?\n\t\t\t\t\tI. The lowest rank which Erawat could get in any round was 6.\n\t\t\t\t\tII. If Birbal was ranked 3rd in round III, then Sahdev was ranked 1st in that\n\t\t\t\t\tround.\n\t\t\t\t\tIII. If Akbar got 8th rank in round II, then Arjun got rank 5 in round III.",
+            "instructions": "<b>Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.<br><br>\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:<br>\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.<br>\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.<br>\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.<br>\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.<br>\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.<br><br>\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
+            "question_text": "Which of the following statement(s) is/are true? I. The lowest rank which Erawat could get in any round was 6. II. If Birbal was ranked 3<sup>rd</sup> in round III, then Sahdev was ranked 1<sup>st</sup> in that round. III. If Akbar got 8<sup>th</sup> rank in round II, then Arjun got rank 5 in round III. 1 &nbsp;",
             "options": [
                 "Only II",
                 "Only III",
@@ -294,10 +294,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776748/1576112/15s.jpg\"><br><br><br><br><br><br><br><br><br><br>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770504/54s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
@@ -305,36 +305,36 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the questions\n\t\t\t\t\ton the basis of the information given below.\n\t\t\t\t\tEight friends- Akbar, Birbal, Chanakya, Drona, Erawat, Arjun, Nakul and Sahdev - participated in a\n\t\t\t\t\tgame\n\t\t\t\t\tconsisting three rounds \u2013 I, II and III. Each friend got a different rank in different rounds and no\n\t\t\t\t\ttwo friends\n\t\t\t\t\tgot the same rank in any round. It is also given that:\n\t\t\t\t\t(i). The sum of ranks in the three rounds together was equal for Chanakya and Birbal.\n\t\t\t\t\t(ii). The rank of Sahdev in round II was higher than that in round I but lower than that in round\n\t\t\t\t\tIII.\n\t\t\t\t\t(iii). In each round Birbal, Nakul and Arjun got three consecutive ranks from higher to lower, in\n\t\t\t\t\tthat order.\n\t\t\t\t\t(iv). Akbar was ranked 1st and last in round II and round III, in any order.\n\t\t\t\t\t(v). Erawat got rank 6 in round III and rank 4 in round I. Drona got rank 2 in round II and rank 1\n\t\t\t\t\tin round I. Chanakya got rank 3 in round II.\n\t\t\t\t\t[Note: Rank 1 was the highest and rank 8 was the lowest among them]",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  Select the statement that is\n\t\t\t\tdefinitely  TRUE  based on the information given.",
+            "instructions": "<b>Directions for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.<br><img\n\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770513/63-66dr.gif><br>Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.<br>\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:<br>\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.<br>\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.<br>\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.<br><br>\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
+            "question_text": "Select the statement that is definitely TRUE based on the information given. 1 &nbsp;",
             "options": [
-                "The maximum difference between the sum of ranks in the\n\t\t\t\tthree rounds of any two individuals is 7.",
+                "The maximum difference between the sum of ranks in the three rounds of any two individuals is 7.",
                 "The sum of ranks of exactly four individuals is 12.",
                 "The sum of ranks of exactly one individual is 14.",
-                "The sum of ranks in the three rounds of exactly 3 individuals\n\t\t\t\twas found to be equal."
+                "The sum of ranks in the three rounds of exactly 3 individuals was found to be equal."
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770513/63s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\tsrc=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776748/1576112/15s.jpg><br>\n\t\t\t\t\t\t\t\tThe sum of ranks of each of the individuals (in Case 1 and Case 2) can be listed as\n\t\t\t\t\t\t\t\tfollows:<br>\n\t\t\t\t\t\t\t\tAkbar = {12, 12}<br>\n\t\t\t\t\t\t\t\tBirbal = {10, 12} <br>\n\t\t\t\t\t\t\t\tChanakya = {10, 12}<br>\n\t\t\t\t\t\t\t\tDrona = {10, 11}<br>\n\t\t\t\t\t\t\t\tEravat = {16, 11}<br>\n\t\t\t\t\t\t\t\tArjun = {16, 18}<br>\n\t\t\t\t\t\t\t\tNakul = {13, 15}<br>\n\t\t\t\t\t\t\t\tSahdev = {19, 17}<br>\n\t\t\t\t\t\t\t\tHence, we can see that statements 1, 2 and 3 are not true whereas statement 4 is true as\n\t\t\t\t\t\t\t\tthe sum of ranks for exactly 3 individuals can be 10 in Case 1 or 12 in Case 2.\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Direction for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  How many individual(s) in the\n\t\t\t\t\tmatrix can receive exactly two friend requests?",
+            "instructions": "<b>Directions for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.<br><img\n\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770513/63-66dr.gif><br>Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.<br>\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:<br>\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.<br>\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.<br>\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.<br><br>\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
+            "question_text": "How many individual(s) in the matrix can receive exactly two friend requests? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576106' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770514/64s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770513/63s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
@@ -342,8 +342,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  In which row/column there are\n\t\t\t\t\tmaximum individuals who can receive friend requests from at least 3 individuals?",
+            "instructions": "<b>Directions for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.<br><img\n\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770513/63-66dr.gif><br>Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.<br>\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:<br>\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.<br>\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.<br>\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.<br><br>\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
+            "question_text": "In which row/column there are maximum individuals who can receive friend requests from at least 3 individuals? 1 &nbsp;",
             "options": [
                 "Fifth column",
                 "Third column",
@@ -352,26 +352,26 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770516/65s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770514/64s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Direction for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  How many individual(s) are\n\t\t\t\t\tcommon, out of individual(s), who can send friend request to both the\n\t\t\t\t\tindividuals having initial \u2018m\u2019 in first column?",
+            "instructions": "<b>Directions for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.<br><img\n\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770513/63-66dr.gif><br>Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.<br>\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:<br>\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.<br>\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.<br>\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.<br><br>\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
+            "question_text": "How many individual(s) are common, out of individual(s), who can send friend request to both the individuals having initial \u2018m\u2019 in first column? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576108' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770517/66s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770516/65s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20019": {
             "id": "20019",
@@ -379,20 +379,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  Which of the following is\n\t\t\t\t\tfalse?",
+            "instructions": "<b>Directions for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.<br><img\n\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770513/63-66dr.gif><br>Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.<br>\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:<br>\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.<br>\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.<br>\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.<br><br>\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
+            "question_text": "Which of the following is false? 1 &nbsp;",
             "options": [
-                "Each column has at least one individual who can\n\t\t\t\t\treceive at the most one friend request.",
-                "Each individual with initial \u2018n\u2019, can receive at least two\n\t\t\t\t\tfriend request.",
-                "Maximum friend requests received by any individual can be\n\t\t\t\t\t4.",
-                "Each column has at least two individuals who can receive\n\t\t\t\t\tequal number of friend requests."
+                "Each column has at least one individual who can receive at the most one friend request.",
+                "Each individual with initial \u2018n\u2019, can receive at least two friend request.",
+                "Maximum friend requests received by any individual can be 4.",
+                "Each column has at least two individuals who can receive equal number of friend requests."
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776748/1576113/20s.jpg\"><br><br><br>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770517/66s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -400,20 +400,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  What is the difference between\n\t\t\t\tthe maximum and minimum number of total requests received by the individuals in any row or column?",
+            "instructions": "<b>Directions for questions 16 to 20: Answer the questions on\n\t\t\t\t\tthe basis of the information given below.<br><br>\n\t\t\t\t\tIn a square matrix of dimension 5 \u00d7 5, alphabets are used to fill its rows and columns. Each\n\t\t\t\t\talphabet\n\t\t\t\t\trepresents the initials of the names of 25 individuals. The alphabets used in the matrix are : a, i,\n\t\t\t\t\tj, m, n, o, r, t and u.<br><img\n\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770513/63-66dr.gif><br>Rows are\n\t\t\t\t\tnumbered from top to bottom and columns are numbered from left to right. Every initial in the\n\t\t\t\t\tabove matrix is given a rank according to their dictionary order. Individuals with same initials are\n\t\t\t\t\tgiven\n\t\t\t\t\tsame rank (e.g., \u2018a\u2019 is given rank 1, \u2018i\u2019 is given rank 2, \u2018j\u2019 is given rank 3, and so on). Also,\n\t\t\t\t\trank \u20181\u2019 is the\n\t\t\t\t\thighest and \u20189\u2019 is the lowest.<br>\n\t\t\t\t\tWe say first individual can send friend request to the second individual on a social mobile\n\t\t\t\t\tapplication only\n\t\t\t\t\tif all the following three conditions are satisfied:<br>\n\t\t\t\t\t(i) Individual first and individual second are in same row or same column.<br>\n\t\t\t\t\t(ii) First Individual\u2019s initial is ranked higher than the second individual\u2019s initial.<br>\n\t\t\t\t\t(iii) If there is/are any other individual(s) between first and second individual in the row/column,\n\t\t\t\t\tsuch individual(s) must be\n\t\t\t\t\tat least three ranks lower than the first individual.<br><br>\n\t\t\t\t\tThus in the matrix above, consider the individual\u2019s initial in first row and first column , i.e.,\n\t\t\t\t\t\u2018m\u2019. He can\n\t\t\t\t\treceive friend request from two individuals: one individual being on his right with initial \u2018a\u2019 and\n\t\t\t\t\tother being\n\t\t\t\t\tthe one below him with initial \u2018a\u2019.",
+            "question_text": "What is the difference between the maximum and minimum number of total requests received by the individuals in any row or column? 1 &nbsp;",
             "options": [
-                "4",
-                "6",
-                "3",
-                "5"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\tsrc=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776748/1576113/20s.jpg><br>\n\n\t\t\t\t\t\t\t\tWe can see that the maximum number of requests is for the 5th row and it is 12 <br> also\n\t\t\t\t\t\t\t\tthe minimum number of requests is for the 2nd row and it is 7.<br>\n\t\t\t\t\t\t\t\tRequired difference = 12 - 7 = 5.</div></div>"
         }
     }
 }

@@ -1,7 +1,7 @@
 {
     "name": "QA 01 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -34,19 +34,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616]  If A(3,5) and B(9,7) are two end points of diameter AB of a circle and two tangents AC and BD are\ndrawn to the circle touching it at points A and B. It is known that AC = 2BD = 12cm, then what is the\narea (in cm2) enclosed by the figure ABDC?",
+            "question_text": "If A(3,5) and B(9,7) are two end points of diameter AB of a circle and two tangents AC and BD are drawn to the circle touching it at points A and B. It is known that AC = 2BD = 12cm, then what is the area (in cm<sup>2</sup>) enclosed by the figure ABDC? 1 &nbsp;",
             "options": [
-                "18/\u221a20",
-                "18\u221a10",
-                "12/\u221a10",
-                "9/\u221a20"
+                "/\u221a20",
+                "\u221a10",
+                "/\u221a10",
+                "/\u221a20"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770570/84s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>2</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795474/72s.gif></div></div>"
         },
         "20002": {
             "id": "20002",
@@ -55,19 +55,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616]  In how many ways 10 identical balls be distributed among 5 kids such that all of them get at least\none ball and no one receives more than 4 balls?",
+            "question_text": "In how many ways 10 identical balls be distributed among 5 kids such that all of them get at least one ball and no one receives more than 4 balls? 1 &nbsp;",
             "options": [
-                "101",
-                "105",
-                "126",
-                "121"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770579/93s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770570/84s.gif></div></div>"
         },
         "20003": {
             "id": "20003",
@@ -76,35 +76,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  In what proportion can three varieties of milk solutions, containing 40%, 72% and 90% milk\nrespectively, should be mixed so that the concentration of milk in the final solution is 60%?",
+            "question_text": "In what proportion can three varieties of milk solutions, containing 40%, 72% and 90% milk respectively, should be mixed so that the concentration of milk in the final solution is 60%? 1 &nbsp;",
             "options": [
-                "3 : 15 : 4",
-                "6 : 5 : 2",
-                "3 : 10 : 2",
+                ": 15 : 4",
+                ": 5 : 2",
+                ": 10 : 2",
                 "Both (1) and (3)."
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770557/71s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>2</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770579/93s.gif></div></div>"
         },
         "20004": {
             "id": "20004",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  Find the maximum value of 5\u2212(2x2\u22128x+6).",
+            "question_text": "Find the maximum value of 5<sup>\u2212(2x<sup><sup>2</sup></sup>\u22128x+6)</sup>.<ul class='list-group'><li class='list-group-item'><B><a href='#quesSol1575840' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li></ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "25"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770572/86s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>25</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770557/71s.gif></div></div>"
         },
         "20005": {
             "id": "20005",
@@ -113,33 +113,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "44",
-                "36"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770583/97s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770572/86s.gif></div></div>"
         },
         "20006": {
             "id": "20006",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  A and B start moving simultaneously towards each other from points X and Y respectively. A starts\nat the speed of 2 m/sec in the first second and then increases his speed every second by 3 m/sec . Similarly,\nB starts at 3 m/sec and increases his speed every second by some integral speed in m/sec . They meet\nat the end of nth second (n > 2) and speed of B during nth second was decuple of that of A. Find the distance (in meters)\nbetween points X and Y. [decuple = ten folds]",
+            "question_text": "A and B start moving simultaneously towards each other from points X and Y respectively. A starts at the speed of 2 m/sec in the first second and then increases his speed every second by 3 m/sec . Similarly, B starts at 3 m/sec and increases his speed every second by some integral speed in m/sec . They meet at the end of nth second (n > 2) and speed of B during nth second was decuple of that of A. Find the distance (in meters) between points X and Y. [decuple = ten folds]<ul class='list-group'><li class='list-group-item'><B><a href='#quesSol1575854' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li></ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "5292"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b><br><br>"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>5292</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770583/97s.gif></div></div>"
         },
         "20007": {
             "id": "20007",
@@ -148,19 +150,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  The average monthly salary of 12 workers and 3 managers in a factory was Rs. 600. When one of\nthe managers, whose salary was Rs. 720, and a worker, whose salary was Rs 300, were replaced\nwith a new manager and a new worker, where the salary of the new worker was Rs 200, then the\naverage salary of the team dropped down to Rs.580. What is the salary (in Rs.) of the new\nmanager?",
+            "question_text": "The average monthly salary of 12 workers and 3 managers in a factory was Rs. 600. When one of the managers, whose salary was Rs. 720, and a worker, whose salary was Rs 300, were replaced with a new manager and a new worker, where the salary of the new worker was Rs 200, then the average salary of the team dropped down to Rs.580. What is the salary (in Rs.) of the new manager? 1 &nbsp;",
             "options": [
-                "520",
-                "420",
-                "690",
-                "640"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770561/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B><div ><b>The total salary of the 15 employees = 15 \u00d7 600 = 9000.<br>\nTotal salary reduced after the change of two\nemployees by 15 \u00d7 20 = 300, out of which 100 dropped\ndue to the new worker. So, 200 must have dropped\ndue to the new manager.<br>\nAs the salary of the exiting manager is 720,\nthe salary of the new manager = 720 \u2013 200 = 520.</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -169,51 +171,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  A large cube is divided into 7 smaller cubes with their volumes in the ratio of\n216 : 125 : 64 : 64 : 27 : 8 : 8. By what percent is the sum of the longest diagonals of all the smaller\ncubes is greater than the longest diagonal of the original cube?",
+            "question_text": "A large cube is divided into 7 smaller cubes with their volumes in the ratio of 216 : 125 : 64 : 64 : 27 : 8 : 8. By what percent is the sum of the longest diagonals of all the smaller cubes is greater than the longest diagonal of the original cube? 1 &nbsp;",
             "options": [
-                "225",
-                "175",
-                "200",
-                "250"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770518/67s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770561/75s.gif></div></div>"
         },
         "20009": {
             "id": "20009",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  On the opening ceremony of a bakery, Raju sold chocolate cake at a profit of 20%. After few days he\ngets 10% discount on its ingredients, making its cost price equivalent to 90% of its initial cost price.\nBut even then he decides to sell it at Rs. 18 more than the previous selling price, making him a gain\nof 40%. Find the initial cost price (in Rs.) of chocolate cake.",
+            "question_text": "On the opening ceremony of a bakery, Raju sold chocolate cake at a profit of 20%. After few days he gets 10% discount on its ingredients, making its cost price equivalent to 90% of its initial cost price. But even then he decides to sell it at Rs. 18 more than the previous selling price, making him a gain of 40%. Find the initial cost price (in Rs.) of chocolate cake.<ul class='list-group'><li class='list-group-item'><B><a href='#quesSol1575838' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li></ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "300"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770565/79s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>300</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770518/67s.gif></div></div>"
         },
         "20010": {
             "id": "20010",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  If 5(4x + 2) + 3(23x + 1) = 8192, then find the real value of x.",
+            "question_text": "If 5(4<sup>x + 2</sup>) + 3(2<sup>3x + 1</sup>) = 8192, then find the real value of x.<ul class='list-group'><li class='list-group-item'><B><a href='#quesSol1575846' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li></ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770559/73s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>3</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770565/79s.gif></div></div>"
         },
         "20011": {
             "id": "20011",
@@ -222,35 +224,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  A regular polygon, with number of diagonals equal to 9, is inscribed inside a circle, which in turn is\ninscribed inside a square of area 100 square units. Find the ratio of the circumference of the polygon,\ncircle and square.",
+            "question_text": "A regular polygon, with number of diagonals equal to 9, is inscribed inside a circle, which in turn is inscribed inside a square of area 100 square units. Find the ratio of the circumference of the polygon, circle and square. 1 &nbsp;",
             "options": [
-                "4 : 2\u03c0 : 3\u221a6",
-                "3 : \u03c0 : 4",
-                "2 : \u03c0 : 4",
-                "20 : 5\u03c0 : 24\u221a6"
+                ": 2\u03c0 : 3\u221a6",
+                ": \u03c0 : 4",
+                ": \u03c0 : 4",
+                ": 5\u03c0 : 24\u221a6"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770576/90s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>2</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770559/73s.gif></div></div>"
         },
         "20012": {
             "id": "20012",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  How many three digit numbers are there which when divided by 2, 3, 5 and 7 leaves remainder 1, 2, 4 and 2 respectively?",
+            "question_text": "How many three digit numbers are there which when divided by 2, 3, 5 and 7 leaves remainder 1, 2, 4 and 2 respectively?<ul class='list-group'><li class='list-group-item'><B><a href='#quesSol1575851' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li></ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "5"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770569/83s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>5</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770576/90s.gif></div></div>"
         },
         "20013": {
             "id": "20013",
@@ -259,19 +261,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  Rob, Bran and Jon plans to go for a picnic. Rob brings 12 chocolates, Bran brings Rs. 320 and Jon brings 20 chocolates. They divide all the chocolates equally among three of them, and Bran pays all his money to Rob and Jon for their contributions. How much money (in Rs.) should Rob and Jon receive from Bran?",
+            "question_text": "Rob, Bran and Jon plans to go for a picnic. Rob brings 12 chocolates, Bran brings Rs. 320 and Jon brings 20 chocolates. They divide all the chocolates equally among three of them, and Bran pays all his money to Rob and Jon for their contributions. How much money (in Rs.) should Rob and Jon receive from Bran? 1 &nbsp;",
             "options": [
-                "120 and 200",
-                "100 and 220",
-                "40 and 280",
-                "60 and 260"
+                "and 200",
+                "and 220",
+                "and 280",
+                "and 260"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770585/99s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>3</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770569/83s.gif></div></div>"
         },
         "20014": {
             "id": "20014",
@@ -280,19 +282,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  An alloy of gold, silver and bronze weighs 200 grams. If gold, silver and bronze in the alloy are in\nratio 3 : 4 : 3, then how much percentage of silver, as compared to the initial amount of silver, must\nbe added such that their weights are in ratio 1 : 2 : 1 in the final alloy?",
+            "question_text": "An alloy of gold, silver and bronze weighs 200 grams. If gold, silver and bronze in the alloy are in ratio 3 : 4 : 3, then how much percentage of silver, as compared to the initial amount of silver, must be added such that their weights are in ratio 1 : 2 : 1 in the final alloy? 1 &nbsp;",
             "options": [
-                "50",
-                "75",
-                "40",
-                "20"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770578/92s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770585/99s.gif></div></div>"
         },
         "20015": {
             "id": "20015",
@@ -301,19 +303,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  If \u03b1, \u03b2 are the roots of the equation ax2 + bx + c = 0 such that \u03b1\u03b2 =30 and \u03b1 = \u20132, then which of the following is the value of discriminant of the given equation?",
+            "question_text": "If \u03b1, \u03b2 are the roots of the equation ax<sup>2</sup> + bx + c = 0 such that \u03b1\u03b2 =30 and \u03b1 = \u20132, then which of the following is the value of discriminant of the given equation? 1 &nbsp;",
             "options": [
-                "196b",
-                "289a2",
-                "169a2",
-                "289a"
+                "b",
+                "a<sup>2</sup>",
+                "a<sup>2</sup>",
+                "a"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770563/77s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>3</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770578/92s.gif></div></div>"
         },
         "20016": {
             "id": "20016",
@@ -322,67 +324,67 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  A man invests Rs. 5,000 at the time of his son\u2019s birth in order to pay for his school in the future. The\nschool fees is Rs. 10,368. At what age will his son be able to go to school, if the rate of return is 20%\ncompounded annually?",
+            "question_text": "A man invests Rs. 5,000 at the time of his son\u2019s birth in order to pay for his school in the future. The school fees is Rs. 10,368. At what age will his son be able to go to school, if the rate of return is 20% compounded annually? 1 &nbsp;",
             "options": [
-                "2 years",
-                "4 years",
-                "6 years",
-                "8 years"
+                "years",
+                "years",
+                "years",
+                "years"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802510/68s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>2</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770563/77s.gif></div></div>"
         },
         "20017": {
             "id": "20017",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  45 students of a class took French, 35 took Spanish and 20 took German language. 5 students took\nall three languages. 15 took both French and Spanish, 10 took both French and German, and 5 took\nboth German and Spanish. Find the total number of students in the class, if each student of the\nclass took at least one of the languages.",
+            "question_text": "45 students of a class took French, 35 took Spanish and 20 took German language. 5 students took all three languages. 15 took both French and Spanish, 10 took both French and German, and 5 took both German and Spanish. Find the total number of students in the class, if each student of the class took at least one of the languages.<ul class='list-group'><li class='list-group-item'><B><a href='#quesSol1575889' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li></ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "75"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770556/70s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>75</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802510/68s.gif></div></div>"
         },
         "20018": {
             "id": "20018",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  One person can complete a particular task in 2601 days. On first day he works alone, on second\nday he is joined by 2 more people, each having same efficiency as his. Similarly on each consecutive\nday 2 more people join him. Find the number of days in which the work will get completed.",
+            "question_text": "One person can complete a particular task in 2601 days. On first day he works alone, on second day he is joined by 2 more people, each having same efficiency as his. Similarly on each consecutive day 2 more people join him. Find the number of days in which the work will get completed.<ul class='list-group'><li class='list-group-item'><B><a href='#quesSol1575839' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li></ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "51"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770562/76s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>51</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770556/70s.gif></div></div>"
         },
         "20019": {
             "id": "20019",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  Find the length (in cm) of the common chord of two circles whose radii are 136 cm and 255 cm, and\ntheir centres are 289 cm apart.",
+            "question_text": "Find the length (in cm) of the common chord of two circles whose radii are 136 cm and 255 cm, and their centres are 289 cm apart.<ul class='list-group'><li class='list-group-item'><B><a href='#quesSol1575844' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li></ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "240"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770574/88s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>240</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770562/76s.gif></div></div>"
         },
         "20020": {
             "id": "20020",
@@ -391,19 +393,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  A person reaches office 12 minutes late than his usual time while driving at 20 km/hr. If he reaches 16 minutes late than his usual time, then find his speed in km/hr.",
+            "question_text": "A person reaches office 12 minutes late than his usual time while driving at 20 km/hr. If he reaches 16 minutes late than his usual time, then find his speed in km/hr. 1 &nbsp;",
             "options": [
-                "18 km/hr",
-                "12 km/hr",
-                "30 km/hr",
+                "km/hr",
+                "km/hr",
+                "km/hr",
                 "Data insufficient"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770586/100s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>4</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770574/88s.gif></div></div>"
         },
         "20021": {
             "id": "20021",
@@ -412,19 +414,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  How many numbers are there in between 200 and 500 which are multiple of 3 but not of 12?",
+            "question_text": "How many numbers are there in between 200 and 500 which are multiple of 3 but not of 12? 1 &nbsp;",
             "options": [
-                "80",
-                "75",
-                "85",
-                "79"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770560/74s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>2</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770586/100s.gif></div></div>"
         },
         "20022": {
             "id": "20022",
@@ -433,19 +435,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  If a function is defined as F(x) = |x \u2013 1| + |x + 1|, then the shortest distance of the point (1, 1) from\nF(x) is",
+            "question_text": "If a function is defined as F(x) = |x \u2013 1| + |x + 1|, then the shortest distance of the point (1, 1) from F(x) is 1 &nbsp;",
             "options": [
-                "1 unit",
-                "2 unit",
-                "3 unit",
-                "4 unit"
+                "unit",
+                "unit",
+                "unit",
+                "unit"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B><div ><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773316/770560/74s.gif></div></div>"
         }
     }
 }

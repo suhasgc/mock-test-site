@@ -1,7 +1,7 @@
 {
     "name": "DILR 13 - 2023",
     "sections": {
-        "LRDI": [
+        "Data Interpretation & Logical Reasoning": [
             "20001",
             "20002",
             "20003",
@@ -31,17 +31,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 1\n                                                    to 5: Answer the questions on the basis of the information given\n                                                below.\n                                                \n                                                A survey is conducted among the people of town 'X' to establish the data\n                                                regarding their choices of two drinks - Tea and Coffee, and three games\n                                                - Cricket, Football and Hockey. The results of the survey reveal\n                                                that:\n                                                (i) All the people, who drink neither tea nor coffee, like to play both\n                                                football and hockey.\n                                                (ii) All the people, who drink both tea and coffee, like to play cricket\n                                                and exactly one more game out of football and hockey.\n                                                (iii) All the people, who drink any one (but not both) of the two\n                                                drinks, like to play at most one of the three games.\n                                                (iv) The total population of town 'X' is 432, out of which, 120 people\n                                                like to play cricket, 108 people like to play football, 144 people like\n                                                to play hockey and 168 people do not like to play any of the three\n                                                games.\n                                                (v) 24 people in town 'X' do not drink any of the two drinks whereas 288\n                                                people drink tea and 192 people drink coffee.\n                                                All the following questions are pertaining to the town X and based on\n                                                the information given above.\n                                            ",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n                                                What percentage of the people who like to play Football don't\n                                                drink any of the two drinks?\n                                            ",
+            "instructions": "<b>Directions for questions 1 to\n                                                5:</b> Answer the questions on the basis of the information given below.\n                                            <br><br>\n                                            A survey is conducted among the people of town 'X' to establish the data\n                                            regarding their choices of two drinks - Tea and Coffee, and three games -\n                                            Cricket, Football and Hockey. The results of the survey reveal that:<br>\n                                            (i) All the people, who drink neither tea nor coffee, like to play both\n                                            football and hockey.<br>\n                                            (ii) All the people, who drink both tea and coffee, like to play cricket and\n                                            exactly one more game out of football and hockey.<br>\n                                            (iii) All the people, who drink any one (but not both) of the two drinks,\n                                            like to play at most one of the three games.<br>\n                                            (iv) The total population of town 'X' is 432, out of which, 120 people like\n                                            to play cricket, 108 people like to play football, 144 people like to play\n                                            hockey and 168 people do not like to play any of the three games.<br>\n                                            (v) 24 people in town 'X' do not drink any of the two drinks whereas 288\n                                            people drink tea and 192 people drink coffee.<br>\n                                            All the following questions are pertaining to the town X and based on the\n                                            information given above.",
+            "question_text": "What percentage of the people who like to play Football don't drink any of the two drinks? 1 &nbsp;",
             "options": [
+                "",
+                "",
+                "",
                 "Cannot be determined"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871814/40s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n                                                            <b>3</B>\n                                                            <div><img\n                                                                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871813/39s.gif>\n                                                            </div></div>"
         },
         "20002": {
             "id": "20002",
@@ -49,33 +52,36 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 1 to\n                                                5: Answer the questions on the basis of the information given below.\n                                            \n                                            A survey is conducted among the people of town 'X' to establish the data\n                                            regarding their choices of two drinks - Tea and Coffee, and three games -\n                                            Cricket, Football and Hockey. The results of the survey reveal that:\n                                            (i) All the people, who drink neither tea nor coffee, like to play both\n                                            football and hockey.\n                                            (ii) All the people, who drink both tea and coffee, like to play cricket and\n                                            exactly one more game out of football and hockey.\n                                            (iii) All the people, who drink any one (but not both) of the two drinks,\n                                            like to play at most one of the three games.\n                                            (iv) The total population of town 'X' is 432, out of which, 120 people like\n                                            to play cricket, 108 people like to play football, 144 people like to play\n                                            hockey and 168 people do not like to play any of the three games.\n                                            (v) 24 people in town 'X' do not drink any of the two drinks whereas 288\n                                            people drink tea and 192 people drink coffee.\n                                            All the following questions are pertaining to the town X and based on the\n                                            information given above.\n                                        ",
-            "question_text": "\u00a0\u00a0Q.2 [11916616]  What\n                                            percentage of the people who drink tea also like to play cricket?",
+            "instructions": "<b>Directions for questions 1 to 5:</b>\n                                    Answer the questions on the basis of the information given below.\n                                    <br><br>\n                                    A survey is conducted among the people of town 'X' to establish the data regarding\n                                    their choices of two drinks - Tea and Coffee, and three games - Cricket, Football\n                                    and Hockey. The results of the survey reveal that:<br>\n                                    (i) All the people, who drink neither tea nor coffee, like to play both football and\n                                    hockey.<br>\n                                    (ii) All the people, who drink both tea and coffee, like to play cricket and exactly\n                                    one more game out of football and hockey.<br>\n                                    (iii) All the people, who drink any one (but not both) of the two drinks, like to\n                                    play at most one of the three games.<br>\n                                    (iv) The total population of town 'X' is 432, out of which, 120 people like to play\n                                    cricket, 108 people like to play football, 144 people like to play hockey and 168\n                                    people do not like to play any of the three games.<br>\n                                    (v) 24 people in town 'X' do not drink any of the two drinks whereas 288 people\n                                    drink tea and 192 people drink coffee.<br>\n                                    All the following questions are pertaining to the town X and based on the\n                                    information given above.",
+            "question_text": "What percentage of the people who drink tea also like to play cricket? 1 &nbsp;",
             "options": [
+                "",
+                "",
+                "",
                 "Cannot be determined"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871815/41s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>4</B>\n                                                        <div><img\n                                                                src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871814/40s.gif>\n                                                        </div></div>"
         },
         "20003": {
             "id": "20003",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Direction for questions 1 to 5:\n                                    Answer the questions on the basis of the information given below.\n                                    \n                                    A survey is conducted among the people of town 'X' to establish the data regarding\n                                    their choices of two drinks - Tea and Coffee, and three games - Cricket, Football\n                                    and Hockey. The results of the survey reveal that:\n                                    (i) All the people, who drink neither tea nor coffee, like to play both football and\n                                    hockey.\n                                    (ii) All the people, who drink both tea and coffee, like to play cricket and exactly\n                                    one more game out of football and hockey.\n                                    (iii) All the people, who drink any one (but not both) of the two drinks, like to\n                                    play at most one of the three games.\n                                    (iv) The total population of town 'X' is 432, out of which, 120 people like to play\n                                    cricket, 108 people like to play football, 144 people like to play hockey and 168\n                                    people do not like to play any of the three games.\n                                    (v) 24 people in town 'X' do not drink any of the two drinks whereas 288 people\n                                    drink tea and 192 people drink coffee.\n                                    All the following questions are pertaining to the town X and based on the\n                                    information given above.\n                                ",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  If the number\n                                    of people who play only hockey is maximum possible, then what is the number of\n                                    people who like to play Football and drink any one (but not both) of the two drinks?\n                                ",
+            "instructions": "<b>Directions for questions 1 to 5:</b>\n                                Answer the questions on the basis of the information given below.\n                                <br><br>\n                                A survey is conducted among the people of town 'X' to establish the data regarding their\n                                choices of two drinks - Tea and Coffee, and three games - Cricket, Football and Hockey.\n                                The results of the survey reveal that:<br>\n                                (i) All the people, who drink neither tea nor coffee, like to play both football and\n                                hockey.<br>\n                                (ii) All the people, who drink both tea and coffee, like to play cricket and exactly one\n                                more game out of football and hockey.<br>\n                                (iii) All the people, who drink any one (but not both) of the two drinks, like to play\n                                at most one of the three games.<br>\n                                (iv) The total population of town 'X' is 432, out of which, 120 people like to play\n                                cricket, 108 people like to play football, 144 people like to play hockey and 168 people\n                                do not like to play any of the three games.<br>\n                                (v) 24 people in town 'X' do not drink any of the two drinks whereas 288 people drink\n                                tea and 192 people drink coffee.<br>\n                                All the following questions are pertaining to the town X and based on the information\n                                given above.",
+            "question_text": "If the number of people who play only hockey is maximum possible, then what is the number of people who like to play Football and drink any one (but not both) of the two drinks? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617047' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "12"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871816/42s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>12</B>\n                                                <div><img\n                                                        src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871815/41s.gif>\n                                                </div></div>"
         },
         "20004": {
             "id": "20004",
@@ -83,20 +89,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 1 to 5:\n                                Answer the questions on the basis of the information given below.\n                                \n                                A survey is conducted among the people of town 'X' to establish the data regarding their\n                                choices of two drinks - Tea and Coffee, and three games - Cricket, Football and Hockey.\n                                The results of the survey reveal that:\n                                (i) All the people, who drink neither tea nor coffee, like to play both football and\n                                hockey.\n                                (ii) All the people, who drink both tea and coffee, like to play cricket and exactly one\n                                more game out of football and hockey.\n                                (iii) All the people, who drink any one (but not both) of the two drinks, like to play\n                                at most one of the three games.\n                                (iv) The total population of town 'X' is 432, out of which, 120 people like to play\n                                cricket, 108 people like to play football, 144 people like to play hockey and 168 people\n                                do not like to play any of the three games.\n                                (v) 24 people in town 'X' do not drink any of the two drinks whereas 288 people drink\n                                tea and 192 people drink coffee.\n                                All the following questions are pertaining to the town X and based on the information\n                                given above.\n                            ",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  Which of the\n                                following is necessarily false?",
+            "instructions": "<b>Directions for questions 1 to 5:</b> Answer\n                            the questions on the basis of the information given below.\n                            <br><br>\n                            A survey is conducted among the people of town 'X' to establish the data regarding their\n                            choices of two drinks - Tea and Coffee, and three games - Cricket, Football and Hockey. The\n                            results of the survey reveal that:<br>\n                            (i) All the people, who drink neither tea nor coffee, like to play both football and\n                            hockey.<br>\n                            (ii) All the people, who drink both tea and coffee, like to play cricket and exactly one\n                            more game out of football and hockey.<br>\n                            (iii) All the people, who drink any one (but not both) of the two drinks, like to play at\n                            most one of the three games.<br>\n                            (iv) The total population of town 'X' is 432, out of which, 120 people like to play cricket,\n                            108 people like to play football, 144 people like to play hockey and 168 people do not like\n                            to play any of the three games.<br>\n                            (v) 24 people in town 'X' do not drink any of the two drinks whereas 288 people drink tea\n                            and 192 people drink coffee.<br>\n                            All the following questions are pertaining to the town X and based on the information given\n                            above.",
+            "question_text": "Which of the following is necessarily false? 1 &nbsp;",
             "options": [
-                "The number of people who play hockey\n                                and at least one more game, cannot be equal to 144.",
-                "The number of people who play football and\n                                at least one more game, cannot be equal to 108.",
-                "The number of people who play hockey,\n                                drink coffee and do not drink tea, cannot be equal to 120.",
+                "The number of people who play hockey and at least one more game, cannot be equal to 144.",
+                "The number of people who play football and at least one more game, cannot be equal to 108.",
+                "The number of people who play hockey, drink coffee and do not drink tea, cannot be equal to 120.",
                 "None of the above."
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776708/1617049/5ds.gif\"><br>"
+            "solution": "<div><B>Solution:\n                                            <br>Correct Answer : <b>3</B>\n                                            <div><img\n                                                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871816/42s.gif>\n                                            </div></div>"
         },
         "20005": {
             "id": "20005",
@@ -104,20 +110,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Direction for questions 1 to 5: Answer\n                            the questions on the basis of the information given below.\n                            \n                            A survey is conducted among the people of town 'X' to establish the data regarding their\n                            choices of two drinks - Tea and Coffee, and three games - Cricket, Football and Hockey. The\n                            results of the survey reveal that:\n                            (i) All the people, who drink neither tea nor coffee, like to play both football and\n                            hockey.\n                            (ii) All the people, who drink both tea and coffee, like to play cricket and exactly one\n                            more game out of football and hockey.\n                            (iii) All the people, who drink any one (but not both) of the two drinks, like to play at\n                            most one of the three games.\n                            (iv) The total population of town 'X' is 432, out of which, 120 people like to play cricket,\n                            108 people like to play football, 144 people like to play hockey and 168 people do not like\n                            to play any of the three games.\n                            (v) 24 people in town 'X' do not drink any of the two drinks whereas 288 people drink tea\n                            and 192 people drink coffee.\n                            All the following questions are pertaining to the town X and based on the information given\n                            above.\n                        ",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  What is the ratio of\n                            the number of people who like to play both Football and hockey to the number of people who\n                            like both tea and coffee?",
+            "instructions": "<b>Directions for question 6 to 10:</b> Answer the\n                        questions on the basis of the information given below.\n                        <br><br>\n                        In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments\n                        - Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two\n                        designations i.e. Manager and Executive.<br>\n                        The table shown below gives the information about the number of employees belonging to the\n                        various departments at the two aforementioned designations and the following pie-chart shows the\n                        percentage-wise split up of the employees, according to their work experience.<br><br><img\n                            src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871821/47-50dr.gif>",
+            "question_text": "What is the ratio of the number of people who like to play both Football and hockey to the number of people who like both tea and coffee? 1 &nbsp;",
             "options": [
-                "1:3",
-                "1:2",
-                "2:1",
-                "2:3"
+                ":3",
+                ":2",
+                ":1",
+                ":3"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871821/47s.gif\">"
+            "solution": "<div><B>Solution:\n                                        <br>Correct Answer : <b>1</B>\n                                        <div><img\n                                                src=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776708/1617049/5ds.gif><br>\n                                            Required ratio = 24:72 = 1:3.</div></div>"
         },
         "20006": {
             "id": "20006",
@@ -125,36 +131,36 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for question 6 to 10: Answer the\n                        questions on the basis of the information given below.\n                        \n                        In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments\n                        - Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two\n                        designations i.e. Manager and Executive.\n                        The table shown below gives the information about the number of employees belonging to the\n                        various departments at the two aforementioned designations and the following pie-chart shows the\n                        percentage-wise split up of the employees, according to their work experience.\n                    ",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  What can be the\n                        maximum value of the number of employees, who are Managers in Marketing department with\n                        experience of more than or equal to 3 years but less than 5 years, as a percentage of the total\n                        number of employees belonging to Marketing?",
+            "instructions": "<b>Directions for question 6 to 10:</b> Answer the\n                    questions on the basis of the information given below.\n                    <br><br>\n                    In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments -\n                    Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two designations\n                    i.e. Manager and Executive.<br>\n                    The table shown below gives the information about the number of employees belonging to the various\n                    departments at the two aforementioned designations and the following pie-chart shows the\n                    percentage-wise split up of the employees, according to their work experience.<br><br><img\n                        src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871821/47-50dr.gif>",
+            "question_text": "What can be the maximum value of the number of employees, who are Managers in Marketing department with experience of more than or equal to 3 years but less than 5 years, as a percentage of the total number of employees belonging to Marketing? 1 &nbsp;",
             "options": [
-                "23.1%",
-                "46.2%",
-                "30.8%",
-                "41.4%"
+                ".1%",
+                ".2%",
+                ".8%",
+                ".4%"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871822/48s.gif\">"
+            "solution": "<div><B>Solution:\n                                    <br>Correct Answer : <b>1</B>\n                                    <div><img\n                                            src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871821/47s.gif>\n                                    </div></div>"
         },
         "20007": {
             "id": "20007",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for question 6 to 10: Answer the\n                    questions on the basis of the information given below.\n                    \n                    In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments -\n                    Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two designations\n                    i.e. Manager and Executive.\n                    The table shown below gives the information about the number of employees belonging to the various\n                    departments at the two aforementioned designations and the following pie-chart shows the\n                    percentage-wise split up of the employees, according to their work experience.\n                ",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  If the number of employees\n                    belonging to Operations having experience of less than 3 years is minimum possible, then what can be\n                    the maximum number of employees belonging to Operations with experience of more than or equal to 5\n                    years but less than or equals to 8 years?",
+            "instructions": "<b>Directions for question 6 to 10:</b> Answer the questions\n                on the basis of the information given below.\n                <br><br>\n                In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments -\n                Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two designations i.e.\n                Manager and Executive.<br>\n                The table shown below gives the information about the number of employees belonging to the various\n                departments at the two aforementioned designations and the following pie-chart shows the percentage-wise\n                split up of the employees, according to their work experience.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871821/47-50dr.gif>",
+            "question_text": "If the number of employees belonging to Operations having experience of less than 3 years is minimum possible, then what can be the maximum number of employees belonging to Operations with experience of more than or equal to 5 years but less than or equals to 8 years? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617051' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "150"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871823/49s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                                Answer : <b>150</B>\n                                <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871822/48s.gif>\n                                </div></div>"
         },
         "20008": {
             "id": "20008",
@@ -162,52 +168,52 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for question 6 to 10: Answer the questions\n                on the basis of the information given below.\n                \n                In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments -\n                Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two designations i.e.\n                Manager and Executive.\n                The table shown below gives the information about the number of employees belonging to the various\n                departments at the two aforementioned designations and the following pie-chart shows the percentage-wise\n                split up of the employees, according to their work experience.\n            ",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  If at least 50% of the\n                employees in E-CL limited are women and there are no woman managers in Acads and at least 10% of the\n                Managers in each of the remaining 4 departments are men, then what can be the maximum value of the\n                number of men who are Executives in Marketing and Operations taken together?",
+            "instructions": "<b>Directions for question 6 to 10:</b> Answer the questions\n                on the basis of the information given below.\n                <br><br>\n                In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments -\n                Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two designations i.e.\n                Manager and Executive.<br>\n                The table shown below gives the information about the number of employees belonging to the various\n                departments at the two aforementioned designations and the following pie-chart shows the percentage-wise\n                split up of the employees, according to their work experience.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871821/47-50dr.gif>",
+            "question_text": "If at least 50% of the employees in E-CL limited are women and there are no woman managers in Acads and at least 10% of the Managers in each of the remaining 4 departments are men, then what can be the maximum value of the number of men who are Executives in Marketing and Operations taken together? 1 &nbsp;",
             "options": [
-                "800",
-                "400",
-                "760",
-                "670"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871824/50s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>3</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871823/49s.gif>\n                            </div></div>"
         },
         "20009": {
             "id": "20009",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for question 6 to 10: Answer the questions\n                on the basis of the information given below.\n                \n                In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments -\n                Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two designations i.e.\n                Manager and Executive.\n                The table shown below gives the information about the number of employees belonging to the various\n                departments at the two aforementioned designations and the following pie-chart shows the percentage-wise\n                split up of the employees, according to their work experience.\n            ",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  If no Manager from Acads has\n                experience of more than 5 years and no Manager from Operations has experience of more than 8 years, then\n                what can be the maximum number of employees from Marketing are there having experience of more than or\n                equal to 5 years and less than or equal to 8 years?",
+            "instructions": "<b>Directions for question 6 to 10:</b> Answer the questions\n                on the basis of the information given below.\n                <br><br>\n                In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments -\n                Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two designations i.e.\n                Manager and Executive.<br>\n                The table shown below gives the information about the number of employees belonging to the various\n                departments at the two aforementioned designations and the following pie-chart shows the percentage-wise\n                split up of the employees, according to their work experience.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871821/47-50dr.gif>",
+            "question_text": "If no Manager from Acads has experience of more than 5 years and no Manager from Operations has experience of more than 8 years, then what can be the maximum number of employees from Marketing are there having experience of more than or equal to 5 years and less than or equal to 8 years? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617053' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "100"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776708/1617054/10ds.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>100</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871824/50s.gif>\n                            </div></div>"
         },
         "20010": {
             "id": "20010",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for question 6 to 10: Answer the questions\n                on the basis of the information given below.\n                \n                In E-CL limited, there are a total of 2500 employees, each belonging to one of the 5 departments -\n                Acads, Marketing, HR, Finance and Operations. Every employee belongs to one of the two designations i.e.\n                Manager and Executive.\n                The table shown below gives the information about the number of employees belonging to the various\n                departments at the two aforementioned designations and the following pie-chart shows the percentage-wise\n                split up of the employees, according to their work experience.\n            ",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  How many executives with\n                experience of more than or equal to 3 years and less than 5 years are from Acads Department?",
+            "instructions": "<b>Directions for questions 11 to 15:</b> Answer the\n                questions on the basis of the information given below.\n                <br><br>\n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.<br><br><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871825/51-54dr.gif>",
+            "question_text": "How many executives with experience of more than or equal to 3 years and less than 5 years are from Acads Department? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617054' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "100"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871825/51s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>100</B>\n                            <div><img src=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776708/1617054/10ds.gif>\n                            </div></div>"
         },
         "20011": {
             "id": "20011",
@@ -215,8 +221,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                \n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.\n            ",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  Who got the rank 1 in Round\n                1?",
+            "instructions": "<b>Directions for questions 11 to 15:</b> Answer the\n                questions on the basis of the information given below.\n                <br><br>\n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.<br><br><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871825/51-54dr.gif>",
+            "question_text": "Who got the rank 1 in Round 1? 1 &nbsp;",
             "options": [
                 "A",
                 "B",
@@ -225,10 +231,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871826/52s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>4</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871825/51s.gif>\n                            </div></div>"
         },
         "20012": {
             "id": "20012",
@@ -236,8 +242,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                \n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.\n            ",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  Who was the last person to\n                finish Round 2?",
+            "instructions": "<b>Directions for questions 11 to 15:</b> Answer the\n                questions on the basis of the information given below.\n                <br><br>\n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.<br><br><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871825/51-54dr.gif>",
+            "question_text": "Who was the last person to finish Round 2? 1 &nbsp;",
             "options": [
                 "F",
                 "C",
@@ -249,23 +255,23 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871827/53s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>1</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871826/52s.gif>\n                            </div></div>"
         },
         "20013": {
             "id": "20013",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                \n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.\n            ",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  What is the sum of the ranks\n                obtained by F in all the four rounds taken together?",
+            "instructions": "<b>Directions for questions 11 to 15:</b> Answer the\n                questions on the basis of the information given below.\n                <br><br>\n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.<br><br><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871825/51-54dr.gif>",
+            "question_text": "What is the sum of the ranks obtained by F in all the four rounds taken together? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617057' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "15"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871828/54s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>15</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871827/53s.gif>\n                            </div></div>"
         },
         "20014": {
             "id": "20014",
@@ -273,8 +279,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                \n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.\n            ",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  In how many rounds did B\n                finish earlier than D finish? ",
+            "instructions": "<b>Directions for questions 11 to 15:</b> Answer the\n                questions on the basis of the information given below.\n                <br><br>\n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.<br><br><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871825/51-54dr.gif>",
+            "question_text": "In how many rounds did B finish earlier than D finish? 1 &nbsp;",
             "options": [
                 "None",
                 "One",
@@ -283,10 +289,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776708/1617059/15s.jpg\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>3</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773327/871828/54s.gif>\n                            </div></div>"
         },
         "20015": {
             "id": "20015",
@@ -294,8 +300,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15: Answer the\n                questions on the basis of the information given below.\n                \n                Six sprinters - A, B, C, D, E and F - participated in a running race. There were four rounds in the race\n                - Round 1, Round 2, Round 3 and Round 4. In each round, the sprinters were given a rank from 1 to 6,\n                based on the time taken by them to finish the race i.e. who finished a round first was given rank 1, who\n                finished second was given rank 2, and so on till who finished 6th was given rank 6. In each round, these\n                sprinters based on their ranks from 1 to 6 were awarded 10, 8, 6, 4, 2 and 1 points respectively. The\n                following table shows the partial information of the ranks attained by the top five persons, in terms of\n                cumulative points scored in all the four rounds combined, out of these six sprinters. For each row, the\n                last column gives the total number of points scored by the top five persons in all the rounds taken\n                together.\n            ",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  Which of the following sprinters\n                did not finish in the sixth place in any of the rounds?",
+            "instructions": "<b>Directions for questions 16 to 20:</b> Answer the\n                questions on the basis of the information given below.<br><br>\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:<br><br>\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.<br>\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.<br>\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).<br>\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.<br>\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. <br>\n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.<br>\n                7. No match ended in a draw.",
+            "question_text": "Which of the following sprinters did not finish in the sixth place in any of the rounds? 1 &nbsp;",
             "options": [
                 "C",
                 "D",
@@ -307,7 +313,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864350/35s.gif\"><br></b>"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>1</B>\n                            <div><img src=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776708/1617059/15s.jpg>\n                            </div></div>"
         },
         "20016": {
             "id": "20016",
@@ -315,8 +321,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. \n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.\n                7. No match ended in a draw.",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  Which team scored the second\n                highest number of goals in both the matches put together?\n            ",
+            "instructions": "<b>Directions for questions 16 to 20:</b> Answer the\n                questions on the basis of the information given below.<br><br>\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:<br><br>\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.<br>\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.<br>\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).<br>\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.<br>\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. <br>\n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.<br>\n                7. No match ended in a draw.",
+            "question_text": "Which team scored the second highest number of goals in both the matches put together? 1 &nbsp;",
             "options": [
                 "H",
                 "E",
@@ -325,10 +331,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864370/35s.gif\"><br></b>"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>4</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864350/35s.gif>\n                                <br>\n                        </b>Second highest number of goals, i.e. 7, were scored by C.</div></div>"
         },
         "20017": {
             "id": "20017",
@@ -336,20 +342,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. \n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.\n                7. No match ended in a draw.",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  Which of the following was\n                the number of goals scored by B in a match?",
+            "instructions": "<b>Directions for questions 16 to 20:</b> Answer the\n                questions on the basis of the information given below.<br><br>\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:<br><br>\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.<br>\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.<br>\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).<br>\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.<br>\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. <br>\n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.<br>\n                7. No match ended in a draw.",
+            "question_text": "Which of the following was the number of goals scored by B in a match? 1 &nbsp;",
             "options": [
-                "0",
-                "1",
-                "2",
+                "",
+                "",
+                "",
                 "Both 0 and 1"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864371/35s.gif\"><br></b>"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>4</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864370/35s.gif>\n                                <br>\n                        </b>B scored 1 goal against E and 0 goal against F. Hence both 1 and 0 are possible.</div></div>"
         },
         "20018": {
             "id": "20018",
@@ -357,36 +363,36 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. \n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.\n                7. No match ended in a draw.",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  What is the goal difference\n                in the match played between A and H?",
+            "instructions": "<b>Directions for questions 16 to 20:</b> Answer the\n                questions on the basis of the information given below.<br><br>\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:<br><br>\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.<br>\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.<br>\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).<br>\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.<br>\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. <br>\n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.<br>\n                7. No match ended in a draw.",
+            "question_text": "What is the goal difference in the match played between A and H? 1 &nbsp;",
             "options": [
-                "0",
-                "1",
-                "2",
-                "3"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864372/35s.gif\"><br></b>"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>3</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864371/35s.gif>\n                                <br>\n                        </b>The goal difference between A and H in the match played between them is 2.</div></div>"
         },
         "20019": {
             "id": "20019",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. \n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.\n                7. No match ended in a draw.",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  The maximum number of goals\n                scored by both the teams taken together in any match is",
+            "instructions": "<b>Directions for questions 16 to 20:</b> Answer the\n                questions on the basis of the information given below.<br><br>\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:<br><br>\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.<br>\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.<br>\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).<br>\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.<br>\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. <br>\n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.<br>\n                7. No match ended in a draw.",
+            "question_text": "The maximum number of goals scored by both the teams taken together in any match is <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617063' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "7"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864372/35s.gif\"><br>"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>7</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864372/35s.gif>\n                                <br>\n                        </b>The maximum sum of goals is scored in the matches between C and H (4 \u2013 3) and also in F and\n                        D (5 \u2013 2) is 7.`</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -394,8 +400,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20: Answer the\n                questions on the basis of the information given below.\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. \n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.\n                7. No match ended in a draw.",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  In which of the following matches\n                was the minimum number of goals scored?",
+            "instructions": "<b>Directions for questions 16 to 20:</b> Answer the\n                questions on the basis of the information given below.<br><br>\n\n                Eight teams \u2013 A, B, C, D, E, F, G and H \u2013 participated in a hockey tournament. Each team played against\n                two of the given teams. Four teams won both of their respective matches. Each team scored a distinct\n                total number of goals in both matches out of 0, 1, 2, 4, 5, 6, 7 and 9 not necessarily in this order.\n                (Note: One goal gives one point to the team).\n                Further Information is given as follows:<br><br>\n                1. A scored 5 goals in total and won both of the matches and one of them was played against H.<br>\n                2. F scored the maximum total points among the teams, whereas H lost both their matches.<br>\n                3. The matches between (A and H) and (E and B) have same identical goal points i.e. score of A against H\n                will be equal to that of E against B, similarly both H and B will have same score against A and E\n                respectively. The same is true for the matches between (C and G) and (E and D).<br>\n                4. The highest goals difference was in the match between B and F where F scored 4 goals and won by the\n                same number of goals.<br>\n                5. G did not score a single goal in any of the matches and B scored 1 goal in one of the matches. <br>\n                6. E scored equal goal points in both the matches. In a game against H, C beats H with 4-3.<br>\n                7. No match ended in a draw.",
+            "question_text": "In which of the following matches was the minimum number of goals scored? 1 &nbsp;",
             "options": [
                 "Match between A and G",
                 "Match between E and H",
@@ -407,7 +413,7 @@
                     "1"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>1</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/864372/35s.gif>\n                                <br> The minimum number of goals were 2, which was scored in the match between A and G.\n                            </div></div>"
         }
     }
 }

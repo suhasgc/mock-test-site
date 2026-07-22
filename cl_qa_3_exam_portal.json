@@ -1,7 +1,7 @@
 {
     "name": "QA 03 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -34,19 +34,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tHow many real solutions will the following system of equations\n\t\t\t\t\t\t\t\t\t\t\t\t\thave:\n\t\t\t\t\t\t\t\t\t\t\t\t\t(X \u2013 3)2 + (Y \u2013 4)2 = 16;\n\t\t\t\t\t\t\t\t\t\t\t\t\tX + Y + 2 = 0",
+            "question_text": "How many real solutions will the following system of equations have: (X \u2013 3)<sup>2</sup> + (Y \u2013 4)<sup>2</sup> = 16; X + Y + 2 = 0 1 &nbsp;",
             "options": [
-                "1",
-                "2",
+                "",
+                "",
                 "More than 2 solutions",
                 "No solutions"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b>"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>4</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802556/82s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
@@ -55,19 +55,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\tFind the maximum value of (A + B + C) such that A, B, C are prime\n\t\t\t\t\t\t\t\t\t\t\t\tnumbers and AB + BC + CA =\n\t\t\t\t\t\t\t\t\t\t\t\t360.",
+            "question_text": "Find the maximum value of (A + B + C) such that A, B, C are prime numbers and AB + BC + CA = 360. 1 &nbsp;",
             "options": [
-                "24",
-                "30",
-                "45",
+                "",
+                "",
+                "",
                 "Not possible"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811678/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><b>As A, B, C are prime numbers, two cases arise either all\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tthree are odd number or one of them is 2 and other two\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tare odd\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnumbers. In both the cases (AB + BC + CA) will be odd\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tand cannot be equal to 360, which is an even number.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
@@ -76,7 +76,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  A person\n\t\t\t\t\t\t\t\t\t\tcan complete a job in 128 days. He started working alone on Monday. On Tuesday,\n\t\t\t\t\t\t\t\t\t\the was joined by another person who can complete the same job in 64 days. On\n\t\t\t\t\t\t\t\t\t\tWednesday, these\n\t\t\t\t\t\t\t\t\t\t2 were joined by a 3rd person who can complete the same job in 32 days, and so\n\t\t\t\t\t\t\t\t\t\ton. If Sunday is\n\t\t\t\t\t\t\t\t\t\ta holiday, on which day would the job get completed?",
+            "question_text": "A person can complete a job in 128 days. He started working alone on Monday. On Tuesday, he was joined by another person who can complete the same job in 64 days. On Wednesday, these 2 were joined by a 3rd person who can complete the same job in 32 days, and so on. If Sunday is a holiday, on which day would the job get completed? 1 &nbsp;",
             "options": [
                 "Tuesday",
                 "Monday",
@@ -85,26 +85,26 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811701/98s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>2</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811678/75s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  How many litres\n\t\t\t\t\t\t\t\t\tof water needs to be added to 14 litres of solution, having milk and water in ratio\n\t\t\t\t\t\t\t\t\t4 : 3, such that the resultant solution has milk and water in ratio 1 : 2?",
+            "question_text": "How many litres of water needs to be added to 14 litres of solution, having milk and water in ratio 4 : 3, such that the resultant solution has milk and water in ratio 1 : 2? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576271' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "10"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b>"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>10</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811701/98s.gif>\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -113,35 +113,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  A certain\n\t\t\t\t\t\t\t\tsoft-drink is sold in a cylindrical can. The company reduced the diameter of the can by\n\t\t\t\t\t\t\t\t10% but continued to fill the can of soft-drink to the same height as before. If the can\n\t\t\t\t\t\t\t\tof soft-drink\n\t\t\t\t\t\t\t\tis sold at the same price as before, what is the increase in profit percentage that the\n\t\t\t\t\t\t\t\tcompany will\n\t\t\t\t\t\t\t\tmake per can?",
+            "question_text": "A certain soft-drink is sold in a cylindrical can. The company reduced the diameter of the can by 10% but continued to fill the can of soft-drink to the same height as before. If the can of soft-drink is sold at the same price as before, what is the increase in profit percentage that the company will make per can? 1 &nbsp;",
             "options": [
-                "19%",
-                "21%",
-                "23.47%",
+                "%",
+                "%",
+                ".47%",
                 "Cannot be determined"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b><br><br><br>"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t<div><b>The new cost price per can would be 81% of the old cost price (90% \u00d7\n\t\t\t\t\t\t\t\t\t\t\t\t90%).\n\t\t\t\t\t\t\t\t\t\t\t\tHowever, since we do not know the selling price, we cannot determine the\n\t\t\t\t\t\t\t\t\t\t\t\tincrease in profit. Cannot be determined.</div></div>"
         },
         "20006": {
             "id": "20006",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  If f(x) = x2\n\t\t\t\t\t\t\t+ 1 and g(x) = 2x \u2013 3 be two functions, then find value of f[g(f(g(f(x))))] +\n\t\t\t\t\t\t\tg[f(g(f(g(x))))] at x = 1.",
+            "question_text": "If f(x) = x<sup>2</sup> + 1 and g(x) = 2x \u2013 3 be two functions, then find value of f[g(f(g(f(x))))] + g[f(g(f(g(x))))] at x = 1. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576269' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811682/79s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t<div><b>Firstly, f(g(f(g(f(x))))) at x = 1 is f(g(f(g(2)))), as f(1) = 2.<br>\n\t\t\t\t\t\t\t\t\t\t\tNow as g(2) = 1, f(g(f(1))) = f(g(2)) = f(1) = 2.<br>\n\t\t\t\t\t\t\t\t\t\t\tSimilarly, g(f(g(f(g(x))))) = 1.<br>\n\t\t\t\t\t\t\t\t\t\t\tSo, the required result = 2 + 1 = 3</div></div>"
         },
         "20007": {
             "id": "20007",
@@ -150,7 +150,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  ABC is a triangle inscribed\n\t\t\t\t\t\tin a semicircle with BC as its diameter. If further two semicircles are\n\t\t\t\t\t\tdrawn taking AB and AC as their diameters as shown below, then which of the following represents\n\t\t\t\t\t\tthe area of the shaded region?",
+            "question_text": "ABC is a triangle inscribed in a semicircle with BC as its diameter. If further two semicircles are drawn taking AB and AC as their diameters as shown below, then which of the following represents the area of the shaded region? 1 &nbsp;",
             "options": [
                 "Area of \u0394ABC",
                 "Twice the area of \u0394ABC",
@@ -162,71 +162,71 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819477/78s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811682/79s.gif>\n\t\t\t\t\t\t\t\t</div></div>"
         },
         "20008": {
             "id": "20008",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  a, b, c, and d are one of the\n\t\t\t\t\tdigits 1, 3, 5, or 7, with each digit used only once. How many different\n\t\t\t\t\tvalues of a \u00d7 b + c \u00d7 d can be obtained?",
+            "question_text": "<B>a, b, c, and d are one of the digits 1, 3, 5, or 7, with each digit used only once. How many different values of a \u00d7 b + c \u00d7 d can be obtained? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576313' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819473/74s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819477/78s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  Simple interest is applied to a\n\t\t\t\t\tcertain sum of money at 10% per annum and 5% per annum for\n\t\t\t\t\tevery alternate years starting with 10%. In which year the amount will be at least\n\t\t\t\t\tthrice of the original sum? (Type in 0, if it cannot be determined)",
+            "question_text": "Simple interest is applied to a certain sum of money at 10% per annum and 5% per annum for every alternate years starting with 10%. In which year the amount will be at least thrice of the original sum? (Type in 0, if it cannot be determined) <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576312' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "27"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811680/77s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>27</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819473/74s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  A boat has a maximum capacity\n\t\t\t\t\tto carry 1200 kg. There are 20 children and 20 adults waiting on the\n\t\t\t\t\triver bank to cross the river in the boat. Each child weighs 30kg and each adult weighs 50kg. Ten of\n\t\t\t\t\tthe children are also carrying a school bag weighing 5kg. If every child on the boat must be\n\t\t\t\t\taccompanied\n\t\t\t\t\tby an adult, what is the maximum number of people who can board the boat?",
+            "question_text": "A boat has a maximum capacity to carry 1200 kg. There are 20 children and 20 adults waiting on the river bank to cross the river in the boat. Each child weighs 30kg and each adult weighs 50kg. Ten of the children are also carrying a school bag weighing 5kg. If every child on the boat must be accompanied by an adult, what is the maximum number of people who can board the boat? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576263' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "29"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795487/85s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>29</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811680/77s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  If N = 2197P \u00d7\n\t\t\t\t\t1442 \u00d7 2R \u00d7 3S is the perfect cube of a natural number, where P, R\n\t\t\t\t\tand S are\n\t\t\t\t\tdistinct positive integers, then find the minimum value of (P + R + S).",
+            "question_text": "If N = 2197<sup>P</sup> \u00d7 144<sup>2</sup> \u00d7 2<sup>R</sup> \u00d7 3<sup>S</sup> is the perfect cube of a natural number, where P, R and S are distinct positive integers, then find the minimum value of (P + R + S). <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576256' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "6"
                 ]
             ],
-            "solution": "<b><br><b></b><div><br><br><br><br><br>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>6</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795487/85s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
@@ -235,35 +235,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  Aroop leaves from Mumbai\n\t\t\t\t\ttowards Goa, having a distance of 600 km, by his car. He travels at a\n\t\t\t\t\tspeed of 50 km/hr for the first 6 hours and completes the remaining journey at a speed of 100 km/\n\t\t\t\t\thr. If he returns from Goa to Mumbai at an average speed of 80 km/hr, then time taken by him during\n\t\t\t\t\tthe return journey is how much more/less than that of his journey from Mumbai to Goa?",
+            "question_text": "Aroop leaves from Mumbai towards Goa, having a distance of 600 km, by his car. He travels at a speed of 50 km/hr for the first 6 hours and completes the remaining journey at a speed of 100 km/ hr. If he returns from Goa to Mumbai at an average speed of 80 km/hr, then time taken by him during the return journey is how much more/less than that of his journey from Mumbai to Goa? 1 &nbsp;",
             "options": [
-                "1 hr more",
-                "1.5 hr more",
-                "1.5 hr less",
-                "1 hr less"
+                "hr more",
+                ".5 hr more",
+                ".5 hr less",
+                "hr less"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819483/84s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div>Journey from Mumbai to Goa takes 9 hours.<br>\n\t\t\t\t\t\t\t\tAs during first 6 hr at 50km/hr he covers 300km, and so the remaining 300 km at 100\n\t\t\t\t\t\t\t\tkm/hr in 3hrs.<br>\n\t\t\t\t\t\t\t\tHence total time taken = 9 hours.<br>\n\t\t\t\t\t\t\t\tThe return journey at average speed of 80 km/hr takes 7.5 hours.<br><br>\n\t\t\t\t\t\t\t\tHence, the return journey takes 1.5 hr less.</div></div>"
         },
         "20013": {
             "id": "20013",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  50% of the students in a class\n\t\t\t\t\tare girls. One-third of these girls are from Mumbai. Two-thirds of the\n\t\t\t\t\tgirls from Mumbai scored at least 70% in Science. The number of boys in the class should be at\n\t\t\t\t\tleast",
+            "question_text": "50% of the students in a class are girls. One-third of these girls are from Mumbai. Two-thirds of the girls from Mumbai scored at least 70% in Science. The number of boys in the class should be at least <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576314' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "9"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819488/89s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>9</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819483/84s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -272,19 +272,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "1/2",
-                "1/4",
-                "4",
-                "8"
+                "/2",
+                "/4",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811696/93s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819488/89s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
@@ -293,19 +293,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  Find the number of integral\n\t\t\t\t\tsolutions of the equation 2x \u2013 y + z = 20, where x \u2265 1, z \u2265 1 and y \u2264 18.",
+            "question_text": "Find the number of integral solutions of the equation 2x \u2013 y + z = 20, where x \u2265 1, z \u2265 1 and y \u2264 18. 1 &nbsp;",
             "options": [
-                "380",
-                "306",
-                "342",
-                "190"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819484/85s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811696/93s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
@@ -314,7 +314,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  A in 10 days completes\n\t\t\t\t\ttwo-third of the work, B in 10 days completes one-half of the work and C in\n\t\t\t\t\t10 days completes two-fifth of the work. A and B starts the work together and C plans to join them\n\t\t\t\t\tlater. On which day should C must join so that the work gets completed on 7th day?",
+            "question_text": "A in 10 days completes two-third of the work, B in 10 days completes one-half of the work and C in 10 days completes two-fifth of the work. A and B starts the work together and C plans to join them later. On which day should C must join so that the work gets completed on 7<sup>th</sup> day? 1 &nbsp;",
             "options": [
                 "Day 1",
                 "Day 2",
@@ -323,10 +323,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811679/76s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819484/85s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
@@ -335,19 +335,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  The square of the fourth term\n\t\t\t\t\tof an AP is equal to half of the product of its second and sixteenth\n\t\t\t\t\tterm. Which of the following can be the ratio of the first term and the common difference of the AP?\n\t\t\t",
+            "question_text": "The square of the fourth term of an AP is equal to half of the product of its second and sixteenth term. Which of the following can be the ratio of the first term and the common difference of the AP? 1 &nbsp;",
             "options": [
-                "1 : 1",
-                "3 : 1",
-                "4 : 3",
+                ": 1",
+                ": 1",
+                ": 3",
                 "Both (1) and (2)"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811672/69s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811679/76s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
@@ -356,11 +356,11 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  An equilateral triangle ABC is\n\t\t\t\t\tinscribed in a regular hexagon as shown in the figure below. Find the ratio of the length of\n\t\t\t\t\tinradius of \u0394ABC to that of the side of the hexagon.",
+            "question_text": "An equilateral triangle ABC is inscribed in a regular hexagon as shown in the figure below. Find the ratio of the length of inradius of \u0394ABC to that of the side of the hexagon. 1 &nbsp;",
             "options": [
-                "1 : 2",
-                "2 : 1",
-                "1 : \u221a3",
+                ": 2",
+                ": 1",
+                ": \u221a3",
                 "\u221a3 : 1"
             ],
             "correct_response": [
@@ -368,7 +368,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811699/96s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811672/69s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20019": {
             "id": "20019",
@@ -377,19 +377,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  \u2018n\u2019 is a positive integer\n\t\t\t\t\twhich has at least two prime factors. If the product of all the unique positive divisors of n is\n\t\t\t\t\tn3, then the product of all the unique positive divisors of n2 is",
+            "question_text": "\u2018n\u2019 is a positive integer which has at least two prime factors. If the product of all the unique positive divisors of n is n<sup>3</sup>, then the product of all the unique positive divisors of n<sup>2</sup> is 1 &nbsp;",
             "options": [
-                "n3",
-                "n6",
-                "n12",
-                "n15"
+                "n<sup>3",
+                "n<sup>6",
+                "n<sup>12",
+                "n<sup>15"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795476/74s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811699/96s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -398,19 +398,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  Arun\u2019s present age is 25% of\n\t\t\t\t\tBarun\u2019s present age. After some years, Arun\u2019s age will become 70%\n\t\t\t\t\tof Barun\u2019s age at that time. By what percent will Barun\u2019s age increase during this period?",
+            "question_text": "Arun\u2019s present age is 25% of Barun\u2019s present age. After some years, Arun\u2019s age will become 70% of Barun\u2019s age at that time. By what percent will Barun\u2019s age increase during this period? 1 &nbsp;",
             "options": [
-                "200",
-                "150",
-                "100",
-                "125"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811691/88s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795476/74s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20021": {
             "id": "20021",
@@ -419,35 +419,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  In a right angled triangle\n\t\t\t\t\tABC, right angled at B, angular bisector and median drawn from B intersect AC at X and Y\n\t\t\t\t\trespectively. If the distance between X and Y is 7/2 cm, and AC is 49 cm, find the approximate area\n\t\t\t\t\tof triangle ABC.",
+            "question_text": "In a right angled triangle ABC, right angled at B, angular bisector and median drawn from B intersect AC at X and Y respectively. If the distance between X and Y is 7/2 cm, and AC is 49 cm, find the approximate area of triangle ABC. 1 &nbsp;",
             "options": [
-                "35",
-                "576",
-                "525",
-                "23"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811687/84s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811691/88s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  When a rectangular sheet is\n\t\t\t\t\ttrisected along its length, the new length and breadth has the same\n\t\t\t\t\tratio as of the original rectangle and the same process continues infinitely. If the area of the\n\t\t\t\t\toriginal\n\t\t\t\t\trectangle is 36 sq. units, then find the sum of areas of all such rectangles (including the original\n\t\t\t\t\trectangle).",
+            "question_text": "When a rectangular sheet is trisected along its length, the new length and breadth has the same ratio as of the original rectangle and the same process continues infinitely. If the area of the original rectangle is 36 sq. units, then find the sum of areas of all such rectangles (including the original rectangle). <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576265' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "54"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>54</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811687/84s.gif>\n\t\t\t\t\t\t\t</div></div>"
         }
     }
 }

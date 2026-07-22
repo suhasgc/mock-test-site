@@ -1,7 +1,7 @@
 {
     "name": "QA 12 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -30,18 +30,18 @@
         "20001": {
             "id": "20001",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\t40% population of a village are women and the rest are men. 60% of\n\t\t\t\t\t\t\t\t\t\t\t\tthe women and 45% of the\n\t\t\t\t\t\t\t\t\t\t\t\tmen are above 30 years old. If the total population of the village is\n\t\t\t\t\t\t\t\t\t\t\t\t20000, then what can be the maximum number of people in the village who\n\t\t\t\t\t\t\t\t\t\t\t\tare 30 years old?",
+            "question_text": "40% population of a village are women and the rest are men. 60% of the women and 45% of the men are above 30 years old. If the total population of the village is 20000, then what can be the maximum number of people in the village who are 30 years old? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1616766' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "9800"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879240/97s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>9800</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div> <img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884190/77s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
@@ -50,19 +50,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t",
+            "question_text": "1 &nbsp;",
             "options": [
-                "11/9",
-                "9/11",
-                "18/5",
-                "12/7"
+                "/9",
+                "/11",
+                "/5",
+                "/7"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879221/78s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879240/97s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
@@ -71,19 +71,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  Tap P, which\n\t\t\t\t\t\t\t\t\tcan fill a tank in 60 minutes is opened at 6:00 pm, tap Q which can fill the tank in\n\t\t\t\t\t\t\t\t\t30 minutes is\n\t\t\t\t\t\t\t\t\topened at 6 : 10 pm and tap R which can fill in 20 minutes is opened at 6 : 20 pm.\n\t\t\t\t\t\t\t\t\tAt what time will the\n\t\t\t\t\t\t\t\t\ttank be filled?",
+            "question_text": "Tap P, which can fill a tank in 60 minutes is opened at 6:00 pm, tap Q which can fill the tank in 30 minutes is opened at 6 : 10 pm and tap R which can fill in 20 minutes is opened at 6 : 20 pm. At what time will the tank be filled? 1 &nbsp;",
             "options": [
-                "6 : 22 pm",
-                "6 : 23 : 20 pm",
-                "6 : 23 : 40 pm",
-                "8 : 24 : 30 pm"
+                ": 22 pm",
+                ": 23 : 20 pm",
+                ": 23 : 40 pm",
+                ": 24 : 30 pm"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><br><br><br><br>"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>2</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879221/78s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
@@ -92,19 +92,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  In a class of 12\n\t\t\t\t\t\t\t\tstudents, the average marks scored by the students is 60. Average marks scored by the\n\t\t\t\t\t\t\t\t5 students, who scored the lowest in class, is 55. If every student scored distinct\n\t\t\t\t\t\t\t\tintegral marks, then find the maximum possible marks scored\n\t\t\t\t\t\t\t\tby the topper in the class.",
+            "question_text": "In a class of 12 students, the average marks scored by the students is 60. Average marks scored by the 5 students, who scored the lowest in class, is 55. If every student scored distinct integral marks, then find the maximum possible marks scored by the topper in the class. 1 &nbsp;",
             "options": [
-                "99",
-                "100",
-                "93",
-                "82"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773331/881329/86s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t\t<div>As the total marks scored by student is 720 and by bottom 5 students is\n\t\t\t\t\t\t\t\t\t\t\t\t55 \u00d7 5 = 275.<br>\n\t\t\t\t\t\t\t\t\t\t\t\tAlso, each student has scored the distinct marks and we need to maximise\n\t\t\t\t\t\t\t\t\t\t\t\tthe score of one individual candidate i.e. the\n\t\t\t\t\t\t\t\t\t\t\t\ttopper so, we need to minimise the score of the other students.<br>\n\t\t\t\t\t\t\t\t\t\t\t\tScore of the bottom 5 students will be (53, 54, 55, 56, 57)<br>\n\t\t\t\t\t\t\t\t\t\t\t\tScore of the rest of the students will be (58, 59, 60, 61, 62, 63 and\n\t\t\t\t\t\t\t\t\t\t\t\t82).<br>\n\t\t\t\t\t\t\t\t\t\t\t\tSo, 4th option.\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -113,19 +113,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  AP,\n\t\t\t\t\t\t\tAQ and BC are three tangents to the circle, having centre O, as shown in the above figure.\n\t\t\t\t\t\t\tFind the measure (in degree) of angle (BOC).",
+            "question_text": "AP, AQ and BC are three tangents to the circle, having centre O, as shown in the above figure. Find the measure (in degree) of angle (BOC). 1 &nbsp;",
             "options": [
-                "67.5",
-                "90",
-                "45",
-                "30"
+                ".5",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879211/68s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773331/881329/86s.gif>\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
@@ -134,35 +134,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  For all \u2018x\u2019, x2\n\t\t\t\t\t\t+ 2px + (10 \u2013 3p)>0, then the interval in which \u2018p\u2019 lies is",
+            "question_text": "For all \u2018x\u2019, x<sup>2</sup> + 2px + (10 \u2013 3p)>0, then the interval in which \u2018p\u2019 lies is 1 &nbsp;",
             "options": [
                 "p < \u20135",
-                "2 < p < 5",
+                "< p < 5",
                 "p > 5",
                 "-5 < p < 2"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879213/70s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879211/68s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  A and B started at the same\n\t\t\t\t\ttime from the same point in the same direction as shown below.\n\t\t\t\t\tHow many of the following statements are true regarding the 1st meeting point of A and B from the\n\t\t\t\t\tstarting point?\n\t\t\t\t\tI. 100 meters less than one-third of a complete round.\n\t\t\t\t\tII. 100 meters less than two-third of a complete round.\n\t\t\t\t\tIII. 100 meters less than one complete round.",
+            "question_text": "A and B started at the same time from the same point in the same direction as shown below. How many of the following statements are true regarding the 1st meeting point of A and B from the starting point? I. 100 meters less than one-third of a complete round. II. 100 meters less than two-third of a complete round. III. 100 meters less than one complete round. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1616748' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879243/100s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879213/70s.gif>\n\t\t\t\t\t\t\t\t</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -171,35 +171,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  Last year, I bought an old flat,\n\t\t\t\thaving cost Rs. 5 lacs, at a discount of Rs.1 lac. This year, the price of the same kind of a new flat\n\t\t\t\tis Rs. 12 lacs. \n\t\t\t\tIf I spend Rs. 2 lacs on its maintenance, I will be able to sell it at the rate 10% lower than the\n\t\t\t\tcurrent market price as\n\t\t\t\tits an old flat. \n\t\t\t\tWithout maintenance, I will be able to sell it at 50% of the current market price. Which\n\t\t\t\tof the following statements is true?",
+            "question_text": "Last year, I bought an old flat, having cost Rs. 5 lacs, at a discount of Rs.1 lac. This year, the price of the same kind of a new flat is Rs. 12 lacs. If I spend Rs. 2 lacs on its maintenance, I will be able to sell it at the rate 10% lower than the current market price as its an old flat. Without maintenance, I will be able to sell it at 50% of the current market price. Which of the following statements is true? 1 &nbsp;",
             "options": [
-                "The percentage point difference of profit, with\n\t\t\t\tmaintenance and without maintenance, is 40%",
+                "The percentage point difference of profit, with maintenance and without maintenance, is 40%",
                 "Maximum profit earned could be 4.8 lacs after the maintenance.",
                 "I can earn a minimum profit of 60%",
                 "All the above statements are true."
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><br><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884198/85s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879243/100s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  A function is defined as f(n) =\n\t\t\t\t2(n \u2013 1) + f(n \u2013 1) for positive integral values of n. If f(0) = 1, then find the value of f(n) \u00d7 f(m),\n\t\t\t\twhere n \u00d7 m = 9 and n \u2260 m.",
+            "question_text": "A function is defined as f(n) = 2(n \u2013 1) + f(n \u2013 1) for positive integral values of n. If f(0) = 1, then find the value of f(n) \u00d7 f(m), where n \u00d7 m = 9 and n \u2260 m. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1616767' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "73"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773331/881324/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>73</B>\n\t\t\t\t\t\t\t<div><br><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773332/884198/85s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
@@ -208,16 +208,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  PQRS is a rectangle having\n\t\t\t\tdimension 4 \u00d7 8, as shown in the figure given below. If A is a point on side RS, then find the minimum\n\t\t\t\tpossible value for (AP + AQ).",
+            "question_text": "PQRS is a rectangle having dimension 4 \u00d7 8, as shown in the figure given below. If A is a point on side RS, then find the minimum possible value for (AP + AQ). 1 &nbsp;",
             "options": [
+                "",
+                "",
+                "",
                 "Cannot be determined"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879230/87s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773331/881324/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
@@ -226,7 +229,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  P borrowed a certain amount of\n\t\t\t\tmoney from a bank at a certain rate of compound interest, compounded annually. Q borrowed the equal\n\t\t\t\tamount from another bank at some rate of simple interest. The interest on the sum borrowed by P from the\n\t\t\t\tthird year is equal to the interest on the sum\n\t\t\t\tborrowed by Q in 3 years. If P and Q repaid the loans at the end of 5 years, then the interest paid by P\n\t\t\t\tis",
+            "question_text": "P borrowed a certain amount of money from a bank at a certain rate of compound interest, compounded annually. Q borrowed the equal amount from another bank at some rate of simple interest. The interest on the sum borrowed by P from the third year is equal to the interest on the sum borrowed by Q in 3 years. If P and Q repaid the loans at the end of 5 years, then the interest paid by P is 1 &nbsp;",
             "options": [
                 "More than the interest paid by Q",
                 "Equal to the interest paid by Q",
@@ -238,7 +241,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773331/881316/73s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879230/87s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
@@ -247,51 +250,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  If a : c : e is 4 : 3 : 5 and b :\n\t\t\t\td : e : f is 7 : 6 : 4 : 3 and also (a + f) is equal to 93, then find (a + b + c + d + e + f).",
+            "question_text": "If a : c : e is 4 : 3 : 5 and b : d : e : f is 7 : 6 : 4 : 3 and also (a + f) is equal to 93, then find (a + b + c + d + e + f). 1 &nbsp;",
             "options": [
-                "300",
-                "384",
-                "250",
-                "444"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879218/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773331/881316/73s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  ",
+            "question_text": "<ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1616750' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "6"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879227/84s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>6</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879218/75s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  A merchant has three varieties of\n\t\t\t\trice having cost Rs.20/kg, Rs.24/kg and Rs.30/kg. He mixes them in some ratio such that on selling the\n\t\t\t\tmixture at Rs. 30/kg he earns a profit of 20%. If\n\t\t\t\tthe mixture contains 2 kg of the third variety of rice and has integer number of kilograms of other two\n\t\t\t\tvarieties also, then how many kilograms of the second variety can be there in the mixture ?",
+            "question_text": "A merchant has three varieties of rice having cost Rs.20/kg, Rs.24/kg and Rs.30/kg. He mixes them in some ratio such that on selling the mixture at Rs. 30/kg he earns a profit of 20%. If the mixture contains 2 kg of the third variety of rice and has integer number of kilograms of other two varieties also, then how many kilograms of the second variety can be there in the mixture ? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1616755' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "5"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879236/93s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>5</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879227/84s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
@@ -300,7 +303,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  In triangle ABC, D, E and F are\n\t\t\t\tthe mid points of sides BC, AB and CA as shown below. Find the co-ordinates of vertices A, B and C\n\t\t\t\trespectively.\n\t\t\t",
+            "question_text": "In triangle ABC, D, E and F are the mid points of sides BC, AB and CA as shown below. Find the co-ordinates of vertices A, B and C respectively. 1 &nbsp;",
             "options": [
                 "(4, 6), (\u20136, 4), (2, \u20132)",
                 "(\u20136, 4), (4, 6), (2, \u20132)",
@@ -312,7 +315,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879224/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879236/93s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
@@ -321,35 +324,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  A college has 10 basketball\n\t\t\t\tplayers. A 5-member team and a captain will be selected out of these\n\t\t\t\t10 players. How many different selections can be made?",
+            "question_text": "A college has 10 basketball players. A 5-member team and a captain will be selected out of these 10 players. How many different selections can be made? 1 &nbsp;",
             "options": [
-                "1260",
-                "210",
-                "10C6 \u00d7 6!",
-                "10C5 \u00d7 6"
+                "",
+                "",
+                "<sup>10</sup>C<sub>6</sub> \u00d7 6!",
+                "<sup>10</sup>C<sub>5</sub> \u00d7 6"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773331/881340/97s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879224/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  In a stationary shop, cost of 4\n\t\t\t\tpencils, 6 erasers and 9 sharpeners is Rs. 305 whereas cost of 3 pencils, 4 erasers and 2 sharpeners is\n\t\t\t\tRs. 145. What is the cost (in Rs.) of 5 pencils, 8 erasers and 16 sharpeners in the shop?",
+            "question_text": "In a stationary shop, cost of 4 pencils, 6 erasers and 9 sharpeners is Rs. 305 whereas cost of 3 pencils, 4 erasers and 2 sharpeners is Rs. 145. What is the cost (in Rs.) of 5 pencils, 8 erasers and 16 sharpeners in the shop? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1616765' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "465"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879210/67s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>465</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773331/881340/97s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
@@ -358,16 +361,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  A solid cylinder of height 20 cm\n\t\t\t\tand radius 10 cm is cut into 4 identical pieces by 2 perpendicular cuts as shown in the figure given\n\t\t\t\tbelow. By what percentage is the combined total surface areas of the 4 pieces more than the total\n\t\t\t\tsurface area of the original cylinder?",
+            "question_text": "A solid cylinder of height 20 cm and radius 10 cm is cut into 4 identical pieces by 2 perpendicular cuts as shown in the figure given below. By what percentage is the combined total surface areas of the 4 pieces more than the total surface area of the original cylinder? 1 &nbsp;",
             "options": [
+                "",
+                "",
+                "",
                 "None of these"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879219/76s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879210/67s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20019": {
             "id": "20019",
@@ -376,19 +382,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  In an arithmetic progression with\n\t\t\t\t35 terms, the sum of first 4 terms is 122 and the sum of last 4 terms is 286. Find the sum of all the\n\t\t\t\tterms of the progression.",
+            "question_text": "In an arithmetic progression with 35 terms, the sum of first 4 terms is 122 and the sum of last 4 terms is 286. Find the sum of all the terms of the progression. 1 &nbsp;",
             "options": [
-                "1785",
-                "2240",
-                "1284",
-                "1936"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879241/98s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879219/76s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -397,51 +403,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  Aman can row a boat upstream from\n\t\t\t\tA to B taking 4 minutes more than he took to row the same distance downstream. If the distance between A\n\t\t\t\tand B is 240 meters and the speed of the stream is 4 m/sec, then find the speed (in m/sec) of the boat.\n\t\t\t",
+            "question_text": "Aman can row a boat upstream from A to B taking 4 minutes more than he took to row the same distance downstream. If the distance between A and B is 240 meters and the speed of the stream is 4 m/sec, then find the speed (in m/sec) of the boat. 1 &nbsp;",
             "options": [
-                "21",
+                "",
                 "\u221a30",
-                "20",
+                "",
                 "\u221a24"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879215/72s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879241/98s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20021": {
             "id": "20021",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  Find the remainder when M is\n\t\t\t\tdivided by 500 where M = (1!)3 + (2!)3 + (3!)3 + \u2026 + (50!)3\n\t\t\t",
+            "question_text": "Find the remainder when M is divided by 500 where M = (1!)<sup>3</sup> + (2!)<sup>3</sup> + (3!)<sup>3</sup> + \u2026 + (50!)<sup>3</sup> <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1616749' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "49"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879235/92s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>49</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879215/72s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  If |4x \u2013 6 | \u2264 14 and | 2y \u2013 7| \u2264\n\t\t\t\t13, then what is the maximum value of |x| \u2013 |y|?",
+            "question_text": "If |4x \u2013 6 | \u2264 14 and | 2y \u2013 7| \u2264 13, then what is the maximum value of |x| \u2013 |y|? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1616757' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "5"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>5</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773330/879235/92s.gif>\n\t\t\t\t\t\t\t</div></div>"
         }
     }
 }

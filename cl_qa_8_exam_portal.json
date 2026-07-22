@@ -1,7 +1,7 @@
 {
     "name": "QA 08 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -30,18 +30,18 @@
         "20001": {
             "id": "20001",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tFind the number of digits in the product of 621734512 and 612.\n\t\t\t\t\t\t\t\t\t\t\t",
+            "question_text": "Find the number of digits in the product of 621734512 and 612. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613532' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "12"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859836/94s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>12</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859833/91s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
@@ -50,35 +50,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616]  Let\n\t\t\t\t\t\t\t\t\t\t\tf(x) = a12x12 + a10x10 +\n\t\t\t\t\t\t\t\t\t\t\ta8x8 + ... + a2x2 +\n\t\t\t\t\t\t\t\t\t\t\ta0, where a0, a2, ..., a12 are\n\t\t\t\t\t\t\t\t\t\t\tall real. If there are 3 sign changes in f(x) and f(x) has exactly 4\n\t\t\t\t\t\t\t\t\t\t\tnon-real roots, then which of the following is definitely true? ",
+            "question_text": "Let f(x) = a<sub>12</sub>x<sup>12</sup> + a<sub>10</sub>x<sup>10</sup> + a<sub>8</sub>x<sup>8</sup> + ... + a<sub>2</sub>x<sup>2</sup> + a<sub>0</sub>, where a<sub>0</sub>, a<sub>2</sub>, ..., a<sub>12</sub> are all real. If there are 3 sign changes in f(x) and f(x) has exactly 4 non-real roots, then which of the following is definitely true? 1 &nbsp;",
             "options": [
-                "a0 = 0",
-                "a10 > 0",
-                "a10\n\t\t\t\t\t\t\t\t\t\t\t< 0",
-                "a10 = 0"
+                "a<sub>0</sub> = 0",
+                "a<sub>10</sub> > 0",
+                "a<sub>10</sub> < 0",
+                "a<sub>10</sub> = 0"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863542/80s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859836/94s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  Find out the\n\t\t\t\t\t\t\t\t\tprinciple (in Rs.) which gives Rs. 200 as simple interest and Rs. 220 as compound\n\t\t\t\t\t\t\t\t\tinterest after 2 years at the same rate of interest.",
+            "question_text": "Find out the principle (in Rs.) which gives Rs. 200 as simple interest and Rs. 220 as compound interest after 2 years at the same rate of interest. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613544' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "500"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863546/84S.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>500</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863542/80s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
@@ -87,19 +87,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  A racing car spots\n\t\t\t\t\t\t\t\ta cyclist from a distance of 100 m. It overtakes the cyclist and then the cyclist can\n\t\t\t\t\t\t\t\tobserve the racing car upto a distance of 200m. If the car\u2019s speed is 5 times that of\n\t\t\t\t\t\t\t\tthe cyclist\u2019s and the time elapsed between the time when the car racer spots the cyclist\n\t\t\t\t\t\t\t\tuntil the last moment the cyclist observe the racer is 5 seconds, then find the speed of\n\t\t\t\t\t\t\t\tthe car.(Assuming no time lapse while overtaking)",
+            "question_text": "A racing car spots a cyclist from a distance of 100 m. It overtakes the cyclist and then the cyclist can observe the racing car upto a distance of 200m. If the car\u2019s speed is 5 times that of the cyclist\u2019s and the time elapsed between the time when the car racer spots the cyclist until the last moment the cyclist observe the racer is 5 seconds, then find the speed of the car.(Assuming no time lapse while overtaking) 1 &nbsp;",
             "options": [
-                "15 m/s",
-                "60 m/s",
-                "75 m/s",
-                "100 m/s"
+                "m/s",
+                "m/s",
+                "m/s",
+                "m/s"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863530/68s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863546/84S.gif>\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -108,35 +108,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  If\n\t\t\t\t\t\t\tlog2(log3(x2 + 7x + 19)) = 1, find positive value of x.\n\t\t\t\t\t\t",
+            "question_text": "If log<sub>2</sub>(log<sub>3</sub>(x<sup>2</sup> + 7x + 19)) = 1, find positive value of x. 1 &nbsp;",
             "options": [
-                "2",
-                "5 and 2",
-                "5",
+                "",
+                "and 2",
+                "",
                 "Not possible"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859814/72s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863530/68s.gif>\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  If the sum of the square\n\t\t\t\t\t\tof medians of a triangle ABC is 42 cm2, then what is the sum (in cm2) of\n\t\t\t\t\t\tthe square of its sides?",
+            "question_text": "If the sum of the square of medians of a triangle ABC is 42 cm<sup>2</sup>, then what is the sum (in cm<sup>2</sup>) of the square of its sides? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613530' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "56"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863510/67s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>56</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859814/72s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
@@ -145,19 +145,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  In a 100 km race, how far is P\n\t\t\t\t\tfrom the finishing point when Q finishes the race, if P\u2019s speed is 40 kmph and Q\u2019s speed is 60 kmph?\n\t\t\t\t\t(Assume that both of them started at the same time)",
+            "question_text": "In a 100 km race, how far is P from the finishing point when Q finishes the race, if P\u2019s speed is 40 kmph and Q\u2019s speed is 60 kmph? (Assume that both of them started at the same time) 1 &nbsp;",
             "options": [
-                "20/3 km",
-                "100/3 km",
-                "10/3 km",
-                "200/3km"
+                "/3 km",
+                "/3 km",
+                "/3 km",
+                "/3km"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863536/74s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863510/67s.gif>\n\t\t\t\t\t\t\t\t</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -166,19 +166,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  The average of n numbers is 41. If\n\t\t\t\t2/3rd of these numbers are increased by 9 and the remaining\n\t\t\t\t1/3rd are decreased by 6, then find the new average.",
+            "question_text": "The average of n numbers is 41. If 2/3<sup>rd</sup> of these numbers are increased by 9 and the remaining 1/3<sup>rd</sup> are decreased by 6, then find the new average. 1 &nbsp;",
             "options": [
-                "36",
-                "39",
-                "42",
-                "45"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863531/69s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863536/74s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
@@ -187,19 +187,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "3 and 1/3",
-                "5 and 1/5",
-                "3/2 and 2/3",
-                "4 and 1/4"
+                "and 1/3",
+                "and 1/5",
+                "/2 and 2/3",
+                "and 1/4"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863543/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863531/69s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
@@ -208,18 +208,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  Ajay started painting a room at\n\t\t\t\tsome time between 6 pm and 7 pm. When he was done with his painting, clock showed time somewhere between\n\t\t\t\t8 pm and 9 pm on the same day. Also he noticed that hours hand and minute hand have interchanged their\n\t\t\t\tpositions. At what time did Ajay finished his painting?",
+            "question_text": "Ajay started painting a room at some time between 6 pm and 7 pm. When he was done with his painting, clock showed time somewhere between 8 pm and 9 pm on the same day. Also he noticed that hours hand and minute hand have interchanged their positions. At what time did Ajay finished his painting? 1 &nbsp;",
             "options": [
-                "8 : 10 pm",
-                "8:45 pm",
-                "8:50 pm"
+                ": 10 pm",
+                "",
+                ":45 pm",
+                ":50 pm"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863547/85S.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863543/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
@@ -228,7 +229,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  If roots of the equation, (x \u2013 p)\n\t\t\t\t(x + 5) + 9 = 0, are integers and p is also an integer, then what is the sum of all possible values of\n\t\t\t\tp?",
+            "question_text": "If roots of the equation, (x \u2013 p) (x + 5) + 9 = 0, are integers and p is also an integer, then what is the sum of all possible values of p? 1 &nbsp;",
             "options": [
                 "\u201320",
                 "\u201340",
@@ -240,7 +241,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863533/71s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863547/85S.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
@@ -249,35 +250,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  A shopkeeper bought two kinds of\n\t\t\t\twheat. The per kg rate of dearer wheat is 25% more than that of the cheaper wheat. In what ratio should\n\t\t\t\tthe cheaper and the dearer wheat be mixed by the shop keeper so that if he sold them at the per kg rate\n\t\t\t\tof dearer wheat he had a gain of 10% per kg?",
+            "question_text": "A shopkeeper bought two kinds of wheat. The per kg rate of dearer wheat is 25% more than that of the cheaper wheat. In what ratio should the cheaper and the dearer wheat be mixed by the shop keeper so that if he sold them at the per kg rate of dearer wheat he had a gain of 10% per kg? 1 &nbsp;",
             "options": [
-                "3 : 2",
-                "2 : 3",
-                "5 : 6",
-                "6 : 5"
+                ": 2",
+                ": 3",
+                ": 6",
+                ": 5"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863538/76s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863533/71s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  Entry ticket for a food festival\n\t\t\t\tcost Rs.100 which was later reduced by 20%. After which, the total sales of the festival\u2019s ticket\n\t\t\t\tincreased by 44%. Find the percentage increase in the number of people who attended the festival.",
+            "question_text": "Entry ticket for a food festival cost Rs.100 which was later reduced by 20%. After which, the total sales of the festival\u2019s ticket increased by 44%. Find the percentage increase in the number of people who attended the festival. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613542' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "80"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863537/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>80</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863538/76s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -286,51 +287,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "7/3",
-                "3/2",
-                "24/13",
-                "9/26"
+                "/3",
+                "/2",
+                "/13",
+                "/26"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863535/73s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863537/75s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  Fifty kilograms of an alloy has\n\t\t\t\t60% Lead and remaining Tin. How much lead (in kg) is to be added in it to make it 75% of the final\n\t\t\t\talloy?",
+            "question_text": "Fifty kilograms of an alloy has 60% Lead and remaining Tin. How much lead (in kg) is to be added in it to make it 75% of the final alloy? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613539' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "30"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863561/99s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>30</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863535/73s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  |x \u2013 8| + |x + 12| \u2013 |x \u2013 10| \u2264\n\t\t\t\t50, \n\t\t\t\tthen how many integer values of x satisfy the above inequality?",
+            "question_text": "|x \u2013 8| + |x + 12| \u2013 |x \u2013 10| \u2264 50, then how many integer values of x satisfy the above inequality? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613551' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "101"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863558/96s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>101</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863561/99s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
@@ -339,7 +340,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  In which figure is the black path\n\t\t\t\tthe shortest, where A, B and C are all squares of sides 1 unit each?\n\t\t\t\t\n\t\t\t",
+            "question_text": "In which figure is the black path the shortest, where A, B and C are all squares of sides 1 unit each? 1 &nbsp;",
             "options": [
                 "A",
                 "B",
@@ -348,26 +349,26 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863539/77s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863558/96s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  There are 3 circles with centres\n\t\t\t\tP, Q and R, each having radius 24 cm. They intersect each other as shown in the figure below. If ST =\n\t\t\t\t4cm, UV = 7 cm and WX = 10 cm, then find the perimeter\n\t\t\t\t(in cm) of the triangle formed by joining the centers of the 3 circles.\n\t\t\t\t\n\t\t\t",
+            "question_text": "There are 3 circles with centres P, Q and R, each having radius 24 cm. They intersect each other as shown in the figure below. If ST = 4cm, UV = 7 cm and WX = 10 cm, then find the perimeter (in cm) of the triangle formed by joining the centers of the 3 circles. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613543' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "123"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863550/88s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>123</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863539/77s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20019": {
             "id": "20019",
@@ -376,35 +377,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  Each of P, Q and R have some\n\t\t\t\tcoins with them such that their numbers are in ratio x : y : z, where x, y and z are integers. P gave 2\n\t\t\t\tcoins to Q, who then gave 4 coins to R, who then gave 9 coins to P. Now if each one of them have the\n\t\t\t\tsame number of coins after this interchange, what is the minimum possible value of (x + y + z)?",
+            "question_text": "Each of P, Q and R have some coins with them such that their numbers are in ratio x : y : z, where x, y and z are integers. P gave 2 coins to Q, who then gave 4 coins to R, who then gave 9 coins to P. Now if each one of them have the same number of coins after this interchange, what is the minimum possible value of (x + y + z)? 1 &nbsp;",
             "options": [
-                "10",
-                "24",
-                "6",
-                "13"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859835/93s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863550/88s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  P, Q and R takes 12, 15 and 20\n\t\t\t\tdays respectively to do a work. All 3 started working\n\t\t\t\ton it together, and P and Q left after working for somedays and hence the remaining work was done by R\n\t\t\t\talone. If P and Q left\n\t\t\t\tthe work 4 days and 1 day before its completion respectively, then what is the total number of\n\t\t\t\tdays taken by them to do the work?",
+            "question_text": "P, Q and R takes 12, 15 and 20 days respectively to do a work. All 3 started working on it together, and P and Q left after working for somedays and hence the remaining work was done by R alone. If P and Q left the work 4 days and 1 day before its completion respectively, then what is the total number of days taken by them to do the work? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613533' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "7"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859823/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>7</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859835/93s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20021": {
             "id": "20021",
@@ -413,19 +414,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  A person goes to a stationary\n\t\t\t\tshop to buy pens and pencils. A pen costs Rs.3 and a pencil costs\n\t\t\t\tRs. 2. If he has an amount of Rs. 32 to spend completely on pens and pencils, then how many different\n\t\t\t\tcombinations of\n\t\t\t\tnumber of pens and pencils he can buy?",
+            "question_text": "A person goes to a stationary shop to buy pens and pencils. A pen costs Rs.3 and a pencil costs Rs. 2. If he has an amount of Rs. 32 to spend completely on pens and pencils, then how many different combinations of number of pens and pencils he can buy? 1 &nbsp;",
             "options": [
-                "5",
-                "8",
-                "6",
-                "7"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863552/90s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859823/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
@@ -434,19 +435,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  ABCD is a rectangle with AB as 15\n\t\t\t\tunits and BC as 10 units. Point E, on side AB, divides AB in the ratio 2 : 1 and DE intersects AC at R.\n\t\t\t\tFind the ratio of the area of quadrilateral BERC to the area of rectangle ABCD.",
+            "question_text": "ABCD is a rectangle with AB as 15 units and BC as 10 units. Point E, on side AB, divides AB in the ratio 2 : 1 and DE intersects AC at R. Find the ratio of the area of quadrilateral BERC to the area of rectangle ABCD. 1 &nbsp;",
             "options": [
-                "1 : 3",
-                "11 : 30",
-                "2 : 5",
-                "7 : 30"
+                ": 3",
+                ": 30",
+                ": 5",
+                ": 30"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773326/863552/90s.gif>\n\t\t\t\t\t\t\t</div></div>"
         }
     }
 }

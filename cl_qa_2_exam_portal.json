@@ -1,7 +1,7 @@
 {
     "name": "QA 02 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -34,7 +34,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tIf two vertices of a rhombus are (3,0) and (4,5), and the third\n\t\t\t\t\t\t\t\t\t\t\t\t\tvertex lies on the point of intersection\n\t\t\t\t\t\t\t\t\t\t\t\t\tof x + y = 3 and x \u2013 5y = \u201321, then find the fourth vertex.",
+            "question_text": "If two vertices of a rhombus are (3,0) and (4,5), and the third vertex lies on the point of intersection of x + y = 3 and x \u2013 5y = \u201321, then find the fourth vertex. 1 &nbsp;",
             "options": [
                 "(\u20131, 3)",
                 "(\u20132, \u20134)",
@@ -43,42 +43,47 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802551/77s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>4</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802512/70s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\tAshok, Kiran and Vignesh are set out to do some work. Ashok can do\n\t\t\t\t\t\t\t\t\t\t\t\tthe work in as much time as\n\t\t\t\t\t\t\t\t\t\t\t\tKiran and Vignesh can do while working together. Kiran can do the work\n\t\t\t\t\t\t\t\t\t\t\t\talone in 12 days more than\n\t\t\t\t\t\t\t\t\t\t\t\tthe days in which Ashok would do the work alone, while Vignesh can work\n\t\t\t\t\t\t\t\t\t\t\t\ttwice as fast as Kiran. If\n\t\t\t\t\t\t\t\t\t\t\t\tShirin joins the work on the second day and the work is finished on that\n\t\t\t\t\t\t\t\t\t\t\t\tday itself, find out how\n\t\t\t\t\t\t\t\t\t\t\t\tmany days would Shirin take to complete the whole work by herself?",
+            "question_text": "Ashok, Kiran and Vignesh are set out to do some work. Ashok can do the work in as much time as Kiran and Vignesh can do while working together. Kiran can do the work alone in 12 days more than the days in which Ashok would do the work alone, while Vignesh can work twice as fast as Kiran. If Shirin joins the work on the second day and the work is finished on that day itself, find out how many days would Shirin take to complete the whole work by herself? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1575901' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802567/93s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802551/77s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
             "marks": 3,
             "negative_marks": 1.0,
-            "is_input_type": true,
+            "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  A circle is\n\t\t\t\t\t\t\t\t\t\tinscribed in a regular hexagon and further a square of side 'a' is inscribed\n\t\t\t\t\t\t\t\t\t\tinside that circle\n\t\t\t\t\t\t\t\t\t\tas shown in the figure below. Find the area of the shaded region.\n\t\t\t\t\t\t\t\t",
-            "options": [],
+            "question_text": "A circle is inscribed in a regular hexagon and further a square of side 'a' is inscribed inside that circle as shown in the figure below. Find the area of the shaded region. 1 &nbsp;",
+            "options": [
+                "",
+                "",
+                "",
+                ""
+            ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795485/83s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802567/93s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
@@ -87,17 +92,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  If x is real\n\t\t\t\t\t\t\t\t\tnumber, then find the minimum value of \n\t\t\t\t\t\t\t",
+            "question_text": "If x is real number, then find the minimum value of 1 &nbsp;",
             "options": [
                 "\u20133",
-                "0"
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795515/99s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>2</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795485/83s.gif>\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -106,35 +113,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  A man spends\n\t\t\t\t\t\t\t\texactly Rs. 810 for buying caps and gloves at Rs. 30 and Rs. 70 respectively. What\n\t\t\t\t\t\t\t\tis the ratio of number of gloves to that of caps, if he purchased maximum possible\n\t\t\t\t\t\t\t\tnumber of\n\t\t\t\t\t\t\t\tgloves?",
+            "question_text": "A man spends exactly Rs. 810 for buying caps and gloves at Rs. 30 and Rs. 70 respectively. What is the ratio of number of gloves to that of caps, if he purchased maximum possible number of gloves? 1 &nbsp;",
             "options": [
-                "3 : 2",
-                "4 : 5",
-                "2 : 3",
-                "5 : 4"
+                ": 2",
+                ": 5",
+                ": 3",
+                ": 4"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795512/96s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795515/99s.gif>\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  A solution of acid and\n\t\t\t\t\t\t\twater contains 20% acid in it. What percentage of water must be evaporated\n\t\t\t\t\t\t\tfrom the solution to get a 50% acid solution?",
+            "question_text": "A solution of acid and water contains 20% acid in it. What percentage of water must be evaporated from the solution to get a 50% acid solution? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1575898' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "75"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b>"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>75</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795512/96s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
@@ -143,7 +150,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  A clock was 10 minutes\n\t\t\t\t\t\tbehind the actual time at 1 pm on Monday. It was 20 minutes ahead the\n\t\t\t\t\t\tactual time in the next 144 hrs. When would it be 5 minutes ahead of actual time?",
+            "question_text": "A clock was 10 minutes behind the actual time at 1 pm on Monday. It was 20 minutes ahead the actual time in the next 144 hrs. When would it be 5 minutes ahead of actual time? 1 &nbsp;",
             "options": [
                 "Tuesday, 1 pm",
                 "Wednesday, 1 pm",
@@ -152,10 +159,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b><br><br><br><br>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t\t<div><b>As per data, 30 minutes gain is happening in 144 hrs. It would have taken 72\n\t\t\t\t\t\t\t\t\t\thours for 15 minutes gain. On Thursday\n\t\t\t\t\t\t\t\t\t\tat 1 pm, it would be 5 mins ahead.</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -164,19 +171,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  The average salary of marketing\n\t\t\t\t\tdepartment, having 22 employees working, of ABC company is 3.7\n\t\t\t\t\tlac more than the average salary of operations department, having 15 employees working, of same\n\t\t\t\t\tcompany. If the average salary of all 37 employees is 5.6 lacs, find the average salary (in lac) of\n\t\t\t\t\tmarketing department.",
+            "question_text": "The average salary of marketing department, having 22 employees working, of ABC company is 3.7 lac more than the average salary of operations department, having 15 employees working, of same company. If the average salary of all 37 employees is 5.6 lacs, find the average salary (in lac) of marketing department. 1 &nbsp;",
             "options": [
-                "5.6",
-                "4.1",
-                "7.1",
-                "7.8"
+                ".6",
+                ".1",
+                ".1",
+                ".8"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802562/88s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><b>Let average salary of operations department be x lac.<br>\n\t\t\t\t\t\t\t\t\tThen, average salary of marketing department becomes (x + 3.7) lac.<br>\n\t\t\t\t\t\t\t\t\tSo, 22(x + 3.7) + 15x = 37 \u00d7 5.6<br>\n\t\t\t\t\t\t\t\t\t\u21d2x= 3.4<br>\n\t\t\t\t\t\t\t\t\tHence, average salary of marketing department = 7.1 lac</div></div>"
         },
         "20009": {
             "id": "20009",
@@ -185,83 +192,83 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  P, Q and R are the roots of the\n\t\t\t\t\tequation x3 + bx2 + cx + d = 0, and are positive integers. If P2 +\n\t\t\t\t\tQ2 = 221\n\t\t\t\t\tand Q2 + R2 = 125, then which of the following can be the value of \u2018c\u2019?",
+            "question_text": "P, Q and R are the roots of the equation x<sup>3</sup> + bx<sup>2</sup> + cx + d = 0, and are positive integers. If P<sup>2</sup> + Q<sup>2</sup> = 221 and Q<sup>2</sup> + R<sup>2</sup> = 125, then which of the following can be the value of \u2018c\u2019? 1 &nbsp;",
             "options": [
                 "-152",
-                "215",
-                "550",
+                "",
+                "",
                 "-26"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795475/73s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802562/88s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  A function is defined as f(x)\n\t\t\t\t\t= ax4 + bx3 + cx2 + dx2 + e such that (x2 \u2013\n\t\t\t\t\t1) is a factor of f(x). If f(x)\n\t\t\t\t\tintersects the y-axis at (0, \u201310), then find the value of (b + e).",
+            "question_text": "A function is defined as f(x) = ax<sup>4</sup> + bx<sup>3</sup> + cx<sup>2</sup> + dx<sup>2</sup> + e such that (x<sup>2</sup> \u2013 1) is a factor of f(x). If f(x) intersects the y-axis at (0, \u201310), then find the value of (b + e). <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1575891' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "-10"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795477/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>-10</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795475/73s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  There are 7 students\n\t\t\t\t\tS1, S2, S3, S4, S5, S6 and\n\t\t\t\t\tS7, in a class. The respective ratio of heights of\n\t\t\t\t\tS1,S2,S4 and S5 is 15 : 16 : 9 : 8, and that of\n\t\t\t\t\tS2, S3, S6 and S7 is 8 : 5 : 11 : 12. If height of\n\t\t\t\t\tS7 is 16 cm more than that of S2, then find the sum of height (in cm) of\n\t\t\t\t\tS4, S5 and S6.",
+            "question_text": "There are 7 students S<sub>1</sub>, S<sub>2</sub>, S<sub>3</sub>, S<sub>4</sub>, S<sub>5</sub>, S<sub>6</sub> and S<sub>7</sub>, in a class. The respective ratio of heights of S<sub>1</sub>,S<sub>2</sub>,S<sub>4</sub> and S<sub>5</sub> is 15 : 16 : 9 : 8, and that of S<sub>2</sub>, S<sub>3</sub>, S<sub>6</sub> and S<sub>7</sub> is 8 : 5 : 11 : 12. If height of S<sub>7</sub> is 16 cm more than that of S<sub>2</sub>, then find the sum of height (in cm) of S<sub>4</sub>, S<sub>5</sub> and S<sub>6</sub>. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1575892' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "78"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811684/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>78</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795477/75s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  In a Carom competition,\n\t\t\t\t\tinvolving some boys and some girls, every person had to play exactly one\n\t\t\t\t\tgame with every other person. It was found that in 45 games both the players were girls and in 190\n\t\t\t\t\tgames both were boys. The number of games in which both, a girl and a boy, were present is\n\t\t\t\t\t(assume competition had to be held only between two players at a time)",
+            "question_text": "In a Carom competition, involving some boys and some girls, every person had to play exactly one game with every other person. It was found that in 45 games both the players were girls and in 190 games both were boys. The number of games in which both, a girl and a boy, were present is (assume competition had to be held only between two players at a time) <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1575912' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "200"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795471/69s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>200</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811684/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  A cake factory has 36 baking\n\t\t\t\t\tmachines, 60 filling machines and 144 jacking machines. If the\n\t\t\t\t\tmanager of the factory decides to place equal number of machine in each row such that each row\n\t\t\t\t\thas machines of same category, then what is the least number of rows required?",
+            "question_text": "A cake factory has 36 baking machines, 60 filling machines and 144 jacking machines. If the manager of the factory decides to place equal number of machine in each row such that each row has machines of same category, then what is the least number of rows required? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1575890' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "20"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795480/78s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>20</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795471/69s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -270,35 +277,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  If log2 x =\n\t\t\t\t\tlog8 y = m, and x and y are positive integers, then find logx y.",
+            "question_text": "If log<sub>2</sub> x = log<sub>8</sub> y = m, and x and y are positive integers, then find log<sub>x</sub> y. 1 &nbsp;",
             "options": [
                 "m",
-                "3",
-                "6",
-                "m2"
+                "",
+                "",
+                "m<sup>2</sup>"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811676/73s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795480/78s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  The sum of all the real roots\n\t\t\t\t\tof the equation |x \u2013 4|2 + |x \u2013 4| \u2013 6 = 0 is",
+            "question_text": "The sum of all the real roots of the equation |x \u2013 4|<sup>2</sup> + |x \u2013 4| \u2013 6 = 0 is <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1575911' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "8"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802553/79s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>8</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811676/73s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
@@ -307,19 +314,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  Abhijit bought 100 HCC\u2019s\n\t\t\t\t\tshares at Rs. 157 each, 10 Reliance\u2019 shares at Rs.1000 each, 20 State\n\t\t\t\t\tBank of India\u2019s shares at Rs. 1560 each, and 5 Jindal Steel\u2019s shares at Rs. 3350 each. If he sold\n\t\t\t\t\tall\n\t\t\t\t\tthese shares for Rs.161, Rs.957, Rs.1559 and Rs.3800 per share respectively, then his approximate\n\t\t\t\t\tpercentage of profit or loss is",
+            "question_text": "Abhijit bought 100 HCC\u2019s shares at Rs. 157 each, 10 Reliance\u2019 shares at Rs.1000 each, 20 State Bank of India\u2019s shares at Rs. 1560 each, and 5 Jindal Steel\u2019s shares at Rs. 3350 each. If he sold all these shares for Rs.161, Rs.957, Rs.1559 and Rs.3800 per share respectively, then his approximate percentage of profit or loss is 1 &nbsp;",
             "options": [
-                "3% Loss",
-                "5% Profit",
-                "3% Profit",
-                "5% Loss"
+                "% Loss",
+                "% Profit",
+                "% Profit",
+                "% Loss"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802568/94s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802553/79s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
@@ -328,19 +335,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  There are two equations,\n\t\t\t\t\tx2 + bx + c = 0 and x2 + cx + b = 0, where b \u2260 0 and c \u2260 0. If both the\n\t\t\t\t\tequations have integral roots, then what can be said about the value of 'c'?",
+            "question_text": "There are two equations, x<sup>2</sup> + bx + c = 0 and x<sup>2</sup> + cx + b = 0, where b \u2260 0 and c \u2260 0. If both the equations have integral roots, then what can be said about the value of 'c'? 1 &nbsp;",
             "options": [
                 "Minimum possible value of 'c' is 2.",
-                "There is only one value of 'c' at which it is equal to\n\t\t\t\t\t'b'.",
+                "There is only one value of 'c' at which it is equal to 'b'.",
                 "'c' can only be an integer.",
                 "None of these"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811686/83s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773318/802568/94s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
@@ -349,35 +356,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  Surya has to pay back the\n\t\t\t\t\ttotal loan plus interest, where the interest is of Rs. 441 earned at the rate\n\t\t\t\t\tof 10% compounded annually in 2 years, on the loan. Had Surya decided to pay it in two equal\n\t\t\t\t\tinstallments at same rate of interest then he would have saved Rs. x. Find the value of x.",
+            "question_text": "Surya has to pay back the total loan plus interest, where the interest is of Rs. 441 earned at the rate of 10% compounded annually in 2 years, on the loan. Had Surya decided to pay it in two equal installments at same rate of interest then he would have saved Rs. x. Find the value of x. 1 &nbsp;",
             "options": [
-                "121",
-                "210",
-                "41",
-                "110"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795493/91s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811686/83s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20019": {
             "id": "20019",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  The sum of 3rd and 28th term\n\t\t\t\t\tof an Arithmetic Progression is same as that of 7th, 11th and 18th\n\t\t\t\t\tterm of the Arithmetic Progression. If the sum of the first N terms of this Arithmetic Progression\n\t\t\t\t\tis\n\t\t\t\t\tzero, then find the value of N.",
+            "question_text": "The sum of 3rd and 28th term of an Arithmetic Progression is same as that of 7th, 11th and 18th term of the Arithmetic Progression. If the sum of the first N terms of this Arithmetic Progression is zero, then find the value of N. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1575897' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "9"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811674/71s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>9</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795493/91s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -386,19 +393,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  Find the remainder when F(a) =\n\t\t\t\t\ta15 + a14 + a13 +.....+ a2 + a is divided by\n\t\t\t\t\t(a2 \u2013 1).",
+            "question_text": "Find the remainder when F(a) = a<sup>15</sup> + a<sup>14</sup> + a<sup>13</sup> +.....+ a<sup>2</sup> + a is divided by (a<sup>2</sup> \u2013 1). 1 &nbsp;",
             "options": [
-                "7a + 8",
-                "8a + 7",
-                "9a + 6",
-                "5a + 8"
+                "a + 8",
+                "a + 7",
+                "a + 6",
+                "a + 8"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795491/89s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773319/811674/71s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20021": {
             "id": "20021",
@@ -407,19 +414,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  ABC is an isosceles right\n\t\t\t\t\tangle triangle, right angled at A. One more isosceles right angle triangle,\n\t\t\t\t\tMBC, is drawn taking BC as its hypotenuse. Now taking M as center and MB as radius a circle is\n\t\t\t\t\tdrawn. What percentage (approx) of area of the triangle ABC lies within the circle?",
+            "question_text": "ABC is an isosceles right angle triangle, right angled at A. One more isosceles right angle triangle, MBC, is drawn taking BC as its hypotenuse. Now taking M as center and MB as radius a circle is drawn. What percentage (approx) of area of the triangle ABC lies within the circle? 1 &nbsp;",
             "options": [
-                "57%",
-                "67%",
-                "15%",
-                "35%"
+                "%",
+                "%",
+                "%",
+                "%"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795481/79s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795491/89s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
@@ -428,19 +435,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  A and B run in opposite\n\t\t\t\t\tdirection around a circular track of radius 140 m. The speed of A is 7m/s\n\t\t\t\t\twhereas speed of B is 3m/s. Whenever they are at a distance of 10 m on the track they say hello\n\t\t\t\t\tor bye to each other. Find the number of times A said hello or bye to B till the time A has covered\n\t\t\t\t\ta\n\t\t\t\t\ttotal distance of 12320 m.",
+            "question_text": "A and B run in opposite direction around a circular track of radius 140 m. The speed of A is 7m/s whereas speed of B is 3m/s. Whenever they are at a distance of 10 m on the track they say hello or bye to each other. Find the number of times A said hello or bye to B till the time A has covered a total distance of 12320 m. 1 &nbsp;",
             "options": [
-                "16",
-                "20",
-                "32",
-                "40"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773317/795481/79s.gif>\n\t\t\t\t\t\t\t</div></div>"
         }
     }
 }

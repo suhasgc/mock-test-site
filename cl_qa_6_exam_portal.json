@@ -1,7 +1,7 @@
 {
     "name": "QA 06 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -34,19 +34,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tSoda and water are in ratio 3 : 7 and 5 : 2 in two different\n\t\t\t\t\t\t\t\t\t\t\t\t\tsolutions. In what ratio should these two\n\t\t\t\t\t\t\t\t\t\t\t\t\tsolutions be mixed so that the ratio of water and soda in the final\n\t\t\t\t\t\t\t\t\t\t\t\t\tsolution turns out to be 2 : 3?",
+            "question_text": "Soda and water are in ratio 3 : 7 and 5 : 2 in two different solutions. In what ratio should these two solutions be mixed so that the ratio of water and soda in the final solution turns out to be 2 : 3? 1 &nbsp;",
             "options": [
-                "21 : 8",
-                "8 : 21",
-                "2 : 3",
-                "1 : 1"
+                ": 8",
+                ": 21",
+                ": 3",
+                ": 1"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842840/78s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>2</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842856/89s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
@@ -55,19 +55,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\tShreya and Aarti can do a piece of work in 8 and 10 days\n\t\t\t\t\t\t\t\t\t\t\t\trespectively. They work on alternate days\n\t\t\t\t\t\t\t\t\t\t\t\tstarting from Shreya. What fraction of work is completed in first seven\n\t\t\t\t\t\t\t\t\t\t\t\tdays?",
+            "question_text": "Shreya and Aarti can do a piece of work in 8 and 10 days respectively. They work on alternate days starting from Shreya. What fraction of work is completed in first seven days? 1 &nbsp;",
             "options": [
-                "27/40",
-                "31/40",
-                "4/5",
-                "7/8"
+                "/40",
+                "/40",
+                "/5",
+                "/8"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b>"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842840/78s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
@@ -76,35 +76,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  A man\n\t\t\t\t\t\t\t\t\t\ttravels from city A to city B at speed of 45 km/hr and returns back from city B\n\t\t\t\t\t\t\t\t\t\tto city A at a\n\t\t\t\t\t\t\t\t\t\tcertain speed. If his average speed for the entire journey is 90km/hr, then find\n\t\t\t\t\t\t\t\t\t\this return speed?",
+            "question_text": "A man travels from city A to city B at speed of 45 km/hr and returns back from city B to city A at a certain speed. If his average speed for the entire journey is 90km/hr, then find his return speed? 1 &nbsp;",
             "options": [
-                "0 km/hr",
-                "45 km/hr",
-                "90 km/hr",
+                "km/hr",
+                "km/hr",
+                "km/hr",
                 "Data inconsistent"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b><br><br>"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><b>In a to and fro motion, the average speed can never be double or\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tmore than double of one of the speeds.</div></div>"
         },
         "20004": {
             "id": "20004",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  If\n\t\t\t\t\t\t\t\t\tN2 ends with 76, where N is a natural number less than or equals to 350,\n\t\t\t\t\t\t\t\t\tthen how many such N\n\t\t\t\t\t\t\t\t\tare possible?",
+            "question_text": "If N<sup>2</sup> ends with 76, where N is a natural number less than or equals to 350, then how many such N are possible? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576351' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "14"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842832/70s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>14</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><b>Last two digits of perfect squares keeps on repeating after 25 in\n\t\t\t\t\t\t\t\t\t\t\t\t\tgroup of every 25 numbers.<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\tNow, in first 25 natural numbers, there is only one number whose\n\t\t\t\t\t\t\t\t\t\t\t\t\tsquare ends with 76.<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\tSo, there are 14 such numbers till 350, as we get 14 groups of 25\n\t\t\t\t\t\t\t\t\t\t\t\t\tnumbers.</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -113,19 +113,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  A park is in the\n\t\t\t\t\t\t\t\tshape of an isosceles right angled triangle ABC, right angled at B. Two friends - Amit\n\t\t\t\t\t\t\t\tand Raman - started walking from vertex B. Amit walked along the sides of the triangle\n\t\t\t\t\t\t\t\tand\n\t\t\t\t\t\t\t\treturned back to the starting point. Raman walked along such a path such that he can\n\t\t\t\t\t\t\t\treach the\n\t\t\t\t\t\t\t\thypotenuse, AC, walking the shortest possible distance and returned to the starting\n\t\t\t\t\t\t\t\tpoint along the\n\t\t\t\t\t\t\t\tsame path. If they both started simultaneously and reached back to the starting point\n\t\t\t\t\t\t\t\ttogether, then\n\t\t\t\t\t\t\t\twhat is the ratio of their speeds?",
+            "question_text": "A park is in the shape of an isosceles right angled triangle ABC, right angled at B. Two friends - Amit and Raman - started walking from vertex B. Amit walked along the sides of the triangle and returned back to the starting point. Raman walked along such a path such that he can reach the hypotenuse, AC, walking the shortest possible distance and returned to the starting point along the same path. If they both started simultaneously and reached back to the starting point together, then what is the ratio of their speeds? 1 &nbsp;",
             "options": [
                 "(\u221a2 + 2) : 2",
                 "\u221a2 : (\u221a2 + 1)",
                 "(1 + \u221a2):1",
-                "2\u221a2 : (1 + \u221a2)"
+                "\u221a2 : (1 + \u221a2)"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842830/68s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842832/70s.gif>\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
@@ -134,33 +134,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "x < 10\u20134",
+                "x < 10<sup>\u20134",
+                "",
+                "",
                 "None of these"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b><br>"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842830/68s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  Due to a man leaving the\n\t\t\t\t\t\tgroup of 6 people, the average weight of the group drops from 63 to 60. Find the weight of the\n\t\t\t\t\t\tman who left the group?",
+            "question_text": "Due to a man leaving the group of 6 people, the average weight of the group drops from 63 to 60. Find the weight of the man who left the group? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576350' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "78"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842833/71s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>78</B>\n\t\t\t\t\t\t\t\t<div><b>Let every person has Rs. 1 coins equivalent to their weight. While leaving, this\n\t\t\t\t\t\t\t\t\t\tperson took away 63 coins of his own\n\t\t\t\t\t\t\t\t\t\tplus 3 coins from each of the remaining 5 individuals.<br>\n\t\t\t\t\t\t\t\t\t\tSo, weight = number of coins he had = 63 + 5 \u00d7 3 = 78.</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -169,35 +171,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  While buying rice, Neerav made\n\t\t\t\t\tprofit using a faulty balance of 1200 grams instead of 1000 grams.\n\t\t\t\t\tWhile selling them, he further marked up the price by 20% and then offered a discount of 25%. Find\n\t\t\t\t\tthe net profit /loss of Neerav on the whole transaction.",
+            "question_text": "While buying rice, Neerav made profit using a faulty balance of 1200 grams instead of 1000 grams. While selling them, he further marked up the price by 20% and then offered a discount of 25%. Find the net profit /loss of Neerav on the whole transaction. 1 &nbsp;",
             "options": [
-                "10% loss",
-                "12.5% profit",
-                "8% profit",
-                "5% loss"
+                "% loss",
+                ".5% profit",
+                "% profit",
+                "% loss"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><br><br><br><br><br><br>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842833/71s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  Raju can finish a job in 20\n\t\t\t\t\tdays and Monu is half as efficient as Raju. Raju worked for \u2018x\u2019 days alone\n\t\t\t\t\tand then left the job. After that Monu started working on it. But after y days, Raju joined him and\n\t\t\t\t\tthey together took 7 more days to finish the work. For maximum how many days did Monu work\n\t\t\t\t\talone?(x, y are natural numbers)",
+            "question_text": "Raju can finish a job in 20 days and Monu is half as efficient as Raju. Raju worked for \u2018x\u2019 days alone and then left the job. After that Monu started working on it. But after y days, Raju joined him and they together took 7 more days to finish the work. For maximum how many days did Monu work alone?(x, y are natural numbers) <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576337' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "17"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837776/94s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>17</B>\n\t\t\t\t\t\t\t<div>Since Raju can finish in 20 days, Monu will take 40 days to finish the same work.<br>\n\t\t\t\t\t\t\t\tLet the amount of work be LCM (20, 40) = 40 units<br>\n\t\t\t\t\t\t\t\tRaju can do 2 units/day and Monu can do 1 unit/day.<br>\n\t\t\t\t\t\t\t\tSo, 2x + y + 3 \u00d7 7 = 40<br>\n\t\t\t\t\t\t\t\t\u21d2 2x + y = 19<br>\n\t\t\t\t\t\t\t\t\u21d2 y = 19 \u2013 2x<br>\n\t\t\t\t\t\t\t\t\u21d2 maximum (y) = 19 \u2013 2 \u00d7 1 = 17 (minimum (x) = 1, as x and y are natural numbers)</div></div>"
         },
         "20010": {
             "id": "20010",
@@ -206,19 +208,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  A report consists of 20\n\t\t\t\t\tsheets, each sheet having 55 lines and each such line consists of 65\n\t\t\t\t\tcharacters. This report is retyped on sheets each having 65 lines such that each line consists of 70\n\t\t\t\t\tcharacters. The percentage reduction in the number of sheets used for the retyped report is closest\n\t\t\t\t\tto",
+            "question_text": "A report consists of 20 sheets, each sheet having 55 lines and each such line consists of 65 characters. This report is retyped on sheets each having 65 lines such that each line consists of 70 characters. The percentage reduction in the number of sheets used for the retyped report is closest to 1 &nbsp;",
             "options": [
-                "20%",
-                "5%",
-                "30%",
-                "35%"
+                "%",
+                "%",
+                "%",
+                "%"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859821/79s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837776/94s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
@@ -227,19 +229,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  ABCD is a parallelogram, in\n\t\t\t\t\twhich bisector of angle ABC meets AD at E. If BE = EC = 8 units and\n\t\t\t\t\tED = 7.8 units, then find the length of BC.",
+            "question_text": "ABCD is a parallelogram, in which bisector of angle ABC meets AD at E. If BE = EC = 8 units and ED = 7.8 units, then find the length of BC. 1 &nbsp;",
             "options": [
-                "14 units",
-                "12.8 units",
-                "4 units",
-                "15 units"
+                "units",
+                ".8 units",
+                "units",
+                "units"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837750/68s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859821/79s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
@@ -248,35 +250,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  Number of sides of two regular\n\t\t\t\t\tpolygons are in the ratio 1 : 2 and the difference between their\n\t\t\t\t\texterior angles is 45\u00b0. Which of the following is the number of sides of one of these polygons?",
+            "question_text": "Number of sides of two regular polygons are in the ratio 1 : 2 and the difference between their exterior angles is 45\u00b0. Which of the following is the number of sides of one of these polygons? 1 &nbsp;",
             "options": [
-                "5",
-                "6",
-                "7",
-                "8"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859816/74s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837750/68s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  Find the number of integral\n\t\t\t\t\tsolutions of 4x + 8y = 33.",
+            "question_text": "Find the number of integral solutions of 4x + 8y = 33. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576354' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "0"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837768/86s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>0</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859816/74s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -285,19 +287,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  Ashok bought Tur Daal and\n\t\t\t\t\tmarked up its price by 70%. He offered a discount of 58.88% on half of\n\t\t\t\t\tthe daal, and no discount on the rest of the daal. Find his overall profit percentage.",
+            "question_text": "Ashok bought Tur Daal and marked up its price by 70%. He offered a discount of 58.88% on half of the daal, and no discount on the rest of the daal. Find his overall profit percentage. 1 &nbsp;",
             "options": [
-                "10%",
-                "20%",
-                "25%",
-                "16.66%"
+                "%",
+                "%",
+                "%",
+                ".66%"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842837/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837768/86s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
@@ -306,35 +308,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  Apollo\u2019s teacher told his\n\t\t\t\t\tcolleague \u201cMy age is not prime but odd and if you reverse the digits of my\n\t\t\t\t\tage and add that new number to my age, you obtain a perfect square. If you reverse the digits of my\n\t\t\t\t\tage and subtract that number from my age, you again obtain a perfect square.\u201d If the age of the\n\t\t\t\t\tteacher was a two-digit number, then his age is divisible by",
+            "question_text": "Apollo\u2019s teacher told his colleague \u201cMy age is not prime but odd and if you reverse the digits of my age and add that new number to my age, you obtain a perfect square. If you reverse the digits of my age and subtract that number from my age, you again obtain a perfect square.\u201d If the age of the teacher was a two-digit number, then his age is divisible by 1 &nbsp;",
             "options": [
-                "7",
-                "9",
-                "13",
-                "15"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><b><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842836/74s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842837/75s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  If t1 = 10,\n\t\t\t\t\tt2 = 7, tn+1 = tn \u2013 tn\u20131 for n > 1, then find\n\t\t\t\t\tt1 + t2 + t3 + ...+ t50.",
+            "question_text": "If t<sub>1</sub> = 10, t<sub>2</sub> = 7, t<sub>n+1</sub> = t<sub>n</sub> \u2013 t<sub>n\u20131</sub> for n > 1, then find t<sub>1</sub> + t<sub>2</sub> + t<sub>3</sub> + ...+ t<sub>50</sub>. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576345' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "17"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842844/82s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>17</B>\n\t\t\t\t\t\t\t<div><b><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842836/74s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
@@ -343,51 +345,56 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  If the difference between the\n\t\t\t\t\ttwo roots of quadratic equation, x2 \u2013 ax + 2a = 0, is less than 2\u221a5, then find the range\n\t\t\t\t\tof a.",
+            "question_text": "If the difference between the two roots of quadratic equation, x<sup>2</sup> \u2013 ax + 2a = 0, is less than 2\u221a5, then find the range of a. 1 &nbsp;",
             "options": [
                 "\u20133 < a < 5",
-                "2 < a < 10",
+                "< a < 10",
                 "\u20132 < a < 10",
                 "None of these"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842870/92s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842844/82s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  P = |x \u2013 25| + |x \u2013 50| + |x \u2013\n\t\t\t\t\t75| + \u2026 + |x \u2013 200|\n\t\t\t\t\tIf value of P is minimum possible, then what is the difference between the maximum and the minimum\n\t\t\t\t\tpossible\n\t\t\t\t\tintegral value of x?",
+            "question_text": "P = |x \u2013 25| + |x \u2013 50| + |x \u2013 75| + \u2026 + |x \u2013 200| If value of P is minimum possible, then what is the difference between the maximum and the minimum possible integral value of x? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576353' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "25"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837774/92s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>25</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842870/92s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20019": {
             "id": "20019",
             "marks": 3,
             "negative_marks": 1.0,
-            "is_input_type": true,
+            "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  The area of the largest\n\t\t\t\t\ttriangle that can be inscribed in the outer most circle, given in the figure below, is 4\u221a3. If the\n\t\t\t\t\tradii for the bigger and the smaller circles drawn inside the outermost circle are R and r\n\t\t\t\t\trespectively, then find the total circumference of all these 5 inner circles. (Given that the\n\t\t\t\t\tcentres of all circles are collinear)",
-            "options": [],
+            "question_text": "The area of the largest triangle that can be inscribed in the outer most circle, given in the figure below, is 4\u221a3. If the radii for the bigger and the smaller circles drawn inside the outermost circle are R and r respectively, then find the total circumference of all these 5 inner circles. (Given that the centres of all circles are collinear) 1 &nbsp;",
+            "options": [
+                "",
+                "",
+                "",
+                ""
+            ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819472/73s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837774/92s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -396,51 +403,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
                 "Less than 1",
-                "51 \u00d7 53 \u00d7 55 \u00d7\u2026\u00d7 95 \u00d7 97 \u00d7 99",
-                "50!",
-                "1"
+                "\u00d7 53 \u00d7 55 \u00d7\u2026\u00d7 95 \u00d7 97 \u00d7 99",
+                "!",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842843/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819472/73s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20021": {
             "id": "20021",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  A sum of money becomes 5200\n\t\t\t\t\tafter 6 months and becomes 8788 after one and half year at r% rate\n\t\t\t\t\tof interest compounded half yearly. Find the value of r.",
+            "question_text": "A sum of money becomes 5200 after 6 months and becomes 8788 after one and half year at r% rate of interest compounded half yearly. Find the value of r. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576348' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "60"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837715/67s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>60</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773323/842843/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  ",
+            "question_text": "<ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1576335' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773322/837715/67s.gif>\n\t\t\t\t\t\t\t</div></div>"
         }
     }
 }

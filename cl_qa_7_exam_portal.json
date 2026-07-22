@@ -1,7 +1,7 @@
 {
     "name": "QA 07 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -34,19 +34,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tIf the product of 4 positive integers is 8!, then which of the\n\t\t\t\t\t\t\t\t\t\t\t\tfollowing is the minimum possible value of the sum of these 4 integers?\n\t\t\t\t\t\t\t\t\t\t\t",
+            "question_text": "If the product of 4 positive integers is 8!, then which of the following is the minimum possible value of the sum of these 4 integers? 1 &nbsp;",
             "options": [
-                "57",
-                "60",
-                "64",
-                "66"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850165/73s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>1</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850090/67s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
@@ -55,19 +55,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t",
+            "question_text": "1 &nbsp;",
             "options": [
-                "8",
-                "11/3",
-                "4\u221a3",
-                "7"
+                "",
+                "/3",
+                "\u221a3",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850174/82s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850165/73s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
@@ -76,19 +76,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  Two\n\t\t\t\t\t\t\t\t\t\tsolutions, one having salt and water in ratio 3 : 7 and the other having sugar\n\t\t\t\t\t\t\t\t\t\tand water in ratio\n\t\t\t\t\t\t\t\t\t\t3 : 1, are mixed in ratio 15 : 8. Find the ratio of salt and sugar in the final\n\t\t\t\t\t\t\t\t\t\tsolution.",
+            "question_text": "Two solutions, one having salt and water in ratio 3 : 7 and the other having sugar and water in ratio 3 : 1, are mixed in ratio 15 : 8. Find the ratio of salt and sugar in the final solution. 1 &nbsp;",
             "options": [
-                "4 : 3",
-                "3 : 4",
-                "2 : 3",
-                "3 : 2"
+                ": 3",
+                ": 4",
+                ": 3",
+                ": 2"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850193/86s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>2</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850174/82s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
@@ -97,19 +97,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  Find the area (in\n\t\t\t\t\t\t\t\tcm2) of the triangle formed by joining the alternate vertices of a regular\n\t\t\t\t\t\t\t\thexagon of\n\t\t\t\t\t\t\t\tside 1 cm.",
+            "question_text": "Find the area (in cm<sup>2</sup>) of the triangle formed by joining the alternate vertices of a regular hexagon of side 1 cm. 1 &nbsp;",
             "options": [
                 "\u221a3/4",
                 "\u221a3",
-                "3\u221a3/4",
-                "3\u221a3"
+                "\u221a3/4",
+                "\u221a3"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850195/88s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850193/86s.gif>\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -118,11 +118,11 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  A and B started\n\t\t\t\t\t\t\trunning simultaneously from a point around a circular track of 900 m. The ratio of their\n\t\t\t\t\t\t\tspeeds is 3 : 7. For how many times\n\t\t\t\t\t\t\twill A and B be at a distance of 10 m from each other, if they are running in opposite\n\t\t\t\t\t\t\tdirections and\n\t\t\t\t\t\t\tstops only when they meet for the first time at the starting point again?",
+            "question_text": "A and B started running simultaneously from a point around a circular track of 900 m. The ratio of their speeds is 3 : 7. For how many times will A and B be at a distance of 10 m from each other, if they are running in opposite directions and stops only when they meet for the first time at the starting point again? 1 &nbsp;",
             "options": [
-                "20",
-                "10",
-                "16",
+                "",
+                "",
+                "",
                 "Cannot be determined"
             ],
             "correct_response": [
@@ -130,23 +130,23 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859812/70s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850195/88s.gif>\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  Laksh sold two horses, one\n\t\t\t\t\t\tat a profit of 20% and the other at a loss of 10%, and earned an overall\n\t\t\t\t\t\tprofit of Rs. 5600. Had he sold the first one at a profit of 40% and the other at a loss of 30%,\n\t\t\t\t\t\the\n\t\t\t\t\t\twould not have earned anything. Find the difference between the cost price (in Rs.) of the two\n\t\t\t\t\t\thorses.",
+            "question_text": "Laksh sold two horses, one at a profit of 20% and the other at a loss of 10%, and earned an overall profit of Rs. 5600. Had he sold the first one at a profit of 40% and the other at a loss of 30%, he would not have earned anything. Find the difference between the cost price (in Rs.) of the two horses. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612888' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "28000"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850166/74s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>28000</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859812/70s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
@@ -155,7 +155,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  Raman and Manoj tried to solve\n\t\t\t\t\ta quadratic equation. Raman made a mistake while noting\n\t\t\t\t\tdown the constant term and hence ended up with the roots (4, 3). Manoj made a mistake in writing\n\t\t\t\t\tdown the coefficient of x and hence got the roots as (3, 2). What will be the exact roots of the\n\t\t\t\t\tactual quadratic\n\t\t\t\t\tequation?",
+            "question_text": "Raman and Manoj tried to solve a quadratic equation. Raman made a mistake while noting down the constant term and hence ended up with the roots (4, 3). Manoj made a mistake in writing down the coefficient of x and hence got the roots as (3, 2). What will be the exact roots of the actual quadratic equation? 1 &nbsp;",
             "options": [
                 "(6, 1)",
                 "(\u20133, \u20134)",
@@ -167,23 +167,23 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850202/95s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850166/74s.gif>\n\t\t\t\t\t\t\t\t</div></div>"
         },
         "20008": {
             "id": "20008",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  X can complete a job in 15 days\n\t\t\t\tand Y can complete the same job in 20 days. Initially X works for\n\t\t\t\t5 days and then Y joined him. X left four days after Y joined. Find the number of days in which Y\n\t\t\t\tshould have completed the remaining work.",
+            "question_text": "X can complete a job in 15 days and Y can complete the same job in 20 days. Initially X works for 5 days and then Y joined him. X left four days after Y joined. Find the number of days in which Y should have completed the remaining work. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612884' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850205/98s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850202/95s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
@@ -192,35 +192,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  In a triangle PQR, PQ = 19.5 cm\n\t\t\t\tand PR = 14 cm. PS, the altitude drawn from P to QR is 6 cm.\n\t\t\t\tWhat is length (in cm) of the circumradius of \u0394PQR?",
+            "question_text": "In a triangle PQR, PQ = 19.5 cm and PR = 14 cm. PS, the altitude drawn from P to QR is 6 cm. What is length (in cm) of the circumradius of \u0394PQR? 1 &nbsp;",
             "options": [
-                "21.25",
-                "22.75",
-                "21.75",
-                "23.25"
+                ".25",
+                ".75",
+                ".75",
+                ".25"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859817/75s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850205/98s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  A sum of money gets double in 5\n\t\t\t\tyears when kept under simple interest. In how many years will it\n\t\t\t\tbecome 6 times of itself?",
+            "question_text": "A sum of money gets double in 5 years when kept under simple interest. In how many years will it become 6 times of itself? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612889' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "25"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850206/99s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>25</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859817/75s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
@@ -229,19 +229,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  Find the value(s) of \u2018a\u2019 for\n\t\t\t\twhich both, the inequation 7a + 5 < 9a - 4 and the quadratic equation 2a2 \u2013 21a + 54 = 0,\n\t\t\t\t\tholds true.",
+            "question_text": "Find the value(s) of \u2018a\u2019 for which both, the inequation 7a + 5 < 9a - 4 and the quadratic equation 2a<sup>2</sup> \u2013 21a + 54 = 0, holds true. 1 &nbsp;",
             "options": [
-                "9/2",
-                "6",
+                "/2",
+                "",
                 "Both (1) and (2)",
                 "None of these"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859820/78s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850206/99s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
@@ -250,19 +250,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  In a small town, males comprised\n\t\t\t\t64% of the total population. After a year the population of\n\t\t\t\tmales and females were increased by 30% and 40% respectively. Find the ratio of males to females\n\t\t\t\tin the town after increment.",
+            "question_text": "In a small town, males comprised 64% of the total population. After a year the population of males and females were increased by 30% and 40% respectively. Find the ratio of males to females in the town after increment. 1 &nbsp;",
             "options": [
-                "104 : 63",
-                "64 : 30",
-                "14 : 13",
-                "15 : 12"
+                ": 63",
+                ": 30",
+                ": 13",
+                ": 12"
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850172/80s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859820/78s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
@@ -271,19 +271,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "21/33",
-                "11/19",
-                "23/39",
-                "41/52"
+                "/33",
+                "/19",
+                "/39",
+                "/52"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850194/87s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850172/80s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -292,35 +292,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "13",
-                "16",
-                "31",
-                "32"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859826/84s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850194/87s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  The average weight of students in\n\t\t\t\ta class is 60 kg. When two new students having weight 90 kg and\n\t\t\t\t98 kg join the class and one student of weight 42 kg leaves the class, the new average of the class\n\t\t\t\tbecomes 62 kg. How many students were there in the class initially?",
+            "question_text": "The average weight of students in a class is 60 kg. When two new students having weight 90 kg and 98 kg join the class and one student of weight 42 kg leaves the class, the new average of the class becomes 62 kg. How many students were there in the class initially? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612891' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "42"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859840/98s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>42</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859826/84s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
@@ -329,7 +329,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  There are 6 cake making glass\n\t\t\t\tmoulds, 3 are of cylindrical shapes and another three are of cuboidal\n\t\t\t\tshapes. The cost of all cylindrical shaped moulds taken together is Rs.700 and their radii are in ratio\n\t\t\t\t2 : 3 : 4 and\n\t\t\t\theight of each of the three is equal to the radius of the smallest mould. Also the cost of all cuboidal\n\t\t\t\tshaped moulds taken together is Rs.800\n\t\t\t\tand their volumes are in ratio 4 : 8 : 16. If the volumes of the medium size boxes, in both the cases,\n\t\t\t\tare same,\n\t\t\t\tthen which of the following deal is a better deal per unit price (i.e more volume per unit price)?",
+            "question_text": "There are 6 cake making glass moulds, 3 are of cylindrical shapes and another three are of cuboidal shapes. The cost of all cylindrical shaped moulds taken together is Rs.700 and their radii are in ratio 2 : 3 : 4 and height of each of the three is equal to the radius of the smallest mould. Also the cost of all cuboidal shaped moulds taken together is Rs.800 and their volumes are in ratio 4 : 8 : 16. If the volumes of the medium size boxes, in both the cases, are same, then which of the following deal is a better deal per unit price (i.e more volume per unit price)? 1 &nbsp;",
             "options": [
                 "Both are same",
                 "Cylindrical one is better",
@@ -338,26 +338,26 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850192/85s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859840/98s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  The 10th term of an Arithmetic\n\t\t\t\tProgression is 15. If the sum of the squares of its 7th, 10th and 13th term is minimum possible, then\n\t\t\t\tthe\n\t\t\t\tcommon difference is",
+            "question_text": "The 10th term of an Arithmetic Progression is 15. If the sum of the squares of its 7th, 10th and 13th term is minimum possible, then the common difference is <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612879' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "0"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850199/92s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>0</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850192/85s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
@@ -366,35 +366,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  A man started running to catch a\n\t\t\t\tbus which is at a distance of 300m from him. If the speed of the\n\t\t\t\tbus is 3 m/s and that of the man is 27 km/hr, then in how much time will the man be able to catch\n\t\t\t\tthe bus?",
+            "question_text": "A man started running to catch a bus which is at a distance of 300m from him. If the speed of the bus is 3 m/s and that of the man is 27 km/hr, then in how much time will the man be able to catch the bus? 1 &nbsp;",
             "options": [
-                "60 sec",
-                "33.33 sec",
-                "50 sec",
-                "66.67 sec"
+                "sec",
+                ".33 sec",
+                "sec",
+                ".67 sec"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859839/97s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850199/92s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20019": {
             "id": "20019",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  Find maximum value of 6x \u2013\n\t\t\t\tx2 + 7 if |x \u2013 4| \u2265 2.",
+            "question_text": "Find maximum value of 6x \u2013 x<sup>2</sup> + 7 if |x \u2013 4| \u2265 2. <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612892' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "15"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859842/100s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>15</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859839/97s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -403,51 +403,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  A square ABCD is inscribed inside\n\t\t\t\ta circle of radius 4 cm. Two semicircles are drawn inside the square taking AB and BC as their diameters\n\t\t\t\trespectively. Find the area (in sq cm) of the region common to both the semicircles.",
+            "question_text": "A square ABCD is inscribed inside a circle of radius 4 cm. Two semicircles are drawn inside the square taking AB and BC as their diameters respectively. Find the area (in sq cm) of the region common to both the semicircles. 1 &nbsp;",
             "options": [
-                "2\u03c0 - 4",
-                "4\u03c0 - 8",
-                "2\u03c0",
-                "5\u03c0"
+                "\u03c0 - 4",
+                "\u03c0 - 8",
+                "\u03c0",
+                "\u03c0"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859841/99s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859842/100s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20021": {
             "id": "20021",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  Four inlet pipes, with circular\n\t\t\t\tcross-section of radius r, together take 9 hours to fill a cistern. If the speed of water is thrice that\n\t\t\t\tof the earlier speed, then how many pipes of half the\n\t\t\t\tradius 'r' are required to fill it in 6 hours?",
+            "question_text": "Four inlet pipes, with circular cross-section of radius r, together take 9 hours to fill a cistern. If the speed of water is thrice that of the earlier speed, then how many pipes of half the radius 'r' are required to fill it in 6 hours? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612894' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "8"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850204/97s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>8</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773325/859841/99s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  p, q and r are the roots of the\n\t\t\t\tcubic equation: x3 \u2013 3x2 + 2x \u2013 1 = 0. Find the value of (p/qr + q/pr + r/pq).\n\t\t\t",
+            "question_text": "p, q and r are the roots of the cubic equation: x<sup>3</sup> \u2013 3x<sup>2</sup> + 2x \u2013 1 = 0. Find the value of (p/qr + q/pr + r/pq). <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612885' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "5"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>5</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773324/850204/97s.gif>\n\t\t\t\t\t\t\t</div></div>"
         }
     }
 }

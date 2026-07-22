@@ -1,7 +1,7 @@
 {
     "name": "DILR 07 - 2023",
     "sections": {
-        "LRDI": [
+        "Data Interpretation & Logical Reasoning": [
             "20001",
             "20002",
             "20003",
@@ -31,8 +31,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions\n                                                    1 to 5: Answer the questions on the basis of the information\n                                                given below.\n                                                In Aa-liga, a football tournament, there are 15 teams competing in a\n                                                round robin format i.e. each team plays\n                                                with all the other teams exactly once. The top two teams during the\n                                                league will play the finals against each\n                                                other. After every match, points will be awarded to both the teams based\n                                                on the following criteria:\n                                                1 win \u2261 3 points;\n                                                1 draw \u2261 1 point;\n                                                1 loss \u2261 0 point\n                                                When 11 of the 15 teams were done playing all their matches, following\n                                                observations were made about the\n                                                top 5 scoring teams at that stage:\n                                                \n                                                Further, when all teams have played all their league matches, it is\n                                                noted that:\n                                                (i) Real Madrid scored the highest points.\n                                                (ii) No two teams, among the top five, have the same number of drawn\n                                                matches.\n                                                (iii) Among the top 5 teams, Valencia is not involved in the highest\n                                                number of drawn matches.\n                                            ",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n                                                Who is the other finalist with Real Madrid?\n                                            ",
+            "instructions": "<b>Directions for questions 1 to\n                                                5:</b> Answer the questions on the basis of the information given\n                                            below.<br><br>\n                                            In Aa-liga, a football tournament, there are 15 teams competing in a round\n                                            robin format i.e. each team plays\n                                            with all the other teams exactly once. The top two teams during the league\n                                            will play the finals against each\n                                            other. After every match, points will be awarded to both the teams based on\n                                            the following criteria:<br><br>\n                                            1 win \u2261 3 points;<br>\n                                            1 draw \u2261 1 point;<br>\n                                            1 loss \u2261 0 point<br><br>\n                                            When 11 of the 15 teams were done playing all their matches, following\n                                            observations were made about the\n                                            top 5 scoring teams at that stage:<br><br>\n                                            <img\n                                                src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828351/39-42.gif><br><br>\n                                            Further, when all teams have played all their league matches, it is noted\n                                            that:<br>\n                                            (i) Real Madrid scored the highest points.<br>\n                                            (ii) No two teams, among the top five, have the same number of drawn\n                                            matches.<br>\n                                            (iii) Among the top 5 teams, Valencia is not involved in the highest number\n                                            of drawn matches.",
+            "question_text": "Who is the other finalist with Real Madrid? 1 &nbsp;",
             "options": [
                 "Barcelona",
                 "Atletico Madrid",
@@ -44,23 +44,23 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828352/40s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n                                                            <b>1</B>\n                                                            <div><img\n                                                                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828351/39s.gif>\n                                                            </div></div>"
         },
         "20002": {
             "id": "20002",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 1 to\n                                                5: Answer the questions on the basis of the information given\n                                            below.\n                                            In Aa-liga, a football tournament, there are 15 teams competing in a round\n                                            robin format i.e. each team plays\n                                            with all the other teams exactly once. The top two teams during the league\n                                            will play the finals against each\n                                            other. After every match, points will be awarded to both the teams based on\n                                            the following criteria:\n                                            1 win \u2261 3 points;\n                                            1 draw \u2261 1 point;\n                                            1 loss \u2261 0 point\n                                            When 11 of the 15 teams were done playing all their matches, following\n                                            observations were made about the\n                                            top 5 scoring teams at that stage:\n                                            \n                                            Further, when all teams have played all their league matches, it is noted\n                                            that:\n                                            (i) Real Madrid scored the highest points.\n                                            (ii) No two teams, among the top five, have the same number of drawn\n                                            matches.\n                                            (iii) Among the top 5 teams, Valencia is not involved in the highest number\n                                            of drawn matches.\n                                        ",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n                                            Out of all the matches played by Sevilla during the tournament,\n                                            how many ended in a draw?\n                                        ",
+            "instructions": "<b>Directions for questions 1 to 5:</b>\n                                    Answer the questions on the basis of the information given below.<br><br>\n                                    In Aa-liga, a football tournament, there are 15 teams competing in a round robin\n                                    format i.e. each team plays\n                                    with all the other teams exactly once. The top two teams during the league will play\n                                    the finals against each\n                                    other. After every match, points will be awarded to both the teams based on the\n                                    following criteria:<br><br>\n                                    1 win \u2261 3 points;<br>\n                                    1 draw \u2261 1 point;<br>\n                                    1 loss \u2261 0 point<br><br>\n                                    When 11 of the 15 teams were done playing all their matches, following observations\n                                    were made about the\n                                    top 5 scoring teams at that stage:<br><br>\n                                    <img\n                                        src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828351/39-42.gif><br><br>\n                                    Further, when all teams have played all their league matches, it is noted that:<br>\n                                    (i) Real Madrid scored the highest points.<br>\n                                    (ii) No two teams, among the top five, have the same number of drawn matches.<br>\n                                    (iii) Among the top 5 teams, Valencia is not involved in the highest number of drawn\n                                    matches.",
+            "question_text": "Out of all the matches played by Sevilla during the tournament, how many ended in a draw? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612818' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B> </li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "6"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828353/41s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>6</B>\n                                                        <div><img\n                                                                src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828352/40s.gif>\n                                                        </div></div>"
         },
         "20003": {
             "id": "20003",
@@ -68,8 +68,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 1 to 5:\n                                    Answer the questions on the basis of the information given below.\n                                    In Aa-liga, a football tournament, there are 15 teams competing in a round robin\n                                    format i.e. each team plays\n                                    with all the other teams exactly once. The top two teams during the league will play\n                                    the finals against each\n                                    other. After every match, points will be awarded to both the teams based on the\n                                    following criteria:\n                                    1 win \u2261 3 points;\n                                    1 draw \u2261 1 point;\n                                    1 loss \u2261 0 point\n                                    When 11 of the 15 teams were done playing all their matches, following observations\n                                    were made about the\n                                    top 5 scoring teams at that stage:\n                                    \n                                    Further, when all teams have played all their league matches, it is noted that:\n                                    (i) Real Madrid scored the highest points.\n                                    (ii) No two teams, among the top five, have the same number of drawn matches.\n                                    (iii) Among the top 5 teams, Valencia is not involved in the highest number of drawn\n                                    matches.\n                                ",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  Which team\n                                    scored the 4th highest?",
+            "instructions": "<b>Directions for questions 1 to 5:</b>\n                                Answer the questions on the basis of the information given below.<br><br>\n                                In Aa-liga, a football tournament, there are 15 teams competing in a round robin format\n                                i.e. each team plays\n                                with all the other teams exactly once. The top two teams during the league will play the\n                                finals against each\n                                other. After every match, points will be awarded to both the teams based on the\n                                following criteria:<br><br>\n                                1 win \u2261 3 points;<br>\n                                1 draw \u2261 1 point;<br>\n                                1 loss \u2261 0 point<br><br>\n                                When 11 of the 15 teams were done playing all their matches, following observations were\n                                made about the\n                                top 5 scoring teams at that stage:<br><br>\n                                <img\n                                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828351/39-42.gif><br><br>\n                                Further, when all teams have played all their league matches, it is noted that:<br>\n                                (i) Real Madrid scored the highest points.<br>\n                                (ii) No two teams, among the top five, have the same number of drawn matches.<br>\n                                (iii) Among the top 5 teams, Valencia is not involved in the highest number of drawn\n                                matches.",
+            "question_text": "Which team scored the 4th highest? 1 &nbsp;",
             "options": [
                 "Barcelona",
                 "Atletico Madrid",
@@ -78,10 +78,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828354/42s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>3</B>\n                                                <div><img\n                                                        src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828353/41s.gif>\n                                                </div></div>"
         },
         "20004": {
             "id": "20004",
@@ -89,8 +89,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 1 to 5:\n                                Answer the questions on the basis of the information given below.\n                                In Aa-liga, a football tournament, there are 15 teams competing in a round robin format\n                                i.e. each team plays\n                                with all the other teams exactly once. The top two teams during the league will play the\n                                finals against each\n                                other. After every match, points will be awarded to both the teams based on the\n                                following criteria:\n                                1 win \u2261 3 points;\n                                1 draw \u2261 1 point;\n                                1 loss \u2261 0 point\n                                When 11 of the 15 teams were done playing all their matches, following observations were\n                                made about the\n                                top 5 scoring teams at that stage:\n                                \n                                Further, when all teams have played all their league matches, it is noted that:\n                                (i) Real Madrid scored the highest points.\n                                (ii) No two teams, among the top five, have the same number of drawn matches.\n                                (iii) Among the top 5 teams, Valencia is not involved in the highest number of drawn\n                                matches.\n                            ",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  Of the top\n                                five teams, which team lost the maximum number of matches?",
+            "instructions": "<b>Directions for questions 1 to 5:</b> Answer\n                            the questions on the basis of the information given below.<br><br>\n                            In Aa-liga, a football tournament, there are 15 teams competing in a round robin format i.e.\n                            each team plays\n                            with all the other teams exactly once. The top two teams during the league will play the\n                            finals against each\n                            other. After every match, points will be awarded to both the teams based on the following\n                            criteria:<br><br>\n                            1 win \u2261 3 points;<br>\n                            1 draw \u2261 1 point;<br>\n                            1 loss \u2261 0 point<br><br>\n                            When 11 of the 15 teams were done playing all their matches, following observations were\n                            made about the\n                            top 5 scoring teams at that stage:<br><br>\n                            <img\n                                src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828351/39-42.gif><br><br>\n                            Further, when all teams have played all their league matches, it is noted that:<br>\n                            (i) Real Madrid scored the highest points.<br>\n                            (ii) No two teams, among the top five, have the same number of drawn matches.<br>\n                            (iii) Among the top 5 teams, Valencia is not involved in the highest number of drawn\n                            matches.",
+            "question_text": "Of the top five teams, which team lost the maximum number of matches? 1 &nbsp;",
             "options": [
                 "Valencia",
                 "Sevilla",
@@ -102,7 +102,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776702/1613088/5s.gif\">"
+            "solution": "<div><B>Solution:\n                                            <br>Correct Answer : <b>1</B>\n                                            <div><img\n                                                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828354/42s.gif>\n                                            </div></div>"
         },
         "20005": {
             "id": "20005",
@@ -110,8 +110,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 1 to 5: Answer\n                            the questions on the basis of the information given below.\n                            In Aa-liga, a football tournament, there are 15 teams competing in a round robin format i.e.\n                            each team plays\n                            with all the other teams exactly once. The top two teams during the league will play the\n                            finals against each\n                            other. After every match, points will be awarded to both the teams based on the following\n                            criteria:\n                            1 win \u2261 3 points;\n                            1 draw \u2261 1 point;\n                            1 loss \u2261 0 point\n                            When 11 of the 15 teams were done playing all their matches, following observations were\n                            made about the\n                            top 5 scoring teams at that stage:\n                            \n                            Further, when all teams have played all their league matches, it is noted that:\n                            (i) Real Madrid scored the highest points.\n                            (ii) No two teams, among the top five, have the same number of drawn matches.\n                            (iii) Among the top 5 teams, Valencia is not involved in the highest number of drawn\n                            matches.\n                        ",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  Which of the following\n                            pairs of the teams has the same number of wins?",
+            "instructions": "<b>Directions for questions 6 to 10 : </b> Answer\n                        the questions on the basis of the information given below.<br><br>\n                        The following bar-graphs show the percentage discounts offered and profit earned by various\n                        companies to sell products A,\n                        B and C.<br><br>\n                        <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50.gif>\n                        <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50..gif>",
+            "question_text": "Which of the following pairs of the teams has the same number of wins? 1 &nbsp;",
             "options": [
                 "Valencia and Atletico Madrid",
                 "Barcelona and Valencia",
@@ -123,7 +123,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47s.gif\">"
+            "solution": "<div><B>Solution:\n                                        <br>Correct Answer : <b>1</B>\n                                        <div><img\n                                                src=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776702/1613088/5s.gif>\n                                        </div></div>"
         },
         "20006": {
             "id": "20006",
@@ -131,8 +131,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 6 to 10 :  Answer\n                        the questions on the basis of the information given below.\n                        The following bar-graphs show the percentage discounts offered and profit earned by various\n                        companies to sell products A,\n                        B and C.\n                        \n                        \n                    ",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  If marked price of\n                        product A is same for all the companies then which company had the lowest cost\n                        price of A?",
+            "instructions": "<b>Directions for questions 6 to 10: </b> Answer the\n                    questions on the basis of the information given below.<br><br>\n                    The following bar-graphs show the percentage discounts offered and profit earned by various\n                    companies to sell products A,\n                    B and C.<br><br>\n                    <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50.gif>\n                    <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50..gif>",
+            "question_text": "If marked price of product A is same for all the companies then which company had the lowest cost price of A? 1 &nbsp;",
             "options": [
                 "AB Ltd.",
                 "CD Ltd.",
@@ -141,10 +141,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828411/48s.gif\">"
+            "solution": "<div><B>Solution:\n                                    <br>Correct Answer : <b>3</B>\n                                    <div><img\n                                            src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47s.gif>\n                                    </div></div>"
         },
         "20007": {
             "id": "20007",
@@ -152,52 +152,52 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 6 to 10:  Answer the\n                    questions on the basis of the information given below.\n                    The following bar-graphs show the percentage discounts offered and profit earned by various\n                    companies to sell products A,\n                    B and C.\n                    \n                    \n                ",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  If the cost price of\n                    products A and B are in the ratio of 3 : 4 for EF Ltd., then what is the ratio of their\n                    discounts?",
+            "instructions": "<b>Directions for questions 6 to 10: </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                The following bar-graphs show the percentage discounts offered and profit earned by various companies to\n                sell products A,\n                B and C.<br><br>\n                <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50.gif>\n                <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50..gif>",
+            "question_text": "If the cost price of products A and B are in the ratio of 3 : 4 for EF Ltd., then what is the ratio of their discounts? 1 &nbsp;",
             "options": [
-                "5:4",
-                "12:13",
-                "9:13",
+                ":4",
+                ":13",
+                ":13",
                 "None of these"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828412/49s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                                Answer : <b>2</B>\n                                <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828411/48s.gif>\n                                </div></div>"
         },
         "20008": {
             "id": "20008",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 6 to 10:  Answer the\n                questions on the basis of the information given below.\n                The following bar-graphs show the percentage discounts offered and profit earned by various companies to\n                sell products A,\n                B and C.\n                \n                \n            ",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  For how many companies the\n                mark up percentage for C is definitely more than 50%?",
+            "instructions": "<b>Directions for questions 6 to 10: </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                The following bar-graphs show the percentage discounts offered and profit earned by various companies to\n                sell products A,\n                B and C.<br><br>\n                <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50.gif>\n                <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50..gif>",
+            "question_text": "For how many companies the mark up percentage for C is definitely more than 50%? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612823' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "5"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828413/50s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>5</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828412/49s.gif>\n                            </div></div>"
         },
         "20009": {
             "id": "20009",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 6 to 10:  Answer the\n                questions on the basis of the information given below.\n                The following bar-graphs show the percentage discounts offered and profit earned by various companies to\n                sell products A,\n                B and C.\n                \n                \n            ",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  If the cost price for each\n                product is same for all the companies but different for each product for any\n                company then how many companies definitely earned more or equal profit to that of IJ Ltd, if every\n                company sold equal number of products of each type?",
+            "instructions": "<b>Directions for questions 6 to 10: </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                The following bar-graphs show the percentage discounts offered and profit earned by various companies to\n                sell products A,\n                B and C.<br><br>\n                <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50.gif>\n                <img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828410/47-50..gif>",
+            "question_text": "If the cost price for each product is same for all the companies but different for each product for any company then how many companies definitely earned more or equal profit to that of IJ Ltd, if every company sold equal number of products of each type? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612824' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776702/1613089/10s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>3</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828413/50s.gif>\n                            </div></div>"
         },
         "20010": {
             "id": "20010",
@@ -205,20 +205,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 6 to 10:  Answer the\n                questions on the basis of the information given below.\n                The following bar-graphs show the percentage discounts offered and profit earned by various companies to\n                sell products A,\n                B and C.\n                \n                \n            ",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  Which of the following cost price\n                of product C for EF Ltd. will give the integral value of the selling price?",
+            "instructions": "<b>Directions for questions 11 to 15: </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.<br>\n                It is further known that:<br><br>\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.<br>\n                (ii) Difference between the amount spent by C and F was a two digit number.<br>\n                (iii) Difference between the amount spent by A and E was Rs 9.<br>\n                (iv) B spent more than twice the amount which E spent.<br>\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
+            "question_text": "Which of the following cost price of product C for EF Ltd. will give the integral value of the selling price? 1 &nbsp;",
             "options": [
-                "1260",
-                "950",
-                "1630",
-                "1130"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828433/59s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>2</B>\n                            <div><img src=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776702/1613089/10s.gif>\n                            </div></div>"
         },
         "20011": {
             "id": "20011",
@@ -226,36 +226,36 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15:  Answer the\n                questions on the basis of the information given below.\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.\n                It is further known that:\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.\n                (ii) Difference between the amount spent by C and F was a two digit number.\n                (iii) Difference between the amount spent by A and E was Rs 9.\n                (iv) B spent more than twice the amount which E spent.\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  If D spent more than B, then\n                what is the difference between the amount spent by D and E?",
+            "instructions": "<b>Directions for questions 11 to 15: </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.<br>\n                It is further known that:<br><br>\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.<br>\n                (ii) Difference between the amount spent by C and F was a two digit number.<br>\n                (iii) Difference between the amount spent by A and E was Rs 9.<br>\n                (iv) B spent more than twice the amount which E spent.<br>\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
+            "question_text": "If D spent more than B, then what is the difference between the amount spent by D and E? 1 &nbsp;",
             "options": [
-                "189",
-                "198",
-                "108",
+                "",
+                "",
+                "",
                 "Cannot be determined"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828434/60s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>4</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828433/59s.gif>\n                            </div></div>"
         },
         "20012": {
             "id": "20012",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15:  Answer the\n                questions on the basis of the information given below.\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.\n                It is further known that:\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.\n                (ii) Difference between the amount spent by C and F was a two digit number.\n                (iii) Difference between the amount spent by A and E was Rs 9.\n                (iv) B spent more than twice the amount which E spent.\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  If D spent less than both C and\n                F, then the absolute difference of amount spent by C and F is",
+            "instructions": "<b>Directions for questions 11 to 15: </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.<br>\n                It is further known that:<br><br>\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.<br>\n                (ii) Difference between the amount spent by C and F was a two digit number.<br>\n                (iii) Difference between the amount spent by A and E was Rs 9.<br>\n                (iv) B spent more than twice the amount which E spent.<br>\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
+            "question_text": "If D spent less than both C and F, then the absolute difference of amount spent by C and F is <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1612826' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "90"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828435/61s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>90</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828434/60s.gif>\n                            </div></div>"
         },
         "20013": {
             "id": "20013",
@@ -263,20 +263,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15:  Answer the\n                questions on the basis of the information given below.\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.\n                It is further known that:\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.\n                (ii) Difference between the amount spent by C and F was a two digit number.\n                (iii) Difference between the amount spent by A and E was Rs 9.\n                (iv) B spent more than twice the amount which E spent.\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  If A spent the minimum and F\n                spent the maximum, then the amount spent by C and D taken\n                together was",
+            "instructions": "<b>Directions for questions 11 to 15: </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.<br>\n                It is further known that:<br><br>\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.<br>\n                (ii) Difference between the amount spent by C and F was a two digit number.<br>\n                (iii) Difference between the amount spent by A and E was Rs 9.<br>\n                (iv) B spent more than twice the amount which E spent.<br>\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
+            "question_text": "If A spent the minimum and F spent the maximum, then the amount spent by C and D taken together was 1 &nbsp;",
             "options": [
-                "345",
-                "444",
-                "543",
+                "",
+                "",
+                "",
                 "Cannot be determined"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828436/62s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>2</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828435/61s.gif>\n                            </div></div>"
         },
         "20014": {
             "id": "20014",
@@ -284,36 +284,36 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15:  Answer the\n                questions on the basis of the information given below.\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.\n                It is further known that:\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.\n                (ii) Difference between the amount spent by C and F was a two digit number.\n                (iii) Difference between the amount spent by A and E was Rs 9.\n                (iv) B spent more than twice the amount which E spent.\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  If E spent more than A; and C\n                spent more than F, then which of the following is the amount spent\n                by D?",
+            "instructions": "<b>Directions for questions 11 to 15: </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.<br>\n                It is further known that:<br><br>\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.<br>\n                (ii) Difference between the amount spent by C and F was a two digit number.<br>\n                (iii) Difference between the amount spent by A and E was Rs 9.<br>\n                (iv) B spent more than twice the amount which E spent.<br>\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
+            "question_text": "If E spent more than A; and C spent more than F, then which of the following is the amount spent by D? 1 &nbsp;",
             "options": [
-                "213",
-                "231",
-                "321",
+                "",
+                "",
+                "",
                 "Either (1) or (3)"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776702/1613091/62s.jpg\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>4</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773321/828436/62s.gif>\n                            </div></div>"
         },
         "20015": {
             "id": "20015",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
-            "instructions": "Directions for questions 11 to 15:  Answer the\n                questions on the basis of the information given below.\n                Six friends A, B, C, D, E and F went for shopping and each of them spent some integral amount of rupees\n                on shopping. No two of them spent the same amount.\n                It is further known that:\n                (i) The amount (in Rs.) spent by each friend is a 3-digit number, having all distinct digits, out of 1,\n                2\n                and 3 only.\n                (ii) Difference between the amount spent by C and F was a two digit number.\n                (iii) Difference between the amount spent by A and E was Rs 9.\n                (iv) B spent more than twice the amount which E spent.\n                (v) Sum of the amounts spent by C, D and F was an odd number.",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  If the amount spent by C was the\n                maximum, then what was the sum (in Rs.) of the amounts spent by B and F together?",
+            "instructions": "<b>Directions for questions 16 to 20 : </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819045/51-54dr.gif><br>\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                <i>EvenColony.</i><br><br>\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.<br>\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.<br>\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.<br>\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.<br>\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.",
+            "question_text": "If the amount spent by C was the maximum, then what was the sum (in Rs.) of the amounts spent by B and F together? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1613090' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "543"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819045/51s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>543</B>\n                            <div><img src=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776702/1613091/62s.jpg>\n                            </div></div>"
         },
         "20016": {
             "id": "20016",
@@ -321,20 +321,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20 :  Answer the\n                questions on the basis of the information given below.\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                EvenColony.\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.\n            ",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  Suppose the ants A2, A3, A6,\n                and A7 do not leave their corner and ants A1, A4, A5, and A8\n                always moves to another corner after every 10 minutes unless they are fighting or killed, what is\n                the probability that A4 will survive at the end of 20 minutes?",
+            "instructions": "<b>Directions for questions 16 to 20 : </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819045/51-54dr.gif><br>\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                <i>EvenColony.</i><br><br>\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.<br>\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.<br>\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.<br>\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.<br>\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.",
+            "question_text": "Suppose the ants A2, A3, A6, and A7 do not leave their corner and ants A1, A4, A5, and A8 always moves to another corner after every 10 minutes unless they are fighting or killed, what is the probability that A4 will survive at the end of 20 minutes? 1 &nbsp;",
             "options": [
-                "1/9",
-                "7/9",
-                "8/9",
+                "/9",
+                "/9",
+                "/9",
                 "None of the above"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819046/52s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>4</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819045/51s.gif>\n                            </div></div>"
         },
         "20017": {
             "id": "20017",
@@ -342,20 +342,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20 :  Answer the\n                questions on the basis of the information given below.\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                EvenColony.\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.\n            ",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  Suppose only ants A3 and A8\n                are always moving unless they are fighting or killed, and ants A1,\n                A2, A4, A5, A6, and A7 never leave their corner, how many combinations of fight exists if A3 is\n                killed before 35 minutes? (Consider a combination of fight as the unique combination of ants\n                which are fighting irrespective of position where they are fighting at)",
+            "instructions": "<b>Directions for questions 16 to 20 : </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819045/51-54dr.gif><br>\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                <i>EvenColony.</i><br><br>\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.<br>\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.<br>\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.<br>\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.<br>\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.",
+            "question_text": "Suppose only ants A3 and A8 are always moving unless they are fighting or killed, and ants A1, A2, A4, A5, A6, and A7 never leave their corner, how many combinations of fight exists if A3 is killed before 35 minutes? (Consider a combination of fight as the unique combination of ants which are fighting irrespective of position where they are fighting at) 1 &nbsp;",
             "options": [
-                "1",
-                "2",
-                "3",
+                "",
+                "",
+                "",
                 "More than 3"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819047/53s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>3</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819046/52s.gif>\n                            </div></div>"
         },
         "20018": {
             "id": "20018",
@@ -363,20 +363,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20 :  Answer the\n                questions on the basis of the information given below.\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                EvenColony.\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.\n            ",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  Suppose ants A2 and A7 never\n                left their corners for 30 minutes.The other three ants from each of\n                the colonies meet at two different points after the first 10 minutes and then each group together\n                travel to attack the rival stationary ant, what is the probability that at least one ant is killed at\n                the\n                end of 30 minutes, if it is known that after group formation the groups are equally likely to move\n                along any edge?",
+            "instructions": "<b>Directions for questions 16 to 20 : </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819045/51-54dr.gif><br>\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                <i>EvenColony.</i><br><br>\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.<br>\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.<br>\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.<br>\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.<br>\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.",
+            "question_text": "Suppose ants A2 and A7 never left their corners for 30 minutes.The other three ants from each of the colonies meet at two different points after the first 10 minutes and then each group together travel to attack the rival stationary ant, what is the probability that at least one ant is killed at the end of 30 minutes, if it is known that after group formation the groups are equally likely to move along any edge? 1 &nbsp;",
             "options": [
-                "1/3",
-                "2/3",
-                "5/9",
-                "7/9"
+                "/3",
+                "/3",
+                "/9",
+                "/9"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819048/54s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>3</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819047/53s.gif>\n                            </div></div>"
         },
         "20019": {
             "id": "20019",
@@ -384,20 +384,20 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20 :  Answer the\n                questions on the basis of the information given below.\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                EvenColony.\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.\n            ",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  Suppose A1, A2, A3 and A4\n                travels south in the first 10 minutes while the rest of the ants are\n                stationary for these 10 minutes, and post that none of the ants travels north.If after certain time, all\n                the Even Colony\n                ants are killed, what is the minimum time (from the start) required for a such an event to occur?",
+            "instructions": "<b>Directions for questions 16 to 20 : </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819045/51-54dr.gif><br>\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                <i>EvenColony.</i><br><br>\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.<br>\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.<br>\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.<br>\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.<br>\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.",
+            "question_text": "Suppose A1, A2, A3 and A4 travels south in the first 10 minutes while the rest of the ants are stationary for these 10 minutes, and post that none of the ants travels north.If after certain time, all the Even Colony ants are killed, what is the minimum time (from the start) required for a such an event to occur? 1 &nbsp;",
             "options": [
-                "30 minutes",
-                "40 minutes",
-                "50 minutes",
+                "minutes",
+                "minutes",
+                "minutes",
                 "It is impossible for such an event to occur"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776702/1613091/54s.jpg\">"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>3</B>\n                            <div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819048/54s.gif>\n                            </div></div>"
         },
         "20020": {
             "id": "20020",
@@ -405,8 +405,8 @@
             "negative_marks": 1.0,
             "is_input_type": false,
             "is_multi_select": false,
-            "instructions": "Directions for questions 16 to 20 :  Answer the\n                questions on the basis of the information given below.\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                EvenColony.\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.\n            ",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  Suppose A5, A6, A7 and A8 travel\n                North in the first 10 minutes and in the next 10 minutes two pairs of ants from the two of the vertices\n                travel anticlockwise from their positions, then which of the following ants CANNOT be killed.\n            ",
+            "instructions": "<b>Directions for questions 16 to 20 : </b> Answer the\n                questions on the basis of the information given below.<br><br>\n                8 ants\u2013A1, A2, A3, A4, A5, A6, A7, A8\u2013are initially at different corners of a cube\u2013P1, P2, P3, P4, P5,\n                P6, P7, P8\u2013respectively.<br><br><img\n                    src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773320/819045/51-54dr.gif><br>\n                Ants A1, A3, A5, A7 belongs to the OddColony and ants A2, A4, A6, A8 belongs to the\n                <i>EvenColony.</i><br><br>\n                (1)An ant either stays in its corner or travels only along the edge of the cube to reach another\n                corner.<br>\n                (2) If an ant starts travelling, it will start only at the beginning of every 10 minutes and it takes\n                exactly 10 minutes to travel from one corner to another corner.<br>\n                (3) If and only if an ant from one colony meets with an ant from another colony at any of the corners,\n                they engage in a fight which lasts for 10 minutes.<br>\n                (4) In a fight, if the number of ants from one colony equals the number of ants from another colony,\n                then all the ants survive at the end of 10 minutes.<br>\n                (5) If in a fight, the number of ants from one colony is more than the number of ants from another\n                colony, then all the ants from the former survives and all the ants from the latter dies at the end of\n                10 minutes.",
+            "question_text": "Suppose A5, A6, A7 and A8 travel North in the first 10 minutes and in the next 10 minutes two pairs of ants from the two of the vertices travel anticlockwise from their positions, then which of the following ants CANNOT be killed. 1 &nbsp;",
             "options": [
                 "A5",
                 "A2",
@@ -418,7 +418,7 @@
                     "1"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n                            Answer : <b>1</B>\n                            <div><img src=https://clsite-file1.s3.amazonaws.com/LSTQuestionImg/776702/1613091/54s.jpg>\n                            </div></div>"
         }
     }
 }

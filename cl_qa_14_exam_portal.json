@@ -1,7 +1,7 @@
 {
     "name": "QA 14 - 2023",
     "sections": {
-        "QA": [
+        "Quantitative Ability": [
             "20001",
             "20002",
             "20003",
@@ -30,18 +30,18 @@
         "20001": {
             "id": "20001",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.1 [11916616] \n\t\t\t\t\t\t\t\t\t\t\t\tABC is a triangle having area of 350 cm2. D is a\n\t\t\t\t\t\t\t\t\t\t\t\tpoint on side BC, such that AD is the angle bisector of \u2220CAB. If AB : AC\n\t\t\t\t\t\t\t\t\t\t\t\t= 3 : 4, then what is the area (in cm2) of triangle ADC?",
+            "question_text": "ABC is a triangle having area of 350 cm<sup>2</sup>. D is a point on side BC, such that AD is the angle bisector of \u2220CAB. If AB : AC = 3 : 4, then what is the area (in cm<sup>2</sup>) of triangle ADC? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617365' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "200"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887087/77s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>200</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887094/84s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20002": {
             "id": "20002",
@@ -50,35 +50,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.2 [11916616] \n\t\t\t\t\t\t\t\t\t\t\tPipes P and Q are inlet pipes while R is an outlet pipe. Pipe P\n\t\t\t\t\t\t\t\t\t\t\tsupplies water at the rate of 30 liters\n\t\t\t\t\t\t\t\t\t\t\tper hour, pipe Q fills the tank in 6 hours while R empties it in 24 hours.\n\t\t\t\t\t\t\t\t\t\t\tThe empty tank gets filled\n\t\t\t\t\t\t\t\t\t\t\tin 2 hours when all the three pipes are opened. Find the capacity of the\n\t\t\t\t\t\t\t\t\t\t\ttank.",
+            "question_text": "Pipes P and Q are inlet pipes while R is an outlet pipe. Pipe P supplies water at the rate of 30 liters per hour, pipe Q fills the tank in 6 hours while R empties it in 24 hours. The empty tank gets filled in 2 hours when all the three pipes are opened. Find the capacity of the tank. 1 &nbsp;",
             "options": [
-                "40 liters",
-                "60 liters",
-                "80 liters",
-                "90 liters"
+                "liters",
+                "liters",
+                "liters",
+                "liters"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887103/93s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>3</B>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887087/77s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20003": {
             "id": "20003",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.3 [11916616]  Two\n\t\t\t\t\t\t\t\t\tconcentric circles, having their center at O, are cut by a line such that the line\n\t\t\t\t\t\t\t\t\tforms a chord\n\t\t\t\t\t\t\t\t\tfor both the circles. The length of the chord for the smaller circle and the bigger\n\t\t\t\t\t\t\t\t\tcircle is 8m and\n\t\t\t\t\t\t\t\t\t16m respectively. What is the absolute difference between the squares of the radii\n\t\t\t\t\t\t\t\t\t(in cm2) of the\n\t\t\t\t\t\t\t\t\ttwo circles?",
+            "question_text": "Two concentric circles, having their center at O, are cut by a line such that the line forms a chord for both the circles. The length of the chord for the smaller circle and the bigger circle is 8m and 16m respectively. What is the absolute difference between the squares of the radii (in cm<sup>2</sup>) of the two circles? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617370' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "48"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887105/95s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct Answer : <b>48</B>\n\t\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887103/93s.gif>\n\t\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20004": {
             "id": "20004",
@@ -87,19 +87,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.4 [11916616]  In how many\n\t\t\t\t\t\t\t\tways can four couples be seated around a circular table so that the same gender\n\t\t\t\t\t\t\t\tdoes not get to sit together and exactly one of the four couples sit adjacent to each\n\t\t\t\t\t\t\t\tother?",
+            "question_text": "In how many ways can four couples be seated around a circular table so that the same gender does not get to sit together and exactly one of the four couples sit adjacent to each other? 1 &nbsp;",
             "options": [
-                "48",
-                "36",
-                "24",
-                "96"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887090/80s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>1</B>\n\t\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887105/95s.gif>\n\t\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20005": {
             "id": "20005",
@@ -108,19 +108,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.5 [11916616]  The average age of\n\t\t\t\t\t\t\ta family of 5 members is 20 years. If the age of the youngest member is 10\n\t\t\t\t\t\t\tyears, what was the approximate average age of the family just a day before the birth of the\n\t\t\t\t\t\t\tyoungest member?",
+            "question_text": "The average age of a family of 5 members is 20 years. If the age of the youngest member is 10 years, what was the approximate average age of the family just a day before the birth of the youngest member? 1 &nbsp;",
             "options": [
-                "13.5",
-                "14",
-                "15",
-                "12.5"
+                ".5",
+                "",
+                "",
+                ".5"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887088/78s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>4</B>\n\t\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887090/80s.gif>\n\t\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20006": {
             "id": "20006",
@@ -129,19 +129,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.6 [11916616]  There are 3 vessels of\n\t\t\t\t\t\tequal volume, filled with mixtures of water and milk in the ratio of 1 : 2, 2 : 3\n\t\t\t\t\t\tand 3 : 4 respectively. They all are poured in a large vessel. What proportion of the liquid\n\t\t\t\t\t\tmust\n\t\t\t\t\t\tbe removed from that vessel and replaced with water of equal quantity so that the resulting\n\t\t\t\t\t\tmixture in the vessel contains 50% milk?",
+            "question_text": "There are 3 vessels of equal volume, filled with mixtures of water and milk in the ratio of 1 : 2, 2 : 3 and 3 : 4 respectively. They all are poured in a large vessel. What proportion of the liquid must be removed from that vessel and replaced with water of equal quantity so that the resulting mixture in the vessel contains 50% milk? 1 &nbsp;",
             "options": [
-                "71/244",
-                "71/386",
-                "71/325",
-                "71/193"
+                "/244",
+                "/386",
+                "/325",
+                "/193"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887089/79s.gif\">"
+            "solution": "<div><B>Solution:\n\t\t\t\t\t\t\t\t\t<br>Correct Answer : <b>2</B>\n\t\t\t\t\t\t\t\t\t<div><img\n\t\t\t\t\t\t\t\t\t\t\tsrc=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887088/78s.gif>\n\t\t\t\t\t\t\t\t\t</div></div>"
         },
         "20007": {
             "id": "20007",
@@ -150,19 +150,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.7 [11916616]  Find the sum of the\n\t\t\t\t\tfollowing series upto 10 terms:\n\t\t\t\t\t\n\t\t\t\t",
+            "question_text": "Find the sum of the following series upto 10 terms: 1 &nbsp;",
             "options": [
-                "402",
-                "505/8",
-                "505/2",
-                "505/4"
+                "",
+                "/8",
+                "/2",
+                "/4"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887082/72s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887089/79s.gif>\n\t\t\t\t\t\t\t\t</div></div>"
         },
         "20008": {
             "id": "20008",
@@ -171,35 +171,35 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.8 [11916616]  The number of votes not cast\n\t\t\t\tfor the PNC Party increased by 25% in the National General Election\n\t\t\t\t(NGE) as compared to the previous Assembly Polls, and as a result the PNC Party lost in the NGE\n\t\t\t\tby a majority of twice as many votes by which it had won the Assembly Polls. If the total of\n\t\t\t\t2,60,000 people voted each time, then how many of them voted for the PNC Party in the previous\n\t\t\t\tAssembly Polls?",
+            "question_text": "The number of votes not cast for the PNC Party increased by 25% in the National General Election (NGE) as compared to the previous Assembly Polls, and as a result the PNC Party lost in the NGE by a majority of twice as many votes by which it had won the Assembly Polls. If the total of 2,60,000 people voted each time, then how many of them voted for the PNC Party in the previous Assembly Polls? 1 &nbsp;",
             "options": [
-                "1,10,000",
-                "1,50,000",
-                "1,40,000",
-                "1,20,000"
+                ",10,000",
+                ",50,000",
+                ",40,000",
+                ",20,000"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887083/73s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887082/72s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20009": {
             "id": "20009",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.9 [11916616]  Find the number of common\n\t\t\t\troots of the following cubic equations:\n\t\t\t\t7x3 + 9x2 + 11x + 13 = 0 and 7x3 + 8x2 + 16x + 7 = 0",
+            "question_text": "Find the number of common roots of the following cubic equations: 7x<sup>3</sup> + 9x<sup>2</sup> + 11x + 13 = 0 and 7x<sup>3</sup> + 8x<sup>2</sup> + 16x + 7 = 0 <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617354' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "0"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887109/99s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>0</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887083/73s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20010": {
             "id": "20010",
@@ -208,48 +208,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.10 [11916616]  If f(x + y, x \u2013 y) = x \u00d7 y,\n\t\t\t\tthen find the expression for f(x, y).",
+            "question_text": "If f(x + y, x \u2013 y) = x \u00d7 y, then find the expression for f(x, y). 1 &nbsp;",
             "options": [
+                "",
+                "",
+                "",
                 "None of these"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887081/71s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887109/99s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20011": {
             "id": "20011",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.11 [11916616]  The monthly telephone bills\n\t\t\t\tof a company has a fixed tariff of Rs. 250 for up to 50 outgoing calls, above\n\t\t\t\twhich charge of Rs. 1.25 per call needs to be paid. If the ratio of the monthly bills paid by A and B\n\t\t\t\tis 2 : 3 and the number of outgoing calls by A is 90, then what is the total number of outgoing calls\n\t\t\t\tmade by B in that month?",
+            "question_text": "The monthly telephone bills of a company has a fixed tariff of Rs. 250 for up to 50 outgoing calls, above which charge of Rs. 1.25 per call needs to be paid. If the ratio of the monthly bills paid by A and B is 2 : 3 and the number of outgoing calls by A is 90, then what is the total number of outgoing calls made by B in that month? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617352' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "210"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887092/82s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>210</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887081/71s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20012": {
             "id": "20012",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.12 [11916616]  How many 3-digit numbers\n\t\t\t\tleave a remainder of 4 when divided by 21 and a remainder of 8 when\n\t\t\t\tdivided by 13?",
+            "question_text": "How many 3-digit numbers leave a remainder of 4 when divided by 21 and a remainder of 8 when divided by 13? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617363' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887093/83s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887092/82s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20013": {
             "id": "20013",
@@ -258,19 +261,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.13 [11916616]  Two cars A and B start\n\t\t\t\tsimultaneously from two points P and Q respectively, located at a distance\n\t\t\t\tof 200 metres and 800 metres respectively from the point of intersection of two perpendicular roads\n\t\t\t\tL1 and L2. Car A is moving along the road L1 and is going away from the\n\t\t\t\tpoint of intersection of the\n\t\t\t\ttwo roads while car B is moving along the road L2 and is moving towards the point of\n\t\t\t\tintersection of the\n\t\t\t\troads. If after 2 minutes and again after 6 minutes from the start, the two cars are at equal distance\n\t\t\t\tfrom the\n\t\t\t\tpoint of intersection of the roads, then find the ratio of the speeds of the two cars.",
+            "question_text": "Two cars A and B start simultaneously from two points P and Q respectively, located at a distance of 200 metres and 800 metres respectively from the point of intersection of two perpendicular roads L<sub>1</sub> and L<sub>2</sub>. Car A is moving along the road L<sub>1</sub> and is going away from the point of intersection of the two roads while car B is moving along the road L<sub>2</sub> and is moving towards the point of intersection of the roads. If after 2 minutes and again after 6 minutes from the start, the two cars are at equal distance from the point of intersection of the roads, then find the ratio of the speeds of the two cars. 1 &nbsp;",
             "options": [
-                "1 : 1",
-                "1 : 4",
-                "2 : 7",
-                "2 : 5"
+                ": 1",
+                ": 4",
+                ": 7",
+                ": 5"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887097/87s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887093/83s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20014": {
             "id": "20014",
@@ -279,19 +282,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.14 [11916616]  ",
+            "question_text": "1 &nbsp;",
             "options": [
-                "1",
+                "",
                 "\u20131",
-                "2",
+                "",
                 "Both (1) and (2)"
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887099/89s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887097/87s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20015": {
             "id": "20015",
@@ -300,19 +303,19 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.15 [11916616]  If |x + 1| + |x| + |x \u2013 1| +\n\t\t\t\t|x \u2013 1| + |x \u2013 2| + |x \u2013 3| \u2264 30, then for how many integral values of x does this hold true?",
+            "question_text": "If |x + 1| + |x| + |x \u2013 1| + |x \u2013 1| + |x \u2013 2| + |x \u2013 3| \u2264 30, then for how many integral values of x does this hold true? 1 &nbsp;",
             "options": [
-                "9",
-                "11",
-                "12",
-                "15"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887091/81s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887099/89s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20016": {
             "id": "20016",
@@ -321,11 +324,11 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.16 [11916616]  A trader buys goods at a 19%\n\t\t\t\tdiscount on the label price. If he wants to make a profit of 20% after\n\t\t\t\tallowing a discount of 10%, then by what percentage should his marked price be greater than the original\n\t\t\t\tlabel\n\t\t\t\tprice?",
+            "question_text": "A trader buys goods at a 19% discount on the label price. If he wants to make a profit of 20% after allowing a discount of 10%, then by what percentage should his marked price be greater than the original label price? 1 &nbsp;",
             "options": [
-                "8%",
-                "3.8%",
-                "33.33%",
+                "%",
+                ".8%",
+                ".33%",
                 "None of these"
             ],
             "correct_response": [
@@ -333,7 +336,7 @@
                     "1"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773333/885265/82s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>1</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887091/81s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20017": {
             "id": "20017",
@@ -342,7 +345,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.17 [11916616]  If P = x2 +\n\t\t\t\t5y2 \u2013 4xy + 6y + 29 where x and y are integers such that \u20138 \u2264 y \u2264 1 and \u20133 \u2264 x \u2264 2, then\n\t\t\t\twhich of the\n\t\t\t\tfollowing is always true?\n\t\t\t",
+            "question_text": "If P = x<sup>2</sup> + 5y<sup>2</sup> \u2013 4xy + 6y + 29 where x and y are integers such that \u20138 \u2264 y \u2264 1 and \u20133 \u2264 x \u2264 2, then which of the following is always true? 1 &nbsp;",
             "options": [
                 "P can never be more than 270",
                 "P can never be more than 301",
@@ -351,10 +354,10 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "4"
                 ]
             ],
-            "solution": "<b><br><b></b><div><br>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>4</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773333/885265/82s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20018": {
             "id": "20018",
@@ -363,7 +366,7 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.18 [11916616]  A sum of money becomes 8\n\t\t\t\ttimes in 27 years at r% compound interest. Had the same amount was\n\t\t\t\tinvested at r% simple interest for 27 years, then how many times would the amount have become after 27\n\t\t\t\tyears?",
+            "question_text": "A sum of money becomes 8 times in 27 years at r% compound interest. Had the same amount was invested at r% simple interest for 27 years, then how many times would the amount have become after 27 years? 1 &nbsp;",
             "options": [
                 "greater than 4 times",
                 "greater than 3 times but less than 4 times",
@@ -372,26 +375,26 @@
             ],
             "correct_response": [
                 [
-                    "1"
+                    "2"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887100/90s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>2</B>\n\t\t\t\t\t\t\t<div>If it becomes 8 times in 27 years, this means it becomes 2 times in 9 years. Using SI,\n\t\t\t\t\t\t\t\tin 9 years, it would not even\n\t\t\t\t\t\t\t\tbecome 2 times.<br>\n\t\t\t\t\t\t\t\tIf it becomes, it will become 100 to 200 in 9 years and 200 to 300 in another 9 years.\n\t\t\t\t\t\t\t\tSo, in 27 years, it will become\n\t\t\t\t\t\t\t\tless than 400 i.e. greater than 3 times but less than 4 times in 27 years.</div></div>"
         },
         "20019": {
             "id": "20019",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.19 [11916616]  How many integral values of\n\t\t\t\t(x, y) satisfy the equation x2 \u2013 y2 = 220?",
+            "question_text": "How many integral values of (x, y) satisfy the equation x<sup>2</sup> \u2013 y<sup>2</sup> = 220? <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617369' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "8"
                 ]
             ],
-            "solution": "<b><br><b></b><div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>8</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887100/90s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20020": {
             "id": "20020",
@@ -400,51 +403,51 @@
             "is_input_type": false,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.20 [11916616]  If A = {91, 92, 93, \u2026, 180}\n\t\t\t\tand B is a subset of A such that the sum of no two elements of B is a multiple of 9, then what can be\n\t\t\t\tthe maximum number of elements\n\t\t\t\tin B?",
+            "question_text": "If A = {91, 92, 93, \u2026, 180} and B is a subset of A such that the sum of no two elements of B is a multiple of 9, then what can be the maximum number of elements in B? 1 &nbsp;",
             "options": [
-                "24",
-                "50",
-                "41",
-                "45"
+                "",
+                "",
+                "",
+                ""
             ],
             "correct_response": [
                 [
-                    "1"
+                    "3"
                 ]
             ],
-            "solution": "<b><br><b></b><div><img src=\"https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887098/88s.gif\">"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>3</B>\n\t\t\t\t\t\t\t<div>91 = 9K + 1<br>\n\t\t\t\t\t\t\t\t92 = 9K + 2<br>\n\t\t\t\t\t\t\t\t93 = 9K + 3<br>\n\t\t\t\t\t\t\t\t94 = 9K + 4<br>\n\t\t\t\t\t\t\t\t95 = 9K + 5<br>\n\t\t\t\t\t\t\t\t96 + 9k + 6<br>\n\t\t\t\t\t\t\t\t97 = 9K + 7<br>\n\t\t\t\t\t\t\t\t98 = 9K + 8<br>\n\t\t\t\t\t\t\t\t99 = 9K + 9<br>\n\t\t\t\t\t\t\t\tIf we take 1 number of the form (9K + 1) then we can not have numbers of the form (9K +\n\t\t\t\t\t\t\t\t8); similarly<br><br>\n\t\t\t\t\t\t\t\t9K + 1 or 9K + 8<br>\n\t\t\t\t\t\t\t\t9K + 2 or 9K + 7<br>\n\t\t\t\t\t\t\t\t9K + 3 or 9K + 6<br>\n\t\t\t\t\t\t\t\t9K + 4 or 9K + 5<br>\n\t\t\t\t\t\t\t\tAnd, one of 9K + 9<br>\n\t\t\t\t\t\t\t\twhere K = 10, 11, \u2026, 19;<br>\n\t\t\t\t\t\t\t\tAns.: 41.</div></div>"
         },
         "20021": {
             "id": "20021",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.21 [11916616]  In the figure given below, a\n\t\t\t\tcircle with the centre at O and a rectangle ABCD are drawn. The circle\n\t\t\t\ttouches side CD at E and passes through the points A and F. If AO = 3 cm, DF = 1 cm and DC =\n\t\t\t\t8 cm, then the area (in cm2) of rectangle ABCD is",
+            "question_text": "In the figure given below, a circle with the centre at O and a rectangle ABCD are drawn. The circle touches side CD at E and passes through the points A and F. If AO = 3 cm, DF = 1 cm and DC = 8 cm, then the area (in cm<sup>2</sup>) of rectangle ABCD is <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617367' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "40"
                 ]
             ],
-            "solution": "<b><br><b></b><div>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>40</B>\n\t\t\t\t\t\t\t<div><img src=https://clsite-file.s3.amazonaws.com/LSTQuestionImg/773334/887098/88s.gif>\n\t\t\t\t\t\t\t</div></div>"
         },
         "20022": {
             "id": "20022",
             "marks": 3,
-            "negative_marks": 1.0,
+            "negative_marks": 0.0,
             "is_input_type": true,
             "is_multi_select": false,
             "instructions": "",
-            "question_text": "\u00a0\u00a0Q.22 [11916616]  A and B start running\n\t\t\t\tsimultaneously towards each other from the two ends of a track XY and the ratio of their speeds is 3 :\n\t\t\t\t4. Every time they meet, they interchange their speeds and also reverse\n\t\t\t\ttheir directions. At how many distinct points on the track do they meet each other, if they run\n\t\t\t\tcontinuously between 2 ends of the tracks? (Track XY is shown below)",
+            "question_text": "A and B start running simultaneously towards each other from the two ends of a track XY and the ratio of their speeds is 3 : 4. Every time they meet, they interchange their speeds and also reverse their directions. At how many distinct points on the track do they meet each other, if they run continuously between 2 ends of the tracks? (Track XY is shown below) <ul class='list-group'> <li class='list-group-item'><B><a href='#quesSol1617357' data-toggle='collapse' aria-expanded='true'> Answer key/Solution</a></B></li> </ul>",
             "options": [],
             "correct_response": [
                 [
-                    "1"
+                    "7"
                 ]
             ],
-            "solution": "<p>Explanation not available.</p>"
+            "solution": "<div><B>Solution: <br>Correct\n\t\t\t\t\t\t\tAnswer : <b>7</B>\n\t\t\t\t\t\t\t<div>It is similar to the case of circular motion where 2 runners are running in opposite\n\t\t\t\t\t\t\t\tdirection. Hence number of meeting\n\t\t\t\t\t\t\t\tpoints is (3 + 4) = 7.</div></div>"
         }
     }
 }
