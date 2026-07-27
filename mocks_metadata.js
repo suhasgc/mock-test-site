@@ -23545,4 +23545,50 @@ export const PRELOADED_METADATA = [
     "sourceFile": "cl_pdf_mocks_data.json",
     "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf"
   }
+  ,
+  {
+    "id": "varc1000_sectional_1",
+    "name": "VARC 1000 - Sectional Test 1",
+    "type": "cat",
+    "category": "varc1000",
+    "group": "Sectional Tests",
+    "description": "VARC 1000 Sectional Test 1: RC (16Q), Paracompletion (2Q), Parajumbles (2Q), Parasummary (2Q). Total 22 questions.",
+    "questionCount": 22,
+    "sections": { "VARC": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22] },
+    "sourceFile": "varc1000_sectional_1_exam_portal.json"
+  },
+  {
+    "id": "varc1000_sectional_2",
+    "name": "VARC 1000 - Sectional Test 2",
+    "type": "cat",
+    "category": "varc1000",
+    "group": "Sectional Tests",
+    "description": "VARC 1000 Sectional Test 2: RC (16Q), Odd One Out (2Q), Parajumbles (2Q), Parasummary (2Q). Total 22 questions.",
+    "questionCount": 22,
+    "sections": { "VARC": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22] },
+    "sourceFile": "varc1000_sectional_2_exam_portal.json"
+  },
+  {
+    "id": "varc1000_sectional_3",
+    "name": "VARC 1000 - Sectional Test 3",
+    "type": "cat",
+    "category": "varc1000",
+    "group": "Sectional Tests",
+    "description": "VARC 1000 Sectional Test 3: RC (16Q), Odd One Out (2Q), Paracompletion (2Q), Parajumbles (2Q), Parasummary (2Q). Total 24 questions.",
+    "questionCount": 24,
+    "sections": { "VARC": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24] },
+    "sourceFile": "varc1000_sectional_3_exam_portal.json"
+  },
+  {
+    "id": "varc1000_sentence_placement_1",
+    "name": "VARC 1000 - Sentence Placement 1",
+    "type": "cat",
+    "category": "varc1000",
+    "group": "Sentence Placement",
+    "description": "VARC 1000 Sentence Placement practice with 2 questions.",
+    "questionCount": 2,
+    "sections": { "VARC": [1, 2] },
+    "sourceFile": "varc1000_sentence_placement_1_exam_portal.json"
+  }
+
 ];

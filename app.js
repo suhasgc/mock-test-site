@@ -1014,6 +1014,20 @@ function getDailyGroup(mock) {
     return 'Daily Drill';
 }
 
+// Group label for VARC 1000 mocks
+function getVarc1000Group(mock) {
+    const name = (mock.name || '').toLowerCase();
+    const grp  = (mock.group || '').toLowerCase();
+    if (grp === 'sentence placement' || name.includes('sentence placement')) return 'Sentence Placement';
+    if (grp.includes('sectional') || name.includes('sectional'))            return 'Sectional Tests';
+    if (name.includes('rc') || name.includes('reading comprehension'))      return 'Reading Comprehension';
+    if (name.includes('parajumble') || name.includes('jumble'))             return 'Parajumbles';
+    if (name.includes('parasummary') || name.includes('summary'))           return 'Parasummary';
+    if (name.includes('odd one out'))                                       return 'Odd One Out';
+    if (name.includes('completion') || name.includes('placement'))          return 'Paracompletion';
+    return 'VARC 1000';
+}
+
 function initLibrary() {
     const tabBtns = document.querySelectorAll('[data-section-tab]');
     tabBtns.forEach(btn => {
@@ -1038,6 +1052,7 @@ function renderLibrary() {
     const sectionalMocks  = catMocks.filter(m => getDisplayCategory(m) === 'sectional');
     const dailyMocks      = catMocks.filter(m => getDisplayCategory(m) === 'daily');
     const pdfMocks        = catMocks.filter(m => getDisplayCategory(m) === 'pdf');
+    const varc1000Mocks   = catMocks.filter(m => getDisplayCategory(m) === 'varc1000');
 
     const { tab } = libraryState;
 
@@ -1047,6 +1062,7 @@ function renderLibrary() {
     setCount('tab-count-sectional', sectionalMocks.length);
     setCount('tab-count-daily',     dailyMocks.length);
     setCount('tab-count-pdf',       pdfMocks.length);
+    setCount('tab-count-varc1000',  varc1000Mocks.length);
 
     // Pick which set to render
     let filteredMocks;
@@ -1054,6 +1070,7 @@ function renderLibrary() {
     else if (tab === 'sectional') filteredMocks = sectionalMocks;
     else if (tab === 'daily')     filteredMocks = dailyMocks;
     else if (tab === 'pdf')       filteredMocks = pdfMocks;
+    else if (tab === 'varc1000')  filteredMocks = varc1000Mocks;
     else                          filteredMocks = catMocks;
 
     // Sort with 2025 first, then 2023, and natural numeric ordering
@@ -1073,6 +1090,7 @@ function renderLibrary() {
         let group;
         if (tab === 'full' || tab === 'pdf') group = getFullMockGroup(mock);
         else if (tab === 'sectional')        group = getSectionalGroup(mock);
+        else if (tab === 'varc1000')         group = getVarc1000Group(mock);
         else                                 group = getDailyGroup(mock);
         if (!groups[group]) groups[group] = [];
         groups[group].push(mock);
@@ -1083,7 +1101,9 @@ function renderLibrary() {
         ? ['IMS', 'Career Launcher', 'TIME', 'IMS SimCAT 2023', 'Other']
         : tab === 'sectional'
             ? ['VARC', 'DILR', 'QA', 'Mixed']
-            : Object.keys(groups).sort();
+            : tab === 'varc1000'
+                ? ['Sectional Tests', 'Reading Comprehension', 'Parajumbles', 'Parasummary', 'Odd One Out', 'Paracompletion', 'Sentence Placement']
+                : Object.keys(groups).sort();
 
     const sortedGroups = [
         ...groupOrder.filter(g => groups[g]),
@@ -1097,6 +1117,10 @@ function renderLibrary() {
         // Group icon
         const iconMap = {
             'IMS': 'fa-graduation-cap', 'IMS SimCAT 2023': 'fa-graduation-cap',
+            'Sectional Tests': 'fa-book-open-reader', 'Reading Comprehension': 'fa-book',
+            'Parajumbles': 'fa-shuffle', 'Parasummary': 'fa-align-left',
+            'Odd One Out': 'fa-circle-xmark', 'Paracompletion': 'fa-pencil',
+            'Sentence Placement': 'fa-arrow-right-to-bracket',
             'Career Launcher': 'fa-rocket',
             'TIME': 'fa-stopwatch', 'Other': 'fa-folder-open',
             'VARC': 'fa-book-open', 'DILR': 'fa-chart-bar', 'QA': 'fa-calculator',
