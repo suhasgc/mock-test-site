@@ -23544,8 +23544,7 @@ export const PRELOADED_METADATA = [
     },
     "sourceFile": "cl_pdf_mocks_data.json",
     "fileUrl": "cl_pdf_mocks/2020/Flexi mock cat-7.pdf/Flexi mock cat-7.pdf"
-  }
-  ,
+  },
   {
     "id": "varc1000_sectional_1",
     "name": "VARC 1000 - Sectional Test 1",
@@ -23554,7 +23553,32 @@ export const PRELOADED_METADATA = [
     "group": "Sectional Tests",
     "description": "VARC 1000 Sectional Test 1: RC (16Q), Paracompletion (2Q), Parajumbles (2Q), Parasummary (2Q). Total 22 questions.",
     "questionCount": 22,
-    "sections": { "VARC": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22] },
+    "sections": {
+      "VARC": [
+        90001,
+        90002,
+        90003,
+        90004,
+        90005,
+        90006,
+        90007,
+        90008,
+        90009,
+        90010,
+        90011,
+        90012,
+        90013,
+        90014,
+        90015,
+        90016,
+        90017,
+        90018,
+        90019,
+        90020,
+        90021,
+        90022
+      ]
+    },
     "sourceFile": "varc1000_sectional_1_exam_portal.json"
   },
   {
@@ -23565,7 +23589,32 @@ export const PRELOADED_METADATA = [
     "group": "Sectional Tests",
     "description": "VARC 1000 Sectional Test 2: RC (16Q), Odd One Out (2Q), Parajumbles (2Q), Parasummary (2Q). Total 22 questions.",
     "questionCount": 22,
-    "sections": { "VARC": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22] },
+    "sections": {
+      "VARC": [
+        90023,
+        90024,
+        90025,
+        90026,
+        90027,
+        90028,
+        90029,
+        90030,
+        90031,
+        90032,
+        90033,
+        90034,
+        90035,
+        90036,
+        90037,
+        90038,
+        90039,
+        90040,
+        90041,
+        90042,
+        90043,
+        90044
+      ]
+    },
     "sourceFile": "varc1000_sectional_2_exam_portal.json"
   },
   {
@@ -23576,7 +23625,34 @@ export const PRELOADED_METADATA = [
     "group": "Sectional Tests",
     "description": "VARC 1000 Sectional Test 3: RC (16Q), Odd One Out (2Q), Paracompletion (2Q), Parajumbles (2Q), Parasummary (2Q). Total 24 questions.",
     "questionCount": 24,
-    "sections": { "VARC": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24] },
+    "sections": {
+      "VARC": [
+        90045,
+        90046,
+        90047,
+        90048,
+        90049,
+        90050,
+        90051,
+        90052,
+        90053,
+        90054,
+        90055,
+        90056,
+        90057,
+        90058,
+        90059,
+        90060,
+        90061,
+        90062,
+        90063,
+        90064,
+        90065,
+        90066,
+        90067,
+        90068
+      ]
+    },
     "sourceFile": "varc1000_sectional_3_exam_portal.json"
   },
   {
@@ -23587,8 +23663,12 @@ export const PRELOADED_METADATA = [
     "group": "Sentence Placement",
     "description": "VARC 1000 Sentence Placement practice with 2 questions.",
     "questionCount": 2,
-    "sections": { "VARC": [1, 2] },
+    "sections": {
+      "VARC": [
+        90069,
+        90070
+      ]
+    },
     "sourceFile": "varc1000_sentence_placement_1_exam_portal.json"
   }
-
 ];
