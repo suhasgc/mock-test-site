@@ -3085,7 +3085,7 @@ const COMMUNITY_STORAGE_KEY = 'thembaroom_firebase_config';
 const FIREBASE_CONFIG = {
     apiKey: "AIzaSyD9cGR8LeXNgMqhIJ9aRvKckwxBD9N5jqY",
     authDomain: "mock-test-4966c.firebaseapp.com",
-    databaseURL: "https://mock-test-4966c-default-rtdb.firebaseio.com",
+    databaseURL: "https://mock-test-4966c-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "mock-test-4966c",
     storageBucket: "mock-test-4966c.firebasestorage.app",
     messagingSenderId: "467210791725",
