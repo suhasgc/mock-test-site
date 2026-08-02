@@ -336,7 +336,7 @@
                     </div>
                 </section>
 
-                <!-- VIEW: COMMUNITY CHAT -->
+                <!-- VIEW: COMMUNITY FORUM -->
                 <section class="view-panel" id="view-community">
                     <div class="community-layout">
                         <!-- Left: Channel List -->
@@ -348,81 +348,59 @@
                                 </button>
                             </div>
                             <div class="comm-channels-label">CHANNELS</div>
-                            <div class="comm-channels-list" id="comm-channels-list">
-                                <!-- Rendered by JS -->
-                            </div>
+                            <div class="comm-channels-list" id="comm-channels-list"></div>
                             <div class="comm-online-indicator">
                                 <span class="comm-online-dot"></span>
                                 <span id="comm-online-count">You are online</span>
                             </div>
                         </aside>
 
-                        <!-- Right: Chat Area -->
-                        <div class="community-chat">
-                            <div class="community-chat-header" id="comm-chat-header">
+                        <!-- Right: Forum Area -->
+                        <div class="community-forum" id="community-forum">
+
+                            <!-- Forum toolbar -->
+                            <div class="forum-toolbar">
                                 <div class="comm-channel-title">
                                     <span class="comm-hash">#</span>
                                     <span id="comm-current-channel-name">varc</span>
                                 </div>
-                                <div class="comm-channel-desc" id="comm-channel-desc">Discuss VARC passages, RC strategies, vocabulary, and verbal ability tips.</div>
+                                <div class="forum-toolbar-actions">
+                                    <div class="forum-search-wrap">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" id="forum-search" class="forum-search-input" placeholder="Search posts...">
+                                    </div>
+                                    <select id="forum-filter" class="forum-filter-select">
+                                        <option value="all">All Posts</option>
+                                        <option value="open">Open</option>
+                                        <option value="resolved">Resolved</option>
+                                    </select>
+                                    <button class="new-post-btn" id="new-post-btn">
+                                        <i class="fa-solid fa-pen-to-square"></i> New Post
+                                    </button>
+                                </div>
                             </div>
 
-                            <div class="community-messages" id="comm-messages-container">
-                                <div class="comm-loading" id="comm-loading">
+                            <!-- Posts list -->
+                            <div class="forum-posts-container" id="forum-posts-container">
+                                <div class="comm-loading" id="forum-loading">
                                     <div class="comm-spinner"></div>
                                     <span>Connecting to community...</span>
                                 </div>
                             </div>
 
-                            <div class="community-composer">
-                                <div class="comm-composer-inner">
-                                    <textarea
-                                        id="comm-message-input"
-                                        class="comm-textarea"
-                                        placeholder="Message #varc... (Shift+Enter for new line)"
-                                        rows="1"
-                                        maxlength="1000"
-                                    ></textarea>
-                                    <button class="comm-send-btn" id="comm-send-btn">
-                                        <i class="fa-solid fa-paper-plane"></i>
-                                    </button>
-                                </div>
-                                <div class="comm-composer-footer">
-                                    <span class="comm-char-count" id="comm-char-count">0/1000</span>
-                                    <span class="comm-tip">Press <kbd>Enter</kbd> to send &bull; <kbd>Shift+Enter</kbd> for new line</span>
-                                </div>
+                            <!-- Post detail view (slides in) -->
+                            <div class="forum-detail-view" id="forum-detail-view" style="display:none">
+                                <!-- Rendered by JS -->
                             </div>
                         </div>
                     </div>
 
-                    <!-- Firebase Setup Banner (shown when not configured) -->
+                    <!-- Firebase Setup Banner -->
                     <div class="firebase-setup-banner" id="firebase-setup-banner" style="display:none">
                         <div class="firebase-setup-card">
                             <i class="fa-solid fa-fire" style="font-size:2.5rem;color:#f59e0b"></i>
-                            <h3>Connect Community Chat</h3>
-                            <p>To enable real-time community chat for all users, you need a free Firebase project.</p>
-                            <ol class="firebase-steps">
-                                <li>Go to <a href="https://console.firebase.google.com" target="_blank">console.firebase.google.com</a></li>
-                                <li>Click <strong>Add project</strong> &rarr; name it <code>thembaroom-chat</code></li>
-                                <li>Go to <strong>Build &rarr; Realtime Database</strong> &rarr; Create database (test mode)</li>
-                                <li>Go to <strong>Project Settings &rarr; General &rarr; Your apps</strong> &rarr; Add web app</li>
-                                <li>Copy the <code>firebaseConfig</code> object and paste it below</li>
-                            </ol>
-                            <div class="firebase-config-input-wrap">
-                                <textarea id="firebase-config-input" placeholder='Paste your firebaseConfig object here, e.g.:
-{
-  apiKey: "AIza...",
-  authDomain: "...",
-  databaseURL: "https://...",
-  projectId: "...",
-  storageBucket: "...",
-  messagingSenderId: "...",
-  appId: "..."
-}'></textarea>
-                                <button class="action-btn primary" id="firebase-save-config-btn">
-                                    <i class="fa-solid fa-plug"></i> Connect Firebase
-                                </button>
-                            </div>
+                            <h3>Connect Community</h3>
+                            <p>Realtime Database not found. Go to Firebase Console and create a Realtime Database in test mode.</p>
                         </div>
                     </div>
                 </section>
@@ -902,6 +880,45 @@
                 <button class="action-btn" id="create-channel-cancel">Cancel</button>
                 <button class="action-btn primary" id="create-channel-confirm">
                     <i class="fa-solid fa-plus"></i> Create Channel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Post Modal -->
+    <div class="modal-overlay" id="new-post-modal" style="display:none">
+        <div class="modal-card new-post-modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-pen-to-square"></i> Post a Doubt / Discussion</h3>
+                <button class="modal-close" id="new-post-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <label>Title <span style="color:var(--danger)">*</span></label>
+                <input type="text" id="post-title-input" class="modal-input" placeholder="What is your question or topic?" maxlength="120">
+
+                <label style="margin-top:1rem">Description <span style="color:var(--text-muted);font-size:0.82rem">(optional)</span></label>
+                <textarea id="post-body-input" class="modal-textarea" placeholder="Explain in detail — paste passage text, question number, what you tried, etc." rows="5" maxlength="2000"></textarea>
+
+                <label style="margin-top:1rem">Screenshot / Image <span style="color:var(--text-muted);font-size:0.82rem">(optional)</span></label>
+                <div class="img-upload-zone" id="post-img-zone">
+                    <input type="file" id="post-img-input" accept="image/*" style="display:none">
+                    <div class="img-upload-placeholder" id="post-img-placeholder">
+                        <i class="fa-solid fa-image"></i>
+                        <span>Click to upload or drag &amp; drop a screenshot</span>
+                    </div>
+                    <div class="img-upload-preview" id="post-img-preview" style="display:none">
+                        <img id="post-img-preview-img" src="" alt="Preview">
+                        <button class="img-remove-btn" id="post-img-remove" type="button" title="Remove image">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-error" id="post-modal-error"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="action-btn" id="new-post-cancel">Cancel</button>
+                <button class="action-btn primary" id="new-post-submit">
+                    <i class="fa-solid fa-paper-plane"></i> Post
                 </button>
             </div>
         </div>

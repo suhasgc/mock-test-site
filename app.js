@@ -3076,422 +3076,524 @@ function initSplitter() {
 }
 
 // ==========================================================================
-// COMMUNITY CHAT (Firebase Realtime Database)
+// COMMUNITY FORUM (Firebase Realtime Database - Q&A / Doubt Forum)
 // ==========================================================================
 
 const COMMUNITY_STORAGE_KEY = 'thembaroom_firebase_config';
 
-// ── Hardcoded Firebase config (no setup needed) ──
 const FIREBASE_CONFIG = {
-    apiKey: "AIzaSyD9cGR8LeXNgMqhIJ9aRvKckwxBD9N5jqY",
-    authDomain: "mock-test-4966c.firebaseapp.com",
-    databaseURL: "https://mock-test-4966c-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "mock-test-4966c",
-    storageBucket: "mock-test-4966c.firebasestorage.app",
-    messagingSenderId: "467210791725",
-    appId: "1:467210791725:web:f0026455b2854482ec81a4",
-    measurementId: "G-SBQLLQGR6N"
+    apiKey: 'AIzaSyD9cGR8LeXNgMqhIJ9aRvKckwxBD9N5jqY',
+    authDomain: 'mock-test-4966c.firebaseapp.com',
+    databaseURL: 'https://mock-test-4966c-default-rtdb.asia-southeast1.firebasedatabase.app',
+    projectId: 'mock-test-4966c',
+    storageBucket: 'mock-test-4966c.firebasestorage.app',
+    messagingSenderId: '467210791725',
+    appId: '1:467210791725:web:f0026455b2854482ec81a4',
+    measurementId: 'G-SBQLLQGR6N'
 };
 
-
-// Default channels that always exist
 const DEFAULT_CHANNELS = [
-    { id: 'varc',     name: 'varc',     desc: 'Discuss VARC passages, RC strategies, vocabulary, and verbal ability tips.' },
-    { id: 'dilr',     name: 'dilr',     desc: 'DILR sets, logical reasoning, data interpretation strategies and practice.' },
-    { id: 'qa',       name: 'qa',       desc: 'Quant concepts, shortcuts, problem solving, and formula discussions.' },
-    { id: 'strategy', name: 'strategy', desc: 'CAT strategy, time management, mock analysis, and preparation plans.' },
-    { id: 'off-topic',name: 'off-topic',desc: 'General MBA chat, IIM calls, PI preparation, and anything else!' },
+    { id: 'varc',      name: 'varc',      desc: 'RC strategies, vocabulary, verbal ability tips and doubts.' },
+    { id: 'dilr',      name: 'dilr',      desc: 'DILR sets, logical reasoning, data interpretation strategies.' },
+    { id: 'qa',        name: 'qa',        desc: 'Quant concepts, shortcuts, problem solving and formula doubts.' },
+    { id: 'strategy',  name: 'strategy',  desc: 'CAT strategy, time management, mock analysis, prep plans.' },
+    { id: 'off-topic', name: 'off-topic', desc: 'General MBA chat, IIM calls, PI prep and anything else!' },
 ];
 
 let communityState = {
     db: null,
     currentChannel: 'varc',
     channels: [...DEFAULT_CHANNELS],
-    listeners: {},        // channel id → Firebase off() fn
     initialized: false,
+    currentPostId: null,
+    postListenerOff: null,
+    channelListenerOff: null,
+    allPosts: {},
+    pendingPostImage: null,
+    pendingReplyImage: null,
 };
 
-// ── Avatar color picker (consistent per user name) ──
-function getAvatarColorClass(name) {
-    let hash = 0;
-    for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) & 0xffffffff;
-    return `comm-avatar-${Math.abs(hash) % 10}`;
-}
+// ── Utilities ────────────────────────────────────────────────────────────────
 
-function getInitials(name) {
-    return name.trim().split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 2);
-}
-
-// ── Timestamp formatting ──
-function formatCommTime(ts) {
-    const d = new Date(ts);
-    const now = new Date();
-    const isToday = d.toDateString() === now.toDateString();
-    const timeStr = d.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true });
-    return isToday ? `Today ${timeStr}` : d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }) + ' ' + timeStr;
-}
-
-function getDayLabel(ts) {
-    const d = new Date(ts);
-    const now = new Date();
-    const yesterday = new Date(now);
-    yesterday.setDate(now.getDate() - 1);
-    if (d.toDateString() === now.toDateString()) return 'Today';
-    if (d.toDateString() === yesterday.toDateString()) return 'Yesterday';
-    return d.toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long' });
-}
-
-// ── Render message bubbles ──
-function renderMessages(messages) {
-    const container = document.getElementById('comm-messages-container');
-    if (!container) return;
-
-    const userName = getSession()?.name || 'Anonymous';
-
-    if (!messages || messages.length === 0) {
-        container.innerHTML = `
-            <div class="comm-empty">
-                <i class="fa-regular fa-comments"></i>
-                <h4>No messages yet</h4>
-                <p>Be the first to start the conversation!</p>
-            </div>`;
-        return;
-    }
-
-    let html = '';
-    let lastDay = '';
-    let lastAuthor = '';
-
-    messages.forEach(msg => {
-        const dayLabel = getDayLabel(msg.ts);
-        if (dayLabel !== lastDay) {
-            html += `<div class="comm-date-divider">${dayLabel}</div>`;
-            lastDay = dayLabel;
-            lastAuthor = '';
-        }
-
-        const isOwn = msg.author === userName;
-        const showMeta = msg.author !== lastAuthor;
-        const colorClass = getAvatarColorClass(msg.author);
-        const initials = getInitials(msg.author);
-
-        html += `
-        <div class="comm-msg-group ${isOwn ? 'own-msg' : ''}">
-            <div class="comm-avatar ${colorClass}" title="${escapeHtml(msg.author)}">
-                ${showMeta ? initials : ''}
-            </div>
-            <div class="comm-msg-body">
-                ${showMeta ? `
-                <div class="comm-msg-meta">
-                    <span class="comm-msg-author">${escapeHtml(msg.author)}</span>
-                    <span class="comm-msg-time">${formatCommTime(msg.ts)}</span>
-                </div>` : ''}
-                <div class="comm-msg-bubble">${escapeHtml(msg.text)}</div>
-            </div>
-        </div>`;
-
-        lastAuthor = msg.author;
-    });
-
-    container.innerHTML = html;
-    // Scroll to bottom
-    container.scrollTop = container.scrollHeight;
-}
-
-function escapeHtml(str) {
-    return String(str)
+function commEscape(str) {
+    return String(str || '')
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;');
 }
 
-// ── Firebase helpers ──
+function getAvatarColorClass(name) {
+    let h = 0;
+    for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) & 0xffffffff;
+    return `comm-avatar-${Math.abs(h) % 10}`;
+}
+
+function getInitials(name) {
+    return name.trim().split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 2);
+}
+
+function formatCommTime(ts) {
+    const d = new Date(ts), now = new Date();
+    const t = d.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true });
+    if (d.toDateString() === now.toDateString()) return `Today, ${t}`;
+    const yest = new Date(now); yest.setDate(now.getDate() - 1);
+    if (d.toDateString() === yest.toDateString()) return `Yesterday, ${t}`;
+    return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }) + ', ' + t;
+}
+
+// ── Image compression ─────────────────────────────────────────────────────────
+
+function compressImage(file, maxW = 1000, quality = 0.75) {
+    return new Promise(resolve => {
+        const reader = new FileReader();
+        reader.onload = e => {
+            const img = new Image();
+            img.onload = () => {
+                let w = img.width, h = img.height;
+                if (w > maxW) { h = Math.round(h * maxW / w); w = maxW; }
+                const canvas = document.createElement('canvas');
+                canvas.width = w; canvas.height = h;
+                canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+                resolve(canvas.toDataURL('image/jpeg', quality));
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    });
+}
+
+// ── Firebase ────────────────────────────────────────────────────────────────
+
 async function loadFirebase(config) {
     try {
         const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js');
-        const { getDatabase, ref, push, onValue, off, set, get } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js');
-
+        const { getDatabase, ref, push, onValue, off, set, get, update } =
+            await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js');
         const app = getApps().length ? getApps()[0] : initializeApp(config);
-        communityState.db = { db: getDatabase(app), ref, push, onValue, off, set, get };
+        communityState.db = { db: getDatabase(app), ref, push, onValue, off, set, get, update };
         return true;
-    } catch (e) {
-        console.error('Firebase load error:', e);
-        return false;
-    }
+    } catch (e) { console.error('Firebase load error:', e); return false; }
 }
 
-async function subscribeToChannel(channelId) {
-    const { db, ref, onValue, off } = communityState.db;
-
-    // Unsubscribe old listener
-    if (communityState.listeners[communityState.currentChannel]) {
-        const { refObj, fn } = communityState.listeners[communityState.currentChannel];
-        off(refObj, 'value', fn);
-    }
-
-    const msgRef = ref(db, `channels/${channelId}/messages`);
-    const container = document.getElementById('comm-messages-container');
-
-    // Show loading
-    if (container) {
-        container.innerHTML = '<div class="comm-loading"><div class="comm-spinner"></div><span>Loading messages...</span></div>';
-    }
-
-    const listener = onValue(msgRef, (snapshot) => {
-        const data = snapshot.val();
-        const messages = data ? Object.values(data).sort((a, b) => a.ts - b.ts) : [];
-        renderMessages(messages);
-    });
-
-    communityState.listeners[channelId] = { refObj: msgRef, fn: listener };
-}
-
-async function sendCommunityMessage(text) {
-    if (!communityState.db || !text.trim()) return;
-    const { db, ref, push } = communityState.db;
-    const userName = getSession()?.name || 'Anonymous';
-
-    const channelId = communityState.currentChannel;
-    const msgRef = ref(db, `channels/${channelId}/messages`);
-
-    await push(msgRef, {
-        author: userName,
-        text: text.trim(),
-        ts: Date.now(),
-    });
-}
+// ── Channel management ────────────────────────────────────────────────────────
 
 async function ensureDefaultChannels() {
-    if (!communityState.db) return;
     const { db, ref, get, set } = communityState.db;
-
     for (const ch of DEFAULT_CHANNELS) {
-        const chRef = ref(db, `channels/${ch.id}/meta`);
-        const snap = await get(chRef);
+        const snap = await get(ref(db, `channels/${ch.id}/meta`));
         if (!snap.exists()) {
-            await set(chRef, { name: ch.name, desc: ch.desc, created: Date.now() });
+            await set(ref(db, `channels/${ch.id}/meta`), { name: ch.name, desc: ch.desc, created: Date.now() });
         }
     }
 }
 
-async function loadChannelList() {
-    if (!communityState.db) return;
+function loadChannelList() {
     const { db, ref, onValue } = communityState.db;
-    const chRef = ref(db, 'channels');
-
-    onValue(chRef, (snapshot) => {
-        const data = snapshot.val();
+    onValue(ref(db, 'channels'), snap => {
+        const data = snap.val();
         if (!data) return;
-
+        const defIds = DEFAULT_CHANNELS.map(c => c.id);
         const channels = Object.entries(data).map(([id, val]) => ({
-            id,
-            name: val.meta?.name || id,
-            desc: val.meta?.desc || '',
+            id, name: val.meta?.name || id, desc: val.meta?.desc || ''
         }));
-
-        // Maintain default order first, then custom channels
-        const defaultIds = DEFAULT_CHANNELS.map(c => c.id);
         channels.sort((a, b) => {
-            const ai = defaultIds.indexOf(a.id);
-            const bi = defaultIds.indexOf(b.id);
-            if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
-            if (ai === -1) return 1;
-            if (bi === -1) return -1;
+            const ai = defIds.indexOf(a.id), bi = defIds.indexOf(b.id);
+            if (ai < 0 && bi < 0) return a.name.localeCompare(b.name);
+            if (ai < 0) return 1; if (bi < 0) return -1;
             return ai - bi;
         });
-
         communityState.channels = channels;
         renderChannelList();
     });
 }
 
-async function createCustomChannel(name, desc) {
-    if (!communityState.db) return { ok: false, err: 'Not connected' };
-    const { db, ref, get, set } = communityState.db;
-
-    const id = name.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-    if (!id) return { ok: false, err: 'Invalid channel name' };
-
-    const chRef = ref(db, `channels/${id}/meta`);
-    const snap = await get(chRef);
-    if (snap.exists()) return { ok: false, err: 'Channel already exists!' };
-
-    await set(chRef, { name: id, desc: desc || '', created: Date.now() });
-    return { ok: true, id };
-}
-
-// ── Render channel list ──
 function renderChannelList() {
     const list = document.getElementById('comm-channels-list');
     if (!list) return;
-
     list.innerHTML = communityState.channels.map(ch => `
         <div class="comm-channel-item ${ch.id === communityState.currentChannel ? 'active' : ''}"
-             data-channel-id="${ch.id}" title="${escapeHtml(ch.desc || '')}">
+             data-cid="${ch.id}" title="${commEscape(ch.desc)}">
             <span class="ch-hash">#</span>
-            <span class="ch-name">${escapeHtml(ch.name)}</span>
-        </div>
-    `).join('');
+            <span class="ch-name">${commEscape(ch.name)}</span>
+        </div>`).join('');
+    list.querySelectorAll('.comm-channel-item').forEach(el =>
+        el.addEventListener('click', () => switchForumChannel(el.dataset.cid)));
+}
 
-    list.querySelectorAll('.comm-channel-item').forEach(item => {
-        item.addEventListener('click', () => switchChannel(item.dataset.channelId));
+async function createCustomChannel(name, desc) {
+    const { db, ref, get, set } = communityState.db;
+    const id = name.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+    if (!id) return { ok: false, err: 'Invalid name' };
+    const snap = await get(ref(db, `channels/${id}/meta`));
+    if (snap.exists()) return { ok: false, err: 'Channel already exists!' };
+    await set(ref(db, `channels/${id}/meta`), { name: id, desc: desc || '', created: Date.now() });
+    return { ok: true, id };
+}
+
+// ── Posts list ────────────────────────────────────────────────────────────────
+
+function subscribeToChannelPosts(channelId) {
+    const { db, ref, onValue, off } = communityState.db;
+    if (communityState.channelListenerOff) {
+        communityState.channelListenerOff();
+        communityState.channelListenerOff = null;
+    }
+    const container = document.getElementById('forum-posts-container');
+    if (container) container.innerHTML = '<div class="comm-loading"><div class="comm-spinner"></div><span>Loading posts...</span></div>';
+
+    const postsRef = ref(db, `channels/${channelId}/posts`);
+    const fn = onValue(postsRef, snap => {
+        communityState.allPosts = snap.val() || {};
+        renderPostsList(Object.entries(communityState.allPosts));
     });
+    communityState.channelListenerOff = () => off(postsRef, 'value', fn);
 }
 
-async function switchChannel(channelId) {
-    const ch = communityState.channels.find(c => c.id === channelId);
-    if (!ch) return;
+function renderPostsList(entries) {
+    const container = document.getElementById('forum-posts-container');
+    if (!container) return;
 
-    communityState.currentChannel = channelId;
-    renderChannelList();
+    const search = (document.getElementById('forum-search')?.value || '').toLowerCase();
+    const filter = document.getElementById('forum-filter')?.value || 'all';
 
-    // Update header
-    const nameEl = document.getElementById('comm-current-channel-name');
-    const descEl = document.getElementById('comm-channel-desc');
-    const inputEl = document.getElementById('comm-message-input');
-    if (nameEl) nameEl.textContent = ch.name;
-    if (descEl) descEl.textContent = ch.desc || '';
-    if (inputEl) inputEl.placeholder = `Message #${ch.name}... (Shift+Enter for new line)`;
+    let posts = entries.map(([id, p]) => ({ id, ...p }))
+        .sort((a, b) => (b.ts || 0) - (a.ts || 0));
 
-    await subscribeToChannel(channelId);
-}
+    if (search) posts = posts.filter(p =>
+        (p.title || '').toLowerCase().includes(search) || (p.body || '').toLowerCase().includes(search));
+    if (filter === 'open') posts = posts.filter(p => !p.resolvedReplyId);
+    if (filter === 'resolved') posts = posts.filter(p => !!p.resolvedReplyId);
 
-// ── Main Init ──
-async function initCommunity() {
-    if (communityState.initialized) return;
-    communityState.initialized = true;
-
-    // Always hide the setup banner — config is hardcoded
-    const setupBanner = document.getElementById('firebase-setup-banner');
-    if (setupBanner) setupBanner.style.display = 'none';
-
-    await connectFirebase(FIREBASE_CONFIG);
-}
-
-async function connectFirebase(config) {
-    const setupBanner = document.getElementById('firebase-setup-banner');
-    const layout = document.querySelector('.community-layout');
-    const container = document.getElementById('comm-messages-container');
-
-    // Show default channels immediately (no DB needed)
-    renderChannelList();
-    bindComposer();
-    bindCreateChannelModal();
-
-    // Load Firebase SDK with a 12-second timeout
-    const loadPromise = loadFirebase(config);
-    const timeoutPromise = new Promise(resolve => setTimeout(() => resolve('timeout'), 12000));
-    const result = await Promise.race([loadPromise, timeoutPromise]);
-
-    if (result === 'timeout' || result === false) {
-        // Show clear error in chat area
-        if (container) {
-            container.innerHTML = `
-                <div class="comm-empty">
-                    <i class="fa-solid fa-triangle-exclamation" style="color:var(--warning)"></i>
-                    <h4>Database not found</h4>
-                    <p style="max-width:400px">Go to <a href="https://console.firebase.google.com/project/mock-test-4966c/database" target="_blank" style="color:var(--primary)">Firebase Console</a> &rarr; <strong>Build &rarr; Realtime Database</strong> &rarr; <strong>Create database</strong> (test mode). Then refresh this page.</p>
-                </div>`;
-        }
+    if (posts.length === 0) {
+        container.innerHTML = `
+            <div class="forum-empty">
+                <i class="fa-regular fa-comments"></i>
+                <h4>${search ? 'No matching posts' : 'No posts yet'}</h4>
+                <p>${search ? 'Try a different search term.' : 'Post your first doubt or topic!'}</p>
+            </div>`;
         return;
     }
 
-    if (setupBanner) setupBanner.style.display = 'none';
-    if (layout) layout.style.display = 'flex';
+    container.innerHTML = posts.map(p => {
+        const isResolved = !!p.resolvedReplyId;
+        const replyCount = p.replies ? Object.keys(p.replies).length : 0;
+        return `
+        <div class="forum-post-card ${isResolved ? 'resolved' : ''}" data-post-id="${p.id}">
+            <div class="fpc-left">
+                <div class="comm-avatar ${getAvatarColorClass(p.author || '?')}">${getInitials(p.author || '?')}</div>
+            </div>
+            <div class="fpc-body">
+                <div class="fpc-header">
+                    <h3 class="fpc-title">${commEscape(p.title)}</h3>
+                    ${isResolved
+                        ? '<span class="resolved-badge"><i class="fa-solid fa-circle-check"></i> Resolved</span>'
+                        : '<span class="open-badge">Open</span>'}
+                </div>
+                ${p.body ? `<p class="fpc-preview">${commEscape(p.body).slice(0, 180)}${p.body.length > 180 ? '&hellip;' : ''}</p>` : ''}
+                ${p.imageData ? '<div class="fpc-has-image"><i class="fa-solid fa-image"></i> Has screenshot</div>' : ''}
+                <div class="fpc-meta">
+                    <span class="fpc-author">${commEscape(p.author)}</span>
+                    <span class="fpc-dot">&middot;</span>
+                    <span class="fpc-time">${formatCommTime(p.ts)}</span>
+                    <span class="fpc-dot">&middot;</span>
+                    <span class="fpc-replies"><i class="fa-regular fa-comment"></i> ${replyCount} ${replyCount === 1 ? 'reply' : 'replies'}</span>
+                </div>
+            </div>
+        </div>`;
+    }).join('');
 
-    // Non-blocking: set up default channels and listen
-    ensureDefaultChannels().catch(console.error);
-    loadChannelList().catch(console.error);
-    subscribeToChannel(communityState.currentChannel).catch(e => {
-        console.error('Subscribe error:', e);
-        if (container) {
-            container.innerHTML = `<div class="comm-empty"><i class="fa-solid fa-triangle-exclamation" style="color:var(--warning)"></i><h4>Connection failed</h4><p>${e.message}</p></div>`;
-        }
+    container.querySelectorAll('.forum-post-card').forEach(card =>
+        card.addEventListener('click', () => openPostDetail(card.dataset.postId)));
+}
+
+// ── Post Detail ───────────────────────────────────────────────────────────────
+
+function openPostDetail(postId) {
+    const post = communityState.allPosts[postId];
+    if (!post) return;
+    communityState.currentPostId = postId;
+
+    document.getElementById('forum-posts-container').style.display = 'none';
+    document.querySelector('.forum-toolbar').style.display = 'none';
+    document.getElementById('forum-detail-view').style.display = 'flex';
+
+    renderPostDetail(postId, post);
+    subscribeToReplies(postId);
+}
+
+function closePostDetail() {
+    communityState.currentPostId = null;
+    if (communityState.postListenerOff) { communityState.postListenerOff(); communityState.postListenerOff = null; }
+    document.getElementById('forum-posts-container').style.display = 'flex';
+    document.querySelector('.forum-toolbar').style.display = 'flex';
+    document.getElementById('forum-detail-view').style.display = 'none';
+}
+
+function renderPostDetail(postId, post) {
+    const detailEl = document.getElementById('forum-detail-view');
+    const userName = getSession()?.name || 'Anonymous';
+
+    detailEl.innerHTML = `
+    <div class="post-detail-header">
+        <button class="back-btn" id="forum-back-btn"><i class="fa-solid fa-arrow-left"></i> Back to posts</button>
+    </div>
+    <div class="post-detail-scroll">
+        <div class="post-detail-card">
+            <div class="pdc-top">
+                <div class="comm-avatar ${getAvatarColorClass(post.author || '?')}">${getInitials(post.author || '?')}</div>
+                <div class="pdc-meta">
+                    <span class="pdc-author">${commEscape(post.author)}</span>
+                    <span class="pdc-time">${formatCommTime(post.ts)}</span>
+                </div>
+                ${post.resolvedReplyId
+                    ? '<span class="resolved-badge big"><i class="fa-solid fa-circle-check"></i> Resolved</span>'
+                    : '<span class="open-badge big">Open</span>'}
+            </div>
+            <h2 class="pdc-title">${commEscape(post.title)}</h2>
+            ${post.body ? `<p class="pdc-body">${commEscape(post.body).replace(/\n/g, '<br>')}</p>` : ''}
+            ${post.imageData ? `<div class="pdc-image"><img src="${post.imageData}" alt="Screenshot" class="forum-img clickable-img" onclick="window.open(this.src)"></div>` : ''}
+        </div>
+
+        <div class="replies-section">
+            <h4 class="replies-heading">Replies</h4>
+            <div class="replies-list" id="replies-list">
+                <div class="comm-loading"><div class="comm-spinner"></div><span>Loading replies...</span></div>
+            </div>
+        </div>
+
+        <div class="reply-composer">
+            <div class="reply-composer-header">
+                <div class="comm-avatar ${getAvatarColorClass(userName)}">${getInitials(userName)}</div>
+                <span class="reply-as">Replying as <strong>${commEscape(userName)}</strong></span>
+            </div>
+            <textarea id="reply-body-input" class="reply-textarea" placeholder="Write your reply, explanation, or solution..." rows="3" maxlength="2000"></textarea>
+            <div class="reply-img-row">
+                <input type="file" id="reply-img-input" accept="image/*" style="display:none">
+                <button class="reply-img-btn" id="reply-img-btn"><i class="fa-solid fa-image"></i> Add Screenshot</button>
+                <div class="reply-img-preview" id="reply-img-preview" style="display:none">
+                    <img id="reply-img-preview-img" src="" alt="Preview">
+                    <button class="img-remove-btn" id="reply-img-remove" type="button"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="reply-actions">
+                <button class="action-btn primary" id="reply-submit-btn"><i class="fa-solid fa-paper-plane"></i> Post Reply</button>
+            </div>
+        </div>
+    </div>`;
+
+    document.getElementById('forum-back-btn').addEventListener('click', closePostDetail);
+    bindReplyComposer(postId);
+}
+
+function renderReplies(postId, replies) {
+    const list = document.getElementById('replies-list');
+    if (!list) return;
+    const userName = getSession()?.name || 'Anonymous';
+    const post = communityState.allPosts[postId];
+    const isPostAuthor = post?.author === userName;
+
+    if (!replies || replies.length === 0) {
+        list.innerHTML = '<div class="no-replies"><i class="fa-regular fa-comment-dots"></i> No replies yet — be the first to help!</div>';
+        return;
+    }
+
+    list.innerHTML = replies.map(r => {
+        const isSolution = post?.resolvedReplyId === r.id;
+        return `
+        <div class="reply-card ${isSolution ? 'solution-card' : ''}">
+            <div class="reply-card-top">
+                <div class="comm-avatar ${getAvatarColorClass(r.author || '?')}">${getInitials(r.author || '?')}</div>
+                <div class="reply-meta">
+                    <span class="reply-author">${commEscape(r.author)}</span>
+                    <span class="reply-time">${formatCommTime(r.ts)}</span>
+                </div>
+                ${isSolution ? '<span class="solution-badge"><i class="fa-solid fa-check"></i> Solution</span>' : ''}
+                ${isPostAuthor && !post.resolvedReplyId && !isSolution
+                    ? `<button class="mark-solution-btn" data-reply-id="${r.id}"><i class="fa-regular fa-circle-check"></i> Mark as Solution</button>`
+                    : ''}
+            </div>
+            ${r.body ? `<p class="reply-body">${commEscape(r.body).replace(/\n/g, '<br>')}</p>` : ''}
+            ${r.imageData ? `<div class="reply-image"><img src="${r.imageData}" alt="Screenshot" class="forum-img clickable-img" onclick="window.open(this.src)"></div>` : ''}
+        </div>`;
+    }).join('');
+
+    list.querySelectorAll('.mark-solution-btn').forEach(btn =>
+        btn.addEventListener('click', () => markAsSolution(postId, btn.dataset.replyId)));
+}
+
+function subscribeToReplies(postId) {
+    const { db, ref, onValue, off } = communityState.db;
+    if (communityState.postListenerOff) { communityState.postListenerOff(); communityState.postListenerOff = null; }
+
+    const repliesRef = ref(db, `channels/${communityState.currentChannel}/posts/${postId}/replies`);
+    const fn = onValue(repliesRef, snap => {
+        const data = snap.val();
+        if (communityState.allPosts[postId]) communityState.allPosts[postId].replies = data;
+        const replies = data
+            ? Object.entries(data).map(([id, v]) => ({ id, ...v })).sort((a, b) => a.ts - b.ts)
+            : [];
+        renderReplies(postId, replies);
+    });
+    communityState.postListenerOff = () => off(repliesRef, 'value', fn);
+}
+
+// ── CRUD ─────────────────────────────────────────────────────────────────────
+
+async function createPost(channelId, title, body, imageData) {
+    const { db, ref, push } = communityState.db;
+    const userName = getSession()?.name || 'Anonymous';
+    await push(ref(db, `channels/${channelId}/posts`), {
+        title: title.trim(),
+        body: (body || '').trim(),
+        imageData: imageData || null,
+        author: userName,
+        ts: Date.now(),
+        resolvedReplyId: null,
     });
 }
 
-function bindFirebaseSetupUI() {
-    const saveBtn = document.getElementById('firebase-save-config-btn');
-    if (!saveBtn) return;
-
-    saveBtn.addEventListener('click', async () => {
-        const raw = (document.getElementById('firebase-config-input')?.value || '').trim();
-        if (!raw) return;
-
-        try {
-            // Support both JS object literal and JSON formats
-            // Safely evaluate the config by wrapping in parentheses
-            let config;
-            try {
-                config = JSON.parse(raw);
-            } catch {
-                // Try to parse as JS object literal using Function constructor
-                // Replace unquoted keys with quoted keys
-                const normalized = raw
-                    .replace(/^\s*const\s+\w+\s*=\s*/, '') // strip `const x = `
-                    .replace(/;\s*$/, '')
-                    .replace(/(['"])?([a-zA-Z][a-zA-Z0-9_]*)(['"])?:/g, '"$2":') // quote keys
-                    .replace(/'/g, '"'); // single to double quotes
-                config = JSON.parse(normalized);
-            }
-
-            if (!config.apiKey || !config.databaseURL) {
-                alert('Config is missing apiKey or databaseURL. Please check and try again.');
-                return;
-            }
-
-            saveBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Connecting...';
-            saveBtn.disabled = true;
-            await connectFirebase(config);
-        } catch (e) {
-            alert('Could not parse the config. Make sure it is valid JSON.\n\n' + e.message);
-            saveBtn.innerHTML = '<i class="fa-solid fa-plug"></i> Connect Firebase';
-            saveBtn.disabled = false;
-        }
+async function createReply(channelId, postId, body, imageData) {
+    const { db, ref, push } = communityState.db;
+    const userName = getSession()?.name || 'Anonymous';
+    await push(ref(db, `channels/${channelId}/posts/${postId}/replies`), {
+        body: (body || '').trim(),
+        imageData: imageData || null,
+        author: userName,
+        ts: Date.now(),
     });
 }
 
-function bindComposer() {
-    const input = document.getElementById('comm-message-input');
-    const sendBtn = document.getElementById('comm-send-btn');
-    const charCount = document.getElementById('comm-char-count');
+async function markAsSolution(postId, replyId) {
+    const { db, ref, update } = communityState.db;
+    await update(ref(db, `channels/${communityState.currentChannel}/posts/${postId}`), { resolvedReplyId: replyId });
+    if (communityState.allPosts[postId]) {
+        communityState.allPosts[postId].resolvedReplyId = replyId;
+        renderPostDetail(postId, communityState.allPosts[postId]);
+        subscribeToReplies(postId);
+    }
+}
 
-    if (!input || !sendBtn) return;
+// ── Bind UI ───────────────────────────────────────────────────────────────────
 
-    // Auto-resize textarea
-    input.addEventListener('input', () => {
-        input.style.height = 'auto';
-        input.style.height = Math.min(input.scrollHeight, 160) + 'px';
-        if (charCount) charCount.textContent = `${input.value.length}/1000`;
-    });
+function bindForumToolbar() {
+    document.getElementById('forum-search')?.addEventListener('input', () =>
+        renderPostsList(Object.entries(communityState.allPosts)));
+    document.getElementById('forum-filter')?.addEventListener('change', () =>
+        renderPostsList(Object.entries(communityState.allPosts)));
+}
 
-    const doSend = async () => {
-        const text = input.value.trim();
-        if (!text) return;
+function bindNewPostModal() {
+    const openBtn = document.getElementById('new-post-btn');
+    const modal   = document.getElementById('new-post-modal');
+    if (!openBtn || !modal) return;
 
-        sendBtn.disabled = true;
-        input.value = '';
-        input.style.height = 'auto';
-        if (charCount) charCount.textContent = '0/1000';
-
-        try {
-            await sendCommunityMessage(text);
-        } catch (e) {
-            console.error('Send error:', e);
-        }
-
-        sendBtn.disabled = false;
-        input.focus();
+    const closeModal = () => modal.style.display = 'none';
+    const openModal  = () => {
+        document.getElementById('post-title-input').value = '';
+        document.getElementById('post-body-input').value = '';
+        document.getElementById('post-modal-error').textContent = '';
+        communityState.pendingPostImage = null;
+        document.getElementById('post-img-placeholder').style.display = 'flex';
+        document.getElementById('post-img-preview').style.display = 'none';
+        modal.style.display = 'flex';
+        setTimeout(() => document.getElementById('post-title-input').focus(), 50);
     };
 
-    sendBtn.addEventListener('click', doSend);
+    openBtn.addEventListener('click', openModal);
+    document.getElementById('new-post-close')?.addEventListener('click', closeModal);
+    document.getElementById('new-post-cancel')?.addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 
-    input.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.shiftKey) {
-            e.preventDefault();
-            doSend();
-        }
+    // Image upload
+    const imgInput = document.getElementById('post-img-input');
+    const imgZone  = document.getElementById('post-img-zone');
+    const imgPlaceholder = document.getElementById('post-img-placeholder');
+    const imgPreview = document.getElementById('post-img-preview');
+    const imgPreviewImg = document.getElementById('post-img-preview-img');
+
+    imgPlaceholder?.addEventListener('click', () => imgInput?.click());
+
+    imgZone?.addEventListener('dragover', e => { e.preventDefault(); imgZone.classList.add('drag-over'); });
+    imgZone?.addEventListener('dragleave', () => imgZone.classList.remove('drag-over'));
+    imgZone?.addEventListener('drop', async e => {
+        e.preventDefault(); imgZone.classList.remove('drag-over');
+        const file = e.dataTransfer.files[0];
+        if (file?.type.startsWith('image/')) await applyPostImage(file, imgPlaceholder, imgPreview, imgPreviewImg);
+    });
+
+    imgInput?.addEventListener('change', async () => {
+        if (imgInput.files[0]) await applyPostImage(imgInput.files[0], imgPlaceholder, imgPreview, imgPreviewImg);
+    });
+
+    document.getElementById('post-img-remove')?.addEventListener('click', () => {
+        communityState.pendingPostImage = null;
+        if (imgInput) imgInput.value = '';
+        imgPlaceholder.style.display = 'flex';
+        imgPreview.style.display = 'none';
+    });
+
+    document.getElementById('new-post-submit')?.addEventListener('click', async () => {
+        const title = (document.getElementById('post-title-input')?.value || '').trim();
+        const errEl = document.getElementById('post-modal-error');
+        if (!title) { errEl.textContent = 'Title is required'; return; }
+        const body = document.getElementById('post-body-input')?.value || '';
+        const btn  = document.getElementById('new-post-submit');
+        btn.disabled = true; btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Posting...';
+        try {
+            await createPost(communityState.currentChannel, title, body, communityState.pendingPostImage);
+            closeModal();
+        } catch (e) { errEl.textContent = 'Failed: ' + e.message; }
+        btn.disabled = false; btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Post';
+    });
+}
+
+async function applyPostImage(file, placeholder, preview, previewImg) {
+    const compressed = await compressImage(file);
+    communityState.pendingPostImage = compressed;
+    previewImg.src = compressed;
+    placeholder.style.display = 'none';
+    preview.style.display = 'flex';
+}
+
+function bindReplyComposer(postId) {
+    communityState.pendingReplyImage = null;
+    const input    = document.getElementById('reply-body-input');
+    const submitBtn= document.getElementById('reply-submit-btn');
+    const imgBtn   = document.getElementById('reply-img-btn');
+    const imgInput = document.getElementById('reply-img-input');
+    const imgPrev  = document.getElementById('reply-img-preview');
+    const imgPrevImg = document.getElementById('reply-img-preview-img');
+    const imgRemove = document.getElementById('reply-img-remove');
+
+    imgBtn?.addEventListener('click', () => imgInput?.click());
+    imgInput?.addEventListener('change', async () => {
+        if (!imgInput.files[0]) return;
+        const c = await compressImage(imgInput.files[0]);
+        communityState.pendingReplyImage = c;
+        imgPrevImg.src = c;
+        imgBtn.style.display = 'none';
+        imgPrev.style.display = 'flex';
+    });
+    imgRemove?.addEventListener('click', () => {
+        communityState.pendingReplyImage = null;
+        if (imgInput) imgInput.value = '';
+        imgBtn.style.display = 'flex';
+        imgPrev.style.display = 'none';
+    });
+    submitBtn?.addEventListener('click', async () => {
+        const body = (input?.value || '').trim();
+        if (!body && !communityState.pendingReplyImage) return;
+        submitBtn.disabled = true; submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Posting...';
+        try {
+            await createReply(communityState.currentChannel, postId, body, communityState.pendingReplyImage);
+            if (input) input.value = '';
+            communityState.pendingReplyImage = null;
+            if (imgBtn) imgBtn.style.display = 'flex';
+            if (imgPrev) imgPrev.style.display = 'none';
+            if (imgInput) imgInput.value = '';
+        } catch (e) { console.error('Reply error:', e); }
+        submitBtn.disabled = false; submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Post Reply';
     });
 }
 
@@ -3504,52 +3606,76 @@ function bindCreateChannelModal() {
     const nameInput  = document.getElementById('new-channel-name');
     const descInput  = document.getElementById('new-channel-desc');
     const errorEl    = document.getElementById('channel-modal-error');
-
     if (!createBtn || !modal) return;
 
-    const openModal = () => {
-        modal.style.display = 'flex';
-        if (nameInput) { nameInput.value = ''; nameInput.focus(); }
-        if (descInput) descInput.value = '';
+    const closeModal = () => modal.style.display = 'none';
+    const openModal  = () => {
+        nameInput.value = ''; descInput.value = '';
         if (errorEl) errorEl.textContent = '';
+        modal.style.display = 'flex';
+        setTimeout(() => nameInput.focus(), 50);
     };
-
-    const closeModal = () => { modal.style.display = 'none'; };
 
     createBtn.addEventListener('click', openModal);
     closeBtn?.addEventListener('click', closeModal);
     cancelBtn?.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 
     confirmBtn?.addEventListener('click', async () => {
         const name = (nameInput?.value || '').trim();
-        if (!name) { if (errorEl) errorEl.textContent = 'Channel name is required'; return; }
-        if (name.length < 2) { if (errorEl) errorEl.textContent = 'Name must be at least 2 characters'; return; }
-
-        confirmBtn.disabled = true;
-        confirmBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Creating...';
-
+        if (!name) { if (errorEl) errorEl.textContent = 'Name required'; return; }
+        confirmBtn.disabled = true; confirmBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
         const result = await createCustomChannel(name, descInput?.value || '');
-
-        confirmBtn.disabled = false;
-        confirmBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Create Channel';
-
-        if (result.ok) {
-            closeModal();
-            setTimeout(() => switchChannel(result.id), 500);
-        } else {
-            if (errorEl) errorEl.textContent = result.err || 'Failed to create channel';
-        }
+        confirmBtn.disabled = false; confirmBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Create Channel';
+        if (result.ok) { closeModal(); setTimeout(() => switchForumChannel(result.id), 400); }
+        else if (errorEl) errorEl.textContent = result.err;
     });
-
-    nameInput?.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') confirmBtn?.click();
-    });
+    nameInput?.addEventListener('keydown', e => { if (e.key === 'Enter') confirmBtn?.click(); });
 }
 
-// Hook community init into the view switch
-const _origSwitchView = typeof switchView === 'function' ? switchView : null;
-if (_origSwitchView) {
-    // We patch switchView after it is defined — done via init calls below
+// ── Channel switching ─────────────────────────────────────────────────────────
+
+async function switchForumChannel(channelId) {
+    const ch = communityState.channels.find(c => c.id === channelId);
+    if (!ch) return;
+    communityState.currentChannel = channelId;
+    renderChannelList();
+    const nameEl = document.getElementById('comm-current-channel-name');
+    if (nameEl) nameEl.textContent = ch.name;
+    if (communityState.currentPostId) closePostDetail();
+    subscribeToChannelPosts(channelId);
 }
 
+// ── Main init ────────────────────────────────────────────────────────────────
+
+async function initCommunity() {
+    if (communityState.initialized) return;
+    communityState.initialized = true;
+
+    const banner = document.getElementById('firebase-setup-banner');
+    if (banner) banner.style.display = 'none';
+
+    renderChannelList();
+    bindForumToolbar();
+    bindNewPostModal();
+    bindCreateChannelModal();
+
+    const loadP = loadFirebase(FIREBASE_CONFIG);
+    const timeout = new Promise(r => setTimeout(() => r('timeout'), 12000));
+    const result = await Promise.race([loadP, timeout]);
+
+    const container = document.getElementById('forum-posts-container');
+    if (result !== true) {
+        if (container) container.innerHTML = `
+            <div class="forum-empty">
+                <i class="fa-solid fa-triangle-exclamation" style="color:var(--warning)"></i>
+                <h4>Database not reachable</h4>
+                <p>Please check your Firebase Realtime Database is created in test mode.</p>
+            </div>`;
+        return;
+    }
+
+    ensureDefaultChannels().catch(console.error);
+    loadChannelList();
+    subscribeToChannelPosts(communityState.currentChannel);
+}
