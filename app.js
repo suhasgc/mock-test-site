@@ -3372,25 +3372,43 @@ async function initCommunity() {
 async function connectFirebase(config) {
     const setupBanner = document.getElementById('firebase-setup-banner');
     const layout = document.querySelector('.community-layout');
+    const container = document.getElementById('comm-messages-container');
 
-    const ok = await loadFirebase(config);
-    if (!ok) {
-        if (setupBanner) setupBanner.style.display = 'flex';
-        if (layout) layout.style.display = 'none';
+    // Show default channels immediately (no DB needed)
+    renderChannelList();
+    bindComposer();
+    bindCreateChannelModal();
+
+    // Load Firebase SDK with a 12-second timeout
+    const loadPromise = loadFirebase(config);
+    const timeoutPromise = new Promise(resolve => setTimeout(() => resolve('timeout'), 12000));
+    const result = await Promise.race([loadPromise, timeoutPromise]);
+
+    if (result === 'timeout' || result === false) {
+        // Show clear error in chat area
+        if (container) {
+            container.innerHTML = `
+                <div class="comm-empty">
+                    <i class="fa-solid fa-triangle-exclamation" style="color:var(--warning)"></i>
+                    <h4>Database not found</h4>
+                    <p style="max-width:400px">Go to <a href="https://console.firebase.google.com/project/mock-test-4966c/database" target="_blank" style="color:var(--primary)">Firebase Console</a> &rarr; <strong>Build &rarr; Realtime Database</strong> &rarr; <strong>Create database</strong> (test mode). Then refresh this page.</p>
+                </div>`;
+        }
         return;
     }
-
-    // Save config for future sessions
-    localStorage.setItem(COMMUNITY_STORAGE_KEY, JSON.stringify(config));
 
     if (setupBanner) setupBanner.style.display = 'none';
     if (layout) layout.style.display = 'flex';
 
-    await ensureDefaultChannels();
-    await loadChannelList();
-    await subscribeToChannel(communityState.currentChannel);
-    bindComposer();
-    bindCreateChannelModal();
+    // Non-blocking: set up default channels and listen
+    ensureDefaultChannels().catch(console.error);
+    loadChannelList().catch(console.error);
+    subscribeToChannel(communityState.currentChannel).catch(e => {
+        console.error('Subscribe error:', e);
+        if (container) {
+            container.innerHTML = `<div class="comm-empty"><i class="fa-solid fa-triangle-exclamation" style="color:var(--warning)"></i><h4>Connection failed</h4><p>${e.message}</p></div>`;
+        }
+    });
 }
 
 function bindFirebaseSetupUI() {
