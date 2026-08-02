@@ -3081,6 +3081,19 @@ function initSplitter() {
 
 const COMMUNITY_STORAGE_KEY = 'thembaroom_firebase_config';
 
+// ── Hardcoded Firebase config (no setup needed) ──
+const FIREBASE_CONFIG = {
+    apiKey: "AIzaSyD9cGR8LeXNgMqhIJ9aRvKckwxBD9N5jqY",
+    authDomain: "mock-test-4966c.firebaseapp.com",
+    databaseURL: "https://mock-test-4966c-default-rtdb.firebaseio.com",
+    projectId: "mock-test-4966c",
+    storageBucket: "mock-test-4966c.firebasestorage.app",
+    messagingSenderId: "467210791725",
+    appId: "1:467210791725:web:f0026455b2854482ec81a4",
+    measurementId: "G-SBQLLQGR6N"
+};
+
+
 // Default channels that always exist
 const DEFAULT_CHANNELS = [
     { id: 'varc',     name: 'varc',     desc: 'Discuss VARC passages, RC strategies, vocabulary, and verbal ability tips.' },
@@ -3349,25 +3362,11 @@ async function initCommunity() {
     if (communityState.initialized) return;
     communityState.initialized = true;
 
+    // Always hide the setup banner — config is hardcoded
     const setupBanner = document.getElementById('firebase-setup-banner');
-    const layout = document.querySelector('.community-layout');
+    if (setupBanner) setupBanner.style.display = 'none';
 
-    // Try to load saved Firebase config
-    let savedConfig = null;
-    try {
-        const raw = localStorage.getItem(COMMUNITY_STORAGE_KEY);
-        if (raw) savedConfig = JSON.parse(raw);
-    } catch (e) {}
-
-    if (!savedConfig) {
-        // Show setup UI
-        if (setupBanner) setupBanner.style.display = 'flex';
-        if (layout) layout.style.display = 'none';
-        bindFirebaseSetupUI();
-        return;
-    }
-
-    await connectFirebase(savedConfig);
+    await connectFirebase(FIREBASE_CONFIG);
 }
 
 async function connectFirebase(config) {
