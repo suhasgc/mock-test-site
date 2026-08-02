@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Firebase SDK (for Community Chat) -->
+    <script type="module">
+        // Firebase config is initialized in app.js after DOM load
+        // This module import ensures Firebase is available
+    </script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Main Style Sheet -->
@@ -83,6 +88,11 @@
                 <button class="nav-item" data-view="analytics">
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Analytics</span>
+                </button>
+                <button class="nav-item" data-view="community">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Community</span>
+                    <span class="community-unread-badge" id="community-unread-badge" style="display:none"></span>
                 </button>
             </nav>
 
@@ -321,6 +331,97 @@
                                         <!-- Injected by JS -->
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIEW: COMMUNITY CHAT -->
+                <section class="view-panel" id="view-community">
+                    <div class="community-layout">
+                        <!-- Left: Channel List -->
+                        <aside class="community-sidebar">
+                            <div class="community-sidebar-header">
+                                <h3><i class="fa-solid fa-comments"></i> Community</h3>
+                                <button class="comm-create-btn" id="comm-create-channel-btn" title="Create new channel">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="comm-channels-label">CHANNELS</div>
+                            <div class="comm-channels-list" id="comm-channels-list">
+                                <!-- Rendered by JS -->
+                            </div>
+                            <div class="comm-online-indicator">
+                                <span class="comm-online-dot"></span>
+                                <span id="comm-online-count">You are online</span>
+                            </div>
+                        </aside>
+
+                        <!-- Right: Chat Area -->
+                        <div class="community-chat">
+                            <div class="community-chat-header" id="comm-chat-header">
+                                <div class="comm-channel-title">
+                                    <span class="comm-hash">#</span>
+                                    <span id="comm-current-channel-name">varc</span>
+                                </div>
+                                <div class="comm-channel-desc" id="comm-channel-desc">Discuss VARC passages, RC strategies, vocabulary, and verbal ability tips.</div>
+                            </div>
+
+                            <div class="community-messages" id="comm-messages-container">
+                                <div class="comm-loading" id="comm-loading">
+                                    <div class="comm-spinner"></div>
+                                    <span>Connecting to community...</span>
+                                </div>
+                            </div>
+
+                            <div class="community-composer">
+                                <div class="comm-composer-inner">
+                                    <textarea
+                                        id="comm-message-input"
+                                        class="comm-textarea"
+                                        placeholder="Message #varc... (Shift+Enter for new line)"
+                                        rows="1"
+                                        maxlength="1000"
+                                    ></textarea>
+                                    <button class="comm-send-btn" id="comm-send-btn">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                                <div class="comm-composer-footer">
+                                    <span class="comm-char-count" id="comm-char-count">0/1000</span>
+                                    <span class="comm-tip">Press <kbd>Enter</kbd> to send &bull; <kbd>Shift+Enter</kbd> for new line</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Firebase Setup Banner (shown when not configured) -->
+                    <div class="firebase-setup-banner" id="firebase-setup-banner" style="display:none">
+                        <div class="firebase-setup-card">
+                            <i class="fa-solid fa-fire" style="font-size:2.5rem;color:#f59e0b"></i>
+                            <h3>Connect Community Chat</h3>
+                            <p>To enable real-time community chat for all users, you need a free Firebase project.</p>
+                            <ol class="firebase-steps">
+                                <li>Go to <a href="https://console.firebase.google.com" target="_blank">console.firebase.google.com</a></li>
+                                <li>Click <strong>Add project</strong> &rarr; name it <code>thembaroom-chat</code></li>
+                                <li>Go to <strong>Build &rarr; Realtime Database</strong> &rarr; Create database (test mode)</li>
+                                <li>Go to <strong>Project Settings &rarr; General &rarr; Your apps</strong> &rarr; Add web app</li>
+                                <li>Copy the <code>firebaseConfig</code> object and paste it below</li>
+                            </ol>
+                            <div class="firebase-config-input-wrap">
+                                <textarea id="firebase-config-input" placeholder='Paste your firebaseConfig object here, e.g.:
+{
+  apiKey: "AIza...",
+  authDomain: "...",
+  databaseURL: "https://...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "..."
+}'></textarea>
+                                <button class="action-btn primary" id="firebase-save-config-btn">
+                                    <i class="fa-solid fa-plug"></i> Connect Firebase
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -780,8 +881,30 @@
         </div>
     </div>
 
-    <!-- CORE SCRIPTS -->
-    <script type="module" src="app.js?v=1.4.0"></script>
+    <!-- App Script -->
+    <script type="module" src="app.js"></script>
+
+    <!-- Create Channel Modal -->
+    <div class="modal-overlay" id="create-channel-modal" style="display:none">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-hashtag"></i> Create New Channel</h3>
+                <button class="modal-close" id="create-channel-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <label>Channel Name</label>
+                <input type="text" id="new-channel-name" placeholder="e.g. general, cat-2026, mock-discussion" maxlength="30" class="modal-input">
+                <label style="margin-top:1rem">Description <span style="color:var(--text-muted);font-size:0.85rem">(optional)</span></label>
+                <input type="text" id="new-channel-desc" placeholder="What is this channel about?" maxlength="100" class="modal-input">
+                <div class="modal-error" id="channel-modal-error"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="action-btn" id="create-channel-cancel">Cancel</button>
+                <button class="action-btn primary" id="create-channel-confirm">
+                    <i class="fa-solid fa-plus"></i> Create Channel
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-

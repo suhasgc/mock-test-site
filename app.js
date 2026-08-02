@@ -445,6 +445,7 @@ function switchView(viewName) {
     if (viewName === 'library') renderLibrary();
     if (viewName === 'error-log') renderErrorLog();
     if (viewName === 'analytics') renderAnalytics();
+    if (viewName === 'community') initCommunity();
 }
 
 // ==========================================================================
@@ -3073,3 +3074,465 @@ function initSplitter() {
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp);
 }
+
+// ==========================================================================
+// COMMUNITY CHAT (Firebase Realtime Database)
+// ==========================================================================
+
+const COMMUNITY_STORAGE_KEY = 'thembaroom_firebase_config';
+
+// Default channels that always exist
+const DEFAULT_CHANNELS = [
+    { id: 'varc',     name: 'varc',     desc: 'Discuss VARC passages, RC strategies, vocabulary, and verbal ability tips.' },
+    { id: 'dilr',     name: 'dilr',     desc: 'DILR sets, logical reasoning, data interpretation strategies and practice.' },
+    { id: 'qa',       name: 'qa',       desc: 'Quant concepts, shortcuts, problem solving, and formula discussions.' },
+    { id: 'strategy', name: 'strategy', desc: 'CAT strategy, time management, mock analysis, and preparation plans.' },
+    { id: 'off-topic',name: 'off-topic',desc: 'General MBA chat, IIM calls, PI preparation, and anything else!' },
+];
+
+let communityState = {
+    db: null,
+    currentChannel: 'varc',
+    channels: [...DEFAULT_CHANNELS],
+    listeners: {},        // channel id → Firebase off() fn
+    initialized: false,
+};
+
+// ── Avatar color picker (consistent per user name) ──
+function getAvatarColorClass(name) {
+    let hash = 0;
+    for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) & 0xffffffff;
+    return `comm-avatar-${Math.abs(hash) % 10}`;
+}
+
+function getInitials(name) {
+    return name.trim().split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 2);
+}
+
+// ── Timestamp formatting ──
+function formatCommTime(ts) {
+    const d = new Date(ts);
+    const now = new Date();
+    const isToday = d.toDateString() === now.toDateString();
+    const timeStr = d.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true });
+    return isToday ? `Today ${timeStr}` : d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }) + ' ' + timeStr;
+}
+
+function getDayLabel(ts) {
+    const d = new Date(ts);
+    const now = new Date();
+    const yesterday = new Date(now);
+    yesterday.setDate(now.getDate() - 1);
+    if (d.toDateString() === now.toDateString()) return 'Today';
+    if (d.toDateString() === yesterday.toDateString()) return 'Yesterday';
+    return d.toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long' });
+}
+
+// ── Render message bubbles ──
+function renderMessages(messages) {
+    const container = document.getElementById('comm-messages-container');
+    if (!container) return;
+
+    const userName = getSession()?.name || 'Anonymous';
+
+    if (!messages || messages.length === 0) {
+        container.innerHTML = `
+            <div class="comm-empty">
+                <i class="fa-regular fa-comments"></i>
+                <h4>No messages yet</h4>
+                <p>Be the first to start the conversation!</p>
+            </div>`;
+        return;
+    }
+
+    let html = '';
+    let lastDay = '';
+    let lastAuthor = '';
+
+    messages.forEach(msg => {
+        const dayLabel = getDayLabel(msg.ts);
+        if (dayLabel !== lastDay) {
+            html += `<div class="comm-date-divider">${dayLabel}</div>`;
+            lastDay = dayLabel;
+            lastAuthor = '';
+        }
+
+        const isOwn = msg.author === userName;
+        const showMeta = msg.author !== lastAuthor;
+        const colorClass = getAvatarColorClass(msg.author);
+        const initials = getInitials(msg.author);
+
+        html += `
+        <div class="comm-msg-group ${isOwn ? 'own-msg' : ''}">
+            <div class="comm-avatar ${colorClass}" title="${escapeHtml(msg.author)}">
+                ${showMeta ? initials : ''}
+            </div>
+            <div class="comm-msg-body">
+                ${showMeta ? `
+                <div class="comm-msg-meta">
+                    <span class="comm-msg-author">${escapeHtml(msg.author)}</span>
+                    <span class="comm-msg-time">${formatCommTime(msg.ts)}</span>
+                </div>` : ''}
+                <div class="comm-msg-bubble">${escapeHtml(msg.text)}</div>
+            </div>
+        </div>`;
+
+        lastAuthor = msg.author;
+    });
+
+    container.innerHTML = html;
+    // Scroll to bottom
+    container.scrollTop = container.scrollHeight;
+}
+
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+// ── Firebase helpers ──
+async function loadFirebase(config) {
+    try {
+        const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js');
+        const { getDatabase, ref, push, onValue, off, set, get } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js');
+
+        const app = getApps().length ? getApps()[0] : initializeApp(config);
+        communityState.db = { db: getDatabase(app), ref, push, onValue, off, set, get };
+        return true;
+    } catch (e) {
+        console.error('Firebase load error:', e);
+        return false;
+    }
+}
+
+async function subscribeToChannel(channelId) {
+    const { db, ref, onValue, off } = communityState.db;
+
+    // Unsubscribe old listener
+    if (communityState.listeners[communityState.currentChannel]) {
+        const { refObj, fn } = communityState.listeners[communityState.currentChannel];
+        off(refObj, 'value', fn);
+    }
+
+    const msgRef = ref(db, `channels/${channelId}/messages`);
+    const container = document.getElementById('comm-messages-container');
+
+    // Show loading
+    if (container) {
+        container.innerHTML = '<div class="comm-loading"><div class="comm-spinner"></div><span>Loading messages...</span></div>';
+    }
+
+    const listener = onValue(msgRef, (snapshot) => {
+        const data = snapshot.val();
+        const messages = data ? Object.values(data).sort((a, b) => a.ts - b.ts) : [];
+        renderMessages(messages);
+    });
+
+    communityState.listeners[channelId] = { refObj: msgRef, fn: listener };
+}
+
+async function sendCommunityMessage(text) {
+    if (!communityState.db || !text.trim()) return;
+    const { db, ref, push } = communityState.db;
+    const userName = getSession()?.name || 'Anonymous';
+
+    const channelId = communityState.currentChannel;
+    const msgRef = ref(db, `channels/${channelId}/messages`);
+
+    await push(msgRef, {
+        author: userName,
+        text: text.trim(),
+        ts: Date.now(),
+    });
+}
+
+async function ensureDefaultChannels() {
+    if (!communityState.db) return;
+    const { db, ref, get, set } = communityState.db;
+
+    for (const ch of DEFAULT_CHANNELS) {
+        const chRef = ref(db, `channels/${ch.id}/meta`);
+        const snap = await get(chRef);
+        if (!snap.exists()) {
+            await set(chRef, { name: ch.name, desc: ch.desc, created: Date.now() });
+        }
+    }
+}
+
+async function loadChannelList() {
+    if (!communityState.db) return;
+    const { db, ref, onValue } = communityState.db;
+    const chRef = ref(db, 'channels');
+
+    onValue(chRef, (snapshot) => {
+        const data = snapshot.val();
+        if (!data) return;
+
+        const channels = Object.entries(data).map(([id, val]) => ({
+            id,
+            name: val.meta?.name || id,
+            desc: val.meta?.desc || '',
+        }));
+
+        // Maintain default order first, then custom channels
+        const defaultIds = DEFAULT_CHANNELS.map(c => c.id);
+        channels.sort((a, b) => {
+            const ai = defaultIds.indexOf(a.id);
+            const bi = defaultIds.indexOf(b.id);
+            if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
+            if (ai === -1) return 1;
+            if (bi === -1) return -1;
+            return ai - bi;
+        });
+
+        communityState.channels = channels;
+        renderChannelList();
+    });
+}
+
+async function createCustomChannel(name, desc) {
+    if (!communityState.db) return { ok: false, err: 'Not connected' };
+    const { db, ref, get, set } = communityState.db;
+
+    const id = name.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+    if (!id) return { ok: false, err: 'Invalid channel name' };
+
+    const chRef = ref(db, `channels/${id}/meta`);
+    const snap = await get(chRef);
+    if (snap.exists()) return { ok: false, err: 'Channel already exists!' };
+
+    await set(chRef, { name: id, desc: desc || '', created: Date.now() });
+    return { ok: true, id };
+}
+
+// ── Render channel list ──
+function renderChannelList() {
+    const list = document.getElementById('comm-channels-list');
+    if (!list) return;
+
+    list.innerHTML = communityState.channels.map(ch => `
+        <div class="comm-channel-item ${ch.id === communityState.currentChannel ? 'active' : ''}"
+             data-channel-id="${ch.id}" title="${escapeHtml(ch.desc || '')}">
+            <span class="ch-hash">#</span>
+            <span class="ch-name">${escapeHtml(ch.name)}</span>
+        </div>
+    `).join('');
+
+    list.querySelectorAll('.comm-channel-item').forEach(item => {
+        item.addEventListener('click', () => switchChannel(item.dataset.channelId));
+    });
+}
+
+async function switchChannel(channelId) {
+    const ch = communityState.channels.find(c => c.id === channelId);
+    if (!ch) return;
+
+    communityState.currentChannel = channelId;
+    renderChannelList();
+
+    // Update header
+    const nameEl = document.getElementById('comm-current-channel-name');
+    const descEl = document.getElementById('comm-channel-desc');
+    const inputEl = document.getElementById('comm-message-input');
+    if (nameEl) nameEl.textContent = ch.name;
+    if (descEl) descEl.textContent = ch.desc || '';
+    if (inputEl) inputEl.placeholder = `Message #${ch.name}... (Shift+Enter for new line)`;
+
+    await subscribeToChannel(channelId);
+}
+
+// ── Main Init ──
+async function initCommunity() {
+    if (communityState.initialized) return;
+    communityState.initialized = true;
+
+    const setupBanner = document.getElementById('firebase-setup-banner');
+    const layout = document.querySelector('.community-layout');
+
+    // Try to load saved Firebase config
+    let savedConfig = null;
+    try {
+        const raw = localStorage.getItem(COMMUNITY_STORAGE_KEY);
+        if (raw) savedConfig = JSON.parse(raw);
+    } catch (e) {}
+
+    if (!savedConfig) {
+        // Show setup UI
+        if (setupBanner) setupBanner.style.display = 'flex';
+        if (layout) layout.style.display = 'none';
+        bindFirebaseSetupUI();
+        return;
+    }
+
+    await connectFirebase(savedConfig);
+}
+
+async function connectFirebase(config) {
+    const setupBanner = document.getElementById('firebase-setup-banner');
+    const layout = document.querySelector('.community-layout');
+
+    const ok = await loadFirebase(config);
+    if (!ok) {
+        if (setupBanner) setupBanner.style.display = 'flex';
+        if (layout) layout.style.display = 'none';
+        return;
+    }
+
+    // Save config for future sessions
+    localStorage.setItem(COMMUNITY_STORAGE_KEY, JSON.stringify(config));
+
+    if (setupBanner) setupBanner.style.display = 'none';
+    if (layout) layout.style.display = 'flex';
+
+    await ensureDefaultChannels();
+    await loadChannelList();
+    await subscribeToChannel(communityState.currentChannel);
+    bindComposer();
+    bindCreateChannelModal();
+}
+
+function bindFirebaseSetupUI() {
+    const saveBtn = document.getElementById('firebase-save-config-btn');
+    if (!saveBtn) return;
+
+    saveBtn.addEventListener('click', async () => {
+        const raw = (document.getElementById('firebase-config-input')?.value || '').trim();
+        if (!raw) return;
+
+        try {
+            // Support both JS object literal and JSON formats
+            // Safely evaluate the config by wrapping in parentheses
+            let config;
+            try {
+                config = JSON.parse(raw);
+            } catch {
+                // Try to parse as JS object literal using Function constructor
+                // Replace unquoted keys with quoted keys
+                const normalized = raw
+                    .replace(/^\s*const\s+\w+\s*=\s*/, '') // strip `const x = `
+                    .replace(/;\s*$/, '')
+                    .replace(/(['"])?([a-zA-Z][a-zA-Z0-9_]*)(['"])?:/g, '"$2":') // quote keys
+                    .replace(/'/g, '"'); // single to double quotes
+                config = JSON.parse(normalized);
+            }
+
+            if (!config.apiKey || !config.databaseURL) {
+                alert('Config is missing apiKey or databaseURL. Please check and try again.');
+                return;
+            }
+
+            saveBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Connecting...';
+            saveBtn.disabled = true;
+            await connectFirebase(config);
+        } catch (e) {
+            alert('Could not parse the config. Make sure it is valid JSON.\n\n' + e.message);
+            saveBtn.innerHTML = '<i class="fa-solid fa-plug"></i> Connect Firebase';
+            saveBtn.disabled = false;
+        }
+    });
+}
+
+function bindComposer() {
+    const input = document.getElementById('comm-message-input');
+    const sendBtn = document.getElementById('comm-send-btn');
+    const charCount = document.getElementById('comm-char-count');
+
+    if (!input || !sendBtn) return;
+
+    // Auto-resize textarea
+    input.addEventListener('input', () => {
+        input.style.height = 'auto';
+        input.style.height = Math.min(input.scrollHeight, 160) + 'px';
+        if (charCount) charCount.textContent = `${input.value.length}/1000`;
+    });
+
+    const doSend = async () => {
+        const text = input.value.trim();
+        if (!text) return;
+
+        sendBtn.disabled = true;
+        input.value = '';
+        input.style.height = 'auto';
+        if (charCount) charCount.textContent = '0/1000';
+
+        try {
+            await sendCommunityMessage(text);
+        } catch (e) {
+            console.error('Send error:', e);
+        }
+
+        sendBtn.disabled = false;
+        input.focus();
+    };
+
+    sendBtn.addEventListener('click', doSend);
+
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            doSend();
+        }
+    });
+}
+
+function bindCreateChannelModal() {
+    const createBtn  = document.getElementById('comm-create-channel-btn');
+    const modal      = document.getElementById('create-channel-modal');
+    const closeBtn   = document.getElementById('create-channel-close');
+    const cancelBtn  = document.getElementById('create-channel-cancel');
+    const confirmBtn = document.getElementById('create-channel-confirm');
+    const nameInput  = document.getElementById('new-channel-name');
+    const descInput  = document.getElementById('new-channel-desc');
+    const errorEl    = document.getElementById('channel-modal-error');
+
+    if (!createBtn || !modal) return;
+
+    const openModal = () => {
+        modal.style.display = 'flex';
+        if (nameInput) { nameInput.value = ''; nameInput.focus(); }
+        if (descInput) descInput.value = '';
+        if (errorEl) errorEl.textContent = '';
+    };
+
+    const closeModal = () => { modal.style.display = 'none'; };
+
+    createBtn.addEventListener('click', openModal);
+    closeBtn?.addEventListener('click', closeModal);
+    cancelBtn?.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+    confirmBtn?.addEventListener('click', async () => {
+        const name = (nameInput?.value || '').trim();
+        if (!name) { if (errorEl) errorEl.textContent = 'Channel name is required'; return; }
+        if (name.length < 2) { if (errorEl) errorEl.textContent = 'Name must be at least 2 characters'; return; }
+
+        confirmBtn.disabled = true;
+        confirmBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Creating...';
+
+        const result = await createCustomChannel(name, descInput?.value || '');
+
+        confirmBtn.disabled = false;
+        confirmBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Create Channel';
+
+        if (result.ok) {
+            closeModal();
+            setTimeout(() => switchChannel(result.id), 500);
+        } else {
+            if (errorEl) errorEl.textContent = result.err || 'Failed to create channel';
+        }
+    });
+
+    nameInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') confirmBtn?.click();
+    });
+}
+
+// Hook community init into the view switch
+const _origSwitchView = typeof switchView === 'function' ? switchView : null;
+if (_origSwitchView) {
+    // We patch switchView after it is defined — done via init calls below
+}
+
