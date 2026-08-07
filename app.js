@@ -149,6 +149,7 @@ function initLoginScreen() {
         initCalculator();
         initProctoring();
         initSplitter();
+        initSupportModal();
         preloadMocks();
         updateSidebarScoreboard();
     }
@@ -167,6 +168,7 @@ function initLoginScreen() {
         initCalculator();
         initProctoring();
         initSplitter();
+        initSupportModal();
         preloadMocks();
         updateSidebarScoreboard();
         return;
@@ -3678,4 +3680,39 @@ async function initCommunity() {
     ensureDefaultChannels().catch(console.error);
     loadChannelList();
     subscribeToChannelPosts(communityState.currentChannel);
+}
+
+
+// ==========================================================================
+// SUPPORT MODAL ENGINE
+// ==========================================================================
+function initSupportModal() {
+    const openBtn = document.getElementById('btn-open-support');
+    const modal = document.getElementById('support-modal');
+    const closeBtn = document.getElementById('support-modal-close');
+    const doneBtn = document.getElementById('support-modal-done');
+
+    if (!openBtn || !modal) return;
+
+    const openModal = () => {
+        modal.style.display = 'flex';
+    };
+
+    const closeModal = () => {
+        modal.style.display = 'none';
+    };
+
+    openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (doneBtn) doneBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+            closeModal();
+        }
+    });
 }

@@ -4037,3 +4037,157 @@ a {
 .comm-avatar-8 { background: #84cc16; }
 .comm-avatar-9 { background: #f97316; }
 }
+
+
+/* ==========================================================================
+   SUBTLE SUPPORT WIDGET & MODAL
+   ========================================================================== */
+
+.support-float-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 990;
+    height: 42px;
+    padding: 0 16px;
+    border-radius: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.9;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.support-float-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    border-color: rgba(239, 68, 68, 0.4);
+}
+
+.support-float-btn:active {
+    transform: translateY(0);
+}
+
+.support-btn-icon {
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+.support-btn-label {
+    letter-spacing: 0.02em;
+}
+
+/* Hide support float button during exam console mode */
+body.in-exam-mode .support-float-btn,
+.exam-console-view:not([style*="display: none"]) ~ .support-float-btn {
+    display: none !important;
+}
+
+/* Support Modal Styling */
+.support-modal-card {
+    width: 480px;
+    max-width: 92vw;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    animation: slideUpIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.support-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.support-lead-text {
+    font-size: 0.98rem;
+    color: var(--text-primary);
+    line-height: 1.55;
+}
+
+.support-sub-text {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.support-qr-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--bg-app);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 0.25rem 0;
+}
+
+.support-qr-img {
+    width: 210px;
+    height: 210px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.support-qr-caption {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.support-footer-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    background: rgba(var(--primary-rgb), 0.06);
+    border: 1px dashed rgba(var(--primary-rgb), 0.2);
+    border-radius: 8px;
+    padding: 0.65rem 0.85rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.support-footer-note i {
+    color: var(--primary);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .support-float-btn {
+        bottom: 16px;
+        right: 16px;
+        height: 38px;
+        padding: 0 12px;
+        font-size: 0.82rem;
+    }
+    
+    .support-modal-body {
+        padding: 1.25rem 1rem;
+    }
+    
+    .support-qr-img {
+        width: 180px;
+        height: 180px;
+    }
+}

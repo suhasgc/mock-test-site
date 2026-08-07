@@ -16,7 +16,7 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Main Style Sheet -->
-    <link rel="stylesheet" href="style.css?v=2.1.0">
+    <link rel="stylesheet" href="style.css?v=2.2.0">
 </head>
 <body>
         <!-- LOGIN SCREEN OVERLAY -->
@@ -860,7 +860,7 @@
     </div>
 
     <!-- App Script -->
-    <script type="module" src="app.js?v=2.1.0"></script>
+    <script type="module" src="app.js?v=2.2.0"></script>
 
     <!-- Create Channel Modal -->
     <div class="modal-overlay" id="create-channel-modal" style="display:none">
@@ -920,6 +920,43 @@
                 <button class="action-btn primary" id="new-post-submit">
                     <i class="fa-solid fa-paper-plane"></i> Post
                 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUBTLE FLOATING SUPPORT BUTTON -->
+    <button class="support-float-btn" id="btn-open-support" title="Support This Project">
+        <span class="support-btn-icon">❤️</span>
+        <span class="support-btn-label">Support</span>
+    </button>
+
+    <!-- SUPPORT MODAL -->
+    <div class="modal-overlay" id="support-modal" style="display:none;">
+        <div class="modal-card support-modal-card">
+            <div class="modal-header">
+                <h3><span style="color:#ef4444;margin-right:6px;">❤️</span> Support This Project</h3>
+                <button class="modal-close" id="support-modal-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body support-modal-body">
+                <p class="support-lead-text">
+                    This platform is built and maintained independently and will <strong>always remain free</strong> for CAT aspirants.
+                </p>
+                <p class="support-sub-text">
+                    If it has helped you in your preparation, you can support future development with any contribution. Donations are completely optional and help cover hosting, new mock tests, and future improvements.
+                </p>
+
+                <div class="support-qr-wrapper">
+                    <img src="assets/upi_qr.jpg" alt="UPI QR Code" class="support-qr-img">
+                    <span class="support-qr-caption"><i class="fa-solid fa-qrcode" style="margin-right:4px;"></i> Scan to support via any UPI app (GPay, PhonePe, Paytm, BHIM)</span>
+                </div>
+
+                <div class="support-footer-note">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <span>100% optional. No features are locked behind donations. Thank you for supporting free education.</span>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+                <button class="action-btn secondary" id="support-modal-done">Close</button>
             </div>
         </div>
     </div>
