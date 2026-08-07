@@ -4191,3 +4191,59 @@ body.in-exam-mode .support-float-btn,
         height: 180px;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTLY EMBEDDED SUPPORT CARD & PAGE STYLES
+   ========================================================================== */
+
+.support-embedded-card {
+    padding: 1.25rem;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.support-embedded-card:hover {
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+.support-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.support-page-container {
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.support-page-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 720px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.support-page-header h2 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+}
+
+.support-page-header .subtitle {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    margin-bottom: 1.5rem;
+}

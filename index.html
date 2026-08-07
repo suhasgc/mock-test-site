@@ -16,7 +16,7 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Main Style Sheet -->
-    <link rel="stylesheet" href="style.css?v=2.2.0">
+    <link rel="stylesheet" href="style.css?v=2.3.0">
 </head>
 <body>
         <!-- LOGIN SCREEN OVERLAY -->
@@ -93,6 +93,10 @@
                     <i class="fa-solid fa-comments"></i>
                     <span>Community</span>
                     <span class="community-unread-badge" id="community-unread-badge" style="display:none"></span>
+                </button>
+                <button class="nav-item" data-view="support">
+                    <i class="fa-solid fa-heart" style="color:#ef4444;"></i>
+                    <span>Support Us</span>
                 </button>
             </nav>
 
@@ -208,6 +212,31 @@
                             <div class="error-log-snippet-container glass" id="dashboard-error-list">
                                 <!-- Small table or list of incorrect questions -->
                             </div>
+                            <!-- DIRECTLY VISIBLE SUPPORT CARD -->
+                            <div class="support-embedded-card glass" style="margin-top: 1.5rem;">
+                                <div class="section-title-row">
+                                    <h3><span style="color:#ef4444;margin-right:6px;">❤️</span> Support This Project</h3>
+                                </div>
+                                <div class="support-card-body">
+                                    <p class="support-lead-text">
+                                        This platform is built and maintained independently and will <strong>always remain free</strong> for CAT aspirants.
+                                    </p>
+                                    <p class="support-sub-text">
+                                        If it has helped you in your preparation, you can support future development with any contribution. Donations are completely optional and help cover hosting, new mock tests, and future improvements.
+                                    </p>
+
+                                    <div class="support-qr-wrapper">
+                                        <img src="assets/upi_qr.jpg" alt="UPI QR Code" class="support-qr-img">
+                                        <span class="support-qr-caption"><i class="fa-solid fa-qrcode" style="margin-right:4px;"></i> Scan to support via any UPI app (GPay, PhonePe, Paytm, BHIM)</span>
+                                    </div>
+
+                                    <div class="support-footer-note">
+                                        <i class="fa-solid fa-shield-heart"></i>
+                                        <span>100% optional. No features are locked behind donations. Thank you for supporting free education.</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -337,7 +366,37 @@
                 </section>
 
                 <!-- VIEW: COMMUNITY FORUM -->
-                <section class="view-panel" id="view-community">
+                
+                <!-- VIEW: SUPPORT PAGE -->
+                <section class="view-panel" id="view-support">
+                    <div class="support-page-container">
+                        <div class="support-page-card glass">
+                            <div class="support-page-header">
+                                <h2><span style="color:#ef4444;">❤️</span> Support This Project</h2>
+                                <p class="subtitle">Empowering free education for CAT & MBA aspirants nationwide.</p>
+                            </div>
+                            <div class="support-card-body" style="max-width: 600px; margin: 0 auto;">
+                                <p class="support-lead-text">
+                                    This platform is built and maintained independently and will <strong>always remain free</strong> for CAT aspirants.
+                                </p>
+                                <p class="support-sub-text">
+                                    If it has helped you in your preparation, you can support future development with any contribution. Donations are completely optional and help cover hosting, new mock tests, and future improvements.
+                                </p>
+
+                                <div class="support-qr-wrapper">
+                                    <img src="assets/upi_qr.jpg" alt="UPI QR Code" class="support-qr-img" style="width: 240px; height: 240px;">
+                                    <span class="support-qr-caption"><i class="fa-solid fa-qrcode" style="margin-right:4px;"></i> Scan to support via any UPI app (GPay, PhonePe, Paytm, BHIM)</span>
+                                </div>
+
+                                <div class="support-footer-note">
+                                    <i class="fa-solid fa-shield-heart"></i>
+                                    <span>100% optional. No features are locked behind donations. Thank you for supporting free education.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<section class="view-panel" id="view-community">
                     <div class="community-layout">
                         <!-- Left: Channel List -->
                         <aside class="community-sidebar">
@@ -860,7 +919,7 @@
     </div>
 
     <!-- App Script -->
-    <script type="module" src="app.js?v=2.2.0"></script>
+    <script type="module" src="app.js?v=2.3.0"></script>
 
     <!-- Create Channel Modal -->
     <div class="modal-overlay" id="create-channel-modal" style="display:none">
