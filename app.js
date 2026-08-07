@@ -1457,13 +1457,20 @@ function loadConsoleQuestion() {
     
     // Set Question Context passage
     const passageViewer = document.getElementById('passage-body-content');
-    if (passageViewer) {
-        if (question.instructions) {
-            passageViewer.innerHTML = forceHttpsImages(question.instructions);
-            document.getElementById('passage-viewer-container').style.display = 'flex';
+    const passageContainer = document.getElementById('passage-viewer-container');
+    const isPdfMode = mock.category === 'pdf' || !!mock.fileUrl || !!mock.pdfFiles;
+    
+    if (isPdfMode) {
+        if (passageContainer) passageContainer.style.display = 'none';
+    } else if (passageViewer && passageContainer) {
+        const instr = question.instructions || '';
+        const isPdfBoilerplate = instr.includes('Refer to') || instr.includes('PDF document') || instr.includes('VARC.pdf') || instr.includes('CL PDF Mock') || instr.includes('TIME Mock');
+        if (instr && !isPdfBoilerplate) {
+            passageViewer.innerHTML = forceHttpsImages(instr);
+            passageContainer.style.display = 'flex';
         } else {
             passageViewer.innerHTML = '<div class="no-data">No specific passage context for this section. Questions are self-contained.</div>';
-            // In interactive mode, if no instruction context exists, we can hide the left panel or keep it blank
+            passageContainer.style.display = 'flex';
         }
     }
     
@@ -2422,7 +2429,18 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
     }
     
     document.getElementById('review-modal-q-num').textContent = labelNum.toString();
-    document.getElementById('review-modal-instructions').innerHTML = forceHttpsImages(q.instructions || '');
+    const instEl = document.getElementById('review-modal-instructions');
+    if (instEl) {
+        const instr = q.instructions || '';
+        const isPdfBoilerplate = instr.includes('Refer to') || instr.includes('PDF document') || instr.includes('VARC.pdf') || instr.includes('CL PDF Mock') || instr.includes('TIME Mock');
+        if (instr && !isPdfBoilerplate) {
+            instEl.innerHTML = forceHttpsImages(instr);
+            instEl.style.display = 'block';
+        } else {
+            instEl.innerHTML = '';
+            instEl.style.display = 'none';
+        }
+    }
     document.getElementById('review-modal-question-text').innerHTML = forceHttpsImages(q.question_text);
     
     // Option breakdown comparisons
