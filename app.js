@@ -1277,10 +1277,12 @@ function startExamConsole(mock, mode) {
     const numSections = Object.keys(mock.sections).length;
     Object.keys(mock.sections).forEach(secName => {
         let secMins;
-        if (isShortMock) {
-            secMins = Math.floor(15 / numSections);
+        if (numSections === 1) {
+            secMins = isShortMock ? 15 : (mock.duration || 40);
+        } else if (isShortMock) {
+            secMins = Math.max(1, Math.floor(15 / numSections));
         } else {
-            secMins = mock.sectionTimes[secName] || 40;
+            secMins = (mock.sectionTimes && mock.sectionTimes[secName]) ? mock.sectionTimes[secName] : Math.floor((mock.duration || 120) / numSections);
         }
         state.runningTest.sectionTimeLeft[secName] = secMins * 60;
     });
@@ -1513,12 +1515,19 @@ function loadConsoleQuestion() {
             
             // Re-bind click
             const revealBtn = document.getElementById('btn-reveal-solution');
-            revealBtn.onclick = () => {
-                revealedSolution.style.display = revealedSolution.style.display === 'none' ? 'block' : 'none';
-                revealBtn.innerHTML = revealedSolution.style.display === 'none' ? 
-                    '<i class="fa-solid fa-eye"></i> Reveal Explanation' : 
-                    '<i class="fa-solid fa-eye-slash"></i> Hide Explanation';
-            };
+            if (revealBtn) {
+                revealBtn.innerHTML = '<i class="fa-solid fa-eye"></i> Show Explanation';
+                revealBtn.onclick = () => {
+                    const isHidden = revealedSolution.style.display === 'none';
+                    if (isHidden) {
+                        revealedSolution.style.display = 'block';
+                        revealBtn.innerHTML = '<i class="fa-solid fa-eye-slash"></i> Hide Explanation';
+                    } else {
+                        revealedSolution.style.display = 'none';
+                        revealBtn.innerHTML = '<i class="fa-solid fa-eye"></i> Show Explanation';
+                    }
+                };
+            }
         } else {
             solutionBox.style.display = 'none';
         }
@@ -1928,12 +1937,18 @@ function bindConsoleNavButtons() {
 function startConsoleTimers() {
     if (window.consoleTimerInterval) clearInterval(window.consoleTimerInterval);
     
-    const timerText = document.getElementById('console-timer-text');
-    const timerWidget = document.getElementById('console-timer-widget');
-    
-    window.consoleTimerInterval = setInterval(() => {
+    const updateTimerTick = () => {
         const run = state.runningTest;
+        if (!run) {
+            if (window.consoleTimerInterval) clearInterval(window.consoleTimerInterval);
+            return;
+        }
         const mock = state.mocks.find(m => m.id === run.testId);
+        if (!mock) return;
+        
+        const timerText = document.getElementById('console-timer-text');
+        const timerWidget = document.getElementById('console-timer-widget');
+        if (!timerText || !timerWidget) return;
         
         if (run.mode === 'practice') {
             // Count up stopwatch in Practice Mode
@@ -1952,10 +1967,15 @@ function startConsoleTimers() {
             
             if (isCatSectional) {
                 // Sectional Countdown
-                run.sectionTimeLeft[run.currentSection]--;
-                displaySecs = run.sectionTimeLeft[run.currentSection];
+                if (run.sectionTimeLeft[run.currentSection] !== undefined) {
+                    run.sectionTimeLeft[run.currentSection]--;
+                    displaySecs = run.sectionTimeLeft[run.currentSection];
+                } else {
+                    displaySecs = 0;
+                }
                 
                 if (displaySecs <= 0) {
+                    displaySecs = 0;
                     isTimeUp = true;
                 }
             } else {
@@ -1964,6 +1984,7 @@ function startConsoleTimers() {
                 displaySecs = run.overallTimeLeft;
                 
                 if (displaySecs <= 0) {
+                    displaySecs = 0;
                     isTimeUp = true;
                 }
             }
@@ -2006,7 +2027,9 @@ function startConsoleTimers() {
                 }
             }
         }
-    }, 1000);
+    };
+    
+    window.consoleTimerInterval = setInterval(updateTimerTick, 1000);
 }
 
 // Submit test scorecard compilation
