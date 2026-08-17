@@ -377,6 +377,18 @@ function forceHttpsImages(html) {
     });
 }
 
+function isPdfBoilerplateHtml(instr) {
+    if (!instr) return false;
+    const textOnly = instr.replace(/<img[^>]*>/gi, '').replace(/data:image\/[^;]+;base64,[a-zA-Z0-9+/=]+/gi, '');
+    return (
+        textOnly.includes('VARC.pdf') ||
+        textOnly.includes('PDF document') ||
+        textOnly.includes('PDF on the left') ||
+        (textOnly.includes('Refer to Question') && textOnly.includes('PDF')) ||
+        (textOnly.includes('CL PDF Mock') || textOnly.includes('TIME Mock'))
+    );
+}
+
 function saveDatabase() {
     localStorage.setItem(state.storageKeyAttempts, JSON.stringify(state.attempts));
     localStorage.setItem(state.storageKeyErrors,   JSON.stringify(state.errors));
@@ -1466,8 +1478,7 @@ function loadConsoleQuestion() {
         if (passageContainer) passageContainer.style.display = 'none';
     } else if (passageViewer && passageContainer) {
         const instr = (question.instructions || '').trim();
-        const isPdfBoilerplate = (instr.includes('PDF') || instr.includes('.pdf')) && (instr.includes('Refer to') || instr.includes('document') || instr.includes('Mock'));
-        if (instr && !isPdfBoilerplate) {
+        if (instr && !isPdfBoilerplateHtml(instr)) {
             passageViewer.innerHTML = forceHttpsImages(instr);
             passageContainer.style.display = 'flex';
         } else {
@@ -2455,8 +2466,7 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
     const instEl = document.getElementById('review-modal-instructions');
     if (instEl) {
         const instr = (q.instructions || '').trim();
-        const isPdfBoilerplate = (instr.includes('PDF') || instr.includes('.pdf')) && (instr.includes('Refer to') || instr.includes('document') || instr.includes('Mock'));
-        if (instr && !isPdfBoilerplate) {
+        if (instr && !isPdfBoilerplateHtml(instr)) {
             instEl.innerHTML = forceHttpsImages(instr);
             instEl.style.display = 'block';
         } else {
