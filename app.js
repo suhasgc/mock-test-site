@@ -1465,14 +1465,14 @@ function loadConsoleQuestion() {
     if (isPdfMode) {
         if (passageContainer) passageContainer.style.display = 'none';
     } else if (passageViewer && passageContainer) {
-        const instr = question.instructions || '';
-        const isPdfBoilerplate = instr.includes('Refer to') || instr.includes('PDF document') || instr.includes('VARC.pdf') || instr.includes('CL PDF Mock') || instr.includes('TIME Mock');
+        const instr = (question.instructions || '').trim();
+        const isPdfBoilerplate = (instr.includes('PDF') || instr.includes('.pdf')) && (instr.includes('Refer to') || instr.includes('document') || instr.includes('Mock'));
         if (instr && !isPdfBoilerplate) {
             passageViewer.innerHTML = forceHttpsImages(instr);
             passageContainer.style.display = 'flex';
         } else {
-            passageViewer.innerHTML = '<div class="no-data">No specific passage context for this section. Questions are self-contained.</div>';
-            passageContainer.style.display = 'flex';
+            passageViewer.innerHTML = '';
+            passageContainer.style.display = 'none';
         }
     }
     
@@ -2454,8 +2454,8 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
     document.getElementById('review-modal-q-num').textContent = labelNum.toString();
     const instEl = document.getElementById('review-modal-instructions');
     if (instEl) {
-        const instr = q.instructions || '';
-        const isPdfBoilerplate = instr.includes('Refer to') || instr.includes('PDF document') || instr.includes('VARC.pdf') || instr.includes('CL PDF Mock') || instr.includes('TIME Mock');
+        const instr = (q.instructions || '').trim();
+        const isPdfBoilerplate = (instr.includes('PDF') || instr.includes('.pdf')) && (instr.includes('Refer to') || instr.includes('document') || instr.includes('Mock'));
         if (instr && !isPdfBoilerplate) {
             instEl.innerHTML = forceHttpsImages(instr);
             instEl.style.display = 'block';
