@@ -4247,3 +4247,8 @@ body.in-exam-mode .support-float-btn,
     font-size: 0.92rem;
     margin-bottom: 1.5rem;
 }
+
+/* Fail-safe: Hide empty passage viewer container if no data is present */
+.no-data, #passage-body-content:empty {
+    display: none !important;
+}
