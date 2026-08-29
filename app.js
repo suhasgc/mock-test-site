@@ -2176,9 +2176,13 @@ function submitExamConsole() {
                 q.correct_response[0][0] : 
                 q.options[parseInt(q.correct_response[0][0]) - 1];
                 
+            const secQids = (mock.sections && mock.sections[item.secName]) ? mock.sections[item.secName] : [];
+            const qNum = secQids.indexOf(String(item.qId)) !== -1 ? (secQids.indexOf(String(item.qId)) + 1) : null;
+
             state.errors.push({
                 id: "err-" + Date.now() + Math.random().toString(36).substring(2,5),
                 qId: item.qId,
+                questionNumber: qNum,
                 testId: mock.id,
                 testName: mock.name,
                 sectionName: item.secName,
@@ -2680,10 +2684,17 @@ function renderErrorLog() {
             </div>
         ` : '';
 
+        // Question Number calculation
+        const secQids = (mock && mock.sections && mock.sections[err.sectionName]) ? mock.sections[err.sectionName] : [];
+        const qIndex = secQids.indexOf(String(err.qId));
+        const qNum = err.questionNumber || (qIndex !== -1 ? qIndex + 1 : null);
+        const qNumBadge = qNum ? `<span class="badge-solid q-number-badge"><i class="fa-solid fa-list-ol"></i> Question ${qNum}</span>` : '';
+
         card.innerHTML = `
             <div class="error-card-header">
                 <span class="q-source"><i class="fa-solid fa-layer-group"></i> ${err.testName} &gt; ${err.sectionName}</span>
                 <div class="error-card-meta">
+                    ${qNumBadge}
                     ${solvedBadge}
                     <span class="badge-solid font-mono" style="background:rgba(var(--primary-rgb),0.1); color:var(--primary)">Q-ID: ${err.qId}</span>
                 </div>

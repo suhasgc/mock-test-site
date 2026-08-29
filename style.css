@@ -4378,3 +4378,13 @@ body.in-exam-mode .support-float-btn,
     margin-left: 4px;
     text-transform: uppercase;
 }
+
+.badge-solid.q-number-badge {
+    background: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
