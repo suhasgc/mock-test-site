@@ -2578,14 +2578,6 @@ function formatTimeSpent(secs) {
     return `${s}s`;
 }
 
-function formatTimeSpent(secs) {
-    if (!secs || secs <= 0) return '0s (Not Tracked)';
-    const m = Math.floor(secs / 60);
-    const s = secs % 60;
-    if (m > 0) return `${m}m ${s}s`;
-    return `${s}s`;
-}
-
 function renderErrorLog() {
     const container = document.getElementById('error-cards-container');
     const examFilterDropdown = document.getElementById('error-filter-exam');
