@@ -4252,3 +4252,129 @@ body.in-exam-mode .support-float-btn,
 .no-data, #passage-body-content:empty {
     display: none !important;
 }
+
+
+/* ==========================================================================
+   UPGRADED ERROR LOG ANALYSIS & PASSAGE STYLES
+   ========================================================================== */
+
+.error-passage-block {
+    background: rgba(var(--primary-rgb), 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.error-passage-header {
+    background: rgba(var(--primary-rgb), 0.06);
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.error-passage-header:hover {
+    background: rgba(var(--primary-rgb), 0.12);
+}
+
+.error-passage-header .passage-hint {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.error-passage-body {
+    padding: 14px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    max-height: 380px;
+    overflow-y: auto;
+    color: var(--text-secondary);
+    background: var(--bg-app);
+}
+
+.error-analysis-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    background: var(--bg-app);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.analysis-pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.analysis-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: rgba(var(--primary-rgb), 0.08);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.analysis-pill.neg {
+    background: rgba(239, 68, 68, 0.12);
+    color: var(--danger);
+    border-color: rgba(239, 68, 68, 0.25);
+}
+
+.analysis-pill.unatt {
+    background: rgba(245, 158, 11, 0.12);
+    color: var(--warning);
+    border-color: rgba(245, 158, 11, 0.25);
+}
+
+.analysis-pill.lost {
+    background: rgba(239, 68, 68, 0.08);
+    color: #f87171;
+}
+
+.analysis-pill.time {
+    background: rgba(59, 130, 246, 0.12);
+    color: #60a5fa;
+    border-color: rgba(59, 130, 246, 0.25);
+}
+
+.analysis-pill.time.trap {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border-color: rgba(239, 68, 68, 0.35);
+}
+
+.pill-sub {
+    font-size: 0.72rem;
+    opacity: 0.85;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+.pill-badge-warning {
+    background: var(--danger);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 4px;
+    margin-left: 4px;
+    text-transform: uppercase;
+}

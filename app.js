@@ -2189,7 +2189,12 @@ function submitExamConsole() {
                 solution: q.solution || '',
                 notes: '',
                 solved: false,
-                date: attemptRecord.date
+                date: attemptRecord.date,
+                reason: item.reason || (run.answers[item.qId] ? 'incorrect' : 'unattempted'),
+                marks: q.marks || 3,
+                negativeMarks: q.negative_marks || (q.is_input_type ? 0 : 1),
+                timeSpent: run.timeSpentPerQuestion[item.qId] || 0,
+                isInputType: !!q.is_input_type
             });
         }
     });
@@ -2565,6 +2570,14 @@ function initErrorLog() {
     });
 }
 
+function formatTimeSpent(secs) {
+    if (!secs || secs <= 0) return '0s (Not Tracked)';
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    if (m > 0) return `${m}m ${s}s`;
+    return `${s}s`;
+}
+
 function renderErrorLog() {
     const container = document.getElementById('error-cards-container');
     const examFilterDropdown = document.getElementById('error-filter-exam');
@@ -2589,7 +2602,7 @@ function renderErrorLog() {
     
     // Apply filters
     const filteredErrors = state.errors.filter(err => {
-        const matchesSearch = err.questionText.toLowerCase().includes(searchVal) || err.notes.toLowerCase().includes(searchVal);
+        const matchesSearch = err.questionText.toLowerCase().includes(searchVal) || (err.notes || '').toLowerCase().includes(searchVal);
         const matchesExam = examVal === 'all' || err.testName === examVal;
         const matchesSection = sectionVal === 'all' || err.sectionName.includes(sectionVal);
         
@@ -2610,37 +2623,91 @@ function renderErrorLog() {
     filteredErrors.forEach(err => {
         const card = document.createElement('div');
         card.className = 'error-card';
-        if (err.solved) card.style.opacity = '0.7';
+        if (err.solved) card.style.opacity = '0.75';
         
         const solvedBadge = err.solved ? 
             '<span class="badge-solid solved"><i class="fa-solid fa-circle-check"></i> Solved</span>' : 
             '<span class="badge-solid reviewing"><i class="fa-solid fa-clock"></i> Reviewing</span>';
             
+        // Metrics & Analysis calculations
+        const qMarks = err.marks || 3;
+        const qNeg = err.negativeMarks !== undefined ? err.negativeMarks : (err.isInputType ? 0 : 1);
+        const isIncorrect = err.reason === 'incorrect' || (err.userAnswerText && err.userAnswerText !== 'No Answer' && err.userAnswerText !== 'No answer recorded');
+        const marksLostVal = isIncorrect ? (qMarks + qNeg) : qMarks;
+        const timeSecs = err.timeSpent || 0;
+        const formattedTime = formatTimeSpent(timeSecs);
+        const isTimeTrap = timeSecs >= 120;
+
+        // Passage / Set context check
+        const hasPassage = err.instructions && !isPdfBoilerplateHtml(err.instructions);
+        const passageHtml = hasPassage ? `
+            <div class="error-passage-block" id="passage-block-${err.id}">
+                <div class="error-passage-header" onclick="const b = document.getElementById('passage-body-${err.id}'); const h = this.querySelector('.passage-hint'); if (b.style.display==='none'){b.style.display='block'; h.innerHTML='<i class=\"fa-solid fa-chevron-up\"></i> Collapse Passage';}else{b.style.display='none'; h.innerHTML='<i class=\"fa-solid fa-chevron-down\"></i> Expand Passage';}">
+                    <span><i class="fa-solid fa-book-open" style="color:var(--primary);"></i> <strong>Full Reading Passage / DILR Set Context</strong></span>
+                    <span class="passage-hint"><i class="fa-solid fa-chevron-up"></i> Collapse Passage</span>
+                </div>
+                <div class="error-passage-body" id="passage-body-${err.id}" style="display: block;">
+                    ${forceHttpsImages(err.instructions)}
+                </div>
+            </div>
+        ` : '';
+
         card.innerHTML = `
             <div class="error-card-header">
-                <span class="q-source">${err.testName} &gt; ${err.sectionName}</span>
+                <span class="q-source"><i class="fa-solid fa-layer-group"></i> ${err.testName} &gt; ${err.sectionName}</span>
                 <div class="error-card-meta">
                     ${solvedBadge}
                     <span class="badge-solid font-mono" style="background:rgba(var(--primary-rgb),0.1); color:var(--primary)">Q-ID: ${err.qId}</span>
                 </div>
             </div>
             
+            <!-- DETAILED PERFORMANCE & TIME ANALYSIS ROW -->
+            <div class="error-analysis-row">
+                <div class="analysis-pill-group">
+                    <span class="analysis-pill ${isIncorrect ? 'neg' : 'unatt'}">
+                        <i class="fa-solid ${isIncorrect ? 'fa-circle-xmark' : 'fa-circle-minus'}"></i>
+                        ${isIncorrect ? 'Incorrect Attempt' : 'Unattempted'}
+                    </span>
+                    <span class="analysis-pill lost">
+                        <i class="fa-solid fa-chart-line-down"></i>
+                        Marks Lost: <strong>-${marksLostVal}</strong>
+                        <span class="pill-sub">(${isIncorrect ? `-${qNeg} penalty` : '0 scored'} + ${qMarks} missed)</span>
+                    </span>
+                    <span class="analysis-pill type">
+                        <i class="fa-solid fa-sliders"></i>
+                        ${err.isInputType ? 'TITA (+3 / 0)' : 'MCQ (+3 / -1)'}
+                    </span>
+                </div>
+
+                <div class="analysis-pill-group">
+                    <span class="analysis-pill time ${isTimeTrap ? 'trap' : ''}">
+                        <i class="fa-solid ${isTimeTrap ? 'fa-triangle-exclamation' : 'fa-stopwatch'}"></i>
+                        Time Spent: <strong>${formattedTime}</strong>
+                        ${isTimeTrap ? '<span class="pill-badge-warning">Time Trap</span>' : ''}
+                    </span>
+                </div>
+            </div>
+
+            <!-- FULL PASSAGE / SET CONTEXT (IF APPLICABLE) -->
+            ${passageHtml}
+
+            <!-- QUESTION PROMPT -->
             <div class="error-question-block">
-                <h5>Question Prompt</h5>
-                <div class="content">${err.questionText}</div>
+                <h5><i class="fa-solid fa-circle-question"></i> Question Prompt</h5>
+                <div class="content">${forceHttpsImages(err.questionText)}</div>
             </div>
             
             <div class="error-user-answer">
                 <span class="ans-label">Your Response:</span>
-                <span>${err.userAnswerText || 'No answer recorded'}</span>
+                <span>${forceHttpsImages(err.userAnswerText || 'No answer recorded')}</span>
             </div>
             <div class="error-correct-answer">
                 <span class="ans-label">Correct Solution:</span>
-                <span>${err.correctAnswerText}</span>
+                <span>${forceHttpsImages(err.correctAnswerText)}</span>
             </div>
             
             <div class="error-user-notes">
-                <h5>My Study Notes (Concepts / Formulas / Tricks)</h5>
+                <h5><i class="fa-solid fa-pen-to-square"></i> My Study Notes (Concepts / Formulas / Mistakes)</h5>
                 <textarea class="notes-textarea" data-id="${err.id}" placeholder="Enter notes about why this question went wrong, formulas to remember, or shortcuts...">${err.notes || ''}</textarea>
             </div>
             
@@ -2650,7 +2717,7 @@ function renderErrorLog() {
                     ${err.solved ? 'Mark Reviewing' : 'Mark as Solved'}
                 </button>
                 <button class="action-btn secondary small btn-toggle-solution" data-id="${err.id}">
-                    <i class="fa-solid fa-lightbulb"></i> View Solution & Explanation
+                    <i class="fa-solid fa-lightbulb"></i> View Explanation
                 </button>
                 <button class="action-btn danger small btn-delete-error" data-id="${err.id}">
                     <i class="fa-solid fa-trash"></i> Delete
@@ -2658,8 +2725,8 @@ function renderErrorLog() {
             </div>
             
             <div class="practice-solution-card glass solution-drawer" id="sol-drawer-${err.id}" style="display: none; margin-top: 15px;">
-                <h4>Detailed Explanation</h4>
-                <div style="font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary); margin-top: 8px;">${err.solution || 'No detailed solution available.'}</div>
+                <h4><i class="fa-solid fa-file-lines"></i> Detailed Explanation</h4>
+                <div style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary); margin-top: 8px;">${forceHttpsImages(err.solution || 'No detailed solution available.')}</div>
             </div>
         `;
         
