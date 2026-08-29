@@ -2578,6 +2578,29 @@ function formatTimeSpent(secs) {
     return `${s}s`;
 }
 
+function matchesSectionName(errSection, filterVal) {
+    if (!filterVal || filterVal === 'all') return true;
+    if (!errSection) return false;
+    
+    const sec = errSection.toLowerCase();
+    const filter = filterVal.toLowerCase();
+    
+    if (filter === 'varc') {
+        return sec.includes('varc') || sec.includes('verbal') || sec.includes('reading');
+    }
+    if (filter === 'dilr') {
+        return sec.includes('dilr') || sec.includes('lrdi') || sec.includes('data interpretation') || sec.includes('logical reasoning');
+    }
+    if (filter === 'qa') {
+        return sec.includes('qa') || sec.includes('quant') || sec.includes('quantitative');
+    }
+    if (filter === 'dm') {
+        return sec.includes('dm') || sec.includes('decision');
+    }
+    
+    return sec.includes(filter);
+}
+
 function renderErrorLog() {
     const container = document.getElementById('error-cards-container');
     const examFilterDropdown = document.getElementById('error-filter-exam');
@@ -2604,7 +2627,7 @@ function renderErrorLog() {
     const filteredErrors = state.errors.filter(err => {
         const matchesSearch = err.questionText.toLowerCase().includes(searchVal) || (err.notes || '').toLowerCase().includes(searchVal);
         const matchesExam = examVal === 'all' || err.testName === examVal;
-        const matchesSection = sectionVal === 'all' || err.sectionName.includes(sectionVal);
+        const matchesSection = matchesSectionName(err.sectionName, sectionVal);
         
         let matchesStatus = true;
         if (statusVal === 'solved') matchesStatus = err.solved;
