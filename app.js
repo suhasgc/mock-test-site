@@ -2578,6 +2578,14 @@ function formatTimeSpent(secs) {
     return `${s}s`;
 }
 
+function formatTimeSpent(secs) {
+    if (!secs || secs <= 0) return '0s (Not Tracked)';
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    if (m > 0) return `${m}m ${s}s`;
+    return `${s}s`;
+}
+
 function renderErrorLog() {
     const container = document.getElementById('error-cards-container');
     const examFilterDropdown = document.getElementById('error-filter-exam');
@@ -2629,9 +2637,14 @@ function renderErrorLog() {
             '<span class="badge-solid solved"><i class="fa-solid fa-circle-check"></i> Solved</span>' : 
             '<span class="badge-solid reviewing"><i class="fa-solid fa-clock"></i> Reviewing</span>';
             
-        // Metrics & Analysis calculations
-        const qMarks = err.marks || 3;
-        const qNeg = err.negativeMarks !== undefined ? err.negativeMarks : (err.isInputType ? 0 : 1);
+        // Dynamic Question Lookup from state.mocks to enrich old/existing error items saved in localStorage
+        const mock = state.mocks.find(m => m.id === err.testId || m.name === err.testName);
+        const q = (mock && mock.questions) ? mock.questions[err.qId] : null;
+
+        const realInstructions = err.instructions || (q ? q.instructions : '');
+        const realSolution = err.solution || (q ? q.solution : '');
+        const qMarks = err.marks || (q ? q.marks : 3);
+        const qNeg = err.negativeMarks !== undefined ? err.negativeMarks : (q ? q.negative_marks : (err.isInputType ? 0 : 1));
         const isIncorrect = err.reason === 'incorrect' || (err.userAnswerText && err.userAnswerText !== 'No Answer' && err.userAnswerText !== 'No answer recorded');
         const marksLostVal = isIncorrect ? (qMarks + qNeg) : qMarks;
         const timeSecs = err.timeSpent || 0;
@@ -2639,7 +2652,7 @@ function renderErrorLog() {
         const isTimeTrap = timeSecs >= 120;
 
         // Passage / Set context check
-        const hasPassage = err.instructions && !isPdfBoilerplateHtml(err.instructions);
+        const hasPassage = realInstructions && !isPdfBoilerplateHtml(realInstructions);
         const passageHtml = hasPassage ? `
             <div class="error-passage-block" id="passage-block-${err.id}">
                 <div class="error-passage-header" onclick="const b = document.getElementById('passage-body-${err.id}'); const h = this.querySelector('.passage-hint'); if (b.style.display==='none'){b.style.display='block'; h.innerHTML='<i class=\"fa-solid fa-chevron-up\"></i> Collapse Passage';}else{b.style.display='none'; h.innerHTML='<i class=\"fa-solid fa-chevron-down\"></i> Expand Passage';}">
@@ -2647,7 +2660,7 @@ function renderErrorLog() {
                     <span class="passage-hint"><i class="fa-solid fa-chevron-up"></i> Collapse Passage</span>
                 </div>
                 <div class="error-passage-body" id="passage-body-${err.id}" style="display: block;">
-                    ${forceHttpsImages(err.instructions)}
+                    ${forceHttpsImages(realInstructions)}
                 </div>
             </div>
         ` : '';
@@ -2726,7 +2739,7 @@ function renderErrorLog() {
             
             <div class="practice-solution-card glass solution-drawer" id="sol-drawer-${err.id}" style="display: none; margin-top: 15px;">
                 <h4><i class="fa-solid fa-file-lines"></i> Detailed Explanation</h4>
-                <div style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary); margin-top: 8px;">${forceHttpsImages(err.solution || 'No detailed solution available.')}</div>
+                <div style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary); margin-top: 8px;">${forceHttpsImages(realSolution || 'No detailed solution available.')}</div>
             </div>
         `;
         
