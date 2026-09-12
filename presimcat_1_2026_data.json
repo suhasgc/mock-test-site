@@ -348,7 +348,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "2"
+        ]
+      ]
     },
     "10017": {
       "id": 10017,
@@ -360,7 +364,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "2"
+        ]
+      ]
     },
     "10018": {
       "id": 10018,
@@ -372,7 +380,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10019": {
       "id": 10019,
@@ -426,7 +438,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10022": {
       "id": 10022,
@@ -501,7 +517,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "3"
+        ]
+      ]
     },
     "10026": {
       "id": 10026,
@@ -534,7 +554,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10028": {
       "id": 10028,
@@ -546,7 +570,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "2"
+        ]
+      ]
     },
     "10029": {
       "id": 10029,
@@ -747,7 +775,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "2"
+        ]
+      ]
     },
     "10039": {
       "id": 10039,
@@ -911,7 +943,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10047": {
       "id": 10047,
@@ -970,7 +1006,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10050": {
       "id": 10050,
@@ -987,7 +1027,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10051": {
       "id": 10051,
@@ -999,7 +1043,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "2"
+        ]
+      ]
     },
     "10052": {
       "id": 10052,
@@ -1011,7 +1059,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10053": {
       "id": 10053,
@@ -1028,7 +1080,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10054": {
       "id": 10054,
@@ -1066,7 +1122,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10056": {
       "id": 10056,
@@ -1104,7 +1164,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10058": {
       "id": 10058,
@@ -1116,7 +1180,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10059": {
       "id": 10059,
@@ -1133,7 +1201,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10060": {
       "id": 10060,
@@ -1150,7 +1222,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10061": {
       "id": 10061,
@@ -1167,7 +1243,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10062": {
       "id": 10062,
@@ -1179,7 +1259,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10063": {
       "id": 10063,
@@ -1191,7 +1275,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10064": {
       "id": 10064,
@@ -1208,7 +1296,11 @@
       ],
       "is_input_type": false,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10065": {
       "id": 10065,
@@ -1220,7 +1312,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "4"
+        ]
+      ]
     },
     "10066": {
       "id": 10066,
@@ -1232,7 +1328,11 @@
       "options": [],
       "is_input_type": true,
       "is_multi_select": false,
-      "correct_response": []
+      "correct_response": [
+        [
+          "1"
+        ]
+      ]
     },
     "10067": {
       "id": 10067,

@@ -377,6 +377,18 @@ function forceHttpsImages(html) {
     });
 }
 
+function getCorrectResponseVal(q) {
+    if (!q || !q.correct_response) return '';
+    const cr = q.correct_response;
+    if (Array.isArray(cr) && cr.length > 0) {
+        if (Array.isArray(cr[0]) && cr[0].length > 0) {
+            return String(cr[0][0] || '').trim();
+        }
+        return String(cr[0] || '').trim();
+    }
+    return String(cr || '').trim();
+}
+
 function isPdfBoilerplateHtml(instr) {
     if (!instr) return false;
     const textOnly = instr.replace(/<img[^>]*>/gi, '').replace(/data:image\/[^;]+;base64,[a-zA-Z0-9+/=]+/gi, '');
@@ -1324,13 +1336,17 @@ function startAnalysisConsole(mockId, attemptRecord = null, startQId = null) {
                 state.runningTest.questionStates[qId] = 'unattempted';
             } else {
                 let isCorrect = false;
-                if (q.is_input_type) {
-                    isCorrect = String(uAns[0]).trim().toLowerCase() === String(q.correct_response[0][0]).trim().toLowerCase();
+                const cVal = getCorrectResponseVal(q);
+                if (!cVal) {
+                    state.runningTest.questionStates[qId] = 'answered';
+                } else if (q.is_input_type) {
+                    isCorrect = String(uAns[0]).trim().toLowerCase() === cVal.toLowerCase();
+                    state.runningTest.questionStates[qId] = isCorrect ? 'correct' : 'incorrect';
                 } else {
-                    const cIdx = (parseInt(q.correct_response[0][0]) - 1).toString();
+                    const cIdx = (parseInt(cVal) - 1).toString();
                     isCorrect = String(uAns[0]) === cIdx;
+                    state.runningTest.questionStates[qId] = isCorrect ? 'correct' : 'incorrect';
                 }
-                state.runningTest.questionStates[qId] = isCorrect ? 'correct' : 'incorrect';
             }
         });
 
@@ -1684,10 +1700,11 @@ function loadConsoleQuestion() {
 
             let cAnsDisplay = '';
             if (question.is_input_type) {
-                cAnsDisplay = question.correct_response[0][0];
+                cAnsDisplay = getCorrectResponseVal(question);
             } else {
                 const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
-                const cIdx = parseInt(question.correct_response[0][0]) - 1;
+                const cVal = getCorrectResponseVal(question);
+                const cIdx = cVal ? parseInt(cVal) - 1 : 0;
                 cAnsDisplay = `Option ${alphabet[cIdx] || cIdx + 1}`;
             }
 
@@ -1765,13 +1782,12 @@ function loadConsoleQuestion() {
 }
 
 function getFormattedCorrectAnswer(question) {
-    if (question.is_input_type) return question.correct_response[0][0];
-    const correctIndices = question.correct_response[0].map(Number);
-    return correctIndices.map(idx => {
-        // Return letter option matching index
-        const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
-        return alphabet[idx - 1] || idx;
-    }).join(', ');
+    const cVal = getCorrectResponseVal(question);
+    if (!cVal) return 'N/A';
+    if (question.is_input_type) return cVal;
+    const idx = parseInt(cVal);
+    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+    return alphabet[idx - 1] || idx;
 }
 
 function renderMcqInput(parent, qId, options) {
@@ -1793,7 +1809,8 @@ function renderMcqInput(parent, qId, options) {
         
         if (state.runningTest.mode === 'analysis') {
             const uAns = (state.runningTest.answers[qId] || [])[0];
-            const cIdx = (question && question.correct_response && question.correct_response[0]) ? (parseInt(question.correct_response[0][0]) - 1).toString() : '-1';
+            const cVal = getCorrectResponseVal(question);
+            const cIdx = cVal ? (parseInt(cVal) - 1).toString() : '-1';
             const isCorrectIndex = optionVal === cIdx;
             const isUserSelected = uAns === optionVal;
 
