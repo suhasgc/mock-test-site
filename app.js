@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (libBtn) {
             const id = libBtn.getAttribute('data-id');
             const mode = libBtn.getAttribute('data-mode');
-            const targetMock = state.mocks.find(m => m.id === id);
+            const targetMock = findMock(id);
             if (targetMock) {
                 ensureMockDataLoaded(targetMock, () => {
                     promptTestStart(targetMock, mode);
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (dashBtn) {
             const id = dashBtn.getAttribute('data-id');
             const mode = dashBtn.getAttribute('data-mode');
-            const targetMock = state.mocks.find(m => m.id === id);
+            const targetMock = findMock(id);
             if (targetMock) {
                 ensureMockDataLoaded(targetMock, () => {
                     startExamConsole(targetMock, mode);
@@ -1265,7 +1265,7 @@ function promptTestStart(mock, preselectedMode = null) {
 // INTERACTIVE MOCK ANALYSIS & REVIEW CONSOLE ENGINE
 // ==========================================================================
 function startAnalysisConsole(mockId, attemptRecord = null, startQId = null) {
-    const mock = state.mocks.find(m => m.id === mockId || m.name === mockId);
+    const mock = findMock(mockId);
     if (!mock) {
         alert("Mock details not found. Please try again.");
         return;
@@ -1615,7 +1615,7 @@ function renderConsoleSectionTabs(mock) {
 }
 
 function loadConsoleQuestion() {
-    const mock = state.mocks.find(m => m.id === state.runningTest.testId);
+    const mock = findMock(state.runningTest.testId, state.runningTest.testName);
     const run = state.runningTest;
     const currentQuestions = mock.sections[run.currentSection];
     const qId = currentQuestions[run.currentQuestionIndex];
@@ -1791,7 +1791,7 @@ function getFormattedCorrectAnswer(question) {
 }
 
 function renderMcqInput(parent, qId, options) {
-    const mock = state.mocks.find(m => m.id === state.runningTest.testId);
+    const mock = findMock(state.runningTest.testId, state.runningTest.testName);
     const question = (mock && mock.questions) ? mock.questions[qId] : null;
 
     options.forEach((optText, index) => {
@@ -1873,7 +1873,7 @@ function renderMcqInput(parent, qId, options) {
                 // Mark state as answered
                 state.runningTest.questionStates[qId] = 'answered';
                 saveCurrentQuestionTimeSpent();
-                renderPaletteGrid(state.mocks.find(m => m.id === state.runningTest.testId));
+                renderPaletteGrid(findMock(state.runningTest.testId, state.runningTest.testName));
             });
         }
         
@@ -1986,7 +1986,7 @@ function renderDrawingInput(parent, qId) {
 
 function saveCanvasDrawing() {
     const run = state.runningTest;
-    const mock = state.mocks.find(m => m.id === run.testId);
+    const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
     const qList = mock.sections[run.currentSection];
     const qId = qList[run.currentQuestionIndex];
     const q = mock.questions[qId];
@@ -2007,7 +2007,7 @@ function saveCanvasDrawing() {
 
 function saveCurrentQuestionTimeSpent() {
     const run = state.runningTest;
-    const mock = state.mocks.find(m => m.id === run.testId);
+    const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
     const qList = mock.sections[run.currentSection];
     const qId = qList[run.currentQuestionIndex];
     
@@ -2073,7 +2073,7 @@ function bindConsoleNavButtons() {
         saveCurrentQuestionTimeSpent();
         
         const run = state.runningTest;
-        const mock = state.mocks.find(m => m.id === run.testId);
+        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
         const qList = mock.sections[run.currentSection];
         
         // Mark as answered if answer key exists and is not empty
@@ -2131,7 +2131,7 @@ function bindConsoleNavButtons() {
         saveCurrentQuestionTimeSpent();
         
         const run = state.runningTest;
-        const mock = state.mocks.find(m => m.id === run.testId);
+        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
         const qList = mock.sections[run.currentSection];
         const qId = qList[run.currentQuestionIndex];
         
@@ -2145,7 +2145,7 @@ function bindConsoleNavButtons() {
     
     const handleClear = () => {
         const run = state.runningTest;
-        const mock = state.mocks.find(m => m.id === run.testId);
+        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
         const qList = mock.sections[run.currentSection];
         const qId = qList[run.currentQuestionIndex];
         
@@ -2237,7 +2237,7 @@ function startConsoleTimers() {
             if (window.consoleTimerInterval) clearInterval(window.consoleTimerInterval);
             return;
         }
-        const mock = state.mocks.find(m => m.id === run.testId);
+        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
         if (!mock) return;
         
         const timerText = document.getElementById('console-timer-text');
@@ -2335,7 +2335,7 @@ function submitExamConsole() {
     saveCurrentQuestionTimeSpent();
     
     const run = state.runningTest;
-    const mock = state.mocks.find(m => m.id === run.testId);
+    const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
     
     // Compile scores
     let correct = 0;
@@ -2891,6 +2891,16 @@ function matchesSectionName(errSection, filterVal) {
 
 
 // Helper: Smart Mock lookup for Error Log entries
+
+// Global Smart Mock lookup helper for all exam console & event handlers
+function findMock(mockId, mockName) {
+    if (!state.mocks || state.mocks.length === 0) return null;
+    let mock = state.mocks.find(m => (mockId && (m.id === mockId || m.name === mockId)) || (mockName && (m.id === mockName || m.name === mockName)));
+    if (mock) return mock;
+    mock = findMockForError({ testId: mockId, testName: mockName });
+    return mock || null;
+}
+
 function findMockForError(err) {
     if (!err || !state.mocks || state.mocks.length === 0) return null;
     
