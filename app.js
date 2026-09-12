@@ -1617,6 +1617,135 @@ function renderConsoleSectionTabs(mock) {
     });
 }
 
+
+// ==========================================================================
+// EXAM CONSOLE INPUT RENDERERS (MCQ, TITA, DRAWING)
+// ==========================================================================
+function renderMcqInput(container, qId, options) {
+    if (!container) return;
+    container.innerHTML = '';
+    const run = state.runningTest;
+    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const mock = findMock(run.testId, run.testName);
+    const question = findQuestionInMock(mock, qId);
+    const userAnswers = run.answers[qId] || [];
+    const userSelectedIdx = userAnswers.length > 0 ? parseInt(userAnswers[0]) : -1;
+
+    let cVal = getCorrectResponseVal(question);
+    let cIdx = -1;
+    if (cVal) {
+        const p = parseInt(cVal);
+        if (!isNaN(p)) cIdx = (p >= 1 && p <= options.length) ? p - 1 : p;
+    }
+
+    const optsList = document.createElement('div');
+    optsList.className = 'error-card-options-list';
+
+    options.forEach((optText, index) => {
+        const optionEl = document.createElement('div');
+        optionEl.className = 'error-card-option';
+
+        const isUserSelected = (index === userSelectedIdx);
+        const isCorrectIndex = (index === cIdx);
+
+        let circleClass = 'option-circle-icon';
+        let circleContent = alphabet[index];
+        let badge = '';
+
+        if (run.mode === 'analysis' && !run.isReattemptOn) {
+            if (isCorrectIndex) {
+                optionEl.classList.add('correct');
+                circleClass += ' correct';
+                badge = '<span class="badge positive" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
+            } else if (isUserSelected && !isCorrectIndex) {
+                optionEl.classList.add('incorrect');
+                circleClass += ' incorrect';
+                circleContent = '<i class="fa-solid fa-xmark"></i>';
+                badge = '<span class="badge negative" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
+            }
+        } else {
+            // Exam or Practice Mode
+            if (isUserSelected) {
+                optionEl.classList.add('selected');
+                circleClass += ' correct';
+                optionEl.style.borderColor = 'var(--primary)';
+                optionEl.style.backgroundColor = 'rgba(var(--primary-rgb), 0.08)';
+            }
+
+            optionEl.style.cursor = 'pointer';
+            optionEl.onclick = () => {
+                // Deselect others
+                optsList.querySelectorAll('.error-card-option').forEach(o => {
+                    o.classList.remove('selected', 'correct', 'incorrect');
+                    o.style.borderColor = '';
+                    o.style.backgroundColor = '';
+                });
+
+                optionEl.classList.add('selected');
+                optionEl.style.borderColor = 'var(--primary)';
+                optionEl.style.backgroundColor = 'rgba(var(--primary-rgb), 0.08)';
+
+                // Record user choice
+                run.answers[qId] = [index.toString()];
+                if (run.questionStates[qId] !== 'marked' && run.questionStates[qId] !== 'answered-marked') {
+                    run.questionStates[qId] = 'answered';
+                }
+                if (mock) renderPaletteGrid(mock);
+            };
+        }
+
+        optionEl.innerHTML = `
+            <div class="${circleClass}">${circleContent}</div>
+            <div class="option-text">${forceHttpsImages(optText)}</div>
+            ${badge}
+        `;
+        optsList.appendChild(optionEl);
+    });
+
+    container.appendChild(optsList);
+}
+
+function renderTitaInput(container, qId) {
+    if (!container) return;
+    container.innerHTML = '';
+    const run = state.runningTest;
+    const currentVal = (run.answers[qId] || [])[0] || '';
+
+    const titaBox = document.createElement('div');
+    titaBox.className = 'tita-container';
+    titaBox.innerHTML = `
+        <label style="font-weight:600; font-size:0.9rem; margin-bottom:6px; display:block;">Enter your numerical answer below:</label>
+        <input type="text" class="tita-input" id="tita-input-${qId}" value="${currentVal}" placeholder="Type your answer here..." style="padding:12px; font-size:1rem; border-radius:8px; border:1.5px solid var(--border-color); width:100%; max-width:320px;">
+    `;
+
+    container.appendChild(titaBox);
+
+    const inputEl = container.querySelector(`#tita-input-${qId}`);
+    if (inputEl) {
+        inputEl.oninput = () => {
+            const val = inputEl.value.trim();
+            if (val) {
+                run.answers[qId] = [val];
+                if (run.questionStates[qId] !== 'marked' && run.questionStates[qId] !== 'answered-marked') {
+                    run.questionStates[qId] = 'answered';
+                }
+            } else {
+                delete run.answers[qId];
+                if (run.questionStates[qId] === 'answered') {
+                    run.questionStates[qId] = 'not-answered';
+                }
+            }
+            const mock = findMock(run.testId, run.testName);
+            if (mock) renderPaletteGrid(mock);
+        };
+    }
+}
+
+function renderDrawingInput(container, qId) {
+    if (!container) return;
+    container.innerHTML = '<div style="padding:15px; color:var(--text-muted);">Scratchpad drawing mode active. Draw your working steps in the canvas area.</div>';
+}
+
 function loadConsoleQuestion() {
     const run = state.runningTest;
     if (!run || !run.testId) return;
