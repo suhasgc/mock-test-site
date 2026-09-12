@@ -2890,6 +2890,21 @@ function matchesSectionName(errSection, filterVal) {
 }
 
 function renderErrorLog() {
+    // Automatically fetch full mock questions for any errors in vault so options and passages are always available
+    if (state.errors && state.errors.length > 0) {
+        state.errors.forEach(err => {
+            const m = state.mocks.find(x => (x.id === err.testId || x.name === err.testName || x.id === err.testName));
+            if (m && m.sourceFile && (!m.questions || Object.keys(m.questions).length === 0)) {
+                if (!m._isPreloading) {
+                    m._isPreloading = true;
+                    ensureMockDataLoaded(m, () => {
+                        m._isPreloading = false;
+                        renderErrorLog();
+                    });
+                }
+            }
+        });
+    }
     const container = document.getElementById('error-cards-container');
     const examFilterDropdown = document.getElementById('error-filter-exam');
     const searchVal = document.getElementById('error-search').value.toLowerCase();
@@ -2941,7 +2956,7 @@ function renderErrorLog() {
             '<span class="badge-solid reviewing"><i class="fa-solid fa-clock"></i> Reviewing</span>';
             
         // Dynamic Question Lookup from state.mocks to enrich old/existing error items saved in localStorage
-        const mock = state.mocks.find(m => m.id === err.testId || m.name === err.testName);
+        const mock = state.mocks.find(m => m.id === err.testId || m.name === err.testName || m.id === err.testName);
         const q = (mock && mock.questions) ? mock.questions[err.qId] : null;
 
         const realInstructions = err.instructions || (q ? q.instructions : '');
