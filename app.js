@@ -377,25 +377,6 @@ function forceHttpsImages(html) {
     });
 }
 
-
-function getFormattedCorrectAnswer(q) {
-    if (!q) return 'N/A';
-    const cVal = getCorrectResponseVal(q);
-    if (q.is_input_type) {
-        return cVal || 'N/A';
-    }
-    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
-    const p = parseInt(cVal);
-    let cIdx = 0;
-    if (!isNaN(p)) {
-        cIdx = (p >= 1 && q.options && p <= q.options.length) ? p - 1 : p;
-    }
-    const letter = alphabet[cIdx] || (cIdx + 1);
-    const optText = (q.options && q.options[cIdx]) ? q.options[cIdx] : '';
-    return optText ? `Option ${letter}: ${forceHttpsImages(optText)}` : `Option ${letter}`;
-}
-window.getFormattedCorrectAnswer = getFormattedCorrectAnswer;
-
 function getCorrectResponseVal(q) {
     if (!q || !q.correct_response) return '';
     const cr = q.correct_response;
@@ -1284,10 +1265,7 @@ function promptTestStart(mock, preselectedMode = null) {
 // INTERACTIVE MOCK ANALYSIS & REVIEW CONSOLE ENGINE
 // ==========================================================================
 function startAnalysisConsole(mockId, attemptRecord = null, startQId = null) {
-    let mock = state.mocks.find(m => m.id === mockId || m.name === mockId);
-    if (!mock) {
-        mock = findMockForError({ testId: mockId, testName: mockId });
-    }
+    const mock = state.mocks.find(m => m.id === mockId || m.name === mockId);
     if (!mock) {
         alert("Mock details not found. Please try again.");
         return;
@@ -1636,193 +1614,17 @@ function renderConsoleSectionTabs(mock) {
     });
 }
 
-
-// ==========================================================================
-// EXAM CONSOLE INPUT RENDERERS (MCQ, TITA, DRAWING)
-// ==========================================================================
-
-// Global Window Bindings for Input Renderers
-window.renderMcqInput = renderMcqInput;
-window.renderTitaInput = renderTitaInput;
-window.renderDrawingInput = renderDrawingInput;
-
-function renderMcqInput(container, qId, options) {
-    if (!container) return;
-    container.innerHTML = '';
-    const run = state.runningTest;
-    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
-    const mock = findMock(run.testId, run.testName);
-    const question = findQuestionInMock(mock, qId);
-    const userAnswers = run.answers[qId] || [];
-    const userSelectedIdx = userAnswers.length > 0 ? parseInt(userAnswers[0]) : -1;
-
-    let cVal = getCorrectResponseVal(question);
-    let cIdx = -1;
-    if (cVal) {
-        const p = parseInt(cVal);
-        if (!isNaN(p)) cIdx = (p >= 1 && p <= options.length) ? p - 1 : p;
-    }
-
-    const optsList = document.createElement('div');
-    optsList.className = 'error-card-options-list';
-
-    options.forEach((optText, index) => {
-        const optionEl = document.createElement('div');
-        optionEl.className = 'error-card-option';
-
-        const isUserSelected = (index === userSelectedIdx);
-        const isCorrectIndex = (index === cIdx);
-
-        let circleClass = 'option-circle-icon';
-        let circleContent = alphabet[index];
-        let badge = '';
-
-        if (run.mode === 'analysis' && !run.isReattemptOn) {
-            if (isCorrectIndex) {
-                optionEl.classList.add('correct');
-                circleClass += ' correct';
-                badge = '<span class="badge positive" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
-            } else if (isUserSelected && !isCorrectIndex) {
-                optionEl.classList.add('incorrect');
-                circleClass += ' incorrect';
-                circleContent = '<i class="fa-solid fa-xmark"></i>';
-                badge = '<span class="badge negative" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
-            }
-        } else {
-            // Exam or Practice Mode
-            if (isUserSelected) {
-                optionEl.classList.add('selected');
-                circleClass += ' correct';
-                optionEl.style.borderColor = 'var(--primary)';
-                optionEl.style.backgroundColor = 'rgba(var(--primary-rgb), 0.08)';
-            }
-
-            optionEl.style.cursor = 'pointer';
-            optionEl.onclick = () => {
-                // Deselect others
-                optsList.querySelectorAll('.error-card-option').forEach(o => {
-                    o.classList.remove('selected', 'correct', 'incorrect');
-                    o.style.borderColor = '';
-                    o.style.backgroundColor = '';
-                });
-
-                optionEl.classList.add('selected');
-                optionEl.style.borderColor = 'var(--primary)';
-                optionEl.style.backgroundColor = 'rgba(var(--primary-rgb), 0.08)';
-
-                // Record user choice
-                run.answers[qId] = [index.toString()];
-                if (run.questionStates[qId] !== 'marked' && run.questionStates[qId] !== 'answered-marked') {
-                    run.questionStates[qId] = 'answered';
-                }
-                if (mock) renderPaletteGrid(mock);
-            };
-        }
-
-        optionEl.innerHTML = `
-            <div class="${circleClass}">${circleContent}</div>
-            <div class="option-text">${forceHttpsImages(optText)}</div>
-            ${badge}
-        `;
-        optsList.appendChild(optionEl);
-    });
-
-    container.appendChild(optsList);
-}
-
-function renderTitaInput(container, qId) {
-    if (!container) return;
-    container.innerHTML = '';
-    const run = state.runningTest;
-    const currentVal = (run.answers[qId] || [])[0] || '';
-
-    const titaBox = document.createElement('div');
-    titaBox.className = 'tita-container';
-    titaBox.innerHTML = `
-        <label style="font-weight:600; font-size:0.9rem; margin-bottom:6px; display:block;">Enter your numerical answer below:</label>
-        <input type="text" class="tita-input" id="tita-input-${qId}" value="${currentVal}" placeholder="Type your answer here..." style="padding:12px; font-size:1rem; border-radius:8px; border:1.5px solid var(--border-color); width:100%; max-width:320px;">
-    `;
-
-    container.appendChild(titaBox);
-
-    const inputEl = container.querySelector(`#tita-input-${qId}`);
-    if (inputEl) {
-        inputEl.oninput = () => {
-            const val = inputEl.value.trim();
-            if (val) {
-                run.answers[qId] = [val];
-                if (run.questionStates[qId] !== 'marked' && run.questionStates[qId] !== 'answered-marked') {
-                    run.questionStates[qId] = 'answered';
-                }
-            } else {
-                delete run.answers[qId];
-                if (run.questionStates[qId] === 'answered') {
-                    run.questionStates[qId] = 'not-answered';
-                }
-            }
-            const mock = findMock(run.testId, run.testName);
-            if (mock) renderPaletteGrid(mock);
-        };
-    }
-}
-
-function renderDrawingInput(container, qId) {
-    if (!container) return;
-    container.innerHTML = '<div style="padding:15px; color:var(--text-muted);">Scratchpad drawing mode active. Draw your working steps in the canvas area.</div>';
-}
-
 function loadConsoleQuestion() {
+    const mock = state.mocks.find(m => m.id === state.runningTest.testId);
     const run = state.runningTest;
-    if (!run || !run.testId) return;
-
-    let mock = state.mocks.find(m => m.id === run.testId || m.name === run.testName);
-    if (!mock) {
-        mock = findMockForError({ testId: run.testId, testName: run.testName });
-    }
-
-    if (!mock || !mock.sections) {
-        console.error("Mock not found or sections missing for ID:", run.testId);
-        return;
-    }
-
-    // Auto-preload mock questions if sourceFile exists and questions array is empty
-    if (mock.sourceFile && (!mock.questions || Object.keys(mock.questions).length === 0)) {
-        if (!mock._isPreloading) {
-            mock._isPreloading = true;
-            ensureMockDataLoaded(mock, () => {
-                mock._isPreloading = false;
-                loadConsoleQuestion();
-            });
-            return;
-        }
-    }
-
-    // Validate section
-    const secNames = Object.keys(mock.sections);
-    if (secNames.length === 0) return;
-
-    if (!run.currentSection || !mock.sections[run.currentSection]) {
-        run.currentSection = secNames[0];
-    }
-
-    const currentQuestions = mock.sections[run.currentSection] || [];
-    if (run.currentQuestionIndex < 0 || run.currentQuestionIndex >= currentQuestions.length) {
-        run.currentQuestionIndex = 0;
-    }
-
+    const currentQuestions = mock.sections[run.currentSection];
     const qId = currentQuestions[run.currentQuestionIndex];
-    const question = findQuestionInMock(mock, qId) || {
-        marks: 3,
-        negative_marks: 1,
-        question_text: '<div class="no-data" style="padding:20px;">Question details loading or not found in dataset.</div>',
-        options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
-        solution: 'No explanation available.'
-    };
+    const question = mock.questions[qId];
     
     // Update labels
     document.getElementById('current-q-num').textContent = (run.currentQuestionIndex + 1).toString();
-    document.getElementById('q-positive-mark').textContent = `+${question.marks || 3} Correct`;
-    document.getElementById('q-negative-mark').textContent = `-${question.negative_marks || 1} Incorrect`;
+    document.getElementById('q-positive-mark').textContent = `+${question.marks} Correct`;
+    document.getElementById('q-negative-mark').textContent = `-${question.negative_marks} Incorrect`;
     
     // Update PDF Split-Screen source if sectional PDF is defined
     if (mock.category === 'pdf' && mock.pdfFiles && mock.pdfFiles[run.currentSection]) {
@@ -1831,6 +1633,7 @@ function loadConsoleQuestion() {
         const fileNameLabel = document.getElementById('loaded-pdf-name');
         
         const targetPdf = mock.pdfFiles[run.currentSection];
+        // Only update if it is different to prevent iframe reloading/flickering
         if (iframe && iframe.src !== window.location.origin + '/' + targetPdf && iframe.getAttribute('src') !== targetPdf) {
             iframe.src = targetPdf;
             iframe.style.display = 'block';
@@ -1860,7 +1663,7 @@ function loadConsoleQuestion() {
     // Set Question text
     const textContainer = document.getElementById('interactive-question-text');
     if (textContainer) {
-        textContainer.innerHTML = forceHttpsImages(question.question_text || '');
+        textContainer.innerHTML = forceHttpsImages(question.question_text);
     }
     
     // Set Inputs
@@ -1869,11 +1672,14 @@ function loadConsoleQuestion() {
         inputContainer.innerHTML = '';
         
         if (question.is_drawing_type) {
+            // Freehand Canvas Input
             renderDrawingInput(inputContainer, qId);
         } else if (question.is_input_type) {
+            // TITA numerical/text response input
             renderTitaInput(inputContainer, qId);
         } else {
-            renderMcqInput(inputContainer, qId, question.options || ['Option 1', 'Option 2', 'Option 3', 'Option 4']);
+            // Multiple Choice Options
+            renderMcqInput(inputContainer, qId, question.options);
         }
     }
     
@@ -1923,7 +1729,7 @@ function loadConsoleQuestion() {
                         </div>
                         <div class="stat-box">
                             <span class="stat-label">Marks</span>
-                            <span class="stat-value">+${question.marks || 3} / -${question.negative_marks || 1}</span>
+                            <span class="stat-value">+${question.marks} / -${question.negative_marks}</span>
                         </div>
                     </div>
                     <div style="margin-top: 15px; border-top: 1px dashed var(--border-color); padding-top: 12px;">
@@ -1941,16 +1747,279 @@ function loadConsoleQuestion() {
                 </div>
                 <div>${question.solution || 'No explanation provided.'}</div>
             `;
+            
+            // Re-bind click
+            const revealBtn = document.getElementById('btn-reveal-solution');
+            if (revealBtn) {
+                revealBtn.innerHTML = '<i class="fa-solid fa-eye"></i> Show Explanation';
+                revealBtn.onclick = () => {
+                    const isHidden = revealedSolution.style.display === 'none';
+                    if (isHidden) {
+                        revealedSolution.style.display = 'block';
+                        revealBtn.innerHTML = '<i class="fa-solid fa-eye-slash"></i> Hide Explanation';
+                    } else {
+                        revealedSolution.style.display = 'none';
+                        revealBtn.innerHTML = '<i class="fa-solid fa-eye"></i> Show Explanation';
+                    }
+                };
+            }
         } else {
             solutionBox.style.display = 'none';
         }
     }
     
-    // Update Palette Grid
+    // Render palette side buttons grid
     renderPaletteGrid(mock);
+    
+    // Log start time of question
+    run.questionStartTime = Date.now();
+    
+    // Update navigation buttons status (disable prev if first Q)
+    const prevBtn = document.getElementById('btn-prev-question');
+    if (prevBtn) {
+        prevBtn.disabled = run.currentQuestionIndex === 0;
+    }
+}
+
+function getFormattedCorrectAnswer(question) {
+    const cVal = getCorrectResponseVal(question);
+    if (!cVal) return 'N/A';
+    if (question.is_input_type) return cVal;
+    const idx = parseInt(cVal);
+    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+    return alphabet[idx - 1] || idx;
+}
+
+function renderMcqInput(parent, qId, options) {
+    const mock = state.mocks.find(m => m.id === state.runningTest.testId);
+    const question = (mock && mock.questions) ? mock.questions[qId] : null;
+
+    options.forEach((optText, index) => {
+        const optionEl = document.createElement('div');
+        optionEl.className = 'mcq-option';
+        
+        const optionVal = index.toString();
+        const savedAnswer = state.runningTest.answers[qId] || [];
+        const isSelected = savedAnswer.includes(optionVal);
+        
+        if (isSelected) optionEl.classList.add('selected');
+        
+        const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+        const letter = alphabet[index] || (index + 1);
+        
+        if (state.runningTest.mode === 'analysis') {
+            const uAns = (state.runningTest.answers[qId] || [])[0];
+            const cVal = getCorrectResponseVal(question);
+            const cIdx = cVal ? (parseInt(cVal) - 1).toString() : '-1';
+            const isCorrectIndex = optionVal === cIdx;
+            const isUserSelected = uAns === optionVal;
+
+            if (!state.runningTest.isReattemptOn) {
+                // Analysis / View Mode
+                if (isCorrectIndex) {
+                    optionEl.classList.add('correct-option');
+                    optionEl.innerHTML = `
+                        <div class="option-letter">${letter}</div>
+                        <div class="option-text">${forceHttpsImages(optText)}</div>
+                        <span class="badge positive" style="margin-left:auto;"><i class="fa-solid fa-check"></i> Correct Answer</span>
+                    `;
+                } else if (isUserSelected && !isCorrectIndex) {
+                    optionEl.classList.add('incorrect-option');
+                    optionEl.innerHTML = `
+                        <div class="option-letter">${letter}</div>
+                        <div class="option-text">${forceHttpsImages(optText)}</div>
+                        <span class="badge negative" style="margin-left:auto;"><i class="fa-solid fa-xmark"></i> Your Incorrect Choice</span>
+                    `;
+                } else {
+                    optionEl.innerHTML = `
+                        <div class="option-letter">${letter}</div>
+                        <div class="option-text">${forceHttpsImages(optText)}</div>
+                    `;
+                }
+            } else {
+                // Re-attempt Mode
+                optionEl.innerHTML = `
+                    <div class="option-letter">${letter}</div>
+                    <div class="option-text">${forceHttpsImages(optText)}</div>
+                `;
+                optionEl.addEventListener('click', () => {
+                    const allOpts = parent.querySelectorAll('.mcq-option');
+                    allOpts.forEach(o => o.classList.remove('correct-option', 'incorrect-option', 'selected'));
+
+                    if (isCorrectIndex) {
+                        optionEl.classList.add('correct-option');
+                        alert("🎉 Correct Answer! Great job.");
+                    } else {
+                        optionEl.classList.add('incorrect-option');
+                        alert("❌ Incorrect Choice. Check the solution below.");
+                    }
+
+                    const solCard = document.getElementById('practice-solution-box');
+                    if (solCard) solCard.style.display = 'block';
+                });
+            }
+        } else {
+            optionEl.innerHTML = `
+                <div class="option-letter">${letter}</div>
+                <div class="option-text">${forceHttpsImages(optText)}</div>
+            `;
+            optionEl.addEventListener('click', () => {
+                const currentSelected = parent.querySelector('.mcq-option.selected');
+                if (currentSelected) currentSelected.classList.remove('selected');
+                
+                optionEl.classList.add('selected');
+                state.runningTest.answers[qId] = [optionVal];
+                
+                // Mark state as answered
+                state.runningTest.questionStates[qId] = 'answered';
+                saveCurrentQuestionTimeSpent();
+                renderPaletteGrid(state.mocks.find(m => m.id === state.runningTest.testId));
+            });
+        }
+        
+        parent.appendChild(optionEl);
+    });
 }
 
 
+function renderTitaInput(parent, qId) {
+    const container = document.createElement('div');
+    container.className = 'tita-container';
+    
+    const savedVal = state.runningTest.answers[qId] ? state.runningTest.answers[qId][0] : '';
+    
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'tita-input';
+    input.id = 'console-tita-input';
+    input.value = savedVal;
+    input.placeholder = 'Type response using layout below...';
+    
+    // Save response immediately when typing
+    input.addEventListener('input', (e) => {
+        const val = e.target.value.trim();
+        if (val) {
+            state.runningTest.answers[qId] = [val];
+            state.runningTest.questionStates[qId] = 'answered';
+        } else {
+            delete state.runningTest.answers[qId];
+            state.runningTest.questionStates[qId] = 'not-answered';
+        }
+    });
+    
+    // Build custom interactive on-screen numpad popover
+    const keyb = document.createElement('div');
+    keyb.className = 'keyboard-layout';
+    const keys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.', '-', 'Clear', 'Back'];
+    
+    keys.forEach(k => {
+        const kEl = document.createElement('button');
+        kEl.className = 'kbd-key';
+        kEl.textContent = k;
+        
+        kEl.addEventListener('click', () => {
+            if (k === 'Clear') {
+                input.value = '';
+            } else if (k === 'Back') {
+                input.value = input.value.slice(0, -1);
+            } else {
+                input.value += k;
+            }
+            
+            // Dispatch input event to save values
+            input.dispatchEvent(new Event('input'));
+        });
+        
+        keyb.appendChild(kEl);
+    });
+    
+    container.appendChild(input);
+    container.appendChild(keyb);
+    parent.appendChild(container);
+}
+
+function renderDrawingInput(parent, qId) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'drawing-response-container';
+    
+    wrapper.innerHTML = `
+        <div class="canvas-toolbar" id="toolbar-${qId}">
+            <div class="toolbar-group">
+                <label>Brush:</label>
+                <div class="color-swatch black active" title="Black"></div>
+                <div class="color-swatch blue" title="Blue"></div>
+                <div class="color-swatch red" title="Red"></div>
+                <div class="color-swatch green" title="Green"></div>
+            </div>
+            <div class="toolbar-group">
+                <input type="range" class="brush-size-slider" min="1" max="10" value="3" title="Brush Size">
+                <button class="toolbar-btn btn-brush active" title="Draw brush"><i class="fa-solid fa-paintbrush"></i></button>
+                <button class="toolbar-btn btn-eraser" title="Eraser tool"><i class="fa-solid fa-eraser"></i></button>
+            </div>
+            <div class="toolbar-group">
+                <button class="toolbar-btn btn-undo" title="Undo"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                <button class="toolbar-btn btn-redo" title="Redo"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                <button class="toolbar-btn btn-clear-canvas" title="Clear All"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="canvas-viewport">
+            <canvas class="drawing-canvas" id="canvas-${qId}"></canvas>
+        </div>
+    `;
+    parent.appendChild(wrapper);
+    
+    // Wait for insertion in DOM to fetch correct client bounding boxes
+    setTimeout(() => {
+        const canvas = document.getElementById(`canvas-${qId}`);
+        const toolbar = document.getElementById(`toolbar-${qId}`);
+        if (canvas) {
+            state.runningTest.canvasHelper = new CanvasHelper(canvas, toolbar);
+            
+            // Restore saved strokes
+            const savedDrawing = state.runningTest.drawings[qId];
+            if (savedDrawing) {
+                state.runningTest.canvasHelper.loadImage(savedDrawing);
+            }
+        }
+    }, 50);
+}
+
+function saveCanvasDrawing() {
+    const run = state.runningTest;
+    const mock = state.mocks.find(m => m.id === run.testId);
+    const qList = mock.sections[run.currentSection];
+    const qId = qList[run.currentQuestionIndex];
+    const q = mock.questions[qId];
+    
+    if (q.is_drawing_type && run.canvasHelper) {
+        if (!run.canvasHelper.isCanvasBlank()) {
+            const dataUrl = run.canvasHelper.exportImage();
+            run.drawings[qId] = dataUrl;
+            run.answers[qId] = ["drawing"];
+            run.questionStates[qId] = 'answered';
+        } else {
+            delete run.drawings[qId];
+            delete run.answers[qId];
+            run.questionStates[qId] = 'not-answered';
+        }
+    }
+}
+
+function saveCurrentQuestionTimeSpent() {
+    const run = state.runningTest;
+    const mock = state.mocks.find(m => m.id === run.testId);
+    const qList = mock.sections[run.currentSection];
+    const qId = qList[run.currentQuestionIndex];
+    
+    if (run.questionStartTime) {
+        const diff = Math.floor((Date.now() - run.questionStartTime) / 1000);
+        run.timeSpentPerQuestion[qId] = (run.timeSpentPerQuestion[qId] || 0) + diff;
+        run.totalTimeSpent += diff;
+        run.questionStartTime = Date.now(); // reset
+    }
+}
+
+// Side palette display buttons
 function renderPaletteGrid(mock) {
     const grid = document.getElementById('palette-buttons-grid');
     if (!grid) return;
@@ -2004,7 +2073,7 @@ function bindConsoleNavButtons() {
         saveCurrentQuestionTimeSpent();
         
         const run = state.runningTest;
-        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
+        const mock = state.mocks.find(m => m.id === run.testId);
         const qList = mock.sections[run.currentSection];
         
         // Mark as answered if answer key exists and is not empty
@@ -2062,7 +2131,7 @@ function bindConsoleNavButtons() {
         saveCurrentQuestionTimeSpent();
         
         const run = state.runningTest;
-        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
+        const mock = state.mocks.find(m => m.id === run.testId);
         const qList = mock.sections[run.currentSection];
         const qId = qList[run.currentQuestionIndex];
         
@@ -2076,7 +2145,7 @@ function bindConsoleNavButtons() {
     
     const handleClear = () => {
         const run = state.runningTest;
-        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
+        const mock = state.mocks.find(m => m.id === run.testId);
         const qList = mock.sections[run.currentSection];
         const qId = qList[run.currentQuestionIndex];
         
@@ -2168,7 +2237,7 @@ function startConsoleTimers() {
             if (window.consoleTimerInterval) clearInterval(window.consoleTimerInterval);
             return;
         }
-        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
+        const mock = state.mocks.find(m => m.id === run.testId);
         if (!mock) return;
         
         const timerText = document.getElementById('console-timer-text');
@@ -2266,7 +2335,7 @@ function submitExamConsole() {
     saveCurrentQuestionTimeSpent();
     
     const run = state.runningTest;
-    const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
+    const mock = state.mocks.find(m => m.id === run.testId);
     
     // Compile scores
     let correct = 0;
@@ -2729,24 +2798,20 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
             
             if (isUserSelected) optEl.classList.add('selected');
             
-            optEl.className = 'error-card-option';
-            let circleClass = 'option-circle-icon';
-            let circleContent = alphabet[index];
             let statusIcon = '';
-            
             if (isCorrectIndex) {
-                optEl.classList.add('correct');
-                circleClass += ' correct';
-                statusIcon = '<span class="badge positive" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
+                optEl.style.borderColor = 'var(--success)';
+                optEl.style.backgroundColor = 'rgba(16, 185, 129, 0.05)';
+                statusIcon = '<span class="badge positive" style="margin-left:auto;">Correct Answer</span>';
             } else if (isUserSelected && !isCorrectIndex) {
-                optEl.classList.add('incorrect');
-                circleClass += ' incorrect';
-                circleContent = '<i class="fa-solid fa-xmark"></i>';
-                statusIcon = '<span class="badge negative" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
+                optEl.style.borderColor = 'var(--danger)';
+                optEl.style.backgroundColor = 'rgba(239, 68, 68, 0.05)';
+                statusIcon = '<span class="badge negative" style="margin-left:auto;">Your Incorrect Selection</span>';
             }
             
+            const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
             optEl.innerHTML = `
-                <div class="${circleClass}">${circleContent}</div>
+                <div class="option-letter">${alphabet[index]}</div>
                 <div class="option-text">${forceHttpsImages(optText)}</div>
                 ${statusIcon}
             `;
@@ -2826,16 +2891,6 @@ function matchesSectionName(errSection, filterVal) {
 
 
 // Helper: Smart Mock lookup for Error Log entries
-
-// Global Smart Mock lookup helper
-function findMock(mockId, mockName) {
-    if (!state.mocks || state.mocks.length === 0) return null;
-    let mock = state.mocks.find(m => (mockId && (m.id === mockId || m.name === mockId)) || (mockName && (m.id === mockName || m.name === mockName)));
-    if (mock) return mock;
-    mock = findMockForError({ testId: mockId, testName: mockName });
-    return mock || null;
-}
-
 function findMockForError(err) {
     if (!err || !state.mocks || state.mocks.length === 0) return null;
     
@@ -2878,25 +2933,6 @@ function findMockForError(err) {
     });
 
     return mock || null;
-}
-
-// Helper: Smart Question lookup within a Mock object
-function findQuestionInMock(mock, qId) {
-    if (!mock || !mock.questions) return null;
-    if (mock.questions[qId]) return mock.questions[qId];
-    if (mock.questions[String(qId)]) return mock.questions[String(qId)];
-    if (mock.questions[Number(qId)]) return mock.questions[Number(qId)];
-
-    const allQs = Object.values(mock.questions);
-    const found = allQs.find(q => String(q.id) === String(qId) || String(q.qId) === String(qId));
-    if (found) return found;
-
-    const num = parseInt(qId);
-    if (!isNaN(num) && num > 0 && num <= allQs.length) {
-        return allQs[num - 1] || null;
-    }
-
-    return null;
 }
 
 function renderErrorLog() {
@@ -2965,13 +3001,9 @@ function renderErrorLog() {
             '<span class="badge-solid solved"><i class="fa-solid fa-circle-check"></i> Solved</span>' : 
             '<span class="badge-solid reviewing"><i class="fa-solid fa-clock"></i> Reviewing</span>';
             
-        // Smart Dynamic Question & Mock Lookup
+        // Dynamic Question Lookup from state.mocks to enrich old/existing error items saved in localStorage
         const mock = findMockForError(err);
-        const q = findQuestionInMock(mock, err.qId);
-
-        if (q && q.options && q.options.length > 0 && (!err.options || err.options.length === 0)) {
-            err.options = q.options;
-        }
+        const q = (mock && mock.questions) ? mock.questions[err.qId] : null;
 
         const realInstructions = err.instructions || (q ? q.instructions : '');
         const realSolution = err.solution || (q ? q.solution : '');
@@ -3054,23 +3086,16 @@ function renderErrorLog() {
                 let opts = (q && q.options && q.options.length > 0) ? q.options : (err.options && err.options.length > 0 ? err.options : []);
                 const isTita = q ? q.is_input_type : (err.isInputType !== undefined ? err.isInputType : false);
 
-                // Smart Fallback for MCQs if options array is missing
                 if ((!opts || opts.length === 0) && !isTita) {
                     opts = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
                 }
+                const isTita = q ? q.is_input_type : err.isInputType;
 
                 if (opts && opts.length > 0 && !isTita) {
                     const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
                     const cVal = getCorrectResponseVal(q);
-                    let cIdx = -1;
+                    const cIdx = cVal ? (parseInt(cVal) - 1).toString() : '-1';
                     
-                    if (cVal) {
-                        const parsedC = parseInt(cVal);
-                        if (!isNaN(parsedC)) {
-                            cIdx = (parsedC >= 1 && parsedC <= opts.length) ? parsedC - 1 : parsedC;
-                        }
-                    }
-
                     let uAnsIndex = -1;
                     if (err.userAnswerText) {
                         const cleanU = err.userAnswerText.replace(/<[^>]*>/g, '').trim().toLowerCase();
@@ -3078,56 +3103,27 @@ function renderErrorLog() {
                             const cleanO = o.replace(/<[^>]*>/g, '').trim().toLowerCase();
                             return cleanO === cleanU || cleanO.includes(cleanU) || cleanU.includes(cleanO);
                         });
-                        
-                        if (uAnsIndex === -1) {
-                            if (cleanU.includes('option 1') || cleanU === '1' || cleanU === 'a' || cleanU === 'option a') uAnsIndex = 0;
-                            else if (cleanU.includes('option 2') || cleanU === '2' || cleanU === 'b' || cleanU === 'option b') uAnsIndex = 1;
-                            else if (cleanU.includes('option 3') || cleanU === '3' || cleanU === 'c' || cleanU === 'option c') uAnsIndex = 2;
-                            else if (cleanU.includes('option 4') || cleanU === '4' || cleanU === 'd' || cleanU === 'option d') uAnsIndex = 3;
-                        }
-                    }
-
-                    if (cIdx === -1 && err.correctAnswerText) {
-                        const cleanC = err.correctAnswerText.replace(/<[^>]*>/g, '').trim().toLowerCase();
-                        cIdx = opts.findIndex(o => {
-                            const cleanO = o.replace(/<[^>]*>/g, '').trim().toLowerCase();
-                            return cleanO === cleanC || cleanO.includes(cleanC) || cleanC.includes(cleanC);
-                        });
-
-                        if (cIdx === -1) {
-                            if (cleanC.includes('option 1') || cleanC === '1' || cleanC === 'a' || cleanC === 'option a') cIdx = 0;
-                            else if (cleanC.includes('option 2') || cleanC === '2' || cleanC === 'b' || cleanC === 'option b') cIdx = 1;
-                            else if (cleanC.includes('option 3') || cleanC === '3' || cleanC === 'c' || cleanC === 'option c') cIdx = 2;
-                            else if (cleanC.includes('option 4') || cleanC === '4' || cleanC === 'd' || cleanC === 'option d') cIdx = 3;
-                        }
                     }
 
                     let optsHtml = '<div class="error-card-options-list">';
                     opts.forEach((optText, index) => {
-                        const isCorr = (index === cIdx);
-                        const isUserChoice = (index === uAnsIndex);
+                        const isCorr = index.toString() === cIdx || (err.correctAnswerText && forceHttpsImages(optText).trim() === forceHttpsImages(err.correctAnswerText).trim());
+                        const isUserChoice = index === uAnsIndex || (isIncorrect && err.userAnswerText && forceHttpsImages(optText).trim() === forceHttpsImages(err.userAnswerText).trim());
                         
                         let optClass = 'error-card-option';
-                        let circleClass = 'option-circle-icon';
-                        let circleContent = alphabet[index];
                         let badge = '';
-
                         if (isCorr) {
                             optClass += ' correct';
-                            circleClass += ' correct';
-                            circleContent = alphabet[index];
-                            badge = '<span class="badge positive" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
+                            badge = '<span class="badge positive" style="margin-left:auto;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
                         } else if (isUserChoice) {
                             optClass += ' incorrect';
-                            circleClass += ' incorrect';
-                            circleContent = '<i class="fa-solid fa-xmark"></i>';
-                            badge = '<span class="badge negative" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
+                            badge = '<span class="badge negative" style="margin-left:auto;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
                         }
                         
                         optsHtml += `
                             <div class="${optClass}">
-                                <div class="${circleClass}">${circleContent}</div>
-                                <div class="option-text">${forceHttpsImages(optText)}</div>
+                                <span class="option-letter" style="font-weight:bold; width:24px;">${alphabet[index]}.</span>
+                                <span class="option-text">${forceHttpsImages(optText)}</span>
                                 ${badge}
                             </div>
                         `;
