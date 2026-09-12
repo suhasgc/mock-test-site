@@ -334,15 +334,23 @@ function ensureMockDataLoaded(targetMock, callback) {
             if (Array.isArray(data)) {
                 // Consolidated files
                 data.forEach(item => {
-                    const m = state.mocks.find(x => x.id === item.id);
-                    if (m) {
-                        m.sections = item.sections || {};
-                        m.questions = item.questions || {};
-                        m.sectionTimes = item.sectionTimes || {};
-                        if (item.pdfFiles) m.pdfFiles = item.pdfFiles;
-                        sortMockSections(m);
-                    }
+                    const m = state.mocks.find(x => (item.id && (x.id === item.id || x.name === item.id)) || (item.name && (x.id === item.name || x.name === item.name))) || targetMock;
+                    m.sections = item.sections || {};
+                    m.questions = item.questions || {};
+                    m.sectionTimes = item.sectionTimes || m.sectionTimes || {};
+                    if (item.pdfFiles) m.pdfFiles = item.pdfFiles;
+                    sortMockSections(m);
                 });
+                if (!targetMock.questions || Object.keys(targetMock.questions).length === 0) {
+                    const matchItem = data.find(item => item.name === targetMock.name || item.id === targetMock.id) || data[0];
+                    if (matchItem) {
+                        targetMock.sections = matchItem.sections || {};
+                        targetMock.questions = matchItem.questions || {};
+                        targetMock.sectionTimes = matchItem.sectionTimes || {};
+                        if (matchItem.pdfFiles) targetMock.pdfFiles = matchItem.pdfFiles;
+                        sortMockSections(targetMock);
+                    }
+                }
             } else {
                 // Individual mock
                 targetMock.sections = data.sections || {};
