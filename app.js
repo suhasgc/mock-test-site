@@ -726,10 +726,10 @@ function initDashboard() {
     renderDashboardMocks();
     renderDashboardErrors();
     
-    document.getElementById('btn-see-all-mocks').addEventListener('click', () => {
+    document.getElementById('btn-see-all-mocks')?.addEventListener('click', () => {
         switchView('library');
     });
-    document.getElementById('btn-go-to-errors').addEventListener('click', () => {
+    document.getElementById('btn-go-to-errors')?.addEventListener('click', () => {
         switchView('error-log');
     });
 }
@@ -2845,11 +2845,11 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
 // ERROR LOG VAULT SYSTEM
 // ==========================================================================
 function initErrorLog() {
-    document.getElementById('error-search').addEventListener('input', renderErrorLog);
-    document.getElementById('error-filter-exam').addEventListener('change', renderErrorLog);
-    document.getElementById('error-filter-section').addEventListener('change', renderErrorLog);
-    document.getElementById('error-filter-status').addEventListener('change', renderErrorLog);
-    document.getElementById('btn-clear-errors').addEventListener('click', () => {
+    document.getElementById('error-search')?.addEventListener('input', renderErrorLog);
+    document.getElementById('error-filter-exam')?.addEventListener('change', renderErrorLog);
+    document.getElementById('error-filter-section')?.addEventListener('change', renderErrorLog);
+    document.getElementById('error-filter-status')?.addEventListener('change', renderErrorLog);
+    document.getElementById('btn-clear-errors')?.addEventListener('click', () => {
         if (confirm("Are you sure you want to clear your entire Error Log history? This action is permanent.")) {
             state.errors = [];
             saveDatabase();
@@ -3099,7 +3099,6 @@ function renderErrorLog() {
                 if ((!opts || opts.length === 0) && !isTita) {
                     opts = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
                 }
-                const isTita = q ? q.is_input_type : err.isInputType;
 
                 if (opts && opts.length > 0 && !isTita) {
                     const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -3952,7 +3951,7 @@ function renderPostDetail(postId, post) {
         </div>
     </div>`;
 
-    document.getElementById('forum-back-btn').addEventListener('click', closePostDetail);
+    document.getElementById('forum-back-btn')?.addEventListener('click', closePostDetail);
     bindReplyComposer(postId);
 }
 
