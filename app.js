@@ -377,6 +377,25 @@ function forceHttpsImages(html) {
     });
 }
 
+
+function getFormattedCorrectAnswer(q) {
+    if (!q) return 'N/A';
+    const cVal = getCorrectResponseVal(q);
+    if (q.is_input_type) {
+        return cVal || 'N/A';
+    }
+    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const p = parseInt(cVal);
+    let cIdx = 0;
+    if (!isNaN(p)) {
+        cIdx = (p >= 1 && q.options && p <= q.options.length) ? p - 1 : p;
+    }
+    const letter = alphabet[cIdx] || (cIdx + 1);
+    const optText = (q.options && q.options[cIdx]) ? q.options[cIdx] : '';
+    return optText ? `Option ${letter}: ${forceHttpsImages(optText)}` : `Option ${letter}`;
+}
+window.getFormattedCorrectAnswer = getFormattedCorrectAnswer;
+
 function getCorrectResponseVal(q) {
     if (!q || !q.correct_response) return '';
     const cr = q.correct_response;
