@@ -2889,11 +2889,76 @@ function matchesSectionName(errSection, filterVal) {
     return sec.includes(filter);
 }
 
+
+// Helper: Smart Mock lookup for Error Log entries
+function findMockForError(err) {
+    if (!err || !state.mocks || state.mocks.length === 0) return null;
+    
+    // 1. Direct ID or Name match
+    let mock = state.mocks.find(m => m.id === err.testId || m.name === err.testName || m.id === err.testName);
+    if (mock) return mock;
+
+    const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const tIdNorm = norm(err.testId);
+    const tNameNorm = norm(err.testName);
+
+    // 2. Normalized exact match (ignores spaces, casing, punctuation)
+    mock = state.mocks.find(m => {
+        const mIdNorm = norm(m.id);
+        const mNameNorm = norm(m.name);
+        return mIdNorm === tIdNorm || mNameNorm === tNameNorm || mIdNorm === tNameNorm || mNameNorm === tIdNorm;
+    });
+    if (mock) return mock;
+
+    // 3. Smart pattern matching for SimCAT / PreSimCAT / XAT / VARC
+    const isPre = tNameNorm.includes('presim') || tIdNorm.includes('presim');
+    const isSim = (tNameNorm.includes('simcat') || tIdNorm.includes('simcat')) && !isPre;
+
+    mock = state.mocks.find(m => {
+        const mIdNorm = norm(m.id);
+        const mNameNorm = norm(m.name);
+        const mIsPre = mNameNorm.includes('presim') || mIdNorm.includes('presim');
+        const mIsSim = (mNameNorm.includes('simcat') || mIdNorm.includes('simcat')) && !mIsPre;
+
+        if (isPre && !mIsPre) return false;
+        if (isSim && !mIsSim) return false;
+
+        const eNums = (tNameNorm + tIdNorm).match(/\d+/g) || [];
+        const mNums = (mNameNorm + mIdNorm).match(/\d+/g) || [];
+
+        if (eNums.length > 0 && mNums.length > 0) {
+            return eNums.some(n => mNums.includes(n));
+        }
+        return false;
+    });
+
+    return mock || null;
+}
+
+// Helper: Smart Question lookup within a Mock object
+function findQuestionInMock(mock, qId) {
+    if (!mock || !mock.questions) return null;
+    if (mock.questions[qId]) return mock.questions[qId];
+    if (mock.questions[String(qId)]) return mock.questions[String(qId)];
+    if (mock.questions[Number(qId)]) return mock.questions[Number(qId)];
+
+    const allQs = Object.values(mock.questions);
+    const found = allQs.find(q => String(q.id) === String(qId) || String(q.qId) === String(qId));
+    if (found) return found;
+
+    const num = parseInt(qId);
+    if (!isNaN(num) && num > 0 && num <= allQs.length) {
+        return allQs[num - 1] || null;
+    }
+
+    return null;
+}
+
 function renderErrorLog() {
     // Automatically fetch full mock questions for any errors in vault so options and passages are always available
     if (state.errors && state.errors.length > 0) {
         state.errors.forEach(err => {
-            const m = state.mocks.find(x => (x.id === err.testId || x.name === err.testName || x.id === err.testName));
+            const m = findMockForError(err);
             if (m && m.sourceFile && (!m.questions || Object.keys(m.questions).length === 0)) {
                 if (!m._isPreloading) {
                     m._isPreloading = true;
@@ -2955,9 +3020,13 @@ function renderErrorLog() {
             '<span class="badge-solid solved"><i class="fa-solid fa-circle-check"></i> Solved</span>' : 
             '<span class="badge-solid reviewing"><i class="fa-solid fa-clock"></i> Reviewing</span>';
             
-        // Dynamic Question Lookup from state.mocks to enrich old/existing error items saved in localStorage
-        const mock = state.mocks.find(m => m.id === err.testId || m.name === err.testName || m.id === err.testName);
-        const q = (mock && mock.questions) ? mock.questions[err.qId] : null;
+        // Smart Dynamic Question & Mock Lookup
+        const mock = findMockForError(err);
+        const q = findQuestionInMock(mock, err.qId);
+
+        if (q && q.options && q.options.length > 0 && (!err.options || err.options.length === 0)) {
+            err.options = q.options;
+        }
 
         const realInstructions = err.instructions || (q ? q.instructions : '');
         const realSolution = err.solution || (q ? q.solution : '');
@@ -3037,14 +3106,26 @@ function renderErrorLog() {
 
             <!-- OPTIONS LIST FOR MCQs -->
             ${(() => {
-                const opts = (q && q.options && q.options.length > 0) ? q.options : (err.options || []);
-                const isTita = q ? q.is_input_type : err.isInputType;
+                let opts = (q && q.options && q.options.length > 0) ? q.options : (err.options && err.options.length > 0 ? err.options : []);
+                const isTita = q ? q.is_input_type : (err.isInputType !== undefined ? err.isInputType : false);
+
+                // Smart Fallback for MCQs if options array is missing
+                if ((!opts || opts.length === 0) && !isTita) {
+                    opts = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
+                }
 
                 if (opts && opts.length > 0 && !isTita) {
                     const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
                     const cVal = getCorrectResponseVal(q);
-                    const cIdx = cVal ? (parseInt(cVal) - 1).toString() : '-1';
+                    let cIdx = -1;
                     
+                    if (cVal) {
+                        const parsedC = parseInt(cVal);
+                        if (!isNaN(parsedC)) {
+                            cIdx = (parsedC >= 1 && parsedC <= opts.length) ? parsedC - 1 : parsedC;
+                        }
+                    }
+
                     let uAnsIndex = -1;
                     if (err.userAnswerText) {
                         const cleanU = err.userAnswerText.replace(/<[^>]*>/g, '').trim().toLowerCase();
@@ -3052,12 +3133,34 @@ function renderErrorLog() {
                             const cleanO = o.replace(/<[^>]*>/g, '').trim().toLowerCase();
                             return cleanO === cleanU || cleanO.includes(cleanU) || cleanU.includes(cleanO);
                         });
+                        
+                        if (uAnsIndex === -1) {
+                            if (cleanU.includes('option 1') || cleanU === '1' || cleanU === 'a' || cleanU === 'option a') uAnsIndex = 0;
+                            else if (cleanU.includes('option 2') || cleanU === '2' || cleanU === 'b' || cleanU === 'option b') uAnsIndex = 1;
+                            else if (cleanU.includes('option 3') || cleanU === '3' || cleanU === 'c' || cleanU === 'option c') uAnsIndex = 2;
+                            else if (cleanU.includes('option 4') || cleanU === '4' || cleanU === 'd' || cleanU === 'option d') uAnsIndex = 3;
+                        }
+                    }
+
+                    if (cIdx === -1 && err.correctAnswerText) {
+                        const cleanC = err.correctAnswerText.replace(/<[^>]*>/g, '').trim().toLowerCase();
+                        cIdx = opts.findIndex(o => {
+                            const cleanO = o.replace(/<[^>]*>/g, '').trim().toLowerCase();
+                            return cleanO === cleanC || cleanO.includes(cleanC) || cleanC.includes(cleanC);
+                        });
+
+                        if (cIdx === -1) {
+                            if (cleanC.includes('option 1') || cleanC === '1' || cleanC === 'a' || cleanC === 'option a') cIdx = 0;
+                            else if (cleanC.includes('option 2') || cleanC === '2' || cleanC === 'b' || cleanC === 'option b') cIdx = 1;
+                            else if (cleanC.includes('option 3') || cleanC === '3' || cleanC === 'c' || cleanC === 'option c') cIdx = 2;
+                            else if (cleanC.includes('option 4') || cleanC === '4' || cleanC === 'd' || cleanC === 'option d') cIdx = 3;
+                        }
                     }
 
                     let optsHtml = '<div class="error-card-options-list">';
                     opts.forEach((optText, index) => {
-                        const isCorr = index.toString() === cIdx || (err.correctAnswerText && forceHttpsImages(optText).trim() === forceHttpsImages(err.correctAnswerText).trim());
-                        const isUserChoice = index === uAnsIndex || (isIncorrect && err.userAnswerText && forceHttpsImages(optText).trim() === forceHttpsImages(err.userAnswerText).trim());
+                        const isCorr = (index === cIdx);
+                        const isUserChoice = (index === uAnsIndex);
                         
                         let optClass = 'error-card-option';
                         let badge = '';
