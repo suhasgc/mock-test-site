@@ -1394,7 +1394,7 @@ function startAnalysisConsole(mockId, attemptRecord = null, startQId = null) {
         }
 
         // Section Tabs
-        renderSectionTabs(mock);
+        renderConsoleSectionTabs(mock);
 
         // Load Question
         loadConsoleQuestion();
@@ -1416,7 +1416,7 @@ function renderAnalysisSectionTabs(mock) {
         btn.onclick = () => {
             state.runningTest.currentSection = secName;
             state.runningTest.currentQuestionIndex = 0;
-            renderSectionTabs(mock);
+            renderConsoleSectionTabs(mock);
             loadConsoleQuestion();
         };
         tabsContainer.appendChild(btn);
@@ -1850,7 +1850,7 @@ function bindConsoleNavButtons() {
         saveCurrentQuestionTimeSpent();
         
         const run = state.runningTest;
-        const mock = state.mocks.find(m => m.id === run.testId);
+        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
         const qList = mock.sections[run.currentSection];
         
         // Mark as answered if answer key exists and is not empty
@@ -1908,7 +1908,7 @@ function bindConsoleNavButtons() {
         saveCurrentQuestionTimeSpent();
         
         const run = state.runningTest;
-        const mock = state.mocks.find(m => m.id === run.testId);
+        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
         const qList = mock.sections[run.currentSection];
         const qId = qList[run.currentQuestionIndex];
         
@@ -1922,7 +1922,7 @@ function bindConsoleNavButtons() {
     
     const handleClear = () => {
         const run = state.runningTest;
-        const mock = state.mocks.find(m => m.id === run.testId);
+        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
         const qList = mock.sections[run.currentSection];
         const qId = qList[run.currentQuestionIndex];
         
@@ -2014,7 +2014,7 @@ function startConsoleTimers() {
             if (window.consoleTimerInterval) clearInterval(window.consoleTimerInterval);
             return;
         }
-        const mock = state.mocks.find(m => m.id === run.testId);
+        const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
         if (!mock) return;
         
         const timerText = document.getElementById('console-timer-text');
@@ -2112,7 +2112,7 @@ function submitExamConsole() {
     saveCurrentQuestionTimeSpent();
     
     const run = state.runningTest;
-    const mock = state.mocks.find(m => m.id === run.testId);
+    const mock = findMock(run.testId, run.testName); if (!mock || !mock.sections) return;
     
     // Compile scores
     let correct = 0;
@@ -2672,6 +2672,16 @@ function matchesSectionName(errSection, filterVal) {
 
 
 // Helper: Smart Mock lookup for Error Log entries
+
+// Global Smart Mock lookup helper
+function findMock(mockId, mockName) {
+    if (!state.mocks || state.mocks.length === 0) return null;
+    let mock = state.mocks.find(m => (mockId && (m.id === mockId || m.name === mockId)) || (mockName && (m.id === mockName || m.name === mockName)));
+    if (mock) return mock;
+    mock = findMockForError({ testId: mockId, testName: mockName });
+    return mock || null;
+}
+
 function findMockForError(err) {
     if (!err || !state.mocks || state.mocks.length === 0) return null;
     
