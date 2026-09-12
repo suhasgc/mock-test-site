@@ -1375,7 +1375,7 @@ function startAnalysisConsole(mockId, attemptRecord = null, startQId = null) {
         }
 
         // Section Tabs
-        renderAnalysisSectionTabs(mock);
+        renderSectionTabs(mock);
 
         // Load Question
         loadConsoleQuestion();
@@ -1397,7 +1397,7 @@ function renderAnalysisSectionTabs(mock) {
         btn.onclick = () => {
             state.runningTest.currentSection = secName;
             state.runningTest.currentQuestionIndex = 0;
-            renderAnalysisSectionTabs(mock);
+            renderSectionTabs(mock);
             loadConsoleQuestion();
         };
         tabsContainer.appendChild(btn);
@@ -1775,6 +1775,9 @@ function getFormattedCorrectAnswer(question) {
 }
 
 function renderMcqInput(parent, qId, options) {
+    const mock = state.mocks.find(m => m.id === state.runningTest.testId);
+    const question = (mock && mock.questions) ? mock.questions[qId] : null;
+
     options.forEach((optText, index) => {
         const optionEl = document.createElement('div');
         optionEl.className = 'mcq-option';
@@ -1788,14 +1791,9 @@ function renderMcqInput(parent, qId, options) {
         const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
         const letter = alphabet[index] || (index + 1);
         
-        optionEl.innerHTML = `
-            <div class="option-letter">${letter}</div>
-            <div class="option-text">${forceHttpsImages(optText)}</div>
-        `;
-        
         if (state.runningTest.mode === 'analysis') {
             const uAns = (state.runningTest.answers[qId] || [])[0];
-            const cIdx = (parseInt(question.correct_response[0][0]) - 1).toString();
+            const cIdx = (question && question.correct_response && question.correct_response[0]) ? (parseInt(question.correct_response[0][0]) - 1).toString() : '-1';
             const isCorrectIndex = optionVal === cIdx;
             const isUserSelected = uAns === optionVal;
 
@@ -1815,9 +1813,18 @@ function renderMcqInput(parent, qId, options) {
                         <div class="option-text">${forceHttpsImages(optText)}</div>
                         <span class="badge negative" style="margin-left:auto;"><i class="fa-solid fa-xmark"></i> Your Incorrect Choice</span>
                     `;
+                } else {
+                    optionEl.innerHTML = `
+                        <div class="option-letter">${letter}</div>
+                        <div class="option-text">${forceHttpsImages(optText)}</div>
+                    `;
                 }
             } else {
                 // Re-attempt Mode
+                optionEl.innerHTML = `
+                    <div class="option-letter">${letter}</div>
+                    <div class="option-text">${forceHttpsImages(optText)}</div>
+                `;
                 optionEl.addEventListener('click', () => {
                     const allOpts = parent.querySelectorAll('.mcq-option');
                     allOpts.forEach(o => o.classList.remove('correct-option', 'incorrect-option', 'selected'));
@@ -1835,6 +1842,10 @@ function renderMcqInput(parent, qId, options) {
                 });
             }
         } else {
+            optionEl.innerHTML = `
+                <div class="option-letter">${letter}</div>
+                <div class="option-text">${forceHttpsImages(optText)}</div>
+            `;
             optionEl.addEventListener('click', () => {
                 const currentSelected = parent.querySelector('.mcq-option.selected');
                 if (currentSelected) currentSelected.classList.remove('selected');
@@ -1852,6 +1863,7 @@ function renderMcqInput(parent, qId, options) {
         parent.appendChild(optionEl);
     });
 }
+
 
 function renderTitaInput(parent, qId) {
     const container = document.createElement('div');
