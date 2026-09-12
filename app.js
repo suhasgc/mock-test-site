@@ -1621,6 +1621,12 @@ function renderConsoleSectionTabs(mock) {
 // ==========================================================================
 // EXAM CONSOLE INPUT RENDERERS (MCQ, TITA, DRAWING)
 // ==========================================================================
+
+// Global Window Bindings for Input Renderers
+window.renderMcqInput = renderMcqInput;
+window.renderTitaInput = renderTitaInput;
+window.renderDrawingInput = renderDrawingInput;
+
 function renderMcqInput(container, qId, options) {
     if (!container) return;
     container.innerHTML = '';
@@ -3129,9 +3135,6 @@ function renderErrorLog() {
             </div>
             
             <div class="error-card-actions">
-                <button class="action-btn primary small btn-open-analysis-card" data-test="${err.testId}" data-qid="${err.qId}">
-                    <i class="fa-solid fa-microscope"></i> Analyze in Mock Console
-                </button>
                 <button class="action-btn secondary small btn-toggle-solved" data-id="${err.id}">
                     <i class="fa-solid ${err.solved ? 'fa-rotate-left' : 'fa-check'}"></i> 
                     ${err.solved ? 'Mark Reviewing' : 'Mark as Solved'}
@@ -3168,15 +3171,7 @@ function renderErrorLog() {
             renderErrorLog();
         };
         
-        // Analyze in Mock Console
-        const analyzeBtn = card.querySelector('.btn-open-analysis-card');
-        if (analyzeBtn) {
-            analyzeBtn.onclick = () => {
-                const testId = analyzeBtn.getAttribute('data-test');
-                const qId = analyzeBtn.getAttribute('data-qid');
-                startAnalysisConsole(testId, null, qId);
-            };
-        }
+
 
         // Delete item
         card.querySelector('.btn-delete-error').onclick = () => {
