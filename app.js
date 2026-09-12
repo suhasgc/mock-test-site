@@ -2798,20 +2798,24 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
             
             if (isUserSelected) optEl.classList.add('selected');
             
+            optEl.className = 'error-card-option';
+            let circleClass = 'option-circle-icon';
+            let circleContent = alphabet[index];
             let statusIcon = '';
+            
             if (isCorrectIndex) {
-                optEl.style.borderColor = 'var(--success)';
-                optEl.style.backgroundColor = 'rgba(16, 185, 129, 0.05)';
-                statusIcon = '<span class="badge positive" style="margin-left:auto;">Correct Answer</span>';
+                optEl.classList.add('correct');
+                circleClass += ' correct';
+                statusIcon = '<span class="badge positive" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
             } else if (isUserSelected && !isCorrectIndex) {
-                optEl.style.borderColor = 'var(--danger)';
-                optEl.style.backgroundColor = 'rgba(239, 68, 68, 0.05)';
-                statusIcon = '<span class="badge negative" style="margin-left:auto;">Your Incorrect Selection</span>';
+                optEl.classList.add('incorrect');
+                circleClass += ' incorrect';
+                circleContent = '<i class="fa-solid fa-xmark"></i>';
+                statusIcon = '<span class="badge negative" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
             }
             
-            const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
             optEl.innerHTML = `
-                <div class="option-letter">${alphabet[index]}</div>
+                <div class="${circleClass}">${circleContent}</div>
                 <div class="option-text">${forceHttpsImages(optText)}</div>
                 ${statusIcon}
             `;
@@ -3163,19 +3167,26 @@ function renderErrorLog() {
                         const isUserChoice = (index === uAnsIndex);
                         
                         let optClass = 'error-card-option';
+                        let circleClass = 'option-circle-icon';
+                        let circleContent = alphabet[index];
                         let badge = '';
+
                         if (isCorr) {
                             optClass += ' correct';
-                            badge = '<span class="badge positive" style="margin-left:auto;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
+                            circleClass += ' correct';
+                            circleContent = alphabet[index];
+                            badge = '<span class="badge positive" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
                         } else if (isUserChoice) {
                             optClass += ' incorrect';
-                            badge = '<span class="badge negative" style="margin-left:auto;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
+                            circleClass += ' incorrect';
+                            circleContent = '<i class="fa-solid fa-xmark"></i>';
+                            badge = '<span class="badge negative" style="margin-left:auto; flex-shrink:0;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
                         }
                         
                         optsHtml += `
                             <div class="${optClass}">
-                                <span class="option-letter" style="font-weight:bold; width:24px;">${alphabet[index]}.</span>
-                                <span class="option-text">${forceHttpsImages(optText)}</span>
+                                <div class="${circleClass}">${circleContent}</div>
+                                <div class="option-text">${forceHttpsImages(optText)}</div>
                                 ${badge}
                             </div>
                         `;
