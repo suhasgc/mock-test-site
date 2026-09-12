@@ -4388,3 +4388,158 @@ body.in-exam-mode .support-float-btn,
     border-radius: 6px;
     border: 1px solid rgba(99, 102, 241, 0.3);
 }
+
+
+/* ==========================================================================
+   INTERACTIVE ANALYSIS CONSOLE & RE-ATTEMPT STYLES
+   ========================================================================== */
+
+/* Re-attempt Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--border-color);
+    transition: .3s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+}
+
+input:checked + .slider {
+    background-color: var(--primary);
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 24px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Palette Buttons in Analysis Mode */
+.palette-btn.correct {
+    background-color: rgba(16, 185, 129, 0.85) !important;
+    color: #ffffff !important;
+    border-color: var(--success) !important;
+}
+
+.palette-btn.incorrect {
+    background-color: rgba(239, 68, 68, 0.85) !important;
+    color: #ffffff !important;
+    border-color: var(--danger) !important;
+}
+
+.palette-btn.unattempted {
+    background-color: rgba(148, 163, 184, 0.2) !important;
+    color: var(--text-secondary) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Option States in Review / Analysis Mode */
+.mcq-option.correct-option {
+    border-color: var(--success) !important;
+    background-color: rgba(16, 185, 129, 0.08) !important;
+}
+
+.mcq-option.incorrect-option {
+    border-color: var(--danger) !important;
+    background-color: rgba(239, 68, 68, 0.08) !important;
+}
+
+/* Question Analysis Card in Console */
+.question-analysis-card {
+    background: var(--bg-app);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+.analysis-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.stat-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.stat-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.stat-value.positive { color: var(--success); }
+.stat-value.negative { color: var(--danger); }
+
+/* Error Log Options Container */
+.error-card-options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.error-card-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-app);
+    font-size: 0.88rem;
+}
+
+.error-card-option.correct {
+    border-color: var(--success);
+    background: rgba(16, 185, 129, 0.06);
+}
+
+.error-card-option.incorrect {
+    border-color: var(--danger);
+    background: rgba(239, 68, 68, 0.06);
+}

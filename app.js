@@ -1248,6 +1248,163 @@ function promptTestStart(mock, preselectedMode = null) {
     }
 }
 
+
+// ==========================================================================
+// INTERACTIVE MOCK ANALYSIS & REVIEW CONSOLE ENGINE
+// ==========================================================================
+function startAnalysisConsole(mockId, attemptRecord = null, startQId = null) {
+    const mock = state.mocks.find(m => m.id === mockId || m.name === mockId);
+    if (!mock) {
+        alert("Mock details not found. Please try again.");
+        return;
+    }
+
+    ensureMockDataLoaded(mock, () => {
+        const consoleView = document.getElementById('exam-console');
+        const appDiv = document.getElementById('app-container');
+        if (!consoleView) return;
+
+        // Find attempt record if not passed
+        if (!attemptRecord) {
+            attemptRecord = state.attempts.slice().reverse().find(a => a.testId === mock.id || a.testName === mock.name);
+        }
+
+        const answers = attemptRecord ? (attemptRecord.answers || {}) : {};
+        const timeSpent = attemptRecord ? (attemptRecord.timeSpentPerQuestion || {}) : {};
+
+        // Find section containing startQId if provided
+        let targetSec = Object.keys(mock.sections)[0];
+        let targetQIndex = 0;
+
+        if (startQId) {
+            for (const secName of Object.keys(mock.sections)) {
+                const qList = mock.sections[secName];
+                const idx = qList.map(String).indexOf(String(startQId));
+                if (idx !== -1) {
+                    targetSec = secName;
+                    targetQIndex = idx;
+                    break;
+                }
+            }
+        }
+
+        // Setup running state in analysis mode
+        state.runningTest = {
+            testId: mock.id,
+            testName: mock.name,
+            type: mock.type,
+            category: mock.category || 'full',
+            mode: 'analysis',
+            attemptRecord: attemptRecord,
+            isReattemptOn: false,
+            
+            currentSection: targetSec,
+            currentQuestionIndex: targetQIndex,
+            
+            answers: answers,
+            drawings: attemptRecord ? (attemptRecord.drawings || {}) : {},
+            
+            totalTimeSpent: attemptRecord ? (attemptRecord.totalTimeSpent || 0) : 0,
+            sectionTimeLeft: {},
+            overallTimeLeft: 0,
+            timeSpentPerQuestion: timeSpent,
+            pdfZoom: 100,
+            
+            infractions: 0,
+            isFullscreenActive: false,
+            questionStates: {},
+            canvasHelper: null
+        };
+
+        // Populate questionStates based on actual attempt answers & correctness
+        Object.keys(mock.questions).forEach(qId => {
+            const q = mock.questions[qId];
+            const uAns = answers[qId];
+            if (!uAns || uAns.length === 0 || uAns[0] === '' || uAns[0] === 'No Answer') {
+                state.runningTest.questionStates[qId] = 'unattempted';
+            } else {
+                let isCorrect = false;
+                if (q.is_input_type) {
+                    isCorrect = String(uAns[0]).trim().toLowerCase() === String(q.correct_response[0][0]).trim().toLowerCase();
+                } else {
+                    const cIdx = (parseInt(q.correct_response[0][0]) - 1).toString();
+                    isCorrect = String(uAns[0]) === cIdx;
+                }
+                state.runningTest.questionStates[qId] = isCorrect ? 'correct' : 'incorrect';
+            }
+        });
+
+        // Set UI elements
+        if (appDiv) appDiv.style.display = 'none';
+        consoleView.style.display = 'flex';
+        
+        document.getElementById('exam-title-display').textContent = mock.name;
+        document.getElementById('console-mode-label').textContent = 'Untimed Analysis Mode';
+        document.getElementById('exam-badge-type').textContent = 'MOCK ANALYSIS';
+
+        // Hide timer and proctoring
+        const timerWidget = document.getElementById('console-timer-widget');
+        if (timerWidget) timerWidget.style.display = 'none';
+
+        const proctorDot = document.getElementById('proctor-dot');
+        if (proctorDot && proctorDot.parentElement) proctorDot.parentElement.style.display = 'none';
+
+        // Display Re-attempt toggle
+        const reattemptContainer = document.getElementById('analysis-reattempt-container');
+        const reattemptCheckbox = document.getElementById('analysis-reattempt-checkbox');
+        if (reattemptContainer) reattemptContainer.style.display = 'flex';
+        if (reattemptCheckbox) {
+            reattemptCheckbox.checked = false;
+            reattemptCheckbox.onchange = (e) => {
+                state.runningTest.isReattemptOn = e.target.checked;
+                loadConsoleQuestion();
+            };
+        }
+
+        // Configure Exit button
+        const exitBtn = document.getElementById('btn-console-submit');
+        if (exitBtn) {
+            exitBtn.innerHTML = '<i class="fa-solid fa-xmark"></i> Exit Analysis';
+            exitBtn.onclick = () => {
+                if (confirm("Exit Mock Analysis Mode?")) {
+                    consoleView.style.display = 'none';
+                    if (appDiv) appDiv.style.display = 'flex';
+                    window.location.hash = '#error-log';
+                }
+            };
+        }
+
+        // Section Tabs
+        renderAnalysisSectionTabs(mock);
+
+        // Load Question
+        loadConsoleQuestion();
+    });
+}
+
+function renderAnalysisSectionTabs(mock) {
+    const tabsContainer = document.getElementById('exam-sections-tabs-container');
+    if (!tabsContainer) return;
+    tabsContainer.innerHTML = '';
+
+    const sectionNames = Object.keys(mock.sections);
+    sectionNames.forEach(secName => {
+        const btn = document.createElement('button');
+        btn.className = 'section-tab-btn';
+        if (secName === state.runningTest.currentSection) btn.classList.add('active');
+        btn.textContent = secName;
+
+        btn.onclick = () => {
+            state.runningTest.currentSection = secName;
+            state.runningTest.currentQuestionIndex = 0;
+            renderAnalysisSectionTabs(mock);
+            loadConsoleQuestion();
+        };
+        tabsContainer.appendChild(btn);
+    });
+}
+
+
 // ==========================================================================
 // THE EXAM CONSOLE MODULE
 // ==========================================================================
@@ -1510,11 +1667,61 @@ function loadConsoleQuestion() {
         }
     }
     
-    // Check if we are in practice mode, show solution toggle box
+    // Check if we are in practice or analysis mode, show solution box
     const solutionBox = document.getElementById('practice-solution-box');
     const revealedSolution = document.getElementById('revealed-solution-content');
     if (solutionBox && revealedSolution) {
-        if (run.mode === 'practice') {
+        if (run.mode === 'analysis') {
+            solutionBox.style.display = 'block';
+            revealedSolution.style.display = run.isReattemptOn ? 'none' : 'block';
+
+            const uAns = (run.answers[qId] || [])[0];
+            let uAnsDisplay = uAns || 'Unattempted';
+            if (!question.is_input_type && uAns && uAns !== 'Unattempted') {
+                const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+                uAnsDisplay = `Option ${alphabet[parseInt(uAns)] || uAns}`;
+            }
+
+            let cAnsDisplay = '';
+            if (question.is_input_type) {
+                cAnsDisplay = question.correct_response[0][0];
+            } else {
+                const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+                const cIdx = parseInt(question.correct_response[0][0]) - 1;
+                cAnsDisplay = `Option ${alphabet[cIdx] || cIdx + 1}`;
+            }
+
+            const timeSpentSecs = run.timeSpentPerQuestion[qId] || 0;
+            const timeFormatted = formatTimeSpent(timeSpentSecs);
+
+            revealedSolution.innerHTML = `
+                <div class="question-analysis-card glass">
+                    <h4><i class="fa-solid fa-chart-simple"></i> Question Performance Analysis</h4>
+                    <div class="analysis-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Your Response</span>
+                            <span class="stat-value ${uAnsDisplay === cAnsDisplay ? 'positive' : (uAnsDisplay === 'Unattempted' ? '' : 'negative')}">${uAnsDisplay}</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Correct Key</span>
+                            <span class="stat-value positive">${cAnsDisplay}</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Your Time Spent</span>
+                            <span class="stat-value">${timeFormatted}</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Marks</span>
+                            <span class="stat-value">+${question.marks} / -${question.negative_marks}</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; border-top: 1px dashed var(--border-color); padding-top: 12px;">
+                        <h5><i class="fa-solid fa-file-lines"></i> Detailed Explanation & Solution</h5>
+                        <div style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary); margin-top: 8px;">${forceHttpsImages(question.solution || 'No detailed solution available.')}</div>
+                    </div>
+                </div>
+            `;
+        } else if (run.mode === 'practice') {
             solutionBox.style.display = 'block';
             revealedSolution.style.display = 'none';
             revealedSolution.innerHTML = `
@@ -1586,18 +1793,61 @@ function renderMcqInput(parent, qId, options) {
             <div class="option-text">${forceHttpsImages(optText)}</div>
         `;
         
-        optionEl.addEventListener('click', () => {
-            const currentSelected = parent.querySelector('.mcq-option.selected');
-            if (currentSelected) currentSelected.classList.remove('selected');
-            
-            optionEl.classList.add('selected');
-            state.runningTest.answers[qId] = [optionVal];
-            
-            // Mark state as answered
-            state.runningTest.questionStates[qId] = 'answered';
-            saveCurrentQuestionTimeSpent();
-            renderPaletteGrid(state.mocks.find(m => m.id === state.runningTest.testId));
-        });
+        if (state.runningTest.mode === 'analysis') {
+            const uAns = (state.runningTest.answers[qId] || [])[0];
+            const cIdx = (parseInt(question.correct_response[0][0]) - 1).toString();
+            const isCorrectIndex = optionVal === cIdx;
+            const isUserSelected = uAns === optionVal;
+
+            if (!state.runningTest.isReattemptOn) {
+                // Analysis / View Mode
+                if (isCorrectIndex) {
+                    optionEl.classList.add('correct-option');
+                    optionEl.innerHTML = `
+                        <div class="option-letter">${letter}</div>
+                        <div class="option-text">${forceHttpsImages(optText)}</div>
+                        <span class="badge positive" style="margin-left:auto;"><i class="fa-solid fa-check"></i> Correct Answer</span>
+                    `;
+                } else if (isUserSelected && !isCorrectIndex) {
+                    optionEl.classList.add('incorrect-option');
+                    optionEl.innerHTML = `
+                        <div class="option-letter">${letter}</div>
+                        <div class="option-text">${forceHttpsImages(optText)}</div>
+                        <span class="badge negative" style="margin-left:auto;"><i class="fa-solid fa-xmark"></i> Your Incorrect Choice</span>
+                    `;
+                }
+            } else {
+                // Re-attempt Mode
+                optionEl.addEventListener('click', () => {
+                    const allOpts = parent.querySelectorAll('.mcq-option');
+                    allOpts.forEach(o => o.classList.remove('correct-option', 'incorrect-option', 'selected'));
+
+                    if (isCorrectIndex) {
+                        optionEl.classList.add('correct-option');
+                        alert("🎉 Correct Answer! Great job.");
+                    } else {
+                        optionEl.classList.add('incorrect-option');
+                        alert("❌ Incorrect Choice. Check the solution below.");
+                    }
+
+                    const solCard = document.getElementById('practice-solution-box');
+                    if (solCard) solCard.style.display = 'block';
+                });
+            }
+        } else {
+            optionEl.addEventListener('click', () => {
+                const currentSelected = parent.querySelector('.mcq-option.selected');
+                if (currentSelected) currentSelected.classList.remove('selected');
+                
+                optionEl.classList.add('selected');
+                state.runningTest.answers[qId] = [optionVal];
+                
+                // Mark state as answered
+                state.runningTest.questionStates[qId] = 'answered';
+                saveCurrentQuestionTimeSpent();
+                renderPaletteGrid(state.mocks.find(m => m.id === state.runningTest.testId));
+            });
+        }
         
         parent.appendChild(optionEl);
     });
@@ -1751,7 +2001,11 @@ function renderPaletteGrid(mock) {
     
     qIds.forEach((qId, idx) => {
         const btn = document.createElement('button');
-        const qState = run.questionStates[qId] || 'not-visited';
+        let qState = run.questionStates[qId] || 'not-visited';
+        
+        if (run.mode === 'analysis') {
+            qState = run.questionStates[qId] || 'unattempted';
+        }
         
         btn.className = `palette-btn ${qState}`;
         if (run.currentQuestionIndex === idx) btn.classList.add('active');
@@ -2730,20 +2984,57 @@ function renderErrorLog() {
             <!-- FULL PASSAGE / SET CONTEXT (IF APPLICABLE) -->
             ${passageHtml}
 
-            <!-- QUESTION PROMPT -->
+            <!-- QUESTION PROMPT & OPTIONS BREAKDOWN -->
             <div class="error-question-block">
                 <h5><i class="fa-solid fa-circle-question"></i> Question Prompt</h5>
                 <div class="content">${forceHttpsImages(err.questionText)}</div>
             </div>
-            
-            <div class="error-user-answer">
-                <span class="ans-label">Your Response:</span>
-                <span>${forceHttpsImages(err.userAnswerText || 'No answer recorded')}</span>
-            </div>
-            <div class="error-correct-answer">
-                <span class="ans-label">Correct Solution:</span>
-                <span>${forceHttpsImages(err.correctAnswerText)}</span>
-            </div>
+
+            <!-- OPTIONS LIST FOR MCQs -->
+            ${(() => {
+                if (q && q.options && q.options.length > 0 && !q.is_input_type) {
+                    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+                    const cIdx = (parseInt(q.correct_response[0][0]) - 1).toString();
+                    const uAnsIndex = err.userAnswerText ? q.options.findIndex(o => forceHttpsImages(o).trim() === forceHttpsImages(err.userAnswerText).trim()) : -1;
+                    
+                    let optsHtml = '<div class="error-card-options-list">';
+                    q.options.forEach((optText, index) => {
+                        const isCorr = index.toString() === cIdx;
+                        const isUserChoice = index === uAnsIndex || (err.userAnswerText && err.userAnswerText.includes(alphabet[index]));
+                        
+                        let optClass = 'error-card-option';
+                        let badge = '';
+                        if (isCorr) {
+                            optClass += ' correct';
+                            badge = '<span class="badge positive" style="margin-left:auto;"><i class="fa-solid fa-check"></i> Correct Answer</span>';
+                        } else if (isUserChoice) {
+                            optClass += ' incorrect';
+                            badge = '<span class="badge negative" style="margin-left:auto;"><i class="fa-solid fa-xmark"></i> Your Choice</span>';
+                        }
+                        
+                        optsHtml += `
+                            <div class="${optClass}">
+                                <span class="option-letter" style="font-weight:bold; width:24px;">${alphabet[index]}.</span>
+                                <span class="option-text">${forceHttpsImages(optText)}</span>
+                                ${badge}
+                            </div>
+                        `;
+                    });
+                    optsHtml += '</div>';
+                    return optsHtml;
+                } else {
+                    return `
+                        <div class="error-user-answer">
+                            <span class="ans-label">Your Response:</span>
+                            <span>${forceHttpsImages(err.userAnswerText || 'No answer recorded')}</span>
+                        </div>
+                        <div class="error-correct-answer">
+                            <span class="ans-label">Correct Solution:</span>
+                            <span>${forceHttpsImages(err.correctAnswerText)}</span>
+                        </div>
+                    `;
+                }
+            })()}
             
             <div class="error-user-notes">
                 <h5><i class="fa-solid fa-pen-to-square"></i> My Study Notes (Concepts / Formulas / Mistakes)</h5>
@@ -2751,6 +3042,9 @@ function renderErrorLog() {
             </div>
             
             <div class="error-card-actions">
+                <button class="action-btn primary small btn-open-analysis-card" data-test="${err.testId}" data-qid="${err.qId}">
+                    <i class="fa-solid fa-microscope"></i> Analyze in Mock Console
+                </button>
                 <button class="action-btn secondary small btn-toggle-solved" data-id="${err.id}">
                     <i class="fa-solid ${err.solved ? 'fa-rotate-left' : 'fa-check'}"></i> 
                     ${err.solved ? 'Mark Reviewing' : 'Mark as Solved'}
@@ -2787,6 +3081,16 @@ function renderErrorLog() {
             renderErrorLog();
         };
         
+        // Analyze in Mock Console
+        const analyzeBtn = card.querySelector('.btn-open-analysis-card');
+        if (analyzeBtn) {
+            analyzeBtn.onclick = () => {
+                const testId = analyzeBtn.getAttribute('data-test');
+                const qId = analyzeBtn.getAttribute('data-qid');
+                startAnalysisConsole(testId, null, qId);
+            };
+        }
+
         // Delete item
         card.querySelector('.btn-delete-error').onclick = () => {
             if (confirm("Delete this question from your Error Log?")) {
