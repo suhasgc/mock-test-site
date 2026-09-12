@@ -231,6 +231,15 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+                const viewScorecardBtn = e.target.closest('.btn-view-report, .btn-view-scorecard, [data-action="view-scorecard"], .sb-row[data-id]');
+        if (viewScorecardBtn) {
+            const attemptId = viewScorecardBtn.getAttribute('data-id') || viewScorecardBtn.getAttribute('data-attempt-id');
+            if (attemptId) {
+                openScorecardReport(attemptId);
+            }
+            return;
+        }
+
         const dashBtn = e.target.closest('.btn-start-mock');
         if (dashBtn) {
             const id = dashBtn.getAttribute('data-id');
@@ -1246,6 +1255,9 @@ function updateSidebarScoreboard() {
 
         const row = document.createElement('div');
         row.className = 'sb-row';
+        row.setAttribute('data-id', att.attemptId);
+        row.style.cursor = 'pointer';
+        row.title = 'Click to view scorecard for ' + att.testName;
         row.innerHTML = `
             <div class="sb-row-name" title="${att.testName}">${att.testName}</div>
             <div class="sb-row-meta">
@@ -2510,6 +2522,32 @@ function submitExamConsole() {
 // ==========================================================================
 // RESULTS REPORT PAGE CONTROLLER
 // ==========================================================================
+
+function openScorecardReport(attemptId) {
+    if (!attemptId) return;
+    const record = state.attempts.find(att => att.attemptId === attemptId || att.id === attemptId || String(att.attemptId) === String(attemptId));
+    if (!record) {
+        alert("Scorecard details not found for this attempt.");
+        return;
+    }
+
+    let mock = findMock(record.testId, record.testName);
+    if (!mock) {
+        mock = {
+            id: record.testId,
+            name: record.testName,
+            type: record.type || 'cat',
+            category: record.category || 'full',
+            sections: {},
+            questions: {}
+        };
+    }
+
+    ensureMockDataLoaded(mock, () => {
+        showResultsPage(record, mock);
+    });
+}
+
 function showResultsPage(record, mock) {
     const resultsView = document.getElementById('results-view');
     if (!resultsView) return;
@@ -2606,12 +2644,16 @@ function renderResultsCharts(record, mock) {
     
     // Flatten question list of attempt
     const questionsList = [];
-    Object.keys(mock.sections).forEach(sec => {
-        mock.sections[sec].forEach((qId, idx) => {
-            const time = record.timeSpentPerQuestion[qId] || 0;
-            questionsList.push({ qId, index: idx + 1, time });
+    if (mock && mock.sections) {
+        Object.keys(mock.sections).forEach(sec => {
+            if (Array.isArray(mock.sections[sec])) {
+                mock.sections[sec].forEach((qId, idx) => {
+                    const time = (record.timeSpentPerQuestion && record.timeSpentPerQuestion[qId]) || 0;
+                    questionsList.push({ qId, index: idx + 1, time });
+                });
+            }
         });
-    });
+    }
     
     if (questionsList.length === 0) return;
     
@@ -2666,31 +2708,34 @@ function renderResultsReviewTabs(record, mock) {
     
     tabsContainer.innerHTML = '';
     
-    const sections = Object.keys(mock.sections);
+    const sections = (mock && mock.sections) ? Object.keys(mock.sections) : [];
     
     const showSectionReviewButtons = (secName) => {
         buttonsGrid.innerHTML = '';
-        const qList = mock.sections[secName];
+        const qList = (mock && mock.sections && mock.sections[secName]) ? mock.sections[secName] : [];
         
         qList.forEach((qId, idx) => {
             const btn = document.createElement('button');
             btn.className = 'review-q-btn';
             
             // Check correctness
-            const ans = record.answers[qId];
-            const q = mock.questions[qId];
+            const ans = (record && record.answers) ? record.answers[qId] : null;
+            const q = (mock && mock.questions) ? mock.questions[qId] : null;
             
-            if (!ans || ans.length === 0) {
+            if (!q || !ans || ans.length === 0) {
                 btn.classList.add('unattempted');
             } else {
                 let isCorrect = false;
-                if (q.is_input_type) {
-                    isCorrect = ans[0].toString().trim().toLowerCase() === q.correct_response[0][0].toString().trim().toLowerCase();
+                const cVal = getCorrectResponseVal(q);
+                if (!cVal) {
+                    isCorrect = true;
+                } else if (q.is_input_type) {
+                    isCorrect = ans[0] ? (ans[0].toString().trim().toLowerCase() === cVal.toLowerCase()) : false;
                 } else if (q.is_drawing_type) {
                     isCorrect = true;
                 } else {
-                    const correctIdx = (parseInt(q.correct_response[0][0]) - 1).toString();
-                    isCorrect = ans[0] === correctIdx;
+                    const correctIdx = (parseInt(cVal) - 1).toString();
+                    isCorrect = String(ans[0]) === correctIdx;
                 }
                 
                 btn.classList.add(isCorrect ? 'correct' : 'incorrect');
@@ -3283,10 +3328,7 @@ function renderAttemptsHistoryTable() {
     tbody.querySelectorAll('.btn-view-report').forEach(btn => {
         btn.addEventListener('click', () => {
             const attemptId = btn.getAttribute('data-id');
-            const record = state.attempts.find(att => att.attemptId === attemptId);
-            const mock = state.mocks.find(m => m.id === record.testId) || { sections: {}, questions: {} };
-            
-            if (record) showResultsPage(record, mock);
+            openScorecardReport(attemptId);
         });
     });
 }
