@@ -2471,6 +2471,7 @@ function submitExamConsole() {
                 sectionName: item.secName,
                 instructions: q.instructions || '',
                 questionText: q.question_text,
+                options: q.options || [],
                 userAnswerText: userAnsText,
                 correctAnswerText: correctAnsText,
                 solution: q.solution || '',
@@ -3021,15 +3022,27 @@ function renderErrorLog() {
 
             <!-- OPTIONS LIST FOR MCQs -->
             ${(() => {
-                if (q && q.options && q.options.length > 0 && !q.is_input_type) {
+                const opts = (q && q.options && q.options.length > 0) ? q.options : (err.options || []);
+                const isTita = q ? q.is_input_type : err.isInputType;
+
+                if (opts && opts.length > 0 && !isTita) {
                     const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
-                    const cIdx = (parseInt(q.correct_response[0][0]) - 1).toString();
-                    const uAnsIndex = err.userAnswerText ? q.options.findIndex(o => forceHttpsImages(o).trim() === forceHttpsImages(err.userAnswerText).trim()) : -1;
+                    const cVal = getCorrectResponseVal(q);
+                    const cIdx = cVal ? (parseInt(cVal) - 1).toString() : '-1';
                     
+                    let uAnsIndex = -1;
+                    if (err.userAnswerText) {
+                        const cleanU = err.userAnswerText.replace(/<[^>]*>/g, '').trim().toLowerCase();
+                        uAnsIndex = opts.findIndex(o => {
+                            const cleanO = o.replace(/<[^>]*>/g, '').trim().toLowerCase();
+                            return cleanO === cleanU || cleanO.includes(cleanU) || cleanU.includes(cleanO);
+                        });
+                    }
+
                     let optsHtml = '<div class="error-card-options-list">';
-                    q.options.forEach((optText, index) => {
-                        const isCorr = index.toString() === cIdx;
-                        const isUserChoice = index === uAnsIndex || (err.userAnswerText && err.userAnswerText.includes(alphabet[index]));
+                    opts.forEach((optText, index) => {
+                        const isCorr = index.toString() === cIdx || (err.correctAnswerText && forceHttpsImages(optText).trim() === forceHttpsImages(err.correctAnswerText).trim());
+                        const isUserChoice = index === uAnsIndex || (isIncorrect && err.userAnswerText && forceHttpsImages(optText).trim() === forceHttpsImages(err.userAnswerText).trim());
                         
                         let optClass = 'error-card-option';
                         let badge = '';
