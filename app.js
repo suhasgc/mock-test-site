@@ -394,16 +394,78 @@ function forceHttpsImages(html) {
     });
 }
 
+function cleanTitaValue(val) {
+    if (val === null || val === undefined) return '';
+    let str = String(val);
+    str = str.replace(/<[^>]*>/g, '');
+    str = str.replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    str = str.trim().toLowerCase();
+    if (/^[0-9,]+(\.[0-9]+)?$/.test(str)) {
+        str = str.replace(/,/g, '');
+    }
+    if (/^\d+\.0+$/.test(str)) {
+        str = str.split('.')[0];
+    }
+    return str;
+}
+
+function compareTitaAnswers(userAns, rawCorrect) {
+    const rawUser = Array.isArray(userAns) ? (userAns[0] || '') : (userAns || '');
+    const cleanUser = cleanTitaValue(rawUser);
+    if (!cleanUser && !rawUser.trim()) return false;
+
+    let correctVals = [];
+    let rawCorrectVals = [];
+
+    if (Array.isArray(rawCorrect)) {
+        rawCorrect.forEach(item => {
+            if (Array.isArray(item)) {
+                item.forEach(subItem => {
+                    correctVals.push(cleanTitaValue(subItem));
+                    rawCorrectVals.push(String(subItem || '').trim().toLowerCase());
+                });
+            } else {
+                correctVals.push(cleanTitaValue(item));
+                rawCorrectVals.push(String(item || '').trim().toLowerCase());
+            }
+        });
+    } else {
+        correctVals.push(cleanTitaValue(rawCorrect));
+        rawCorrectVals.push(String(rawCorrect || '').trim().toLowerCase());
+    }
+
+    if (rawUser && rawCorrectVals.includes(rawUser.trim().toLowerCase())) return true;
+
+    return correctVals.some(cVal => {
+        if (!cVal) return false;
+        if (cleanUser === cVal) return true;
+        const numUser = parseFloat(cleanUser);
+        const numCorrect = parseFloat(cVal);
+        if (!isNaN(numUser) && !isNaN(numCorrect)) {
+            return Math.abs(numUser - numCorrect) < 0.00001;
+        }
+        return false;
+    });
+}
+
 function getCorrectResponseVal(q) {
     if (!q || !q.correct_response) return '';
     const cr = q.correct_response;
+    let raw = '';
     if (Array.isArray(cr) && cr.length > 0) {
         if (Array.isArray(cr[0]) && cr[0].length > 0) {
-            return String(cr[0][0] || '').trim();
+            raw = String(cr[0][0] || '').trim();
+        } else {
+            raw = String(cr[0] || '').trim();
         }
-        return String(cr[0] || '').trim();
+    } else {
+        raw = String(cr || '').trim();
     }
-    return String(cr || '').trim();
+    
+    if (/<img[^>]+src=/i.test(raw)) {
+        return forceHttpsImages(raw);
+    }
+    return raw.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').trim();
 }
 
 function isPdfBoilerplateHtml(instr) {
@@ -1360,7 +1422,7 @@ function startAnalysisConsole(mockId, attemptRecord = null, startQId = null) {
                 if (!cVal) {
                     state.runningTest.questionStates[qId] = 'answered';
                 } else if (q.is_input_type) {
-                    isCorrect = String(uAns[0]).trim().toLowerCase() === cVal.toLowerCase();
+                    isCorrect = compareTitaAnswers(uAns, q.correct_response);
                     state.runningTest.questionStates[qId] = isCorrect ? 'correct' : 'incorrect';
                 } else {
                     const cIdx = (parseInt(cVal) - 1).toString();
@@ -2390,8 +2452,8 @@ function submitExamConsole() {
                 // Grade response
                 let isCorrect = false;
                 if (q.is_input_type) {
-                    // Exact text compare
-                    isCorrect = ans[0].toString().trim().toLowerCase() === q.correct_response[0][0].toString().trim().toLowerCase();
+                    // Smart TITA compare
+                    isCorrect = compareTitaAnswers(ans, q.correct_response);
                 } else if (q.is_drawing_type) {
                     // Drawing answer - requires user manual review later, defaults to true for score placeholder
                     isCorrect = true; 
@@ -2730,7 +2792,7 @@ function renderResultsReviewTabs(record, mock) {
                 if (!cVal) {
                     isCorrect = true;
                 } else if (q.is_input_type) {
-                    isCorrect = ans[0] ? (ans[0].toString().trim().toLowerCase() === cVal.toLowerCase()) : false;
+                    isCorrect = compareTitaAnswers(ans, q.correct_response);
                 } else if (q.is_drawing_type) {
                     isCorrect = true;
                 } else {
@@ -2787,7 +2849,7 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
         marksLabel.className = 'badge negative';
     } else {
         if (q.is_input_type) {
-            isCorrect = userAns[0].toString().trim().toLowerCase() === q.correct_response[0][0].toString().trim().toLowerCase();
+            isCorrect = compareTitaAnswers(userAns, q.correct_response);
         } else if (q.is_drawing_type) {
             isCorrect = true;
         } else {
@@ -2829,10 +2891,10 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
     if (q.is_input_type) {
         optionsContainer.innerHTML = `
             <div class="error-user-answer">
-                <span class="ans-label">Your Response:</span> <span>${userAns ? userAns[0] : 'None'}</span>
+                <span class="ans-label">Your Response:</span> <span>${userAns && userAns[0] ? cleanTitaValue(userAns[0]) : 'None'}</span>
             </div>
             <div class="error-correct-answer">
-                <span class="ans-label">Correct Key:</span> <span>${q.correct_response[0][0]}</span>
+                <span class="ans-label">Correct Key:</span> <span>${getCorrectResponseVal(q)}</span>
             </div>
         `;
     } else if (q.is_drawing_type) {
