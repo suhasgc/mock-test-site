@@ -1357,7 +1357,7 @@ a {
 }
 
 .passage-body {
-    padding: 24px;
+    padding: 16px 20px;
     font-size: 1.05rem;
     line-height: 1.7;
     color: var(--text-primary);
