@@ -1573,6 +1573,11 @@ function startExamConsole(mock, mode) {
     document.getElementById('console-mode-label').textContent = mode === 'timed' ? 'Strict Timed' : 'Untimed Practice';
     document.getElementById('exam-badge-type').textContent = (mock.category === 'pdf' ? 'PDF OMR' : mock.type.toUpperCase()) + " MOCK";
     
+    const proctorText = document.getElementById('proctor-status-text');
+    const proctorDot = document.getElementById('proctor-dot');
+    if (proctorText) proctorText.textContent = mode === 'practice' ? 'Practice Mode' : 'Proctor Active';
+    if (proctorDot) proctorDot.className = mode === 'practice' ? 'indicator-dot blue' : 'indicator-dot green';
+    
     // Setup Split screen (Passage vs PDF)
     const leftPanelPassage = document.getElementById('passage-viewer-container');
     const leftPanelPdf = document.getElementById('pdf-viewer-container');
@@ -2095,8 +2100,9 @@ function saveCurrentQuestionTimeSpent() {
     
     if (run.questionStartTime) {
         const diff = Math.floor((Date.now() - run.questionStartTime) / 1000);
-        run.timeSpentPerQuestion[qId] = (run.timeSpentPerQuestion[qId] || 0) + diff;
-        run.totalTimeSpent += diff;
+        if (diff > 0) {
+            run.timeSpentPerQuestion[qId] = (run.timeSpentPerQuestion[qId] || 0) + diff;
+        }
         run.questionStartTime = Date.now(); // reset
     }
 }
@@ -2330,10 +2336,21 @@ function startConsoleTimers() {
             // Count up stopwatch in Practice Mode
             run.totalTimeSpent++;
             
-            const hrs = Math.floor(run.totalTimeSpent / 3600).toString().padStart(2, '0');
-            const mins = Math.floor((run.totalTimeSpent % 3600) / 60).toString().padStart(2, '0');
-            const secs = (run.totalTimeSpent % 60).toString().padStart(2, '0');
-            timerText.textContent = `${hrs}:${mins}:${secs}`;
+            const totalSecs = run.totalTimeSpent;
+            const hrs = Math.floor(totalSecs / 3600);
+            const mins = Math.floor((totalSecs % 3600) / 60);
+            const secs = totalSecs % 60;
+            
+            if (hrs > 0) {
+                const hrsStr = hrs.toString().padStart(2, '0');
+                const minsStr = mins.toString().padStart(2, '0');
+                const secsStr = secs.toString().padStart(2, '0');
+                timerText.textContent = `${hrsStr}:${minsStr}:${secsStr}`;
+            } else {
+                const minsStr = mins.toString().padStart(2, '0');
+                const secsStr = secs.toString().padStart(2, '0');
+                timerText.textContent = `${minsStr}:${secsStr}`;
+            }
         } else {
             // Count down in Timed Exam Mode
             let isTimeUp = false;
@@ -2365,11 +2382,23 @@ function startConsoleTimers() {
                 }
             }
             
+            run.totalTimeSpent++;
+            
             // Update UI timer text
-            const hrs = Math.floor(displaySecs / 3600).toString().padStart(2, '0');
-            const mins = Math.floor((displaySecs % 3600) / 60).toString().padStart(2, '0');
-            const secs = (displaySecs % 60).toString().padStart(2, '0');
-            timerText.textContent = `${hrs}:${mins}:${secs}`;
+            const hrs = Math.floor(displaySecs / 3600);
+            const mins = Math.floor((displaySecs % 3600) / 60);
+            const secs = displaySecs % 60;
+            
+            if (hrs > 0) {
+                const hrsStr = hrs.toString().padStart(2, '0');
+                const minsStr = mins.toString().padStart(2, '0');
+                const secsStr = secs.toString().padStart(2, '0');
+                timerText.textContent = `${hrsStr}:${minsStr}:${secsStr}`;
+            } else {
+                const minsStr = mins.toString().padStart(2, '0');
+                const secsStr = secs.toString().padStart(2, '0');
+                timerText.textContent = `${minsStr}:${secsStr}`;
+            }
             
             // Red warning overlay when less than 2 mins
             if (displaySecs < 120) {
