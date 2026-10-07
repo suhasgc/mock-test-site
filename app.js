@@ -1733,11 +1733,40 @@ function loadConsoleQuestion() {
     const passageViewer = document.getElementById('passage-body-content');
     const passageContainer = document.getElementById('passage-viewer-container');
     const isPdfMode = mock.category === 'pdf' || !!mock.fileUrl || !!mock.pdfFiles;
+
+    let instr = (question.instructions || '').trim();
+    let qText = (question.question_text || '').trim();
+
+    // Auto-extract passage if embedded in question_text
+    if (!instr && qText.includes('<div class="passage-box">')) {
+        const pStart = qText.indexOf('<div class="passage-box">');
+        let depth = 0;
+        let i = pStart;
+        let pEnd = -1;
+        while (i < qText.length) {
+            if (qText.startsWith('<div', i)) {
+                depth++;
+                i += 4;
+            } else if (qText.startsWith('</div>', i)) {
+                depth--;
+                i += 6;
+                if (depth === 0) {
+                    pEnd = i;
+                    break;
+                }
+            } else {
+                i++;
+            }
+        }
+        if (pEnd !== -1) {
+            instr = qText.substring(pStart, pEnd);
+            qText = (qText.substring(0, pStart) + qText.substring(pEnd)).trim();
+        }
+    }
     
     if (isPdfMode) {
         if (passageContainer) passageContainer.style.display = 'none';
     } else if (passageViewer && passageContainer) {
-        const instr = (question.instructions || '').trim();
         if (instr && !isPdfBoilerplateHtml(instr)) {
             passageViewer.innerHTML = forceHttpsImages(instr);
             passageContainer.style.display = 'flex';
@@ -1750,7 +1779,7 @@ function loadConsoleQuestion() {
     // Set Question text
     const textContainer = document.getElementById('interactive-question-text');
     if (textContainer) {
-        textContainer.innerHTML = forceHttpsImages(question.question_text);
+        textContainer.innerHTML = forceHttpsImages(qText);
     }
     
     // Set Inputs
@@ -2900,18 +2929,46 @@ function openReviewQuestionModal(qId, labelNum, record, mock) {
     }
     
     document.getElementById('review-modal-q-num').textContent = labelNum.toString();
+    let reviewInstr = (q.instructions || '').trim();
+    let reviewQText = (q.question_text || '').trim();
+
+    if (!reviewInstr && reviewQText.includes('<div class="passage-box">')) {
+        const pStart = reviewQText.indexOf('<div class="passage-box">');
+        let depth = 0;
+        let i = pStart;
+        let pEnd = -1;
+        while (i < reviewQText.length) {
+            if (reviewQText.startsWith('<div', i)) {
+                depth++;
+                i += 4;
+            } else if (reviewQText.startsWith('</div>', i)) {
+                depth--;
+                i += 6;
+                if (depth === 0) {
+                    pEnd = i;
+                    break;
+                }
+            } else {
+                i++;
+            }
+        }
+        if (pEnd !== -1) {
+            reviewInstr = reviewQText.substring(pStart, pEnd);
+            reviewQText = (reviewQText.substring(0, pStart) + reviewQText.substring(pEnd)).trim();
+        }
+    }
+
     const instEl = document.getElementById('review-modal-instructions');
     if (instEl) {
-        const instr = (q.instructions || '').trim();
-        if (instr && !isPdfBoilerplateHtml(instr)) {
-            instEl.innerHTML = forceHttpsImages(instr);
+        if (reviewInstr && !isPdfBoilerplateHtml(reviewInstr)) {
+            instEl.innerHTML = forceHttpsImages(reviewInstr);
             instEl.style.display = 'block';
         } else {
             instEl.innerHTML = '';
             instEl.style.display = 'none';
         }
     }
-    document.getElementById('review-modal-question-text').innerHTML = forceHttpsImages(q.question_text);
+    document.getElementById('review-modal-question-text').innerHTML = forceHttpsImages(reviewQText);
     
     // Option breakdown comparisons
     const optionsContainer = document.getElementById('review-modal-options-container');
@@ -4424,3 +4481,5 @@ function initSupportModal() {
         }
     });
 }
+
+
